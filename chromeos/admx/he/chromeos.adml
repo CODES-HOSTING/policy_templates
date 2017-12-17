@@ -1,0 +1,1289 @@
+<?xml version="1.0" ?><policyDefinitionResources revision="1.0" schemaVersion="1.0"><displayName/><description/><resources><stringTable><string id="SUPPORTED_WINXPSP2">‏Microsoft Windows XP SP2 ואילך</string><string id="googlechromeos">Google Chrome OS</string><string id="googlechromeos_recommended">Google Chrome OS - הגדרות ברירת מחדל (המשתמשים יכולים לעקוף אותן)</string><string id="GoogleCast_group">Google Cast</string><string id="EnableMediaRouter">הפעלה של Google Cast</string><string id="EnableMediaRouter_Explain">‏אם המדיניות מוגדרת ל-true או לא מוגדרת, Google Cast יופעל והמשתמשים יוכלו להפעילו דרך תפריטי האפליקציות, תפריטי הקשר של דפים, בקרות מדיה באתרים ש- Cast פועל בהם וסמל סרגל הכלים של Cast (אם הוא מוצג).
+
+אם המדיניות מוגדרת ל-false, Google Cast יושבת.</string><string id="ShowCastIconInToolbar">הצגת סמל סרגל הכלים של Google Cast</string><string id="ShowCastIconInToolbar_Explain">‏אם המדיניות הוגדרה כ-true, סמל סרגל הכלים של Cast יוצג תמיד בסרגל הכלים או באפשרויות הנוספות, ולמשתמשים לא תהיה אפשרות להסיר אותו.
+
+אם המדיניות הוגדרה כ-false או שלא הוגדרה כלל, המשתמשים יוכלו להצמיד או להסיר את הסמל באמצעות האפשרויות הנוספות.
+
+אם המדיניות &quot;EnableMediaRouter&quot; הוגדרה כ-false, לערך שבו הוגדרה המדיניות לא תהיה כל השפעה וסמל סרגל הכלים לא יוצג.</string><string id="NewTabPage_group">דף 'כרטיסייה חדשה'</string><string id="NewTabPageLocation">הגדרת כתובת האתר של הדף 'כרטיסייה חדשה'</string><string id="NewTabPageLocation_Explain">Configures the default New Tab page URL and prevents users from changing it.
+
+The New Tab page is the page opened when new tabs are created (including the one opened in new windows).
+
+This policy does not decide which pages are to be opened on start up. Those are controlled by the RestoreOnStartup policies. Yet this policy does affect the Home Page if that is set to open the New Tab page, as well as the startup page if that is set to open the New Tab page.
+
+If the policy is not set or left empty the default new tab page is used.
+
+This policy is not available on Windows instances that are not joined to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="Homepage_group">דף הבית</string><string id="HomepageLocation">הגדר את כתובת האתר של דף הבית</string><string id="HomepageLocation_Explain">Configures the default home page URL in Google Chrome and prevents users from changing it.
+
+The home page is the page opened by the Home button. The pages that open on startup are controlled by the RestoreOnStartup policies.
+
+The home page type can either be set to a URL you specify here or set to the New Tab Page. If you select the New Tab Page, then this policy does not take effect.
+
+If you enable this setting, users cannot change their home page URL in Google Chrome, but they can still choose the New Tab Page as their home page.
+
+Leaving this policy not set will allow the user to choose their home page on their own if HomepageIsNewTabPage is not set too.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HomepageIsNewTabPage">השתמש בדף 'כרטיסייה חדשה' בתור דף הבית</string><string id="HomepageIsNewTabPage_Explain">Configures the type of the default home page in Google Chrome and prevents users from changing home page preferences. The home page can either be set to a URL you specify or set to the New Tab Page.
+
+If you enable this setting, the New Tab Page is always used for the home page, and the home page URL location is ignored.
+
+If you disable this setting, the user's homepage will never be the New Tab Page, unless its URL is set to 'chrome://newtab'.
+
+If you enable or disable this setting, users cannot change their homepage type in Google Chrome.
+
+Leaving this policy not set will allow the user to choose whether the new tab page is their home page on their own.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupGroup_group">דפי הפעלה</string><string id="RestoreOnStartup">פעולה בעת ההפעלה</string><string id="RestoreOnStartup_Explain">Allows you to specify the behavior on startup.
+
+If you choose 'Open New Tab Page' the New Tab Page will always be opened when you start Google Chrome.
+
+If you choose 'Restore the last session', the URLs that were open last time Google Chrome was closed will be reopened and the browsing session will be restored as it was left.
+Choosing this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).
+
+If you choose 'Open a list of URLs', the list of 'URLs to open on startup' will be opened when a user starts Google Chrome.
+
+If you enable this setting, users cannot change or override it in Google Chrome.
+
+Disabling this setting is equivalent to leaving it not configured. The user will still be able to change it in Google Chrome.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartup_RestoreOnStartupIsNewTabPage">פתח דף כרטיסיה חדשה</string><string id="RestoreOnStartup_RestoreOnStartupIsLastSession">שחזר את ההפעלה האחרונה</string><string id="RestoreOnStartup_RestoreOnStartupIsURLs">פתח רשימה של כתובות אתר</string><string id="RestoreOnStartupURLs">כתובות אתר לפתיחה בעת ההפעלה</string><string id="RestoreOnStartupURLs_Explain">If 'Open a list of URLs' is selected as the startup action, this allows you to specify the list of URLs that are opened. If left not set no URL will be opened on start up.
+
+This policy only works if the 'RestoreOnStartup' policy is set to 'RestoreOnStartupIsURLs'.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupURLsDesc">כתובות אתר לפתיחה בעת ההפעלה</string><string id="RemoteAccess_group">הגדר אפשרויות גישה מרחוק</string><string id="RemoteAccessHostClientDomainList">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostClientDomainList_Explain">Configures the required client domain names that will be imposed on remote access clients and prevents users from changing it.
+
+If this setting is enabled, then only clients from one of the specified domains can connect to the host.
+
+If this setting is disabled or not set, then the default policy for the connection type is applied. For remote assistance, this allows clients from any domain to connect to the host; for anytime remote access, only the host owner can connect.
+
+This setting will override RemoteAccessHostClientDomain, if present.
+
+See also RemoteAccessHostDomainList.</string><string id="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostFirewallTraversal">אפשר חציית חומת אש ממארח הגישה מרחוק</string><string id="RemoteAccessHostFirewallTraversal_Explain">‏מאפשרת שימוש בשרתי STUN כאשר לקוחות מרוחקים מנסים ליצור חיבור עם המחשב הזה.
+
+אם הגדרה זו הופעלה, הלקוחות המרוחקים יכולים לגלות את המחשב הזה ולהתחבר אליו, גם אם הם מופרדים על ידי חומת אש.
+
+אם ההגדרה הזו מושבתת וחומת האש מסננת חיבורי UDP, המחשב הזה יאפשר רק חיבורים ממחשבי לקוח הנמצאים ברשת המקומית.
+
+אם המדיניות הזו לא תוגדר, ההגדרה תופעל.</string><string id="RemoteAccessHostDomainList">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostDomainList_Explain">Configures the required host domain names that will be imposed on remote access hosts and prevents users from changing it.
+
+If this setting is enabled, then hosts can be shared only using accounts registered on one of the specified domain names.
+
+If this setting is disabled or not set, then hosts can be shared using any account.
+
+This setting will override RemoteAccessHostDomain, if present.
+
+See also RemoteAccessHostClientDomainList.</string><string id="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostTalkGadgetPrefix">‏הגדר את קידומת TalkGadget עבור מארחים של גישה מרחוק</string><string id="RemoteAccessHostTalkGadgetPrefix_Explain">‏מגדיר את קידומת TalkGadget שתשמש עבור מארחים של גישה מרחוק ומונע מהמשתמשים לשנות אותה.
+
+אם נקבעה, קידומת זו מתווספת לתחילת שם TalkGadget הבסיסי ליצירת שם דומיין מלא עבור TalkGadget. שם הדומיין הבסיסי של TalkGadget הוא '.talkgadget.google.com'.
+
+כאשר הגדרה זו מופעלת, המארחים ישתמשו בשם הדומיין המותאם אישית בעת הגישה ל-‏TalkGadget במקום בשם הדומיין המוגדר כברירת מחדל.
+
+כאשר הגדרה זו מושבתת או אינה מוגדרת, שם הדומיין המוגדר כברירת מחדל של TalkGadget‏ ('chromoting-host.talkgadget.google.com') ישמש עבור כל המארחים.
+
+לקוחות של גישה מרחוק אינם מושפעים מהגדרת מדיניות זו. הם תמיד ישתמשו ב-‏'chromoting-client.talkgadget.google.com' כדי לגשת ל-‏TalkGadget.</string><string id="RemoteAccessHostRequireCurtain">אפשר מיסוך של מארחים לגישה מרחוק</string><string id="RemoteAccessHostRequireCurtain_Explain">מאפשר מיסוך של מארחים לגישה מרחוק במהלך החיבור. כאשר הגדרה זו מופעלת, מכשירי הקלט והפלט הפיזיים של המארחים מושבתים במהלך החיבור מרחוק. כאשר הגדרה זו מושבתת או כאשר היא אינה מוגדרת, גם המשתמש המקומי וגם המשתמש המרוחק יכולים לקיים אינטראקציה עם המארח כאשר הוא משותף.</string><string id="RemoteAccessHostAllowClientPairing">‏הפעלה או השבתה של אימות ללא PIN עבור מארחי גישה מרחוק</string><string id="RemoteAccessHostAllowClientPairing_Explain">‏אם הגדרה זו מופעלת או לא מוגדרת, משתמשים יכולים לבחור להתאים בין לקוחות ומארחים בזמן החיבור, לביטול הצורך בהזנת PIN בכל פעם.
+
+אם הגדרה זו מושבתת, תכונה זו לא תהיה זמינה.</string><string id="RemoteAccessHostAllowGnubbyAuth">‏אפשר אימות gnubby עבור מארחים של גישה מרחוק</string><string id="RemoteAccessHostAllowGnubbyAuth_Explain">‏אם ההגדרה הזו פועלת, בקשות אימות של Gnubby יועברו דרך שרת proxy בחיבור מארח מרוחק.
+
+אם ההגדרה הזו מושבתת או אינה מוגדרת, בקשות אימות של Gnubby לא יועברו דרך שרת proxy.</string><string id="RemoteAccessHostAllowRelayedConnection">הפעל את השימוש בשרתי שידור על ידי מארח הגישה המרוחקת</string><string id="RemoteAccessHostAllowRelayedConnection_Explain">Enables usage of relay servers when remote clients are trying to establish a connection to this machine.
+
+If this setting is enabled, then remote clients can use relay servers to connect to this machine when a direct connection is not available (e.g. due to firewall restrictions).
+
+Note that if the policy RemoteAccessHostFirewallTraversal is disabled, this policy will be ignored.
+
+If this policy is left not set the setting will be enabled.</string><string id="RemoteAccessHostUdpPortRange">‏הגבל את טווח יציאות UDP שבהן נעשה שימוש על ידי מארח הגישה המרוחקת</string><string id="RemoteAccessHostUdpPortRange_Explain">Restricts the UDP port range used by the remote access host in this machine.
+
+If this policy is left not set, or if it is set to an empty string, the remote access host will be allowed to use any available port, unless the policy RemoteAccessHostFirewallTraversal is disabled, in which case the remote access host will use UDP ports in the 12400-12409 range.</string><string id="RemoteAccessHostMatchUsername">מדיניות זו מחייבת התאמה בין השם של המשתמש המקומי והשם של בעל המארח לגישה מרחוק</string><string id="RemoteAccessHostMatchUsername_Explain">If this setting is enabled, then the remote access host compares the name of the local user (that the host is associated with) and the name of the Google account registered as the host owner (i.e. &quot;johndoe&quot; if the host is owned by &quot;johndoe@example.com&quot; Google account).  The remote access host will not start if the name of the host owner is different from the name of the local user that the host is associated with.  RemoteAccessHostMatchUsername policy should be used together with RemoteAccessHostDomain to also enforce that the Google account of the host owner is associated with a specific domain (i.e. &quot;example.com&quot;).
+
+If this setting is disabled or not set, then the remote access host can be associated with any local user.</string><string id="RemoteAccessHostTokenUrl">כתובת אתר שבו לקוחות גישה מרחוק אמורים לקבל את אסימון האימות שלהם</string><string id="RemoteAccessHostTokenUrl_Explain">If this policy is set, the remote access host will require authenticating clients to obtain an authentication token from this URL in order to connect. Must be used in conjunction with RemoteAccessHostTokenValidationUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationUrl">כתובת אתר לאימות אסימון אימות של לקוח גישה מרחוק</string><string id="RemoteAccessHostTokenValidationUrl_Explain">If this policy is set, the remote access host will use this URL to validate authentication tokens from remote access clients, in order to accept connections. Must be used in conjunction with RemoteAccessHostTokenUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationCertificateIssuer">‏אישור הלקוח להתחברות ל-RemoteAccessHostTokenValidationUrl</string><string id="RemoteAccessHostTokenValidationCertificateIssuer_Explain">If this policy is set, the host will use a client certificate with the given issuer CN to authenticate to RemoteAccessHostTokenValidationUrl. Set it to &quot;*&quot; to use any available client certificate.
+
+This feature is currently disabled server-side.</string><string id="Accessibility_group">הגדרות נגישות</string><string id="ShowAccessibilityOptionsInSystemTrayMenu">הצג אפשרויות גישה בתפריט מגש המערכת</string><string id="ShowAccessibilityOptionsInSystemTrayMenu_Explain">If this policy is set to true, Accessibility options always appear in system tray menu.
+
+If this policy is set to false, Accessibility options never appear in system tray menu.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, Accessibility options will not appear in the system tray menu, but the user can cause the Accessibility options to appear via the Settings page.</string><string id="LargeCursorEnabled">הפעל סמן גדול</string><string id="LargeCursorEnabled_Explain">‏הפעל את תכונת הנגישות של סמן גדול.
+
+אם מדיניות זו מוגדרת ל-True, הסמן הגדול יהיה מופעל תמיד.
+
+אם מדיניות זו מוגדרת ל-False, הסמן הגדול יהיה מושבת תמיד.
+
+אם תגדיר מדיניות זו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם תשאיר מדיניות זו ללא הגדרה, הסמן הגדול יהיה מושבת בתור התחלה, אך המשתמש יוכל להפעיל אותו בכל עת.</string><string id="SpokenFeedbackEnabled">אפשר משוב מילולי</string><string id="SpokenFeedbackEnabled_Explain">‏הפעל את תכונת הנגישות של משוב קולי.
+
+אם מדיניות זו מוגדרת ל-True, המשוב הקולי יהיה מופעל תמיד.
+
+אם מדיניות זו מוגדרת ל-False, המשוב הקולי יהיה מושבת תמיד.
+
+אם תגדיר מדיניות זו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם תשאיר מדיניות זו ללא הגדרה, המשוב הקולי יהיה מושבת בתור התחלה אך המשתמש יוכל להפעיל אותו בכל עת.</string><string id="HighContrastEnabled">הפעל מצב ניגודיות גבוהה</string><string id="HighContrastEnabled_Explain">‏הפעל את תכונת הנגישות של מצב ניגודיות גבוהה.
+
+אם מדיניות זו מוגדרת ל-True, מצב ניגודיות גבוהה יהיה מופעל תמיד.
+
+אם מדיניות זו מוגדרת ל-False, מצב ניגודיות גבוהה יהיה מושבת תמיד.
+
+אם תגדיר מדיניות זו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם תשאיר מדיניות זו ללא הגדרה, מצב ניגודיות גבוהה יהיה מושבת בהתחלה אך המשתמש יוכל להפעיל אותו בכל עת.</string><string id="VirtualKeyboardEnabled">הפעל מקלדת על המסך</string><string id="VirtualKeyboardEnabled_Explain">‏הפעל את תכונת הנגישות של מקלדת על המסך.
+
+אם המדיניות הזו מוגדרת כ-true, המקלדת על המסך תופעל תמיד.
+
+אם המדיניות הזו מוגדרת כ-false, המקלדת על המסך תושבת תמיד.
+
+אם תגדיר את המדיניות הזו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם המדיניות הזו לא תוגדר, בתחילה המקלדת על המסך תושבת, אבל המשתמש יוכל להפעיל אותה בכל עת.</string><string id="KeyboardDefaultToFunctionKeys">ברירת המחדל של מקשי מדיה למקשי פונקציות</string><string id="KeyboardDefaultToFunctionKeys_Explain">‏משנה את התנהגות ברירת המחדל של המקשים בשורה העליונה לזו של מקשי פונקציה.
+
+אם המדיניות הזו תוגדר כ-true, שורת המקשים העליונה במקלדת תבצע פקודות של מקשי פונקציה כברירת מחדל. יש להקיש על מקש החיפוש על מנת להחזיר את ההתנהגות שלהם לזו של מקשי מדיה.
+
+אם המדיניות הזו תוגדר כ-false או לא תוגדר, המקלדת תבצע פקודות של מקשי מדיה כברירת מחדל. היא תבצע את פקודות מקשי הפונקציה בעת לחיצה ארוכה על מקש החיפוש.</string><string id="ScreenMagnifierType">הגדר את סוג מגדיל התצוגה</string><string id="ScreenMagnifierType_Explain">If this policy is set, it controls the type of screen magnifier that is enabled. Setting the policy to &quot;None&quot; disables the screen magnifier.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, the screen magnifier is disabled initially but can be enabled by the user anytime.</string><string id="ScreenMagnifierType_None">מגדיל התצוגה מושבת</string><string id="ScreenMagnifierType_Full-screen">מגדיל התצוגה למסך מלא מופעל</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled">הגדר מצב ברירת מחדל של הסמן הגדול במסך ההתחברות</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled_Explain">‏הגדר את מצב ברירת המחדל של תכונת הנגישות של הסמן הגדול במסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-True, הסמן הגדול יופעל בעת הצגת מסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-False, הסמן הגדול יושבת בעת הצגת מסך ההתחברות.
+
+אם תגדיר מדיניות זו, משתמשים יוכלו לעקוף אותה באופן זמני על ידי הפעלה או השבתה של הסמן הגדול. עם זאת, בחירת המשתמש אינה עקבית וברירת המחדל משוחזרת בכל פעם שמסך ההתחברות מוצג מחדש או שהמשתמש אינו מבצע כל פעולה (מצב סרק) במסך ההתחברות במשך דקה.
+
+אם תשאיר מדיניות זו ללא הגדרה, הסמן הגדול יהיה מושבת בעת ההצגה הראשונה של מסך ההתחברות. המשתמשים יוכלו להפעיל או להשבית את הסמן הגדול בכל עת והסטטוס שלו במסך ההתחברות יהיה עקבי בין המשתמשים.</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled">הגדר את מצב ברירת המחדל של משוב קולי במסך ההתחברות</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled_Explain">‏הגדר את מצב ברירת המחדל של תכונת הנגישות של משוב קולי במסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-True, המשוב הקולי יהיה מופעל בעת הצגת מסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-False, המשוב הקולי יהיה מושבת בעת הצגת מסך ההתחברות.
+
+אם תגדיר מדיניות זו, משתמשים יוכלו לעקוף אותה באופן זמני על ידי הפעלה או השבתה של המשוב הקולי. עם זאת, בחירת המשתמש אינה עקבית וברירת המחדל משוחזרת בכל פעם שמסך ההתחברות מוצג מחדש או כאשר המשתמש אינו פעיל במסך ההתחברות במשך דקה.
+
+אם תשאיר מדיניות זו ללא הגדרה, המשוב הקולי יהיה מושבת בעת ההצגה הראשונה של מסך ההתחברות. משתמשים יוכלו להפעיל או להשבית את המשוב הקולי בכל עת והסטטוס שלו במסך ההתחברות יישאר עקבי בין המשתמשים.</string><string id="DeviceLoginScreenDefaultHighContrastEnabled">הגדר את מצב ברירת המחדל של מצב ניגודיות גבוהה במסך ההתחברות</string><string id="DeviceLoginScreenDefaultHighContrastEnabled_Explain">‏הגדר את מצב ברירת המחדל של תכונת הנגישות במצב ניגודיות גבוהה במסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-True, מצב ניגודיות גבוהה יופעל בעת הצגת מסך ההתחברות.
+
+אם מדיניות זו מוגדרת ל-False, מצב ניגודיות גבוהה יושבת בעת הצגת מסך ההתחברות.
+
+אם תגדיר מדיניות זו, משתמשים יוכלו לעקוף אותה באופן זמני על ידי הפעלה או השבתה של מצב ניגודיות גבוהה. עם זאת, בחירת המשתמש אינה עקבית וברירת המחדל משוחזרת בכל פעם שמסך ההתחברות מוצג מחדש, או כאשר המשתמש אינו פעיל במסך ההתחברות במשך דקה.
+
+אם לא תגדיר מדיניות זו, מצב ניגודיות גבוהה יהיה מושבת בעת ההצגה הראשונה של מסך ההתחברות. המשתמשים יוכלו להפעיל או להשבית את מצב ניגודיות גבוהה בכל עת, והסטטוס שלו במסך ההתחברות יישאר עקבי בין המשתמשים.</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled">הגדר מצב ברירת מחדל במסך ההתחברות של המקלדת על המסך</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled_Explain">‏הגדר את מצב ברירת המחדל במסך ההתחברות של תכונת הנגישות של מקלדת על המסך.
+
+אם המדיניות מוגדרת כ-true, המקלדת על המסך תופעל כשמסך ההתחברות יוצג.
+
+אם המדיניות מוגדרת כ-false, המקלדת על המסך תושבת כשמסך ההתחברות יוצג.
+
+אם תגדיר את המדיניות הזו, משתמשים יוכלו לעקוף אותה זמנית על ידי הפעלה או השבתה של המקלדת על המסך. עם זאת, בחירת המשתמש לא נשמרת לאורך זמן, וברירת המחדל משוחזרת בכל פעם שמסך ההתחברות מוצג מחדש או כשהמשתמש נותר בלתי פעיל במסך ההתחברות למשך דקה.
+
+אם המדיניות הזו לא מוגדרת, המקלדת על המסך מושבתת כשמסך ההתחברות מוצג בפעם הראשונה. משתמשים יכולים להפעיל או להשבית את המקלדת על המסך בכל עת, והסטטוס שלה במסך ההתחברות נשמר בין משתמשים שונים.</string><string id="DeviceLoginScreenDefaultScreenMagnifierType">הגדר את סוג מגדיל התצוגה המוגדר כברירת מחדל המופעל במסך ההתחברות</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Explain">הגדר את סוג ברירת המחדל של מגדיל התצוגה המופעל במסך ההתחברות.
+
+אם מדיניות זו מוגדרת, היא קובעת את סוג מגדיל התצוגה המופעל כאשר מסך ההתחברות מוצג. הגדרת המדיניות ל&quot;לא&quot; משביתה את מגדיל התצוגה.
+
+אם תגדיר מדיניות זו, משתמשים יוכלו לעקוף אותה באופן זמני על ידי הפעלה או השבתה של מגדיל התצוגה. עם זאת, בחירת המשתמש אינה עקבית וברירת המחדל משוחזרת בכל פעם שמסך ההתחברות מוצג מחדש או שהמשתמש אינו מבצע כל פעולה במסך ההתחברות במשך דקה.
+
+אם מדיניות זו נותרת ללא הגדרה, מגדיל התצוגה מושבת כאשר מסך ההתחברות מוצג לראשונה. המשתמשים יכולים להפעיל או להשבית את מגדיל התצוגה בכל עת והסטטוס שלו במסך ההתחברות נותר עקבי בין כל המשתמשים.</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_None">מגדיל התצוגה מושבת</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Full-screen">מגדיל התצוגה למסך מלא מופעל</string><string id="ContentSettings_group">הגדרות תוכן</string><string id="DefaultCookiesSetting">‏הגדרת ברירת מחדל של קובצי Cookie</string><string id="DefaultCookiesSetting_Explain">‏מדיניות זו מאפשרת לקבוע אם אתרים יורשו להגדיר נתונים מקומיים. הגדרת נתונים מקומיים יכולה להיות מותרת לכל האתרים או אסורה לכל האתרים.
+
+אם מדיניות זו תוגדר לאפשרות 'שמור את קובצי ה-Cookie למשך כל ההפעלה', קובצי ה-Cookie יימחקו כשההפעלה תסתיים. שים לב שאם Google Chrome פועל ב'מצב רקע', ייתכן שההפעלה לא תסתיים כשהחלון האחרון ייסגר. עיין במדיניות BackgroundModeEnabled למידע נוסף על הגדרת התנהגות זו.
+
+אם מדיניות זו לא תוגדר, המדיניות AllowCookies תהיה בשימוש והמשתמש יוכל לשנות אותה.</string><string id="DefaultCookiesSetting_AllowCookies">אפשר לכל האתרים להגדיר נתונים מקומיים</string><string id="DefaultCookiesSetting_BlockCookies">אל תאפשר לאף אתר להגדיר נתונים מקומיים</string><string id="DefaultCookiesSetting_SessionOnly">‏שמור את קובצי ה-Cookie לכל משך ההפעלה.</string><string id="DefaultImagesSetting">הגדרת ברירת מחדל של תמונות</string><string id="DefaultImagesSetting_Explain">‏מאפשר לך לקבוע אם מותר לאתרים להציג תמונות. ניתן להציג תמונות עבור כל האתרים או לבטל אפשרות זאת עבור כל האתרים. אם לא הגדרת מדיניות זו, המערכת תשתמש ב'AllowImages' והמשתמש יוכל לשנות זאת.</string><string id="DefaultImagesSetting_AllowImages">אפשר לכל האתרים להציג את כל התמונות</string><string id="DefaultImagesSetting_BlockImages">אל תאפשר לאף אתר להציג תמונות</string><string id="DefaultJavaScriptSetting">‏הגדרת ברירת מחדל של JavaScript</string><string id="DefaultJavaScriptSetting_Explain">‏מאפשר לך לקבוע אם מותר לאתרים להפעיל JavaScript. ניתן להפעיל JavaScript עבור כל האתרים או לבטל את ההגדרה עבור כל האתרים. אם לא הגדרת מדיניות זו, המערכת תשתמש ב-'AllowJavaScript' והמשתמש יוכל לשנות זאת.</string><string id="DefaultJavaScriptSetting_AllowJavaScript">‏אפשר לכל האתרים להריץ JavaScript</string><string id="DefaultJavaScriptSetting_BlockJavaScript">‏אל תאפשר לאף אתר להריץ JavaScript</string><string id="DefaultPluginsSetting">הגדרת ברירת מחדל של Flash</string><string id="DefaultPluginsSetting_Explain">‏המדיניות הזו מאפשרת לך לקבוע אם אתרים רשאים להפעיל באופן אוטומטי את הפלאגין Flash. ניתן לאשר את ההפעלה האוטומטית של הפלאגין Flash בכל האתרים או למנוע אותה.
+
+האפשרות 'לחץ להפעלה' מאפשרת לפלאגין Flash לפעול, אבל המשתמש צריך ללחוץ על ה-placeholder כדי להתחיל את ביצוע הפלאגין.
+
+אם לא מגדירים את המדיניות, המשתמש יכול לשנות את ההגדרה הזו באופן ידני.</string><string id="DefaultPluginsSetting_AllowPlugins">אשר לכל האתרים להריץ באופן אוטומטי את הפלאגין Flash</string><string id="DefaultPluginsSetting_BlockPlugins">חסום את הפלאגין Flash</string><string id="DefaultPluginsSetting_ClickToPlay">לחץ להפעלה</string><string id="DefaultPopupsSetting">הגדרת ברירת מחדל של חלונות קופצים</string><string id="DefaultPopupsSetting_Explain">‏מאפשר לך לקבוע אם מותר לאתרים להציג חלונות קופצים. ניתן להציג חלונות קופצים עבור כל האתרים או לבטל את הצגתם עבור כל האתרים. אם לא הגדרת מדיניות זו, המערכת תשתמש ב-'BlockPopups' והמשתמש יוכל לשנות זאת.</string><string id="DefaultPopupsSetting_AllowPopups">אפשר לכל האתרים להציג חלונות קופצים</string><string id="DefaultPopupsSetting_BlockPopups">אל תאפשר לאף אתר להציג חלונות קופצים</string><string id="DefaultNotificationsSetting">הגדרת ברירת מחדל של התראות</string><string id="DefaultNotificationsSetting_Explain">‏מאפשר לך לקבוע אם מותר לאתרים להציג התראות שולחן עבודה. ניתן להציג התראות שולחן עבודה כברירת מחדל, לדחות הצגת התראות אלה כברירת מחדל או שהמשתמש יתבקש להציג התראות שולחן עבודה בכל פעם שאתר מבקש זאת. אם לא הגדרת מדיניות זו, המערכת תשתמש ב'AskNotifications' והמשתמש יוכל לשנות זאת.</string><string id="DefaultNotificationsSetting_AllowNotifications">אפשר לאתרים להציג התראות בשולחן העבודה</string><string id="DefaultNotificationsSetting_BlockNotifications">אל תרשה לאף אתר להציג התראות בשולחן העבודה</string><string id="DefaultNotificationsSetting_AskNotifications">שאל בכל פעם שאתר רוצה להציג התראות בשולחן העבודה</string><string id="DefaultGeolocationSetting">הגדרת ברירת מחדל של מיקום גיאוגרפי</string><string id="DefaultGeolocationSetting_Explain">‏מאפשר לך להגדיר אם מותר לאתרים לעקוב אחר המיקום הפיזי של המשתמשים. ניתן לאפשר מעקב אחר המיקום הפיזי של המשתמש כברירת מחדל, לדחות מעקב זה כברירת מחדל או שהמשתמש יתבקש לדווח על מיקומו הפיזי בכל פעם שאתר מבקש זאת. אם לא הגדרת מדיניות זו, המערכת תשתמש ב-'AskGeolocation' והמשתמש יוכל לשנות זאת.</string><string id="DefaultGeolocationSetting_AllowGeolocation">אפשר לאתרים לעקוב אחר המיקום הפיזי של המשתמשים</string><string id="DefaultGeolocationSetting_BlockGeolocation">אל תאפשר לאף אתר לעקוב אחר המיקום הפיזי של המשתמשים</string><string id="DefaultGeolocationSetting_AskGeolocation">שאל בכל פעם שאתר כלשהו רוצה לעקוב אחר המיקום הפיזי של המשתמשים</string><string id="DefaultWebBluetoothGuardSetting">‏שליטה על השימוש ב-Web Bluetooth API</string><string id="DefaultWebBluetoothGuardSetting_Explain">‏מאפשרת לך לקבוע אם אתרים יכולים לקבל גישה אל התקני Bluetooth קרובים. ניתן לחסום את הגישה לחלוטין, או שהמשתמש יתבקש להעניק אישור בכל פעם שאתר רוצה לקבל גישה אל התקני Bluetooth קרובים.
+
+אם המדיניות הזו לא תוגדר, יעשה שימוש ב-'3' והמשתמש יוכל לשנות את ההגדרה.</string><string id="DefaultWebBluetoothGuardSetting_BlockWebBluetooth">‏אל תאפשר לאף אתר לבקש גישה אל התקני Bluetooth דרך ה-Web Bluetooth API</string><string id="DefaultWebBluetoothGuardSetting_AskWebBluetooth">‏התר לאתרים לבקש מהמשתמש רשות לגשת אל התקן Bluetooth קרוב</string><string id="AutoSelectCertificateForUrls">בחר אישורי לקוח באופן אוטומטי עבור אתרים אלו</string><string id="AutoSelectCertificateForUrls_Explain">‏מאפשרת לציין רשימה של דפוסי כתובות אתרים המציינים אתרים שעבורם Google Chrome צריך לבחור אישור לקוח באופן אוטומטי, אם האתר מבקש אישור.
+
+הערך צריך להיות מערך של מילוני JSON במחרוזת. כל מילון צריך להיות בתבנית { &quot;pattern&quot;: &quot;$URL_PATTERN&quot;, &quot;filter&quot; : $FILTER }, ו-$URL_PATTERN הוא דפוס להגדרת תוכן. $FILTER מגביל את אישורי הלקוח שמהם יבחר הדפדפן באופן אוטומטי. ללא קשר למסנן, ייבחרו רק אישורים שתואמים את בקשת האישור של השרת. אם התבנית של $FILTER היא { &quot;ISSUER&quot;: { &quot;CN&quot;: &quot;$ISSUER_CN&quot; } }, נוסף לכך נבחרים רק אישורי לקוח שמונפקים על ידי אישור עם CommonName $ISSUER_CN. אם $FILTER הוא המילון הריק {}, בחירת אישורי הלקוח לא מוגבלת מעבר לכך.
+
+אם המדיניות לא מוגדרת, לא תבוצע בחירה אוטומטית לאתרים.</string><string id="AutoSelectCertificateForUrlsDesc">בחר אישורי לקוח באופן אוטומטי עבור אתרים אלו</string><string id="CookiesAllowedForUrls">‏אפשר קובצי Cookie באתרים אלה</string><string id="CookiesAllowedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להגדיר קובצי Cookie. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultCookiesSetting', במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="CookiesAllowedForUrlsDesc">‏אפשר קובצי Cookie באתרים אלה</string><string id="CookiesBlockedForUrls">‏חסום קובצי Cookie באתרים אלה</string><string id="CookiesBlockedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר של אתרים שאין להם הרשאה להגדיר קובצי Cookie. אם מדיניות זו לא תוגדר, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים, בהתאם למדיניות DefaultCookiesSetting (אם היא מוגדרת) או לפי התצורה שקבע המשתמש.</string><string id="CookiesBlockedForUrlsDesc">‏חסום קובצי Cookie באתרים אלה</string><string id="CookiesSessionOnlyForUrls">‏אפשר קובצי Cookie להפעלה בלבד באתרים אלה</string><string id="CookiesSessionOnlyForUrls_Explain">‏מדיניות זו מאפשרת לך להגדיר רשימת דפוסים של כתובות אתרים שמציינים אתרים שמורשים להגדיר קובצי Cookie של הפעלות בלבד.
+
+אם מדיניות זו אינה מוגדרת, עבור כל האתרים ייעשה שימוש בערך ברירת המחדל הגלובלי מהמדיניות 'DefaultCookiesSetting', אם היא עצמה מוגדרת; אחרת, ייעשה שימוש בתצורה האישית של המשתמש.
+
+לתשומת לבך, אם Google Chrome פועל ב'מצב רקע', ייתכן שההפעלה לא תיסגר עם סגירת החלון האחרון של הדפדפן, אלא תישאר פעילה עד ליציאה מהדפדפן. לקבלת מידע נוסף על הגדרת התנהגות זו, עיין במדיניות 'BackgroundModeEnabled'.
+
+אם המדיניות &quot;RestoreOnStartup&quot; מוגדרת לשחזר כתובות אתרים מהפעלות קודמות, מדיניות זו לא תכובד, וקובצי Cookie יאוחסנו באתרים אלה לצמיתות.</string><string id="CookiesSessionOnlyForUrlsDesc">‏אפשר קובצי Cookie להפעלה בלבד באתרים אלה</string><string id="ImagesAllowedForUrls">אפשר תמונות באתרים אלה</string><string id="ImagesAllowedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להציג תמונות. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultImagesSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="ImagesAllowedForUrlsDesc">אפשר תמונות באתרים אלה</string><string id="ImagesBlockedForUrls">חסום תמונות באתרים אלה</string><string id="ImagesBlockedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להציג תמונות. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultImagesSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="ImagesBlockedForUrlsDesc">חסום תמונות באתרים אלה</string><string id="JavaScriptAllowedForUrls">‏אפשר JavaScript באתרים אלה</string><string id="JavaScriptAllowedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להפעיל JavaScript. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultJavaScriptSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="JavaScriptAllowedForUrlsDesc">‏אפשר JavaScript באתרים אלה</string><string id="JavaScriptBlockedForUrls">‏חסום JavaScript באתרים אלה</string><string id="JavaScriptBlockedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובת אתר שמציינים אתרים שאינם מורשים להפעיל JavaScript. אם מדיניות זו אינה מוגדרת, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים בין אם הם שייכים למדיניות 'DefaultJavaScriptSetting', אם היא מוגדרת, ובין אם הם שייכים לתצורה האישית של המשתמש.</string><string id="JavaScriptBlockedForUrlsDesc">‏חסום JavaScript באתרים אלה</string><string id="PluginsAllowedForUrls">מאשרת את השימוש בפלאגין Flash באתרים האלה</string><string id="PluginsAllowedForUrls_Explain">‏המדיניות הזו מאפשרת לך להגדיר רשימת תבניות של כתובות אתרים שמציינות אתרים שרשאים להריץ את הפלאגין Flash.
+
+אם לא מגדירים את המדיניות הזו, הערך הגלובלי שמוגדר כברירת מחדל ישמש בכל האתרים - מהמדיניות DefaultPluginsSetting, או מהתצורה האישית של המשתמש אם המדיניות DefaultPluginsSetting לא הוגדרה.</string><string id="PluginsAllowedForUrlsDesc">מאשרת את השימוש בפלאגין Flash באתרים האלה</string><string id="PluginsBlockedForUrls">חוסמת את הפלאגין Flash באתרים האלה</string><string id="PluginsBlockedForUrls_Explain">‏המדיניות הזו מאפשרת לך להגדיר רשימת תבניות של כתובות אתרים שמציינות אתרים שלא רשאים להריץ את הפלאגין Flash.
+
+אם לא מגדירים את המדיניות הזו, הערך הגלובלי שמוגדר כברירת מחדל ישמש בכל האתרים - מהמדיניות DefaultPluginsSetting, או מהתצורה האישית של המשתמש אם המדיניות DefaultPluginsSetting לא הוגדרה.</string><string id="PluginsBlockedForUrlsDesc">חוסמת את הפלאגין Flash באתרים האלה</string><string id="PopupsAllowedForUrls">אפשר חלונות קופצים באתרים אלה</string><string id="PopupsAllowedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור לפתוח חלונות קופצים. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultImagesSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="PopupsAllowedForUrlsDesc">אפשר חלונות קופצים באתרים אלה</string><string id="RegisteredProtocolHandlers">רשום מטפלים של פרוטוקול</string><string id="RegisteredProtocolHandlers_Explain">‏מדיניות זו מאפשרת לך לציין רשימת מטפלים של פרוטוקול. זו יכולה להיות מדיניות מומלצת בלבד. המאפיין |protocol| צריך להיות מוגדר לסכמה כגון 'mailto' והמאפיין |url| צריך להיות מוגדר לדפוס כתובת האתר של היישום המטפל בסכמה. הדפוס יכול לכלול '%s', ואם הוא קיים, הוא יוחלף בכתובת האתר המטופלת.
+
+המטפלים של הפרוטוקול הרשומים על ידי המדיניות מתמזגים עם המטפלים הרשומים על ידי המשתמש ושניהם זמינים לשימוש. המשתמש יכול לעקוף את המטפלים של הפרוטוקול שהותקנו על ידי מדיניות על ידי התקנת מטפל חדש המשמש כברירת מחדל, אך אינו יכול להסיר מטפל של פרוטוקול הרשום על ידי מדיניות.</string><string id="PopupsBlockedForUrls">חסום חלונות קופצים באתרים אלה</string><string id="PopupsBlockedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים ללא אישור לפתוח חלונות קופצים. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultPopupsSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="PopupsBlockedForUrlsDesc">חסום חלונות קופצים באתרים אלה</string><string id="NotificationsAllowedForUrls">אפשר התראות באתרים אלה</string><string id="NotificationsAllowedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להציג התראות. אם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultNotificationsSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="NotificationsAllowedForUrlsDesc">אפשר התראות באתרים אלה</string><string id="NotificationsBlockedForUrls">חסום התראות באתרים אלה</string><string id="NotificationsBlockedForUrls_Explain">‏מאפשר לך להגדיר רשימה של דפוסי כתובות אתר המפרטת אתרים עם אישור להציג התראות. ם מדיניות זו לא הוגדרה, המערכת תשתמש בערך ברירת המחדל הכללי עבור כל האתרים לפי המדיניות 'DefaultNotificationsSetting' במקרה שהוגדרה, או לפי התצורה האישית שקבע המשתמש במקרה שלא הוגדרה.</string><string id="NotificationsBlockedForUrlsDesc">חסום התראות באתרים אלה</string><string id="Attestation_group">הזדהות מרחוק</string><string id="AttestationEnabledForUser">הפעל הזדהות מרחוק עבור המשתמש</string><string id="AttestationEnabledForUser_Explain">‏אם ההגדרה נקבעה ל-true, המשתמש יכול להשתמש בחומרה במכשירי Chrome כדי לאשר מרחוק את זהותו לרשות שמנפיקה את אישורי הפרטיות באמצעות Enterprise Platform Keys API עם chrome.enterprise.platformKeys.challengeUserKey().
+
+אם ההגדרה נקבעה ל-false, או שלא נקבעה, קריאות ל-API ייכשלו ויוצג קוד שגיאה.</string><string id="AttestationExtensionWhitelist">‏תוספים המורשים להשתמש בממשק ה-API של הזדהות מרחוק</string><string id="AttestationExtensionWhitelist_Explain">‏מדיניות זו מציינת את התוספים המורשים להשתמש בפונקציה chrome.enterprise.platformKeys.challengeUserKey() של Enterprise Platform Keys API להזדהות מרחוק. כדי שאפשר יהיה להשתמש ב-API יש להוסיף את התוספים לרשימה הזו.
+
+אם תוסף אינו כלול ברשימה, או אם הרשימה אינה מוגדרת, הקריאה ל-API תיכשל ויוצג קוד שגיאה.</string><string id="AttestationExtensionWhitelistDesc">‏תוספים המורשים להשתמש בממשק ה-API של הזדהות מרחוק</string><string id="QuickUnlock_group">מדיניות לביטול נעילה מהיר</string><string id="QuickUnlockModeWhitelist">Configure allowed quick unlock modes</string><string id="QuickUnlockModeWhitelist_Explain">‏רשימת היתרים שקובעת אילו מצבים של ביטול נעילה מהיר המשתמש יכול להגדיר כדי לבטל את נעילת המסך.
+
+הערך מופיע כרשימה של מחרוזות; הערכים החוקיים ברשימה הם: &quot;all&quot; (הכל), &quot;PIN&quot;. הוספה של הערך &quot;all&quot; לרשימה פירושה שהמצב של ביטול נעילה מהיר זמין למשתמש, כולל במקרים עתידיים. אחרת, רק המצבים של ביטול נעילה מהיר שמופיעים ברשימה יהיו זמינים למשתמש.
+
+לדוגמה, כדי לאפשר מצב של ביטול נעילה מהיר, יש להשתמש בערך [&quot;all&quot;]. כדי לאפשר ביטול נעילה באמצעות PIN בלבד, יש להשתמש בערך[&quot;PIN&quot;]. כדי להשבית את כל המצבים של ביטול נעילה מהיר, יש להזין [].
+
+כברירת מחדל, מצבים של ביטול נעילה מהיר לא זמינים במכשירים מנוהלים.</string><string id="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</string><string id="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</string><string id="QuickUnlockTimeout_Explain">ההגדרה הזו קובעת את התדירות שבה מסך הנעילה יבקש להזין סיסמה כדי להמשיך להשתמש בביטול נעילה מהיר. בכל פעם שמסך הנעילה מופעל, אם ההזנה האחרונה של הסיסמה בוצעה לפני משך הזמן שהוגדר, ביטול הנעילה המהיר לא יהיה זמין בכניסה למסך הנעילה. אם המשתמש יישאר במסך הנעילה מעבר לפרק הזמן הזה, הוא יצטרך להזין סיסמה בפעם הבאה שיזין קוד שגוי או שייכנס שוב למסך הנעילה - הראשון מביניהם.
+
+אם ההגדרה הזו נקבעה, משתמשים שהגדירו ביטול נעילה מהיר יתבקשו להזין את הסיסמה במסך הנעילה בהתאם להגדרה הזו.
+
+אם ההגדרה הזו לא נקבעה, משתמשים שהגדירו ביטול נעילה מהיר יתבקשו להזין את הסיסמה במסך הנעילה בכל יום.</string><string id="QuickUnlockTimeout_SixHours">Password entry is required every six hours</string><string id="QuickUnlockTimeout_TweleveHours">Password entry is required every twelve hours</string><string id="QuickUnlockTimeout_Day">Password entry is required every day (24 hours)</string><string id="QuickUnlockTimeout_Week">Password entry is required every week (168 hours)</string><string id="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN</string><string id="PinUnlockMinimumLength_Explain">If the policy is set, the configured minimal PIN length is
+enforced. (The absolute minimum PIN length is 1; values less than 1
+are treated as 1.)
+
+If the policy is not set, a minimal PIN length of 6 digits is
+enforced. This is the recommended minimum.</string><string id="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN</string><string id="PinUnlockMaximumLength_Explain">If the policy is set, the configured maximal PIN length is enforced. A value of 0 or less means no maximum length; in that case the user may set a PIN as long as they want. If this setting is less than PinUnlockMinimumLength but greater than 0, the maximum length is the same as the minimum length.
+
+If the policy is not set, no maximum length is enforced.</string><string id="PinUnlockWeakPinsAllowed">Enables users to set weak PINs for the lock screen PIN</string><string id="PinUnlockWeakPinsAllowed_Explain">‏אם המדיניות מוגדרת כ-false, המשתמשים לא יוכלו להגדיר קודי PIN חלשים וקלים לניחוש.
+
+דוגמאות לקודי PIN חלשים: קודים שמכילים רק ספרה אחת (1111), קודים שהספרות בהם גדלות ב-1 (1234), קודים שהספרות בהם קטנות ב-1 (4321) וקודים נפוצים מדי.
+
+כאשר המערכת קובעת שקוד PIN הוא חלש, כברירת מחדל למשתמשים תוצג אזהרה ולא שגיאה.</string><string id="PasswordManager_group">מנהל הסיסמאות</string><string id="PasswordManagerEnabled">אפשר שמירה של סיסמאות במנהל הסיסמאות</string><string id="PasswordManagerEnabled_Explain">If this setting is enabled, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site.
+
+If this settings is disabled, users cannot save new passwords but they
+may still use passwords that have been saved previously.
+
+If this policy is enabled or disabled, users cannot change or override it in Google Chrome. If this policy is unset, password saving is allowed (but can be turned off by the user).</string><string id="PowerManagement_group">ניהול צריכת החשמל</string><string id="LidCloseAction">פעולה שיש לבצע כשהמשתמש סוגר את המכסה</string><string id="LidCloseAction_Explain">When this policy is set, it specifies the action that Google Chrome OS takes when the user closes the device's lid.
+
+When this policy is unset, the default action is taken, which is suspend.
+
+If the action is suspend, Google Chrome OS can separately be configured to either lock or not lock the screen before suspending.</string><string id="LidCloseAction_LidCloseActionSuspend">השהה</string><string id="LidCloseAction_LidCloseActionLogout">הוצא את המשתמש מהמערכת</string><string id="LidCloseAction_LidCloseActionShutdown">כיבוי</string><string id="LidCloseAction_LidCloseActionDoNothing">אל תעשה דבר</string><string id="PowerManagementUsesAudioActivity">ציון האם פעילות אודיו משפיעה על ניהול צריכת החשמל</string><string id="PowerManagementUsesAudioActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while audio is playing. This prevents the idle timeout from being reached and the idle action from being taken. However, screen dimming, screen off and screen lock will be performed after the configured timeouts, irrespective of audio activity.
+
+If this policy is set to False, audio activity does not prevent the user from being considered idle.</string><string id="PowerManagementUsesVideoActivity">ציין האם פעילות וידאו משפיעה על ניהול צריכת החשמל</string><string id="PowerManagementUsesVideoActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while video is playing. This prevents the idle delay, screen dim delay, screen off delay and screen lock delay from being reached and the corresponding actions from being taken.
+
+If this policy is set to False, video activity does not prevent the user from being considered idle.</string><string id="PresentationScreenDimDelayScale">האחוז שלפיו יש לדרג את ההשהיה לפני עמעום המסך במצב מצגת</string><string id="PresentationScreenDimDelayScale_Explain">הגדרת האחוז שלפיו יש לדרג את ההשהיה לפני עמעום המסך כשהמכשיר במצב מצגת.
+
+אם המדיניות הזו מוגדרת, היא מציינת את האחוז שלפיו מדורגת ההשהיה לפני עמעום המסך כשהמכשיר במצב מצגת. כשההשהיה לפני עמעום המסך מדורגת, ההשהיות לפני כיבוי המסך, נעילת המסך ומצב לא פעיל מותאמות על מנת לשמר את אותו מרחק מההשהיה לפני עמעום המסך כפי שהוגדר במקור.
+
+אם המדיניות הזו לא מוגדרת, נעשה שימוש בפקטור דירוג שנקבע כברירת מחדל.
+
+על פקטור הדירוג להיות 100% או יותר. אין להשתמש בערכים שיקצרו יותר מהרגיל את ההשהיה לפני עמעום המסך במצב מצגת.</string><string id="AllowScreenWakeLocks">אפשר נעילות של התעוררות מסך</string><string id="AllowScreenWakeLocks_Explain">‏מדיניות זו מציינת אם נעילות של התעוררות מסך מותרות. תוספים עשויים לבקש נעילות של התעוררות מסך באמצעות ממשק ה-API של ניהול צריכת החשמל.
+
+אם מדיניות זו מוגדרת ל-true או מושארת ללא הגדרה, נעילות של התעוררות מסך יכובדו עבור ניהול צריכת חשמל.
+
+אם מדיניות זו מוגדרת ל-false‏, בקשות לנעילת התעוררות מסך לא יכובדו.</string><string id="UserActivityScreenDimDelayScale">האחוז שלפיו תדורג השהיית עמעום המסך אם המשתמש נעשה פעיל לאחר העמעום</string><string id="UserActivityScreenDimDelayScale_Explain">הגדרת האחוז שלפיו ייקבע שינוי קנה המידה של השהיית עמעום המסך כאשר מובחנת פעילות משתמש בזמן שהמסך מעומעם או מיד לאחר כיבוי המסך.
+
+אם מדיניות זו מוגדרת, היא מציינת את האחוז שלפיו ייקבע שינוי קנה המידה של השהיית עמעום המסך כאשר מובחנת פעילות משתמש בזמן שהמסך מעומעם או מיד לאחר כיבוי המסך. בעת שינוי קנה המידה של עמעום המסך, ההשהיות של כיבוי מסך, נעילת מסך ומצב סרק יותאמו לשמירה על אותם הפרשים מהשהיית עמעום המסך שהוגדרו במקור.
+
+אם מדיניות זו אינה מוגדרת, ייעשה שימוש בגורם ברירת מחדל של קנה מידה.
+
+גורם קנה המידה חייב להיות לפחות 100%.</string><string id="WaitForInitialUserActivity">המתן לפעילות משתמש התחלתית</string><string id="WaitForInitialUserActivity_Explain">‏מציינת האם הגבלת אורך ההפעלה והשהיית ניהול צריכת החשמל צריכות להתחיל לרוץ רק אחרי זיהוי הפעילות הראשונה של משתמש בהפעלה.
+
+אם המדיניות הזו מוגדרת כ-true, הגבלת אורך ההפעלה והשהיית ניהול צריכת החשמל לא מתחילות לרוץ עד לאחר זיהוי הפעילות הראשונה של המשתמש בהפעלה.
+
+אם המדיניות מוגדרת כ-false, או אינה מוגדרת כלל, הגבלת אורך ההפעלה והשהיית ניהול צריכת החשמל מתחילות לרוץ מיד בתחילת ההפעלה.</string><string id="PowerManagementIdleSettings">הגדרות של ניהול צריכת חשמל כשהמשתמש אינו פעיל</string><string id="PowerManagementIdleSettings_Explain">This policy controls multiple settings for the power management strategy when the user becomes idle.
+
+There are four types of action:
+* The screen will be dimmed if the user remains idle for the time specified by |ScreenDim|.
+* The screen will be turned off if the user remains idle for the time specified by |ScreenOff|.
+* A warning dialog will be shown if the user remains idle for the time specified by |IdleWarning|, telling the user that the idle action is about to be taken.
+* The action specified by |IdleAction| will be taken if the user remains idle for the time specified by |Idle|.
+
+For each of above actions, the delay should be specified in milliseconds, and needs to be set to a value greater than zero to trigger the corresponding action. In case the delay is set to zero, Google Chrome OS will not take the corresponding action.
+
+For each of the above delays, when the length of time is unset, a default value will be used.
+
+Note that |ScreenDim| values will be clamped to be less than or equal to |ScreenOff|, |ScreenOff| and |IdleWarning| will be clamped to be less than or equal to |Idle|.
+
+|IdleAction| can be one of four possible actions:
+* |Suspend|
+* |Logout|
+* |Shutdown|
+* |DoNothing|
+
+When the |IdleAction| is unset, the default action is taken, which is suspend.
+
+There are also separate settings for AC power and battery.
+</string><string id="ScreenLockDelays">פרקי זמן לנעילת מסך</string><string id="ScreenLockDelays_Explain">מציין את פרק הזמן של חוסר פעילות מצד המשתמש, שלאחריו המסך ננעל בזמן שהמכשיר פועל על סוללה או כשהוא מחובר לשקע החשמל שבקיר.
+
+כשפרק הזמן מוגדר לערך הגדול מאפס, הוא מייצג את פרק הזמן הנדרש של חוסר פעילות מצד המשתמש לפני ש-Google Chrome OS נועל את המסך.
+
+כשפרק הזמן הזה מוגדר לאפס, Google Chrome OS אינו נועל את המסך בזמן חוסר פעילות של המשתמש.
+
+אם לא הוגדר פרק זמן, ייעשה שימוש בברירת מחדל של פרק זמן.
+
+הדרך המומלצת לנעול את המסך בזמן של חוסר פעילות היא להפעיל נעילת מסך בהשעייה, ולהגדיר את Google Chrome OS לביצוע ההשעייה לאחר שחלף פרק הזמן של חוסר הפעילות. יש להשתמש במדיניות זו רק כאשר נעילת המסך צריכה להתרחש הרבה לפני ההשעייה, או כאשר אינך מעוניין להשתמש כלל בהשעייה בזמן חוסר פעילות.
+
+יש לציין את פרק הזמן באלפיות שנייה. הערכים צריכים להיות קטנים יותר מפרק הזמן של חוסר פעילות.</string><string id="DefaultSearchProvider_group">ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderEnabled">הפעל את ספק החיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderEnabled_Explain">Enables the use of a default search provider.
+
+If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL.
+
+You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider.
+
+If you disable this setting, no search is performed when the user enters non-URL text in the omnibox.
+
+If you enable or disable this setting, users cannot change or override this setting in Google Chrome.
+
+If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="DefaultSearchProviderName">שם ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderName_Explain">‏מציין את שם ספק החיפוש המוגדר כברירת מחדל. אם נשאר ריק או לא מוגדר, המערכת תשתמש בשם המארח שצוין על ידי כתובת האתר של החיפוש. מדיניות זו נשקלת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderKeyword">מילת מפתח של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderKeyword_Explain">‏מציין את מילת המפתח, שהיא קיצור שבו המערכת משתמשת בסרגל הכתובות כדי להפעיל את החיפוש עבור ספק זה. מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, אף מילת מפתח לא תפעיל את ספק החיפוש. מדיניות זו תקפה רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderSearchURL">כתובת אתר של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderSearchURL_Explain">‏מציינת את כתובת האתר של מנוע החיפוש שבו נעשה שימוש לביצוע חיפוש המוגדר כברירת מחדל. כתובת האתר צריכה להכיל את המחרוזת '{searchTerms}', אשר תוחלף בעת ביצוע השאילתה במונחים שהמשתמש מחפש.
+
+ניתן לציין את כתובת האתר של החיפוש ב-Google כ: '{google:baseURL}search?q={searchTerms}&amp;{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}'
+
+יש להגדיר את האפשרות הזו כאשר המדיניות 'DefaultSearchProviderEnabled' מופעלת, והיא תקפה רק במקרה זה.</string><string id="DefaultSearchProviderSuggestURL">כתובת אתר שמציעה ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderSuggestURL_Explain">‏מציינת את כתובת האתר של מנוע החיפוש שבו נעשה שימוש כדי לספק הצעות חיפוש. כתובת האתר צריכה להכיל את המחרוזת '{searchTerms}', אשר תוחלף כשמבצעים שאילתה בטקסט שהמשתמש הקליד עד כה.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, לא ייעשה שימוש בכתובות אתר מוצעות.
+
+ניתן לציין את כתובת האתר המוצעת של Google כ: '{google:baseURL}complete/search?output=chrome&amp;q={searchTerms}'
+
+מדיניות זו תקפה רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderInstantURL">‏כתובת אתר Instant של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderInstantURL_Explain">‏מציינת את כתובת האתר של מנוע החיפוש שבו נעשה שימוש כדי לספק תוצאות מיידיות. כתובת האתר צריכה להכיל את המחרוזת '{searchTerms}', אשר תוחלף במועד השאילתה בטקסט שהמשתמש הזין עד כה.
+
+מדיניות זו היא אופציונלית. אם היא לא מוגדרת, לא יסופקו תוצאות חיפוש מיידיות.
+
+ניתן לציין את כתובת האתר של התוצאות המיידיות של Google כ: '{google:baseURL}suggest?q={searchTerms}'
+
+מדיניות זו תקפה רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderIconURL">סמל של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderIconURL_Explain">‏מציין את כתובת האתר של הסמל המועדף של ספק החיפוש המוגדר כברירת מחדל. מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, לא יוצג סמל עבור ספק החיפוש. מדיניות זו תקפה רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderEncodings">קידודים של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderEncodings_Explain">‏מציין את קידודי התווים שנתמכים על ידי ספק החיפוש. קידודים הם שמות דפי קידוד כגון UTF-8‏, GB2312 ו-ISO-8859-1. יש להשתמש בהם לפי הסדר שבו הם סופקו. מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, ברירת המחדל שבה המערכת תשתמש הוא UTF-8. מדיניות זו תקפה רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderEncodingsDesc">קידודים של ספק חיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderAlternateURLs">רשימה של כתובות אתרים חלופיות עבור ספק החיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderAlternateURLs_Explain">‏מדיניות זו מגדירה רשימה של כתובות אתרים חלופיות שיכולות לשמש לחילוץ מונחי חיפוש ממנוע החיפוש. כתובות האתרים יכילו את המחרוזת '{searchTerms}', שתשמש לחילוץ מונחי החיפוש.
+
+מדיניות זו היא אופציונלית. אם לא הוגדרה, לא ייעשה שימוש בכתובות אתרים חלופיות לחילוץ מונחי חיפוש.
+
+מדיניות זו תכובד רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת</string><string id="DefaultSearchProviderAlternateURLsDesc">רשימה של כתובות אתרים חלופיות עבור ספק החיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderSearchTermsReplacementKey">פרמטר השולט במיקום של מונח החיפוש עבור ספק החיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderSearchTermsReplacementKey_Explain">‏אם המדיניות הזו מוגדרת, וכתובת אתר של חיפוש המוצעת מסרגל הכתובות מכילה את הפרמטר הזה במחרוזת השאילתה או במזהה המקטע, ההצעה תציג את מונחי החיפוש ואת ספק החיפוש במקום את כתובת האתר המקורית של החיפוש.
+
+המדיניות הזו אופציונלית. אם היא לא מוגדרת, לא תבוצע החלפה של מונח חיפוש.
+
+מדיניות זו מבוצעת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderImageURL">פרמטר המספק תכונה של חיפוש לפי תמונות עבור ספק החיפוש המוגדר כברירת המחדל</string><string id="DefaultSearchProviderImageURL_Explain">‏מדיניות זו מציינת את כתובת האתר של מנוע החיפוש שנעשה בו שימוש לביצוע חיפוש תמונות. בקשות החיפוש יישלחו באמצעות שיטת GET. אם מוגדרת המדיניות DefaultSearchProviderImageURLPostParams, בקשות לחיפוש תמונות יישלחו במקום זאת באמצעות שיטת POST.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, לא ייעשה שימוש בחיפוש תמונות.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderNewTabURL">כתובת האתר של דף הכרטיסייה החדשה של ספק החיפוש המוגדר כברירת מחדל</string><string id="DefaultSearchProviderNewTabURL_Explain">‏מציין את כתובת האתר שמנוע חיפוש משתמש בה לאספקת דף כרטיסייה חדשה.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, לא יסופק דף כרטיסייה חדשה.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderSearchURLPostParams">‏פרמטרים עבור כתובת אתר לחיפוש שמשתמשת ב-POST</string><string id="DefaultSearchProviderSearchURLPostParams_Explain">‏מדיניות זו מציינת את הפרמטרים שנעשה בהם שימוש בעת חיפוש של כתובת אתר באמצעות POST. היא מורכבת מצמדים של שם/ערך, המופרדים באמצעות פסיק. אם ערך מסוים הוא פרמטר תבנית, למשל {searchTerms} בדוגמה שלמעלה, הוא יוחלף על ידי נתונים אמיתיים של מונחי חיפוש.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, תישלח בקשה לחיפוש באמצעות שיטת GET.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderSuggestURLPostParams">‏פרמטרים עבור כתובת אתר להצעה שמשתמשת ב-POST</string><string id="DefaultSearchProviderSuggestURLPostParams_Explain">‏מדיניות זו מציינת את הפרמטרים שנעשה בהם שימוש בעת ביצוע של חיפוש הצעות באמצעות POST. היא מורכבת מצמדים של שם/ערך, המופרדים באמצעות פסיק. אם ערך מסוים הוא פרמטר תבנית, למשל {searchTerms} בדוגמה שלמעלה, הוא יוחלף על ידי נתונים אמיתיים של מונחי חיפוש.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, תישלח בקשה לחיפוש הצעות באמצעות שיטת GET.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderInstantURLPostParams">‏פרמטרים עבור כתובת אתר של מופע שמשתמשת ב-POST</string><string id="DefaultSearchProviderInstantURLPostParams_Explain">‏מדיניות זו מציינת את הפרמטרים שנעשה בהם שימוש בעת ביצוע של חיפוש מיידי באמצעות POST. היא מורכבת מצמדים של שם/ערך, המופרדים באמצעות פסיק. אם ערך מסוים הוא פרמטר תבנית, למשל {searchTerms} בדוגמה שלמעלה, הוא יוחלף על ידי נתונים אמיתיים של מונחי חיפוש.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, תישלח בקשה לחיפוש מיידי באמצעות שיטת GET.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="DefaultSearchProviderImageURLPostParams">‏פרמטרים עבור כתובת אתר של תמונה שמשתמשת ב-POST</string><string id="DefaultSearchProviderImageURLPostParams_Explain">‏מדיניות זו מציינת את הפרמטרים שנעשה בהם שימוש בעת ביצוע של חיפוש תמונות באמצעות POST. היא מורכבת מצמדים של שם/ערך, המופרדים באמצעות פסיק. אם ערך מסוים הוא פרמטר תבנית, למשל {imageThumbnail} בדוגמה שלמעלה, הוא יוחלף על ידי נתונים אמיתיים של תמונות ממוזערות של תמונות.
+
+מדיניות זו היא אופציונלית. אם היא אינה מוגדרת, תישלח בקשה לחיפוש תמונות באמצעות שיטת GET.
+
+מדיניות זו מכובדת רק אם המדיניות 'DefaultSearchProviderEnabled' מופעלת.</string><string id="Extensions_group">תוספים</string><string id="ExtensionInstallBlacklist">הגדר רשימה שחורה של התקנת תוספים</string><string id="ExtensionInstallBlacklist_Explain">המדיניות מאפשרת לציין את התוספים שאותם המשתמשים לא יכולים להתקין. אם הותקנו כבר תוספים שנכללים ברשימת התוספים האסורים לשימוש, הם יושבתו והמשתמשים לא יוכלו להפעיל אותם. תוסף מושבת שיוסר מרשימת התוספים האסורים יופעל מחדש באופן אוטומטי.
+
+ערך '*' ברשימת התוספים האסורים פירושו שכל התוספים כלולים ברשימה, אלא אם הם נוספו באופן מפורש לרשימת התוספים המורשים לשימוש.
+
+אם המדיניות לא הוגדרה, המשתמש יכול להתקין כל תוסף ב-Google Chrome.</string><string id="ExtensionInstallBlacklistDesc">הגדר רשימה שחורה של התקנת תוספים</string><string id="ExtensionInstallWhitelist">הגדר רשימת היתרים של התקנת תוספים</string><string id="ExtensionInstallWhitelist_Explain">המדיניות מאפשרת לך לציין אילו תוספים אינם כפופים לרשימה השחורה. ערך רשימה שחורה של * פירושו שכל התוספים נמצאים ברשימה השחורה והמשתמשים יכולים להתקין תוספים שמופיעים ברשימת ההיתרים בלבד. כברירת מחדל, כל התוספים מופיעים ברשימת ההיתרים, אך אם כל התוספים נוספו לרשימה השחורה בהתאם למדיניות, ניתן להשתמש ברשימת ההיתרים כדי לעקוף את המדיניות.</string><string id="ExtensionInstallWhitelistDesc">הגדר רשימת היתרים של התקנת תוספים</string><string id="ExtensionInstallForcelist">הגדרת הרשימה של אפליקציות ותוספים המותקנים בכפייה</string><string id="ExtensionInstallForcelist_Explain">Specifies a list of apps and extensions that are installed silently,
+without user interaction, and which cannot be uninstalled nor
+disabled by the user. All permissions requested by the
+apps/extensions are granted implicitly, without user interaction,
+including any additional permissions requested by future versions of
+the app/extension. Furthermore, permissions are granted for the
+enterprise.deviceAttributes and enterprise.platformKeys extension
+APIs. (These two APIs are not available to apps/extensions that are
+not force-installed.)
+
+This policy takes precedence over a potentially conflicting ExtensionInstallBlacklist policy. If an app or extension that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+For Windows instances that are not joined to a MicrosoftÂ® Active
+DirectoryÂ® domain, forced installation is limited to apps and
+extensions listed in the Chrome Web Store.
+
+Note that the source code of any extension may be altered by users via Developer Tools (potentially rendering the extension dysfunctional). If this is a concern, the DeveloperToolsDisabled policy should be set.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.
+
+If this policy is left not set, no apps or extensions are installed automatically and the user can uninstall any app or extension in Google Chrome.</string><string id="ExtensionInstallForcelistDesc">הגדרת הרשימה של אפליקציות ותוספים המותקנים בכפייה</string><string id="ExtensionInstallSources">הגדר את מקורות התקנת התוספים, היישומים והסקריפטים של משתמשים</string><string id="ExtensionInstallSources_Explain">Allows you to specify which URLs are allowed to install extensions, apps, and themes.
+
+Starting in Google Chrome 21, it is more difficult to install extensions, apps, and user scripts from outside the Chrome Web Store. Previously, users could click on a link to a *.crx file, and Google Chrome would offer to install the file after a few warnings. After Google Chrome 21, such files must be downloaded and dragged onto the Google Chrome settings page. This setting allows specific URLs to have the old, easier installation flow.
+
+Each item in this list is an extension-style match pattern (see https://developer.chrome.com/extensions/match_patterns). Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (i.e. the referrer) must be allowed by these patterns.
+
+ExtensionInstallBlacklist takes precedence over this policy. That is, an extension on the blacklist won't be installed, even if it happens from a site on this list.</string><string id="ExtensionInstallSourcesDesc">הגדר את מקורות התקנת התוספים, היישומים והסקריפטים של משתמשים</string><string id="ExtensionAllowedTypes">הגדרת סוגי יישומים/תוספים מותרים</string><string id="ExtensionAllowedTypes_Explain">‏קביעה של סוגי היישומים/התוספים המותרים להתקנה והגבלת הגישה לזמן ריצה.
+
+הגדרה זו מוסיפה לרשימת היתרים את סוגי היישומים/התוספים המותרים להתקנה ב-Google Chrome ואת המארחים שיכולים ליצור איתם אינטראקציה. הערך הוא רשימה של מחרוזות, שכל אחת מהן צריכה להיות מאחד הסוגים הבאים: &quot;extension&quot;‏,‏ &quot;theme&quot;‏,‏ &quot;user_script&quot;‏,‏ &quot;hosted_app&quot;‏,‏ &quot;legacy_packaged_app&quot;‏,‏ &quot;platform_app&quot;. במסמכי התיעוד של תוספי Google Chrome קיים מידע נוסף על סוגים אלה.
+
+הערה: המדיניות גם משפיעה על תוספים ויישומים שמתבצעת אכיפה של ההתקנה שלהם דרך ExtensionInstallForcelist.
+
+כאשר נקבעת הגדרה זו, תוספים/יישומים מסוג שאינו ברשימה לא יותקנו.
+
+כאשר לא נקבעת הגדרה זו, לא מתבצעת אכיפה של סוגי התוספים/היישומים המותרים להתקנה.</string><string id="ExtensionAllowedTypesDesc">הגדרת סוגי יישומים/תוספים מותרים</string><string id="ExtensionSettings">הגדרות ניהול תוספים</string><string id="ExtensionSettings_Explain">‏קובעת הגדרות של ניהול תוספים בשביל Google Chrome.
+
+
+המדיניות הזו שולטת במספר הגדרות, כולל הגדרות שנשלטות על-ידי סעיפי מדיניות קיימים שקשורים לתוספים. המדיניות הזו תעקוף מדיניות מדור קודם אם שתיהן הוגדרו.
+
+המדיניות הזו ממפה מזהה תוסף או כתובת אתר של עדכון אל התצורה שלהם. במזהי תוספים, התצורה תיושם רק על התוסף שצוין. אפשר לקבוע תצורת ברירת מחדל בשביל המזהה המיוחד
+&quot;*&quot;, שתחול על כל התוספים שלא הוגדרה עבורם תצורה מותאמת אישית במדיניות הזו. בכתובת אתר של עדכון, התצורה תחול על כל התוספים שצוינה עבורם אותה כתובת אתר של עדכון במניפסט של התוסף הזה, כפי שמתואר ב-https://developer.chrome.com/extensions/autoupdate.
+
+התצורה של כל תוסף (או תוספים עם אותה כתובת אתר של עדכון) היא מילון נוסף שיכול להכיל את השדות המצוינים בהמשך.
+
+&quot;installation_mode&quot;: ממפה אל מחרוזת שמציינת את מצב ההתקנה של התוסף. המחרוזות החוקיות הן:
+* &quot;allowed&quot;: מאפשרת למשתמש להתקין את התוסף. זו התנהגות ברירת המחדל.
+* &quot;blocked&quot;: חוסמת את התקנת התוסף.
+* &quot;force_installed&quot;: התוסף מותקן באופן אוטומטי והמשתמש לא יכול להסיר אותו.
+* &quot;normal_installed&quot;: התוסף מותקן באופן אוטומטי, אבל המשתמש יכול להשבית אותו.
+
+אפשר להגדיר את &quot;installation_mode&quot; גם בשביל תוספים מרובים, כולל התוסף &quot;*&quot; (כהגדרות ברירת מחדל) ותוספים עם אותה כתובת אתר של עדכון. במקרה הזה אפשר להשתמש רק בערכים &quot;allowed&quot; או &quot;blocked&quot;.
+
+אם המצב מוגדר כ- &quot;force_installed&quot; או &quot;normal_installed&quot; יש להגדיר גם &quot;update_url&quot;. לתשומת ליבך, כתובת האתר של עדכון שהוגדרה במדיניות הזו משמשת רק להתקנה הראשונית. עדכונים נוספים של התוסף ישתמשו בכתובת האתר של עדכון שצוינה במניפסט של התוסף. כתובת האתר של העדכון צריכה להוביל אל מסמך Update Manifest XML כפי שצוין למעלה.
+
+&quot;blocked_permissions&quot;: ממפה אל רשימת מחרוזות שמציינות את הרשאות ה-API החסומות בשביל התוסף. שמות ההרשאות זהים למחרוזות ההרשאה שצוינו במניפסט התוסף, כפי שמתואר ב-https://developer.chrome.com/extensions/declare_permissions. אפשר גם לקבוע את ההגדרה הזו בשביל תוסף &quot;*&quot;. אם לתוסף דרושה הרשאה שנמצאת ברשימת החסימות, לא יתאפשר לו להיטען. אם הוא מכיל הרשאה חסומה כדרישה אופציונלית, הוא יטופל בדרך הרגילה, אבל בקשת הרשאות סותרות תידחה באופן אוטומטי בזמן הריצה.
+
+&quot;allowed_permissions&quot;: דומה ל-&quot;blocked_permissions&quot;, אבל מתירה באופן מפורש הרשאות מסוימות שייתכן כי הן חסומות על-ידי רשימה גלובלית של הרשאות חסומות. לכן לא ניתן להגדיר אותה בשביל תוסף &quot;*&quot;. לתשומת ליבך, ההגדרה הזו לא מעניקה לתוספים באופן אוטומטי הרשאות שהוענקו.
+
+&quot;minimum_version_required&quot;: ממפה אל מחרוזת גירסה. פורמט הגירסה זהה לפורמט שבו נעשה שימוש במניפסט התוסף, כפי שמתואר ב-https://developer.chrome.com/apps/manifest/version. תוסף שגירסתו ישנה יותר מהגירסה המינימלית שצוינה יושבת. כלל זה חל גם על תוספים שהותקנו באופן כפוי.
+
+בהגדרות הבאות אפשר להשתמש רק בתצורת &quot;*&quot;:
+
+&quot;install_sources&quot;: כל פריט ברשימה הזו הוא תבנית התאמה בסגנון תוסף (https://developer.chrome.com/extensions/match_patterns). משתמשים יוכלו להתקין בקלות פריטים מכל כתובת אתר שתואמת לפריט ברשימה הזו. התבניות האלה חייבות להתיר את המיקום של הקובץ *.crx וגם את הדף שממנו מתחילה ההורדה (כלומר, הגורם המפנה).
+
+&quot;allowed_types&quot;: ההגדרה הזו מכניסה לרשימת ההיתרים את סוגי התוספים/אפליקציות שאפשר להתקין ב-Google Chrome.  הערך הוא רשימת מחרוזות, שאחת מהן צריכה להיות אחת מהבאות: &quot;extension&quot;, &quot;theme&quot;, &quot;user_script&quot;, &quot;hosted_app&quot;, &quot;legacy_packaged_app&quot;, &quot;platform_app&quot;. יש לעיין בתיעוד התוסף Google Chrome לקבלת עוד מידע לגבי הסוגים האלה.
+&quot;blocked_install_message&quot;: אם משתמש מנסה להתקין תוסף, אבל הוא חסום על-ידי מדיניות, חנות האינטרנט של Chrome מציגה הודעת שגיאה גנרית. ההגדרה הזו מאפשרת לך להוסיף טקסט להודעת השגיאה. אפשר להשתמש בטקסט הזה כדי להפנות משתמשים אל מחלקת התמיכה שלך, להסביר למה תוסף מסוים נחסם או להציג מידע אחר. הודעת השגיאה הזו תיקטע אם היא תהיה ארוכה מ-1,000 תווים.
+&quot;runtime_blocked_hosts&quot;: מקבלת רשימה של מארחים שתוסף לא יורשה לבצע איתם אינטראקציה. האינטראקציה כוללת הוספת JavaScript, שינוי והצגה של webRequests / webNavigation, הצגה ושינוי של קובצי Cookie. הפורמט דומה לדפוסי התאמה https://developer.chrome.com/extensions/match_patterns כשההבדל היחיד הוא שאין להגדיר נתיבים. לדוגמה, &quot;‎*://*.example.com&quot;. האפשרות הזו תומכת גם בשימוש אפקטיבי בתווים כלליים לחיפוש מסוג TLD. לדוגמה &quot;‎*://example.*‎&quot;.
+&quot;runtime_allowed_hosts&quot;: מקבלת רשימה של מארחים שתוסף יכול לבצע איתם אינטראקציה, גם אם הם לא רשומים ב-&quot;runtime_blocked_hosts&quot;. הפורמט זהה ל-&quot;runtime_blocked_hosts&quot;.
+</string><string id="Drive_group">‏הגדרת אפשרויות Google Drive</string><string id="DriveDisabled">‏משביתה את Google Drive ביישום 'קבצים' של Google Chrome OS</string><string id="DriveDisabled_Explain">‏מבטלת את הסנכרון של Google Drive ביישום ה'קבצים' של Google Chrome OS כשמוגדר כ-true. במקרה זה, נתונים אינם מועלים ל- Google Drive.
+
+אם לא מוגדר, או אם מוגדר כ-false, משתמשים יוכלו להעביר קבצים ל-Google Drive.</string><string id="DriveDisabledOverCellular">‏השבתה של Google Drive בחיבורים סלולריים ביישום 'קבצים' של Google Chrome OS</string><string id="DriveDisabledOverCellular_Explain">‏כאשר היא מוגדרת כ-true, משביתה את הסנכרון של Google Drive ביישום 'קבצים' של Google Chrome OS בעת שימוש בחיבור סלולרי. במקרה זה, נתונים מסונכרנים עם Google Drive רק כשיש חיבור דרך Wi-Fi או Ethernet.
+
+אם לא הוגדרה, או אם הוגדרה כ-false, משתמשים יוכלו להעביר קבצים ל-Google Drive באמצעות חיבור סלולרי.</string><string id="HTTPAuthentication_group">‏כללי מדיניות לאימות HTTP</string><string id="AuthSchemes">סכימות אימות נתמכות</string><string id="AuthSchemes_Explain">‏מציינת אילו סכמות אימות HTTP נתמכות ב-Google Chrome.
+
+הערכים האפשריים הם basic,‏ digest‏, ntlm ו-negotiate. ערכים מרובים יש להפריד בפסיקים.
+
+אם מדיניות זו לא תוגדר, המערכת תשתמש בכל ארבע הסכמות.</string><string id="DisableAuthNegotiateCnameLookup">‏השבת חיפוש CNAME בעת ניהול משא ומתן של אימות Kerberos</string><string id="DisableAuthNegotiateCnameLookup_Explain">‏מציין אם ה-Kerberos SPN שנוצר מבוסס על שם ה-DNS הקנוני או על השם המקורי שהוזן. אם תהפוך הגדרה זו לפעילה, המערכת תדלג על חיפוש CNAME ותשתמש בשם השרת כפי שהוזן. אם תשבית הגדרה זו או לא תגדיר אותה, שם הקנוני של השרת ייקבע באמצעות חיפוש CNAME.</string><string id="EnableAuthNegotiatePort">‏כלול יציאה שאינה סטנדרטית ב-SPN של Kerberos</string><string id="EnableAuthNegotiatePort_Explain">‏המדיניות מציינת אם ה-SPN של Kerberos שנוצר אמור לכלול יציאה שאינה סטנדרטית. אם תהפוך הגדרה זו לפעילה ותוזן יציאה שאינה סטנדרטית (כלומר יציאה שאינה 80 או 443), היא תיכלל ב-SPN של Kerberos שנוצר. אם תשבית הגדרה זו או לא תגדיר אותה כלל, ה-SPN של Kerberos שנוצר לא יכלול יציאה כלשהי בכל מקרה.</string><string id="AuthServerWhitelist">רשימת היתרים של שרת אימות</string><string id="AuthServerWhitelist_Explain">‏מדיניות זו מציינת אילו שרתים יש לכלול ברשימת ההיתרים לגבי אימות משולב. אימות משולב מופעל רק כאשר Google Chrome מקבל אתגר אימות משרת proxy או משרת המופיע ברשימת מורשים זו.
+
+הפרד בין שמות מרובים של שרתים באמצעות פסיקים. ניתן להשתמש בתווים כלליים (*).
+
+אם לא תגדיר מדיניות זו, Google Chrome ינסה לזהות אם השרת נמצא באינטראנט, ורק אז יגיב לבקשות IWA. אם שרת יזוהה כמחובר לאינטרנט, Google Chrome יתעלם מבקשות IWA המגיעות ממנו.</string><string id="AuthNegotiateDelegateWhitelist">‏רשימת היתרים של שרת האצלה של Kerberos</string><string id="AuthNegotiateDelegateWhitelist_Explain">שרתים ש-Google Chrome עשוי להאציל אליהם.
+
+הפרד באמצעות פסיקים בין שמות מרובים של שרתים. ניתן להשתמש בתווים כלליים (*).
+
+אם לא תגדיר מדיניות זו, Google Chrome לא יאציל פרטי כניסה של משתמש, גם אם שרת מתגלה כמחובר לאינטראנט.</string><string id="AllowCrossOriginAuthPrompt">‏בקשות אימות בסיסיות של HTTP ממקורות שונים</string><string id="AllowCrossOriginAuthPrompt_Explain">‏קובע אם תוכן משני של צד שלישי בדף מורשה להציג חלון קופץ של תיבת דו-שיח לאימות בסיסי ב-HTTP.
+
+בדרך כלל האפשרות הזו מושבתת כדי להגן מפני דיוג. אם המדיניות הזו אינה מוגדרת, האפשרות הזו מושבתת ותוכן משני של צד שלישי לא יורשה להציג חלון קופץ של תיבת דו-שיח לאימות בסיסי ב-HTTP.</string><string id="Proxy_group">‏שרת Proxy</string><string id="ProxyMode">‏בחר כיצד לציין הגדרות שרת Proxy</string><string id="ProxyMode_Explain">‏מאפשרת לך לציין באיזה שרת proxy Google Chrome ישתמש ומונעת ממשתמשים לשנות את הגדרת שרת ה-proxy.
+
+אם תבחר לעולם לא להשתמש בשרת proxy ולהתחבר תמיד באופן ישיר, המערכת תתעלם משאר האפשרויות.
+
+אם תבחר להשתמש בהגדרות שרת ה-proxy של המערכת, המערכת תתעלם משאר האפשרויות.
+
+אם תבחר לזהות באופן אוטומטי את שרת ה-proxy, המערכת תתעלם משאר האפשרויות.
+
+אם תבחר במצב של שרת proxy קבוע, תוכל לציין אפשרויות נוספות ב'ככתובת או כתובת אתר של שרת proxy' וב'רשימה מופרדת בפסיקים של כללי עקיפת proxy'. רק שרת ה-proxy ל-HTTP שמוגדר בעדיפות הגבוהה ביותר זמין ליישומי ARC.
+
+אם תבחר להשתמש בסקריפט ‎.pac של שרת proxy עליך לציין את כתובת האתר המובילה אל הסקריפט ב'כתובת אתר לקובץ ‎.pac של שרת proxy'.
+
+תוכל למצוא דוגמאות מפורטות בכתובת הבאה:
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett.
+
+אם תפעיל את ההגדרה הזו, Google Chrome ויישומי ARC יתעלמו מכל האפשרויות הקשורות לשרת proxy שצוינו דרך שורת הפקודה.
+
+אם לא תגדיר את המדיניות הזו, משתמשים יוכלו לבחור את הגדרות שרת ה-proxy בעצמם.</string><string id="ProxyMode_ProxyDisabled">‏לעולם אל תשתמש בשרת Proxy</string><string id="ProxyMode_ProxyAutoDetect">‏זהה באופן אוטומטי הגדרות Proxy</string><string id="ProxyMode_ProxyPacScript">‏השתמש בסקריפט Proxy מסוג ‎.pac</string><string id="ProxyMode_ProxyFixedServers">‏השתמש בשרתי Proxy קבועים</string><string id="ProxyMode_ProxyUseSystem">‏השתמש בהגדרות Proxy של המערכת</string><string id="ProxyServer">‏כתובת או כתובת אתר של שרת Proxy</string><string id="ProxyServer_Explain">‏כאן תוכל לציין את כתובת האתר של שרת ה-proxy.
+
+במדיניות זו נעשה שימוש רק אם בחרת הגדרות proxy ידניות באפשרות 'בחר כיצד לציין את הגדרות שרת ה-proxy'
+
+אין להגדיר מדיניות זו אם בחרת במצב אחר להגדרת אפשרויות מדיניות של שרת proxy.
+
+לקבלת אפשרויות נוספות ודוגמאות מפורטות, היכנס לכתובת:
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyPacUrl">‏כתובת אתר לקובץ ‎.pac של שרת Proxy</string><string id="ProxyPacUrl_Explain">‏תוכל לציין כאן כתובת אתר לקובץ ‎.pac של שרת proxy.
+
+במדיניות זו נעשה שימוש רק אם בחרת הגדרות proxy ידניות באפשרות 'בחר כיצד לציין את הגדרות שרת ה-proxy'
+
+אין להגדיר מדיניות זו אם בחרת במצב אחר להגדרת אפשרויות מדיניות של שרת proxy.
+
+לקבלת דוגמאות מפורטות, היכנס לכתובת:
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyBypassList">‏כללי עקיפת Proxy</string><string id="ProxyBypassList_Explain">‏Google Chrome יעקוף כל שרת proxy של המארחים ברשימה זו.
+
+מדיניות זו תקפה רק אם בחרת הגדרות proxy ידניות בקטע 'בחר כיצד לציין הגדרות שרת proxy'.
+
+אין להגדיר מדיניות זו אם בחרת מצב אחר להגדרה של מדיניות שרת proxy.
+
+תוכל למצוא לדוגמאות מפורטות יותר בכתובת הבאה:
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett.</string><string id="AllowDeletingBrowserHistory">הפעל את מחיקת היסטוריית הדפדפן וההורדות</string><string id="AllowDeletingBrowserHistory_Explain">מפעילה את מחיקת היסטוריית הדפדפן וההורדות ב-Google Chrome ומונעת ממשתמשים לשנות את ההגדרה הזו.
+
+שים לב שגם אם המדיניות הזו מושבתת, שמירת היסטוריית הגלישה וההורדות אינה מובטחת: ייתכן שמשתמשים יוכלו לערוך או למחוק את מסד נתוני ההיסטוריה באופן ישיר, והזמן הקצוב של הדפדפן עצמו עשוי לפוג או שהוא יעביר לארכיון בכל עת חלק מפריטי ההיסטוריה או את כולם.
+
+אם ההגדרה הזו מופעלת או שלא הוגדרה, ניתן למחוק את היסטוריית הגלישה וההורדות.
+
+אם ההגדרה הזו מושבתת, לא ניתן למחוק את היסטוריית הגלישה וההורדות.</string><string id="AllowDinosaurEasterEgg">‏אפשר לשחק במשחק ביצי הפסחא של הדינוזאורים (Dinosaur Easter Egg)</string><string id="AllowDinosaurEasterEgg_Explain">‏המדיניות מאפשרת למשתמשים לשחק במשחק ביצי הפסחא של הדינוזאורים (Dinosaur Easter Egg) כשהמכשיר במצב לא מקוון.
+
+אם המדיניות תוגדר כ-False, המשתמשים לא יוכלו לשחק במשחק ביצי הפסחא של הדינוזאורים כשהמכשיר במצב לא מקוון. אם היא תוגדר כ-True, המשתמשים יורשו לשחק במשחק הדינוזאורים. אם המדיניות לא תוגדר, המשתמשים לא יורשו לשחק במשחק ביצי הפסחא של הדינוזאורים במערכות הפעלה רשומות של Chrome, אבל יורשו לשחק בו בנסיבות אחרות.</string><string id="AllowOutdatedPlugins">אפשר להריץ יישומי פלאגין מיושנים</string><string id="AllowOutdatedPlugins_Explain">If you enable this setting, outdated plugins are used as normal plugins.
+
+If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them.
+
+If this setting is not set, users will be asked for permission to run outdated plugins.</string><string id="AllowScreenLock">אפשר את נעילת המסך</string><string id="AllowScreenLock_Explain">If this policy is set to false, users will not be able to lock the screen (only signing out from the user session will be possible). If this setting is set to true or not set, users who authenticated with a password can lock the screen.</string><string id="AllowedDomainsForApps">‏הגדר דומיינים המורשים לגשת אל Google Apps</string><string id="AllowedDomainsForApps_Explain">Enables Google Chrome's restricted log in feature in Google Apps and prevents users from changing this setting.
+
+If you define this setting, the user will only be able to access
+Google Apps (such as Gmail) using accounts from the specified domains.
+
+This setting will NOT prevent the user from loging in on a managed device
+that requires Google authentication. The user will still be allowed to
+sign in to accounts from other domains, but they will receive an error
+when trying to use Google Apps with those accounts.
+
+If you leave this setting empty/not-configured, the user will be able to
+access Google Apps with any account.
+
+This policy causes the X-GoogApps-Allowed-Domains header to be appended to
+all HTTP and HTTPS requests to all google.com domains, as described in
+https://support.google.com/a/answer/1668854.
+
+Users cannot change or override this setting.</string><string id="AlternateErrorPagesEnabled">הפעל דפי שגיאה חלופיים</string><string id="AlternateErrorPagesEnabled_Explain">מאפשר שימוש בדפי שגיאה חלופיים שבנויים לתוך Google Chrome (כגון &quot;הדף לא נמצא&quot;) ומונע ממשתמשים לשנות הגדרה זו. אם תהפוך הגדרה זו לפעילה, המערכת תשתמש בדפי שגיאה חלופיים. אם תשבית הגדרה זו, המערכת לא תשתמש לעולם בדפי שגיאה חלופיים. אם תפעיל או תבטל הגדרה זו, המשתמשים לא יכולים לשנות או לבטל הגדרה זו ב-Google Chrome . אם מדיניות זו לא תוגדר, הגדרה זו תופעל, אך המשתמש יוכל לשנות זאת.</string><string id="AlwaysAuthorizePlugins">תמיד מפעיל יישומי פלאגין שדורשים אישור</string><string id="AlwaysAuthorizePlugins_Explain">If you enable this setting, plugins that are not outdated always run.
+
+If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</string><string id="ArcBackupRestoreEnabled">‏הפעל את Android Backup Service</string><string id="ArcBackupRestoreEnabled_Explain">‏אם המדיניות הזו תועבר למצב 'נכון', נתוני אפליקציות Android יועלו לשרתי Android Backup וישוחזרו מהשרתים האלו בעת התקנה מחדש של אפליקציות תואמות.
+
+אם המדיניות תועבר למצב 'לא נכון', שירות Android Backup Service יושבת.
+
+אם ההגדרה הזו תועבר למצב כלשהו, משתמשים לא יוכלו לשנות אותה בעצמם.
+
+אם ההגדרה הזו לא תועבר למצב כלשהו, משתמשים יוכלו להפעיל ולהשבית את Android Backup Service ביישום 'הגדרות' של Android.</string><string id="ArcCertificatesSyncMode">‏הגדר זמינות אישורים ליישומי ARC</string><string id="ArcCertificatesSyncMode_Explain">‏אם המדיניות מוגדרת כ-SyncDisabled או אינה מוגדרת, אישורים של Google Chrome OS אינם זמינים ליישומי ARC.
+
+אם המדינות מוגדרת כ-CopyCaCerts, כל אישורי ה-CA בהתקנת ONC עם Web TrustBit זמינים ליישומי ARC.</string><string id="ArcCertificatesSyncMode_SyncDisabled">‏השבת את השימוש באישורי Google Chrome OS ביישומי ARC</string><string id="ArcCertificatesSyncMode_CopyCaCerts">‏הפעל אישורי CA של Google Chrome OS ביישומי ARC</string><string id="ArcEnabled">‏הפעל את ARC</string><string id="ArcEnabled_Explain">‏כשהגדרת המדיניות הזו היא true‏, ARC יופעל עבור המשתמש
+(בהתאם לבדיקות נוספות של המדיניות, ARC עדיין לא יהיה
+זמין אם בפעילות הנוכחית של המשתמש הופעלו פרופיל זמני
+או כניסה עם מספר חשבונות).
+
+אם ההגדרה הזו מושבתת או שלא נקבעה, משתמשים ארגוניים
+אינם יכולים להשתמש ב-ARC.</string><string id="ArcLocationServiceEnabled">‏הפעלת שירות המיקום של Google ל-Android</string><string id="ArcLocationServiceEnabled_Explain">When this policy is set to true, the Android Google Location Service is enabled. This will allow Android apps to use its data to find the device location, and also will enable submitting of anonymous location data to Google.
+
+When this policy is set to false, Android Google Location Service will be switched off.
+
+If this setting is configured then users are not able change it themselves.
+
+If this setting is not configured then users are able to turn Google Location Service on and off in the Android Settings app.
+
+Note that this policy value may be overridden by the DefaultGeolocationSetting policy, when the latter is set to BlockGeolocation.
+
+This policy is applicable only to the users that are able to run Android apps.</string><string id="ArcPolicy">‏הגדר ARC</string><string id="ArcPolicy_Explain">‏מציין קבוצת סעיפי מדיניות שיועברו אל זמן הריצה של ARC. הערך חייב להיות JSON חוקי.
+
+אפשר להשתמש במדיניות הזו כדי להגדיר אילו אפליקציות Android יותקנו באופן אוטומטי במכשיר:
+
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;applications&quot;: {
+&quot;type&quot;: &quot;array&quot;,
+&quot;items&quot;: {
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;packageName&quot;: {
+&quot;description&quot;: &quot;מזהה אפליקציית Android , לדוגמה &quot;com.google.android.gm&quot; בשביל Gmail&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;installType&quot;: {
+&quot;description&quot;: &quot;מציין איך אפליקציה מותקנת. OPTIONAL: האפליקציה לא תותקן באופן אוטומטי, אבל המשתמש יוכל להתקין אותה. זו ברירת המחדל אם המדיניות הזו לא צוינה. PRELOAD: האפליקציה מותקנת באופן אוטומטי, אבל המשתמש יכול להסיר את ההתקנה שלה. FORCE_INSTALLED: האפליקציה מותקנת באופן אוטומטי והמשתמש לא יכול להסיר את ההתקנה שלה. BLOCKED: האפליקציה חסומה ולא ניתן להתקין אותה. אם האפליקציה הותקנה מתוקף מדיניות קודמת, ההתקנה שלה תוסר.&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;OPTIONAL&quot;,
+&quot;PRELOAD&quot;,
+&quot;FORCE_INSTALLED&quot;,
+&quot;BLOCKED&quot;
+]
+},
+&quot;defaultPermissionPolicy&quot;: {
+&quot;description&quot;: &quot;מדיניות להענקת הרשאות על-פי בקשות של אפליקציות. PERMISSION_POLICY_UNSPECIFIED: המדיניות לא צוינה. אם לא צוינה מדיניות בשביל הרשאה ברמה כלשהי, נעשה שימוש בהתנהגות `PROMPT` כברירת מחדל. PROMPT: מוצגת למשתמש בקשה להעניק הרשאה. GRANT: הרשאה מוענקת באופן אוטומטי. DENY: הרשאה נדחית באופן אוטומטי.&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;PERMISSION_POLICY_UNSPECIFIED&quot;,
+&quot;PROMPT&quot;,
+&quot;GRANT&quot;,
+&quot;DENY&quot;
+]
+},
+&quot;managedConfiguration&quot;: {
+&quot;description&quot;: &quot;אובייקט תצורת JSON ספציפי לאפליקציה עם קבוצה של זוגות ערכי מפתח. לדוגמה: ‎'&quot;managedConfiguration&quot;: { &quot;key1&quot;: value1, &quot;key2&quot;: value2 }'. T המפתחות מוגדרים במניפסט האפליקציה.&quot;,
+&quot;type&quot;: &quot;object&quot;
+}
+}
+}
+}
+}
+}
+
+כדי להצמיד אפליקציות למפעיל האפליקציות, יש לעיין ב-PinnedLauncherApps.</string><string id="AudioCaptureAllowed">התר או דחה הקלטת אודיו</string><string id="AudioCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+audio capture access except for URLs configured in the
+AudioCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and audio
+capture only be available to URLs configured in AudioCaptureAllowedUrls.
+
+This policy affects all types of audio inputs and not only the built-in microphone.</string><string id="AudioCaptureAllowedUrls">כתובות אתרים שיקבלו גישה למכשירי הקלטת אודיו ללא הצגת בקשה</string><string id="AudioCaptureAllowedUrls_Explain">דפוסים ברשימה זו יותאמו כנגד מקור האבטחה
+של כתובת האתר המבצעת את הבקשה. אם תימצא התאמה, הגישה למכשירי הקלטת אודיו תוענק ללא הצגת בקשה.
+
+הערה: עד גרסה 45, מדיניות זו נתמכה רק במצב קיוסק.</string><string id="AudioCaptureAllowedUrlsDesc">כתובות אתרים שיקבלו גישה למכשירי הקלטת אודיו ללא הצגת בקשה</string><string id="AudioOutputAllowed">אפשר הפעלת אודיו</string><string id="AudioOutputAllowed_Explain">When this policy is set to false, audio output will not be available on the device while the user is logged in.
+
+This policy affects all types of audio output and not only the built-in speakers. Audio accessibility features are also inhibited by this policy. Do not enable this policy if a screen reader is required for the user.
+
+If this setting is set to true or not configured then users can use all supported audio outputs on their device.</string><string id="AutoFillEnabled">הפעל מילוי אוטומטי</string><string id="AutoFillEnabled_Explain">המדיניות הופכת את תכונת המילוי האוטומטי של Google Chrome לפעילה ומאפשרת למשתמשים להשלים אוטומטית טפסים באינטרנט באמצעות מידע שאוחסן בעבר, כגון כתובת או פרטי כרטיס אשראי. אם תשבית הגדרה זו, המילוי האוטומטי לא יהיה נגיש למשתמשים. אם תהפוך הגדרה זו לפעילה או לא תקבע ערך, המילוי האוטומטי יישאר תחת שליטתו של ​​המשתמש. דבר זה יאפשר לו להגדיר פרופילי מילוי אוטומטי ולהפעיל או לבטל מילוי אוטומטי על פי שיקול דעתו.</string><string id="AutofillCreditCardEnabled">הפעלה של מילוי אוטומטי בשביל כרטיסי אשראי</string><string id="AutofillCreditCardEnabled_Explain">המדיניות מפעילה את תכונת המילוי האוטומטי של Google Chrome ומאפשרת למשתמשים להשלים אוטומטית פרטים של כרטיס אשראי וכתובת בטפסים באינטרנט, באמצעות מידע שאוחסן בעבר.
+
+אם ההגדרה הזו תושבת, המילוי האוטומטי לא יציע למלא פרטי כרטיס אשראי ולא יעשה זאת באופן אוטומטי. כמו כן לא יישמרו פרטים של כרטיסי אשראי נוספים שהמשתמש יזין בזמן גלישה באינטרנט.
+
+אם ההגדרה הזו תופעל או אם לא ייקבע ערך לגביה, המשתמש יוכל לקבוע באופן מלא את ההגדרות של תכונת המילוי האוטומטי (כולל כרטיסי אשראי) בממשק.</string><string id="BlockThirdPartyCookies">‏חסום קובצי Cookie של צד שלישי</string><string id="BlockThirdPartyCookies_Explain">Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar.
+
+Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting.
+
+If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</string><string id="BookmarkBarEnabled">הפוך סרגל סימניות לפעיל</string><string id="BookmarkBarEnabled_Explain">If you enable this setting, Google Chrome will show a bookmark bar.
+
+If you disable this setting, users will never see the bookmark bar.
+
+If you enable or disable this setting, users cannot change or override it in Google Chrome.
+
+If this setting is left not set the user can decide to use this function or not.</string><string id="CaptivePortalAuthenticationIgnoresProxy">‏אימות פורטל חובה מתעלם משרת proxy</string><string id="CaptivePortalAuthenticationIgnoresProxy_Explain">This policy allows Google Chrome OS to bypass any proxy for captive portal authentication.
+
+This policy only takes effect if a proxy is configured (for example through policy, by the user in chrome://settings, or by extensions).
+
+If you enable this setting, any captive portal authentication pages (i.e. all web pages starting from captive portal signin page until Google Chrome detects successful internet connection) will be displayed in a separate window ignoring all policy settings and restrictions for the current user.
+
+If you disable this setting or leave it unset, any captive portal authentication pages will be shown in a (regular) new browser tab, using the current user's proxy settings.</string><string id="CertificateTransparencyEnforcementDisabledForUrls">השבתת אכיפה של 'שקיפות אישורים' ברשימת כתובות אתרים</string><string id="CertificateTransparencyEnforcementDisabledForUrls_Explain">‏משביתה אכיפה של דרישות 'שקיפות אישורים' בכתובות האתרים הרשומות.
+
+המדיניות הזו מאפשרת מצב שבו אישורים של שמות מארחים בכתובות האתרים הרשומות לא ייחשפו דרך 'שקיפות אישורים'. כך ניתן להמשיך להשתמש באישורים שבמקרים רגילים לא ייחשבו כמהימנים, מפני שלא נחשפו כראוי באופן ציבורי, אך מצב זה מקשה על זיהוי אישורים שהונפקו לאותם מארחים בצורה לא תקינה.
+
+דפוס של כתובת אתר מעוצב בהתאם ל-https://www.chromium.org/administrators/url-blacklist-filter-format. עם זאת, מפני שתוקף האישורים הוא לשם מארח נתון, ללא קשר לסכימה, ליציאה או לנתיב, רק החלק של שם המארח בכתובת האתר מובא בחשבון. אין תמיכה בשמות כלליים של מארחים.
+
+אם המדיניות הזו אינה מוגדרת, כל אישור שיש לחשוף דרך 'שקיפות אישורים' ייחשב כבלתי מהימן אם הוא לא נחשף בהתאם למדיניות של 'שקיפות אישורים'.</string><string id="CertificateTransparencyEnforcementDisabledForUrlsDesc">השבתת אכיפה של 'שקיפות אישורים' ברשימת כתובות אתרים</string><string id="ChromeOsLockOnIdleSuspend">אפשר נעילה כאשר המכשיר אינו פעיל או מושעה</string><string id="ChromeOsLockOnIdleSuspend_Explain">אפשר נעילה כאשר מכשירי Google Chrome OS אינם פעילים או מושעים.
+
+אם תהפוך הגדרה זו לפעילה, משתמשים יתבקשו להזין סיסמה כדי לבטל את נעילת המכשירים ממצב שינה.
+
+אם תשבית הגדרה זו, משתמשים לא יתבקשו להזין סיסמה כדי לבטל את נעילת המכשירים ממצב שינה.
+
+אם תהפוך הגדרה זו לפעילה או תשבית אותה, משתמשים לא יוכלו לשנות או לבטל אותה.
+
+אם מדיניות זו תישאר לא מוגדרת, המשתמש יוכל לבחור האם הוא יתבקש להזין סיסמה כדי לבטל את נעילת המכשיר או לא.</string><string id="ChromeOsMultiProfileUserBehavior">שלוט בהתנהגות המשתמשים בהפעלה של ריבוי פרופילים</string><string id="ChromeOsMultiProfileUserBehavior_Explain">‏שולטת בהתנהגות המשתמשים בהפעלה מרובת-פרופילים במכשירי Google Chrome OS.
+
+אם המדיניות הזו מוגדרת כ-'MultiProfileUserBehaviorUnrestricted', המשתמש יכול להיות משתמש ראשי או משני בהפעלה מרובת-פרופילים.
+
+אם המדיניות הזו מוגדרת כ-'MultiProfileUserBehaviorMustBePrimary', המשתמש יכול להיות רק המשתמש הראשי בהפעלה מרובת פרופילים.
+
+אם המדיניות הזו מוגדרת כ-'MultiProfileUserBehaviorNotAllowed', המשתמש אינו יכול להשתתף בהפעלה מרובת-פרופילים.
+
+אם תקבע את ההגדרה הזו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם ההגדרה תשונה בזמן שהמשתמש מחובר להפעלה מרובת פרופילים, כל המשתמשים בהפעלה ייבדקו שוב בהתאם להגדרות התואמות שלהם. ההפעלה תיסגר עם מישהו מבין המשתמשים אינו מורשה עוד להשתתף בהפעלה.
+
+אם המדיניות לא תוגדר, ערך ברירת המחדל 'MultiProfileUserBehaviorMustBePrimary' יחול על משתמשים המנוהלים על ידי ארגון, ויעשה שימוש ב-'MultiProfileUserBehaviorUnrestricted' עבור משתמשים שאינם מנוהלים.</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorUnrestricted">אפשר למשתמשים ארגוניים להיות ראשיים ומשניים (התנהגות ברירת מחדל עבור משתמשים שאינם מנוהלים)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorMustBePrimary">אפשר למשתמש ארגוני להיות משתמש ראשי ומרובה-פרופילים בלבד (התנהגות ברירת המחדל עבור משתמשים המנוהלים על ידי ארגון)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorNotAllowed">אל תאפשר למשתמש ארגוני להיות חלק מריבוי פרופילים (ראשי או משני)</string><string id="ChromeOsReleaseChannel">הפצת ערוץ</string><string id="ChromeOsReleaseChannel_Explain">מציין את אמצעי השחרור שלפיו יינעל מכשיר זה.</string><string id="ChromeOsReleaseChannel_StableChannel">ערוץ יציב</string><string id="ChromeOsReleaseChannel_BetaChannel">ערוץ ביטא</string><string id="ChromeOsReleaseChannel_DevChannel">ערוץ פיתוח (יכול להיות לא יציב)</string><string id="ChromeOsReleaseChannelDelegated">קביעה אם ערוץ ההפצה יהיה ניתן להגדרה על ידי המשתמש</string><string id="ChromeOsReleaseChannelDelegated_Explain">‏אם מדיניות זו מוגדרת ל'אמת' ומדיניות ChromeOsReleaseChannel לא צוינה,המשתמשים של הערוץ הנרשם יוכלו לשנות את ערוץ ההפצה של המכשיר. אם מדיניות זו מוגדרת ל'שקר', המכשיר יינעל בכל ערוץ שאליו הוא הוגדר לאחרונה.
+
+הערוץ הנבחר על ידי המשתמש יבוטל על ידי מדיניות ChromeOsReleaseChannel, אך אם ערוץ המדיניות יציב יותר מזה שהותקן במכשיר, אז הערוץ יוחלף רק לאחר שהגרסה של הערוץ היציב יותר תגיע למספר גרסה גבוה יותר מאשר זו שהותקנה במכשיר.</string><string id="ComponentUpdatesEnabled">מאפשרת עדכוני רכיבים ב-Google Chrome</string><string id="ComponentUpdatesEnabled_Explain">‏כשאינה מוגדרת כ-True, מפעילה עדכוני רכיבים לכל הרכיבים ב-Google Chrome.
+
+אם היא מוגדרת כ-False, עדכוני רכיבים מושבתים. עם זאת, חלק מהרכיבים פטורים מהמדיניות הזו: עדכונים של רכיבים שאינם מכילים קוד הפעלה, שאינם משנים באופן משמעותי את ההתנהגות של הדפדפן או שיש להם חשיבות קריטית לאבטחה לא יושבתו.
+דוגמאות לרכיבים כאלה כוללות את רשימות ביטול האישורים ואת נתוני הגלישה הבטוחה.
+עיין בכתובת https://developers.google.com/safe-browsing לקבלת מידע נוסף על 'גלישה בטוחה'.</string><string id="DefaultPrinterSelection">כללים לבחירת מדפסת ברירת מחדל</string><string id="DefaultPrinterSelection_Explain">‏מבטלת את הכללים לבחירת מדפסת ברירת מחדל של Google Chrome.
+
+מדיניות זו קובעת את הכללים לבחירת מדפסת ברירת המחדל ב-Google Chrome. הבחירה נעשית בפעם הראשונה שנעשה שימוש בפונקציית ההדפסה עם פרופיל.
+
+כשהמדיניות מוגדרת, Google Chrome ינסה למצוא מדפסת שמתאימה לכל המאפיינים שצוינו ויבחר אותה כמדפסת ברירת המחדל. המדפסת הראשונה שנמצאה כמתאימה למדיניות, נבחרת. אם ההתאמה אינה חד-ערכית, כל מדפסת מתאימה יכולה להיבחר, בהתאם לסדר שבו מתגלות המדפסות.
+
+אם המדיניות לא מוגדרת או שלא נמצאה מדפסת תואמת בזמן הקצוב לתפוגה, מדפסת ה-PDF המובנית נקבעת כמדפסת ברירת המחדל. כשמדפסת ה-PDF לא זמינה, לא נבחרת מדפסת.
+
+הערך מנותח כאובייקט JSON בהתאם לסכמה הבאה:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;kind&quot;: {
+&quot;description&quot;: &quot;אם להגביל את חיפוש המדפסת המתאימה לקבוצת מדפסות מסוימת.&quot;,
+&quot;type&quot;: {
+&quot;enum&quot;: [ &quot;local&quot;, &quot;cloud&quot; ]
+}
+},
+&quot;idPattern&quot;: {
+&quot;description&quot;: &quot;ביטוי רגולרי להתאמת מזהה מדפסת.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;namePattern&quot;: {
+&quot;description&quot;: &quot;ביטוי רגולרי להתאמת שם תצוגה של מדפסת.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+המדפסות שמחוברות אל Google Cloud Print נחשבות &quot;cloud&quot;, ושאר המדפסות מסווגות כ-&quot;local&quot;.
+השמטת שדה פירושה שכל הערכים תואמים. לדוגמה, השמטת 'קישוריות' תגרום לתצוגת ההדפסה המקדימה להתחיל בגילוי כל סוגי המדפסות, מקומיות ובענן.
+דפוסי הביטוי הרגולרי צריכים להתאים לתחביר RegExp של JavaScript, וההתאמות תלויות רישיות.</string><string id="DeveloperToolsDisabled">השבת כלים למפתחים</string><string id="DeveloperToolsDisabled_Explain">‏ההגדרה הזו גורמת להשבתת הכלים למפתחים ולוח JavaScript.
+
+אם תאפשר את ההגדרה הזו, לא תוכל יותר לגשת אל הכלים למפתחים ולבחון רכיבי אתר. יבוטלו כל מקשי הקיצור, וכל הרשומות בתפריטים או בתפריטי הקשר, שמיועדים לפתיחת הכלים למפתחים או לוח JavaScript.
+
+אם תעביר את האפשרות הזו למצב מושבת או תשאיר אותה במצב לא מוגדר, הכלים למפתחים ולוח JavaScript יהיו זמינים לשימוש על ידי המשתמשים.</string><string id="DeviceAllowBluetooth">‏התר Bluetooth במכשיר</string><string id="DeviceAllowBluetooth_Explain">‏אם המדיניות הזו מוגדרת כ-false, ‏Google Chrome OS ישבית את ה-Bluetooth והמשתמש לא יוכל להפעיל אותו מחדש.
+
+אם המדיניות הזו מוגדרת כ-true או אינה מוגדרת, המשתמש יוכל להפעיל או להשבית את ה-Bluetooth כרצונו.
+
+אם המדיניות הזו מוגדרת, המשתמש לא יכול לשנות או לעקוף אותה.
+
+לאחר הפעלת ה-Bluetooth, על המשמש לצאת ולהתחבר שוב כדי שהשינויים ייכנסו לתוקף (אין בכך צורך בעת השבתת Bluetooth).</string><string id="DeviceAllowNewUsers">אפשר יצירת חשבונות משתמש חדשים</string><string id="DeviceAllowNewUsers_Explain">Controls whether Google Chrome OS allows new user accounts to be created. If this policy is set to false, users that do not have an account already will not be able to login.
+
+If this policy is set to true or not configured, new user accounts will be allowed to be created provided that DeviceUserWhitelist does not prevent the user from logging in.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers">‏התר למשתמשים לממש מבצעים באמצעות רישום למערכת ההפעלה של Chrome</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers_Explain">‏מנהלי IT עבור מכשירים ארגוניים יכולים להשתמש בסימון הזה כדי לקבוע אם לאפשר למשתמשים לממש מבצעים באמצעות הרשמה של מערכת ההפעלה של Chrome.
+
+אם המדיניות הזו מוגדרת כ-true או אינה מוגדרת, משתמשים יוכלו לממש מבצעים באמצעות הרשמה של מערכת ההפעלה של Chrome.
+
+אם המדיניות הזו מוגדרת כ-false, המשתמש לא יוכל לממש מבצעים.</string><string id="DeviceAutoUpdateDisabled">השבתת עדכון אוטומטי</string><string id="DeviceAutoUpdateDisabled_Explain">‏השבתה של עדכונים אוטומטיים כאשר נבחרה ההגדרה True.
+
+מכשירי Google Chrome OS מחפשים עדכונים באופן אוטומטי כאשר הגדרה זו לא נקבעה או כשהיא מוגדרת ל-False.
+
+אזהרה: מומלץ להשאיר את העדכונים האוטומטיים מופעלים כדי לאפשר למשתמשים לקבל עדכוני תוכנה ותיקוני אבטחה קריטיים. השבתה של העדכונים האוטומטיים עלולה להציב את המשתמשים בפני סיכון.</string><string id="DeviceAutoUpdateP2PEnabled">‏p2p בעדכון אוטומטי מופעל</string><string id="DeviceAutoUpdateP2PEnabled_Explain">‏מציין אם יש לעשות שימוש ב-p2p עבור תוכן מנות לעדכון מערכת ההפעלה. אם מוגדרת האפשרות True, מכשירים ישתפו וינסו לצרוך תוכן מנות של עדכונים ברשת LAN, ועלולים לפגוע ברמת השימוש ובצפיפות של רוחב הפס של האינטרנט. אם תוכן מנת העדכון אינו זמין ברשת ה-LAN, המכשיר יחזור לבצע הורדות משרת עדכונים. אם מוגדרת האפשרות False, או שהגדרה זו לא מוגדרת כלל, לא ייעשה שימוש ב-p2p.</string><string id="DeviceBlockDevmode">חסימה של מצב מפתח</string><string id="DeviceBlockDevmode_Explain">‏חסימה של מצב מפתח.
+
+אם המדיניות הזו מוגדר כ-True‏, Google Chrome OS ימנע מהמכשיר לבצע אתחול במצב מפתח. המערכת תסרב לבצע אתחול ותציג שגיאה כשמתג המפתח פועל.
+
+אם המדיניות הזו מוגדרת כ-False, מצב המפתח יישאר זמין עבור המכשיר.</string><string id="DeviceDataRoamingEnabled">הפעל נתוני נדידה</string><string id="DeviceDataRoamingEnabled_Explain">קובעת אם נתוני הנדידה יופעלו עבור המכשיר. אם מוגדרת כ'אמת', תתאפשר נדידת נתונים. אם אינה מוגדרת, או מוגדרת כ'שקר', נדידת נתונים תהיה לא זמינה.</string><string id="DeviceEphemeralUsersEnabled">מחק נתוני משתמש בעת יציאה</string><string id="DeviceEphemeralUsersEnabled_Explain">קובעת אם Google Chrome OS ישמור את נתוני החשבון המקומיים לאחר התנתקות. אם הוגדר כ'אמת', לא יישמרו חשבונות קבועים כלשהם על ידי Google Chrome OS וכל נתוני ההפעלה של המשתמש יסולקו לאחר התנתקות. אם מדיניות זו מוגדרת כ'שקר' או שאינה מוגדרת, המכשיר יכול לשמור את נתוני המשתמש המקומיים (מוצפנים).</string><string id="DeviceGuestModeEnabled">הפעל מצב אורח</string><string id="DeviceGuestModeEnabled_Explain">אם מדיניות זו מוגדרת כ'אמת' או אינה מוגדרת, Google Chrome OS יאפשר כניסות אורח. כניסות אורח הן הפעלות משתמש אנונימיות ואינן דורשות סיסמה.
+
+אם מדיניות זו מוגדרת כ'שקר', Google Chrome OS לא יאפשר התחלת הפעלות אורח.</string><string id="DeviceLoginScreenAppInstallList">הגדרת התצורה של היישומים המותקנים שמופיעים במסך ההתחברות</string><string id="DeviceLoginScreenAppInstallList_Explain">
+Specifies a list of apps that are installed silently on the login screen,
+without user interaction, and which cannot be uninstalled.
+All permissions requested by the apps are granted
+implicitly, without user interaction, including any additional
+permissions requested by future versions of the app.
+
+Note that, for security and privacy reasons, extensions are not allowed to be installed using this policy. Moreover, the devices on the Stable channel will only install the apps that belong to the whitelist bundled into Google Chrome. Any items that don't conform to these conditions will be ignored.
+
+If an app that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.</string><string id="DeviceLoginScreenAppInstallListDesc">הגדרת התצורה של היישומים המותקנים שמופיעים במסך ההתחברות</string><string id="DeviceLoginScreenInputMethods">פריסות המקלדת של מסך הכניסה במכשיר</string><string id="DeviceLoginScreenInputMethods_Explain">הגדרה של פריסות המקלדות שבהן מותר להשתמש במסך הכניסה אל Google Chrome OS.
+
+אם המדיניות הזו מוגדרת כרשימה של מזהי שיטות קלט, שיטות הקלט הנתונות יהיו זמינות במסך הכניסה. שיטת הקלט הראשונה תיבחר מראש. כשמפעילים סמל של משתמש מסוים במסך הכניסה, שיטת הקלט הראשונה של המשתמש תהיה זמינה בנוסף לשיטות הקלט שצוינו במדיניות הזו. אם המדיניות הזו לא מוגדרת, שיטות הקלט במסך הכניסה ייקבעו לפי המקום שבו מוצג מסך הכניסה. המערכת תתעלם מערכים שאינם מזהים חוקיים של שיטת קלט.</string><string id="DeviceLoginScreenInputMethodsDesc">פריסות המקלדת של מסך הכניסה במכשיר</string><string id="DeviceLoginScreenLocales">הגדרת המקום של מסך הכניסה במכשיר</string><string id="DeviceLoginScreenLocales_Explain">‏מגדירה את המקום שנאכף במסך הכניסה אל Google Chrome OS.
+
+אם המדיניות הזו מוגדרת, מסך הכניסה יוצג תמיד לפי המקום שסופק על-ידי הערך הראשון במדיניות הזו (המדיניות מוגדרת כרשימה כדי להתאים לגרסאות עתידיות). אם המדיניות לא מוגדרת או אם הוגדרה רשימה ריקה, מסך הכניסה יוצג לפי המקום בהפעלת המשתמש האחרונה. אם המדיניות הזו מוגדרת כערך שאינו מקום חוקי, מסך הכניסה יוצג לפי מקום שהוגדר כברירת מחדל (נכון לעכשיו זהו en-US).</string><string id="DeviceLoginScreenLocalesDesc">הגדרת המקום של מסך הכניסה במכשיר</string><string id="DeviceLoginScreenPowerManagement">ניהול צריכת החשמל במסך ההתחברות</string><string id="DeviceLoginScreenPowerManagement_Explain">הגדר ניהול צריכת חשמל במסך ההתחברות ב-Google Chrome OS.
+
+המדיניות הזו מאפשרת לך להגדיר את ההתנהגות של Google Chrome OS במצב שבו אין פעילות של המשתמש למשך זמן מסוים, כאשר מסך ההתחברות מוצג. המדיניות קובעת מספר הגדרות. לעיון בפרטים ובטווחי ערכים, קרא את המדיניות המתאימה המגדירה את ניהול צריכת החשמל במהלך הפעלה. החריגים היחידים מהמדיניות הזו הם:
+* הפעולות שיש לנקוט כשאין פעילות של המשתמש או בסגירת מכסה, לא יכולות לכלול סיום של ההפעלה.
+* פעולת ברירת המחדל הננקטת במצב שבו אין פעילות של משתמש בזמן חיבור לשקע החשמל שבקיר, היא כיבוי.
+
+אם לא נקבע ערך להגדרה כלשהי, ייעשה שימוש בערך ברירת המחדל.
+
+אם המדיניות הזו לא מוגדרת, ייעשה שימוש בברירות המחדל עבור כל ההגדרות.</string><string id="DeviceMetricsReportingEnabled">הפעל דיווח על מדדים</string><string id="DeviceMetricsReportingEnabled_Explain">‏קובעת האם מדדי שימוש ונתוני אבחון ידווחו ל-Google, כולל דוחות קריסה. אם המדיניות מוגדרת כ-true, ‏Google Chrome OS ידווח את מדדי השימוש ונתוני האבחון. אם המדיניות לא מוגדרת או מוגדרת כ-false, הדיווח של מדדים ונתוני אבחון מושבת.</string><string id="DeviceNativePrinters">קובץ תצורת מדפסות ארגוניות בשביל מכשירים</string><string id="DeviceNativePrinters_Explain">‏מספקת תצורה למדפסות ארגוניות המשויכות למכשירים.
+
+המדיניות הזו מאפשרת לך לספק תצורת מדפסות למכשירי Google Chrome OS. הקובץ יכול להיות בגודל 5MB לכל היותר ועליו להיות מקודד ב-JSON. הפורמט זהה לזה של מילון NativePrinters. ההערכה היא שקובץ מקודד הכולל כ-21,000 מדפסות יהיה בגודל של 5MB. הגיבוב הקריפטוגרפי משמש לאימות השלמות של ההורדה.
+
+המערכת מורידה את הקובץ ומעבירה אותו למטמון. המערכת תוריד אותו שוב כשכתובת האתר או הגיבוב ישתנו.
+
+אם המדיניות הזו מוגדרת, Google Chrome OS יוריד את הקובץ כדי לקבל תצורות מדפסת, והזמינות של המדפסות תהיה על פי DeviceNativePrintersAccessMode, DeviceNativePrintersWhitelist ו-DeviceNativePrintersBlacklist.
+
+למדיניות הזו אין השפעה על היכולת של משתמשים להגדיר תצורת מדפסות במכשירים נפרדים. היא מיועדת לשמש כתוסף לתצורה של מדפסות שנקבעת על-ידי משתמשים נפרדים.
+
+המדיניות הזו היא תוספת ל-NativePrintersBulkConfiguration.
+
+אם המדיניות הזו לא הוגדרה, לא יקושרו מדפסות למכשירים, ושאר סעיפי המדיניות DeviceNativePrinter* לא יובאו בחשבון.</string><string id="DeviceNativePrintersAccessMode">מדיניות גישה אל תצורת מדפסות הקשורות למכשירים.</string><string id="DeviceNativePrintersAccessMode_Explain">קובעת אילו מדפסות מהמדיניות DeviceNativePrinters זמינות למשתמשים.
+
+מגדירה על פי איזו מדיניות גישה תיקבע התצורה של מדפסות בכמות גדולה. אם נבחרה האפשרות AllowAll, כל המדפסות יוצגו. אם נבחרה האפשרות BlacklistRestriction, הגישה אל המדפסות שצוינו תוגבל על פי DeviceNativePrintersBlacklist. אם נבחרה האפשרות WhitelistPrintersOnly, רשימת ההיתרים DeviceNativePrintersWhitelist תאפשר גישה רק למדפסות שניתן לבחור.
+
+אם המדיניות הזו לא הוגדרה, תיבחר  BlacklistRestriction כברירת מחדל.
+</string><string id="DeviceNativePrintersAccessMode_BlacklistRestriction">כל המדפסות מוצגות, מלבד אלה ברשימה השחורה.</string><string id="DeviceNativePrintersAccessMode_WhitelistPrintersOnly">משתמשים רואים רק מדפסות שנכללות ברשימת ההיתרים</string><string id="DeviceNativePrintersAccessMode_AllowAll">היתר לכל המדפסות מקובץ התצורה.</string><string id="DeviceNativePrintersBlacklist">מדפסות ארגוניות מושבתות הקשורות למכשירים</string><string id="DeviceNativePrintersBlacklist_Explain">מציינת את המדפסות שאינן זמינות למשתמש.
+
+במדיניות הזו נעשה שימוש רק אם האפשרות BlacklistRestriction נבחרה בשביל DeviceNativePrintersAccessMode.
+
+אם המדיניות הזו בשימוש, כל המדפסות זמינות למשתמש, מלבד אלה עם המזהים שרשומים במדיניות.
+</string><string id="DeviceNativePrintersBlacklistDesc">מדפסות ארגוניות מושבתות הקשורות למכשירים</string><string id="DeviceNativePrintersWhitelist">מדפסות ארגוניות מופעלות הקשורות למכשירים</string><string id="DeviceNativePrintersWhitelist_Explain">מציינת את המדפסות הזמינות למשתמש.
+
+המדיניות הזו מופעלת רק אם האפשרות WhitelistPrintersOnly נבחרה בשביל DeviceNativePrintersAccessMode
+
+אם המדיניות הזו הופעלה, רק המדפסות שהמזהים שלהן תואמים לערכים שצוינו יהיו זמינות למשתמש. המזהים חייבים להיות תואמים לרשומות בקובץ שצוין ב-DeviceNativePrinters.
+</string><string id="DeviceNativePrintersWhitelistDesc">מדפסות ארגוניות מופעלות הקשורות למכשירים</string><string id="DeviceOffHours">‏מרווחי שעות ללא פעילות אחרי שחרור של OffHours |ignored_policy_proto_tags|‎ במכשיר</string><string id="DeviceOffHours_Explain">‏אם המדיניות OffHours הוגדרה, סעיפי מדיניות המכשיר שצוינו לא יובאו בחשבון במהלך פרקי הזמן שנקבעו (ויחולו הגדרות ברירת המחדל של סעיפי המדיניות). Chrome יחיל מחדש את סעיפי מדיניות המכשיר בכל אירוע שבו מתחילה או מסתיימת תקופת OffHours. המשתמש יקבל הודעה ויצא מהחשבון באופן אוטומטי בסיום תקופת OffHours והגדרות המדיניות ישתנו (לדוגמה, כשהמשתמש אינו מחובר באמצעות חשבון מורשה).</string><string id="DeviceOpenNetworkConfiguration">תצורת רשת ברמת המכשיר</string><string id="DeviceOpenNetworkConfiguration_Explain">‏מאפשר דחיפה של תצורת הרשת כדי שתיושם עבור כל המשתמשים של מכשיר Google Chrome OS. תצורת הרשת היא מחרוזת בפורמט JSON כפי שהוגדרה על ידי פורמט תצורת הרשת הפתוחה, באופן שמתואר ב-https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration</string><string id="DevicePolicyRefreshRate">קצב רענון עבור מדיניות מכשיר</string><string id="DevicePolicyRefreshRate_Explain">מדיניות זו מציינת את פרק הזמן במילי-שניות עד שנשלחת לשירות ניהול המכשיר בקשה לקבלת מידע על מדיניות המשתמש.
+
+הגדרה של מדיניות זו תחול במקום הגדרת ברירת המחדל של 3 שעות. ערכים חוקיים למדיניות זו נמצאים בטווח שבין 1800000 (30 דקות) ל-86400000 (יום אחד). ערכים שאינם נמצאים בטווח הזה יוחלפו בערכים המתאימים הנמצאים בגבולות הטווח.
+
+אם מדיניות זו לא מוגדרת, Google Chrome OS תשתמש בברירת המחדל של 3 שעות.
+
+שים לב שאם המערכת תומכת בהודעות בנוגע למדיניות, פרק הזמן עד לרענון יוגדר ל-24 שעות (תוך התעלמות מכל הגדרות ברירת המחדל והערכים של מדיניות זו) מכיוון שהודעות בנוגע למדיניות צפויות לגרום לרענון אוטומטי בכל פעם שהמדיניות משתנה, ובכך הן הופכות רענון בתדירות גבוהה יותר ללא הכרחי.</string><string id="DeviceQuirksDownloadEnabled">‏התר שליחת שאילתות אל Quirks Server בנושא פרופילים של חומרה</string><string id="DeviceQuirksDownloadEnabled_Explain">The Quirks Server provides hardware-specific configuration files, like
+ICC display profiles to adjust monitor calibration.
+
+When this policy is set to false, the device will not attempt to
+contact the Quirks Server to download configuration files.
+
+If this policy is true or not configured then Google Chrome OS will automatically contact the Quirks Server and download configuration files, if available, and store them on the device.  Such files might, for example, be used to improve display quality of attached monitors.</string><string id="DeviceRebootOnShutdown">הפעלה מחדש באופן אוטומטי בעת כיבוי המכשיר</string><string id="DeviceRebootOnShutdown_Explain">‏אם מדיניות זו מוגדרת לערך False או לא מוגדרת כלל, מערכת Google Chrome OS תאפשר למשתמש לכבות את המכשיר.
+אם המדיניות מוגדרת לערך True, מערכת Google Chrome OS תבצע הפעלה מחדש כאשר המשתמש יכבה את המכשיר. מערכת Google Chrome OS מחליפה את כל המופעים של לחצני הכיבוי בממשק המשתמש בלחצני הפעלה מחדש. אם המשתמש מכבה את המכשיר באמצעות לחצן ההפעלה, המכשיר לא יופעל מחדש באופן אוטומטי, גם אם מדיניות זו מופעלת.</string><string id="DeviceShowUserNamesOnSignin">הצג שמות משתמש במסך הכניסה</string><string id="DeviceShowUserNamesOnSignin_Explain">If this policy is set to true or not configured, Google Chrome OS will show existing users on the login screen and allow to pick one.
+
+If this policy is set to false, Google Chrome OS will not show existing users on the login screen. The normal sign-in screen (prompting for the user email and password or phone) or the SAML interstital screen (if enabled via the LoginAuthenticationBehavior policy) will be shown, unless a Public Session is configured. When a Public Session is configured, only the Public Session accounts will be shown, allowing to pick one of them.
+
+Note that this policy does not affect whether the device keeps or discards the local user data.</string><string id="DeviceStartUpFlags">סימונים כלל-מערכתיים שיוחלו בעת ההפעלה של Google Chrome</string><string id="DeviceStartUpFlags_Explain">מדיניות זו מציינת את הסימונים שיש להחיל על Google Chrome כשהוא מופעל. הסימונים המצוינים מוחלים במסך הכניסה בלבד. סימונים המוגדרים במסגרת מדיניות זו אינם מתפשטים להפעלות המשתמש.</string><string id="DeviceStartUpFlagsDesc">סימונים כלל-מערכתיים שיוחלו בעת ההפעלה של Google Chrome</string><string id="DeviceTargetVersionPrefix">גירסת עדכון אוטומטי המוגדרת כיעד</string><string id="DeviceTargetVersionPrefix_Explain">הגדרת גרסת יעד לעדכונים אוטומטיים.
+
+ציון הקידומת של גרסת יעד של Google Chrome OS שאליה יש לעדכן. אם המכשיר פועל בגרסה שקדמה לקידומת שצוינה, יתבצע עדכון לגרסה העדכנית ביותר של הקידומת הנתונה. אם המכשיר כבר פועל בגרסה מתקדמת יותר, לא תהיה לכך כל השפעה (כלומר, לא יבוצעו שדרוגים לאחור) והמכשיר יישאר בגרסה הנוכחית. בהיבט של הרכיבים, פורמט הקידומת פועל כפי שמומחש בדוגמה הבאה:
+
+&quot;&quot; (או לא מוגדר): יש לעדכן לגרסה העדכנית ביותר הזמינה.
+&quot;1412.&quot;: יש לעדכן לגרסה משנית של 1412 (למשל, 1412.24.34 או 1412.60.2)
+&quot;1412.2.&quot;: יש לעדכן לגרסה משנית של 1412.2 (למשל, 1412.2.34 או 1412.2.2)
+&quot;1412.24.34&quot;: יש לעדכן לגרסה הספציפית הזו בלבד
+
+אזהרה: לא מומלץ להגדיר הגבלות גרסה מכיוון שהן עלולות למנוע מהמשתמשים לקבל עדכוני תוכנה ותיקוני אבטחה קריטיים. הגבלת העדכונים לקידומת גרסה ספציפית עלולה להציב את המשתמשים בפני סיכון.</string><string id="DeviceUpdateAllowedConnectionTypes">סוגי החיבורים המותרים לקבלת עדכונים</string><string id="DeviceUpdateAllowedConnectionTypes_Explain">‏ סוגי חיבורים המותרים לשימוש עבור עדכוני מערכת ההפעלה. עדכוני מערכת ההפעלה עלולים להכביד על החיבור בשל גודלם וייתכן שהם יהיו כרוכים בתשלום נוסף. לכן, כברירת מחדל, הם אינם פעילים עבור סוגי החיבורים הנחשבים יקרים, הכוללים Bluetooth‏, WiMax וסלולרי, בשלב זה.
+
+מזהי סוגי החיבור המוכרים הם &quot;Ethernet&quot;‏, &quot;WiFi&quot;‏, &quot;WiMAX&quot;‏, &quot;Bluetooth&quot; ו&quot;סלולרי&quot;.</string><string id="DeviceUpdateAllowedConnectionTypesDesc">סוגי החיבורים המותרים לקבלת עדכונים</string><string id="DeviceUpdateHttpDownloadsEnabled">‏אפשר הורדות של עדכונים אוטומטיים דרך HTTP</string><string id="DeviceUpdateHttpDownloadsEnabled_Explain">‏ניתן להוריד תוכן מנות של עדכונים אוטומטיים ב-Google Chrome OS באמצעות HTTP במקום HTTPS. כך מתאפשרת שמירה שקופה של הורדות HTTP בקובץ HTTP שמור.
+
+אם אפשרות זו מוגדרת כ-true‏, Google Chrome OS ינסה להוריד תוכן מנות של עדכונים אוטומטיים דרך HTTP. אם המדיניות מוגדרת כ-false, או אינה מוגדרת כלל, ייעשה שימוש ב-HTTPS להורדת תוכן מנות של עדכונים אוטומטיים.</string><string id="DeviceUpdateScatterFactor">גורם פיזור של עדכון אוטומטי</string><string id="DeviceUpdateScatterFactor_Explain">מציין עד כמה שניות המכשיר יכול לעכב אוטומטית את הורדת העדכון המתבצעת באמצעותו, מהרגע שבו העדכון נדחף לראשונה אל השרת. המכשיר עשוי להמתין חלק מזמן זה במונחים של זמן לפי שעון רגיל, ואת החלק הנותר במונחים של מספר בדיקות העדכון. בכל מקרה, הפיזור נמצא בתחום העליון של פרק זמן קבוע, כדי שהמכשיר לעולם לא ייתקע לנצח בהמתנה להוריד עדכון.</string><string id="DeviceUserWhitelist">רשימת היתרים של פרטי כניסת משתמש</string><string id="DeviceUserWhitelist_Explain">Defines the list of users that are allowed to login to the device. Entries are of the form user@domain, such as madmax@managedchrome.com. To allow arbitrary users on a domain, use entries of the form *@domain.
+
+If this policy is not configured, there are no restrictions on which users are allowed to sign in. Note that creating new users still requires the DeviceAllowNewUsers policy to be configured appropriately.</string><string id="DeviceUserWhitelistDesc">רשימת היתרים של פרטי כניסת משתמש</string><string id="DeviceWallpaperImage">תמונת טפט של מכשיר</string><string id="DeviceWallpaperImage_Explain">‏אם משתמשים עדיין לא התחברו למכשיר, הגדר תמונת טפט ברמת המכשיר שמוצגת במסך הכניסה. כדי להגדיר את המדיניות יש לציין את כתובת האתר שממנה מכשיר ה-Chrome OS יכול להוריד את תמונת הטפט, וייעשה שימוש ב-hash קריפטוגרפי לאימות של שלמות ההורדה. התמונה חייבת להיות בפורמט JPEG, והגודל המקסימלי של הקובץ הוא 16MB. כתובת האתר חייבת להיות נגישה בלי צורך באימות. מתבצעת הורדה של תמונת הטפט ואז מתבצעת שמירה במטמון. תתבצע הורדה חוזרת שלה בכל שינוי של כתובת האתר או של ה-hash.
+
+יש לציין את המדיניות כמחרוזת שמפרטת את כתובת האתר ואת ה-hash בפורמט JSON, כגון:
+{
+&quot;url&quot;: &quot;https://example.com/device_wallpaper.jpg&quot;,
+&quot;hash&quot;: &quot;examplewallpaperhash&quot;
+}
+
+אם הוגדרה במכשיר מדיניות לגבי טפט, מכשיר ה-Chrome OS יוריד את תמונת הטפט וישתמש בה במסך הכניסה - אם משתמשים לא התחברו עדיין למכשיר. אחרי התחברות של משתמש, תיושם המדיניות שלו לגבי טפט.
+
+אם לא מוגדרת מדיניות לגבי טפט במכשיר, והמשתמש הגדיר מדיניות כזו, המדיניות של המשתמש תקבע מה יוצג.</string><string id="Disable3DAPIs">‏השבת תמיכה בממשקי API של גרפיקה תלת-ממדית</string><string id="Disable3DAPIs_Explain">Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API.
+
+Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.
+
+If HardwareAccelerationModeEnabled is set to false, Disable3DAPIs is ignored and it is equivalent to Disable3DAPIs being set to true.</string><string id="DisablePluginFinder">ציין אם מאתר יישומי הפלאגין צריך להיות מושבת</string><string id="DisablePluginFinder_Explain">אם תהפוך הגדרה זו לפעילה, החיפוש וההתקנה האוטומטיים של יישומי פלאגין חסרים יושבתו ב-Google Chrome. בין אם תגדיר אפשרות זו כמושבתת ובין אם לא, מחפש הפלאגין יהפוך לפעיל.</string><string id="DisableSafeBrowsingProceedAnyway">השבת יכולת להמשיך מדף האזהרה של 'גלישה בטוחה'</string><string id="DisableSafeBrowsingProceedAnyway_Explain">‏שירות 'גלישה בטוחה' מציג דף אזהרה כשמשתמשים מנווטים אל אתרים שסומנו כבעלי פוטנציאל זדוני. הפעלת ההגדרה הזו מונעת ממשתמשים להמשיך מדף האזהרה אל האתר הזדוני.
+
+אם ההגדרה הזו מושבתת או לא נקבעה, משתמשים יכולים להמשיך אל האתר המסומן לאחר הצגת האזהרה.
+
+עיין בכתובת https://developers.google.com/safe-browsing לקבלת מידע נוסף על 'גלישה בטוחה'.</string><string id="DisableScreenshots">השבת צילום צילומי מסך</string><string id="DisableScreenshots_Explain">If enabled, screenshots cannot be taken using keyboard shortcuts or extension APIs.
+
+If disabled or not specified, taking screenshots is allowed.</string><string id="DisplayRotationDefault">הגדר את ברירת המחדל של סיבוב התצוגה, מיושם בכל הפעלה מחדש</string><string id="DisplayRotationDefault_Explain">הפעלת מדיניות זו גורמת לסיבוב של כל תצוגה
+לכיוון המוגדר בכל הפעלה מחדש וכן בפעם הראשונה שבה המכשיר מחובר
+אחרי שינוי ערך המדיניות. משתמשים יכולים לשנות את סיבוב התצוגה
+דרך דף ההגדרות לאחר הכניסה, אבל ערך המדיניות יבטל את ההגדרות שלהם
+בפעם הבאה שתתבצע הפעלה מחדש.
+
+מדיניות זו חלה על התצוגה הראשית וכמו כן על כל תצוגות המשנה.
+
+אם מדיניות זו אינה מופעלת, ערך ברירת המחדל הוא אפס מעלות
+והמשתמש רשאי לשנות זאת. במקרה זה, ערך ברירת המחדל
+אינו מיושם שוב בכל הפעלה מחדש.</string><string id="DisplayRotationDefault_ROTATE_0">סובב את המסך ב-0 מעלות</string><string id="DisplayRotationDefault_ROTATE_90">סובב את המסך ב-90 מעלות בכיוון השעון</string><string id="DisplayRotationDefault_ROTATE_180">סובב את המסך ב-180 מעלות</string><string id="DisplayRotationDefault_ROTATE_270">סובב את המסך ב-270 מעלות בכיוון השעון</string><string id="DownloadDirectory">הגדר ספריית הורדות</string><string id="DownloadDirectory_Explain">‏מדיניות זו מגדירה את הספריה שבה ישתמש Google Chrome להורדת קבצים.
+
+אם תגדיר מדיניות זו, Google Chrome ישתמש בספריה שצוינה, בין אם המשתמש ציין ספריה ובין אם המשתמש הפעיל את הסימון לבקשת מיקום הורדה בכל פעם.
+
+בכתובת https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables תוכל לעיין ברשימת משתנים שניתן להשתמש בהם.
+
+אם לא תגדיר מדיניות זו כלל, ייעשה שימוש בספריית ברירת המחדל של ההורדות והמשתמש יוכל לשנות אותה.</string><string id="DownloadRestrictions">התרת הגבלות על הורדה</string><string id="DownloadRestrictions_Explain">Configures the type of downloads that Google Chrome will completely block, without letting users override the security decision.
+
+If you set this policy, Google Chrome will prevent certain types of downloads, and won't let user bypass the security warnings.
+
+When the 'Block dangerous downloads' option is chosen, all downloads are allowed, except for those that carry SafeBrowsing warnings.
+
+When the 'Block potentially dangerous downloads' option is chosen, all downloads allowed, except for those that carry SafeBrowsing warnings of potentially dangerous downloads.
+
+When the 'Block all downloads' option is chosen, all downloads are blocked.
+
+When this policy is not set, (or the 'No special restrictions' option is chosen), the downloads will go through the usual security restrictions based on SafeBrowsing analysis results.
+
+Note that these restrictions apply to downloads triggered from web page content, as well as the 'download link...' context menu option. These restrictions do not apply to the save / download of the currently displayed page, nor does it apply to saving as PDF from the printing options.
+
+See https://developers.google.com/safe-browsing for more info on SafeBrowsing.</string><string id="DownloadRestrictions_DefaultDownloadSecurity">ללא הגבלות מיוחדות</string><string id="DownloadRestrictions_BlockDangerousDownloads">חסימת הורדות מסוכנות</string><string id="DownloadRestrictions_BlockPotentiallyDangerousDownloads">חסימת הורדות שעלולות להיות מסוכנות</string><string id="DownloadRestrictions_BlockAllDownloads">חסום את כל ההורדות</string><string id="EasyUnlockAllowed">‏מאפשר שימוש ב-Smart Lock</string><string id="EasyUnlockAllowed_Explain">If you enable this setting, users will be allowed to use Smart Lock if the requirements for the feature are satisfied.
+
+If you disable this setting, users will not be allowed to use Smart Lock.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="EcryptfsMigrationStrategy">‏אסטרטגיית העברה ל-ecryptfs</string><string id="EcryptfsMigrationStrategy_Explain">Specifies the action that should be taken when the user's home directory was created with ecryptfs encryption and needs to transition to ext4 encryption.
+
+If you set this policy to 'DisallowArc', Android apps will be disabled for the user and no migration from ecryptfs to ext4 encryption will be performed. Android apps will not be prevented from running when the home directory is already ext4-encrypted.
+
+If you set this policy to 'Migrate', ecryptfs-encrypted home directories will be automatically migrated to ext4 encryption on sign-in without asking for user consent.
+
+If you set this policy to 'Wipe', ecryptfs-encrypted home directories will be deleted on sign-in and new ext4-encrypted home directories will be created instead. Warning: This removes the user's local data.
+
+If you set this policy to 'AskUser', users with ecryptfs-encrypted home directories will be offered to migrate.
+
+This policy does not apply to kiosk users. If this policy is left not set, the device will behave as if 'DisallowArc' was chosen.</string><string id="EcryptfsMigrationStrategy_DisallowArc">Disallow data migration and ARC.</string><string id="EcryptfsMigrationStrategy_Migrate">Migrate automatically, donâ€™t ask for user consent.</string><string id="EcryptfsMigrationStrategy_Wipe">Wipe the userâ€™s ecryptfs home directory and start with a fresh ext4-encrypted home directory.</string><string id="EcryptfsMigrationStrategy_AskUser">Ask the user if they would like to migrate or skip migration and disallow ARC.</string><string id="EcryptfsMigrationStrategy_MinimalMigrate">‏דומה ל-Wipe (ערך 2), אבל מנסה לשמר אסימוני התחברות כדי שהמשתמש לא יצטרך להיכנס שוב לחשבון.</string><string id="EcryptfsMigrationStrategy_AskForEcryptfsArcUsers">‏אם הדגם של מכשיר הלקוח תמך ב-ARC לפני שהיה צורך בהעברה אל ext4 כדי להפעיל ARC, ואם המדיניות ArcEnabled מוגדרת כ-true, ההתנהגות של אפשרות זו תהיה זהה ל-AskUser (ערך 3). בכל המקרים האחרים (אם דגם המכשיר לא תמך לפני כן ב-ARC, או אם מדיניות ArcEnabled מוגדרת כ-false), הערך הזה זהה ל-DisallowArc (ערך 0).</string><string id="EditBookmarksEnabled">המדיניות מפעילה או משביתה עריכת סימניות</string><string id="EditBookmarksEnabled_Explain">If you enable this setting, bookmarks can be added, removed or modified. This is the default also when this policy is not set.
+
+If you disable this setting, bookmarks can not be added, removed or modified. Existing bookmarks are still available.</string><string id="EnableCommonNameFallbackForLocalAnchors">‏האם להתיר אישורים שהונפקו באמצעות עוגני אמון מקומיים שחסר בהם התוסף subjectAlternativeName</string><string id="EnableCommonNameFallbackForLocalAnchors_Explain">‏כשהגדרה זו מופעלת, ב-Google Chrome ייעשה שימוש ב-commonName של אישור שרת להתאמת שם מארח, אם באישור חסר תוסף מסוג subjectAlternativeName, כל עוד הוא מאומת בהצלחה ומקושר לאישורי CA בהתקנה מקומית.
+
+שים לב שלא מומלץ לעשות זאת, שכן הדבר עלול לאפשר עקיפה של תוסף ה-nameConstraints שמגביל את שמות המארחים שניתן להקצות לאישור מסוים.
+
+אם המדיניות לא הוגדרה, או אם הוגדרה ל-false, לא יינתן אמון באישורי שרת שאין בהם תוסף subjectAlternativeName שמכיל שם DNS או כתובת IP.</string><string id="EnableDeprecatedWebPlatformFeatures">הפעל לזמן מוגבל תכונות פלטפורמת אינטרנט שהוצאו משימוש</string><string id="EnableDeprecatedWebPlatformFeatures_Explain">‏ציין רשימה של תכונות פלטפורמת אינטרנט שהוצאו משימוש לצורך הפעלה מחדש באופן זמני.
+
+מדיניות זו מעניקה למנהלי מערכת את היכולת להפעיל מחדש לזמן מוגבל תכונות פלטפורמת אינטרנט שהוצאו משימוש. תג מחרוזת ישמש לזיהוי התכונות, ותכונות המופיעות ברשימה המוגדרת על ידי מדיניות זו ותואמות לתג יופעלו מחדש.
+
+אם מדיניות זו לא תוגדר, או שהרשימה ריקה או שאינה תואמת את אחד מתגי המחרוזת הנתמכים, כל תכונות פלטפורמת האינטרנט שהוצאו משימוש יישארו מושבתות.
+
+אף שהמדיניות עצמה נתמכת בפלטפורמות שהוזכרו לעיל, ייתכן שהתכונה שהיא מפעילה תהיה זמינה במספר קטן יותר של פלטפורמות. לא את כל תכונות פלטפורמת האינטרנט שהוצאו משימוש אפשר להפעיל מחדש. ניתן להפעיל רק את אלו המוזכרות במפורש ברשימה שבהמשך, וזאת לפרק זמן מוגבל, המשתנה בהתאם לתכונה. הפורמט הכללי של תג המחרוזת יהיה [DeprecatedFeatureName]_EffectiveUntil[yyyymmdd]. כסימוכין, ניתן לראות את הכוונה שמאחורי השינויים בתכונת פלטפורמת האינטרנט בכתובת  https://bit.ly/blinkintents.
+</string><string id="EnableDeprecatedWebPlatformFeaturesDesc">הפעל לזמן מוגבל תכונות פלטפורמת אינטרנט שהוצאו משימוש</string><string id="EnableOnlineRevocationChecks">‏האם מבוצעות בדיקות OCSP/CRL מקוונות</string><string id="EnableOnlineRevocationChecks_Explain">‏לאור העובדה שבדיקות ביטול מקוונות מסוג soft-fail אינן מספקות יתרון אבטחה אפקטיבי, הן מושבתות כברירת מחדל ב-Google Chrome מגרסה 19 ואילך. על ידי הגדרת מדיניות זו כ-true, ההתנהגות הקודמת תשוחזר ויבוצעו בדיקות OCSP/CRL מקוונות.
+
+אם המדיניות לא תוגדר, או תוגדר כ-false‏, Google Chrome לא יבצע בדיקות ביטול מקוונות בגרסה 19 ואילך של Google Chrome.</string><string id="EnableSha1ForLocalAnchors">‏האם אישורים החתומים באמצעות SHA-1 שהונפקו על-ידי עוגני אמון מקומיים מותרים</string><string id="EnableSha1ForLocalAnchors_Explain">‏כאשר הגדרה זו מופעלת, Google Chrome מתיר אישורים שנחתמו באמצעות SHA-1 כל עוד הם מאומתים בהצלחה ומשורשרים לאישורי CA המותקנים מקומית.
+
+שים לב שמדיניות זו תלויה בערימת אימות האישורים של מערכת ההפעלה המאפשרת חתימות SHA-1. אם עדכון של מערכת ההפעלה משנה את אופן הטיפול של מערכת ההפעלה באישורי SHA-1, ייתכן שלמדיניות זו לא תהיה השפעה יותר. בנוסף, מדיניות זו מיועדת לשמש כפתרון זמני כדי להקנות לארגונים זמן נוסף למעבר מ-SHA-1. מדיניות זו תוסר ב-1 בינואר 2019, או זמן קצר לאחר מכן.
+
+אם מדיניות זו אינה מוגדרת, או אם היא מוגדרת לערך false‏, Google Chrome יפעל בהתאם ללוח הזמנים שפורסם להוצאה משימוש של SHA-1</string><string id="ExternalStorageDisabled">השבת הרכבה של אחסון חיצוני</string><string id="ExternalStorageDisabled_Explain">‏כאשר מדיניות זו מוגדרת ל-true, אחסון חיצוני לא יהיה זמין בדפדפן הקבצים.
+
+מדיניות זו משפיעה על כל סוגי אמצעי האחסון. לדוגמה: כונני Flash ל-USB, כוננים קשיחים חיצוניים, כרטיסי SD וכרטיסי זיכרון אחרים, אחסון אופטי וכדומה. האחסון הפנימי אינו מושפע, לכן ניתן לגשת לקבצים שנשמרו בתיקייה 'הורדות'. גם Google Drive אינו מושפע ממדיניות זו.
+
+אם הגדרה זו מושבתת או לא מוגדרת, המשתמשים יכולים להשתמש בכל סוגי האחסון החיצוני הנתמכים במכשיר שלהם.</string><string id="ExternalStorageReadOnly">Treat external storage devices as read-only</string><string id="ExternalStorageReadOnly_Explain">‏כאשר המדיניות מוגדרת ל-true, המשתמשים לא יכולים לכתוב בהתקני אחסון חיצוניים.
+
+אם ההגדרה הזו מוגדרת ל-false או שלא הוגדרה, המשתמשים יכולים ליצור ולשנות קבצים של התקני אחסון חיצוניים שניתנים לכתיבה באופן פיזי.
+
+המדיניות ExternalStorageDisabled מקבלת קדימות על פני המדיניות הנוכחית - אם ExternalStorageDisabled מוגדרת ל-true, כל הגישה לאחסון חיצוני מושבתת והמערכת תתעלם מהמדיניות הנוכחית.
+
+רענון דינמי של מדיניות זו נתמך ב-M56 ומעלה.</string><string id="ForceGoogleSafeSearch">‏אלץ חיפוש בטוח של Google</string><string id="ForceGoogleSafeSearch_Explain">‏מדיניות זו מאלצת שאילתות בחיפוש האינטרנט של Google להתבצע כאשר 'חיפוש בטוח' מוגדר לפעיל ומונעת את השינוי של הגדרה זו על ידי המשתמשים.
+
+אם תפעיל הגדרה זו, 'חיפוש בטוח' בחיפוש Google יהיה תמיד פעיל.
+
+אם תשבית הגדרה זו או לא תגדיר ערך, לא תתבצע אכיפה של 'חיפוש בטוח' בחיפוש Google.</string><string id="ForceMaximizeOnFirstRun">הגדל למקסימום את חלון הדפדפן הראשון בהפעלה הראשונה</string><string id="ForceMaximizeOnFirstRun_Explain">If this policy is set to true, Google Chrome will unconditionally maximize the first window shown on first run.
+If this policy is set to false or not configured, the decision whether to maximize the first window shown will be based on the screen size.</string><string id="ForceYouTubeRestrict">‏אכיפת סינון תוכן מינימלי ב-YouTube</string><string id="ForceYouTubeRestrict_Explain">‏מדיניות זו אוכפת סינון תוכן מינימלי ב-YouTube ומונעת ממשתמשים לעבור למצב פחות מוגבל.
+
+אם הגדרה זו נקבעת כ'קפדנית', תמיד יפעל סינון תוכן קפדני ב-YouTube.
+
+אם הגדרה זו נקבעת כ'מתונה', המשתמש יכול לבחור ב-YouTube רק בסינון תוכן מתון
+ובסינון תוכן קפדני, אבל אינו יכול להשבית את סינון התוכן.
+
+אם ההגדרה הזו כבויה או לא מוגדר עבורה ערך, Google Chrome לא אוכף סינון תוכן ב-YouTube. עם זאת, ייתכן שסעיפי מדיניות חיצונית, כמו המדיניות של YouTube, עדיין יאכפו סינון תוכן.</string><string id="ForceYouTubeRestrict_Off">‏אי-אכיפה של סינון תוכן ב-YouTube</string><string id="ForceYouTubeRestrict_Moderate">‏אכיפת סינון תוכן ברמה מתונה לפחות ב-YouTube</string><string id="ForceYouTubeRestrict_Strict">‏אכיפת סינון תוכן קפדני ב-YouTube</string><string id="FullscreenAllowed">הפעל את מצב מסך מלא</string><string id="FullscreenAllowed_Explain">This policy controls the availability of fullscreen mode in which all Google Chrome UI is hidden and only web content is visible.
+
+If this policy is set to true or not not configured, the user, apps and extensions with appropriate permissions can enter fullscreen mode.
+
+If this policy is set to false, neither the user nor any apps or extensions can enter fullscreen mode.
+
+On all platforms except Google Chrome OS, kiosk mode is unavailable when fullscreen mode is disabled.</string><string id="Http09OnNonDefaultPortsEnabled">‏הפעלת תמיכה ב-HTTP/0.9 ליציאות שאינן מוגדרות כברירת מחדל</string><string id="Http09OnNonDefaultPortsEnabled_Explain">‏המדיניות הזו מפעילה את HTTP/0.9 ביציאות שאינן 80 עבור HTTP או 443 עבור HTTPS.
+
+מדיניות זו מושבתת כברירת מחדל. אם תפעיל אותה, המשתמשים יהיו חשופים לבעיית האבטחה https://crbug.com/600352.
+
+מדיניות זו נועדה לאפשר לארגונים להעביר שרתים קיימים מ-HTTP/0.9, והיא תוסר בעתיד.
+
+אם מדיניות זו לא הוגדרה, HTTP/0.9 יושבת ביציאות שאינן מוגדרות כברירת מחדל.</string><string id="IncognitoModeAvailability">זמינות של מצב גלישה בסתר</string><string id="IncognitoModeAvailability_Explain">מציין אם המשתמש יכול לפתוח דפים במצב גלישה בסתר ב-Google Chrome. אם נבחרת האפשרות 'הפיכה לפעיל' או שהמדיניות לא מוגדרת, ייתכן שהדפים ייפתחו במצב גלישה בסתר. אם נבחרת האפשרות 'השבתה', ייתכן שהדפים לא ייפתחו במצב גלישה בסתר. אם נבחרת האפשרות 'אכיפה', ייתכן שהדפים יפתחו רק במצב גלישה בסתר.</string><string id="IncognitoModeAvailability_Enabled">מצב גלישה בסתר זמין</string><string id="IncognitoModeAvailability_Disabled">מצב גלישה בסתר מושבת.</string><string id="IncognitoModeAvailability_Forced">אילוץ של מצב גלישה בסתר</string><string id="InstantTetheringAllowed">Allows Instant Tethering to be used.</string><string id="InstantTetheringAllowed_Explain">If this setting is enabled, users will be allowed to use Instant Tethering, which allows their Google phone to share its mobile data with their device.
+
+If this setting is disabled, users will not be allowed to use Instant Tethering.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="IsolateOrigins">הפעלת בידוד אתר בשביל מקורות ספציפיים</string><string id="IsolateOrigins_Explain">‏
+הערה: המדיניות הזו ניסיונית ועלולה שלא לפעול היטב!
+אם המדיניות מופעלת, כל אחד מהמקורות שצוינו ברשימה המופרדת באמצעות פסיקים יפעל
+בתהליך משלו. ההגדרה הזו תבודד גם מקורות שהשם שלהם הוא תת-דומיין. לדוגמה,
+ציון הכתובת https://example.com/‎ יגרום גם לבידוד של https://foo.example.com/‎ כחלק
+מהאתר https://example.com/‎.
+אם המדיניות מושבתת, תחול הלוגיקה של ניהול תהליך לפני בידוד של אתר.
+אם המדיניות לא מוגדרת, המשתמש יוכל לשנות את ההגדרה הזו.
+</string><string id="KeyPermissions">הרשאות עיקריות</string><string id="KeyPermissions_Explain">‏הענקת גישה למפתחות תאגידיים לתוספים.
+
+מפתחות מיועדים לשימוש תאגידי אם הם נוצרים באמצעות ממשק ה-API ‏chrome.platformKeys בחשבון מנוהל. מפתחות שמיובאים או נוצרים בדרך אחרת אינם מיועדים לשימוש תאגידי.
+
+גישה למפתחות המיועדים לשימוש תאגידי נשלטת אך ורק על ידי מדיניות זו. המשתמש אינו יכול להעניק או לשלול גישה למפתחות תאגידיים לתוספים או מהם.
+
+כברירת מחדל, תוסף אינו יכול להשתמש במפתח המיועד לשימוש תאגידי, והדבר מקביל להגדרת allowCorporateKeyUsage לערך false עבור אותו תוסף.
+
+רק אם הערך של הגדרת allowCorporateKeyUsage מוגדר כ-true עבור תוסף כלשהו, ניתן להשתמש עבורו בכל מפתח פלטפורמה שסומן לשימוש תאגידי כדי לחתום על נתונים שרירותיים. יש להעניק את ההרשאה רק אם אפשר לתת אמון בתוסף שיעניק למפתח גישה מאובטחת וימנע גישה של תוקפים.</string><string id="ManagedBookmarks">סימניות מנוהלות</string><string id="ManagedBookmarks_Explain">Configures a list of managed bookmarks.
+
+The policy consists of a list of bookmarks whereas each bookmark is a dictionary containing the keys &quot;name&quot; and &quot;url&quot; which hold the bookmark's name and its target. A subfolder may be configured by defining a bookmark without an &quot;url&quot; key but with an additional &quot;children&quot; key which itself contains a list of bookmarks as defined above (some of which may be folders again). Google Chrome amends incomplete URLs as if they were submitted via the Omnibox, for example &quot;google.com&quot; becomes &quot;https://google.com/&quot;.
+
+These bookmarks are placed in a folder that can't be modified by the user (but the user can choose to hide it from the bookmark bar). By default the folder name is &quot;Managed bookmarks&quot; but it can be customized by adding to the list of bookmarks a dictionary containing the key &quot;toplevel_name&quot; with the desired folder name as the value.
+
+Managed bookmarks are not synced to the user account and can't be modified by extensions.</string><string id="MaxInvalidationFetchDelay">העיכוב המרבי לאחזור לאחר ביטול תוקף של מדיניות</string><string id="MaxInvalidationFetchDelay_Explain">מדיניות זו מציינת את משך העיכוב המרבי, בשניות, בין קבלת ביטול תוקף של מדיניות ואחזור של המדיניות החדשה מהשירות לניהול מכשירים.
+
+הגדרת מדיניות זו עוקפת את ערך ברירת המחדל של 5,000 אלפיות השנייה. ערכים חוקיים עבור מדיניות זו נעים בטווח שבין 1,000 אלפיות השנייה (שנייה אחת) ל-300,000 אלפיות השנייה (חמש דקות). ערכים שאינם כלולים בטווח זה יותאמו לערך הקרוב ביותר הכלול בטווח.
+
+אם מדיניות זו אינה מוגדרת, Google Chrome ישתמש בערך ברירת המחדל - 5,000 אלפיות השנייה.</string><string id="NativePrinters">הדפסה מקומית</string><string id="NativePrinters_Explain">Configures a list of printers.
+
+This policy allows administrators to provide printer configurations for
+their users.
+
+display_name and description are free form strings that can be customized for ease of printer selection. manufacturer and model serve to ease printer identification by end users. They represent the manufacturer and model of the printer. uri should be an address reachable from a client computer including the scheme, port, and queue. uuid is optional.  If provided, it is used to help deduplicate zeroconf printers.
+
+effective_model must match one of the strings which represent a Google Chrome OS supported printer. The string will be used to identify and install the appropriate PPD for the printer. More information can be found at https://support.google.com/chrome?p=noncloudprint.
+
+Printer setup is completed upon the first use of a printer.  PPDs are not
+downloaded until the printer is used.  After that time, frequently used
+PPDs are cached.
+
+This policy has no effect on whether users can configure printers on
+individual devices.  It is intended to be supplementary to the
+configuration of printers by individual users.</string><string id="NativePrintersDesc">הדפסה מקומית</string><string id="NativePrintersBulkAccessMode">מדיניות גישה אל תצורת מדפסות.</string><string id="NativePrintersBulkAccessMode_Explain">קובעת אילו מדפסות מהמדיניות NativePrintersBulkConfiguration זמינות למשתמשים.
+
+מגדירה מהי מדיניות הגישה שבה ייעשה שימוש בקביעת התצורה של מדפסות בכמות גדולה. אם נבחרה האפשרות AllowAll, כל המדפסות יוצגו. אם נבחרה האפשרות BlacklistRestriction, הגישה אל המדפסות שצוינו תוגבל על פי NativePrintersBulkBlacklist. אם נבחרה האפשרות WhitelistPrintersOnly, רשימת ההיתרים NativePrintersBulkWhitelist תאפשר גישה רק למדפסות שניתן לבחור.
+
+אם המדיניות הזו לא הוגדרה, תיבחר BlacklistRestriction כברירת מחדל.
+</string><string id="NativePrintersBulkAccessMode_BlacklistRestriction">כל המדפסות מוצגות, מלבד אלה ברשימה השחורה.</string><string id="NativePrintersBulkAccessMode_WhitelistPrintersOnly">משתמשים רואים רק מדפסות שנכללות ברשימת ההיתרים</string><string id="NativePrintersBulkAccessMode_AllowAll">היתר לכל המדפסות מקובץ התצורה.</string><string id="NativePrintersBulkBlacklist">מדפסות ארגוניות מושבתות</string><string id="NativePrintersBulkBlacklist_Explain">מציינת את המדפסות שאינן זמינות למשתמש.
+
+המדיניות הזו מופעלת רק אם האפשרות BlacklistRestriction נבחרה בשביל NativePrintersBulkAccessMode.
+
+אם המדיניות הזו הופעלה, כל המדפסות זמינות למשתמש, מלבד אלה עם המזהים שרשומים במדיניות.
+</string><string id="NativePrintersBulkBlacklistDesc">מדפסות ארגוניות מושבתות</string><string id="NativePrintersBulkConfiguration">קובץ תצורה של מדפסות ארגוניות</string><string id="NativePrintersBulkConfiguration_Explain">‏מספקת תצורות בשביל מדפסות ארגוניות.
+
+המדיניות הזו מאפשרת לך לספק תצורות מדפסת למכשירי Google Chrome OS. הקובץ יכול להיות בגודל 5MB לכל היותר ועליו להיות מקודד ב-JSON. הפורמט זהה למילון NativePrinters. ההערכה היא שקובץ מקודד הכולל כ-21,000 מדפסות יהיה בגודל של 5MB. הגיבוב הקריפטוגרפי משמש לאימות השלמות של ההורדה.
+
+המערכת מורידה את הקובץ ומעבירה אותו למטמון. המערכת תוריד אותו שוב כשכתובת האתר או הגיבוב ישתנו.
+
+אם המדיניות הזו תוגדר, Google Chrome OS יוריד את הקובץ כדי לקבל תצורות מדפסת, והמדפסות יהיו זמינות על פי NativePrintersBulkAccessMode, NativePrintersBulkWhitelist ו-NativePrintersBulkBlacklist.
+
+אם המדיניות הזו הוגדרה, המשתמשים לא יכולים לשנות או לעקוף אותה.
+
+למדיניות הזו אין השפעה על היכולת של משתמשים להגדיר תצורת מדפסות במכשירים נפרדים. היא מיועדת לשמש כתוסף לתצורה של מדפסות שנקבעת על-ידי משתמשים נפרדים.
+</string><string id="NativePrintersBulkWhitelist">מדפסות ארגוניות מופעלות</string><string id="NativePrintersBulkWhitelist_Explain">מציינת את המדפסות הזמינות למשתמש.
+
+המדיניות הזו מופעלת רק אם האפשרות WhitelistPrintersOnly נבחרה בשביל NativePrintersBulkAccessMode.
+
+אם המדיניות הזו הופעלה, רק המדפסות שהמזהים שלהן תואמים לערכים שצוינו יהיו זמינות למשתמש. המזהים חייבים להיות תואמים לרשומות בקובץ שצוין ב-NativePrintersBulkConfiguration.
+</string><string id="NativePrintersBulkWhitelistDesc">מדפסות ארגוניות מופעלות</string><string id="NetworkPredictionOptions">הפוך חיזוי רשת לפעיל</string><string id="NetworkPredictionOptions_Explain">‏מדיניות זו מאפשרת חיזוי רשת ב-Google Chrome ומונעת מהמשתמשים לשנות הגדרה זו.
+
+מדיניות זו שולטת בהבאה מראש של DNS, בחיבור מראש של TCP ו-SSL ובעיבוד מראש של דפי אינטרנט.
+
+אם תגדיר העדפה זו למצבי 'תמיד', 'אף פעם' או 'Wi-Fi בלבד', המשתמשים לא יוכלו לשנות או לבטל אותה ב-Google Chrome.
+
+אם לא תגדיר מדיניות זו כלל, חיזויי רשת יופעלו, אך המשתמשים יוכלו לשנות זאת.</string><string id="NetworkPredictionOptions_NetworkPredictionAlways">בצע חיזוי של פעולות רשת בכל חיבור רשת</string><string id="NetworkPredictionOptions_NetworkPredictionWifiOnly">הפעל תחזית של פעולות רשת בכל רשת שאינה סלולרית.
+(יצא משימוש בגירסה 50, הוסר בגירסה 52, אם הערך שנקבע הוא 1 ההתייחסות תהיה כאל 0 - הפעל תחזית של פעולות רשת בכל חיבור רשת.)</string><string id="NetworkPredictionOptions_NetworkPredictionNever">אל תבצע חיזוי של פעולות רשת באף חיבור רשת</string><string id="NoteTakingAppsLockScreenWhitelist">הוסף לרשימת ההיתרים אפליקציות לרישום הערות שמותרות במסך הנעילה של Google Chrome OS</string><string id="NoteTakingAppsLockScreenWhitelist_Explain">‏באמצעות המדיניות הזו מגדירים רשימת אפליקציות שניתן לאשר לשימוש כאפליקציות לרישום הערות במסך הנעילה של Google Chrome OS.
+
+אם האפליקציה המועדפת לרישום הערות תאושר לשימוש במסך הנעילה, מסך הנעילה יכיל רכיב של ממשק משתמש שבאמצעותו ניתן להפעיל את האפליקציה הזו.
+לאחר הפעלת האפליקציה, היא תוכל ליצור חלון אפליקציה על-גבי מסך הנעילה, וליצור פריטי נתונים (הערות) בהקשר של מסך הנעילה. לאחר ביטול הנעילה של הפעלת המשתמש העיקרית, האפליקציה תוכל לייבא את ההערות שנוצרו להפעלת המשתמש. נכון לעכשיו רק אפליקציות של Chrome לרישום הערות נתמכות במסך הנעילה.
+
+אם המדיניות הזו תוגדר, המשתמש יוכל לאשר אפליקציה לשימוש במסך הנעילה רק אם מזהה התוסף של האפליקציה כלול בערך של רשימת המדיניות.
+כתוצאה מכך, אם המדיניות הזו תוגדר עם רשימה ריקה, רישום ההערות במסך הנעילה יושבת לחלוטין.
+שם לב, גם אם המדיניות מכילה מזהה של אפליקציה מסוימת, בחלק מהמקרים המשתמש לא יוכל לאשר את האפליקציה הזו לשימוש כאפליקציית רישום הערות במסך הנעילה. לדוגמה, ב-Chrome 61, קבוצת האפליקציות הזמינות מוגבלת גם לפי הפלטפורמה.
+
+אם המדיניות תישאר ללא הגדרה, לא יחולו מגבלות שנובעות מהמדיניות על קבוצת האפליקציות שהמשתמש יכול לאשר לשימוש במסך הנעילה.</string><string id="NoteTakingAppsLockScreenWhitelistDesc">הוסף לרשימת ההיתרים אפליקציות לרישום הערות שמותרות במסך הנעילה של Google Chrome OS</string><string id="OpenNetworkConfiguration">תצורת רשת ברמת המשתמש</string><string id="OpenNetworkConfiguration_Explain">‏מאפשרת לדחוף את תצורת הרשת כדי שתיושם עבור משתמש למכשיר Google Chrome OS. תצורת הרשת היא מחרוזת בפורמט JSON כפי שהוגדרה על ידי פורמט תצורת הרשת הפתוחה, באופן המתואר ב-https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration</string><string id="PacHttpsUrlStrippingEnabled">‏הפעל חיתוך כתובות אתרים ל-PAC (ל-‎https://‎)</string><string id="PacHttpsUrlStrippingEnabled_Explain">‏מסירה חלקים רגישים מבחינת פרטיות ואבטחה מכתובות אתרים מסוג ‎https://‎ לפני העברתן לקובצי סקריפט מסוג PAC ‏(Proxy Auto Config) שבהם נעשה שימוש על ידי Google Chrome במהלך זיהוי שרת Proxy.
+
+כאשר המדיניות מוגדרת כ-True, היא מופעלת וחותכת כתובות אתרים מסוג ‎https://‎ לפני
+שליחתן לסקריפט מסוג PAC. באופן זה לסקריפט ה-PAC אין גישה לנתונים שמוגנים בדרך
+כלל על ידי ערוץ מוצפן (כמו הנתיב של כתובת האתר והשאילתה).
+
+כאשר המדיניות מוגדרת כ-False, תכונת האבטחה מושבתת וקובצי הסקריפט מסוג PAC
+מקבלים באופן מפורש גישה לכל הרכיבים של כתובת האתר מסוג ‎https://‎. הגדרה זו חלה על
+כל קובצי הסקריפט מסוג PAC, מכל המקורות. (כולל אלו שהובאו באמצעות העברה לא
+מאובטחת או שהתגלו באופן לא מאובטח דרך WPAD).
+
+כברירת מחדל, מדיניות זו מוגדרת כ-True (תכונת האבטחה מופעלת), למעט אצל משתמשים
+ארגוניים במערכת ההפעלה של Chrome שעבורם ברירת המחדל היא הגדרתה כ-False.
+
+מומלץ להגדיר את המדיניות כ-True. המקרים היחידים שבהם יש סיבה להגדירה כ-False הם
+מקרים של בעיות תאימות עם קובצי סקריפט קיימים מסוג PAC.
+
+השאיפה היא לבטל את הצורך בביטול זה בעתיד.</string><string id="PinnedLauncherApps">רשימת יישומים מוצמדים שיש להציג במפעיל</string><string id="PinnedLauncherApps_Explain">מפרט רשימה של מזהי היישומים ש-Google Chrome OS מציג כיישומים המוצמדים לסרגל ההפעלה.
+
+אם מדיניות זו מוגדרת, קבוצת היישומים קבועה ולמשתמש אין אפשרות לשנותה.
+
+אם מדיניות זו אינה מוגדרת, המשתמש רשאי לשנות את רשימת היישומים המוצמדים במפעיל.</string><string id="PinnedLauncherAppsDesc">רשימת יישומים מוצמדים שיש להציג במפעיל</string><string id="PolicyRefreshRate">קצב רענון עבור מדיניות משתמש</string><string id="PolicyRefreshRate_Explain">מדיניות זו מציינת את פרק הזמן במילי-שניות עד שנשלחת לשירות ניהול המכשיר בקשה לקבלת מידע על מדיניות המשתמש.
+
+הגדרה של מדיניות זו תחול במקום הגדרת ברירת המחדל של 3 שעות. ערכים חוקיים למדיניות זו נמצאים בטווח שבין 1800000 (30 דקות) ל-86400000 (יום אחד). ערכים שאינם נמצאים בטווח הזה יוחלפו בערכים המתאימים הנמצאים בגבולות הטווח. אם הפלטפורמה תומכת בהודעות בנוגע למדיניות, פרק הזמן עד לרענון יוגדר ל-24 שעות, מכיוון שהודעות בנוגע למדיניות צפויות לגרום לרענון אוטומטי בכל פעם שהמדיניות משתנה.
+
+אם מדיניות זו לא מוגדרת, Google Chrome ישתמש בברירת המחדל של 3 שעות.
+
+שים לב שאם המערכת תומכת בהודעות בנוגע למדיניות, פרק הזמן עד לרענון יוגדר ל-24 שעות (תוך התעלמות מכל הגדרות ברירת המחדל והערכים של מדיניות זו) מכיוון שהודעות בנוגע למדיניות צפויות לגרום לרענון אוטומטי בכל פעם שהמדיניות משתנה, ובכך הן הופכות רענון בתדירות גבוהה יותר ללא הכרחי.</string><string id="PrintingEnabled">הפוך הדפסה לפעילה</string><string id="PrintingEnabled_Explain">‏מדיניות זו מאפשרת הדפסה ב-Google Chrome ומונעת את השינוי של הגדרה זו על ידי המשתמשים.
+
+אם הגדרה זו מופעלת או אינה מוגדרת, המשתמשים יכולים להדפיס.
+
+אם הגדרה זו מושבתת, המשתמשים אינם יכולים להדפיס מ-Google Chrome. ההדפסה מושבתת בתפריט הכלים, בתוספים, ביישומי JavaScript ועוד. עדיין ניתן להדפיס מתוך יישומי פלאגין שעוקפים את Google Chrome בזמן הדפסה. לדוגמה, יישומי Flash מסוימים כוללים את אפשרות ההדפסה בתפריט ההקשר שלהם, שמדיניות זו אינה חלה עליו.</string><string id="QuicAllowed">‏הפעלה של פרוטוקול QUIC</string><string id="QuicAllowed_Explain">‏שימוש בפרוטוקול QUIC ב-Google Chrome מותר אם מדיניות זו מוגדרת כ-true או שאינה מוגדרת כלל.
+שימוש בפרוטוקול QUIC אסור אם מדיניות זו מוגדרת כ-false.</string><string id="RebootAfterUpdate">אתחול אוטומטי לאחר עדכון</string><string id="RebootAfterUpdate_Explain">‏תזמן אתחול אוטומטי לאחר שהוחל עדכון עבור Google Chrome OS.
+
+כאשר מדיניות זו מוגדרת ל-True, אתחול אוטומטי מתוזמן לאחר החלת עדכון ב-Google Chrome OS ונדרש אתחול להשלמת תהליך העדכון. האתחול מתוזמן מידית אך ייתכן שהוא יושהה במכשיר למשך עד 24 שעות אם המכשיר נמצא באותו רגע בשימוש.
+
+כאשר מדיניות זו מוגדרת ל-False, לא מתוזמן אתחול אוטומטי לאחר החלת עדכון ב-Google Chrome OS. תהליך העדכון מושלם בפעם הבאה שהמשתמש מאתחל את המכשיר.
+
+אם תגדיר מדיניות זו, משתמשים לא יוכלו לשנות או לעקוף אותה.
+
+הערה: בשלב זה, אתחולים אוטומטיים מופעלים רק כאשר מסך ההתחברות מוצג או כאשר הפעלה של אפליקציית קיוסק נמצאת בתהליך. מצב זה ישתנה בעתיד והמדיניות תחול תמיד, ללא קשר לשאלה אם הפעלה מסוג כלשהו נמצאת בתהליך או לא.</string><string id="RequireOnlineRevocationChecksForLocalAnchors">‏אם בדיקות OCSP/CRL מקוונות נדרשות עבור עוגני אמון מקומיים</string><string id="RequireOnlineRevocationChecksForLocalAnchors_Explain">‏כאשר הגדרה זו מופעלת, Google Chrome תמיד יבצע בדיקת ביטול עבור אישורי שרת המאומתים בהצלחה וחתומים באמצעות אישורי CA המותקנים באופן מקומי.
+
+אם אין באפשרות Google Chrome להשיג מידע על מצב הביטול, אישורים מסוג זה יטופלו כאישורים מבוטלים ('כשל חמור').
+
+אם מדיניות זו אינה מוגדרת, או אם היא מוגדרת כ-false‏, Google Chrome ישתמש בהגדרות המקוונות הקיימות לבדיקת ביטול.</string><string id="RunAllFlashInAllowMode">‏הרחבה של הגדרת תוכן Flash לכל התוכן</string><string id="RunAllFlashInAllowMode_Explain">‏ההגדרה הזו תגרום להפעלה של כל תוכן Flash המוטמע באתרים שבהם הגדרות התוכן מתירות Flash, כולל תוכן ממקורות אחרים או תוכן קטן. השינוי הזה יתרחש בין אם ההגדרות להתרת Flash נקבעו על-ידי המשתמש ובין אם מקורן במדיניות הארגון.
+
+כדי לקבוע אילו אתרים יורשו להפעיל Flash, יש לעיין במדיניות &quot;DefaultPluginsSetting&quot;‏, &quot;PluginsAllowedForUrls&quot; ו-&quot;PluginsBlockedForUrls&quot; policies.
+
+אם ההגדרה הזו מושבתת או לא נקבעה, ייתכן שתוכן Flash ממקורות אחרים או תוכן קטן ייחסם.</string><string id="SAMLOfflineSigninTimeLimit">‏הגבל את משך הזמן שבמהלכו משתמש שאומת באמצעות SAML יכול להתחבר באופן לא מקוון.</string><string id="SAMLOfflineSigninTimeLimit_Explain">During login, Google Chrome OS can authenticate against a server (online) or using a cached password (offline).
+
+When this policy is set to a value of -1, the user can authenticate offline indefinitely. When this policy is set to any other value, it specifies the length of time since the last online authentication after which the user must use online authentication again.
+
+Leaving this policy not set will make Google Chrome OS use a default time limit of 14 days after which the user must use online authentication again.
+
+This policy affects only users who authenticated using SAML.
+
+The policy value should be specified in seconds.</string><string id="SSLErrorOverrideAllowed">‏אפשר להמשיך מדף אזהרת SSL</string><string id="SSLErrorOverrideAllowed_Explain">‏Chrome מציג דף אזהרה כשמשתמשים מנווטים אל אתרים שיש בהם שגיאות SSL. כברירת מחדל או כשמדיניות זו מוגדרת כ-true, המשתמשים רשאים לדלג על דפי האזהרה.
+הגדרת מדיניות זו כ-false אוסרת על משתמשים לדלג על דפי אזהרה מכל סוג שהוא.</string><string id="SSLVersionMax">‏גרסת ה-SSL המקסימלית מופעלת</string><string id="SSLVersionMax_Explain">‏אזהרה: תתבצע הסרה מלאה של המדיניות לגרסת ה-TLS (אבטחת שכבת התעבורה) המקסימלית מ-Google Chrome לקראת גרסה 66 (בסביבות פברואר 2018).
+
+המדיניות הזו לא הוגדרה, ב-Google Chrome ייעשה שימוש בגרסת ברירת המחדל המקסימלית.
+
+אחרת, אפשר להגדיר אותה לאחד מהערכים הבאים: &quot;tls1.2&quot; או &quot;tls1.3&quot;. כשהמדיניות מוגדרת, ב-Google Chrome לא ייעשה שימוש בגרסאות SSL/TLS גבוהות יותר מהגרסה שצוינה. המערכת תתעלם מערך לא מוכר.</string><string id="SSLVersionMax_TLSv1_2">TLS 1.2</string><string id="SSLVersionMax_TLSv1_3">TLS 1.3</string><string id="SafeBrowsingEnabled">הפעל גלישה בטוחה</string><string id="SafeBrowsingEnabled_Explain">‏מפעילה את תכונת 'גלישה בטוחה' של Google Chrome ומונעת ממשתמשים לשנות את ההגדרה הזו.
+
+אם תפעיל את ההגדרה הזו, 'גלישה בטוחה' תפעל תמיד.
+
+אם תשבית את ההגדרה הזו, 'גלישה בטוחה' אף פעם לא תפעל.
+
+אם תפעיל או תשבית את ההגדרה הזו, משתמשים לא יוכלו לשנות או לעקוף את ההגדרה 'הפעל הגנה מפני דיוג ותוכנות זדוניות' ב-Google Chrome.
+
+אם המדיניות הזו לא תוגדר, התכונה הזו תופעל, אבל המשתמש יוכל לשנות אותה.
+
+עיין בכתובת https://developers.google.com/safe-browsing לקבלת מידע נוסף על 'גלישה בטוחה'.</string><string id="SafeBrowsingExtendedReportingOptInAllowed">מאפשר למשתמשים להביע הסכמה לדיווח מורחב של 'גלישה בטוחה'</string><string id="SafeBrowsingExtendedReportingOptInAllowed_Explain">‏הגדרת המדיניות הזו כ-false מונעת ממשתמשים לשלוח חלק מפרטי המערכת ותוכן הדף אל שרתי Google. אם ההגדרה הזו נקבעת כ-true או לא נקבעת, משתמשים יוכלו לשלוח פרטי מערכת ותוכן דף אל 'גלישה בטוחה' כדי לעזור בזיהוי של אפליקציות ואתרים מסוכנים.
+
+עיין בכתובת https://developers.google.com/safe-browsing לקבלת מידע נוסף על 'גלישה בטוחה'.</string><string id="SavingBrowserHistoryDisabled">השבת שמירה של היסטוריית דפדפן</string><string id="SavingBrowserHistoryDisabled_Explain">מדיניות זו משביתה את השמירה של היסטוריית הדפדפן ב-Google Chrome ומונעת ממשתמשים לשנות הגדרה זו.
+
+אם הגדרה זו מופעלת, היסטוריית הגלישה לא נשמרת. הגדרה זו גם משביתה את סנכרון הכרטיסיות.
+
+אם הגדרה זו מושבתת או כלל אינה מוגדרת, היסטוריית הגלישה נשמרת.</string><string id="SearchSuggestEnabled">הפוך הצעות חיפוש לפעילות</string><string id="SearchSuggestEnabled_Explain">מאפשרת הצעות חיפוש בסרגל הכתובות של Google Chrome ומונעת ממשתמשים לשנות את ההגדרה הזו.
+
+אם תפעיל את ההגדרה הזו, ייעשה שימוש בהצעות חיפוש.
+
+אם תשבית את ההגדרה הזו, לעולם לא ייעשה שימוש בהצעות חיפוש.
+
+אם תפעיל או תשבית את ההגדרה הזו, המשתמשים לא יכולים לשנות או לעקוף אותה ב-Google Chrome.
+
+אם המדיניות הזו לא מוגדרת, היא תופעל, אך המשתמש יוכל לשנות זאת.</string><string id="SessionLengthLimit">Limit the length of a user session</string><string id="SessionLengthLimit_Explain">When this policy is set, it specifies the length of time after which a user is automatically logged out, terminating the session. The user is informed about the remaining time by a countdown timer shown in the system tray.
+
+When this policy is not set, the session length is not limited.
+
+If you set this policy, users cannot change or override it.
+
+The policy value should be specified in milliseconds. Values are clamped to a range of 30 seconds to 24 hours.</string><string id="SessionLocales">הגדרת המקומות המומלצים להפעלה ציבורית</string><string id="SessionLocales_Explain">‏מגדירה לפחות מקום מומלץ אחד להפעלה ציבורית, ומאפשרת למשתמשים לבחור בקלות אחד מהמקומות האלה.
+
+המשתמש יכול לבחור מקום ופריסת מקלדת לפני הפעלה ציבורית. כברירת מחדל, כל המקומות שנתמכים על ידי  Google Chrome OS מופיעים ברשימה בסדר אלפביתי. תוכל להשתמש במדיניות הזו כדי להעביר קבוצת מקומות מומלצים לראש הרשימה.
+
+אם המדיניות לא מוגדרת, המקום הנוכחי בממשק המשתמש ייבחר מראש.
+
+אם המדיניות מוגדרת, המקומות המומלצים יועברו לראש הרשימה ויופרדו באופן ויזואלי מהמקומות האחרים. המקומות המומלצים יצוינו בסדר שבו הם מופיעים במדיניות. המקום הראשון שהומלץ ייבחר מראש.
+
+אם יש יותר ממקום מומלץ אחד, ההנחה היא שהמשתמשים ירצו לבחור מהרשימה הזו. בחירת המקום ופריסת המקלדת יוצעו באופן בולט בעת התחלת הפעלה ציבורית. אחרת, ההנחה היא כי רוב המשתמשים ירצו להשתמש במקום שנבחר מראש. בחירה של מקום ופריסת מקלדת יוצעו באופן פחות בולט בעת התחלת הפעלה ציבורית.
+
+כשהמדיניות מוגדרת וההתחברות האוטומטית מופעלת, (עיין במדיניות |DeviceLocalAccountAutoLoginId| ו-|DeviceLocalAccountAutoLoginDelay|), ההפעלה הציבורית שמתחילה אוטומטית תשתמש במקום המומלץ הראשון ובפריסת המקלדת הפופולרית ביותר המתאימה למקום הזה.
+
+פריסת המקלדת שנבחרה מראש תמיד תהיה הפריסה הפופולרית ביותר שמתאימה למקום שנבחר מראש.
+
+אפשר להגדיר את המדיניות הזו רק כפי שהומלץ. תוכל להשתמש במדיניות כדי להעביר קבוצת מקומות מומלצים לראש הרשימה, אבל המשתמשים תמיד יכולים לבחור כל מקום שנתמך על ידי Google Chrome OS להפעלה שלהם.
+</string><string id="SessionLocalesDesc">הגדרת המקומות המומלצים להפעלה ציבורית</string><string id="ShelfAutoHideBehavior">בקרת הסתרה אוטומטית של מדף</string><string id="ShelfAutoHideBehavior_Explain">‏מדיניות זו שולטת בהסתרה האוטומטית של המדף Google Chrome OS.
+
+אם מדיניות זו מוגדרת ל- 'AlwaysAutoHideShelf', המדף יוסתר תמיד אוטומטית.
+
+אם מדיניות זו מוגדרת ל- 'NeverAutoHideShelf', המדף לעולם לא יוסתר אוטומטית.
+
+אם תגדיר מדיניות זו, המשתמשים לא יוכלו לשנות או לעקוף אותה.
+
+אם המדיניות אינה מוגדרת כלל, המשתמשים יוכלו לבחור אם להסתיר אוטומטית את המדף.</string><string id="ShelfAutoHideBehavior_AlwaysAutoHideShelf">תמיד הסתר אוטומטית את המדף</string><string id="ShelfAutoHideBehavior_NeverAutoHideShelf">לעולם אל תסתיר אוטומטית את המדף</string><string id="ShowHomeButton">הצג את לחצן 'דף הבית' בסרגל הכלים</string><string id="ShowHomeButton_Explain">מציג את כפתור דף הבית בסרגל הכלים של Google Chrome. אם תהפוך הגדרה זו לפעילה, כפתור דף הבית מוצג תמיד. אם תשבית הגדרה זו, כפתור דף הבית לא מוצג לעולם. אם תפעיל או תשבית הגדרה זו, המשתמשים לא יכולים לשנות או לבטל הגדרה זו ב-Google Chrome . אם לא תגדיר מדיניות זו, המשתמש יוכל לבחור אם להציג את כפתור דף הבית.</string><string id="ShowLogoutButtonInTray">הוסף לחצן התנתקות למגש המערכת</string><string id="ShowLogoutButtonInTray_Explain">If enabled, a big, red logout button is shown in the system tray while a session is active and the screen is not locked.
+
+If disabled or not specified, no big, red logout button is shown in the system tray.</string><string id="SitePerProcess">הפעלת בידוד אתר בשביל כל אתר</string><string id="SitePerProcess_Explain">‏
+הערה: המדיניות הזו ניסיונית ועלולה שלא לפעול היטב!
+מומלץ לעיין בהגדרת המדיניות IsolateOrigins כדי ליהנות מהיתרונות של שתי האפשרויות -
+בידוד והשפעה מוגבלת על משתמשים - על-ידי שימוש ב-IsolateOrigins עם רשימה של
+האתרים שברצונך לבודד. ההגדרה הזו, SitePerProcess, מבודדת את כל האתרים.
+אם המדיניות מופעלת, כל אתר יפעל בתהליך משלו.
+אם המדיניות מושבתת, תחול הלוגיקה של ניהול תהליך לפני בידוד של אתר.
+אם המדיניות לא מוגדרת, המשתמש יוכל לשנות את ההגדרה הזו.
+</string><string id="SpellCheckServiceEnabled">הפעל או השבת את שירות האינטרנט 'בדיקת איות'</string><string id="SpellCheckServiceEnabled_Explain">‏Google Chrome יכול להשתמש בשירות האינטרנט של Google כדי לתקן שגיאות כתיב. כאשר הגדרה זו פעילה, שירות זה תמיד בשימוש. אם הגדרה זו מושבתת, לא ייעשה שימוש בשירות זה.
+
+ניתן עדיין לבצע בדיקת איות באמצעות הורדת מילון; מדיניות זו שולטת רק בשימוש בשירות המקוון.
+
+כאשר הגדרה זו אינה מוגדרת, המשתמשים יכולים לבחור אם להשתמש בשירות בדיקת האיות או לא.</string><string id="SuppressUnsupportedOSWarning">בטל את האזהרה בדבר מערכת הפעלה לא נתמכת</string><string id="SuppressUnsupportedOSWarning_Explain">בטל את האזהרה שמופיעה כאשר Google Chrome פועל במחשב או מערכת הפעלה שאינם נתמכים יותר.</string><string id="SyncDisabled">‏השבת סנכרון נתונים עם Google</string><string id="SyncDisabled_Explain">‏משביתה ב-Google Chrome סינכרון נתונים שמשתמש בשירותי סינכרון המתארחים ב-Google, ומונעת ממשתמשים לשנות את ההגדרה הזו.
+
+אם תפעיל את ההגדרה הזו, משתמשים לא יוכלו לשנות או לעקוף אותה ב-Google Chrome.
+
+אם המדיניות הזו לא תוגדר, המשתמש יוכל לבחור אם להשתמש ב-Google Sync.
+
+כדי להשבית לחלוטין את Google Sync, מומלץ להשבית את שירות Google Sync דרך המסוף בממשק Google למנהלי מערכות.
+
+אין להפעיל את המדיניות הזה כשהמדיניות RoamingProfileSupportEnabled פועלת, כי התכונה הזו מבצעת את אותה פונקציה בצד הלקוח. הסינכרון המתארח ב-Google מושבת לחלוטין במקרה הזה.</string><string id="SystemTimezone">אזור זמן</string><string id="SystemTimezone_Explain">‏מציינת את אזור הזמן שבו ייעשה שימוש במכשיר. משתמשים יכולים לעקוף את אזור הזמן שצוין בהפעלה הנוכחית. עם זאת, לאחר ההתנתקות אזור הזמן חוזר לערך שצוין. אם צוין ערך לא חוקי, המדיניות עדיין מופעלת, אך באמצעות &quot;GMT&quot;. אם צוינה מחרוזת ריקה, המדיניות אינה מובאת בחשבון.
+
+אם לא נעשה שימוש במדיניות הזו, ימשיך להיעשות שימוש באזור הזמן הפעיל הנוכחי, אך משתמשים יוכלו לשנות את אזור הזמן והשינוי יישמר. כך שינוי על-ידי משתמש אחד ישפיע על מסך ההתחברות ועל כל המשתמשים האחרים.
+
+במכשירים חדשים ההגדרה הראשונית של אזור הזמן היא &quot;US/Pacific&quot;.
+
+פורמט הערך מבוסס על השמות של אזורי הזמן ב-&quot;IANA Time Zone Database&quot; (עיין בכתובת &quot;https://en.wikipedia.org/wiki/Tz_database&quot;). באופן ספציפי, רוב אזורי הזמן יכולים להיכתב בפורמט &quot;continent/large_city&quot; או &quot;ocean/large_city&quot;.
+
+הגדרת המדיניות הזו משביתה לחלוטין את זיהוי אזור הזמן לפי מיקום המכשיר. היא גם עוקפת את המדיניות SystemTimezoneAutomaticDetection.</string><string id="SystemTimezoneAutomaticDetection">קבע את תצורת השיטה לזיהוי אוטומטי של אזור זמן</string><string id="SystemTimezoneAutomaticDetection_Explain">‏כשהמדיניות הזו מוגדרת, ערך ההגדרה יקבע מהו התהליך שבו ייעשה שימוש כדי לזהות באופן אוטומטי את אזור הזמן.
+
+אם הערך הוא TimezoneAutomaticDetectionUsersDecide, משתמשים יוכלו לשלוט בזיהוי האוטומטי של אזור הזמן בעזרת פקדים רגילים ב-chrome://settings.
+
+אם הערך הוא TimezoneAutomaticDetectionDisabled, הפקדים לשליטה על אזור הזמן האוטומטי ב-chrome://settings יושבתו. זיהוי אוטומטי של אזור זמן תמיד יהיה כבוי.
+
+אם הערך הוא TimezoneAutomaticDetectionIPOnly, הפקדים לשליטה על אזור הזמן ב-chrome://settings יושבתו. זיהוי אוטומטי של אזור זמן יפעל תמיד. זיהוי אזור הזמן ישתמש בשיטת &quot;IP בלבד&quot; כדי לאתר את המיקום.
+
+אם הערך הוא TimezoneAutomaticDetectionSendWiFiAccessPoints, הפקדים לשליטה על אזור הזמן ב-chrome://settings יושבתו. זיהוי אוטומטי של אזור זמן יפעל תמיד. רשימת הנקודות הגלויות לגישה אל Wi-Fi תישלח תמיד אל שרת Geolocation API לזיהוי מדויק של אזור הזמן.
+
+אם הערך הוא TimezoneAutomaticDetectionSendAllLocationInfo, הפקדים לשליטה על אזור הזמן ב-chrome://settings יושבתו. זיהוי אוטומטי של אזור זמן יפעל תמיד. פרטי מיקום (כמו נקודות גישה אל Wi-Fi, אנטנות סלולריות שנמצאות בטווח, GPS) יישלחו אל שרת לזיהוי מדויק של אזור הזמן.
+
+אם המדיניות הזו לא תוגדר, ברירת המחדל תהיה TimezoneAutomaticDetectionUsersDecide.
+
+אם המדיניות 'אזור זמן מערכת' מוגדרת, היא עוקפת את המדיניות הזו. במקרה זה הזיהוי האוטומטי של אזור הזמן יושבת לחלוטין.</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionUsersDecide">Let users decide</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionDisabled">Never auto-detect timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionIPOnly">Always use coarse timezone detection</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendWiFiAccessPoints">Always send WiFi access-points to server while resolving timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendAllLocationInfo">שלח אותות מיקום זמינים אל השרת בכל פעם שהמערכת מזהה את אזור זמן</string><string id="SystemUse24HourClock">השתמש בשעון של 24 שעות כברירת מחדל</string><string id="SystemUse24HourClock_Explain">‏ציון פורמט השעון המשמש עבור המכשיר.
+
+מדיניות זו מגדירה את פורמט השעון שישמש במסך ההתחברות וכברירת מחדל עבור פעילויות של משתמשים באתר. המשתמשים עדיין יכולים לעקוף את פורמט השעון עבור החשבון שלהם.
+
+אם המדיניות מוגדרת ל-True, המכשיר ישתמש בפורמט שעון של 24 שעות. אם המדיניות מוגדרת ל-False, המכשיר ישתמש בפורמט שעון של 12 שעות.
+
+אם מדיניות זו אינה מוגדרת, המכשיר ישתמש כברירת מחדל בפורמט שעון של 24 שעות.</string><string id="TPMFirmwareUpdateSettings">‏קביעת התנהגות עדכון הקושחה של TPM</string><string id="TPMFirmwareUpdateSettings_Explain">‏מגדירה את הזמינות וההתנהגות של עדכון הקושחה של TPM.
+
+אפשר לציין הגדרות נפרדות בנכסי JSON:
+
+allow-user-initiated-powerwash: אם נבחרה האפשרות true, משתמשים יכולים להפעיל את תהליך ה-Powerwash כדי להתקין עדכון של קושחת TPM.
+
+אם המדיניות לא הוגדרה, לא ניתן לעדכן את הקושחה של TPM.</string><string id="TaskManagerEndProcessEnabled">מאפשרת לסיים תהליכים במנהל המשימות</string><string id="TaskManagerEndProcessEnabled_Explain">If set to false, the 'End process' button is disabled in the Task Manager.
+
+If set to true or not configured, the user can end processes in the Task Manager.</string><string id="TermsOfServiceURL">הגדר את התנאים וההגבלות עבור חשבון מקומי של מכשיר</string><string id="TermsOfServiceURL_Explain">‏מגדירה את התנאים וההגבלות שעל המשתמש לקבל לפני שיתחיל בהפעלה של חשבון מקומי במכשיר.
+
+אם המדיניות הזו מוגדרת, Google Chrome OS יוריד את התנאים וההגבלות ויציג אותם למשתמש בכל פעם שתתחיל הפעלה של חשבון מקומי במכשיר. המשתמש יורשה להיכנס להפעלה רק לאחר שיקבל את התנאים וההגבלות.
+
+אם המדיניות לא מוגדרת, לא מוצגים תנאים והגבלות.
+
+יש להגדיר את המדיניות ככתובת אתר שממנה Google Chrome OS יכול להוריד את התנאים וההגבלות. התנאים וההגבלות חייבים להיות בטקסט פשוט ומוצגים כסוג MIME טקסט/פשוט. השימוש בסימון אסור.</string><string id="TouchVirtualKeyboardEnabled">הפעל מקלדת וירטואלית</string><string id="TouchVirtualKeyboardEnabled_Explain">‏מדיניות זו מגדירה הפעלה של המקלדת הווירטואלית כהתקן קלט במערכת ההפעלה של Chrome. משתמשים אינם יכולים לעקוף מדיניות זו.
+
+אם המדיניות מוגדרת ל-True, המקלדת הווירטואלית שעל המסך תפעל תמיד.
+
+אם היא מוגדרת ל-False, המקלדת הווירטואלית שעל המסך תהיה מושבתת תמיד.
+
+אם תגדיר מדיניות זו, משתמשים לא יוכלו לשנות או לעקוף אותה. עם זאת, משתמשים עדיין יוכלו להפעיל/להשבית מקלדת נגישות שעל המסך, המקבלת קדימות על פני המקלדת הווירטואלית הנשלטת על ידי מדיניות זו. עיין במדיניות |VirtualKeyboardEnabled| לשליטה במקלדת הנגישות שעל המסך.
+
+אם מדיניות זו מושארת ללא הגדרה, המקלדת שעל המסך מושבתת בתור התחלה, אך המשתמש יכול להפעיל אותה בכל עת. ניתן להשתמש גם בכללים לגילוי כדי להחליט מתי להציג את המקלדת.</string><string id="TranslateEnabled">‏הפוך את Google Translate לפעיל</string><string id="TranslateEnabled_Explain">‏מאפשר את שירות Google Translate המשולב ב-Google Chrome . אם תהפוך הגדרה זו לפעילה, Google Chrome יציג הצעה לסרגל כלים משולב כדי לתרגם את הדף עבור המשתמש, בעת הצורך. אם תשבית הגדרה זו, המשתמשים לא יראו לעולם את סרגל התרגום. אם תהפוך הגדרה זו לפעילה או תשבית הגדרה זו, המשתמשים לא יוכלו לשנות או לבטל הגדרה זו ב-Google Chrome . אם הגדרה זו לא נקבעה, המשתמש יכול להחליט אם להשתמש בפונקציה זו או שלא.</string><string id="URLBlacklist">חסום את הגישה לרשימה של כתובות האתר</string><string id="URLBlacklist_Explain">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
+
+A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+
+Exceptions can be defined in the URL whitelist policy. These policies are limited to 1000 entries; subsequent entries will be ignored.
+
+Note that it is not recommended to block internal 'chrome://*' URLs since this may lead to unexpected errors.
+
+If this policy is not set no URL will be blacklisted in the browser.</string><string id="URLBlacklistDesc">חסום את הגישה לרשימה של כתובות האתר</string><string id="URLWhitelist">מאפשר גישה לרשימה של כתובות אתר</string><string id="URLWhitelist_Explain">‏מדיניות זו מאפשרת גישה לכתובות האתרים המפורטות, כחריגים לרשימה השחורה של כתובות האתרים.
+
+עיין בתיאור המדיניות של הרשימה השחורה של כתובות אתרים לקבלת הפורמט של ערכים ברשימה זו.
+
+מדיניות זו יכולה לשמש לפתיחת חריגים לרשימות שחורות מגבילות. לדוגמה, ניתן להעביר את '*' לרשימה השחורה כדי לחסום את כל הבקשות, ומדיניות זו יכולה לשמש כדי להתיר גישה לרשימה מוגבלת של כתובות אתרים. היא יכולה לשמש לפתיחת חריגים לסכימות מסוימות, תת-דומיינים של דומיינים אחרים, יציאות או נתיבים ספציפיים.
+
+המסנן הספציפי ביותר יקבע אם כתובת אתר תיחסם או תותר. רשימת ההיתרים קודמת לרשימה השחורה.
+
+מדיניות זו מוגבלת ל-1000 ערכים; המערכת תתעלם מהערכים שמעבר לכך.
+
+אם לא תגדיר מדיניות זו כלל, לא יהיו חריגים לרשימה השחורה מהמדיניות 'URLBlacklist'.</string><string id="URLWhitelistDesc">מאפשר גישה לרשימה של כתובות אתר</string><string id="UnifiedDesktopEnabledByDefault">Make Unified Desktop available and turn on by default</string><string id="UnifiedDesktopEnabledByDefault_Explain">‏אם מדיניות זו מוגדרת ל-True, התכונה Unified Desktop מותרת
+ומופעלת כברירת מחדל, והיא מאפשרת לאפליקציות להתפרס על כמה צגים.
+משתמשים המעוניינים להשבית את התכונה Unified Desktop בצגים ספציפיים                יכולים לבטל את הסימון שלה בהגדרות התצוגה.
+
+אם מדיניות זו מוגדרת ל-False או אינה מוגדרת, התכונה Unified Desktop תושבת.
+במקרה כזה לא תהיה למשתמשים אפשרות להשבית את התכונה.</string><string id="UsbDetachableWhitelist">‏רשימת היתרים של מכשירי USB ניתנים לניתוק</string><string id="UsbDetachableWhitelist_Explain">‏מדיניות זו מגדירה את רשימת מכשירי ה-USB שניתן לנתק ממנהל התקן הליבה שלהם, במטרה להשתמש במכשירים באמצעות ה-API ‏chrome.usb ישירות בתוך אפליקציית אינטרנט. כל רשומה כוללת זוג מזהים - מזהה ספק USB ומזהה מוצר - שמציינים חומרה ספציפית.
+
+אם מדיניות זו לא הוגדרה, רשימת מכשירי ה-USB שניתן לנתק ריקה.</string><string id="UsbDetachableWhitelistDesc">‏רשימת היתרים של מכשירי USB ניתנים לניתוק</string><string id="UserAvatarImage">תמונה של דמות משתמש</string><string id="UserAvatarImage_Explain">This policy allows you to configure the avatar image representing the user on the login screen. The policy is set by specifying the URL from which Google Chrome OS can download the avatar image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its size must not exceed 512kB. The URL must be accessible without any authentication.
+
+The avatar image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the avatar image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the avatar image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the avatar image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose the avatar image representing them on the login screen.</string><string id="UserDisplayName">הגדרת שם התצוגה עבור חשבונות מקומיים במכשיר</string><string id="UserDisplayName_Explain">מדיניות זו קובעת את שם החשבון Google Chrome OS המוצג במסך ההתחברות עבור החשבון המתאים המקומי במכשיר.
+
+אם המדיניות מוגדרת, מסך ההתחברות ישתמש במחרוזת שצוינה בבוחר ההתחברות מבוסס התמונה עבור החשבון המתאים המקומי במכשיר.
+
+אם המדיניות אינה מוגדרת כלל, Google Chrome OS ישתמש בזיהוי חשבון האימייל של החשבון המקומי במכשיר כשם התצוגה במסך ההתחברות.
+
+מדיניות זו אינה תקפה בחשבונות משתמשים רגילים.</string><string id="VideoCaptureAllowed">התר או דחה הקלטת וידאו</string><string id="VideoCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+video capture access except for URLs configured in the
+VideoCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and video
+capture only be available to URLs configured in VideoCaptureAllowedUrls.
+
+This policy affects all types of video inputs and not only the built-in camera.</string><string id="VideoCaptureAllowedUrls">כתובות אתרים שיקבלו גישה למכשירי צילום וידאו ללא הצגת בקשה</string><string id="VideoCaptureAllowedUrls_Explain">דפוסים ברשימה זו יותאמו כנגד מקור האבטחה
+של כתובת האתר המבצעת את הבקשה. אם תימצא התאמה, הגישה למכשירי הקלטת אודיו תוענק ללא הצגת בקשה.
+
+הערה: עד גרסה 45, מדיניות זו נתמכה רק במצב קיוסק.</string><string id="VideoCaptureAllowedUrlsDesc">כתובות אתרים שיקבלו גישה למכשירי צילום וידאו ללא הצגת בקשה</string><string id="WPADQuickCheckEnabled">‏הפעלה של אופטימיזציית WPAD</string><string id="WPADQuickCheckEnabled_Explain">‏מאפשרת לכבות את אופטימיזציית WPAD ‏(גילוי אוטומטי של פרוקסי באינטרנט) ב-Google Chrome.
+
+אם המדיניות מוגדרת כ-false, אופטימיזציית WPAD מושבתת והדבר גורם ל-Google Chrome להמתין זמן רב יותר לשרתי WPAD מבוססי-DNS. אם המדיניות לא מוגדרת או שהיא מופעלת, אופטימיזציית WPAD מופעלת.
+
+ללא קשר להגדרת המדיניות או לאופן הגדרתה, משתמשים לא יכולים לשנות את ההגדרה של אופטימיזציית WPAD.</string><string id="WallpaperImage">תמונת טפט</string><string id="WallpaperImage_Explain">This policy allows you to configure the wallpaper image that is shown on the desktop and on the login screen background for the user. The policy is set by specifying the URL from which Google Chrome OS can download the wallpaper image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its file size must not exceed 16MB. The URL must be accessible without any authentication.
+
+The wallpaper image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the wallpaper image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the wallpaper image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the wallpaper image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose an image to be shown on the desktop and on the login screen background.</string><string id="WebRtcUdpPortRange">‏הגבלת הטווח של יציאות UDP מקומיות שבהן נעשה שימוש ב-WebRTC</string><string id="WebRtcUdpPortRange_Explain">‏אם המדיניות מוגדרת, טווח יציאות ה-UDP שבהן נעשה שימוש ב-WebRTC מוגבל למרווח היציאות שצוין (כולל נקודות קצה).
+
+אם המדיניות לא מוגדרת, או אם היא מוגדרת למחרוזת ריקה או לטווח יציאות לא חוקי, כל יציאות UDP המקומיות שזמינות מותרות לשימוש ב-WebRTC.</string></stringTable><presentationTable><presentation id="EnableMediaRouter"/><presentation id="ShowCastIconInToolbar"/><presentation id="NewTabPageLocation"><textBox refId="NewTabPageLocation"><label>כתובת האתר של הדף 'כרטיסייה חדשה'</label></textBox></presentation><presentation id="HomepageLocation"><textBox refId="HomepageLocation"><label>כתובת אתר של דף הבית</label></textBox></presentation><presentation id="HomepageIsNewTabPage"/><presentation id="RestoreOnStartup"><dropdownList refId="RestoreOnStartup">פעולה בעת ההפעלה</dropdownList></presentation><presentation id="RestoreOnStartupURLs"><listBox refId="RestoreOnStartupURLsDesc">כתובות אתר לפתיחה בעת ההפעלה</listBox></presentation><presentation id="RemoteAccessHostClientDomainList"><listBox refId="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</listBox></presentation><presentation id="RemoteAccessHostFirewallTraversal"/><presentation id="RemoteAccessHostDomainList"><listBox refId="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</listBox></presentation><presentation id="RemoteAccessHostTalkGadgetPrefix"><textBox refId="RemoteAccessHostTalkGadgetPrefix"><label>‏הגדר את קידומת TalkGadget עבור מארחים של גישה מרחוק</label></textBox></presentation><presentation id="RemoteAccessHostRequireCurtain"/><presentation id="RemoteAccessHostAllowClientPairing"/><presentation id="RemoteAccessHostAllowGnubbyAuth"/><presentation id="RemoteAccessHostAllowRelayedConnection"/><presentation id="RemoteAccessHostUdpPortRange"><textBox refId="RemoteAccessHostUdpPortRange"><label>‏הגבל את טווח יציאות UDP שבהן נעשה שימוש על ידי מארח הגישה המרוחקת</label></textBox></presentation><presentation id="RemoteAccessHostMatchUsername"/><presentation id="RemoteAccessHostTokenUrl"><textBox refId="RemoteAccessHostTokenUrl"><label>כתובת אתר שבו לקוחות גישה מרחוק אמורים לקבל את אסימון האימות שלהם</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationUrl"><textBox refId="RemoteAccessHostTokenValidationUrl"><label>כתובת אתר לאימות אסימון אימות של לקוח גישה מרחוק</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationCertificateIssuer"><textBox refId="RemoteAccessHostTokenValidationCertificateIssuer"><label>‏אישור הלקוח להתחברות ל-RemoteAccessHostTokenValidationUrl</label></textBox></presentation><presentation id="ShowAccessibilityOptionsInSystemTrayMenu"/><presentation id="LargeCursorEnabled"/><presentation id="SpokenFeedbackEnabled"/><presentation id="HighContrastEnabled"/><presentation id="VirtualKeyboardEnabled"/><presentation id="KeyboardDefaultToFunctionKeys"/><presentation id="ScreenMagnifierType"><dropdownList refId="ScreenMagnifierType">הגדר את סוג מגדיל התצוגה</dropdownList></presentation><presentation id="DeviceLoginScreenDefaultLargeCursorEnabled"/><presentation id="DeviceLoginScreenDefaultSpokenFeedbackEnabled"/><presentation id="DeviceLoginScreenDefaultHighContrastEnabled"/><presentation id="DeviceLoginScreenDefaultVirtualKeyboardEnabled"/><presentation id="DeviceLoginScreenDefaultScreenMagnifierType"><dropdownList refId="DeviceLoginScreenDefaultScreenMagnifierType">הגדר את סוג מגדיל התצוגה המוגדר כברירת מחדל המופעל במסך ההתחברות</dropdownList></presentation><presentation id="DefaultCookiesSetting"><dropdownList refId="DefaultCookiesSetting">‏הגדרת ברירת מחדל של קובצי Cookie</dropdownList></presentation><presentation id="DefaultImagesSetting"><dropdownList refId="DefaultImagesSetting">הגדרת ברירת מחדל של תמונות</dropdownList></presentation><presentation id="DefaultJavaScriptSetting"><dropdownList refId="DefaultJavaScriptSetting">‏הגדרת ברירת מחדל של JavaScript</dropdownList></presentation><presentation id="DefaultPluginsSetting"><dropdownList refId="DefaultPluginsSetting">הגדרת ברירת מחדל של Flash</dropdownList></presentation><presentation id="DefaultPopupsSetting"><dropdownList refId="DefaultPopupsSetting">הגדרת ברירת מחדל של חלונות קופצים</dropdownList></presentation><presentation id="DefaultNotificationsSetting"><dropdownList refId="DefaultNotificationsSetting">הגדרת ברירת מחדל של התראות</dropdownList></presentation><presentation id="DefaultGeolocationSetting"><dropdownList refId="DefaultGeolocationSetting">הגדרת ברירת מחדל של מיקום גיאוגרפי</dropdownList></presentation><presentation id="DefaultWebBluetoothGuardSetting"><dropdownList refId="DefaultWebBluetoothGuardSetting">‏שליטה על השימוש ב-Web Bluetooth API</dropdownList></presentation><presentation id="AutoSelectCertificateForUrls"><listBox refId="AutoSelectCertificateForUrlsDesc">בחר אישורי לקוח באופן אוטומטי עבור אתרים אלו</listBox></presentation><presentation id="CookiesAllowedForUrls"><listBox refId="CookiesAllowedForUrlsDesc">‏אפשר קובצי Cookie באתרים אלה</listBox></presentation><presentation id="CookiesBlockedForUrls"><listBox refId="CookiesBlockedForUrlsDesc">‏חסום קובצי Cookie באתרים אלה</listBox></presentation><presentation id="CookiesSessionOnlyForUrls"><listBox refId="CookiesSessionOnlyForUrlsDesc">‏אפשר קובצי Cookie להפעלה בלבד באתרים אלה</listBox></presentation><presentation id="ImagesAllowedForUrls"><listBox refId="ImagesAllowedForUrlsDesc">אפשר תמונות באתרים אלה</listBox></presentation><presentation id="ImagesBlockedForUrls"><listBox refId="ImagesBlockedForUrlsDesc">חסום תמונות באתרים אלה</listBox></presentation><presentation id="JavaScriptAllowedForUrls"><listBox refId="JavaScriptAllowedForUrlsDesc">‏אפשר JavaScript באתרים אלה</listBox></presentation><presentation id="JavaScriptBlockedForUrls"><listBox refId="JavaScriptBlockedForUrlsDesc">‏חסום JavaScript באתרים אלה</listBox></presentation><presentation id="PluginsAllowedForUrls"><listBox refId="PluginsAllowedForUrlsDesc">מאשרת את השימוש בפלאגין Flash באתרים האלה</listBox></presentation><presentation id="PluginsBlockedForUrls"><listBox refId="PluginsBlockedForUrlsDesc">חוסמת את הפלאגין Flash באתרים האלה</listBox></presentation><presentation id="PopupsAllowedForUrls"><listBox refId="PopupsAllowedForUrlsDesc">אפשר חלונות קופצים באתרים אלה</listBox></presentation><presentation id="RegisteredProtocolHandlers"><textBox refId="RegisteredProtocolHandlers"><label>רשום מטפלים של פרוטוקול</label></textBox></presentation><presentation id="PopupsBlockedForUrls"><listBox refId="PopupsBlockedForUrlsDesc">חסום חלונות קופצים באתרים אלה</listBox></presentation><presentation id="NotificationsAllowedForUrls"><listBox refId="NotificationsAllowedForUrlsDesc">אפשר התראות באתרים אלה</listBox></presentation><presentation id="NotificationsBlockedForUrls"><listBox refId="NotificationsBlockedForUrlsDesc">חסום התראות באתרים אלה</listBox></presentation><presentation id="AttestationEnabledForUser"/><presentation id="AttestationExtensionWhitelist"><listBox refId="AttestationExtensionWhitelistDesc">‏תוספים המורשים להשתמש בממשק ה-API של הזדהות מרחוק</listBox></presentation><presentation id="QuickUnlockModeWhitelist"><listBox refId="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</listBox></presentation><presentation id="QuickUnlockTimeout"><dropdownList refId="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</dropdownList></presentation><presentation id="PinUnlockMinimumLength"><decimalTextBox refId="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockMaximumLength"><decimalTextBox refId="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockWeakPinsAllowed"/><presentation id="PasswordManagerEnabled"/><presentation id="LidCloseAction"><dropdownList refId="LidCloseAction">פעולה שיש לבצע כשהמשתמש סוגר את המכסה</dropdownList></presentation><presentation id="PowerManagementUsesAudioActivity"/><presentation id="PowerManagementUsesVideoActivity"/><presentation id="PresentationScreenDimDelayScale"><decimalTextBox refId="PresentationScreenDimDelayScale">האחוז שלפיו יש לדרג את ההשהיה לפני עמעום המסך במצב מצגת:</decimalTextBox></presentation><presentation id="AllowScreenWakeLocks"/><presentation id="UserActivityScreenDimDelayScale"><decimalTextBox refId="UserActivityScreenDimDelayScale">האחוז שלפיו תדורג השהיית עמעום המסך אם המשתמש נעשה פעיל לאחר העמעום:</decimalTextBox></presentation><presentation id="WaitForInitialUserActivity"/><presentation id="PowerManagementIdleSettings"><textBox refId="PowerManagementIdleSettings"><label>הגדרות של ניהול צריכת חשמל כשהמשתמש אינו פעיל</label></textBox></presentation><presentation id="ScreenLockDelays"><textBox refId="ScreenLockDelays"><label>פרקי זמן לנעילת מסך</label></textBox></presentation><presentation id="DefaultSearchProviderEnabled"/><presentation id="DefaultSearchProviderName"><textBox refId="DefaultSearchProviderName"><label>שם ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderKeyword"><textBox refId="DefaultSearchProviderKeyword"><label>מילת מפתח של ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURL"><textBox refId="DefaultSearchProviderSearchURL"><label>כתובת אתר של ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURL"><textBox refId="DefaultSearchProviderSuggestURL"><label>כתובת אתר שמציעה ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURL"><textBox refId="DefaultSearchProviderInstantURL"><label>‏כתובת אתר Instant של ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderIconURL"><textBox refId="DefaultSearchProviderIconURL"><label>סמל של ספק חיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderEncodings"><listBox refId="DefaultSearchProviderEncodingsDesc">קידודים של ספק חיפוש המוגדר כברירת מחדל</listBox></presentation><presentation id="DefaultSearchProviderAlternateURLs"><listBox refId="DefaultSearchProviderAlternateURLsDesc">רשימה של כתובות אתרים חלופיות עבור ספק החיפוש המוגדר כברירת מחדל</listBox></presentation><presentation id="DefaultSearchProviderSearchTermsReplacementKey"><textBox refId="DefaultSearchProviderSearchTermsReplacementKey"><label>פרמטר השולט במיקום של מונח החיפוש עבור ספק החיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderImageURL"><textBox refId="DefaultSearchProviderImageURL"><label>פרמטר המספק תכונה של חיפוש לפי תמונות עבור ספק החיפוש המוגדר כברירת המחדל</label></textBox></presentation><presentation id="DefaultSearchProviderNewTabURL"><textBox refId="DefaultSearchProviderNewTabURL"><label>כתובת האתר של דף הכרטיסייה החדשה של ספק החיפוש המוגדר כברירת מחדל</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURLPostParams"><textBox refId="DefaultSearchProviderSearchURLPostParams"><label>‏פרמטרים עבור כתובת אתר לחיפוש שמשתמשת ב-POST</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURLPostParams"><textBox refId="DefaultSearchProviderSuggestURLPostParams"><label>‏פרמטרים עבור כתובת אתר להצעה שמשתמשת ב-POST</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURLPostParams"><textBox refId="DefaultSearchProviderInstantURLPostParams"><label>‏פרמטרים עבור כתובת אתר של מופע שמשתמשת ב-POST</label></textBox></presentation><presentation id="DefaultSearchProviderImageURLPostParams"><textBox refId="DefaultSearchProviderImageURLPostParams"><label>‏פרמטרים עבור כתובת אתר של תמונה שמשתמשת ב-POST</label></textBox></presentation><presentation id="ExtensionInstallBlacklist"><listBox refId="ExtensionInstallBlacklistDesc">מזהי תוספים שיש למנוע מהמשתמש להתקין אותם (או * לכולם)</listBox></presentation><presentation id="ExtensionInstallWhitelist"><listBox refId="ExtensionInstallWhitelistDesc">מזהי תוספים שפטורים מהוספה לרשימה השחורה</listBox></presentation><presentation id="ExtensionInstallForcelist"><listBox refId="ExtensionInstallForcelistDesc">מזהי תוספים/אפליקציות וכתובות אתרים של עדכונים המיועדים להתקנה שקטה</listBox></presentation><presentation id="ExtensionInstallSources"><listBox refId="ExtensionInstallSourcesDesc">דפוסי כתובת אתר מאפשרים התקנות של תוספים, יישומים וסקריפטים של משתמשים מאת</listBox></presentation><presentation id="ExtensionAllowedTypes"><listBox refId="ExtensionAllowedTypesDesc">סוגים של תוספים/יישומים שמותר להתקין</listBox></presentation><presentation id="ExtensionSettings"><textBox refId="ExtensionSettings"><label>הגדרות ניהול תוספים</label></textBox></presentation><presentation id="DriveDisabled"/><presentation id="DriveDisabledOverCellular"/><presentation id="AuthSchemes"><textBox refId="AuthSchemes"><label>סכימות אימות נתמכות</label></textBox></presentation><presentation id="DisableAuthNegotiateCnameLookup"/><presentation id="EnableAuthNegotiatePort"/><presentation id="AuthServerWhitelist"><textBox refId="AuthServerWhitelist"><label>רשימת היתרים של שרת אימות</label></textBox></presentation><presentation id="AuthNegotiateDelegateWhitelist"><textBox refId="AuthNegotiateDelegateWhitelist"><label>‏רשימת היתרים של שרת האצלה של Kerberos</label></textBox></presentation><presentation id="AllowCrossOriginAuthPrompt"/><presentation id="ProxyMode"><dropdownList refId="ProxyMode">‏בחר כיצד לציין הגדרות שרת Proxy</dropdownList></presentation><presentation id="ProxyServer"><textBox refId="ProxyServer"><label>‏כתובת או כתובת אתר של שרת Proxy</label></textBox></presentation><presentation id="ProxyPacUrl"><textBox refId="ProxyPacUrl"><label>‏כתובת אתר לקובץ ‎.pac של שרת Proxy</label></textBox></presentation><presentation id="ProxyBypassList"><textBox refId="ProxyBypassList"><label>‏רשימה מופרדת בפסיקים של כללי עקיפת Proxy</label></textBox></presentation><presentation id="AllowDeletingBrowserHistory"/><presentation id="AllowDinosaurEasterEgg"/><presentation id="AllowOutdatedPlugins"/><presentation id="AllowScreenLock"/><presentation id="AllowedDomainsForApps"><textBox refId="AllowedDomainsForApps"><label>‏הגדר דומיינים המורשים לגשת אל Google Apps</label></textBox></presentation><presentation id="AlternateErrorPagesEnabled"/><presentation id="AlwaysAuthorizePlugins"/><presentation id="ArcBackupRestoreEnabled"/><presentation id="ArcCertificatesSyncMode"><dropdownList refId="ArcCertificatesSyncMode">‏הגדר זמינות אישורים ליישומי ARC</dropdownList></presentation><presentation id="ArcEnabled"/><presentation id="ArcLocationServiceEnabled"/><presentation id="ArcPolicy"><textBox refId="ArcPolicy"><label>‏הגדר ARC</label></textBox></presentation><presentation id="AudioCaptureAllowed"/><presentation id="AudioCaptureAllowedUrls"><listBox refId="AudioCaptureAllowedUrlsDesc">כתובות אתרים שיקבלו גישה למכשירי הקלטת אודיו ללא הצגת בקשה</listBox></presentation><presentation id="AudioOutputAllowed"/><presentation id="AutoFillEnabled"/><presentation id="AutofillCreditCardEnabled"/><presentation id="BlockThirdPartyCookies"/><presentation id="BookmarkBarEnabled"/><presentation id="CaptivePortalAuthenticationIgnoresProxy"/><presentation id="CertificateTransparencyEnforcementDisabledForUrls"><listBox refId="CertificateTransparencyEnforcementDisabledForUrlsDesc">השבתת אכיפה של 'שקיפות אישורים' ברשימת כתובות אתרים</listBox></presentation><presentation id="ChromeOsLockOnIdleSuspend"/><presentation id="ChromeOsMultiProfileUserBehavior"><dropdownList refId="ChromeOsMultiProfileUserBehavior">שלוט בהתנהגות המשתמשים בהפעלה של ריבוי פרופילים</dropdownList></presentation><presentation id="ChromeOsReleaseChannel"><dropdownList refId="ChromeOsReleaseChannel">הפצת ערוץ</dropdownList></presentation><presentation id="ChromeOsReleaseChannelDelegated"/><presentation id="ComponentUpdatesEnabled"/><presentation id="DefaultPrinterSelection"><textBox refId="DefaultPrinterSelection"><label>כללים לבחירת מדפסת ברירת מחדל</label></textBox></presentation><presentation id="DeveloperToolsDisabled"/><presentation id="DeviceAllowBluetooth"/><presentation id="DeviceAllowNewUsers"/><presentation id="DeviceAllowRedeemChromeOsRegistrationOffers"/><presentation id="DeviceAutoUpdateDisabled"/><presentation id="DeviceAutoUpdateP2PEnabled"/><presentation id="DeviceBlockDevmode"/><presentation id="DeviceDataRoamingEnabled"/><presentation id="DeviceEphemeralUsersEnabled"/><presentation id="DeviceGuestModeEnabled"/><presentation id="DeviceLoginScreenAppInstallList"><listBox refId="DeviceLoginScreenAppInstallListDesc">הגדרת התצורה של היישומים המותקנים שמופיעים במסך ההתחברות</listBox></presentation><presentation id="DeviceLoginScreenInputMethods"><listBox refId="DeviceLoginScreenInputMethodsDesc">פריסות המקלדת של מסך הכניסה במכשיר</listBox></presentation><presentation id="DeviceLoginScreenLocales"><listBox refId="DeviceLoginScreenLocalesDesc">הגדרת המקום של מסך הכניסה במכשיר</listBox></presentation><presentation id="DeviceLoginScreenPowerManagement"><textBox refId="DeviceLoginScreenPowerManagement"><label>ניהול צריכת החשמל במסך ההתחברות</label></textBox></presentation><presentation id="DeviceMetricsReportingEnabled"/><presentation id="DeviceNativePrinters"><textBox refId="DeviceNativePrinters"><label>קובץ תצורת מדפסות ארגוניות בשביל מכשירים</label></textBox></presentation><presentation id="DeviceNativePrintersAccessMode"><dropdownList refId="DeviceNativePrintersAccessMode">מדיניות גישה אל תצורת מדפסות הקשורות למכשירים.</dropdownList></presentation><presentation id="DeviceNativePrintersBlacklist"><listBox refId="DeviceNativePrintersBlacklistDesc">מדפסות ארגוניות מושבתות הקשורות למכשירים</listBox></presentation><presentation id="DeviceNativePrintersWhitelist"><listBox refId="DeviceNativePrintersWhitelistDesc">מדפסות ארגוניות מופעלות הקשורות למכשירים</listBox></presentation><presentation id="DeviceOffHours"><textBox refId="DeviceOffHours"><label>‏מרווחי שעות ללא פעילות אחרי שחרור של OffHours |ignored_policy_proto_tags|‎ במכשיר</label></textBox></presentation><presentation id="DeviceOpenNetworkConfiguration"><textBox refId="DeviceOpenNetworkConfiguration"><label>תצורת רשת ברמת המכשיר</label></textBox></presentation><presentation id="DevicePolicyRefreshRate"><decimalTextBox refId="DevicePolicyRefreshRate">קצב רענון עבור מדיניות מכשיר:</decimalTextBox></presentation><presentation id="DeviceQuirksDownloadEnabled"/><presentation id="DeviceRebootOnShutdown"/><presentation id="DeviceShowUserNamesOnSignin"/><presentation id="DeviceStartUpFlags"><listBox refId="DeviceStartUpFlagsDesc">סימונים כלל-מערכתיים שיוחלו בעת ההפעלה של Google Chrome</listBox></presentation><presentation id="DeviceTargetVersionPrefix"><textBox refId="DeviceTargetVersionPrefix"><label>גירסת עדכון אוטומטי המוגדרת כיעד</label></textBox></presentation><presentation id="DeviceUpdateAllowedConnectionTypes"><listBox refId="DeviceUpdateAllowedConnectionTypesDesc">סוגי החיבורים המותרים לקבלת עדכונים</listBox></presentation><presentation id="DeviceUpdateHttpDownloadsEnabled"/><presentation id="DeviceUpdateScatterFactor"><decimalTextBox refId="DeviceUpdateScatterFactor">גורם פיזור של עדכון אוטומטי:</decimalTextBox></presentation><presentation id="DeviceUserWhitelist"><listBox refId="DeviceUserWhitelistDesc">רשימת היתרים של פרטי כניסת משתמש</listBox></presentation><presentation id="DeviceWallpaperImage"><textBox refId="DeviceWallpaperImage"><label>תמונת טפט של מכשיר</label></textBox></presentation><presentation id="Disable3DAPIs"/><presentation id="DisablePluginFinder"/><presentation id="DisableSafeBrowsingProceedAnyway"/><presentation id="DisableScreenshots"/><presentation id="DisplayRotationDefault"><dropdownList refId="DisplayRotationDefault">הגדר את ברירת המחדל של סיבוב התצוגה, מיושם בכל הפעלה מחדש</dropdownList></presentation><presentation id="DownloadDirectory"><textBox refId="DownloadDirectory"><label>הגדר ספריית הורדות</label></textBox></presentation><presentation id="DownloadRestrictions"><dropdownList refId="DownloadRestrictions">הגבלות על הורדה</dropdownList></presentation><presentation id="EasyUnlockAllowed"/><presentation id="EcryptfsMigrationStrategy"><dropdownList refId="EcryptfsMigrationStrategy">‏אסטרטגיית העברה ל-ecryptfs</dropdownList></presentation><presentation id="EditBookmarksEnabled"/><presentation id="EnableCommonNameFallbackForLocalAnchors"/><presentation id="EnableDeprecatedWebPlatformFeatures"><listBox refId="EnableDeprecatedWebPlatformFeaturesDesc">הפעל לזמן מוגבל תכונות פלטפורמת אינטרנט שהוצאו משימוש</listBox></presentation><presentation id="EnableOnlineRevocationChecks"/><presentation id="EnableSha1ForLocalAnchors"/><presentation id="ExternalStorageDisabled"/><presentation id="ExternalStorageReadOnly"/><presentation id="ForceGoogleSafeSearch"/><presentation id="ForceMaximizeOnFirstRun"/><presentation id="ForceYouTubeRestrict"><dropdownList refId="ForceYouTubeRestrict">‏אכיפת סינון תוכן מינימלי ב-YouTube</dropdownList></presentation><presentation id="FullscreenAllowed"/><presentation id="Http09OnNonDefaultPortsEnabled"/><presentation id="IncognitoModeAvailability"><dropdownList refId="IncognitoModeAvailability">זמינות של מצב גלישה בסתר</dropdownList></presentation><presentation id="InstantTetheringAllowed"/><presentation id="IsolateOrigins"><textBox refId="IsolateOrigins"><label>הפעלת בידוד אתר בשביל מקורות ספציפיים</label></textBox></presentation><presentation id="KeyPermissions"><textBox refId="KeyPermissions"><label>הרשאות עיקריות</label></textBox></presentation><presentation id="ManagedBookmarks"><textBox refId="ManagedBookmarks"><label>סימניות מנוהלות</label></textBox></presentation><presentation id="MaxInvalidationFetchDelay"><decimalTextBox refId="MaxInvalidationFetchDelay">העיכוב המרבי לאחזור לאחר ביטול תוקף של מדיניות:</decimalTextBox></presentation><presentation id="NativePrinters"><listBox refId="NativePrintersDesc">הדפסה מקומית</listBox></presentation><presentation id="NativePrintersBulkAccessMode"><dropdownList refId="NativePrintersBulkAccessMode">מדיניות גישה אל תצורת מדפסות.</dropdownList></presentation><presentation id="NativePrintersBulkBlacklist"><listBox refId="NativePrintersBulkBlacklistDesc">מדפסות ארגוניות מושבתות</listBox></presentation><presentation id="NativePrintersBulkConfiguration"><textBox refId="NativePrintersBulkConfiguration"><label>קובץ תצורה של מדפסות ארגוניות</label></textBox></presentation><presentation id="NativePrintersBulkWhitelist"><listBox refId="NativePrintersBulkWhitelistDesc">מדפסות ארגוניות מופעלות</listBox></presentation><presentation id="NetworkPredictionOptions"><dropdownList refId="NetworkPredictionOptions">הפוך חיזוי רשת לפעיל</dropdownList></presentation><presentation id="NoteTakingAppsLockScreenWhitelist"><listBox refId="NoteTakingAppsLockScreenWhitelistDesc">הוסף לרשימת ההיתרים אפליקציות לרישום הערות שמותרות במסך הנעילה של Google Chrome OS</listBox></presentation><presentation id="OpenNetworkConfiguration"><textBox refId="OpenNetworkConfiguration"><label>תצורת רשת ברמת המשתמש</label></textBox></presentation><presentation id="PacHttpsUrlStrippingEnabled"/><presentation id="PinnedLauncherApps"><listBox refId="PinnedLauncherAppsDesc">רשימת יישומים מוצמדים שיש להציג במפעיל</listBox></presentation><presentation id="PolicyRefreshRate"><decimalTextBox refId="PolicyRefreshRate">קצב רענון עבור מדיניות משתמש:</decimalTextBox></presentation><presentation id="PrintingEnabled"/><presentation id="QuicAllowed"/><presentation id="RebootAfterUpdate"/><presentation id="RequireOnlineRevocationChecksForLocalAnchors"/><presentation id="RunAllFlashInAllowMode"/><presentation id="SAMLOfflineSigninTimeLimit"><decimalTextBox refId="SAMLOfflineSigninTimeLimit">‏הגבל את משך הזמן שבמהלכו משתמש שאומת באמצעות SAML יכול להתחבר באופן לא מקוון.:</decimalTextBox></presentation><presentation id="SSLErrorOverrideAllowed"/><presentation id="SSLVersionMax"><dropdownList refId="SSLVersionMax">‏גרסת ה-SSL המקסימלית מופעלת</dropdownList></presentation><presentation id="SafeBrowsingEnabled"/><presentation id="SafeBrowsingExtendedReportingOptInAllowed"/><presentation id="SavingBrowserHistoryDisabled"/><presentation id="SearchSuggestEnabled"/><presentation id="SessionLengthLimit"><decimalTextBox refId="SessionLengthLimit">Limit the length of a user session:</decimalTextBox></presentation><presentation id="SessionLocales"><listBox refId="SessionLocalesDesc">הגדרת המקומות המומלצים להפעלה ציבורית</listBox></presentation><presentation id="ShelfAutoHideBehavior"><dropdownList refId="ShelfAutoHideBehavior">בקרת הסתרה אוטומטית של מדף</dropdownList></presentation><presentation id="ShowHomeButton"/><presentation id="ShowLogoutButtonInTray"/><presentation id="SitePerProcess"/><presentation id="SpellCheckServiceEnabled"/><presentation id="SuppressUnsupportedOSWarning"/><presentation id="SyncDisabled"/><presentation id="SystemTimezone"><textBox refId="SystemTimezone"><label>אזור זמן</label></textBox></presentation><presentation id="SystemTimezoneAutomaticDetection"><dropdownList refId="SystemTimezoneAutomaticDetection">קבע את תצורת השיטה לזיהוי אוטומטי של אזור זמן</dropdownList></presentation><presentation id="SystemUse24HourClock"/><presentation id="TPMFirmwareUpdateSettings"><textBox refId="TPMFirmwareUpdateSettings"><label>‏קביעת התנהגות עדכון הקושחה של TPM</label></textBox></presentation><presentation id="TaskManagerEndProcessEnabled"/><presentation id="TermsOfServiceURL"><textBox refId="TermsOfServiceURL"><label>הגדר את התנאים וההגבלות עבור חשבון מקומי של מכשיר</label></textBox></presentation><presentation id="TouchVirtualKeyboardEnabled"/><presentation id="TranslateEnabled"/><presentation id="URLBlacklist"><listBox refId="URLBlacklistDesc">חסום את הגישה לרשימה של כתובות האתר</listBox></presentation><presentation id="URLWhitelist"><listBox refId="URLWhitelistDesc">מאפשר גישה לרשימה של כתובות אתר</listBox></presentation><presentation id="UnifiedDesktopEnabledByDefault"/><presentation id="UsbDetachableWhitelist"><listBox refId="UsbDetachableWhitelistDesc">‏רשימת היתרים של מכשירי USB ניתנים לניתוק</listBox></presentation><presentation id="UserAvatarImage"><textBox refId="UserAvatarImage"><label>תמונה של דמות משתמש</label></textBox></presentation><presentation id="UserDisplayName"><textBox refId="UserDisplayName"><label>הגדרת שם התצוגה עבור חשבונות מקומיים במכשיר</label></textBox></presentation><presentation id="VideoCaptureAllowed"/><presentation id="VideoCaptureAllowedUrls"><listBox refId="VideoCaptureAllowedUrlsDesc">כתובות אתרים שיקבלו גישה למכשירי צילום וידאו ללא הצגת בקשה</listBox></presentation><presentation id="WPADQuickCheckEnabled"/><presentation id="WallpaperImage"><textBox refId="WallpaperImage"><label>תמונת טפט</label></textBox></presentation><presentation id="WebRtcUdpPortRange"><textBox refId="WebRtcUdpPortRange"><label>‏הגבלת הטווח של יציאות UDP מקומיות שבהן נעשה שימוש ב-WebRTC</label></textBox></presentation></presentationTable></resources></policyDefinitionResources>

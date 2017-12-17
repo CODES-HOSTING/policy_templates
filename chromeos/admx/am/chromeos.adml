@@ -1,0 +1,1389 @@
+<?xml version="1.0" ?><policyDefinitionResources revision="1.0" schemaVersion="1.0"><displayName/><description/><resources><stringTable><string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 ወይም ከዚያ በኋላ</string><string id="googlechromeos">Google Chrome OS</string><string id="googlechromeos_recommended">Google Chrome OS - ነባሪ ቅንብሮች (ተጠቃሚዎች ሊሽሯቸው የሚችሉት)</string><string id="GoogleCast_group">Google Cast</string><string id="EnableMediaRouter">Google Castን ያነቃል</string><string id="EnableMediaRouter_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ Google Cast ይነቃል፣ እና ተጠቃሚዎች ከመተግበሪያ ምናሌው፣ የገጽ አውድ ምናሌዎች፣ በCast የነቁ ድር ጣቢያዎች ላይ ካሉ የሚዲያ መቆጣጠሪያዎች፣ እና (የሚታይ ከሆነ) ከCast መሣሪያ አሞሌ አዶው ሊያስጀምሩት ይችላሉ።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ Google Cast ይሰናከላል።</string><string id="ShowCastIconInToolbar">የGoogle Cast መሣሪያ አሞሌ አዶውን ያሳያል</string><string id="ShowCastIconInToolbar_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ የCast መሣሪያ አሞሌ አዶው ሁልጊዜ በመሣሪያ አሞሌው ወይም በትርፍ ፍሰት ምናሌው ላይ ይታያል፣ እና ተጠቃሚዎች ሊያስወግዱት ይችላሉ።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ ተጠቃሚዎች አዶውን በአውድ ምናሌው በኩል ሊሰኩት ወይም ሊያስወግዱት ይችላሉ።
+
+መመሪያ «EnableMediaRouter» ወደ ሐሰት ከተዋቀረ የዚህ መመሪያ እሴት ምንም ተጽዕኖ አይኖረውም፣ እና የመሣሪያ አሞሌው አዶ አይታይም።</string><string id="Homepage_group">መነሻ ገጽ</string><string id="HomepageLocation">የመነሻ ገጽ ዩአርኤሉን ያዋቅሩ</string><string id="HomepageLocation_Explain">Configures the default home page URL in Google Chrome and prevents users from changing it.
+
+The home page is the page opened by the Home button. The pages that open on startup are controlled by the RestoreOnStartup policies.
+
+The home page type can either be set to a URL you specify here or set to the New Tab Page. If you select the New Tab Page, then this policy does not take effect.
+
+If you enable this setting, users cannot change their home page URL in Google Chrome, but they can still choose the New Tab Page as their home page.
+
+Leaving this policy not set will allow the user to choose their home page on their own if HomepageIsNewTabPage is not set too.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HomepageIsNewTabPage">አዲስ የትር ገጹን እንደ መነሻ ገጽ ተጠቀም</string><string id="HomepageIsNewTabPage_Explain">Configures the type of the default home page in Google Chrome and prevents users from changing home page preferences. The home page can either be set to a URL you specify or set to the New Tab Page.
+
+If you enable this setting, the New Tab Page is always used for the home page, and the home page URL location is ignored.
+
+If you disable this setting, the user's homepage will never be the New Tab Page, unless its URL is set to 'chrome://newtab'.
+
+If you enable or disable this setting, users cannot change their homepage type in Google Chrome.
+
+Leaving this policy not set will allow the user to choose whether the new tab page is their home page on their own.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="Extensions_group">ቅጥያዎች</string><string id="ExtensionInstallBlacklist">የተከለከሉ ቅጥያዎች ጭነት ዝርዝር ያዋቅሩ</string><string id="ExtensionInstallBlacklist_Explain">ተጠቃሚዎች የትኛዎቹን ቅጥያዎች መጫን እንደማይችሉ እንዲገልጹ ያስችልዎታል። አስቀድመው የተጫኑ ቅጥያዎች በተከለከሉ ዝርዝር ውስጥ ከገቡ ተጠቃሚው እነሱን ማንቃት የሚችልበት መንገድ ሳይኖር ይሰናከላሉ። አንዴ በክልክል ዝርዝሩ ምክንያት የተሰናከለ ቅጥያ ከእሱ ከተወገደ በኋላ በራስ-ሰር ዳግም ይነቃል።
+
+የ«*» ክልክል ዝርዝር እሴት ማለት ሁሉም ቅጥያዎች በተፈቀደላቸው ዝርዝር ውስጥ በግልጽ ካልተዘረዘሩ በስተቀር በተከለከሉ ዝርዝር ውስጥ ይገባሉ ማለት ነው።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ተጠቃሚው በGoogle Chrome ውስጥ ማንኛውም ቅጥያ መጫን አይችልም።</string><string id="ExtensionInstallBlacklistDesc">የተከለከሉ ቅጥያዎች ጭነት ዝርዝር ያዋቅሩ</string><string id="ExtensionInstallWhitelist">የተፈቀደላቸው የቅጥያ ጭነቶችን ያዋቅሩ</string><string id="ExtensionInstallWhitelist_Explain">የትኛዎቹ ቅጥያዎች የተከለከሉ ዝርዝር ውስጥ የማይገቡ እንደሆኑ እንዲለዩ ያስችልዎታል።
+
+የተከለከሉ ዝርዝር እሴት የሆነው * ማለት ሁሉም ቅጥያዎች በተከለከሉት ዝርዝር ውስጥ የገቡና ተጠቃሚዎች በተፈቀዱት ዝርዝር ውስጥ ያሉትን ብቻ ነው መጠቀም የሚችሉት ማለት ነው።
+
+በነባሪነት ሁሉም ቅጥያዎች በተፈቀዱ ዝርዝር ውስጥ ናቸው ያሉት፣ ነገር ግን ሁሉም ቅጥያዎች በመመሪያ ምክንያት የተከለከሉ ዝርዝር ውስጥ ከገቡ ያን መመሪያ ለመሻር የተፈቀዱ ዝርዝሩን መጠቀም ይቻላል።</string><string id="ExtensionInstallWhitelistDesc">የተፈቀደላቸው የቅጥያ ጭነቶችን ያዋቅሩ</string><string id="ExtensionInstallForcelist">በግዳጅ የተጫኑ የመተግበሪያዎች እና የቅጥያዎች ዝርዝሩን ያዋቅሩ</string><string id="ExtensionInstallForcelist_Explain">Specifies a list of apps and extensions that are installed silently,
+without user interaction, and which cannot be uninstalled nor
+disabled by the user. All permissions requested by the
+apps/extensions are granted implicitly, without user interaction,
+including any additional permissions requested by future versions of
+the app/extension. Furthermore, permissions are granted for the
+enterprise.deviceAttributes and enterprise.platformKeys extension
+APIs. (These two APIs are not available to apps/extensions that are
+not force-installed.)
+
+This policy takes precedence over a potentially conflicting ExtensionInstallBlacklist policy. If an app or extension that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+For Windows instances that are not joined to a MicrosoftÂ® Active
+DirectoryÂ® domain, forced installation is limited to apps and
+extensions listed in the Chrome Web Store.
+
+Note that the source code of any extension may be altered by users via Developer Tools (potentially rendering the extension dysfunctional). If this is a concern, the DeveloperToolsDisabled policy should be set.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.
+
+If this policy is left not set, no apps or extensions are installed automatically and the user can uninstall any app or extension in Google Chrome.</string><string id="ExtensionInstallForcelistDesc">በግዳጅ የተጫኑ የመተግበሪያዎች እና የቅጥያዎች ዝርዝሩን ያዋቅሩ</string><string id="ExtensionInstallSources">ቅጥያ፣ መተግበሪያ እና የተጠቃሚ ስክሪፕት ጭነት ምንጮችን ያዋቅሩ</string><string id="ExtensionInstallSources_Explain">Allows you to specify which URLs are allowed to install extensions, apps, and themes.
+
+Starting in Google Chrome 21, it is more difficult to install extensions, apps, and user scripts from outside the Chrome Web Store. Previously, users could click on a link to a *.crx file, and Google Chrome would offer to install the file after a few warnings. After Google Chrome 21, such files must be downloaded and dragged onto the Google Chrome settings page. This setting allows specific URLs to have the old, easier installation flow.
+
+Each item in this list is an extension-style match pattern (see https://developer.chrome.com/extensions/match_patterns). Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (i.e. the referrer) must be allowed by these patterns.
+
+ExtensionInstallBlacklist takes precedence over this policy. That is, an extension on the blacklist won't be installed, even if it happens from a site on this list.</string><string id="ExtensionInstallSourcesDesc">ቅጥያ፣ መተግበሪያ እና የተጠቃሚ ስክሪፕት ጭነት ምንጮችን ያዋቅሩ</string><string id="ExtensionAllowedTypes">የተፈቀዱ የመተግበሪያ/ቅጥያ አይነቶችን ያዋቅሩ</string><string id="ExtensionAllowedTypes_Explain">የትኛዎቹ የመተግበሪያ/ቅጥያ ዓይነቶች ለመጫን የተፈቀደላቸው እንደሆነ ይቆጣጠራል፣ እንዲሁም የማሄጃ መዳረሻን ይገድባል።
+
+ይህ ቅንብር በGoogle Chrome ውስጥ ሊጫኑ የሚችሉ የቅጥያ/መተግበሪያዎች ዓይነቶች በተፈቀደላቸው ዝርዝር ውስጥ ያስገባቸዋል። እሴቱ የሕብረቁምፊዎች ዝርዝር ነው፣ እያንዳንዱ ከሚከተሉት ውስጥ አንዱ መሆን አለበት፦ «ቅጥያ»፣ «ገጽታ»፣ «የተጠቃሚ_ስክሪፕት»፣ «የተስተናገደ_መተግበሪያ»፣ «የቆየ_የተጠቀለለ_መተግበሪያ»፣ «የመሣሪያ_ሥርዓት_መተግበሪያ»። በእነዚህ ዓይነቶች ላይ ተጨማሪ መረጃ ለማግኘት የGoogle Chrome ቅጥያዎች ሰነዳውን ይመልከቱ።
+
+ይህ መመሪያ እንዲሁም በቅጥያዎች ላይ ተፅዕኖ የሚያሳርፍና መተግበሪያዎች በExtensionInstallForcelist በኩል በግዳጅ እንዲጫኑ እንደሚያደርግ ልብ ይበሉ።
+
+ይህ ቅንብር ከተዋቀረ ዓይነታቸው በዝርዝሩ ላይ የሌሉ ቅጥያዎች/መተግበሪያዎች አይጫኑም።
+
+ይህ ቅንብር እንዳልተዋቀረ ከተተወ ተቀባይነት ባላቸው የቅጥያ/መተግበሪያ ዓይነቶች ላይ ምንም ገደቦች አይፈጸሙም።</string><string id="ExtensionAllowedTypesDesc">የተፈቀዱ የመተግበሪያ/ቅጥያ አይነቶችን ያዋቅሩ</string><string id="ExtensionSettings">የቅጥያ አስተዳደር ቅንብሮች</string><string id="ExtensionSettings_Explain">ለGoogle Chrome የቅጥያ አስተዳደር ቅንብሮችን ያዋቅራል።
+
+ይህ መመሪያ ማንኛቸውም ከቅጥያ ጋር የሚዛመዱ ነባር መመሪያዎችም ቁጥጥር የሚደረግባቸው ቅንብሮችም ጨምሮ በርካታ ቅንብሮችን ይቆጣጠራል። ሁለቱም የተቀናበሩ ከሆኑ ይህ መመሪያ ማንኛቸውም የቆዩ መመሪያዎችን ይሽራል።
+
+ይህ መመሪያ የቅጥያ መታወቂያ ወይም የዝማኔ ዩአርኤል ከውቅረቱ ጋር በካርታ ያዛምዳል። በቅጥያ መታወቂያ አማካኝነት ውቅረት በተገለጸው ቅጥያ ላይ ብቻ ነው የሚተገበረው። ለልዩ መታወቂያ &quot;*&quot; ነባሪ ውቅረት ሊቀናበር ይችላል፣ ይህም በዚህ መመሪያ ውስጥ ብጁ ውቅረት ባልተቀናበረላቸው ሁሉም ቅጥያዎች ላይ ይተገበራል። በዝማኔ ዩአርኤል አማካኝነት https://developer.chrome.com/extensions/autoupdate ላይ በተብራራው መሠረት ውቅረት በዚህ የቅጥያ ዝርዝር ሰነድ ውስጥ የተገለጸው ትክክለኛው የዝማኔ ዩአርኤል ባላቸው ቅጥያዎች ላይ ሁሉ ይተገበራል።
+
+የእያንዳንዱ ቅጥያ (ወይም ተመሳሳዩ የዝማኔ ዩአርኤል ያላቸው ቅጥያዎች) ውቅረት ከታች በሰነድ የተያዙ መስኮችን ሊይዝ የሚችል ሌላ መዝገበ-ቃላት ነው።
+
+&quot;installation_mode&quot;፦ ለቅጥያው የጭነት ሁነታን ከሚያመለክት ሕብረቁምፊ ጋር የሚዛመድ። የሚሠሩ ሕብረቁምፊዎች እነዚህ ናቸው፦
+* &quot;allowed&quot;: ቅጥያው በተጠቃሚው እንዲጫን ይፈቅዳል። ይሄ ነባሪው ባህሪ ነው።
+* &quot;blocked&quot;፦ የቅጥያውን መጫን ይከለክላል።
+* &quot;force_installed&quot;፦ ቅጥያው በራስ-ሰር የሚጫን ሲሆን በተጠቃሚው ሊወገድ አይችልም።
+* &quot;normal_installed&quot;፦ ቅጥያው በራስ-ሰር ይጫናል ነገር ግን በተጠቃሚው ሊሰናከል ይችላል።
+
+&quot;installation_mode&quot; እንዲሁም የ&quot;*&quot; ቅጥያው (እንደ ነባሪ ቅንብሮች ያሉ) እና ተመሳሳዩ የዝማኔ ዩአርኤል ያላቸው ቅጥያዎችም ጨምሮ ለበርካታ ቅጥያዎች ሊዋቀር ይችላል። በዚህ ሁኔታ የ&quot;allowed&quot; እና &quot;blocked&quot; እሴቶች ብቻ ናቸው ሥራ ላይ መዋል የሚችሉት።
+
+ሁነታው ወደ &quot;force_installed&quot; ወይም &quot;normal_installed&quot; ከተቀናበረ እንዲሁም አንድ &quot;update_url&quot; መዋቀር አለበት። በዚህ መመሪያ ውስጥ የተቀናበረው የዝማኔ ዩአርኤል ለመጀመሪያው ጭነት ብቻ ሥራ ላይ እንደሚውል ልብ ይበሉ፤ ተከትለው የሚመጡ የቅጥያው ዝማኔዎች በቅጥያው ዝርዝር ሰነድ ውስጥ የተመላከተው የዝማኔ ዩአርኤል ይጠቀማል። የዝማኔ ዩአርኤሉ ከላይ እንደተጠቀሰው ወደ አንድ የዝማኔ ዝርዝር ሰነድ ኤክስኤምኤል ሰነድ መጠቆም አለበት።
+
+&quot;blocked_permissions&quot;፦ ለቅጥያው የታገዱ የኤፒአይ ፈቃዶችን ከሚያመለክቱ የሕብረቁምፊዎች ዝርዝር ጋር በካርታ ይዛመዳል። የፈቃዶች ስሞች https://developer.chrome.com/extensions/declare_permissions ላይ እንደተብራራው በቅጥያ ዝርዝር ሰነድ ውስጥ ከታወጁ የፈቃድ ሕብረቁምፊዎች ጋር ተመሳሳይ ናቸው። ይህ ቅንብር እንዲሁም ለ&quot;*&quot; ቅጥያ ሊዋቀር ይችላል። ቅጥያው በታገዱት ዝርዝር ውስጥ ያለ ፈቃድ የሚያስፈልገው ከሆነ እንዲጫን አይፈቀድለትም። የታገደ ፈቃድ እንደ አማራጭ ማሟያ የያዘ ከሆነ በመደበኛ መልኩ ነው የሚያዘው፣ ነገር ግን የሚጋጩ ፈቃዶችን መጠየቅ በማሄጃ ጊዜ ላይ በራስ-ሰር ተቀባይነት አያገኝም።
+
+&quot;allowed_permissions&quot;፦ ከ&quot;blocked_permissions&quot; ጋር ተመሳሳይ ነው፣ ነገር ግን በምትኩ በሁለንተናዊ የታገደ ፈቃድ ዝርዝር ውስጥ ታግዶ ሊሆኑ የሚችሉ አንዳንድ ፈቃዶችን በግልጽ ሊፈቅድ ይችላል፣ በዚህም ለ&quot;*&quot; ቅጥያ ሊዋቀር አይችልም። ይህ ቅንብር የተሰጡ ፈቃዶችን ለቅጥያዎች በራስ-ሰር እንደማይሰጥ ልብ ይበሉ።
+
+&quot;minimum_version_required&quot;፦ ከአንድ የስሪት ሐብረቁምፊ ጋር በካርታ ይዛመዳል። የስሪቱ ሕብረቁምፊ ቅርጸት https://developer.chrome.com/apps/manifest/version ላይ እንደተብራራው በቅጥያ ዝርዝር ሰነዱ ላይ ጥቅም ላይ ከዋለው ጋር አንድ ዓይነት ነው። ከተገለጸው ዝቅተኛው ስሪት ያነሰ ስሪት ያለው ቅጥያ ይሰናከላል። ይሄ እንዲሁም በግዳጅ በተጫኑ ቅጥያዎች ላይም ይተግበራል።
+
+የሚከተሉት ቅንብሮች ለነባሪው የ&quot;*&quot; ውቅረት ብቻ ነው ሥራ ላይ መዋል የሚችሉት፦
+
+&quot;install_sources&quot;፦ በዚህ ዝርዝር ውስጥ ያለው እያንዳንዱ ንጥል የቅጥያ-ቅጥ ተዛማጅ ሥርዓተ-ጥለት (https://developer.chrome.com/extensions/match_patterns) ነው። ተጠቃሚዎች ማንኛቸውም ንጥሎችን በዚህ ዝርዝር ውስጥ ካለ ንጥል ጋር ከሚዛመድ ማንኛውም ዩአርኤል መጫን ይችላሉ። ሁለቱም የ*.crx ፋይል አካባቢ እና ውርዱ የጀመረበት ገጽ (ማለትም፦ ጠቃሹ) በእነዚህ ሥርዓተ-ጥለቶች መፈቀድ አለበት።
+
+&quot;allowed_types&quot;፦ ይህ ቅንብር በGoogle Chrome ውስጥ ሊጫኑ የሚችሉ የተፈቀደላቸው የቅጥያ/መተግበሪያዎች አይነቶች በተፈቀደላቸው ዝርዝር ውስጥ ያስገባል። እሴቱ የሕብረቁምፊዎች ዝርዝር ነው፣ እያንዳንዱ ከሚከተሉት ውስጥ አንዱ መሆን አለበት፦ &quot;extension&quot;, &quot;theme&quot;, &quot;user_script&quot;, &quot;hosted_app&quot;, &quot;legacy_packaged_app&quot;, &quot;platform_app&quot;። በእነዚህ ዓይነቶች ላይ ተጨማሪ መረጃ ለማግኘት የGoogle Chrome ቅጥያዎች ሰነዳን ይመልከቱ።
+&quot;blocked_install_message&quot;፦ አንድ ተጠቃሚ አንድ ቅጥያ ለመጫን ሞክሮ ነገር ግን በመመሪያ የታገደ ከሆነ Chrome ድር መደብር አጠቃላይ የሆነ የስህተት መልዕክት ያሳያል። ይህ ቅንብር ጽሑፉን ከስህተት መልዕክቱ ጋር እንዲያያይዙት ያስችልዎታል። ይሄ ተጠቃሚዎችን ወደ የእርስዎ የእገዛ ዴስክ ለማምራት፣ አንድ የተወሰነ ቅጥያ ለምን እንደታገደ ለማብራራት ወይም ሌላ ነገር ለማድረግ ሥራ ላይ መዋል ይችላል። ይህ የስህተት መልዕህት ከ1000 ቁምፊዎች በላይ ከሆነ ይቆረጣል።
+&quot;runtime_blocked_hosts&quot;፦ አንድ ቅጥያ መስተጋብር እንዳይፈጥርባቸው የታገደባቸው የአስተናጋጆች ዝርዝርን ይቀበላል። ይሄ ጃቫስክሪፕትን ማስገባት፣ webRequests / webNavigation መቀየር እና መመልከት፣ ኩኪዎችን መመልከት እና መቀየርን ያካትታል። ቅርጸቱ ከተዛማጅ ሥርዓተ-ጥለቶች https://developer.chrome.com/extensions/match_patterns ጋር ተመሳሳይ፣ ነው፣ ምንም ዱካዎች መገለጽ ካለመቻሉ በስተቀር። ለምሳሌ፦ «*://*.example.com»። ይሄ እንዲሁም ውጤታማ የሆነ የከፍተኛ ደረጃ ልቅ-ምልክት መጠቀምን ይደግፋል፤ ለምሳሌ፦ «*://example.*»።.
+&quot;runtime_allowed_hosts&quot;፦ አንድ ቅጥያ በ&quot;runtime_blocked_hosts&quot; ውስጥ የተዘረዘሩ ይሁኑ ወይም አይሁኑ መስተጋብር ሊፈጥርባቸው የሚችልባቸው የአስተናጋጅ ዝርዝሮችን ይቀበላል። ይሄ ከ&quot;runtime_blocked_hosts&quot; ጋር አንድ ዓይነት ቅርጸት ነው ያለው።
+</string><string id="Attestation_group">በርቀት ማስረገጥ</string><string id="AttestationEnabledForUser">ለተጠቃሚው በርቀት ማስረገጥን ያንቁ</string><string id="AttestationEnabledForUser_Explain">እውነት ከሆነ ተጠቃሚው በChrome መሣሪያዎች ላይ ያለውን ሃርድዌር ተጠቅሞ ማንነቱን በድርጅት መሣሪያ ስርዓት ቁልፎች ኤፒአይ Enterprise Platform Keys API በኩል chrome.enterprise.platformKeys.challengeUserKey()ን በመጠቀም ከግላዊነት CA ጋር አነጻጽሮ ያስረግጠዋል።
+
+ወደ ሐሰት ከተዋቀረ ወይም ካልተዋቀረ ወደ ኤፒአዩ የሚደረጉ ጥሪዎች ከስህተት ኮድ ጋር አይሳኩም።</string><string id="AttestationExtensionWhitelist">የርቀት ማስረገጥ ኤ ፒ አዩን እንዲጠቀሙ የተፈቀደላቸው ቅጥያዎች</string><string id="AttestationExtensionWhitelist_Explain">ይህ መመሪያ ለርቀት ማስረገጥ የድርጅት መሣሪያ ስርዓት ቁልፎች ኤፒአዩን Enterprise Platform Keys API ተግባርን chrome.enterprise.platformKeys.challengeUserKey() እንዲጠቀሙ የተፈቀደላቸው ቅጥያዎችን ይገልጻል። ቅጥያዎች ኤፒአዩን ለመጠቀም ወደዚህ ዝርዝር መታከል አለባቸው።
+
+አንድ ቅጥያ በዝርዝሩ ውስጥ ከሌለ ወይም ደግሞ ዝርዝሩ ካልተዋቀረ ወደ ኤፒአዩ የሚደረግ ጥሪ ከስህተት ኮድ ጋር አይሳካም።</string><string id="AttestationExtensionWhitelistDesc">የርቀት ማስረገጥ ኤ ፒ አዩን እንዲጠቀሙ የተፈቀደላቸው ቅጥያዎች</string><string id="Proxy_group">ተኪ አገልጋይ</string><string id="ProxyMode">የተኪ አገልጋይ ቅንብሮች እንዴት እንደሚገለጹ ይምረጡ</string><string id="ProxyMode_Explain">Google Chrome የሚጠቀመውን የተኪ አገልጋዩን እንዲጠቅሱ ያስችልዎታል፣ እና ተጠቃሚዎች የተኪ ቅንብሮችን እንዳይለውጡ ይከላከላል።
+
+የተኪ አገልጋይን በጭራሽ ላለመጠቀም እና ሁልጊዜ በቀጥታ ለመገናኘት ከመረጡ ሌሎች አማራጮች ሁሉ ችላ ይባላሉ።
+
+የሥርዓት ተኪ ቅንብሮችን ለመጠቀም ከመረጡ ሌሎች አምራጮች ሁሉ ችላ ይባላሉ።
+
+የተኪ አገልጋይን በራስ-ሰር ፈልጎ ማግኘትን ከመረጡ ሌሎች አምራጮች ሁሉ ችላ ይባላሉ።
+
+ቋሚ የተኪ አገልጋይ ሁነታን ከመረጡ በ«የተኪ አገልጋይ ዩአርኤል አድራሻ ወይም ዩአርኤል» ውስጥ እና በ«ኮማ የተለያዩ የተኪ ማለፊያ ደንበች ዝርዝር» ውስጥ ተጨማሪ አማራጮችን መግለጽ ይችላሉ። ከፍተኛ ቅድሚያ ያለው የኤችቲቲፒ ተኪ አገልጋይ ብቻ ነው ለኤአርሲ-መተግበሪያዎች የሚገኘው።
+
+.pac ተኪ ስክሪፕትን ለመጠቀም ከመረጡ በ«ዩአርኤል ወደ ተኪ .pac ፋይል» ውስጥ ዩአርኤሉን ለስክሪፕቱ መጥቀስ ይኖርብዎታል።
+
+ለዝርዝር ምሳሌዎች፣ ይህን ይጎብኙ፦
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett።
+
+ይህን ቅንብር ካነቁት Google Chrome እና የኤአርሲ መተግበሪያዎች ከትዕዛዝ መስመሩ የተገለጹ ከተጊ ጋር የተገናኙ አማራጮችን ሁሉ ችላ ይላሉ።
+
+ይህን መመሪያ እንዳልተዋቀረ መተው ተጠቃሚዎች ራሳቸው የተኪ ቅንብሮችን እንዲመርጡ ይፈቅድላቸዋል።</string><string id="ProxyMode_ProxyDisabled">በጭራሽ ተኪ አይጠቀሙ</string><string id="ProxyMode_ProxyAutoDetect">የተኪ ቅንብሮችን በራስ-ይወቁ</string><string id="ProxyMode_ProxyPacScript">የ.pac ተኪ ስክሪፕት ይጠቀሙ</string><string id="ProxyMode_ProxyFixedServers">ቋሚ ተኪ አገልጋዮችን ይጠቀሙ</string><string id="ProxyMode_ProxyUseSystem">የስርዓት ተኪ ቅንብሮችን ይጠቀሙ</string><string id="ProxyServer">የተኪ አገልጋይ አድራሻ ወይም ዩአርኤል</string><string id="ProxyServer_Explain">የተኪ አገልጋዩ ዩአርኤል እዚህ መጥቀስ ይችላሉ።
+
+ይህ መመሪያ በ«የተኪ አገልጋይ ቅንብሮች እንዴት እንደሚገለጹ ይምረጡ» ላይ እራስዎ የተኪ ቅንብሮችን ከገለጹ ብቻ ነው የሚተገበረው።
+
+የተኪ መመሪያዎችን ለማዋቀር ሌላ ሁነታን ከመረጡ ይህን መመሪያ እንዳልተዋቀረ ነው መተው ያለብዎት።
+
+ለተጨማሪ አማራጮች እና ዝርዝር ምሳሌዎች ይህንን ይጎብኙ፦
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyPacUrl">ወደ ተኪ .pac ፋይል የሚወስድ ዩአርኤል</string><string id="ProxyPacUrl_Explain">እዚህ ለተኪ .pac ፋይሉ አንድ ዩአርኤል መግለጽ ይችላሉ።
+
+በ«የተኪ አገልጋዮች ቅንብሮች እንዴት እንደሚገለጹ ይምረጡ» ላይ የራስ ተኪ ቅንብሮችን ከመረጡ ብቻ ነው ይህ መመሪያ የሚተገበረው።
+
+የተኪ መመሪያዎችን ለማዋቀር ሌላ አይነት ሁነታን ከመረጡ ይህን መመሪያ እንዳልተዋቀረ መተው አለብዎት።
+
+ለዝርዝር ምሳሌዎች ይህንን ይጎብኙ፦
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyBypassList">የተኪ ማለፊያ ደንቦች</string><string id="ProxyBypassList_Explain">Google Chrome እዚህ የተሰጡት ማንኛውም የአስተናጋጆች ዝርዝር ተኪን ያልፋል።
+
+ይህ መመሪያ ተፈጻሚ የሚሆነው በ«የተኪ አገልጋይ ቅንብሮችን እንዴት እንደሚገለጹ ይምረጡ» ላይ የራስዎ ተኪ ቅንብሮችን ከመረጡ ብቻ ነው።
+
+ተኪ መመሪያዎችን ለማዋቀር ሌላ ማንኛውም አይነት ሁነታን ከመረጡ ይህ መመሪያ እንዳልተዋቀረ መተው ነው ያለብዎት።
+
+ለተጨማሪ ዝርዝር ምሳሌዎች ይህን ይጎብኙ፦
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="DefaultSearchProvider_group">ነባሪ የፍለጋ አቅራቢ</string><string id="DefaultSearchProviderEnabled">ነባሪውን የፍለጋ አቅራቢውን ያንቁ</string><string id="DefaultSearchProviderEnabled_Explain">Enables the use of a default search provider.
+
+If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL.
+
+You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider.
+
+If you disable this setting, no search is performed when the user enters non-URL text in the omnibox.
+
+If you enable or disable this setting, users cannot change or override this setting in Google Chrome.
+
+If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="DefaultSearchProviderName">የነባሪ ፍለጋ አቅራቢ ስም</string><string id="DefaultSearchProviderName_Explain">የነባሪ ፍለጋ አቅራቢው ስም ይገልጻል። ባዶ ወይም እንዳልተዋቀረ ከተተወ በፍለጋ ዩአርኤሉ የተገለጸው የአስተናጋጅ ስም ስራ ላይ ይውላል።
+
+ይህ መመሪያ የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው የሚታሰብበት።</string><string id="DefaultSearchProviderKeyword">ነባሪ የፍለጋ አቅራቢ ቁልፍ ቃል</string><string id="DefaultSearchProviderKeyword_Explain">በኦምኒቦክሱ ውስጥ የዚህ አቅራቢ ፍለጋን ለማስነሳት ስራ ላይ የሚውለውን ቁልፍ ቃሉን ይገልጻል።
+
+ይህ መመሪያ ከተፈለገ ነው። ካልተዋቀረ ምንም ቁልፍ ቃል የፍለጋ አቅራቢውን አያገብረውም።
+
+ይህ መመሪያ የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው የሚታሰብበት።</string><string id="DefaultSearchProviderSearchURL">የነባሪ የፍለጋ አቅራቢ ፈላጊ ዩአርኤል</string><string id="DefaultSearchProviderSearchURL_Explain">ነባሪ ፍለጋ ሲደረግ ሥራ ላይ የሚውለው የፍለጋ ፕሮግራም ዩአርኤል ይገልጻል። ዩአርኤሉ በፍለጋ ጊዜ ተጠቃሚው ፍለጋ በሚያደርግባቸው ቃላት የሚተካ የ«{searchTerms}» ሕብረቁምፊ ሊኖረው ይገባል።
+
+የGoogle ፍለጋ ዩአርኤል እንደሚከተለው ሊገለጽ ይችላል፦ '{google:baseURL}search?q={searchTerms}&amp;{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}'
+
+ይህ አማራጭ መዋቀር ያለበት የ«DefaultSearchProviderEnabled» መምሪያ ሲነቃ ነው፣ እና በዚህ ሁኔታ ላይ ብቻ ነው የሚከበረው።</string><string id="DefaultSearchProviderSuggestURL">ነባሪ ፍለጋ አቅራቢ የሚጠቁመው ዩአርኤል</string><string id="DefaultSearchProviderSuggestURL_Explain">የፍለጋ አስተያየት ጥቆማዎችን ለማቅረብ ሥራ ላይ የሚውለው የፍለጋ ፕሮግራሙ ዩአርኤሉን ይገልጻል። ዩአርኤሉ በፍለጋ ጊዜ ተጠቃሚው ባስገባቸው ቃላት የሚተካ የ«{searchTerms}» ሕብረቁምፊ ሊኖረው ይገባል።
+
+ይህ መምሪያ እንደ አማራጭ የቀረበ ነው። ካልተዋቀረ ምንም የጥቆማ ዩአርኤል ሥራ ላይ አይውልም።
+
+በGoogle ጥቆማ ዩአርኤል እንደሚከተለው ሊገለጽ ይችላል፦ '{google:baseURL}complete/search?output=chrome&amp;q={searchTerms}'
+
+ይህ መምሪያ የ«DefaultSearchProviderEnabled» መምሪያ ሲነቃ ብቻ ነው የሚከበረው።</string><string id="DefaultSearchProviderInstantURL">ነባሪ የፍለጋ አቅራቢ ቅጽበታዊ ዩአርኤል</string><string id="DefaultSearchProviderInstantURL_Explain">ፈጣን ውጤቶችን ለማቅረብ ጥቅም ላይ የሚውለው የፍለጋ ፕሮግራም ዩአርኤል ይገልጻል። ዩአርኤሉ የ'{searchTerms}' ሕብረቁምፊ ሊኖረው ይገባል፣ ይህም በመጠይቅ ጊዜ ተጠቃሚው ባስገባው ጽሑፍ የሚተካ ነው።
+
+ይህ መምሪያ እንደ አማራጭ የቀረበ ነው። ካልተዋቀረ ምንም ፈጣን የፍለጋ ውጤቶች አይሰጡም።
+
+የGoogle ፈጣን ውጤቶች ዩአርኤል እንደሚከተለው ሊገለጽ ይችላል፦ '{google:baseURL}suggest?q={searchTerms}'።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መምሪያ ከነቃ ብቻ ነው።</string><string id="DefaultSearchProviderIconURL">ነባሪ የፍለጋ አቅራቢ አዶ</string><string id="DefaultSearchProviderIconURL_Explain">የነባሪው ፍለጋ አቅራቢ ተወዳጅ የአዶ ዩ አር ኤልን ይገልጻል።
+
+ይህ መመሪያ ከተፈለገ ነው። ካልተዋቀረ ለፍለጋ አቅራቢው ምንም አዶ አይኖርም።
+
+ይህ መመሪያ የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው የሚከበረው።</string><string id="DefaultSearchProviderEncodings">የነባሪ ፍለጋ አቅራቢ የኮድ ግቤቶች</string><string id="DefaultSearchProviderEncodings_Explain">በፍለጋ አቅራቢው የሚደገፉ የቁምፊ ኮድ ግቤቶችን ይገልጻል። የኮድ ግቤቶች እንደ UTF-8፣ GB2312 እና ISO-8859-1 ያሉ የኮድ ገጽ ስሞች ናቸው። በቀረቡት ቅደም ተከተል ነው የሚሞከሩት።
+
+ይህ መመሪያ ከተፈለገ ነው። ባይዋቀር ስራ ላይ የሚውለው ነባሪው UTF-8 ነው።
+
+ይህ መመሪያ የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው የሚከበረው።</string><string id="DefaultSearchProviderEncodingsDesc">የነባሪ ፍለጋ አቅራቢ የኮድ ግቤቶች</string><string id="DefaultSearchProviderAlternateURLs">የነባሪ ፍለጋ አቅራቢው ተለዋጭ ዩ አር ኤሎች ዝርዝር</string><string id="DefaultSearchProviderAlternateURLs_Explain">የፍለጋ ቃላትን ከፍለጋ ፕሮግራሙ ለማውጣት ሊያገለግሉ የተለዋጭ ዩ አር ኤሎች ዝርዝርን ይገልጻል። ዩ አር ኤሎቹ ሕብረቁምፊው '{searchTerms}' ሊኖራቸው ይገባል፣ ይህም የፍለጋ ቃላቱን ለማውጣት ሊያገለግል ይችላል።
+
+ይህ መመሪያ ከተፈለገ ነው። እንዳልተዋቀረ ከተተወ የፍለጋ ቃላትን ለማውጣት ምንም ተለዋጭ ዩ አር ኤሎች ስራ ላይ አይውሉም።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው።</string><string id="DefaultSearchProviderAlternateURLsDesc">የነባሪ ፍለጋ አቅራቢው ተለዋጭ ዩ አር ኤሎች ዝርዝር</string><string id="DefaultSearchProviderSearchTermsReplacementKey">የነባሪው ፍለጋ አቅራቢ የፍለጋ ቃል ምደባውን የሚቆጣጠር ልኬት</string><string id="DefaultSearchProviderSearchTermsReplacementKey_Explain">ይህ መመሪያ ከተዋቀረና አንድ ከኦምኒቦክሱ የተጠቆመ የፍለጋ ዩአርኤል በሕብረቁምፊው ወይም በቁራጭ ለዪው ውስጥ የተጠቆመው ይህን ልኬት ከያዘ የጥቆማ አስተያየቱ ከጥሬ ፍለጋ ዩአርኤል ይልቅ የፍለጋ ቃላቱ እና የፍለጋ አቅራቢውን ያሳያል።
+
+ይህ መመሪያ ከተፈለገ ነው። ካልተዋቀረ ምንም የፍለጋ ቃል መተካት አይከናወንም።
+
+ይህ መመሪያ የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው የሚከበረው።</string><string id="DefaultSearchProviderImageURL">ለነባሪው የፍለጋ አቅራቢ በምስል የመፈለግ ባህሪይን የሚያቀርብ መለኪያ።</string><string id="DefaultSearchProviderImageURL_Explain">የምስል ፍለጋ በሚደረግበት ወቅት ጥቅም ላይ የዋለውን የፍለጋ ፕሮግራሙ ዩ አር ኤልን ይጠቅሳል። የፍለጋ ጥያቄዎች የGET ስልትን በመጠቀም ይላካሉ።
+የDefaultSearchProviderImageURLPostParams መመሪያው ከተዘጋጀ የምስል ፍለጋ ጥያቄዎች ከሱ ይልቅ POST ስልትን ይጠቀማሉ።
+
+ይህ መመሪያ አስገዳጅ አይደለም። ካልተዘጋጀ፣ ምንም የምስል የፍለጋ ጥቅም ላይ አይውልም።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መመሪያው ሲነቃ ብቻ ነው።</string><string id="DefaultSearchProviderNewTabURL">የነባሪ የፍለጋ አቅራቢ አዲስ ትር ገጽ ዩአርኤል</string><string id="DefaultSearchProviderNewTabURL_Explain">አንድ የፍለጋ ፕሮግራም አዲስ የትር ገጽ ለማቅረብ የሚጠቀምበት ዩአርኤል ይገልጻል።
+
+ይህ መመሪያ አማራጭ ነው። ካልተዋቀረ ምንም አዲስ ትር አይቀርብም።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መመሪያ ከነቃ ብቻ ነው።</string><string id="DefaultSearchProviderSearchURLPostParams">POST የሚጠቀም የፍለጋ ዩአርኤል ግቤቶች</string><string id="DefaultSearchProviderSearchURLPostParams_Explain">POSTን በመጠቀም ፍለጋ በሚደረግበት ወቅት ጥቅም ላይ የዋሉትን ግቤቶች ይጠቅሳል። በኮማ የተለያዩ የስም/የእሴት ጥምሮችን ያካትታል። እሴቱ የአብነት ግቤት ከሆነ፣ ልክ ከላይ በተጠቀሰው ምሳሌ ውስጥ እንደ {searchTerms} በእውነተኛ የፍለጋ ውሂብ ይተካል።
+
+ይህ መመሪያ አስገዳጅ አይደለም። ካልተዘጋጀ፣ የፍለጋ ጥያቄ የGET ስልትን በመጠቀም ይላካል።
+
+ይህ መመሪያ የሚከበረው የ «DefaultSearchProviderEnabled» መመሪያው ሲነቃ ብቻ ነው።</string><string id="DefaultSearchProviderSuggestURLPostParams">POST የሚጠቀም የሚጠቆም ዩአርኤል ግቤቶች</string><string id="DefaultSearchProviderSuggestURLPostParams_Explain">POSTን በመጠቀም የጥቆማዎች ፍለጋ በሚደረግበት ወቅት ጥቅም ላይ የዋሉትን ግቤቶች ይጠቅሳል። በኮማ የተለያዩ የስም/የእሴት ጥምሮችን ያካትታል። እሴቱ የአብነት ግቤት ከሆነ፣ ልክ ከላይ በተጠቀሰው ምሳሌ ውስጥ እንደ {searchTerms} በእውነተኛ የፍለጋ ውሂብ ይተካል።
+
+ይህ መመሪያ አስገዳጅ አይደለም። ካልተዘጋጀ፣ የጥቆማ የፍለጋ ጥያቄ የGET ስልትን በመጠቀም ይላካል።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መመሪያው ሲነቃ ብቻ ነው።</string><string id="DefaultSearchProviderInstantURLPostParams">POST የሚጠቀም የፈጣን ዩአርኤል ግቤቶች</string><string id="DefaultSearchProviderInstantURLPostParams_Explain">POSTን በመጠቀም የፈጣን ፍለጋ በሚደረግበት ወቅት ጥቅም ላይ የዋሉትን ግቤቶች ይጠቅሳል። በኮማ የተለያዩ የስም/የእሴት ጥምሮችን ያካትታል። እሴቱ የአብነት ግቤት ከሆነ፣ ልክ ከላይ በተጠቀሰው ምሳሌ ውስጥ እንደ {searchTerms} በእውነተኛ የፍለጋ ውሂብ ይተካል።
+
+ይህ መመሪያ አስገዳጅ አይደለም። ካልተዘጋጀ፣ የፈጣን የፍለጋ ጥያቄ የGET ስልትን በመጠቀም ይላካል።
+
+ይህ መመሪያ የሚከበረው የ «DefaultSearchProviderEnabled» መመሪያው ሲነቃ ብቻ ነው።</string><string id="DefaultSearchProviderImageURLPostParams">POSTን ለሚጠቀም የምስል ዩአርኤል ግቤቶች</string><string id="DefaultSearchProviderImageURLPostParams_Explain">POSTን በመጠቀም የጥቆማዎች ፍለጋ በሚደረግበት ወቅት ጥቅም ላየ የዋሉትን ግቤቶች ይጠቅሳል። በኮማ የተለያዩ የስም/የእሴት ጥምሮችን ያካትታል። እሴቱ የአብነት ግቤት ከሆነ፣ ልክ ከላይ በተጠቀሰው ምሳሌ ውስጥ እንደ {imageThumbnail} በእውነተኛ የምስል ድንክየ ይተካል።
+
+ይህ መመሪያ አስገዳጅ አይደለም። ካልተዘጋጀ፣ የምስል የፍለጋ ጥያቄ የGET ስልትን በመጠቀም ይላካል።
+
+ይህ መመሪያ የሚከበረው የ«DefaultSearchProviderEnabled» መመሪያ ሲነቃ ብቻ ነው።</string><string id="Drive_group">የGoogle Drive አማራጮችን ያዋቅሩ</string><string id="DriveDisabled">በGoogle Chrome OS ፋይሎች መተግበሪያ ውስጥ Driveን ያሰናክለዋል</string><string id="DriveDisabled_Explain">ወደ እውነት ሲዋቀር በGoogle Chrome OS የፋይሎች መተግበሪያ የGoogle Drive ማመሳሰልን ያሰናክለዋል። በዚያ ጊዜ ምንም ውሂብ ወደ Google Drive አይሰቀልም።
+
+ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ ተጠቃሚዎች ፋይሎችን ወደ Google Drive ማስተላለፍ ይችላሉ።</string><string id="DriveDisabledOverCellular">በGoogle Chrome OS ፋይሎች መተግበሪያው ውስጥ Google Driveን በተንቀሳቃሽ ስልክ ግንኙነቶች ላይ ያሰናክለዋል</string><string id="DriveDisabledOverCellular_Explain">ወደ እውነት ሲዋቀር Google Drive በተንቀሳቃሽ ስልክ ግንኙነት ላይ በGoogle Chrome OS ፋይሎች መተግበሪያው ውስጥ መመሳሰልን ያሰናክላል። በዚህ አጋጣሚ ውሂብ ከGoogle Drive ጋር የሚመሳሰለው በWiFi ወይም ኤተርኔት ላይ ብቻ ሲገናኝ ነው።
+
+ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ ተጠቃሚዎች ፋይሎችን በተንቀሳቃሽ ስልክ ግንኙነቶች ላይ ወደ Google Drive ማስተላለፍ ይችላሉ።</string><string id="RestoreOnStartupGroup_group">የመነሻ ገጾች</string><string id="RestoreOnStartup">በሚነሳበት ጊዜ የሚወሰደው እርምጃ</string><string id="RestoreOnStartup_Explain">Allows you to specify the behavior on startup.
+
+If you choose 'Open New Tab Page' the New Tab Page will always be opened when you start Google Chrome.
+
+If you choose 'Restore the last session', the URLs that were open last time Google Chrome was closed will be reopened and the browsing session will be restored as it was left.
+Choosing this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).
+
+If you choose 'Open a list of URLs', the list of 'URLs to open on startup' will be opened when a user starts Google Chrome.
+
+If you enable this setting, users cannot change or override it in Google Chrome.
+
+Disabling this setting is equivalent to leaving it not configured. The user will still be able to change it in Google Chrome.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartup_RestoreOnStartupIsNewTabPage">አዲስ የትር ገጽ ይክፈቱ</string><string id="RestoreOnStartup_RestoreOnStartupIsLastSession">የመጨረሻውን ክፍለ-ጊዜ ወደነበረበት ይመልሱ</string><string id="RestoreOnStartup_RestoreOnStartupIsURLs">የዩ አር ኤልዎች ዝርዝር ይክፈቱ</string><string id="RestoreOnStartupURLs">በሚነሳበት ጊዜ የሚከፈቱ ዩአርኤልዎች</string><string id="RestoreOnStartupURLs_Explain">If 'Open a list of URLs' is selected as the startup action, this allows you to specify the list of URLs that are opened. If left not set no URL will be opened on start up.
+
+This policy only works if the 'RestoreOnStartup' policy is set to 'RestoreOnStartupIsURLs'.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupURLsDesc">በሚነሳበት ጊዜ የሚከፈቱ ዩአርኤልዎች</string><string id="RemoteAccess_group">የርቀት መዳረሻ አማራጮችን ያዋቅሩ</string><string id="RemoteAccessHostClientDomainList">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostClientDomainList_Explain">Configures the required client domain names that will be imposed on remote access clients and prevents users from changing it.
+
+If this setting is enabled, then only clients from one of the specified domains can connect to the host.
+
+If this setting is disabled or not set, then the default policy for the connection type is applied. For remote assistance, this allows clients from any domain to connect to the host; for anytime remote access, only the host owner can connect.
+
+This setting will override RemoteAccessHostClientDomain, if present.
+
+See also RemoteAccessHostDomainList.</string><string id="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostFirewallTraversal">በኬላ ውስጥ ማለፍን ከሩቅ መዳረሻ አስተናጅ ያንቁ</string><string id="RemoteAccessHostFirewallTraversal_Explain">ሩቅ ደንበኞች ከዚህ ማሽን ጋር ግንኙነት ለመመስረት ሲሞክሩ የSTUN እናአገልጋዮች መጠቀምን ያነቃል።
+
+ይህ ቅንብር ከነቃ ደንበኞች በኬላ የተለያዩ ቢሆኑም እንኳ ሩቅ ደንበኞች ይህን ማሽን ማግኘት እና ከእሱ ጋር መገናኘት ይችላሉ።
+
+ይህ ቅንብር ከተሰናከለ እና ወጪ የUDP ግንኑኘቶች በኬላው የሚጣሩ ከሆኑ ይህ ማን በአውታረ መረብ ውስጥ ካሉ የደንበኛ ማሽኖች የሚመጡ ግንኙነቶችን ብቻ ነው የሚፈቅደው።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ቅንብሩ ይነቃል።</string><string id="RemoteAccessHostDomainList">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostDomainList_Explain">Configures the required host domain names that will be imposed on remote access hosts and prevents users from changing it.
+
+If this setting is enabled, then hosts can be shared only using accounts registered on one of the specified domain names.
+
+If this setting is disabled or not set, then hosts can be shared using any account.
+
+This setting will override RemoteAccessHostDomain, if present.
+
+See also RemoteAccessHostClientDomainList.</string><string id="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostTalkGadgetPrefix">ለርቀት መዳረሻ አስተናጋጆች የTalkGadget ቅድመ ቅጥያውን ያዋቅሩ</string><string id="RemoteAccessHostTalkGadgetPrefix_Explain">በሩቅ መዳረሻ አስተናጋጆች ስራ ላይ የሚውል የTalkGadget ቅድመ-ቅጥያውን የሚያዋቅርና ተጠቃሚዎች እንዳይቀይሩት የሚያግድ ነው።
+
+ከተገለጸ ለTalkGadget ሙሉ የጎራ ስም ለመፍጠር ይህ ቅድመ-ቅጥያ ከTalkGadget ስም መሰረቱ ጋር ይያያዛል። የTalkGadget ጎራ መሠረት ስሙ «.talkgadget.google.com» ነው።
+
+ይህ ቅንብር ከነቃ አስተናጋጆች TalkGadgetን ሲደርሱበት ከነባሪው የጎራ ስም ይልቅ ብጁ የጎራ ስሙን ይጠቀማሉ።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ ነባሪው የTalkGadget ጎራ ስም («chromoting-host.talkgadget.google.com») ለሁሉም አስተናጋጆች ስራ ላይ ይውላል።
+
+የሩቅ መዳረሻ ደንበኞች በዚህ መመሪያ ቅንብር ተፅዕኖ አይደርስባቸውም። TalkGadgetን ለመድረስ ሁልጊዜ «chromoting-client.talkgadget.google.com»ን ይጠቀማሉ።</string><string id="RemoteAccessHostRequireCurtain">የርቀት መዳረሻ አስተናጋጆች መጋረድ ያንቁ</string><string id="RemoteAccessHostRequireCurtain_Explain">አንድ ግኑኝነት በሂደት ላይ ሳለ የርቀት መዳረሻ አስተናጋጆች መጋረድ ያነቃል።
+
+ይህ ቅንብር ከነቃ የርቀት ግንኙነት በሂደት ላይ ሳለ የአስተናጋጆች አካላዊ የግብዓት እና የውጽዓት መሣሪያዎች ይሰናከላሉ።
+
+ይህ ቅንብር ከተሰናከለ ወይም እንዳልተዋቀረ ከተተወ ሁለቱም አካባቢያዊ እና የርቀት ተጠቃሚዎች አስተናጋጁ በሚጋራበት ጊዜ ከእሱ ጋር መስተጋብር ሊፈጥሩ ይችላሉ።</string><string id="RemoteAccessHostAllowClientPairing">ፒን የሌለው ማረጋገጫ ለርቀት መዳረሻ አስተናጋጆች ያንቁ ወይም ያሰናክሉ</string><string id="RemoteAccessHostAllowClientPairing_Explain">ይህ ቅንብር ከነቃ ወይም ካልተዋቀረ፣ ተጠቃሚው ሁል ጊዜ ፒን የማስገባት አስፈላጊነትን በማጥፋት ደንበኞችን እና አዘጋጆን በግንኙነት ጊዜ ለማጣመር መምረጥ ይችላል።
+
+ይህ ቅንብር ከተሰናከለ፣ ይህ ባህሪይ እይገኝም።</string><string id="RemoteAccessHostAllowGnubbyAuth">የgnubby ማረጋገጫ ለርቀት መዳረሻ አስተናጋጆች ይፍቀዱ</string><string id="RemoteAccessHostAllowGnubbyAuth_Explain">ይህ ቅንብር ከነቃ የgnubby ማረጋገጫ ጣቄዎች በርቀት አስተናጋጅ ግንኙነት ላይ በተኪ ይተላለፋሉ።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ የgnubby ማረጋገጫ ጥያቄዎች በተኪ አይተላለፉም።</string><string id="RemoteAccessHostAllowRelayedConnection">በርቀት መዳረሻ አስተናጋጁ የአቀባይ አገልጋዮች መጠቀምን አንቃ</string><string id="RemoteAccessHostAllowRelayedConnection_Explain">Enables usage of relay servers when remote clients are trying to establish a connection to this machine.
+
+If this setting is enabled, then remote clients can use relay servers to connect to this machine when a direct connection is not available (e.g. due to firewall restrictions).
+
+Note that if the policy RemoteAccessHostFirewallTraversal is disabled, this policy will be ignored.
+
+If this policy is left not set the setting will be enabled.</string><string id="RemoteAccessHostUdpPortRange">በርቀት የመዳረሻ አስተናጋጁ ጥቅም ላይ የዋለውን የUDP ወደብ ምጥጥነ ገጽታ ይገድቡ</string><string id="RemoteAccessHostUdpPortRange_Explain">Restricts the UDP port range used by the remote access host in this machine.
+
+If this policy is left not set, or if it is set to an empty string, the remote access host will be allowed to use any available port, unless the policy RemoteAccessHostFirewallTraversal is disabled, in which case the remote access host will use UDP ports in the 12400-12409 range.</string><string id="RemoteAccessHostMatchUsername">የአካባቢያዊ ተጠቃሚው ስም እና የርቀት መድረሻ አስተናጋጅ ባለቤቱ መዛመድ ይፈልጋል</string><string id="RemoteAccessHostMatchUsername_Explain">If this setting is enabled, then the remote access host compares the name of the local user (that the host is associated with) and the name of the Google account registered as the host owner (i.e. &quot;johndoe&quot; if the host is owned by &quot;johndoe@example.com&quot; Google account).  The remote access host will not start if the name of the host owner is different from the name of the local user that the host is associated with.  RemoteAccessHostMatchUsername policy should be used together with RemoteAccessHostDomain to also enforce that the Google account of the host owner is associated with a specific domain (i.e. &quot;example.com&quot;).
+
+If this setting is disabled or not set, then the remote access host can be associated with any local user.</string><string id="RemoteAccessHostTokenUrl">የርቀት መዳረሻ ደንበኞች የማረጋገጫ ማስመሰያቸውን ማግኘት ያለባቸው ዩአርኤል</string><string id="RemoteAccessHostTokenUrl_Explain">If this policy is set, the remote access host will require authenticating clients to obtain an authentication token from this URL in order to connect. Must be used in conjunction with RemoteAccessHostTokenValidationUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationUrl">የርቀት መዳረሻ ደንበኛ ማስመሰያን የማረጋገጫ ዩአርኤል</string><string id="RemoteAccessHostTokenValidationUrl_Explain">If this policy is set, the remote access host will use this URL to validate authentication tokens from remote access clients, in order to accept connections. Must be used in conjunction with RemoteAccessHostTokenUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationCertificateIssuer">ከRemoteAccessHostTokenValidationUrl ጋር የሚገናኙበት የደንበኛ እውቅና ማረጋገጫ</string><string id="RemoteAccessHostTokenValidationCertificateIssuer_Explain">If this policy is set, the host will use a client certificate with the given issuer CN to authenticate to RemoteAccessHostTokenValidationUrl. Set it to &quot;*&quot; to use any available client certificate.
+
+This feature is currently disabled server-side.</string><string id="Accessibility_group">የተደራሽነት ቅንብሮች</string><string id="ShowAccessibilityOptionsInSystemTrayMenu">በስርዓት መሣቢያ ምናሌ ውስጥ የተደራሽነት አማራጮችን አሳይ</string><string id="ShowAccessibilityOptionsInSystemTrayMenu_Explain">If this policy is set to true, Accessibility options always appear in system tray menu.
+
+If this policy is set to false, Accessibility options never appear in system tray menu.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, Accessibility options will not appear in the system tray menu, but the user can cause the Accessibility options to appear via the Settings page.</string><string id="LargeCursorEnabled">ትልቅ ጠቋሚን ያንቁ</string><string id="LargeCursorEnabled_Explain">የትልቅ ጠቋሚ ተደራሽነት ባህሪውን ያንቁ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ ትልቅ ጠቋሚው ሁልጊዜ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ትልቅ ጠቋሚው ሁልጊዜ ይሰናከላል።
+
+ይህን መመሪያ ካዋቀሩት ተጠቃሚዎች ሊቀይሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ትልቅ ጠቋሚው መጀመሪያ ላይ ይሰናከላል ነገር ግን በማንኛውም ጊዜ በማንኛውም ጊዜ በተጠቃሚው ሊነቃ ይችላል።</string><string id="SpokenFeedbackEnabled">የተነገረ ግብረ መልስን ያንቁ</string><string id="SpokenFeedbackEnabled_Explain">የሚነገር ግብረመልስ ተደራሽነት ባህሪን ያንቁ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ የሚነገር ግብረመልስ ሁልጊዜ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የሚነገር ግብረመልስ ሁልጊዜ ይሰናከላል።
+
+ይህ መመሪያ ከአዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የሚነገር ግብረመልስ መጀመሪያ ላይ ይሰናከላል ነገር ግን በማንኛውም ጊዜ በተጠቃሚው ሊዋቀር ይችላል።</string><string id="HighContrastEnabled">የከፍተኛ ንፅፅር ሁነታን ያንቁ</string><string id="HighContrastEnabled_Explain">የባለከፍተኛ ንፅፅር ሁነታ ተደራሽነት ባህሪን ያንቁ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ ባለከፍተኛ ንፅፅር ሁነታ ሁልጊዜ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ባለከፍተኛ የንፅፅር ሁነታ ሁልጊዜ ይሰናከላል።
+
+ይህን መመሪያ ካዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ባለከፍተኛ ንፅፅር ሁነታ መጀመሪያ ላይ ይሰናከላል ነገር ግን በማንኛውም ጊዜ በተጠቃሚ ሊነቃ ይችላል።</string><string id="VirtualKeyboardEnabled">የታይታ የቁልፍ ሰሌዳን አንቃ</string><string id="VirtualKeyboardEnabled_Explain">የማያ ገጽ ላይ ቁልፍ ሰሌዳ ተደራሽነት ባህሪ ያንቁ።
+
+ይህ መመሪያ ወደ እውነት ከተቀናበረ የማያ ገጽ ላይ ቁልፍ ሰሌዳው ሁልጊዜ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተቀናበረ የማያ ገጽ ላይ ቁልፍ ሰሌዳው ሁልጊዜ ይሰናከላል።
+
+እርስዎ ይህን መመሪያ ካቀናበሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተቀናበረ ከተተወ የማያ ገጽ ላይ ቁልፍ ሰሌዳው መጀመሪያ ላይ ይሰናከላል ነገር ግን ተጠቃሚው በማንኛውም ጊዜ ሊያነቃው ይችላል።</string><string id="KeyboardDefaultToFunctionKeys">የማህደረመረጃ ቁልፎች በነባሪነት ወደ የተግባር ቁልፎች ይቀየራሉ</string><string id="KeyboardDefaultToFunctionKeys_Explain">የላይኛው ረድፍ ቁልፎች በነባሪነት የተግባር ቁልፍ ያደርጋቸዋል።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ የቁልፍ ሰሌዳው ላይኛው ረድፍ ቁልፎች በነባሪነት የተግባር ቁልፍ ትዕዛዞችን ነው የሚፈጥሩት። ባህሪያቸውን ተመልሶ ወደ የማህደረመረጃ ቁልፎች ለማድህር የፍለጋ ቁልፉ መጫን አለበት።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ የቁልፍ ሰሌዳው በነባሪነት የማህደረመረጃ ቁልፍ ትዕዛዞችን ይፈጥራን፣ የፍለጋ ቁልፉ ሲያዝ የተግባር ቁልፍ ትዕዛዞችን ይፈጥራል።</string><string id="ScreenMagnifierType">የማጉሊያ አይነት ያዋቅሩ</string><string id="ScreenMagnifierType_Explain">If this policy is set, it controls the type of screen magnifier that is enabled. Setting the policy to &quot;None&quot; disables the screen magnifier.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, the screen magnifier is disabled initially but can be enabled by the user anytime.</string><string id="ScreenMagnifierType_None">የማያ ገጹ ማጉያ ተሰናክሏል</string><string id="ScreenMagnifierType_Full-screen">ባለሙሉ ማያ ገጽ ማጉያ ነቅቷል</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled">የትልቅ ጠቋሚው ነባሪ ሁኔታ በመግቢያ ገጹ ላይ ያዋቅሩት</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled_Explain">በመግቢያ ገጹ ላይ ያለው ነባሪውን የትልቅ ጠቋሚ ተደራሽነት ባህሪ ያዋቅሩ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ የመግቢያ ገጹ ሲታይ ትልቁ ጠቋሚ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የመግቢያ ገጹ ሲታይ ትልቁ ጠቋሚ ይሰናከላል።
+
+ይህን መመሪያ ካዋቀሩት ተጠቃሚዎች ትልቅ ጠቋሚውን በማንቃት ወይም በማሰናከል ለጊዜው ሊሽሩት ይችላሉ። ይሁንና የተጠቃሚው ምርጫ ቋሚ አይደለም፣ እና የመግቢያ ገጹ እንደ አዲስ በታየ ቁጥር ወይም ተጠቃሚው በመግቢያ ገጽ ላይ ለአንድ ደቂቃ ስራ ከፈታ ነባሪ ወደነበረበት ይመለሳል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የመግቢያ ገጹ መጀመሪያ ላይ ሲታይ ትልቅ ጠቋሚው ይሰናከላል። ተጠቃሚዎች ትልቅ ጠቋሚውን በማንኛውም ጊዜ ማንቃት ወይም ማሰናከል ይችላሉ፣ እና በመግቢያ ገጹ ላይ ያለው ሁኔታው በተጠቃሚዎች መካከል ቋሚ ይሆናል።</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled">የሚነገረው ግብረመልስ ነባሪ ሁኔታ በመግቢያ ገጹ ላይ ያዋቅሩት</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled_Explain">የሚነገር ግብረመልስ ተደራሽነት ባህሪ ነባሪ ሁኔታውን በመግቢያ ገጹ ላይ ያዋቅሩ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ የሚነገር ግብረመልስ የመግቢያ ገጹ ሲታይ ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የሚነገር ግብረመልስ የመግቢያ ገጹ ሲታይ ይሰናከላል።
+
+ይህን መመሪያ ከአዋቀሩት ተጠቃሚዎች የሚነገር ግብረመልሱን በማንቃት ወይም በማሰናከል ለጊዜው ሊሽሩት ይችላሉ። ይሁንና የተጠቃሚው ምርጫ ዘላቂ አይሆንም፣ እና የመግቢያ ገጹ እንደ አዲስ በታየ ቁጥር ወይም ተጠቃሚው በማያ ገጹ ላይ ለአንድ ደቂቃ ስራ ከፈታ ነባሪው ወደነበረበት ይመለሳል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የመግቢያ ገጹ መጀመሪያ ላይ ሲታይ የሚነገር ግብረመልስ ይሰናከላል። ተጠቃሚዎች በማንኛውም ጊዜ የሚነገር ግብረመልስን ሊያነቁ ወይም ሊያሰናክሉ ይችላሉ፣ እና በመግቢያ ገጹ ላይ ያለው ሁኔታው በተጠቃሚዎች መካከል ቋሚ ነው።</string><string id="DeviceLoginScreenDefaultHighContrastEnabled">የከፍተኛ ንፅፅር ሁነታው ነባሪ ሁኔታ በመግቢያ ገጹ ላይ ያዋቅሩት</string><string id="DeviceLoginScreenDefaultHighContrastEnabled_Explain">የባለከፍተኛ ንፅፅር ሁነታ ተደራሽነት ባህሪው ነባሪ ሁኔታ በመግቢያ ገጹ ላይ ያዋቅሩት።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ የመግቢያ ገጹ ሲታይ ባለከፍተኛ ንፅፅር ሁነታው ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የመግቢያ ገጹ ሲታይ ባለከፍተኛ ንፅፅር ሁነታው ይሰናከላል።
+
+ይህ መመሪያ ከአዋቀሩት ተጠቃሚዎች ባለከፍተኛ ንፅፅር ሁነታን በማንቃት ወይም በማሰናከል ለጊዜው ሊሽሩት ይችላሉ። ይሁንና፣ የተጠቃሚው ምርጫ ዘላቂ አይደለም፣ እና የመግቢያ ገጹ እንደ አዲስ በታየ ቁጥር ወይም ተጠቃሚው በመግቢያ ገጹ ላይ ለአንድ ደቂቃ ስራ ከፈታ ነባሪው ወደነበረበት ይመለሳል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የመግቢያ ገጹ መጀመሪያ ላይ ሲታይ ባለከፍተኛ ንፅፅር ሁነታው ይሰናከላል። ተጠቃሚዎች በማንኛውም ጊዜ ባለከፍተኛ ንፅፅር ሁነታውን ማንቃት ወይም ማሰናከል ይችላሉ፣ እና በመግቢያ ገጹ ላይ ያለው ሁኔታው በተጠቃሚዎች መካከል ቋሚ ይሆናል።</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled">በመግቢያ ገጹ ላይ የማያ ገጽ ላይ ቁልፍ ሰሌዳውን ነባሪ ሁኔታ ያቀናብሩ</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled_Explain">በመግቢያ ገጹ ላይ ያለው የማያ ገጽ ላይ ቁልፍ ሰሌዳ ተደራሽነት ባህሪ ነባሪ ሁኔታ ያዋቅሩ።
+
+ይህ መመሪያ ወደ እውነት ከተቀናበረ የመግቢያ ገጹ ሲታይ የማያ ገጽ ቁልፍ ሰሌዳው ይነቃል።
+
+ይህ መመሪያ ወደ ሐሰት ከተቀናበረ የመግቢያ ገጹ ሲታይ የማያ ገጽ ቁልፍ ሰሌዳው ይሰናከላል።
+
+እርስዎ ይህን መመሪያ ካቀናበሩ ተጠቃሚዎች የማያ ገጽ ላይ ቁልፍ ሰሌዳውን በማንቃት ወይም በማሰናከል ለጊዜው ሊሽሩት ይችላሉ። ይሁንና የተጠቃሚው ምርጫ ዘላቂ ያልሆነና የመግቢያ ገጹ እንደ አዲስ በታየ ቁጥር ወይም ተጠቃሚው ለአንድ ደቂቃ በመግቢያ ገጹ ላይ ስራ ፈትቶ ከቆየ ነባሪው ወደነበረበት ይመለሳል።
+
+ይህ መመሪያ እንዳልተቀናበረ ከተተወ የመግቢያ ገጹ መጀመሪያ ሲታይ የማያ ገጽ ላይ ቁልፍ ሰሌዳው ይሰናከላል። ተጠቃሚዎች የማያ ገጽ ቁልፍ ሰሌዳውን ሊያነቁት ወይም ሊያሰናክሉት ይችላሉ፣ እና በመግቢያ ገጹ ላይ ያለው ሁኔታ በተጠቃሚዎች መካከል ዘላቂነት አለው።</string><string id="DeviceLoginScreenDefaultScreenMagnifierType">ነባሪውን የማጉሊያ አይነት በመግቢያ ገጹ ላይ ያንቁት</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Explain">በመግቢያ ገጹ ላይ የነቃው ነባሪ የማያ ገጽ አይነት ያዋቅሩ።
+
+ይህ መመሪያ ከተዋቀረ የመግቢያ ገጹ ሲታይ የነቃው ነባሪ የማያ ገጽ አይነት ይቆጣጠራል። መመሪያውን ወደ «ምንም» ማዋቀር የማያ ገጹ ማጉያን ያሰናክለዋል።
+
+ይህም መመሪያ ከአዋቀሩት ተጠቃሚዎች የማያ ገጹ ማጉያን በማንቃት ወይም በማሰናከል ለጊዜው ሊሽሩት እና ይችላሉ። ይሁንና፣ የተጠቃሚው ምርጫ ዘላቂ አይደለም፣ እና የመግቢያ ገጹ በታየ ቁጥር ወይም በመግቢይ ገጹ ላይ ለአንድ ደቂቃ ስራ ከፈታ ነባሪው ወደነበረበት ይመለሳል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የመግቢያ ገጹ መጀመሪያ ላይ ሲታይ የማያ ገጹ ማጉያ ይሰናከላል። ተጠቃሚዎች የማያ ገጹን ማጉያ በማንኛውም ጊዜ ማንቃት ወይም ማሰናከል ይችላሉ፣ እና በመግቢያ ገጹ ላይ ያለው ሁኔታ በተጠቃሚዎች መካከል ቋሚ ነው።</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_None">የማያ ገጹ ማጉያ ተሰናክሏል</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Full-screen">ባለሙሉ ማያ ገጽ ማጉያ ነቅቷል</string><string id="PowerManagement_group">የኃይል አስተዳደር</string><string id="LidCloseAction">ተጠቃሚው ክዳኑን ሲዘጋ የሚወሰደው እርምጃ</string><string id="LidCloseAction_Explain">When this policy is set, it specifies the action that Google Chrome OS takes when the user closes the device's lid.
+
+When this policy is unset, the default action is taken, which is suspend.
+
+If the action is suspend, Google Chrome OS can separately be configured to either lock or not lock the screen before suspending.</string><string id="LidCloseAction_LidCloseActionSuspend">አንጠልጥል</string><string id="LidCloseAction_LidCloseActionLogout">ተጠቃሚውን ያስወጡት</string><string id="LidCloseAction_LidCloseActionShutdown">ዝጋ</string><string id="LidCloseAction_LidCloseActionDoNothing">ምንም አትስራ</string><string id="PowerManagementUsesAudioActivity">የድምጽ እንቅስቃሴ የኃይል አስተዳደሩ ላይ ተጽዕኖ ይኖረው ወይም አይኖረው ይገልጻል</string><string id="PowerManagementUsesAudioActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while audio is playing. This prevents the idle timeout from being reached and the idle action from being taken. However, screen dimming, screen off and screen lock will be performed after the configured timeouts, irrespective of audio activity.
+
+If this policy is set to False, audio activity does not prevent the user from being considered idle.</string><string id="PowerManagementUsesVideoActivity">የቪዲዮ እንቅስቃሴ የኃይል አስተዳደሩ ላይ ተጽዕኖ ይኖርበት ወይም አይኖርበት ይገልጻል</string><string id="PowerManagementUsesVideoActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while video is playing. This prevents the idle delay, screen dim delay, screen off delay and screen lock delay from being reached and the corresponding actions from being taken.
+
+If this policy is set to False, video activity does not prevent the user from being considered idle.</string><string id="PresentationScreenDimDelayScale">በማቅረቢያ ሁነታ ላይ ያለውን የማያ ገጽ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ</string><string id="PresentationScreenDimDelayScale_Explain">መሣሪያው በማቅረቢያ ሁነታ ላይ ሲሆን የማያ ገጽ መደብዘዝ መዘግየቱ የሚመጠንበትን መቶኛ ይገልጻል።
+
+ይህ መመሪያ ከተዋቀረ መሣሪያው በማቅረቢያ ሁነታ ላይ ሲሆን የማያ ገጽ መደብዘዝ መዘግየቱ የሚመጠንበትን መቶኛ ይገልጻል። የማያ ገጽ መደብዘዝ መዘግየቱ ሲመጠን የማያ ገጽ መጥፋት እና የማያ ገጽ መቆለፍ መዘግየቶች መጀመሪያ ላይ ከተዋቀረው የማያ ገጽ መደብዘዝ መዘግየት ርቀት ለመጠበቅ ይስተካከላሉ።
+
+ይህ መመሪያ ከአልተዋቀረ ነባሪ የመመጠን መለኪያው ስራ ላይ ይውላል።
+
+የመመጠን መለኪያው 100% ወይም ከዚያ በላይ መሆን አለበት። በማቅረቢያ ሁነታ ላይ ያለውን የማያ ገጽ መደብዘዝ መዘግየቱን ከመደበኛው የማያ ገጽ መደብዘዝ መዘግየት ያጠረ የሚያደርጉ ዋጋዎች አይፈቀዱም።</string><string id="AllowScreenWakeLocks">የማያ ገጽ ማንቂያ መክፈቻዎችን ይፈቅዳል</string><string id="AllowScreenWakeLocks_Explain">የማያ ገጽ መክፈት ይፈቀድ እንደሆነ ይገልጻል። የማያ ገጽ መክፈት በኃይል አስተዳደር ቅጥያ ኤ ፒ አይ በኩል ባሉ ቅጥያዎች ሊጠየቁ ይችላሉ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ ወይም ምንም ካልተዋቀረ የማያ ገጽ መክፈት ለኃይል አስተዳደር ይከበራሉ።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የማያ ገጽ መክፈት ጥያቄዎች ችላ ይባላሉ።</string><string id="UserActivityScreenDimDelayScale">ከመደብዘዝ በኋላ ተጠቃሚው ንቁ ቢሆን የማያ ገጹ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ</string><string id="UserActivityScreenDimDelayScale_Explain">ማያ ገጹ ደብዝዞ በአለበት ጊዜ ወይም ማያ ገጹ ከጠፋ በኋላ ወዲያውኑ የተጠቃሚ እንቅስቃሴ ከታየ የማያ ገጹ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ ይገልጻል።
+
+ይህ መመሪያ ከተዋቀረ ማያ ገጹ ደብዝዞ በአለበት ጊዜ ወይም ማያ ገጹ ከጠፋ በኋላ ወዲያውኑ የተጠቃሚ እንቅስቃሴ ከታየ የማያ ገጹ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ ይገልጻል። የማደብዘዝ መዘግየት ሲመጠን፣ ማያ ገጹ መጥፋት፣ የማያ ገጹ ቁልፍ እና ስራ መፍታት መዘግየቶች መጀመሪያ ላይ እንደተዋቀረው ከማያ ገጹ ማደብዘዝ ተመሳሳይ ርቀት እንዲኖራቸው ተደርገው ይስተካከላሉ።
+
+ይህ መመሪያ ካልተዋቀረ አንድ ነባሪ የመመጠኛ መለኪያ ስራ ላይ ይውላል።
+
+የማስፋት መለኪያው 100% ወይም ከዚያ በላይ መሆን አለበት።</string><string id="WaitForInitialUserActivity">የመነሻ የተጠቃሚ እንቅስቃሴን ይጠብቁ</string><string id="WaitForInitialUserActivity_Explain">የኃይል አስተዳደር መዘግየቶች እና የክፍለ-ጊዜው ርዝመት ማሄድ የሚጀምሩት በአንድ ክፍለ-ጊዜ ውስጥ የመጀመሪያው የተጠቃሚ እንቅስቃሴ ከታየ በኋላ ብቻ ይሁን ወይም አይሁን ይግለጹ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ በአንድ ክፍለ-ጊዜ ውስጥ የመጀመሪያው ተጠቃሚ እንቅስቃሴ ከታየ ጀምሮ የኃይል አስተዳደር መዘግየቶች እና የክፍለ-ጊዜው ርዝመት ገደብ ከመጀመሪያው የተጠቃሚ እንቅስቃሴ ማሄድ አይጀምሩም።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ የኃይል አስተዳደር መዘግየቶች እና የክፍለ-ጊዜው ርዝመት ገደብ ልክ ክፍለ-ጊዜ እንደተጀመረ ማሄድ ይጀምራሉ።</string><string id="PowerManagementIdleSettings">ተጠቃሚው ስራ ሲፈታ የሚኖረው የኃይል አስተዳደር ቅንብሮች</string><string id="PowerManagementIdleSettings_Explain">This policy controls multiple settings for the power management strategy when the user becomes idle.
+
+There are four types of action:
+* The screen will be dimmed if the user remains idle for the time specified by |ScreenDim|.
+* The screen will be turned off if the user remains idle for the time specified by |ScreenOff|.
+* A warning dialog will be shown if the user remains idle for the time specified by |IdleWarning|, telling the user that the idle action is about to be taken.
+* The action specified by |IdleAction| will be taken if the user remains idle for the time specified by |Idle|.
+
+For each of above actions, the delay should be specified in milliseconds, and needs to be set to a value greater than zero to trigger the corresponding action. In case the delay is set to zero, Google Chrome OS will not take the corresponding action.
+
+For each of the above delays, when the length of time is unset, a default value will be used.
+
+Note that |ScreenDim| values will be clamped to be less than or equal to |ScreenOff|, |ScreenOff| and |IdleWarning| will be clamped to be less than or equal to |Idle|.
+
+|IdleAction| can be one of four possible actions:
+* |Suspend|
+* |Logout|
+* |Shutdown|
+* |DoNothing|
+
+When the |IdleAction| is unset, the default action is taken, which is suspend.
+
+There are also separate settings for AC power and battery.
+</string><string id="ScreenLockDelays">የማያ ገጽ መቆለፍ መዘግየቶች</string><string id="ScreenLockDelays_Explain">በAC ኃይል ወይም ባትሪ ላይ ሆኖ የተጠቃሚ ግቤት ከሌለ ማያ ገጹ የሚቆለፍበት የጊዜ ርዝመት ይገልጻል።
+
+የጊዜው ርዝመት ከዜሮ በላይ ወደሆነ እሴት ሲቀናበር Google Chrome OS ማያ ገጹን ከመቆለፉ በፊት ተጠቃሚው ስራ ፈትቶ መቆየት ያለበትን ጊዜ ይወክላል።
+
+ርዝመቱ ወደ ዜሮ ሲቀናበር ተጠቃሚው ስራ ሲፈታ Google Chrome OS ማያ ገጹን አይቆልፈውም።
+
+የጊዜ ርዝመቱ እንዳልተቀናበረ ከተተወ ነባሪ የጊዜ ርዝመት ስራ ላይ ይውላል።
+
+ስራ ሲፈታ ማያ ገጹ እንዲቆለፍ የሚመከርበት መንገድ በማንጠልጠል ጊዜ ላይ ማያ ገጽ መቆለፍን ማንቃትና የስራ መፍታት ጊዜው ካለፈ Google Chrome OS እንዲያንጠለጥል ማድረግ ነው። ይህ መመሪያ ስራ ላይ መዋል ያለበት ማያ ገጽ መቆለፍ ከመንጠልጠል ጉልህ ከሆነ ጊዜ በፊት መከሰት ሲኖርበት ወይም ስራ በተፈታበት ጊዜ ማንጠልጠል በጭራሽ ባልተፈለገበት ጊዜ ላይ ብቻ ነው።
+
+የመመሪያ እሴቱ በሚሊሰከንዶች ነው መጠቀስ ያለበት። የእሴቶች ድምር ከስራ ፈት መዘግየቱ ያንሳሉ።</string><string id="NewTabPage_group">የአዲስ ትር ገጽ</string><string id="NewTabPageLocation">የአዲሱ ትር ገጽን ዩአርኤል ያዋቅሩ</string><string id="NewTabPageLocation_Explain">Configures the default New Tab page URL and prevents users from changing it.
+
+The New Tab page is the page opened when new tabs are created (including the one opened in new windows).
+
+This policy does not decide which pages are to be opened on start up. Those are controlled by the RestoreOnStartup policies. Yet this policy does affect the Home Page if that is set to open the New Tab page, as well as the startup page if that is set to open the New Tab page.
+
+If the policy is not set or left empty the default new tab page is used.
+
+This policy is not available on Windows instances that are not joined to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HTTPAuthentication_group">የኤችቲቲፒ ማረጋገጫ መመሪያዎች</string><string id="AuthSchemes">የተደገፉ የማረጋገጫ መርሐግብሮች</string><string id="AuthSchemes_Explain">የትኛዎቹ የኤችቲቲፒ ማረጋገጫ መርሐግብሮች በGoogle Chrome የሚደገፉ መሆናቸውን ይገልጻል።
+
+ሊሆኑ የሚችሉ እሴቶች «basic»፣ «digest»፣ «ntlm» እና «negotiate» ናቸው። በርካታ እሴቶችን በኮማ ያለያዩ።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ አራቱም መርሐግብሮች ስራ ላይ ይውላሉ።</string><string id="DisableAuthNegotiateCnameLookup">የKerberos ማረጋገጫ ሲደራደሩ CNAMEን ፍለጋን ያሰናክሉ</string><string id="DisableAuthNegotiateCnameLookup_Explain">የመነጨው Kerberos SPN በcanonical ዲ ኤን ኤስ ስሙ ወይም የገባው የመጀመሪያ ስሙ ላይ የተመሠረተ ይሁን ይገልጻል።
+
+ይህን ቅንብር ካነቁ CNAME ፍለጋ ይዘለልና የአገልጋዩ ስም እንደገባው ያገለግላል።
+
+ይህን ቅንብር ካሰናከሉ ወይም እንዳልተዋቀረ ከተዉት የአገልጋዩ canonical ስም በCNAME ፍለጋ በኩል ይታወቃል።</string><string id="EnableAuthNegotiatePort">በKerberos SPN ውስጥ መደበኛ ያልሆነ ወደብ አካትት</string><string id="EnableAuthNegotiatePort_Explain">የመነጨው የKerberos SPN መደበኛ ያልሆነ ወደብ ያካትት ወይም አያካትት እንደሆነ ይገልጻል።
+
+ይህን ቅንብር ካነቁ እና መደበኛ ያልሆነ ወደብ (ማለትም፣ ከ80 ወይም 443 ሌላ የሆነ ወደብ) ከገባ በመነጨው Kerberos SPN ውስጥ ይካተታል።
+
+ይህን ቅንብር ካሰናከሉ ወይም እንዳልተዋቀረ ከተዉት የመነጨው Kerberos SPN በማንኛውም አይነት ሁኔታ ወደብ አያካትትም።</string><string id="AuthServerWhitelist">የተፈቀደላቸው የማረጋገጫ አገልጋይ ዝርዝር</string><string id="AuthServerWhitelist_Explain">የትኛዎቹ አገልጋዮች ለተዋሃደው ማረጋገጫ በተፈቀደላቸው ዝርዝር ውስጥ መግባት እንዳለባቸው ይገልጻል። የተዋሃደ ማረጋገጫ የሚነቃው Google Chrome የማረጋገጫ ፈተና ከአንድ ተኪ ወይም በተፈቀደላቸው ዝርዝር ውስጥ ካለ አንድ አገልጋይ ሲመጣለት ብቻ ነው።
+
+የበርካታ አገልጋይ ስሞችን በኮማዎች ያለያዩ። ልቅ ምልክቶች (*) ይፈቀዳሉ።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተዉት Google Chrome አንድ አገልጋይ በውስጠ-መረብ ውስጥ ካለ ለማወቅ ይሞክራል፣ እና ከዚህ ብኋላ ብቻ ነው ለIWA ጥያቄዎች ምላሽ የሚሰጠው። አንድ አገልጋይ እንደበይነመረብ ሆኖ ከተገኘ የIWA ጥያቄዎች በGoogle Chrome ችላ ይባላሉ።</string><string id="AuthNegotiateDelegateWhitelist">የተፈቀዱ የKerberos ውክልና አገልጋይ ዝርዝር</string><string id="AuthNegotiateDelegateWhitelist_Explain">Google Chrome ውክልና ሊሰጣቸው የሚችላቸው አገልጋዮች፦
+
+በርካታ የአገልጋይ ስሞችን በኮማዎች ይለያዩዋቸው። ልቅ ምልክቶች (*) ይፈቀዳሉ።
+
+ከዚህ መመሪያ ከወጡ Google Chrome የተጠቃሚ ምስክርነቶች ለውክልና አይሰጥም፣ ምንም እንኳ አንድ አገልጋይ እንደ ውስጠ መረብ ሆኖ ቢገኝም።</string><string id="AllowCrossOriginAuthPrompt">ምንጨ-ተቋራጭ ኤችቲቲፒ መሠረታዊ ማረጋገጫ መጠየቂያዎች</string><string id="AllowCrossOriginAuthPrompt_Explain">በአንድ ገጽ ላይ ያለ የሶስተኛ ወገን ንዑስ-ይዘት የኤች ቲ ቲ ፒ መሠረታዊ ማረጋገጫ መገናኛ ሳጥን ብቅ ማድረግ ይፈቀድለት እንደሆነ ይቆጣጠራል።
+
+ይሄ በመደበኝነት ማስገርን ለመከላከል ተብሎ ይሰናከላል። ይህ መመሪያ ካልተዋቀረ ይሄ ይሰናከልና የሶስተኛ ወገን ንዑስ ይዘት የኤች ቲ ቲ ፒ መሠረታዊ ማረጋገጫ መገናኛ ሳጥን ብቅ እንዲል እንዲያደርግ አይፈቀድለትም።</string><string id="PasswordManager_group">የይለፍ ቃል አቀናባሪ</string><string id="PasswordManagerEnabled">የይለፍ ቃሎችን ወደ የይለፍ ቃል አስተዳዳሪ ማስቀመጥን ያንቁ</string><string id="PasswordManagerEnabled_Explain">If this setting is enabled, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site.
+
+If this settings is disabled, users cannot save new passwords but they
+may still use passwords that have been saved previously.
+
+If this policy is enabled or disabled, users cannot change or override it in Google Chrome. If this policy is unset, password saving is allowed (but can be turned off by the user).</string><string id="ContentSettings_group">የይዘት ቅንብሮች</string><string id="DefaultCookiesSetting">ነባሪ የኩኪዎች ቅንብር</string><string id="DefaultCookiesSetting_Explain">ድር ጣቢያዎች የአካባቢ ውሂብ እንዲያዋቅሩ ይፈቀደላቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። አካባቢያዊ ውሂብን ማዋቀር ለሁሉም ድር ጣቢያዎች ማዋቀር ሊፈቀድ ወይም ሊከለከል ይችላል።
+
+ይህ መመሪያ ወደ ፞«ኩኪዎችን ለክፍለ-ጊዜው ቆይታ አቆይ» ከተዋቀረ ክፍለ-ጊዜው በሚያበቃበት ጊዜ ኩኪዎቹ ይጸዳሉ። Google Chrome በ«በስተጀርባ ሁነታ» ላይ እያሄደ ከሆነ የመጨረሻው መስኮት በሚዘጋበት ጊዜ ክፍለ-ጊዜው ላይዘጋ እንደሚችል ልብ ይበሉ። ይህንን ባህሪ ስለማወቀር ተጨማሪ መረጃ ከፈለጉ እባክዎ የ«BackgroundModeEnabled» መመሪያውን ይመልከቱ።
+
+ይህ መመሪያ ሳይዋቀር ከቀረ «AllowCookies» ስራ ላይ ይውላል፣ እና ተጠቃሚው ሊለውጠው ይችላል።</string><string id="DefaultCookiesSetting_AllowCookies">ሁሉም ጣቢያዎች የአካባቢ ውሂብ እንዲያዋቅሩ ይፍቀዱ</string><string id="DefaultCookiesSetting_BlockCookies">ማንኛውም ጣቢያ አካባቢያዊ ውሂብን እንዲያስቀምጥ አትፍቀድ</string><string id="DefaultCookiesSetting_SessionOnly">ክፍለ ጊዜው እስከቆየበት ያህል ጊዜ ድረስ ኩኪዎችን አቆይ</string><string id="DefaultImagesSetting">ነባሪ የምስሎች ቅንብር</string><string id="DefaultImagesSetting_Explain">ድር ጣቢያዎች ምስሎችን ማሳየት የሚፈቀድላቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። ምስሎችን ማሳየት ለሁሉም ጣቢያዎች ሊፈቀድ ወይም ሊከለከል ይችላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ «AllowImages» ስራ ላይ ይውልና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultImagesSetting_AllowImages">ሁሉም ጣቢያዎች ሁሉንም ምስሎች እንዲያሳዩ ፍቀድ</string><string id="DefaultImagesSetting_BlockImages">ማንኛውም ጣቢያ ምስሎችን እንዲያሳይ አትፍቀድ</string><string id="DefaultJavaScriptSetting">ነባሪው የJavaScript ቅንብር</string><string id="DefaultJavaScriptSetting_Explain">ድር ጣቢያዎች JavaScriptን እንዲያሂዱ የሚፈቀድላቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። JavaScriptን ማሄድ ለሁሉም ጣቢያዎች ሊፈቀድ ወይም ሊከለከል ይችላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ «AllowJavaScript» ስራ ላይ ይውልና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultJavaScriptSetting_AllowJavaScript">ሁሉም ጣቢያዎች ጃቫስክሪፕት እንዲያሄዱ ፍቀድ</string><string id="DefaultJavaScriptSetting_BlockJavaScript">የትኛውም ጣቢያ JavaScript እንዲያሄድ አትፍቀድ</string><string id="DefaultPluginsSetting">ነባሪ የFlash ቅንብር</string><string id="DefaultPluginsSetting_Explain">ድር ጣቢያዎች የFlash ተሰኪውን በራስ-ሰር ማሄድ ይችሉ እንደሆነ እንዲያቀናብሩ ያስችልዎታል። የFlash ተሰኪውን በራስ-ሰር ማሄድ ለሁሉም ድር ጣቢያዎች ሊፈቀድ ወይም ሊከለከል ይችላል።
+
+ለማጫወት ጠቅ አድርግ የFlash ተሰኪው እንዲያሄድ ያስችለዋል፣ ነገር ግን ማስፈጸሙን ለመጀመር ተጠቃሚው በቦታ ያዢው ላይ ጠቅ ማድረግ አለበት።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ተጠቃሚው ራሱ ይህን ቅንብር መቀየር ይችላል።</string><string id="DefaultPluginsSetting_AllowPlugins">ሁሉም ጣቢያዎች የFlash ተሰኪውን በራስ-ሰር እንዲያሄዱ ይፍቀዱ</string><string id="DefaultPluginsSetting_BlockPlugins">የFlash ተሰኪውን ያግዱ</string><string id="DefaultPluginsSetting_ClickToPlay">ለማጫወት ጠቅ ያድርጉ</string><string id="DefaultPopupsSetting">ነባሪው የብቅ-ባዮች ቅንብር</string><string id="DefaultPopupsSetting_Explain">ድር ጣቢያዎች ብቅ ባዮች ማሳየት እንዲችሉ ወይም እንዳይችሉ አድርገው እንዲያዋቅሩ ያስችልዎታል። ብቅ-ባዮችን ማሳየት ለሁሉም ድር ጣቢያዎች ሊፈቀድ ወይም ሊከለከል ይችላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ «BlockPopups» ስራ ላይ ይውላል፣ እና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultPopupsSetting_AllowPopups">ሁሉም ጣቢያዎች ብቅ-ባዮችን እንዲያሳዩ ፍቀድ</string><string id="DefaultPopupsSetting_BlockPopups">ምንም ጣቢያ ብቅ-ባዮችን እንዲያሳይ አይፍቀዱ</string><string id="DefaultNotificationsSetting">ነባሪ የማሳወቂያ ቅንብር</string><string id="DefaultNotificationsSetting_Explain">ድር ጣቢያዎች የዴስክቶፕ ማሳወቂያዎች እንዲያሳዩ ይፈቀድላቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። የዴስክቶፕ ማሳወቂያዎችን በነባሪነት እንዲታዩ ሊፈቀዱ፣ በነባሪነት ሊከለከሉ ወይም አንድ ድር ጣቢያ የዴስክቶፕ ማሳወቂያ ማሳየት በፈለገ ቁጥር ተጠቃሚው እንዲጠየቅ ማድረግ ይቻላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ «AskNotifications» ስራ ላይ ይውልና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultNotificationsSetting_AllowNotifications">ጣቢያዎች የዴስክቶፕ ማሳወቂያዎችን እንዲያሳዩ ፍቀድ</string><string id="DefaultNotificationsSetting_BlockNotifications">ማናቸውንም ጣቢያዎች የዴስክቶፕ ማስታወቂያዎችን እንዲያሳዩ አትፍቀድ</string><string id="DefaultNotificationsSetting_AskNotifications">አንድ ጣቢያ የዴስክቶፕ ማሳወቂያዎችን ማሳየት በፈለገ ጊዜ ጠይቅ</string><string id="DefaultGeolocationSetting">ነባሪ የምድራዊ አካባቢ ቅንብር</string><string id="DefaultGeolocationSetting_Explain">ድር ጣቢያዎች የተጠቃሚዎች አካላዊ አካባቢን መከታተል ይፈቀድላቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። የተጠቃሚዎች አካላዊ አካባቢ በነባሪነት ሊፈቀድ ይችላል፣ በነባሪነት ሊከለከል ይችላል ወይም አንድ ድር ጣቢያ አካላዊ አካባቢውን በጠየቀ ቁጥር ተጠያቂው እንዲጠየቅ ማድረግ ይቻላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ «AskGeolocation» ስራ ላይ ይውልና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultGeolocationSetting_AllowGeolocation">ጣቢያዎች የተጠቃሚዎች አካላዊ አካባቢ እንዲከታተሉ ይፍቀዱ</string><string id="DefaultGeolocationSetting_BlockGeolocation">ማንኛውም ጣቢያ የተጠቃሚዎች አካላዊ አካባቢ እንዲከታተል አይፍቀዱ</string><string id="DefaultGeolocationSetting_AskGeolocation">አንድ ጣቢያ የተጠቃሚዎች አካላዊ አካባቢ መከታተል ሲፈልግ ጠይቅ</string><string id="DefaultWebBluetoothGuardSetting">የድር ብሉቱዝ ኤፒአይን አጠቃቀም ይቆጣጠሩ</string><string id="DefaultWebBluetoothGuardSetting_Explain">ድር ጣቢያዎች በአቅራቢያ ያሉ የብሉቱዝ መሣሪያዎች መዳረሻ ይኖራቸው ወይም አይኖራቸው እንደሆነ እንዲያዋቅሩ ያስችልዎታል። መዳረሻ ሙሉ በሙሉ ሊታገድ ወይም የድር ጣቢያ በአቅራቢያ ያሉ የብሉቱዝ መሣሪያዎች መዳረሻ ለማግኘት በፈለገ ቁጥር ተጠቃሚው ሊጠየቅ ይችላል።
+
+ይህ መምሪያ ሳይዋቀር ከተተወ «3» ሥራ ላይ ይውላል፣ እና ተጠቃሚው ሊቀይረው ይችላል።</string><string id="DefaultWebBluetoothGuardSetting_BlockWebBluetooth">ምንም ዓይነት ጣቢያ በድር ብሉቱዝ ኤፒአይ በኩል የብሉቱዝ መሣሪያዎች መዳረሻን እንዲጠይቅ አትፍቀድ</string><string id="DefaultWebBluetoothGuardSetting_AskWebBluetooth">ጣቢያዎች በአቅራቢያ ያሉ የብሉቱዝ መሣሪያዎች መዳረሻ ለማግኘት ተጠቃሚውን እንዲጠይቁ ፍቀድ</string><string id="AutoSelectCertificateForUrls">የእውቅና ማረጋገጫዎች ለእነዚህ ጣቢያዎች በራስ-ሰር ይምረጡ</string><string id="AutoSelectCertificateForUrls_Explain">ጣቢያው የእውቅና ማረጋገጫ የሚጠይቅ ከሆነ Google Chrome በራስ-ሰር የደንበኛ እውቅና ማረጋገጫ ሊመርጥላቸው የሚገቡ የዩአርኤል ሥርዓተ ጥለቶችን ዝርዝር እንዲጠቅሱ ያስችልዎታል።
+
+እሴቱ በሕብረቁምፊ የተቀመጡ የJSON መዝገበ-ቃላቶች ድርድር መሆን አለበት። እያንዳንዱ መዝገበ-ቃላት የ{ &quot;pattern&quot;: &quot;$URL_PATTERN&quot;, &quot;filter&quot; : $FILTER } ቅርጽ ሊኖረው፣ እና $URL_PATTERN ደግሞ የይዘት ቅንብር ሥርዓተ-ጥለት ሊሆን ይገባዋል። $FILTER አሳሹ ከየትኛው የደንበኛ እውቅና ማረጋገጫዎች በራስ-ሰር እንደሚመርጥ ይገድባል። ማጣሪያው ሳይቆጠር ከአገልጋዩ የእውቅና ማረጋገጫ ጋር የሚዛመዱ የእውቅና ማረጋገጫዎች ብቻ ናቸው የሚመረጡት። $FILTER የ{ &quot;ISSUER&quot;: { &quot;CN&quot;: &quot;$ISSUER_CN&quot; } } ቅርጽ ካለው በተጨማሪነት ከCommonName $ISSUER_CN ባለው እውቅና ማረጋገጫ የወጡ የደንበኛ የእውቅና ማረጋገጫዎች ብቻ ናቸው የሚመረጡት። $FILTER ባዶው መዝገበ-ቃላት {} ከሆነ የደንበኛ እውቅና ማረጋገጫ ምርጫ በተጨማሪነት አይገደብም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ለማንኛውም ጣቢያ ምንም ራስ-ሰር ምርጫ አይከናወንም።</string><string id="AutoSelectCertificateForUrlsDesc">የእውቅና ማረጋገጫዎች ለእነዚህ ጣቢያዎች በራስ-ሰር ይምረጡ</string><string id="CookiesAllowedForUrls">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን ይፍቀዱ</string><string id="CookiesAllowedForUrls_Explain">ኩኪዎች እንዲያዋቅሩ የተፈቀደላቸው የዩ አር ኤል ስርዓተ ጥለቶች ዝርዝር እንዲያስቀምጡ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ከተዋቀረ የ«DefaultCookiesSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊው ነባሪ ዋጋ ስራ ላይ ይውላል።</string><string id="CookiesAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን ይፍቀዱ</string><string id="CookiesBlockedForUrls">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን አግድ</string><string id="CookiesBlockedForUrls_Explain">ኩኪዎችን እንዲያዘጋጁ ያልተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩ አር ኤል ስርዓተ ጥለቶችን እንዲያዘጋጁ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ፣ ከተዋቀረ «DefaultCookiesSetting»፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊው ነባሪ እሴት ለሁሉም ጣቢያዎች ስራ ላይ ይውላል።</string><string id="CookiesBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን አግድ</string><string id="CookiesSessionOnlyForUrls">በእነዚህ ጣቢያዎች ላይ የክፍለ-ጊዜ ብቻ ኩኪዎችን ፍቀድ</string><string id="CookiesSessionOnlyForUrls_Explain">የክፍለ-ጊዜ ብቻ ኩኪዎችን እንዲያዋቅሩ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩአርኤል ስርዓተ-ጥለቶች ዝርዝር እንዲያዋቅሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ሁለገቡ ነባሪ እሴት ከተዋቀረ ከ«DefaultCookiesSetting» መመሪያ አሊያም ከተጠቃሚው የግል ውቅረት ለሁሉም ጣቢያዎች ስራ ላይ ይውላል።
+
+Google Chrome በ«የጀርባ ሁነታ» ውስጥ እያሄደ ከሆነ የመጨረሻው የአሳሽ መስኮት ሲዘጋ ክፍለ-ጊዜው ላይዘጋ ይችላል፣ ነገር ግን አሳሹ ዘግቶ እስኪወጣ ድረስ ገቢር እንደሆነ ይቆያል። ይህን ባህሪ ስለማዋቀር ተጨማሪ ለማወቅ እባክዎ «BackgroundModeEnabled» መመሪያውን ይመልከቱ።
+
+የ«RestoreOnStartup» መመሪያው ዩአርኤሎች ከቀዳሚዎቹ ክፍለ-ጊዜዎች ወደነበሩበት ለመመለስ ከተዋቀረ ይሄ መመሪያ አይከበርም፣ እና ኩኪዎች ለእነዚያ ጣቢያዎች በዘላቂነት ይከማቻሉ።</string><string id="CookiesSessionOnlyForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የክፍለ-ጊዜ ብቻ ኩኪዎችን ፍቀድ</string><string id="ImagesAllowedForUrls">በእነዚህ ጣቢያዎች ላይ ምስሎችን ፍቀድ</string><string id="ImagesAllowedForUrls_Explain">ምስሎችን እንዲያሳዩ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩ አር ኤል ስርዓተ ጥለቶችን እንዲያዘጋጁ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ፣ ከተዋቀረ «DefaultImagesSetting»፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊው ነባሪ እሴት ለሁሉም ጣቢያዎች ስራ ላይ ይውላል።</string><string id="ImagesAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ምስሎችን ፍቀድ</string><string id="ImagesBlockedForUrls">በእነዚህ ጣቢያዎች ላይ ምስሎችን አግድ</string><string id="ImagesBlockedForUrls_Explain">ምስሎች እንዲያሳዩ የማይፈቀድላቸው ጣቢያዎችን የሚገልጽ የዩ አር ኤል ስርዓተ ጥለቶች ዝርዝር እንዲያስቀምጡ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ከተዋቀረ የ«DefaultImagesSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊ ነባሪ ዋጋ ስራ ላይ ይውላል።</string><string id="ImagesBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ምስሎችን አግድ</string><string id="JavaScriptAllowedForUrls">JavaScript በእነዚህ ጣቢያዎች ላይ ይፍቀዱ</string><string id="JavaScriptAllowedForUrls_Explain">ጃቫስክሪፕትን እንዲያሄዱ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩ አር ኤልዎች ቅጦችን እንዲዘረዝሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ለሁሉም ጣቢያዎች ተዋቅሮ ከሆነ ከ«DefaultJavaScriptSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር የመጣ ሁለንተናዊው የነባሪ እሴት ስራ ላይ ይውላል።</string><string id="JavaScriptAllowedForUrlsDesc">JavaScript በእነዚህ ጣቢያዎች ላይ ይፍቀዱ</string><string id="JavaScriptBlockedForUrls">JavaScript በእነዚህ ጣቢያዎች ላይ ያግዱ</string><string id="JavaScriptBlockedForUrls_Explain">የትኛዎቹ ጣቢያዎች JavaScriptን እንዲያሂዱ የማይፈቀድላቸው ጣቢያዎች የሚገልጽ የዩ አር ኤል ስርዓተ ጥለቶች ዝርዝር እንዲያስቀምጡ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ከተዋቀረ የ«DefaultJavaScriptSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊ ነባሪ ዋጋ ስራ ላይ ይውላል።</string><string id="JavaScriptBlockedForUrlsDesc">JavaScript በእነዚህ ጣቢያዎች ላይ ያግዱ</string><string id="PluginsAllowedForUrls">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪን ይፍቀዱ</string><string id="PluginsAllowedForUrls_Explain">የFlash ተሰኪውን እንዲያሄዱ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩአርኤል ስርዓተ ጥለቶችን ዝርዝር እንዲያዋቅሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ፣ የ«DefaultPluginsSetting» መመሪያው የተዋቀረ ከሆነ ከእሱ የመጣ ሁለገብ ነባሪ እሴቱ ለሁሉም ጣቢያዎች ስራ ላይ ይውላል፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅረት ስራ ላይ ይውላል።</string><string id="PluginsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪን ይፍቀዱ</string><string id="PluginsBlockedForUrls">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪውን ያግዱ</string><string id="PluginsBlockedForUrls_Explain">የFlash ተሰኪውን እንዲያሄዱ ያልተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩአርኤል ስርዓተ ጥለቶችን ዝርዝር እንዲያዋቅሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ፣ የ«DefaultPluginsSetting» መመሪያው የተዋቀረ ከሆነ ከእሱ የመጣ ሁለገብ ነባሪ እሴቱ ለሁሉም ጣቢያዎች ስራ ላይ ይውላል፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅረት ስራ ላይ ይውላል።</string><string id="PluginsBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪውን ያግዱ</string><string id="PopupsAllowedForUrls">በእነዚህ ጣቢያዎች ላይ ብቅ-ባዮችን ፍቀድ</string><string id="PopupsAllowedForUrls_Explain">ብቅ-ባዮችን እንዲከፍቱ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩ አር ኤል ቅጦችን እንዲያዋቅሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ለሁሉም ጣቢያዎች ተዋቅሮ ከሆነ ከ«DefaultPopupsSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር የመጣ ሁለንተናዊው የነባሪ እሴት ስራ ላይ ይውላል።</string><string id="PopupsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ብቅ-ባዮችን ፍቀድ</string><string id="RegisteredProtocolHandlers">የፕሮቶኮል አስከዋኞችን ያስመዝግቡ</string><string id="RegisteredProtocolHandlers_Explain">የፕሮቶኮል አስከዋኝ ዝርዝር እንዲያስመዘግቡ ያስችልዎታል። ይሄ የሚመከር መመሪያ ብቻ ነው ሊሆን የሚችለው። ባህሪ |protocol| እንደ «mailto» ወዳለ ሙሉ ምስርት እና ባህሪ |url| ሙሉ ምስርቱን ወደሚያስከውነው የመተግበሪያ ዩአርኤል ስርዓተ-ጥለት መዋቀር አለባቸው። ስርዓተ-ጥለቱ በተከናወነው ዩአርኤል የሚተካ «%s» ካለ ሊያካትተው ይችላል።
+
+በመመሪያው የተመዘገቡ የፕሮቶኮል አስከዋኞች በተጠቃሚው ከተመዘገቡት ጋር የተዋሃዱ ናቸው፣ እና ሁለቱም ለመጠቀም ይገኛሉ። ተጠቃሚው አዲስ ነባሪ አስከዋኝ በመጫን በመመሪያው የተጫኑት የፕሮቶኮል አስከዋኞችን መሻር ይችላል፣ ነገር ግን በመመሪያ የተመዘገበ የፕሮቶኮል አስከዋኝ ማስወገድ አይችልም።</string><string id="PopupsBlockedForUrls">ብቅ-ባዮች በእነዚህ ጣቢያዎች ላይ ያግዱ</string><string id="PopupsBlockedForUrls_Explain">ብቅ-ባዮችን እንዲከፍቱ ያልተፈቀደላቸው ጣቢያዎችን የሚዘረዝሩ የዩ አር ኤል ስርዓተ ጥለቶችን እንዲያዘጋጁ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ፣ ከተዋቀረ «DefaultPopupsSetting»፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊው ነባሪ እሴት ለሁሉም ጣቢያዎች ስራ ላይ ይውላል።</string><string id="PopupsBlockedForUrlsDesc">ብቅ-ባዮች በእነዚህ ጣቢያዎች ላይ ያግዱ</string><string id="NotificationsAllowedForUrls">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ፍቀድ</string><string id="NotificationsAllowedForUrls_Explain">ማሳወቂያዎችን እንዲያሳዩ የተፈቀደላቸው ጣቢያዎችን የሚገልጹ የዩ አር ኤል ቅጦችን እንዲያዋቅሩ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ለሁሉም ጣቢያዎች ተዋቅሮ ከሆነ ከ«DefaultNotificationsSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር የመጣ ሁለንተናዊው የነባሪ እሴት ስራ ላይ ይውላል።</string><string id="NotificationsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ፍቀድ</string><string id="NotificationsBlockedForUrls">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ያግዱ</string><string id="NotificationsBlockedForUrls_Explain">የትኛዎቹ ጣቢያዎች ማሳወቂያዎችን እንዲያሳዩ የማይፈቀድላቸው ጣቢያዎች የሚገልጽ የዩ አር ኤል ስርዓተ ጥለቶች ዝርዝር እንዲያስቀምጡ ያስችልዎታል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ከተዋቀረ የ«DefaultNotificationsSetting» መመሪያ፣ አለበለዚያ ደግሞ የተጠቃሚው የግል ውቅር ሁለንተናዊ ነባሪ ዋጋ ስራ ላይ ይውላል።</string><string id="NotificationsBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ያግዱ</string><string id="QuickUnlock_group">የፈጣን መክፈት መመሪያዎች</string><string id="QuickUnlockModeWhitelist">Configure allowed quick unlock modes</string><string id="QuickUnlockModeWhitelist_Explain">ተጠቃሚው የትኛውን የፈጣን መክፈት ሁነታዎችን ማዋቀር እና የማያ ገጽ ቁልፉን ለመክፈት መጠቀም እንደሚችል የሚቆጣጠር የተፈቀደላቸው ዝርዝር።
+
+ይህ እሴት የሕብረቁምፊዎች እሴት ነው፤ የሚሰሩ የዝርዝር ግቤቶች እነዚህ ናቸው፦ &quot;all&quot;፣ &quot;PIN&quot;። በዝርዝሩ ላይ «ሁሉም» ማከል ማለት ለወደፊቱ የሚተገበሩትንም ጨምሮ እያንዳንዱ የፈጣን መክፈት ሁነታ ለተጠቃሚው የሚገኝ ነው ማለት ነው። አለበለዚያ በዝርዝሩ ውስጥ ያሉት የፈጣን መክፈት ሁነታዎች ብቻ ናቸው የሚገኙት።
+
+ለምሳሌ፣ እያንዳንዱ የፈጣን መክፈት ሁነታን ለመፍቀድ [&quot;all&quot;]ን ይጠቀሙ። በፒን መክፈት ብቻ ለመፍቀድ [&quot;PIN&quot;]ን ይጠቀሙ። ሁሉንም የፈጣን መክፈት ሁነታዎችን ለማሰናከል []ን ይጠቀሙ።
+
+በነባሪነት ምንም የፈጣን መክፈት ሁነታዎች ለሚተዳደሩ መሣሪያዎች የሚገኙ አይደሉም።</string><string id="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</string><string id="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</string><string id="QuickUnlockTimeout_Explain">ይህ ቅንብር ፈጣን መክፈትን መጠቀሙን ለመቀጠል የማያ ገጽ ቁልፍው ምን ያህል ጊዜ የይለፍ ቃል እንዲገባ እንደሚጠየቅ ይቆጣጠራል። የማያ ገጽ ቁልፍው በሚገባበት እያንዳንዱ ጊዜ ላይ የመጨረሻው የይለፍ ቃል ግቤት ከዚህ ቅንብር በላይ ከነበረ ወደ ማያ ገጽ ቁልፍ ሲገባ ፈጣን ማስከፈቱ አይገኝም። ተጠቃሚው ከዚህ ጊዜ አልፎ በማያ ገጹ ቁልፍ ላይ ከቆየ ተጠቃሚው የተሳሳተ ይለፍ ቃል በሚያስገባበት ወይም ወደ ማያ ገጽ ቁልፍ በገባበት ቀጣዩ ጊዜ ላይ (የቀደመው) የይለፍ ቃል ይጠየቃል።
+
+ይህ ቅንብር ከተዋቀረ ፈጣን መክፈትን የሚጠቀሙ ተጠቃሚዎች በዚህ ቅንብር መሠረት የይለፍ ቃላታቸውን በማያ ገጽ ቁልፍው ላይ እንዲያስገቡ ይጠየቃሉ።
+
+ይህ ቅንብር ካልተዋቀረ ፈጣን መክፈትን የሚጠቀሙ ተጠቃሚዎች በየቀዩ በማያ ገጽ ቁልፍው ላይ የይለፍ ቃል እንዲያስገቡ ይጠየቃሉ።</string><string id="QuickUnlockTimeout_SixHours">Password entry is required every six hours</string><string id="QuickUnlockTimeout_TweleveHours">Password entry is required every twelve hours</string><string id="QuickUnlockTimeout_Day">Password entry is required every day (24 hours)</string><string id="QuickUnlockTimeout_Week">Password entry is required every week (168 hours)</string><string id="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN</string><string id="PinUnlockMinimumLength_Explain">If the policy is set, the configured minimal PIN length is
+enforced. (The absolute minimum PIN length is 1; values less than 1
+are treated as 1.)
+
+If the policy is not set, a minimal PIN length of 6 digits is
+enforced. This is the recommended minimum.</string><string id="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN</string><string id="PinUnlockMaximumLength_Explain">If the policy is set, the configured maximal PIN length is enforced. A value of 0 or less means no maximum length; in that case the user may set a PIN as long as they want. If this setting is less than PinUnlockMinimumLength but greater than 0, the maximum length is the same as the minimum length.
+
+If the policy is not set, no maximum length is enforced.</string><string id="PinUnlockWeakPinsAllowed">Enables users to set weak PINs for the lock screen PIN</string><string id="PinUnlockWeakPinsAllowed_Explain">ሐሰት ከሆነ ተጠቃሚዎች ደካማ እና ለመገመት ቀላል የሆኑ ፒኖችን ማቀናበር አይችሉም።
+
+አንድ የደካማ ፒን ምሳሌ፦ አንድ አኃዝ ብቻ ያላቸው (1111) ፒኖች፣ አኃዞቻቸው በ1 እየጨመሩ የሚሄዱ ፒኖች (1234)፣ አኃዞቻቸው በ1 እየቀነሱ የሚሄዱ ፒኖች (4321)፣ እና በተለምዶ ስራ ላይ የሚውሉ ፒኖች።
+ፒኑ ደካማ እንደሆነ ከተወሰደ በነባሪነት ተጠቃሚዎች ስህተት ሳይሆን ማስጠንቀቂያ ያገኛሉ።</string><string id="AllowDeletingBrowserHistory">የአሳሽ እና ውርድ ታሪክ መሰረዝን ያንቁ</string><string id="AllowDeletingBrowserHistory_Explain">በGoogle Chrome ውስጥ የአሳሽ ታሪክ እና የአውርድ ታሪክ መሰረዝን ያነቃል፣ እና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት ያግዳቸዋል።
+
+ይህ መመሪያ ተሰናክሎም እንኳ የአሰሳ እና የአውርድ ታሪክ መቆየት የማይረጋገጥ መሆኑን ልብ ይበሉ፦ ተጠቃሚዎች የታሪክ ውሂብ ጎታ ፋይሎች በቀጥታ ማርትዕ ወይም መሰረዝ ይችላሉ፣ እና አሳሹ ራሱ ጊዜው ሊያልፍበት ወይም ማንኛውም ወይም ሁሉንም የታሪክ ንጥሎችን በማንኛውም ጊዜ ላይ በማህደር ሊያስቀምጥ ይችላል።
+
+ይህ ቅንብር ከነቃ ወይም ካልተዋቀረ የአሰሳ እና የአውርድ ታሪክ ሊሰረዝ ይችላል።
+
+ይህ ቅንብር ከተሰናከለ የአሰሳ እና የአውርድ ታሪክ ሊሰረዝ አይችልም።</string><string id="AllowDinosaurEasterEgg">የዳይኖሰር አስተር ኤግ ጨዋታን ፍቀድ</string><string id="AllowDinosaurEasterEgg_Explain">መሣሪያው ከመሥመር ውጭ በሚሆን ጊዜ ተጠቃሚዎች የዳይኖሰር ኢስተር ኤግ ጨዋታን እንዲጫወቱ ይፍቅዱ።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ፣ ተጠቃሚዎች መሣሪያው ከመሥመር ውጭ በሚሆን ጊዜ የዳይኖሰር ኢስተር ኤግ ጨዋታን መጫወት አይችሉም። ይህ ቅንብር እውነት ሆኖ ከተዋቀረ፣ ተጠቃሚች የዳይኖሰር ጨዋታን እንዲጠቀሙ ይፈቀድላቸዋል። ይህ መመሪያ ካልተዋቀረ፣ ተጠቃሚዎች በተመዘገበ Chrome OS ላይ የዳይኖሰር ኢስተር ኤግ ጨዋታን መጫወት አይችሉም፣ ሆኖም ግን በሌላ ሁኔታዎች ውስጥ መጫወት ይፈቀድላቸዋል።</string><string id="AllowOutdatedPlugins">የቆዩ ተሰኪዎች ማሄድን ይፍቀዱ</string><string id="AllowOutdatedPlugins_Explain">If you enable this setting, outdated plugins are used as normal plugins.
+
+If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them.
+
+If this setting is not set, users will be asked for permission to run outdated plugins.</string><string id="AllowScreenLock">ማያ ገጹን መቆለፍ ይፍቀዱ</string><string id="AllowScreenLock_Explain">If this policy is set to false, users will not be able to lock the screen (only signing out from the user session will be possible). If this setting is set to true or not set, users who authenticated with a password can lock the screen.</string><string id="AllowedDomainsForApps">Google Appsn እንዲደርሱ የሚፈቀድላቸውን ጎራዎች ይግለጹ</string><string id="AllowedDomainsForApps_Explain">Enables Google Chrome's restricted log in feature in Google Apps and prevents users from changing this setting.
+
+If you define this setting, the user will only be able to access
+Google Apps (such as Gmail) using accounts from the specified domains.
+
+This setting will NOT prevent the user from loging in on a managed device
+that requires Google authentication. The user will still be allowed to
+sign in to accounts from other domains, but they will receive an error
+when trying to use Google Apps with those accounts.
+
+If you leave this setting empty/not-configured, the user will be able to
+access Google Apps with any account.
+
+This policy causes the X-GoogApps-Allowed-Domains header to be appended to
+all HTTP and HTTPS requests to all google.com domains, as described in
+https://support.google.com/a/answer/1668854.
+
+Users cannot change or override this setting.</string><string id="AlternateErrorPagesEnabled">ተለዋጭ የስህተት ገጾችን ያንቁ</string><string id="AlternateErrorPagesEnabled_Explain">በGoogle Chrome ውስጥ የተሰሩ ተለዋጭ የስህተት ገጾች (እንደ «ገጹ አልተገኘም» ያሉ) ስራ ላይ እንዲውሉ የሚያነቃ እና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት የሚያግድ ነው።
+
+ይህን ቅንብር ካነቁ ተለዋጭ የስህተት ገጾች ስራ ላይ ይውላሉ።
+
+ይህን ቅንብር ካሰናከሉ ተለዋጭ የስህተት ገጾች በጭራሽ ስራ ላይ አይውሉም።
+
+ይህን ቅንብር ካነቁ ወይም ካሰናከሉ ተጠቃሚዎች ይህን ቅንብር በGoogle Chrome ውስጥ ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ይሄ ይነቃል ግን ተጠቃሚው ሊቀይረው ይችላል።</string><string id="AlwaysAuthorizePlugins">ፈቀዳ የሚያስፈልጋቸው ተሰኪዎች ሁልጊዜ ያሂዳል</string><string id="AlwaysAuthorizePlugins_Explain">If you enable this setting, plugins that are not outdated always run.
+
+If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</string><string id="ArcBackupRestoreEnabled">የAndroid ምትኬ አገልግሎትን አንቃ</string><string id="ArcBackupRestoreEnabled_Explain">ይህ መመሪያ ወደ እውነት ሲዋቀር የAndroid መተግበሪያ ውሂብ ወደ የAndroid ምትኬ አገልጋዮች ይሰቀልና ተኳሃኝ ለሆኑ መተግበሪያዎች ዳግም ጭነቶች ከእነሱ ላይ ወደነበረት ይመለሳል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የAndroid ምትኬ አገልግሎት ይጠፋል።
+
+ይህ ቅንብር ከተዋቀረ ተጠቃሚዎች ራሳቸው ሊለውጡት አይችሉም።
+
+ይህ ቅንብር ካልተዋቀረ ተጠቃሚዎች የAndroid ምትኬ አገልግሎትን በAndroid ቅንብሮች መተግበሪያ ውስጥ ሊያበሩት እና ሊያጠፉት ይችላሉ።</string><string id="ArcCertificatesSyncMode">የእውቅና ማረጋገጫ ተገኝነትን ለኤአርሲ-መተግበሪያዎች ያዋቅሩ</string><string id="ArcCertificatesSyncMode_Explain">ወደ SyncDisabled ከተዋቀረ ወይም ወይም እንዳልተዋቀረ ከተተወ የGoogle Chrome OS እውቅና ማረጋገጫዎች ለኤአርሲ-መተግበሪያዎች አይገኙም።
+
+ወደ CopyCaCerts ከተዋቀረ ሁሉም ONC-የተጫኑ የCA እውቅና ማረጋገጫዎች ከWeb TrustBit ጋር ለኤአርሲ-መተግበሪያዎች የሚገኙ ይሆናሉ።</string><string id="ArcCertificatesSyncMode_SyncDisabled">በኤአርሲ መተግበሪያዎች ላይ የGoogle Chrome OS እውቅና ማረጋገጫዎችን መጠቀም አሰናክል</string><string id="ArcCertificatesSyncMode_CopyCaCerts">በኤአርሲ-መተግበሪያዎች ላይ የGoogle Chrome OS CA እውቅና ማረጋገጫዎችን አንቃ</string><string id="ArcEnabled">ARCን ያንቁ</string><string id="ArcEnabled_Explain">ይህ መመሪያ ወደ እውነት ሲቀናበር ARC ለተጠቃሚው ይነቃል
+(ለተጨማሪ የመመሪያ ቅንብሮች ፍተሻዎች ተገዢ ነው - አሁን ባለው የተጠቃሚ ክፍለ-ጊዜ
+የበጣም አጭር ጊዜ ሁነታ ወይም በርካታ በመለያ መግባት ከነቃ
+ARC አሁንም ሊገኝ አይችልም)።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ የድርጅት ተጠቃሚዎች
+ARCን መጠቀም አይችሉም።</string><string id="ArcLocationServiceEnabled">የAndroid Google አካባቢ አገልግሎትን ያንቁ</string><string id="ArcLocationServiceEnabled_Explain">When this policy is set to true, the Android Google Location Service is enabled. This will allow Android apps to use its data to find the device location, and also will enable submitting of anonymous location data to Google.
+
+When this policy is set to false, Android Google Location Service will be switched off.
+
+If this setting is configured then users are not able change it themselves.
+
+If this setting is not configured then users are able to turn Google Location Service on and off in the Android Settings app.
+
+Note that this policy value may be overridden by the DefaultGeolocationSetting policy, when the latter is set to BlockGeolocation.
+
+This policy is applicable only to the users that are able to run Android apps.</string><string id="ArcPolicy">ኤአርሲን አዋቅር</string><string id="ArcPolicy_Explain">ለኤአርሲ ማስኬጃ ጊዜው የሚሰጡ የመመሪያዎች ስብስብ ይገልጻል። እሴቱ የሚሰራ JSON መሆን አለበት።
+
+ይህ መመሪያ የትኛዎቹ የAndroid መተግበሪያዎች በራስ-ሰር በመሣሪያው ላይ እንደሚጫኑ ለማዋቀር ስራ ላይ መዋል ይችላል፦
+
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;applications&quot;: {
+&quot;type&quot;: &quot;array&quot;,
+&quot;items&quot;: {
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;packageName&quot;: {
+&quot;description&quot;: &quot;Android app identifier, e.g. &quot;com.google.android.gm&quot; for Gmail&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;installType&quot;: {
+&quot;description&quot;: &quot;አንድ መተግበሪያ እንዴት እንደሚጫን ይገልጻል። ከተፈለገ፦ መተግበሪያው በራስ-ሰር አይጫንም፣ ነገር ግን ተጠቃሚው ሊጭነው ይችላል። ይህ መመሪያ ካልተገለጸ ነባሪው ይኸው ነው። ቅድመ_ጭነት፦ መተግበሪያው በራስ-ሰር ይጫናል፣ ነገር ግን ተጠቃሚው ሊያራግፈው ይችላል። የግዴታ_ጭነት፦ መተግበሪያው በራስ-ሰር ይጫናል፣ እና ተጠቃሚው ሊያራግፈው አይችልም፣ የታገደ፦ መተግበሪያው የታገደ እና ሊጫን የማይችል ነው። መተግበሪያው በአንድ ቀዳሚ መመሪያ የተጫነ ከሆነ ይራገፋል&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;OPTIONAL&quot;,
+&quot;PRELOAD&quot;,
+&quot;FORCE_INSTALLED&quot;,
+&quot;BLOCKED&quot;
+]
+},
+&quot;defaultPermissionPolicy&quot;: {
+&quot;description&quot;: &quot;የመተግበሪያዎች የፈቃድ ጥያቄዎችን የመመለስ መመሪያ። የፈቃድ_መመሪያ_አልተገለጸም፦ መመሪያው አልተገለጸም። በማንኛውም ደረጃ ላለ ፈቃድ ምንም መመሪያ ካልተገለጸ በነባሪነት የ`ጠይቅ` ባህሪው ስራ ላይ ይውላል። ጠይቅ፦ ተጠቃሚው ፈቃድ እንዲሰጥ ይጠይቁ። ስጥ፦ በራስ-ሰር ፈቃድ ስጥ። ከልክል፦ በራስ-ሰር ፈቃድ ከልክል።&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;PERMISSION_POLICY_UNSPECIFIED&quot;,
+&quot;PROMPT&quot;,
+&quot;GRANT&quot;,
+&quot;DENY&quot;
+]
+},
+&quot;managedConfiguration&quot;: {
+&quot;description&quot;: &quot;መተግበሪያ-ተኮር የJSON ውቅረት ነገር ከቁልፍ-እሴት ጥምሮች ስብስብ ጋር፣ ለምሳሌ፣ '&quot;managedConfiguration&quot;: { &quot;key1&quot;: value1, &quot;key2&quot;: value2 }'። ቁልፎቹ በመተግበሪያው ዝርዝር ሰነድ ውስጥ ይገለጻሉ።&quot;,
+&quot;type&quot;: &quot;object&quot;
+}
+}
+}
+}
+}
+}
+
+መተግበሪያዎችን በማስጀመሪያው ላይ ለመሰካት PinnedLauncherAppsን ይመልከቱ።</string><string id="AudioCaptureAllowed">የድምጽ ቀረጻ ይፍቀዱ ወይም ይከልክሉ</string><string id="AudioCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+audio capture access except for URLs configured in the
+AudioCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and audio
+capture only be available to URLs configured in AudioCaptureAllowedUrls.
+
+This policy affects all types of audio inputs and not only the built-in microphone.</string><string id="AudioCaptureAllowedUrls">የድምጽ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</string><string id="AudioCaptureAllowedUrls_Explain">በዚህ ዝርዝር ውስጥ ያሉ ስርዓተ ጥለቶች ከሚጠይቀው ዩአርኤል የደህንነት መነሻ
+ጋር እንዲዛመዱ ይደረጋሉ። የሚዛመድ ከተገኘ የድምፅ መቅረጫ
+መሣሪያዎች መድረሻ ሳይጠየቅ ይሰጣል።
+
+ማስታወሻ፦ እስከ ስሪት 45 ድረስ ይህ መመሪያ በኪዮስክ ሁነታ ላይ ብቻ ነበር የሚደገፈው።</string><string id="AudioCaptureAllowedUrlsDesc">የድምጽ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</string><string id="AudioOutputAllowed">ድምጽ እንዲጫወት ይፍቀዱ</string><string id="AudioOutputAllowed_Explain">When this policy is set to false, audio output will not be available on the device while the user is logged in.
+
+This policy affects all types of audio output and not only the built-in speakers. Audio accessibility features are also inhibited by this policy. Do not enable this policy if a screen reader is required for the user.
+
+If this setting is set to true or not configured then users can use all supported audio outputs on their device.</string><string id="AutoFillEnabled">ራስ-ሙላን ያንቁ</string><string id="AutoFillEnabled_Explain">የGoogle Chrome ራስ-ሙላ ባህሪ እንደ አድራሻ ወይም የክሬዲት ካርድ መረጃ ያሉ ከዚህ በፊት የተከማቹ መረጃዎችን በመጠቀም ተጠቃሚዎች የድር ቅጾች በራስ እንዲያጠናቅቁ ያስችላቸዋል።
+
+ይህን ቅንብር ካሰናከሉ ራስ-ሙላ ለተጠቃሚዎች የማይደረስ ይሆናል።
+
+ይህን ቅንብር ካነቁ ወይም እሴት ካላስቀመጡ ራስ-ሙላ በተጠቃሚው ቁጥጥር ስር እንደሆነ ይቀራል። ይሄ የራስ-ሙላ መገለጫዎችን እንዲያዋቅሩ እና እንደ ምርጫቸው ራስ-ሙላን እንዲያበሩ ወይም እንዲያጠፉ ያስችላቸዋል።</string><string id="AutofillCreditCardEnabled">ለክሬዲት ካርዶች ራስ-ሙላን ያቀናብሩ</string><string id="AutofillCreditCardEnabled_Explain">የGoogle Chrome ራስ-ሙላ ባህሪን ያነቃል፣ እና ተጠቃሚዎች ከዚህ ቀደም የተከማቸ መረጃን በመጠቀም የክሬዲት ካርድ እና የአድራሻ መረጃን በድር ቅጾች ላይ በራስ-እንዲያጠናቅቁ ያስችላቸዋል።
+
+ይህን ቅንብር ካሰናከሉት ራስ-ሙላ በጭራሽ የክሬዲት ካርድ መረጃን አይጠቁምም ወይም አይሞላም፣ እንዲሁም ተጠቃሚው ድሩን እያሰሰ ሳለ ሊያስገባ የሚችለውን የክሬድቲ ካርድ መረጃን አያስቀምጥም።
+
+ይህን ቅንብር ካነቁት ወይም አንድ እሴት ካላቀናበሩ ተጠቃሚው በዩአይ ውስጥ አጠቃላዩን የራስ-ሙላ ባህሪውን (ክሬዲት ካርዶችንም ጨምሮ) መቆጣጠር ይችላል።</string><string id="BlockThirdPartyCookies">የሶስተኛ ወገን ኩኪዎችን ያግዱ</string><string id="BlockThirdPartyCookies_Explain">Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar.
+
+Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting.
+
+If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</string><string id="BookmarkBarEnabled">የዕልባት አሞሌን አንቃ</string><string id="BookmarkBarEnabled_Explain">If you enable this setting, Google Chrome will show a bookmark bar.
+
+If you disable this setting, users will never see the bookmark bar.
+
+If you enable or disable this setting, users cannot change or override it in Google Chrome.
+
+If this setting is left not set the user can decide to use this function or not.</string><string id="CaptivePortalAuthenticationIgnoresProxy">የተያዘ ወደብ ማረጋገጫ ተዋካይን ችላ ይላል</string><string id="CaptivePortalAuthenticationIgnoresProxy_Explain">This policy allows Google Chrome OS to bypass any proxy for captive portal authentication.
+
+This policy only takes effect if a proxy is configured (for example through policy, by the user in chrome://settings, or by extensions).
+
+If you enable this setting, any captive portal authentication pages (i.e. all web pages starting from captive portal signin page until Google Chrome detects successful internet connection) will be displayed in a separate window ignoring all policy settings and restrictions for the current user.
+
+If you disable this setting or leave it unset, any captive portal authentication pages will be shown in a (regular) new browser tab, using the current user's proxy settings.</string><string id="CertificateTransparencyEnforcementDisabledForUrls">ለአንድ የዩአርኤሎች ዝርዝር የእውቅና ማረጋገጫ ግልጽነት ማስፈጸምን አሰናክል</string><string id="CertificateTransparencyEnforcementDisabledForUrls_Explain">ለተዘረዘሩት ዩአርኤሎች የእውቅና ማረጋገጫ ግልጽነት መስፈርቶችን ማስፈጸምን ያሰናክላል።
+
+ይህ መመሪያ በተገለጹት ዩአርኤሎች ውስጥ ያሉ የአስተናጋጅ ስሞች የእውቅና ማረጋገጫዎች በእውቅና ማረጋገጫ ግልጽነት በኩል እንዳይገለጹ ይፈቅድላቸዋል። ይሄ በአግባቡ በይፋ ስላልተገለጹ የማይታመኑ ይሆኑ የነበሩ የእውቅና ማረጋገጫዎች ጥቅም ላይ መዋላቸውን እንዲቀጥሉ ያስችላል፣ ነገር ግን ለእነዚያ አስተናጋጆች አላግባብ ጥቅም ላይ የዋሉ የእውቅና ማረጋገጫዎችን ፈልገው እንዳያገኙ ያከብድባቸዋል።
+
+የዩአርኤል ሥርዓተ ጥለት በhttps://www.chromium.org/administrators/url-blacklist-filter-format መሠረት ነው ቅርጸት የሚሰራለት። ይሁንና፣ እውቅና ማረጋገጫዎች ከመርሐግብር፣ ከወደብ ወይም ከዱካ ነጻ ለሆነ አንድ የተወሰነ የአስተናጋጅ ስም የሚሠሩ ስለሆኑ የዩአርኤሉ የአስተናጋጅ ስም ክፋይ ብቻ ነው ከግምት ውስጥ የሚገባው። የልቅ ምልክት አስተናጋጆች አይደገፉም።
+
+ይህ መመሪያ ካልተዋቀረ ማንኛውም በእውቅና ማረጋገጫ ግልጽነት በኩል መገለጽ ያለበት የእውቅና ማረጋገጫ በእውቅና ማረጋገጫ ግልጽነት መመሪያው መሠረት ካልተገለጸ እንደ ያልታመነ ተደርጎ ይስተናገዳል።</string><string id="CertificateTransparencyEnforcementDisabledForUrlsDesc">ለአንድ የዩአርኤሎች ዝርዝር የእውቅና ማረጋገጫ ግልጽነት ማስፈጸምን አሰናክል</string><string id="ChromeOsLockOnIdleSuspend">መሣሪያው ስራ ሲፈታ ወይም ሲቋረጥ ቁልፍን አንቃ</string><string id="ChromeOsLockOnIdleSuspend_Explain">የGoogle Chrome OS መሣሪይዎች ሥራ ሲፈቱ ወይም ሲታገዱ ቁልፍን ያንቁ።
+
+ይህን ቅንብር ካነቁት ተጠቃሚዎች መሣሪያውን ከእንቅልፉ እንዲነቃ የይለፍ ቃል እንዲያስገቡ ይጠየቃሉ።
+
+ይህን ቅንብር ካሰናከሉት ተጠቃሚዎች መሣሪያውን ከእንቅልፉ እንዲነቃ የይለፍ ቃል እንዲያስገቡ አይጠየቁም።
+
+ይህን ቅንብር ካነቁት ወይም ካሰናከሉት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+መምሪያው እንዳልተዋቀረ ከተተወ ተጠቃሚው መሣሪያውን ለመክፈት የይለፍ ቃል ይፈልግ እንደሆነ ይጠየቃል።</string><string id="ChromeOsMultiProfileUserBehavior">አንድ ተጠቃሚ በአንድ የብዝሃ-መገለጫ ክፍለ-ጊዜ ያለውን ባህሪ ይቆጣጠሩ</string><string id="ChromeOsMultiProfileUserBehavior_Explain">የተጠቃሚ ባህሪይን በGoogle Chrome OS መሳሪያዎች ላይ ከአንድ በላይ መገለጫ ይቆጣጠሩ።
+
+ይህ መመሪያ ወደ«MultiProfileUserBehaviorUnrestricted» ከተዘጋጀ ተጠቃሚው ከአንድ በላይ መገለጫ ክፍለ ጊዜ ውስጥ አንደኛ ወይም ሁለተኛ ተጠቃሚ ሊሆን ይችላል።
+
+ይህ መመሪያ ወደ«MultiProfileUserBehaviorMustBePrimary» ከተዘጋጀ ተጠቃሚው ከአንድ በላይ መገለጫ ክፍለ ጊዜ ውስጥ አንደኛ ተጠቃሚ ሊሆን ይችላል።
+ይህ መመሪያ ወደ«MultiProfileUserBehaviorNotAllowed» ከተዘጋጀ ተጠቃሚው ከአንድ በላይ መገለጫ ክፍለ ጊዜ ውስጥ መሳተፍ አይችልም።
+ይህንን ቀንብር ካዘጋጁ፣ ተጠቃዎች አይለወጡን ወይም ይደመስሱታል።
+
+ተጠቃሚው ከአንድ በላይ መገለጫ ክፍለ ጊዜ ውስጥ በመለያ ገብቶ እያለ ቅንብሩ ከተለወጠ በክፍለ ጊዜው ውስጥ ያሉ ሁሉም ተጠቃሚዎች ያላቸው ቅንብሮች ይፈተሻሉ። ከተጠቃሚዎቹ ውስጥ አንዳቸውም በዚያ ክፍለ ጊዜ ውስጥ የማይፈቀድላቸው ከሆነ ክፍለ ጊዜው ይዘጋል።
+
+መመሪያው ያልተዘጋጀ ከሆነ ነባሪ እሴቱ «MultiProfileUserBehaviorMustBePrimary» በድርጅት ለሚተዳደሩ ተጠቃሚዎች የሚተገበር ሲሆን «MultiProfileUserBehaviorUnrestricted» ደግሞ ለማይተዳደሩ ተጠቃሚዎች ይገበራል።</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorUnrestricted">የድርጅት ተጠቃሚ ሁለቱም ዋና እና ሁለተኛ እንዲሆን ይፈቀድለት  (ለማይቀናበሩ ተጠቃሚዎች ነባሪ ባህሪ)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorMustBePrimary">የድርጅት ተጠቃሚ ዋናው ባለብዙ መገለጫ ተጠቃሚ እንዲሆን ይፈቀድለት (በድርጅት ለሚቀናበሩ ተጠቃሚዎች ነባሪ ባህሪ)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorNotAllowed">የድርጅት ተጠቃሚ የብዝሃ-መገለጫ (ዋናው ወይም ሁለተኛው) አካል እንዲሆን አይፍቀዱ</string><string id="ChromeOsReleaseChannel">የሚለቀቅ ሰርጥ</string><string id="ChromeOsReleaseChannel_Explain">ይህ መሣሪያ አብሮ የሚታሰርበት የሚለቀቀው ሰርጥን ይገልጻል።</string><string id="ChromeOsReleaseChannel_StableChannel">የረጋ ሰርጥ</string><string id="ChromeOsReleaseChannel_BetaChannel">የቅድመ-ይሁንታ ሰርጥ</string><string id="ChromeOsReleaseChannel_DevChannel">የገንቢ ሰርጥ (ያልተረጋጋ ሊሆን ይችላል)</string><string id="ChromeOsReleaseChannelDelegated">የሚለቀቀው ሰርጥ በተጠቃሚው የሚዋቀር ይሁን ወይም አይሁን</string><string id="ChromeOsReleaseChannelDelegated_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ እና የChromeOsReleaseChannel መመሪያው ካልተገለጸ የተመዝጋቢው ጎራ ተጠቃሚዎች የመሣሪያው ልቀት ሰርጥ እንዲቀይሩ ይፈቀደላቸዋል። ይህ መመሪያ ወደ ሐሰት ከተዋቀረ መሣሪያው መጨረሻ ላይ በተዋቀረው ሰርጥ ላይ ይቆለፋል።
+
+በተጠቃሚው የተመረጠው ሰርጥ በChromeOsReleaseChannel መመሪያው ይሻራል፣ ግን የመመሪያ ሰርጡ በመሣሪያው ላይ ከተጫነው ይበልጥ የተረጋጋ ከሆነ ይበልጥ የረጋው የሰርጥ ስሪት በመሣሪያው ላይ ከተጫነው የስሪት የበለጠ ቁጥር ሲደርስ ብቻ ነው ሰርጡ የሚቀየረው።</string><string id="ComponentUpdatesEnabled">በGoogle Chrome ውስጥ የክፍለ-አካላት ዝማኔዎችን ያነቃል</string><string id="ComponentUpdatesEnabled_Explain">ካልተዋቀረ ወይም ወደ እውነት ሲዋቀር በGoogle Chrome ውስጥ ላሉ ሁሉም ክፍለ-አካላት የክፍለ-አካል ዝማኔዎችን ያነቃል።
+
+ወደ ሐሰት ከተዋቀረ የክፍለ-አካላት ዝማኔዎች ይሰናከላሉ። ይሁንና፣ አንዳንድ ክፍለ-አካላት በዚህ መመሪያ ይታለፋሉ፦ ተፈጻሚ ኮድ ባልያዙ ማንኛቸውም ክፍለ-አካላት ወይም የአሳሹን ባህሪ በጉልህ ደረጃ የማይቀይሩ ወይም ለደህንነት በከባድ ደረጃ ወሳኝ በሆኑ ክፍለ-አካላት ላይ የሚደረጉ ዝማኔዎች አይሰናከሉም።
+የእነዚህ አይነት ክፍለ-አካላት ምሳሌዎች የዕውቅና ማረጋገጫ መሻሪያ ዝርዝሮች እና የጥንቃቄ አሰሳ ውሂብን ያካትታሉ።
+በSafeBrowsing ላይ ተጨማሪ መረጃ ለማግኘት https://developers.google.com/safe-browsing ን ይመልከቱ።</string><string id="DefaultPrinterSelection">ነባሪ የማተሚያ ምርጫ ደንቦች</string><string id="DefaultPrinterSelection_Explain">ነባሪ የGoogle Chrome አታሚ መምረጫ ደንቦችን ይሽራል።
+
+Google Chrome ነባሪ አታሚ የሚመረጡበት ደንቦችን ይለውጣል።
+
+ይህ መመሪያ ከተዋቀረ Google Chrome ከሁሉም የተጠቀሱ ዓይነታዎች ጋር የሚመሳሰል አታሚን ለማግኘት ይሞክራል። ከመመሪያው ጋር ተመሳስሎ የተገኘው የመጀመሪያው አታሚ ይመረጣል፣ ልዩ ባልሆነ መዛመድ ጊዜ አታሚዎቹ በተገኙበት ቅደም ተከተል መሰረት ማንኛውም ተዛማጅ አታሚ ሊመረጥ ይችላል።
+
+በተሰጠው የጊዜ ገደብ ውስጥ ይህ መመሪያ ካልተዋቀረ ወይም ተዛማጅ አታሚ ካልተገኘ አታሚው በነባሪነት ወደ አብሮገነብ የፒዲኤፍ አታሚ ይቀየራል ወይም የፒዲኤፍ አታሚ ከሌለ ምንም አታሚ አይመረጥም።
+
+እሴቱ የሚከተለውን ዕቅድ በማክበር እንደ የJSON ነገር ይተነተናል፦
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;kind&quot;: {
+&quot;description&quot;: &quot;የተዛማጁ አታሚ ፍለጋ በተወሰኑ የአታሚዎች ስብስብ ይገደብ እንደሆነ።&quot;,
+&quot;type&quot;: {
+&quot;enum&quot;: [ &quot;local&quot;, &quot;cloud&quot; ]
+}
+},
+&quot;idPattern&quot;: {
+&quot;description&quot;: &quot;ከአታሚ መታወቂያው ጋር ለመዛመድ መደበኛ  የአገላለጽ ሐረግ።&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;namePattern&quot;: {
+&quot;description&quot;: &quot;ከአታሚ ማሳያ ስም ጋር ለመዛመድ መደበኛ የአገላለጽ ሐረግ።&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+ከGoogle Cloud Print ጋር የተገናኙ አታሚዎች &quot;cloud&quot; እንደሆኑ ይወሰዳሉ፣ የተቀሩት አታሚዎች እንደ &quot;local&quot; ይመደባሉ።
+አንድ መስክ መተው ማለት ሁሉም እሴቶች ይዛመዳሉ ማለት ነው፣ ለምሳሌ፣ ግንኙነትን አለመግለጽ የህትመት ቅድመ-ዕይታ የሁሉም አይነት አታሚዎች መገኘትን ያስጀምራል፣ አካባቢያዊ እና ደመና።
+መደበኛ የሒሳብ ሐረግ ስርዓተ ጥለቶች የጃቫስክሪፕት RegExp አገባብ መከተል አለባቸው፣ እና መልከፊደል ትብ ናቸው።</string><string id="DeveloperToolsDisabled">የገንቢ መሣሪያዎችን ያሰናክሉ</string><string id="DeveloperToolsDisabled_Explain">የገንቢ መሣሪያዎቹን እና የJavaScript መሥሪያውን ያሰናክላል።
+
+ይህን ቅንብር ካነቁ የገንቢ መሣሪያዎች ሊደረሰባቸው አይችልም፣ እና የድር ጣቢያ ክፍሎች ከአሁን በኋላ ሊመረመሩ አይችሉም። የየገንቢ መሣሪያውን ወይም የJavaScript መሥሪያውን የሚከፍቱ ማንኛውም የቁልፍ ሰሌዳ አቋረጮች እና ምናሌ ወይም የአግባበ ምናሌ ግቤቶች ይሰናከላሉ።
+
+ይህን አማራጭ እንዲሰናከል ማዋቀር ወይም እንዳልተዋቀረ መተው የገንቢ መሣሪያዎችን እና የJavaScript መሥሪያን ተጠቃሚው እንዲጠቀምባቸው ያደርጋቸዋል።</string><string id="DeviceAllowBluetooth">በመሣሪያው ላይ ብሉቱዝ ፍቀድ</string><string id="DeviceAllowBluetooth_Explain">ይህ መመሪያ ወደ ሐሰት ከተዋቀረ Google Chrome OS ብሉቱዝን የሚያሰናክለው ሲሆን ተጠቃሚው መልሶ ሊያነቃው አይችልም።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ ተጠቃሚው ብሉቱዙን እንደፈለገ ሊያነቃው ወይም ሊያሰናክለው ይችላል።
+
+ይህ መመሪያ ከተዋቀረ ተጠቃሚው ሊቀይረው ወይም ሊሽረው አይችልም።
+
+ብሉቱዝን ካነቁ በኋላ ለውጦቹ እንዲተገበሩ ተጠቃሚው ዘግቶ ወጥቶ እንደገና ተመልሶ በመለያ መግባት አለበት (ብሉቱዝን ሲያሰናክሉ መሣሪያውን ይህ አያስፈልግም)።</string><string id="DeviceAllowNewUsers">የአዲስ መለያዎች መፈጠርን ፍቀድ</string><string id="DeviceAllowNewUsers_Explain">Controls whether Google Chrome OS allows new user accounts to be created. If this policy is set to false, users that do not have an account already will not be able to login.
+
+If this policy is set to true or not configured, new user accounts will be allowed to be created provided that DeviceUserWhitelist does not prevent the user from logging in.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers">ተጠቃሚዎች ቅናሾችን በChrome ስርዓተ ክወና ምዝገባ በኩል እንዲያስመልሱ ይፍቀዱ</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers_Explain">የድርጅት መሣሪያዎች አይቲ አስተዳዳድሪዎች ተጠቃሚዎች በChrome OS ምዝገባ በኩል የቅናሾች ክፍያ ማስመለስ ይችሉ ወይም አይቻሉ ለመቆጣጠር ይህን ጥቆማ መጠቀም ይችላሉ።
+
+ይህ መመሪያ ወደ እውነት ከተቀናበረ ወይም እንዳልተቀናበረ ከተተወ ተጠቃሚዎች በChrome OS ምዝገባ በኩል የቅናሾች ክፍያ ማስመለስ አይችሉም።
+
+ይህ መመሪያ ወደ ሐሰት ከተቀናበረ ተጠቃሚው የቅናሾች ክፍያን ማስመለስ አይችልም።</string><string id="DeviceAutoUpdateDisabled">ራስ-አዘምንን ያሰናክላል</string><string id="DeviceAutoUpdateDisabled_Explain">ወደ እውነት ሲዋቀር ራስ-ሰር ዝማኔዎችን ያሰናክላል።
+
+ይህ ቅንብር ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ የGoogle Chrome OS መሣሪያዎች በራስ-ሰር ዝማኔዎችን ይፈልጋሉ።
+
+ማስጠንቀቂያ፦ ተጠቃሚዎች የሶፍትዌር ዝማኔዎችን እና ወሳኝ የሆኑ የደህንነት ጥገናዎችን ማግኘት እንዲችሉ ራስ-ዝማኔዎችን እንደነቁ ማቆየት ይመከራል። ራስ-ዝማኔዎችን ማጥፋት ተጠቃሚዎችን አደጋ ውስጥ ሊተዋቸው ይችላል።</string><string id="DeviceAutoUpdateP2PEnabled">p2pን ራስ-አዘምን ነቅቷል</string><string id="DeviceAutoUpdateP2PEnabled_Explain">የስርዓተ ክወና ዝማኔ ለመላክ p2p ስራ ላይ ይዋል ወይም አይዋል ይገልጻል። ወደ እውነት ከተዋቀረ መሣሪያዎች የሚላኩ ዝማኔዎችን በላን ላይ ለመጋራትና እሱን ለመጠቀም ይሞክራሉ፣ ይህም የበይነመረብ መተላለፊያ ይዘት አጠቃቀም እና መጨናነቅ ዕድል ይቀንሳል። የተላከው ዝማኔ በላን ላይ የማይገኝ ከሆነ መሣሪያዎ ወደ የዝማኔ አገልጋዩ ይዞርና ከእሱ ያወርዳል። ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ p2p ስራ ላይ አይውልም።</string><string id="DeviceBlockDevmode">የገንቢ አግድ ሁነታ</string><string id="DeviceBlockDevmode_Explain">የገንቢ አግድ ሁነታ።
+
+ይህ መመሪያ ወደ እውነት ከተዋቀረ Google Chrome OS መሣሪያው ወደ የገንቢ ሁነታ እንዳይጀምር ይከለክለዋል። ስርዓቱ መጀመር አሻፈረኝ ይልና የገንቢ ማብሪያ/ማጥፊያ ሲበራ የስህተት ማያ ገጽ ያሳያል።
+
+ይህ መመሪያ ካልተዋቀረ ከተተወ ወይም ወደ ሐሰት ከተዋቀረ የገንቢ ሁነታ ለመሣሪያው የሚገኝ እንደሆነ ይቆያል።</string><string id="DeviceDataRoamingEnabled">የውሂብ ዝውውርን ያንቁ</string><string id="DeviceDataRoamingEnabled_Explain">የውሂብ ዝውውር ለዚህ መሣሪያ መንቃት ካለበት ይወስናል። ወደ እውነት ከተዋቀረ የውሂብ ዝውውር ይፈቀዳል። እንዳልተዋቀረ ከተተወ ወይም ወደ ሐሰት ከተዋቀረ የውሂብ ዝውውር አይገኝም።</string><string id="DeviceEphemeralUsersEnabled">የተጠቃሚ ውሂብ ያጽዱ እና ዘግተው ይውጡ</string><string id="DeviceEphemeralUsersEnabled_Explain">Google Chrome OS ተዘግቶ ከተወጣ በኋላ አካባቢያዊ የመለያ ውሂብ ያስቀምጥ እንደሆነ ይለያል። ወደ እውነት ከተዋቀረ ምንም ቋሚ መለያዎች በGoogle Chrome OS ላይ አይቀመጡም፣ እና ተዘግቶ ከተወጣ በኋላ ሁሉም ውሂብ ከተጠቃሚ ክፍለ-ጊዜው ይወገዳል። ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ መሣሪያው (የተመሰጠረው) አካባቢያዊ የተጠቃሚ ውሂቡን ሊያስቀምጥ ይችላል።</string><string id="DeviceGuestModeEnabled">የእንግዳ ሁነታን ያንቁ</string><string id="DeviceGuestModeEnabled_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ ወይም እንዲያውም ካልተዋቀረ Google Chrome OS የእንግዶች መግቢያዎችን ያነቃል። የእንግዳ መግቢያዎች የይለፍ ቃል የማያስፈልጋቸው የተጠቃሚ ስም-አልባ ክፍለ-ጊዜዎች ናቸው።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ Google Chrome OS የእንግዳ ክፍለ-ጊዜዎችን እንዲጀመር አይፈቅድም።</string><string id="DeviceLoginScreenAppInstallList">በመግቢያ ገጹ ላይ ያለውን የተጫኑ መተግበሪያዎች ዝርዝር ያዋቅሩ</string><string id="DeviceLoginScreenAppInstallList_Explain">
+Specifies a list of apps that are installed silently on the login screen,
+without user interaction, and which cannot be uninstalled.
+All permissions requested by the apps are granted
+implicitly, without user interaction, including any additional
+permissions requested by future versions of the app.
+
+Note that, for security and privacy reasons, extensions are not allowed to be installed using this policy. Moreover, the devices on the Stable channel will only install the apps that belong to the whitelist bundled into Google Chrome. Any items that don't conform to these conditions will be ignored.
+
+If an app that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.</string><string id="DeviceLoginScreenAppInstallListDesc">በመግቢያ ገጹ ላይ ያለውን የተጫኑ መተግበሪያዎች ዝርዝር ያዋቅሩ</string><string id="DeviceLoginScreenInputMethods">የመሣሪያ መግቢያ ገጽ የቁልፍ ሰሌዳ አቀማመጦች</string><string id="DeviceLoginScreenInputMethods_Explain">የትኛዎቹ የቁልፍ ሰሌዳ አቀማመጦች በGoogle Chrome OS መግቢያ ገጹ ላይ እንደሚፈቀዱ ያዋቅራል።
+
+ይህ መመሪያ ወደ የግቤት ስልት ለዪዎች ዝርዝር ከተዋቀረ የተሰጡት የግቤት ስልቶች በመግቢያ ገጹ ላይ የሚገኙ ይሆናሉ። የመጀመሪያው የተሰጠው የግቤት ስልት ቅድሚያ ይመረጣል። አንድ የተጠቃሚ ፖድ በመግቢያ ገጹ ላይ አተኩሮ ሳለ መጨረሻ ላይ ጥቅም ላይ የዋለው የተጠቃሚው ግቤት ስልት በዚህ መመሪያ ከተሰጡት የግቤት ስልቶች በተጨማሪ የሚገኝ ይሆናል። ይህ መመሪያ ካልተዋቀረ በመግቢያ ገጹ ላይ ያሉ የግቤት ስልቶች የመግቢያ ገጹ ከሚታይበት ቋንቋ የሚመነጭ ይሆናል። የሚሠሩ ያልሆኑ የግቤት ስልት ለዪዎች የሆኑ እሴቶች ችላ ይባላሉ።</string><string id="DeviceLoginScreenInputMethodsDesc">የመሣሪያ መግቢያ ገጽ የቁልፍ ሰሌዳ አቀማመጦች</string><string id="DeviceLoginScreenLocales">የመሣሪያ መግቢያ ገጽ ቋንቋ</string><string id="DeviceLoginScreenLocales_Explain">በGoogle Chrome OS መግቢያ ገጽ ላይ ተፈጻሚ የሚሆነውን አካባቢያዊ ቋንቋን ያዋቅራል።
+
+ይህ መመሪያ ከተዋቀረ የመግቢያ ገጹ ሁልጊዜ በዚህ መመሪያ (መመሪያው እንደ ወደፊት ማስተላለፍ ተኳሃኝ ሆኖ የተገለጸ ነው) ላይ በተጠቀሰው የመጀመሪያው እሴት በሚሰጠው ቋንቋ ነው የሚታየው። ይህ መመሪያ ካልተዋቀረ ወይም ወደ ባዶ ዝርዝር ከተዋቀረ የመግቢያ ገጹ በመጨረሻው የተጠቃሚ ክፍለ-ጊዜ ላይ በነበረው ቋንቋ ነው የሚታየው። ይህ እሴት የሚሠራ ወዳልሆነ ቋንቋ ከሆነ የተዋቀረው የመግቢያ ገጹ በነባሪ ቋንቋ (አሁን en-US ነው) ነው የሚታየው።</string><string id="DeviceLoginScreenLocalesDesc">የመሣሪያ መግቢያ ገጽ ቋንቋ</string><string id="DeviceLoginScreenPowerManagement">የኃይል አስተዳደር በመለያ መግቢያ ገጹ ላይ</string><string id="DeviceLoginScreenPowerManagement_Explain">Google Chrome OS ውስጥ በመግቢያ ገጹ ላይ የኃይል አስተዳደር ያዋቅሩ።
+
+ይህ መመሪያ መግቢያ ገጹ እየታየ ሳለ ለተወሰነ ጊዜ ምንም የተጠቃሚ እንቅስቃሴ ከሌለ Google Chrome OS ምን አይነት ባህሪ እንደሚያሳይ እንዲያዋቅሩ ያስችልዎታል። መመሪያው በርካታ ቅንብሮችን ይቆጣጠራል። ለግል የቃላት ትርጉም እና የእሴት ክልሎች በአንድ ክፍለ-ጊዜ ውስጥ የኃይል አስተዳደርን የሚቆጣጠሩ ተጓዳኞቹ መመሪያዎችን ይመልከቱ። ከእነዚህ መመሪያዎች የሚያፈነግጡ ነገሮች እነዚህ ብቻ ናቸው፦
+* ስራ በተፈታበት ጊዜ ወይም መዝጊያው በተዘጋበት ጊዜ የሚወሰዱ እርምጃዎች ክፍለ-ጊዜውን የሚዘጉ መሆን አይችሉም።
+* በAC ኃይል በሚሰራበት ጊዜ ስራ ሲፈታ ያለው ነባሪ እርምጃ መዝጋት ነው።
+
+አንድ ቅንብር ሳይገለጽ ከተተወ ነባሪው ዋጋ ስራ ላይ ይውላል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ነባሪዎቹ ለሁሉም ቅንብሮች ስራ ላይ ይውላሉ።</string><string id="DeviceMetricsReportingEnabled">ሜትሪክስ ሪፖርት ማድረግን ያንቁ</string><string id="DeviceMetricsReportingEnabled_Explain">የስንክል ሪፖርቶችን ጨምሮ የአጠቃቀም ልኬቶች እና የምርመራ ውሂብ ተመልሰው ለGoogle ሪፖርት ይደረጉ እንደሆኑ ይቆጣጠራል። ወደ እውነት ከተዋቀረ Google Chrome OS የአጠቃቀም ልኬቶችን እና የምርመራ ውሂብን ሪፖርት ያደርጋል። ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ የልኬቶች ሪፖርት እና የምርመራ ውሂብ ሪፖርት ማድረግ ይቆማል።</string><string id="DeviceNativePrinters">የድርጅት አታሚ ውቅረት ፋይል ለመሣሪያዎች</string><string id="DeviceNativePrinters_Explain">ከመሣሪያዎች ጋር ለተሳሰሩ የድርጅት አታሚዎች ውቅረቶችን ያቀርባል።
+
+ይህ መመሪያ የአታሚ ውቅረቶችን ለGoogle Chrome OS መሣሪያዎች እንዲያቀርቡ ያስችልዎታል። የፋይሉ መጠን ከ5 ሜባ መብለጥ የለበትም፣ እና በJSON ኮድ ነው መቀመጥ ያለበት።  ቅርጸቱ ከNativePrinters መዝገበ-ቃላት ጋር ተመሳሳይ ነው። 21,000 አካባቢ አታሚዎች ያለው ፋይል እንደ የ5 ሜባ ኮድ ፋይል ሆኖ እንደሚቀመጥ ይገመታል። ስነ-መሰውራዊ ሃሹ የውርዱ ትክክለኝነት ለማረጋገጥ ስራ ላይ የሚውል ነው።
+
+ፋይሉ ይወርድና ይሸጎጣል። ዩአርኤሉ ወይም ሃሹ በተቀየረ ጊዜ ዳግም ይወርዳል።
+
+ይህ መመሪያ ከተዋቀረ Google Chrome OS ፋይሉን ለአታሚ ውቅረቶችን ያወርደውና አታሚዎች በDeviceNativePrintersAccessMode፣ DeviceNativePrintersWhitelist እና DeviceNativePrintersBlacklist መሠረት የሚገኙ ያደርጋቸዋል።
+
+ይህ መመሪያ ተጠቃሚዎች አታሚዎችን በተናጠል መሣሪያዎች ላይ ማዋቀር ይችሉ እንደሆነ ላይ ምንም ተጽዕኖ የለውም። ይሄ ግለሰብ ተጠቃሚዎች ለሚያደርጓቸው የአታሚዎች ውቅረት እንደ ማሟያ እንዲሆን የታሰበ ነው።
+
+ይህ መመሪያ ለNativePrintersBulkConfiguration ጭማሬ ነው።
+
+ይህ መመሪያ ካልተዋቀረ ምንም የመሣሪያ አታሚዎች አይኖሩም እና ሌሎች የDeviceNativePrinter* መመሪያዎች ችላ ይባላሉ።</string><string id="DeviceNativePrintersAccessMode">የመሣሪያ አታሚዎች ውቅረት መዳረሻ መመሪያ።</string><string id="DeviceNativePrintersAccessMode_Explain">የትኛዎቹ የDeviceNativePrinters አታሚዎች ለተጠቃሚዎች የሚገኙ እንደሆኑ ይቆጣጠራል።
+
+የትኛው የመዳረሻ መመሪያ ለጅምላ አታሚ ውቅረት ስራ ላይ እንደሚውል ይሰይማል። AllowAll ከተመረጠ ሁሉም አታሚዎች ይታያሉ። BlacklistRestriction ከተመረጠ DeviceNativePrintersBlacklist የተገለጹት አታሚዎች መዳረሻን ለመገደብ ስራ ላይ ይውላል። WhitelistPrintersOnly ከተመረጠ DeviceNativePrintersWhitelist ሊመረጡ የሚችሉ አታሚዎችን ብቻ ነው የሚሰይመው።
+
+ይህ መመሪያ ካልተዋቀረ BlacklistRestriction ስራ ላይ እንደዋለ ይታሰባል።
+</string><string id="DeviceNativePrintersAccessMode_BlacklistRestriction">በተከለከሉ ዝርዝር ውስጥ ካሉ በስተቀር ሁሉም አታሚዎች ይታያሉ።</string><string id="DeviceNativePrintersAccessMode_WhitelistPrintersOnly">በተፈቀደላቸው ዝርዝር ውስጥ ያሉ አታሚዎች ብቻ ናቸው ለተጠቃሚዎች የሚታዩት</string><string id="DeviceNativePrintersAccessMode_AllowAll">በውቅረቱ ፋይል ውስጥ ያሉ ሁሉም አታሚዎችን ይፍቀዱላቸው</string><string id="DeviceNativePrintersBlacklist">የድርጅት መሣሪያ አታሚዎች አሰናክሏል</string><string id="DeviceNativePrintersBlacklist_Explain">ተጠቃሚው ሊጠቀምባቸው የማይችላቸውን አታሚዎች ይገልጻል።
+
+ይህ መመሪያ ስራ ላይ የሚውለው BlacklistRestriction ለDeviceNativePrintersAccessMode ከተመረጠ ብቻ ነው።
+
+ይህ መመሪያ ስራ ላይ ከዋለ በዚህ መመሪያ ውስጥ ከተጠቀሱት መታወቂያዎች በስተቀር ሁሉም አታሚዎች ለተጠቃሚው ይቀርባሉ።
+</string><string id="DeviceNativePrintersBlacklistDesc">የድርጅት መሣሪያ አታሚዎች አሰናክሏል</string><string id="DeviceNativePrintersWhitelist">የድርጅት መሣሪያ አታሚዎች አንቅቷል</string><string id="DeviceNativePrintersWhitelist_Explain">ተጠቃሚው ሊጠቀምባቸው የሚችላቸው አታሚዎችን ይገልጻል።
+
+ይህ መመሪያ ስራ ላይ የሚውለው WhitelistPrintersOnly ለDeviceNativePrintersAccessMode ከተመረጠ ብቻ ነው
+
+ይህ መመሪያ ስራ ላይ ከዋለ በዚህ መመሪያ ውስጥ ካሉ እሴቶች የሚዛመዱ መታወቂያዎች ያላቸው አታሚዎች ብቻ ናቸው ለተጠቃሚው የሚገኙት። መታወቂያዎቹ በDeviceNativePrinters ውስጥ በተገለጸው ፋይል ላይ ካሉት ግቤቶች ጋር የሚዛመዱ መሆን አለባቸው።
+</string><string id="DeviceNativePrintersWhitelistDesc">የድርጅት መሣሪያ አታሚዎች አንቅቷል</string><string id="DeviceOffHours">የመሣሪያ Off Hours |ignored_policy_proto_tags| ሲለቀቁ የመጥፊያ ሰዓት ክፍተቶች</string><string id="DeviceOffHours_Explain">የ«OffHours» መመሪያ ከተዋቀረ የተገለጹት የመሣሪያ መመሪያዎች በተገለጹ የጊዜ ክፍተቶች ላይ ችላ ይባላሉ (የእነዚህ መመሪያዎች ነባሪ ቅንብሮች ስራ ላይ ይውላሉ)። የ«OffHours» ጊዜው ሲጀመር ወይም ሲያበቃ የመሣሪያ መመሪያዎች በእያንዳንዱ ክስተት ላይ በChrome ዳግም ይተገበራሉ። የ«OffHours» ጊዜ ሲያበቃ እና የመሣሪያ መመሪያ ቅንብሮች ሲቀየሩ ተጠቃሚው ማሳወቂያ ይደርሰውና ዘግቶ እንዲወጣ ይገደዳል  (ለምሳሌ፦ ተጠቃሚው በተፈቀደ መለያ ካልሆነ የገባው)።</string><string id="DeviceOpenNetworkConfiguration">የመሣሪያ ደረጃ አውታረ መረብ ውቅር</string><string id="DeviceOpenNetworkConfiguration_Explain">የአውታረ መረብ ውቅር መግፋት በሁሉም የGoogle Chrome OS መሣሪያ ተጠቃሚዎች ላይ እንዲተገበር ያስችላል። የአውታረ መረቡ ውቅር በhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration ላይ እንደተብራራው በክፍት አውታረ መረብ ውቅር ቅርጸት የተገለጸ የJSON ቅርጸት ህብረቁምፊ ነው</string><string id="DevicePolicyRefreshRate">የመሣሪያ መመሪያ እድሳት ፍጥነት</string><string id="DevicePolicyRefreshRate_Explain">የመሣሪያው አስተዳደር አገልግሎት ለመሣሪያ መመሪያ መረጃ የተጠየቀበትን ክፍለ-ጊዜ በሚሊሰክንዶች ያስቀምጣል።
+
+ይህን መመሪያ ማዋቀር ነባሪውን የ3 ሰዓቶች እሴት ይሽራል። ለዚህ መመሪያ የሚሆኑ የሚሠሩ እሴቶች ከ1800000 (30 ደቂቃዎች) እስከ 86400000 (1 ቀን) ባለው ክልል ውስጥ ናቸው። በዚህ ክልል ውስጥ ያልሆኑ ማንኛቸውም እሴቶች ወደ የሚመለከተው ድንበር እንዲጠጋጉ ይደረጋሉ።
+
+ይህን መመሪያ እንዳልተዋቀረ መተው Google Chrome OS ነባሪውን የ3 ሰዓቶች እሴት እንዲጠቀም ያደርገዋል።
+
+የመሣሪያ ስርዓቱ የመመሪያ ማሳወቂያዎችን የሚደግፍ ከሆነ የማደሻ መዘግየት ጊዜው (ሁሉንም ነባሪዎች እና የዚህን መመሪያ እሴት ችላ ተብለው) ወደ 24 ሰዓታት እንደሚዋቀር ልብ ይበሉ፤ ይህም የሆነበት ምክንያት የመመሪያ ማሳወቂያዎች መመሪያ በተለወጠ ቁጥር በራስ-ሰር ማደስን እንደሚያስገድድ ስለሚጠበቅ ነው፣ በዚህም ተደጋጋሚ ማደሶች አላስፈላጊ ይሆናሉ።</string><string id="DeviceQuirksDownloadEnabled">የሃርድዌር መገለጫዎች መጠይቆች ለQuirks Server እንዲደረጉ ያንቁ</string><string id="DeviceQuirksDownloadEnabled_Explain">The Quirks Server provides hardware-specific configuration files, like
+ICC display profiles to adjust monitor calibration.
+
+When this policy is set to false, the device will not attempt to
+contact the Quirks Server to download configuration files.
+
+If this policy is true or not configured then Google Chrome OS will automatically contact the Quirks Server and download configuration files, if available, and store them on the device.  Such files might, for example, be used to improve display quality of attached monitors.</string><string id="DeviceRebootOnShutdown">በመሣሪያ መዝጋት ላይ በራስ-ሰር ዳግም ማስነሳት</string><string id="DeviceRebootOnShutdown_Explain">ይህ መመሪያ ወደ ሐሰት ከተዋቀረ ወይም እንዳልተዋቀረ ከተተወ Google Chrome OS ተጠቃሚው መሣሪያውን እንዲዘጋ ያስችለዋል።
+ይህ መመሪያ ወደ እውነት ከተዋቀረ ተጠቃሚ መሣሪያውን ሲያጠፋው Google Chrome OS ዳግም ማስነሳት ይቀሰቅሳል። Google Chrome OS ሁሉንም በበይነገጹ ውስጥ ያሉ የመዝጊያ አዝራሮች ክስተቶችን በዳግም ማስነሻ አዝራሮች ይተካቸዋል። ተጠቃሚው የኃይል አዝራሩን በመጠቀም መሣሪያውን ካጠፋው በራስ-ሰር ዳግም አይነሳም፣ መመሪያው ቢነቃም እንኳ።</string><string id="DeviceShowUserNamesOnSignin">የተጠቃሚ ስሞችን በመግቢያ ገጽ ላይ አሳይ</string><string id="DeviceShowUserNamesOnSignin_Explain">If this policy is set to true or not configured, Google Chrome OS will show existing users on the login screen and allow to pick one.
+
+If this policy is set to false, Google Chrome OS will not show existing users on the login screen. The normal sign-in screen (prompting for the user email and password or phone) or the SAML interstital screen (if enabled via the LoginAuthenticationBehavior policy) will be shown, unless a Public Session is configured. When a Public Session is configured, only the Public Session accounts will be shown, allowing to pick one of them.
+
+Note that this policy does not affect whether the device keeps or discards the local user data.</string><string id="DeviceStartUpFlags">በGoogle Chrome ጅምር ላይ የሚተገበሩ ስርዓት-ተኮር ዕልባቶች</string><string id="DeviceStartUpFlags_Explain">Google Chrome ሲጀምር የሚተገበሩበትን ጥቆማዎች ይገልጻል። የተገለጹት ጥቆማዎች በመግቢያ ገጹ ላይ ብቻ ነው የሚተገበሩት። በዚህ መመሪያ በኩል የተዋቀሩ ጥቆማዎች ወደ የተጠቃሚ ክፍለ-ጊዜዎች አይሰራጩም።</string><string id="DeviceStartUpFlagsDesc">በGoogle Chrome ጅምር ላይ የሚተገበሩ ስርዓት-ተኮር ዕልባቶች</string><string id="DeviceTargetVersionPrefix">ራስ-አዘምን ስሪቱን አነጣጥር</string><string id="DeviceTargetVersionPrefix_Explain">አንድ የዒላማ ስሪትን ለራስ-ሰር ዝማኔዎችን ያዋቅራል።
+
+የGoogle Chrome OS ዒላማ ስሪትን የሚዘመንበት ቅድመ-ጥገናን ይጠቅሳል። መሣሪያው ከተጠቀሰው ቅድመ-ጥገና በፊት የሆነ ስሪትን እያሄደ ከሆነ በተሰጠው ቅድመ-ጥገና ውስጥ ወዳለው የቅርብ ጊዜው ስሪት ይዘመናል። መሣሪያው አስቀድሞ የኋለኛ ስሪት ላይ ከሆነ ምንም ተጽዕኖ አይኖረውም (ለምሳሌ፦ ምንም ደረጃን ዝቅ ማድረግ አይከናወንም)፣ እና መሣሪያው አሁን ባለበት ስሪት ላይ እንዳለ ይቀጥላል። የቅድመ-ጥገናው ቅርጸት በሚከተለው ምሳሌ ላይ እንደተመለከተው በክፍለ አካል ደረጃ ይሠራል፦
+
+&quot;&quot; (ወይም ያልተዋቀረ)፦ ሊገኝ ወደየሚችለው የቅርብ ጊዜው ስሪት አዘምን።
+&quot;1412.&quot;፦ ወደ ማንኛውም የ1412 አናሳ ስሪት አዘምን (ለምሳሌ፦ 1412.24.34 ወይም 1412.60.2)
+&quot;1412.2.&quot;፦ ወደ ማንኛውም የ1412.2 አናሳ ስሪት አዘምን (ለምሳሌ፦ 1412.2.34 ወይም 1412.2.2)
+&quot;1412.24.34&quot;፦ ወደዚህ የተወሰነ ስሪት ብቻ አዘምን
+
+ማስጠንቀቂያ፦ የስሪት ገደቦችን ማዋቀር ተጠቃሚዎች የሶፍትዌር ዝማኔዎችን እና ወሳኝ የሆኑ የደህንነት ጥገናዎችን እንዳያገኙ ሊከለክል ስለሚችል አይመከርም። ዝማኔዎችን ለአንድ የተወሰነ የስሪት ቅድመ-ጥገና መገደብ ማገድ ተጠቃሚዎችን አደጋ ላይ ሊጥላቸው ይችላል።</string><string id="DeviceUpdateAllowedConnectionTypes">ለዝማኔዎች የሚፈቀዱ የግንኙነት አይነቶች</string><string id="DeviceUpdateAllowedConnectionTypes_Explain">ለስርዓተ ክወና ዝማኔዎች የሚፈቀዱ የግንኙነት አይነቶች። የስርዓተ ክወና ዝማኔዎች በመጠናቸው ምክንያት ግንኙነቱ ላይ ከባድ ጫና ሊያሳድሩ ይችላሉ፣ እንዲሁም ተጨማሪ ወጪ ሊያስከትሉም ይችላሉ። ስለዚህ  በነባሪት ውድ ተብለው ለሚወሰዱ የግንኙነት አይነቶች በነባሪነት አልነቁም፣ ለጊዜው WiMax፣ ብሉቱዝ እና የተንቀሳቃሽ ስልክን ጨምሮ።
+
+የሚታወቁት የግንኙነት አይነት ለዪዎች «ኤተርኔት»፣ «wifi»፣ «wimax»፣ «ብሉቱዝ» እና «ተንቀሳቃሽ ስልክ» ናቸው።</string><string id="DeviceUpdateAllowedConnectionTypesDesc">ለዝማኔዎች የሚፈቀዱ የግንኙነት አይነቶች</string><string id="DeviceUpdateHttpDownloadsEnabled">የራስ-ዝማኔ ውርዶች በHTTP በኩል ይፍቀዱ</string><string id="DeviceUpdateHttpDownloadsEnabled_Explain">በGoogle Chrome OS ላይ ያሉ ራስ-ዝማኔዎች ከHTTPS ይልቅ በHTTP በኩል ሊወርዱ ይችላሉ። ይሄ ግልጽ የሆነ በHTTP የሚደረግ የHTTP ውርዶችን መሸጎጥ ያስችላል።
+
+ይህ መመሪያ ወደ እውነት ከተቀናበረ Google Chrome OS የራስ-ዝማኔዎችን በHTTP በኩል ለማውረድ ይሞክራል። መመሪያው ወደ ሐሰት ወይም እንዳልተቀናበረ ከተተወ HTTPS የሚላኩ ራስ-ዝማኔዎችን ለማውረድ ስራ ላይ ይውላል።</string><string id="DeviceUpdateScatterFactor">ራስ-አዘምን ብተና አካል</string><string id="DeviceUpdateScatterFactor_Explain">መሣሪያው የዝማኔ ውርዱን ዝማኔው ከአገልጋዩ ከተገፋበት የመጀመሪያ ጊዜ ጀምሮ በዘፈቀደ ማዘግየት የሚችልባቸው የሰከንዶች ብዛት ይገልጻል። መሣሪያው የዚህ ጊዜ ክፍል በግድግዳ ሰዓት መልኩ ሊጠብቅ እና የተቀረውን ደግሞ በዝማኔ ፍለጋዎች ብዛት መልኩ ሊጠብቅ ይችላል። በማንኛውም አጋጣሚ መሣሪያው አንድን ዝማኔ እስከዘለዓለም እየጠበቀ እንዳይቀረቀር ብተናው ከፍ ቢል በተወሰነ የጊዜ መጠን ታስሯል።</string><string id="DeviceUserWhitelist">የተፈቀደላቸው የተጠቃሚዎች ዝርዝር ያስገቡ</string><string id="DeviceUserWhitelist_Explain">Defines the list of users that are allowed to login to the device. Entries are of the form user@domain, such as madmax@managedchrome.com. To allow arbitrary users on a domain, use entries of the form *@domain.
+
+If this policy is not configured, there are no restrictions on which users are allowed to sign in. Note that creating new users still requires the DeviceAllowNewUsers policy to be configured appropriately.</string><string id="DeviceUserWhitelistDesc">የተፈቀደላቸው የተጠቃሚዎች ዝርዝር ያስገቡ</string><string id="DeviceWallpaperImage">የመሣሪያ ልጣፍ ምስል</string><string id="DeviceWallpaperImage_Explain">ማንም ተጠቃሚ ገና ወደ መሣሪያው ካልገባ በመግቢያ ገጹ ላይ የሚታየውን የመሣሪያ ደረጃ ልጣፍ ምስል ያዋቅሩ። መመሪያው የሚዋቀረው የChrome OS መሣሪያው የልጣፍ ምስሉን ሊያወርድበት የሚችልበት ዩአርኤል እና የውርዱን ሙሉነት የሚያረጋግጥ ስነ መሰውራዊ ሃሽ በመግለጽ ነው። ምስሉ በJPEG ቅርጸት፣ ከ16 ሜባ የማይበልጥ መሆን አለበት። ዩአርኤሉ ያለምንም ማረጋገጥ ተደራሽ መሆን አለበት። የልጣፍ ምስሉ ወርዶ ተሸጉጧል። ዩአርኤሉ ወይም ሃሹ በተቀየረ ጊዜ ዳግም ይወርዳል።
+
+መመሪያው ዩአርኤሉን እና ሃሹን በJSON ቅርጸት በሚገለጽ ሕብረቁምፊ ነው መገለጽ ያለበት፣ ለምሳሌ፦
+{
+&quot;url&quot;: &quot;https://example.com/device_wallpaper.jpg&quot;,
+&quot;hash&quot;: &quot;examplewallpaperhash&quot;
+}
+
+ምንም ተጠቃሚ ገና ወደ መሣሪያ በመለያ ካልገባ የመሣሪያ ልጣፍ መመሪያ ከተዋቀረ የChrome OS መሣሪያው የልጣፍ ምስሉን አውርዶ በመግቢያ ገጹ ላይ ይጠቀምበታል። አንዴ ተጠቃሚው ከገባ በኋላ የተጠቃሚው ልጣፍ መመሪያ ይተገበራል።
+
+የመሣሪያ ልጣፍ መመሪያው እንዳልተዋቀረ ከተተወና የተጠቃሚው ልጣፍ መመሪያ ከተዋቀረ ምን እንደሚታይ የሚወስነው የተጠቃሚው የልጣፍ መመሪያ ነው።</string><string id="Disable3DAPIs">የ3-ል ግራፊክስ ኤ ፒ አይዎች ድጋፍ ያሰናክሉ</string><string id="Disable3DAPIs_Explain">Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API.
+
+Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.
+
+If HardwareAccelerationModeEnabled is set to false, Disable3DAPIs is ignored and it is equivalent to Disable3DAPIs being set to true.</string><string id="DisablePluginFinder">ተሰኪ አግኚው መሰናከል ያለበት ከሆነ ይግለጹ</string><string id="DisablePluginFinder_Explain">ይህን ቅንብር ካነቁት ራስ-ሰር ፍለጋ እና የጎደሉ ተሰኪዎች መጫን በGoogle Chrome ውስጥ ይሰናከላል።
+
+ይህን አማራጭ ማሰናከል ወይም እንዳልተዋቀረ መተው ተሰኪ አግኚውን ያገብረዋል።</string><string id="DisableSafeBrowsingProceedAnyway">ከደህንነቱ የተጠበቀ አሰሳ ማስጠንቀቂያ ገጽ መቀጠልን ያሰናክሉ</string><string id="DisableSafeBrowsingProceedAnyway_Explain">ተጠቃሚዎች ተንኮል-አዘል ሊሆኑ ይችላሉ ተብለው ወደ ተጠቆሙ ጣቢያዎች ሲሄዱ የጥንቃቄ አሰሳ አገልግሎት የማስጠንቀቂያ ገጽ ያሳያል። ይህን ቅንብር ማንቃት ተጠቃሚዎች በማንኛውም መልኩ ከማስጠንቀቂያው ገጹ ወደ ተንኮል-አዘሉ ጣቢያ እንዳይቀጥሉ ያግዳቸዋል።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ ተጠቃሚዎች ማስጠንቀቂያውን ካዩ በኋላ ወደ ተጠቆመው ጣቢያ ለመቀጠል መምረጥ ይችላሉ።
+
+በSafeBrowsing ላይ ተጨማሪ መረጃ ለማግኘት https://developers.google.com/safe-browsing ን ይመልከቱ።</string><string id="DisableScreenshots">ቅጽበታዊ ገጽ እይታዎችን ማንሳት ያሰናክሉ</string><string id="DisableScreenshots_Explain">If enabled, screenshots cannot be taken using keyboard shortcuts or extension APIs.
+
+If disabled or not specified, taking screenshots is allowed.</string><string id="DisplayRotationDefault">ነባሪው የማሳያ እሽክርክሪት አዘጋጅ፣ በእያንዳንዱ ዳግም ማስነሳት ላይ ዳግም የሚተገበር</string><string id="DisplayRotationDefault_Explain">ይህ መመሪያ ከተዋቀረ እያንዳንዱ ማሳያ
+በእያንዳንዱ ዳግም ማስነሳት ጊዜ እና ለመጀመሪያ ጊዜ ሲገናኝ የመመሪያው እሴት ከተለወጠ በኋላ
+ወደተገለጸው አቀማመጥ ይሽከረከራል። ተጠቃሚዎች የማሳያውን ሽክርክሪቱን
+ወደ መለያ ከገቡ በኋላ በቅንብሮች ገጽ በኩል ሊለውጡት ይችላሉ፣ ሆኖም ግን
+ቅንብራቸው በሚቀጥለው ዳግም ማስነሳት ላይ በመመሪያው እሴት ይሻራል።
+
+ይህ መመሪያ በአንደኛ እና በሁሉም ሁለተኛ ደረጃ ማሳያዎች ይተገበራል።
+
+መመሪያው ካልተዋቀረ ነባሪው እሴት 0 ዲግሪ ነው፣ እና ተጠቃሚው
+ሊለውጠው ይችላል። ይህ በሚሆንበት ጊዜ ነባሪው እሴት በዳግም ማስጀመር
+ጊዜ ዳግም አይተገበርም።</string><string id="DisplayRotationDefault_ROTATE_0">ማያ ገጹን በ0 ዲግሪ አሽከርክር</string><string id="DisplayRotationDefault_ROTATE_90">ማያ ገጹን በሰዓት አቅጣጫ 90 ዲግሪ አሽከርክር</string><string id="DisplayRotationDefault_ROTATE_180">ማያ ገጹን በ180 ዲግሪ አሽከርክር</string><string id="DisplayRotationDefault_ROTATE_270">ማያ ገጹን በሰዓት አቅጣጫ 270 ዲግሪ አሽከርክር</string><string id="DownloadDirectory">የውርድ አቃፊ ያስቀምጡ</string><string id="DownloadDirectory_Explain">Google Chrome ፋይሎችን ለማውረድ የሚጠቀምበትን ማውጫ ያዋቅራል።
+
+ይህን መመሪያ ካቀናበሩት ተጠቃሚው ማውጫ ቢጠቅስም ባይጠቅስም ወይም ለማውረጃ አካባቢ በየጊዜው እንዲጠየቅ ዕልባቱን ቢያነቃ ባይነቃም Google Chrome የተሰጠውን ማውጫ ብቻ ነው የሚጠቀመው።
+
+ስራ ላይ ሊውሉ የሚችሉ የተለዋዋጮችን ዝርዝር ለማየት https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables ን ይመልከቱ።
+
+ይህ መመሪያ ሳይቀናበር ከተተወ ነባሪው የማውረጃ ማውጫ ስራ ላይ ይውላል፣ እና ተጠቃሚው ሊለውጠው ይችላል።</string><string id="DownloadRestrictions">የውርድ ገደቦችን ይፍቀዱ</string><string id="DownloadRestrictions_Explain">Configures the type of downloads that Google Chrome will completely block, without letting users override the security decision.
+
+If you set this policy, Google Chrome will prevent certain types of downloads, and won't let user bypass the security warnings.
+
+When the 'Block dangerous downloads' option is chosen, all downloads are allowed, except for those that carry SafeBrowsing warnings.
+
+When the 'Block potentially dangerous downloads' option is chosen, all downloads allowed, except for those that carry SafeBrowsing warnings of potentially dangerous downloads.
+
+When the 'Block all downloads' option is chosen, all downloads are blocked.
+
+When this policy is not set, (or the 'No special restrictions' option is chosen), the downloads will go through the usual security restrictions based on SafeBrowsing analysis results.
+
+Note that these restrictions apply to downloads triggered from web page content, as well as the 'download link...' context menu option. These restrictions do not apply to the save / download of the currently displayed page, nor does it apply to saving as PDF from the printing options.
+
+See https://developers.google.com/safe-browsing for more info on SafeBrowsing.</string><string id="DownloadRestrictions_DefaultDownloadSecurity">ምንም ልዩ ገደቦች የሉም</string><string id="DownloadRestrictions_BlockDangerousDownloads">አደገኛ ውርዶችን ያግዱ</string><string id="DownloadRestrictions_BlockPotentiallyDangerousDownloads">አደገኛ ሊሆኑ የሚችሉ ውርዶችን ያግዱ</string><string id="DownloadRestrictions_BlockAllDownloads">ሁሉንም ውርዶች አግድ</string><string id="EasyUnlockAllowed">Smart Lock በአገልግሎት ላይ እንዲውል ያስችላል</string><string id="EasyUnlockAllowed_Explain">If you enable this setting, users will be allowed to use Smart Lock if the requirements for the feature are satisfied.
+
+If you disable this setting, users will not be allowed to use Smart Lock.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="EcryptfsMigrationStrategy">የዝውውር ስትራቴጂ ለ ecryptfs</string><string id="EcryptfsMigrationStrategy_Explain">Specifies the action that should be taken when the user's home directory was created with ecryptfs encryption and needs to transition to ext4 encryption.
+
+If you set this policy to 'DisallowArc', Android apps will be disabled for the user and no migration from ecryptfs to ext4 encryption will be performed. Android apps will not be prevented from running when the home directory is already ext4-encrypted.
+
+If you set this policy to 'Migrate', ecryptfs-encrypted home directories will be automatically migrated to ext4 encryption on sign-in without asking for user consent.
+
+If you set this policy to 'Wipe', ecryptfs-encrypted home directories will be deleted on sign-in and new ext4-encrypted home directories will be created instead. Warning: This removes the user's local data.
+
+If you set this policy to 'AskUser', users with ecryptfs-encrypted home directories will be offered to migrate.
+
+This policy does not apply to kiosk users. If this policy is left not set, the device will behave as if 'DisallowArc' was chosen.</string><string id="EcryptfsMigrationStrategy_DisallowArc">Disallow data migration and ARC.</string><string id="EcryptfsMigrationStrategy_Migrate">Migrate automatically, donâ€™t ask for user consent.</string><string id="EcryptfsMigrationStrategy_Wipe">Wipe the userâ€™s ecryptfs home directory and start with a fresh ext4-encrypted home directory.</string><string id="EcryptfsMigrationStrategy_AskUser">Ask the user if they would like to migrate or skip migration and disallow ARC.</string><string id="EcryptfsMigrationStrategy_MinimalMigrate">ከጠረጋ (እሴት 2) ጋር ተመሳሳይ ነው፣ ነገር ግን ተጠቃሚው እንደገና በመለያ እንዲገባ እንዳይገደድ የመለያ መግቢያ ማስመሰያዎችን ይዞ ለመቆየት ይሞክራል።</string><string id="EcryptfsMigrationStrategy_AskForEcryptfsArcUsers">የደንበኛ መሣሪያ ሞዴሉ ወደ ext4 ከማፍለስ በፊት ቀደም ብሎ ARCን የሚደግፍ ከሆነ እና የArcEnabled መመሪያ ወደ እውነት ከተዋቀረ ይህ አማራጭ እንደ AskUser (እሴት 3) ይሆናል። በሌሎች ሁኔታዎች ሁሉ (የመሣሪያው ሞዴል ከዚህ ቀደም ARC የማይደግፍ ከሆነ ወይም የArcEnabled መመሪያ ወደ ሀሰት ከተዋቀረ) ይህ እሴት ከDisallowArc (እሴት 0) ጋር እኩል ነው።</string><string id="EditBookmarksEnabled">የዕልባት አርትዖት ያነቃል ወይም ያሰናክላል</string><string id="EditBookmarksEnabled_Explain">If you enable this setting, bookmarks can be added, removed or modified. This is the default also when this policy is not set.
+
+If you disable this setting, bookmarks can not be added, removed or modified. Existing bookmarks are still available.</string><string id="EnableCommonNameFallbackForLocalAnchors">የsubjectAlternativeName ቅጥያ በሚጎድላቸው የአካባቢያዊ እምነት መልሕቆች የተሰጡ የእውቅና ማረጋገጫዎች የሚታመኑ ወይም የማይታመኑ እንደሆኑ</string><string id="EnableCommonNameFallbackForLocalAnchors_Explain">ይህ ቅንብር ሲነቃ የእውቅና ማረጋገጫው የsubjectAlternativeName ቅጥያ ከጎደለው በተጫኑ አካባቢያዊ የCA እውቅና ማረጋገጫዎችን እስካረጋገጠና ከእነሱ እስከቀጠለ ድረስ Google Chrome አንድ የአስተናጋጅ ስምን ለማዛመድ የአንድ አገልጋይ እውቅና ማረጋገጫን commonName ይጠቀማል።
+
+ይሄ አንድ የእውቅና ማረጋገጫ ሊፈቀድላቸው የሚችሉ የአስተናጋጅ ስሞችን የሚገድብ የnameConstraints ቅጥያን ማለፍ ሊፈቅድ የሚችል እንደመሆኑ መጠን ይሄ የማይመከር መሆኑን ያስተውሉ።
+
+ይህ መመሪያ ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ ወይም የዲኤንኤስ ስም ወይም የአይፒ አድራሻ ያላቸው የsubjectAlternativeName ቅጥያ የሚጎድላቸው የአገልጋይ እውቅና ማረጋገጫዎች አይታመኑም።</string><string id="EnableDeprecatedWebPlatformFeatures">የተቋረጡ የድር መሣሪያ ስርዓት ባህሪያት ለተወሰነ ጊዜ ያንቁ</string><string id="EnableDeprecatedWebPlatformFeatures_Explain">በጊዜያዊነት ዳግም የሚነቁ የተቋረጡ የድር የመሣሪያ ስርዓት ባህሪያት ዝርዝር ይጥቀሱ።
+
+መመሪያው ለአስተዳዳሪዎች የተቋረጡ የድር የመሣሪያ ስርዓት ባህሪያትን ለጊዜው ዳግም የማንቃት ችሎታን ይሰጣቸዋል። ባህሪያት በሕብረቁምፊ መለያ የሚለዩ ሲሆን በዚህ መመሪያ ውስጥ በተጠቀሰው ዝርዝር ውስጥ ከተካተቱ መለያዎች ጋር የሚጎዳኙ ባህሪያት ዳግም ይነቃሉ።
+
+ይህ መመሪያ እንዳልተወዋቀር ከተተወ ወይም ዝርዝሩ ባዶ ከሆነ ወይም ከሚደገፉ የሕብረቁምፊ መለያዎች ጋር የሚዛመድ ካልሆነ ሁሉም የተቋረጡ የድር የመሣሪያ ስርዓት ባህሪያት እንደተሰናከሉ ይቆያሉ።
+
+መመሪያው ራሱ ከላይ ባሉ የመሣሪያ ስርዓቶች ላይ የሚደገፍ ሲሆን እያነቃው ያለው ባህሪ ባነሱ የመሣሪያ ስርዓቶች ላይ ሊገኝ ይችላል። ሁሉም የተቋረጡ የድር የመሣሪያ ስርዓት ባህሪያት አይደሉም ዳግም ሊነቁ የሚችሉት። ከታች በግልፅ የተጠቀሱት ብቻ ናቸው ለተወሰነ ጊዜ ብቻ ሊነቁ የሚችሉት፣ ይህም ደግሞ እንደየ ባህሪው ይለያያል። የሕብረቁምፊው መለያ አጠቃላይ ቅርፀት [DeprecatedFeatureName]_EffectiveUntil[yyyymmdd] ይሆናል። እንደ ማጣቀሻ፣ ከድር የመሣሪያ ስርዓት ባህሪ ለውጦች በስተጀርባ ያለውን ዓላማ https://bit.ly/blinkintents ላይ ማግኘት ይችላሉ።
+</string><string id="EnableDeprecatedWebPlatformFeaturesDesc">የተቋረጡ የድር መሣሪያ ስርዓት ባህሪያት ለተወሰነ ጊዜ ያንቁ</string><string id="EnableOnlineRevocationChecks">የመስመር ላይ OCSP/CRL ማረጋገጦች ይከናወኑ ወይም አይከናወኑ እንደሆኑ</string><string id="EnableOnlineRevocationChecks_Explain">በአነስተኛ አለመሳካት፣ የመስመር ላይ መሻር ማረጋገጫዎች ምንም ውጤታማ የሆነ የደህንነት ጥቅም የማይሰጡ ከመሆናቸው አንጻር በስሪት Google Chrome እና ከዚያ በኋላ ላይ በነባሪነት ተሰናክለዋል። ይህን መመሪያ ወደ እውነት በማዋቀር ቀዳሚው ባህሪ ወደነበረበት ይመለስና የOCSP/CRL ማረጋገጫዎች ይከናወናሉ።
+
+መመሪያው ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ Google Chrome በGoogle Chrome 19 እና ከዚያ በኋላ ላይ ባሉት ላይ የመስመር ላይ የመሻር ማረጋገጫዎችን አያከናውንም።</string><string id="EnableSha1ForLocalAnchors">በአካባቢያዊ የእምነት መልህቆች የተሰጡ በSHA-1 የተፈረሙ የእውቅና ማረጋገጫዎች ይፈቀዱ እንደሆነ</string><string id="EnableSha1ForLocalAnchors_Explain">ይህ ቅንብር ሲነቃ Google Chrome በSHA-1 የተፈረሙ የእውቅና ማረጋገጫዎች በተሳካ ሁኔታ የአካባቢያዊ ሲኤ የእውቅና ማረጋገጫዎችን እስካረጋገጡ እና ከእነሱ ጋር እስከተገናኙ ድረስ ይፈቅዳቸዋል።
+
+ይህ መመሪያ የSHA-1 ፊርማዎችን በሚፈቅደው የስርዓተ ክወና ማረጋገጫ ቁልል የሚወሰን መሆኑን ልብ ይበሉ። አንድ የስርዓተ ክወና ዝማኔ የስርዓተ ክወናው የSHA-1 እውቅና ማረጋገጫዎች አያያዙን የሚቀይር ከሆነ ይህ መመሪያ ከአሁን በኋላ ተፈጻሚነት ላይኖረው ይችላል። በተጨማሪም ይህ መመሪያ ድርጅቶች ከSHA-1 ወደ ሌላ አሰራር እንዲቀይሩ ጊዜ ለመስጠት ያለመ እንደ ጊዜያዊ መፍትሔ የታሰበ ነው። ይህ መመሪያ ጃኑዋሪ 1፣ 2019 ወይም በእሱ አካባቢ ላይ ይወገዳል።
+
+ይህ መመሪያ ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ Google Chrome በይፋ የታወጀውን የSHA-1 ማቋረጫ መርሐግብር ይከተላል።</string><string id="ExternalStorageDisabled">የውጫዊ ማከማቻ ማፈናጠጥን ያሰናክላል</string><string id="ExternalStorageDisabled_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ ውጫዊ ማከማቻ በፋይል አሳሹ ውስጥ አይገኝም።
+
+ይህ መመሪያ በሁሉም የማከማቻ ማህደረ መረጃ አይነቶች ላይ ተፅዕኖ አለው። ለምሳሌ፦ የዩኤስቢ ፍላሽ ዲስክ፣ ውጫዊ ደረቅ አንጻፊዎች፣ ኤስዲ እና ሌሎች የማህደረ ትውስታ ካርዶች፣ የጨረር ማከማቻ፣ ወዘተ። የውስጣዊ ማከማቻ ላይ ተፅዕኖ የለውም፣ ስለዚህ በውርድ አቃፊ ፋይሎች ላይ የተቀመጡ ፋይሎች አሁንም ሊደረስባቸው ይችላል። እንዲሁም Google Drive በእዚህ መመሪያ አይነካም።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ ተጠቃሚዎች ሁሉንም አይነት የሚደገፉ የውጫዊ ማከማቻ በመሣሪያቸው ላይ ሊጠቀሙ ይችላሉ።</string><string id="ExternalStorageReadOnly">Treat external storage devices as read-only</string><string id="ExternalStorageReadOnly_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ ተጠቃሚዎች በውጫዊ ማከማቻ መሣሪያዎች ላይ ምንም ነገር መጻፍ አይችሉም።
+
+ይህ ቅንብር ወደ ሐሰት ከተዋቀረ ወይም ካልተዋቀረ ተጠቃሚዎች በአካል ሊጻፍባቸው በሚችሉ ውጫዊ ማከማቻ መሣሪያዎች ላይ ፋይሎችን መፍጠር እና መቀየር ይችላሉ።
+
+የExternalStorageDisabled መመሪያ በዚህ መመሪያ ላይ የበላይነት ይኖረዋል - ExternalStorageDisabled ወደ እውነት ከተዋቀረ ሁሉም የውጫዊ ማከማቻ መዳረሻ ይሰናከልና ይህ መመሪያ በዚህ ምክንያት ችላ ይባላል።
+
+ተለዋዋጭ የዚህ መመሪያ ዳግም መታደስ በM56 እና ከዚያ በኋላ ባሉ ላይ ይደገፋል።</string><string id="ForceGoogleSafeSearch">Google SafeSearchን ያስገድዱ</string><string id="ForceGoogleSafeSearch_Explain">በGoogle ድር ፍለጋ ውስጥ የሚደረጉ መጠይቆች SafeSearch ገባሪ ሆኖ እንዲደረጉና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት ያስገድዳል።
+
+ይህን ቅንብር ካነቁ SafeSearch በGoogle ፍለጋ ውስጥ ሁልጊዜ ገባሪ ነው።
+
+ይህን ቅንብር ካሰናከሉት ወይም ዋጋ ካላስቀመጡለት SafeSearch በGoogle ፍለጋ ውስጥ ተፈጻሚ አይሆንም።</string><string id="ForceMaximizeOnFirstRun">በመጀመሪያ አሂድ ላይ የመጀመሪያውን አሳሽ መስኮት ይዘርጉ</string><string id="ForceMaximizeOnFirstRun_Explain">If this policy is set to true, Google Chrome will unconditionally maximize the first window shown on first run.
+If this policy is set to false or not configured, the decision whether to maximize the first window shown will be based on the screen size.</string><string id="ForceYouTubeRestrict">ዝቅተኛ የYouTube የተገደበ ሁኔታን ተፈጻሚ አድርግ</string><string id="ForceYouTubeRestrict_Explain">በYouTube ላይ ዝቅተኛ ደረጃ የተገደበ ሁኔታን ያስፈጽማል፣ እና ተጠቃሚዎችን
+ይበልጥ ያነሰ የተገደበ ሁነታን እንዳይመርጡ ይከላከላቸዋል።
+
+ይህ ቅንብር ወደ ጥብቅ በሚቀናበርበት ጊዜ በYouTube ላይ ጥብቅ የተገደበ ሁኔታ ሁልጊዜ እንደበራ ይሆናል።
+
+ይህ ቅንብር ወደ መለስተኛ ከተቀናበረ ተጠቃሚው በYouTube ላይ የመለስተኛ ደረጃ የተገደበ ሁኔታን እና
+ጥብቅ የተገደበ ሁኔታን ብቻ ለመምረጥ ይችላል፣ ነገር ግን የተገደበ ሁኔታን ማሰናከል አይችልም።
+
+ይህ ቅንብር ከጠፋ ወይም ምንም እሴት ካልተቀናበረ Google Chrome በYouTube ላይ የተገደበ ሁኔታን አያስፈጽምም። ግን እንደ የYouTube መመሪያዎች ያሉ ውጫዊ መመሪያዎች አሁንም የተገደበ ሁኔታን ሊያስፈጽሙ ይችላሉ።</string><string id="ForceYouTubeRestrict_Off">ጥብቅ የተገደበ ሁኔታን ለYouTube ተፈጻሚ አታድርግ</string><string id="ForceYouTubeRestrict_Moderate">በYouTube ላይ ቢያንስ መለስተኛ የተገደበ ሁኔታን ያስፈጽሙ</string><string id="ForceYouTubeRestrict_Strict">ጥብቅ የተገደበ ሁኔታን ለYouTube ተፈጻሚ አድርግ</string><string id="FullscreenAllowed">የሙሉ ማያ ገጽ ሁነታ ይፍቀዱ</string><string id="FullscreenAllowed_Explain">This policy controls the availability of fullscreen mode in which all Google Chrome UI is hidden and only web content is visible.
+
+If this policy is set to true or not not configured, the user, apps and extensions with appropriate permissions can enter fullscreen mode.
+
+If this policy is set to false, neither the user nor any apps or extensions can enter fullscreen mode.
+
+On all platforms except Google Chrome OS, kiosk mode is unavailable when fullscreen mode is disabled.</string><string id="Http09OnNonDefaultPortsEnabled">ነባሪ ባልሆኑ ወደቦች ላይ የHTTP/0.9 ድጋፍን ያነቃል</string><string id="Http09OnNonDefaultPortsEnabled_Explain">ይህ መመሪያ ከ80 ሌላ በሆኑ ወደቦች ላይ ለኤችቲቲፒ፣ እና ከ443 ሌላ በሆኑ ወደቦች ላይ ለኤችቲቲፒኤስ HTTP/0.9ን ያነቃል።
+
+ይህ መመሪያ በነባሪነት ይሰናከላል፣ እና ከነቃ ተጠቃሚዎችን ለደህንነት አደጋ https://crbug.com/600352 ያጋልጣል።
+
+ይህ መመሪያ ድርጅቶች ነባር አገልጋዮችን ከHTTP/0.9 ወደ ሌላ የማዛወር እድል ለመስጠት የታሰበ ነው፣ እና ለወደፊቱ ይወገዳል።
+
+ይህ መመሪያ ካልተዋቀረ HTTP/0.9 ነባሪ ባልሆኑ ወደቦች ላይ ይሰናከላል።</string><string id="IncognitoModeAvailability">የማንነትን የማያሳውቅ ሁነታ ተገኝነት</string><string id="IncognitoModeAvailability_Explain">ተጠቃሚው በGoogle Chrome ውስጥ ገጾች በስውር ሁነታ መክፈት ይችል ወይም አይችል እንደሆነ ይገልጻል።
+
+«ነቅቷል» ከተመረጠ ወይም መምሪያው እንዳልተዋቀረ ከተተወ ገጾች በስውር ሁነታ ሊከፈቱ ይችላሉ።
+
+«ተሰናክሏል» ከተመረጠ ገጾች በስውር ሁነታ ሊከፈቱ አይችሉም።
+
+«በግዳጅ» ከተመረጠ ገጾች በስውር ሁነታ ብቻ ነው ሊከፈቱ የሚችሉት።</string><string id="IncognitoModeAvailability_Enabled">ማንነትን የማያሳውቅ ሁነታ ይገኛል</string><string id="IncognitoModeAvailability_Disabled">ማንነት የማያሳውቅ ሁነታ ተሰናክሏል</string><string id="IncognitoModeAvailability_Forced">ማንነትን የማያሳውቅ ሁነታ ተገድዷል</string><string id="InstantTetheringAllowed">Allows Instant Tethering to be used.</string><string id="InstantTetheringAllowed_Explain">If this setting is enabled, users will be allowed to use Instant Tethering, which allows their Google phone to share its mobile data with their device.
+
+If this setting is disabled, users will not be allowed to use Instant Tethering.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="IsolateOrigins">ለተጠቀሱ ምንጮ የጣቢያ ማግለያን አንቃ</string><string id="IsolateOrigins_Explain">
+ማስታወሻ፦ ይህ መመሪያ የሙከራ ነው እና ተግባራዊነትን ሊሰብር ይችል ይሆናል!
+መመሪያው ከነቃ፣ በነጠላ ሰረዝ በተለያየው ዝርዝር ውስጥ እያንዳንዱ የተሰየመ
+ምንጭ በራሱ የሥራ ሂደት ይሄዳል። ይህ በተጨማሪ በንዑስ ጎራዎች የተሰየሙ
+ምንጮችን ያገላል፦ ለምሳሌ፦ https://example.com/ ን መጥቀስ
+በተጨማሪ https://foo.example.com/ እንደ
+https://example.com/ ጣቢያ አንድ አካል እንዲገል ምክንያት ይሆነዋል።
+ይህ መመሪያ ከተሰናከለ፣ የቅድመ ጣቢያ ማግለያ ሥራ ሂደት ሥነ አመክንዮ ተፈጻሚ ይሆናል።
+መመሪያው ካልተዋቀረ፣ ተጠቃሚው ይህን ቅንብር መለወጥ ይችላሉ።
+</string><string id="KeyPermissions">የቁልፍ ፍቃዶች</string><string id="KeyPermissions_Explain">የቅጥያዎች የኮርፓሬት ቁልፎች መድረሻን ይሰጣል።
+
+ቁልፎች በተዳደር መለያ ላይ የchrome.enterprise.platformKeys ኤፒአይን በመጠቀም የመነጩ ከሆኑ ለኮርፓሬት መጠቀም የተመደቡ ናቸው። በሌላ መንገድ የመጡ ወይም የመነጩ ቁልፎች ለኮርፓሬት መጠቀም የተመደቡ አይደሉም።
+
+ለኮርፓሬት መጠቀም የተመደቡ ቁልፎች መዳረሻ በዚህ መመሪያ በብቸኝነት ቁጥጥር የሚደረግበት ነው። ተጠቃሚው የኮርፖሬት ቁልፎች መዳረሻ ለቅጥያዎች መስጠትም ሆነ ከቅጥያዎች መንጠቅ አይችልም።
+
+በነባሪነት አንድ ቅጥያ ለኮርፓሬት መጠቀም የተመደበ ቁልፍ መጠቀም አይችልም፣ ይህም የallowCorporateKeyUsage ቅንብር ለዚያ ቅጥያ ወደ ሐሰት ከማዋቀር ጋር እኩል ነው።
+
+allowCorporateKeyUsage ለአንድ ቅጥያ ወደ እውነት ሲዋቀር ብቻ ነው የዘፈቀደ ውሂብን ለመፈረም ለኮርፓሬት መጠቀም የተመደበ ማንኛውም የመሣሪያ ስርዓት ቁልፍ ሊጠቀም የሚችለው። ይህ ፍቃድ መሰጠት ቅጥያው አጥቂዎች እንዳያጠቁት የቁልፉን መዳረሻ ደህንነት እንደሚጠብቅ የሚታመን ሲሆን ብቻ ነው።</string><string id="ManagedBookmarks">የተዳደሩ እልባቶች</string><string id="ManagedBookmarks_Explain">Configures a list of managed bookmarks.
+
+The policy consists of a list of bookmarks whereas each bookmark is a dictionary containing the keys &quot;name&quot; and &quot;url&quot; which hold the bookmark's name and its target. A subfolder may be configured by defining a bookmark without an &quot;url&quot; key but with an additional &quot;children&quot; key which itself contains a list of bookmarks as defined above (some of which may be folders again). Google Chrome amends incomplete URLs as if they were submitted via the Omnibox, for example &quot;google.com&quot; becomes &quot;https://google.com/&quot;.
+
+These bookmarks are placed in a folder that can't be modified by the user (but the user can choose to hide it from the bookmark bar). By default the folder name is &quot;Managed bookmarks&quot; but it can be customized by adding to the list of bookmarks a dictionary containing the key &quot;toplevel_name&quot; with the desired folder name as the value.
+
+Managed bookmarks are not synced to the user account and can't be modified by extensions.</string><string id="MaxInvalidationFetchDelay">ከመመሪያ ዋጋ ማሳጣት በኋላ ከፍተኛ የማግኛ መዘግየት</string><string id="MaxInvalidationFetchDelay_Explain">የመመሪያ ዋጋ ማሳጣት በመቀበል እና አዲሱን መመሪያ ከመሳሪያ አስተዳደር አገልግሎት በማስመጣት መካከል ያለውን ከፍተኛውን መዘግየት በሚሊሰከንዶች ይገልጻል።
+
+ይህንን መመሪያ ማዘጋጀት ነባሪ ዋጋ የነበረውን 5000 ሊሰከንዶች ይሽራል። ለዚህ መመሪያ ልክ የሆኑት ዋጋዎች ከ1000 (1 ሴኮንድ) እስከ 300000 (5 ደቂቃዎች) ክልል ውስጥ ናቸው። በዚህ ክልል ውስጥ ያልሆኑ ማናቸውም ዋጋዎች ወደክልሉ ድንበሮች ይከረከማሉ።
+
+ይህ መመሪያ እንዳልተዘጋጀ መተው Google Chrome ነባሪውን 5000 ሚሊሰከንዶች ዋጋ እንዲጠቀም ያደርገዋል።</string><string id="NativePrinters">ቤተኛ ህትመት</string><string id="NativePrinters_Explain">Configures a list of printers.
+
+This policy allows administrators to provide printer configurations for
+their users.
+
+display_name and description are free form strings that can be customized for ease of printer selection. manufacturer and model serve to ease printer identification by end users. They represent the manufacturer and model of the printer. uri should be an address reachable from a client computer including the scheme, port, and queue. uuid is optional.  If provided, it is used to help deduplicate zeroconf printers.
+
+effective_model must match one of the strings which represent a Google Chrome OS supported printer. The string will be used to identify and install the appropriate PPD for the printer. More information can be found at https://support.google.com/chrome?p=noncloudprint.
+
+Printer setup is completed upon the first use of a printer.  PPDs are not
+downloaded until the printer is used.  After that time, frequently used
+PPDs are cached.
+
+This policy has no effect on whether users can configure printers on
+individual devices.  It is intended to be supplementary to the
+configuration of printers by individual users.</string><string id="NativePrintersDesc">ቤተኛ ህትመት</string><string id="NativePrintersBulkAccessMode">የአታሚ ውቅረት መዳረሻ መመሪያ።</string><string id="NativePrintersBulkAccessMode_Explain">የትኛዎቹ የNativePrintersBulkConfiguration አታሚዎች ለተጠቃሚዎች የሚገኙ እንደሆኑ ይቆጣጠራል።
+
+የትኛው የመዳረሻ መመሪያ ለጅምላ አታሚ ውቅረት ስራ ላይ እንደሚውል ይሰይማል። AllowAll ከተመረጠ ሁሉም አታሚዎች ይታያሉ። BlacklistRestriction ከተመረጠ NativePrintersBulkBlacklist የተገለጹት አታሚዎች መዳረሻን ለመገደብ ስራ ላይ ይውላል። WhitelistPrintersOnly ከተመረጠ NativePrintersBulkWhitelist ሊመረጡ የሚችሉ አታሚዎችን ብቻ ነው የሚሰይመው።
+
+ይህ መመሪያ ካልተዋቀረ BlacklistRestriction ስራ ላይ እንደዋለ ይታሰባል።
+</string><string id="NativePrintersBulkAccessMode_BlacklistRestriction">በተከለከሉ ዝርዝር ውስጥ ካሉ በስተቀር ሁሉም አታሚዎች ይታያሉ።</string><string id="NativePrintersBulkAccessMode_WhitelistPrintersOnly">በተፈቀደላቸው ዝርዝር ውስጥ ያሉ አታሚዎች ብቻ ናቸው ለተጠቃሚዎች የሚታዩት</string><string id="NativePrintersBulkAccessMode_AllowAll">በውቅረቱ ፋይል ውስጥ ያሉ ሁሉም አታሚዎችን ይፍቀዱላቸው</string><string id="NativePrintersBulkBlacklist">የድርጅት አታሚዎች ተሰናክለዋል</string><string id="NativePrintersBulkBlacklist_Explain">ተጠቃሚው ሊጠቀምባቸው የማይችላቸውን አታሚዎች ይገልጻል።
+
+ይህ መመሪያ ስራ ላይ የሚውለው BlacklistRestriction ለNativePrintersBulkAccessMode ከተመረጠ ብቻ ነው።
+
+ይህ መመሪያ ስራ ላይ ከዋለ በዚህ መመሪያ ውስጥ ከተጠቀሱት መታወቂያዎች በስተቀር ሁሉም አታሚዎች ለተጠቃሚው ይቀርባሉ።
+</string><string id="NativePrintersBulkBlacklistDesc">የድርጅት አታሚዎች ተሰናክለዋል</string><string id="NativePrintersBulkConfiguration">የድርጅት አታሚ ውቅረት ፋይል</string><string id="NativePrintersBulkConfiguration_Explain">ለድርጅት አታሚዎች ውቅረቶችን ያቀርባል።
+
+ይህ መመሪያ የአታሚ ውቅረቶችን ለGoogle Chrome OS መሣሪያዎች እንዲያቀርቡ ያስችልዎታል። የፋይሉ መጠን ከ5 ሜባ መብለጥ የለበትም፣ እና በJSON ኮድ ነው መቀመጥ ያለበት።  ቅርጸቱ ከNativePrinters መዝገበ-ቃላት ጋር ተመሳሳይ ነው። 21,000 አካባቢ አታሚዎች ያለው ፋይል እንደ የ5 ሜባ ኮድ ፋይል ሆኖ እንደሚቀመጥ ይገመታል። ስነ-መሰውራዊ ሃሹ የውርዱ ትክክለኝነት ለማረጋገጥ ስራ ላይ የሚውል ነው።
+
+ፋይሉ ይወርድና ይሸጎጣል። ዩአርኤሉ ወይም ሃሹ በተቀየረ ጊዜ ዳግም ይወርዳል።
+
+ይህ መመሪያ ከተዋቀረ Google Chrome OS ፋይሉን ለአታሚ ውቅረቶችን ያወርደውና አታሚዎች በNativePrintersBulkAccessMode፣ NativePrintersBulkWhitelist እና NativePrintersBulkBlacklist መሠረት የሚገኙ ያደርጋቸዋል።
+
+እርስዎ ይህን መመሪያ ካዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ ተጠቃሚዎች አታሚዎችን በተናጠል መሣሪያዎች ላይ ማዋቀር ይችሉ እንደሆነ ላይ ምንም ተጽዕኖ የለውም። ይሄ ግለሰብ ተጠቃሚዎች ለሚያደርጓቸው የአታሚዎች ውቅረት እንደ ማሟያ እንዲሆን የታሰበ ነው።
+</string><string id="NativePrintersBulkWhitelist">የድርጅት አታሚዎች ነቅተዋል</string><string id="NativePrintersBulkWhitelist_Explain">ተጠቃሚው ሊጠቀምባቸው የሚችላቸው አታሚዎችን ይገልጻል።
+
+ይህ መመሪያ ስራ ላይ የሚውለው WhitelistPrintersOnly ለNativePrintersBulkAccessMode ከተመረጠ ብቻ ነው።
+
+ይህ መመሪያ ስራ ላይ ከዋለ በዚህ መመሪያ ውስጥ ካሉ እሴቶች የሚዛመዱ መታወቂያዎች ያላቸው አታሚዎች ብቻ ናቸው ለተጠቃሚው የሚገኙት። መታወቂያዎቹ በNativePrintersBulkConfiguration ውስጥ በተገለጸው ፋይል ላይ ካሉት ግቤቶች ጋር የሚዛመዱ መሆን አለባቸው።
+</string><string id="NativePrintersBulkWhitelistDesc">የድርጅት አታሚዎች ነቅተዋል</string><string id="NetworkPredictionOptions">የአውታረ መረብ ግምትን ያንቁ</string><string id="NetworkPredictionOptions_Explain">በGoogle Chrome ውስጥ የአውታረ መረብ ግምትን ያነቃል እና ተጠቃሚዎች ይህንን ቅንብር እንዳይለውጡ ይከላከላል።
+
+ይህ የዲኤንኤስ ቅድሚያ ማስመጣትን፣ የድረ-ገጾች  TCP እና SSL ቅድመ- ግንኙነትን እና ቅድመ-ምስር ስራን ይቆጣጠራል።
+
+ይህን ምርጫ ወደ «ሁልጊዜ»፣ «በፍጹም» ወይም «WiFi ብቻ» ካዋቀሩት ተጠቃሚዎች በGoogle Chrome ውስጥ ይህን ቅንብር መለወጥ ወይም መሻር አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የአውታረ መረብ ግምት ይነቃል፣ ሆኖም ግን ተጠቃሚው ሊለውጠው ይችላል።</string><string id="NetworkPredictionOptions_NetworkPredictionAlways">በማንኛውም የአውታረ መረብ ግንኙነት ላይ አውታረ መረብ ድርጊቶችን ይገምቱ</string><string id="NetworkPredictionOptions_NetworkPredictionWifiOnly">የተንቀሳቃሽ ስልክ ባልሆነ ማንኛውም አውታረ መረብ ላይ የአውታረ መረብ እርምጃዎችን ገምት።
+(በ50 ውስጥ የተቋረጠ፣ በ52 ውስጥ የተወገደ። ከ52 በኋላ እሴቱ 1 ከተዘጋጀ 0 እንደሆነ ነው የሚቆጠረው - በማንኛውም የአውታረ መረብ ግንኙነት ላይ የአውታረ መረብ እርምጃዎችን ገምት።)</string><string id="NetworkPredictionOptions_NetworkPredictionNever">በማንኛውም የአውታረ መረብ ግንኙነት ላይ አውታረ መረብ ድርጊቶችን አይገምቱ</string><string id="NoteTakingAppsLockScreenWhitelist">በGoogle Chrome OS ማያ ገጽ ቁልፍ ላይ የተፈቀዱ ማስታወሻ የሚወስዱ መተግበሪያዎች በተፈቀደላቸው ዝርዝር ውስጥ ያስገቡ</string><string id="NoteTakingAppsLockScreenWhitelist_Explain">በGoogle Chrome OS ማያ ገጽ ቁልፍ ላይ እንደ ማስታወሻ መውሰጃ መተግበሪያ ሊነቁ የሚችሉ የመተግበሪያዎች ዝርዝርን ይገልጻል።
+
+ተመራጩ የማስታወሻ መውሰጃ መተግበሪያ በማያ ገጽ ቁልፍ ላይ ከነቃ የማያ ገጽ ቁልፉ ተመራጩን የማስታወሻ መውሰጃ መተግበሪያን ለማስጀመር የዩአይ አባለ ነገር በውስጡ ይይዛል።
+እንዲጀምር ሲደረግ መተግበሪያው በማያ ገጽ ቁልፉ አናት ላይ የመተግበሪያ መስኮትን መክፈት እና የውሂብ ንጥሎችን (ማስታወሻዎችን) በማያ ገጽ ቁልፉ አውድ ውስጥ መፍጠር ይችላል። መተግበሪያው የተፈጠሩ ማስታወሻዎችን የዋናው ተጠቃሚ ክፍለ ጊዜው ሲከፈት እሱ ማስመጣት ይችላል። በአሁኑ ጊዜ የChrome ማስታወሻ መውሰጃ መተግበሪያዎች ብቻ ናቸው በማያ ገጽ ቁልፉ ላይ የተፈቀደላቸው።
+
+መመሪያው ከተዋቀረ ተጠቃሚው አንድ መተግበሪያ በማያ ገጽ ቁልፉ ላይ ማንቃት የሚችለው የመተግበሪያው ቅጥያ መታወቂያ በመመሪያው የዝርዝር እሴት ውስጥ ካለ ብቻ ነው።
+በዚህ ምክንያት ይህን መመሪያ ወደ ባዶ ዝርዝር ማዋቀር በማያ ገጽ ቁልፍ ላይ ማስታወሻ መውሰጃን ሙሉ በሙሉ እንዲሰናከል ያደርገዋል።
+የመተግበሪያ መታወቂያን በውስጡ የያዘ መመሪያ ስላለው ብቻ ተጠቃሚው መተግበሪያውን በማያ ገጽ ቁልፉ ላይ እንደ ማስታወሻ ወሳጅ መተግበሪያ አድርጎ ሊያነቃው ይችላል ማለት እንዳልሆነ ልብ ይበሉ - ለምሳሌ፣ በChrome 61 ላይ የሚገኙ መተግበሪያዎች ስብስብ በተጨማሪም በመሣሪያ ስርዓቱ የተገደበ ነው።
+
+መተግበሪያው እንዳልተዋቀረ ከተተወ ተጠቃሚው በማያ ገጽ ላይ ለማብራት የሚችላቸው የመተግበሪያዎች ስብስብ ላይ በመመሪያው የሚቀመጡ ምንም ዓይነት ገደቦች አይኖሩም።</string><string id="NoteTakingAppsLockScreenWhitelistDesc">በGoogle Chrome OS ማያ ገጽ ቁልፍ ላይ የተፈቀዱ ማስታወሻ የሚወስዱ መተግበሪያዎች በተፈቀደላቸው ዝርዝር ውስጥ ያስገቡ</string><string id="OpenNetworkConfiguration">የተጠቃሚ-ደረጃ የአውታረ መረብ ውቅር</string><string id="OpenNetworkConfiguration_Explain">የአውታረ መረብ ውቅር መግፋት በእያንዳንዱ ተጠቃሚ በGoogle Chrome OS መሣሪያ ላይ እንዲተገበር ያስችላል። የአውታረ መረቡ ውቅር በhttps://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration ላይ እንደተብራራው በክፍት አውታረ መረብ ውቅር ቅርጸት የተገለጸ የJSON ቅርጸት ህብረቁምፊ ነው</string><string id="PacHttpsUrlStrippingEnabled">PAC መላጥ ያንቁ (for https://)</string><string id="PacHttpsUrlStrippingEnabled_Explain">Google Chrome የhttps:// URLዎችን በተኪ መፍትሔ ጊዜ ወደሚጠቀምባቸው የPAC ስክሪፕቶች (ተኪ ራስ-ውቅር) ከማሳለፉ በፊት ግላዊነት እና ደህንነት ያገናዘቡ ክፍሎችን ይቀንሳቸዋል።
+
+እውነት ሲሆን የደህንነት ባህሪው ይነቃል፣ እና የhttps:// URLዎች
+ወደ የPAC ስክሪፕት ከመግባታቸው በፊት ይቀነሳሉ። በዚህ መንገድ የPAC
+ስክሪፕቱ በተለምዶ በተመሰጠረ ሰርጥ የሚጠበቅ ውሂብ (እንደ
+ዩአርኤሎች ዱካ እና መጠይቅ ያለ) መመልከት አይችልም።
+
+ሐሰት ሲሆን የደህንነት ባህሪው ይሰናከላል፣ እና የPAC ስክሪፕቶች
+ሁሉንም የhttps://URL ክፍለ አካሎች ለማየት የሚያችላቸውን ችሎታ
+በውስጥ ታዋቂነት ይጎናጸፋሉ። ይህ ምንጫቸው የትም ይሁን (ደህንነቱ ካልተጠበቀ
+መጓጓዣ የተገኙትን ወይም ደህንነቱ ባልተጠበቀ መልኩ በWPAD በኩል
+የተገኙትን ጨምሮ) በሁሉም የPAC ስክሪፕቶች ተፈጻሚነት ይኖረዋል።
+
+ይሄ ነባሪው እውነት ይሆናል (ደህንነት ባህሪ የነቃባቸው)፣ በአሁኑ ጊዜ ነባሪው ሐሰት
+ከሚሆኑት ከChrome OS ኢንተርፕራይዝ ተጠቃሚዎች በስተቀር።
+
+ይህ እውነት ሆኖ እንዲዋቀር ይመከራል። ወደ ሐሰት ሊቀናበር የሚችልበት ብቸኛው ምክንያት
+ከነባር የPAC ስክሪፕቶች ጋር የተኳሃኝነት ችግር በሚፈጥርበት ጊዜ ነው።
+
+የተፈለገው ይህን መሻሪያ ወደፊት ለማስወገድ ነው።</string><string id="PinnedLauncherApps">በአስጀማሪው ላይ የሚያዩ የተሰኩ መተግበሪያዎች ዝርዝር</string><string id="PinnedLauncherApps_Explain">Google Chrome OS በአስጀማሪው አሞሌ ላይ እንደ የተሰኩ መተግበሪያዎች አድርጎ የሚያሳያቸውን የመተግበሪያዎች ለዪዎችን ይዘረዝራል።
+
+ይህ መመሪያ ከተዋቀረ የመተግብሪያዎቹ ስብስብ ቋሚ እና በተጠቃሚው ሊቀየሩ የሚችሉ አይደሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ተጠቃሚው በአስጀማሪው ላይ ያሉ የተሰኩ መተግበሪያዎች ዝርዝሩን ሊቀይሩት ይችላል።</string><string id="PinnedLauncherAppsDesc">በአስጀማሪው ላይ የሚያዩ የተሰኩ መተግበሪያዎች ዝርዝር</string><string id="PolicyRefreshRate">የተጠቃሚ መመሪያ እድሳት ፍጥነት</string><string id="PolicyRefreshRate_Explain">የመሣሪያው አስተዳደር አገልግሎት ለተጠቃሚ መመሪያ መረጃ የተጠየቀበትን ክፍለ-ጊዜ በሚሊሰክንዶች ያስቀምጣል።
+
+ይህን መመሪያ ማዋቀር ነባሪውን የ3 ሰዓቶች እሴት ይሽራል። ለዚህ መመሪያ የሚሆኑ የሚሠሩ እሴቶች ከ1800000 (30 ደቂቃዎች) እስከ 86400000 (1 ቀን) ባለው ክልል ውስጥ ናቸው። በዚህ ክልል ውስጥ ያልሆኑ ማንኛቸውም እሴቶች ወደ የሚመለከተው ድንበር እንዲጠጋጉ ይደረጋሉ። የመሣሪያ ስርዓቱ የመመሪያ ማሳወቂያዎችን የሚደግፍ ከሆነ፣ የማደሻ መዘግየት ጊዜው ወደ 24 ሰዓታት ይዋቀራል፤ ይህም የሆነበት ምክንያት የመመሪያ ማሳወቂያዎች መመሪያ በተለወጠ ቁጥር በራስ-ሰር ማደስን እንደሚያስገድዱ ስለሚጠበቅ ነው።
+
+ይህን መመሪያ እንዳልተዋቀረ መተው Google Chrome ነባሪውን የ3 ሰዓቶች እሴት እንዲጠቀም ያደርገዋል።
+
+የመሣሪያ ስርዓቱ የመመሪያ ማሳወቂያዎችን የሚደግፍ ከሆነ የማደሻ መዘግየት ጊዜው (ሁሉንም ነባሪዎች እና የዚህን መመሪያ እሴት ችላ ተብለው) ወደ 24 ሰዓታት እንደሚዋቀር ልብ ይበሉ፤ ይህም የሆነበት ምክንያት የመመሪያ ማሳወቂያዎች መመሪያ በተለወጠ ቁጥር በራስ-ሰር ማደስን እንደሚያስገድድ ስለሚጠበቅ ነው፣ በዚህም ተደጋጋሚ ማደሶች አላስፈላጊ ይሆናሉ።</string><string id="PrintingEnabled">ማተምን ያንቁ</string><string id="PrintingEnabled_Explain">በGoogle Chrome ውስጥ ማተምን የሚያነቃና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት የሚያግድ ነው።
+
+ይህ ቅንብር ከነቃ ወይም ካልተዋቀረ ተጠቃሚዎች ሊያትሙ ይችላሉ።
+
+ይህ ቅንብር ከተሰናከለ ተጠቃሚዎች ከGoogle Chrome ማተም አይችሉም። ማተም በመፍቻ ምናሌው፣ ቅጥያዎች፣ የጃቫስክሪፕት መተግበሪያዎች ውስጥ፣ ወዘተ. ተሰናክሏል። አሁንም በማተም ላይ ሳሉ Google Chromeን አልፈው ከሚሄዱ ተሰኪዎች ማተም ይቻላል። ለምሳሌ፣ የተወሰኑ የFlash መተግበሪያዎች በአውድ ምናሌያቸው ውስጥ በዚህ መመሪያ ያልተሸፈነ የአትም አማራጭ አላቸው።</string><string id="QuicAllowed">የQUIC ፕሮቶኮል ይፈቅዳል</string><string id="QuicAllowed_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ ወይም ካልተዋቀረ በGoogle Chrome ውስጥ የQUIC ፕሮቶኮል መጠቀም ይፈቀዳል።
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ የQUIC ፕሮቶኮል መጠቀም ይፈቀዳል።</string><string id="RebootAfterUpdate">ከዝማኔ በኋላ በራስ-ዳግም አስጀምር</string><string id="RebootAfterUpdate_Explain">የGoogle Chrome OS ዝማኔ ከተተገበረ በኋላ ራስ-ሰር ዳግም መጀመር መርሐግብር ያስይዙ።
+
+ይህ መመሪያ ወድ እውነት ሲዋቀር አንድ የGoogle Chrome OS ዝማኔ ሲተገበርና የዝማኔ ሂደቱን ለማጠናቀቅ አንድ ዳግም ማስጀመር የሚያስፈልግ ከሆነ አንድ ራስ-ሰር ዳግም መጀመር ይታቀዳል። ዳግም ማስጀመሩ ወዲያውኑ ነው የጊዜ መርሐግብር የሚያዝለት፣ ነገር ግን ተጠቃሚው አሁን መሣሪያውን እየተጠቀመበት ከሆነ እስከ 24 ሰዓቶች ድረስ ሊዘገይ ይችላል።
+
+ይህ መመሪያ ወደ ሐሰት ሲዋቀር አንድ የGoogle Chrome OS ዝማኔ ከተተገበረ በኋላ ምንም ራስ-ሰር ዳግም መጀመር መርሐግብ አይያዝም። የዝማኔ ሂደቱ የሚጠናቀቀው ተጠቃሚው መሣሪያውን ዳግም በሚያስጀምርበት ቀጣዩ ጊዜ ነው።
+
+ይህ መመሪያ ከአዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ማሳሰቢያ፦ በአሁኑ ጊዜ ራስ-ሰር ዳግም መጀመሮች የሚነቁት የመግቢያ ገጹ በሚታይበት ወይም የሱቅ መተግበሪያ ክፍለ-ጊዘ በሂደት ላይ ሲሆኑ ብቻ ነው።  ይሄ ወደፊት የሚቀየርና መመሪያው ሁልጊዜ የሚተገበር ነው፣ የማንኛውም አይነት ክፍለ-ጊዜ በሂደት ላይ ሆነም አልሆነ።</string><string id="RequireOnlineRevocationChecksForLocalAnchors">የመስመር ላይ OCSP/CRL ፍተሻዎች ለአካባቢያዊ የእምነት መልሕቆች ይጠየቃሉ</string><string id="RequireOnlineRevocationChecksForLocalAnchors_Explain">ይህ ቅንብር ሲነቃ Google Chrome ሁልጊዜም በተሳካ ሁኔታ ለሚያረጋግጡ እና በአካባቢው በተጫኑ CA ምስክርነቶች ለተፈረሙ የአገልጋይ የምስክር ወረቀቶች የመሻር ፍተሻዎችን ያደርጋል።
+
+Google Chrome የመሻር ሁኔታ መረጃን ለማግኘት ካልቻለ እንደዚህ ያሉ የእውቅና ማረጋገጫዎች እንደተሻሩ («እንደወደቁ») ተደርገው ይወሰዳሉ።
+
+ይህ መመሪያ ካልተዋቀረ ወይም ወደ ሐሰት ከተዋቀረ Google Chrome የአሁኑን የመስመር ላይ የመሻር ፍተሻ ቅንብሮችን ይጠቀማል።</string><string id="RunAllFlashInAllowMode">የFlash ይዘት ቅንብር ወደ ሁሉም ይዘት ያስቀጥሉት</string><string id="RunAllFlashInAllowMode_Explain">ይህን ቅንብር ካነቁት በይዘት ቅንብሮች ውስጥ Flashን -- በተጠቃሚውም ሆነ በድርጅት መመሪያ -- እንዲፈቅዱ የተዋቀሩ ድር ጣቢያዎች ላይ የተከተቱ ሁሉም የFlash ይዘት እንዲያሄዱ ይደረጋሉ፣ ከሌሎች ምንጮች የመጣ ይዘት ወይም አነስተኛ ይዘትም ጨምሮ።
+
+የትኛዎቹ ድር ጣቢያዎች Flashን እንዲያሄዱ እንደተፈቀደላቸው ለመቆጣጠር የ«DefaultPluginsSetting»፣ «PluginsAllowedForUrls» እና «PluginsBlockedForUrls» መመሪያዎችን ይመልከቱ።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ ከሌሎች ምንጮች የመጣ የFlash ይዘት ወይም አነስተኛ ይዘት ሊታገዱ ይችላሉ።</string><string id="SAMLOfflineSigninTimeLimit">በኤስኤኤምኤል በኩል ማረጋገጫ የተሰጠው ተጠቃሚ ከመስመር ውጭ በመለያ መግባት የሚችልበት ጊዜ ይገድቡ</string><string id="SAMLOfflineSigninTimeLimit_Explain">During login, Google Chrome OS can authenticate against a server (online) or using a cached password (offline).
+
+When this policy is set to a value of -1, the user can authenticate offline indefinitely. When this policy is set to any other value, it specifies the length of time since the last online authentication after which the user must use online authentication again.
+
+Leaving this policy not set will make Google Chrome OS use a default time limit of 14 days after which the user must use online authentication again.
+
+This policy affects only users who authenticated using SAML.
+
+The policy value should be specified in seconds.</string><string id="SSLErrorOverrideAllowed">ከSSL ማስጠንቀቂያ ገጽ መቀጠልን ይፍቀዱ</string><string id="SSLErrorOverrideAllowed_Explain">ተጠቃሚዎች የSSL ስህተቶች ወዳለባቸው ጣቢያዎች ሲሄዱ Chrome የማስጠንቀቂያ ገጽ ያሳያል። በነባሪ ወይም ይህ መመሪያ ወደ እውነት ሲዋቀር ተጠቃሚዎች በእነዚህ ማስጠንቀቂያ ገጾችን ጠቅ አድርገው እንዲያልፏቸው ያስችላቸዋል።
+ይህንን መመሪያ ወደ ሐሰት ማዋቀር ተጠቃሚዎች ማንኛውም የማስጠንቀቂያ ገጽ ጠቅ አድርገው እንዳያልፉ ያግዳቸዋል።</string><string id="SSLVersionMax">የከፍተኛ ኤስኤስኤል ስሪት ነቅቷል</string><string id="SSLVersionMax_Explain">ማስጠንቀቂያ፦ ከፍተኛው የቲኤልኤስ ስሪት መመሪያ ስሪት 66 አካባቢ (ፌብሩዋሪ 2018 አካባቢ) ላይ ሙሉ ለሙሉ ከGoogle Chrome ይወገዳል።
+
+ይህ መመሪያ ካልተዋቀረ Google Chrome ነባሪውን ከፍተኛ ስሪት ይጠቀማል።
+
+አለበለዚያ ከሚከተሉት እሴቶች ውስጥ ወደ አንዱ ሊዋቀር ይችላል፦ «tls1.2» ወይም «tls1.3»። ሲዋቀር Google Chrome ከተገለጸው ስሪት በላይ የሆነው የኤስኤስኤል/ቲኤልኤስ ስሪቶችን አይጠቀምም። ያልታወቀ እሴት ችላ ይባላል።</string><string id="SSLVersionMax_TLSv1_2">TLS 1.2</string><string id="SSLVersionMax_TLSv1_3">TLS 1.3</string><string id="SafeBrowsingEnabled">የደህንነት አሰሳን ያንቁ</string><string id="SafeBrowsingEnabled_Explain">የGoogle Chrome የጥንቃቄ አሰሳ ባህሪን የሚያነቃ እና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት የሚያግድ ነው።
+
+ይህን ቅንብር ካነቁት የጥንቃቄ አሰሳ ሁልጊዜ ገቢር ነው።
+
+ይህን ቅንብር ካሰናከሉት የጥንቃቄ አሰሳ በጭራሽ ገቢር አይሆንም።
+
+ይህን ቅንብር ካነቁት ወይም ካሰናከሉት ተጠቃሚዎች በGoogle Chrome ውስጥ ያለውን የ«የማስገር እና ተንኮል-አዘል ዌር ጥበቃን አንቃ» ቅንብሩን መቀየር ወይም መሻር አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ይሄ ይነቃል፣ ነገር ግን ተጠቃሚው ሊቀይረው ይችላል።
+
+በSafeBrowsing ላይ ተጨማሪ መረጃ ለማግኘት https://developers.google.com/safe-browsing ን ይመልከቱ።</string><string id="SafeBrowsingExtendedReportingOptInAllowed">ተጠቃሚዎች የጥንቃቄ አሰሳ የተቀጠለ ሪፓርት ማድረግ ውስጥ መርጠው እንዲገቡ ይፍቀዱ</string><string id="SafeBrowsingExtendedReportingOptInAllowed_Explain">ይህን ቅንብር ወደ ሐሰት ማዋቀር ተጠቃሚዎች የሆነ የስርዓት መረጃ እና የገጽ ይዘት ወደ የGoogle አገልጋዮች ለመላክ እንዳይመርጡ ያቆማቸዋል። ይህ ቅንብር ወደ እውነት ከተዋቀረ ወይም ካልተዋቀረ አደገኛ መተግበሪያዎችን እና ጣቢያዎችን እንዲገኙ ለማገዝ ተጠቃሚዎች የተወሰነ የስርዓት መረጃ እና የገጽ ይዘት ወደ የጥንቃቄ አሰሳ እንዲልኩ ይፈቀድላቸዋል።
+
+በSafeBrowsing ላይ ተጨማሪ መረጃ ለማግኘት https://developers.google.com/safe-browsing ን ይመልከቱ።</string><string id="SavingBrowserHistoryDisabled">የአሰሳ ታሪክ ማስቀመጥን ያሰናክሉ</string><string id="SavingBrowserHistoryDisabled_Explain">በGoogle Chrome ውስጥ የአሰሳ ታሪክን ማስቀመጥ ያሰናክላል፣ እና ተጠቃሚዎችን ይህን ቅንብር እንዳይቀይሩ ይከለክላል።
+
+ይህ ቅንብር ከነቃ የአሰሳ ታሪክ አይቀመጥም። ይህ ቅንብር እንዲሁም የትር ስምረትን ያሰናክላል።
+
+ይህ ቅንብር ከተሰናከለ ወይም ካልተዋቀረ የአሰሳ ታሪክ አይቀመጥም።</string><string id="SearchSuggestEnabled">የፍለጋ ጥቆማ አስተያየቶችን ያንቁ</string><string id="SearchSuggestEnabled_Explain">በGoogle Chrome ኦምኒቦክሱ ውስጥ የፍለጋ ጥቆማ አስተያየቶችን የሚያነቃ እና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት የሚያግድ ነው።
+
+ይህን ቅንብር ካነቁ የፍለጋ ጥቆማ አስተያየቶች ስራ ላይ ይውላሉ።
+
+ይህን ቅንብር ካሰናከሉ የፍለጋ ጥቆማ አስተያየቶች በጭራሽ ስራ ላይ አይውሉም።
+
+ይህን ቅንብር ካነቁ ወይም ካሰናከሉ ተጠቃሚዎች ይህን ቅንብር በGoogle Chrome ውስጥ ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ይሄ ይነቃል ግን ተጠቃሚው ሊቀይረው ይችላል።</string><string id="SessionLengthLimit">Limit the length of a user session</string><string id="SessionLengthLimit_Explain">When this policy is set, it specifies the length of time after which a user is automatically logged out, terminating the session. The user is informed about the remaining time by a countdown timer shown in the system tray.
+
+When this policy is not set, the session length is not limited.
+
+If you set this policy, users cannot change or override it.
+
+The policy value should be specified in milliseconds. Values are clamped to a range of 30 seconds to 24 hours.</string><string id="SessionLocales">የአንድ ይፋዊ ክፍለ-ጊዜ የሚመከሩ አካባቢዎችን ያዋቅሩ</string><string id="SessionLocales_Explain">አንድ ወይም ተጨማሪ የሚመከሩ አካባቢዎችን ለአንድ ይፋዊ ክፍለ-ጊዜ ያዘጋጃል፣ በዚህም ተጠቃሚዎች ከእነዚህ አካባቢዎች ውስጥ አንዱን በቀላሉ እንዲመርጡ ያስችላቸዋል።
+
+ተጠቃሚው ይፋዊ ክፍለ-ጊዜ ከመጀመሩ በፊት አንድ አካባቢና የቁልፍ ሰሌዳ አቀማመጥ መምረጥ ይችላል። በነባሪነት ሁሉም አካባቢዎች በGoogle Chrome OS የሚደገፉ ሲሆኑ በፊደል ቅደም-ተከተል የተዘረዘሩ ናቸው። የሚመከሩ የአካባቢዎች ስብስብ ወደ የዝርዝሩ ላይኛው ክፍል ለመውሰድ ይህን መመሪያ መጠቀም ይችላሉ።
+
+ይህ መመሪያ ካልተዋቀረ የአሁኑ በይነገጽ አካባቢ ቅድሚያ ይመረጣል።
+
+ይህ መመሪያ ከተዋቀረ የሚመከሩ አካባቢዎች ወደ የዝርዝሩ ላይኛው ክፍል ይወሰዱና ከሌሎች አካባቢዎች በምስላዊ ሁኔታ ይለያሉ። የሚመከሩት አካባቢዎች በመመሪያው ውስጥ በሚታዩበት ቅደም-ተከተል መሠረት ይዘረዘራሉ። የመጀመሪያው የሚመከረው አካባቢ ቅድሚያ ይመረጣል።
+
+ከአንድ በላይ የሚመከር አካባቢ ካለ ተጠቃሚዎች ከእነዚህ አካባቢዎች ውስጥ መምረጥ ይፈልጋሉ ተብሎ ይታሰባል። ይፋዊ ክፍለ-ጊዜ ሲጀመር የአካባቢ እና የቁልፍ ሰሌዳ አቀማመጥ ምርጫ በዋናነት ይቀርባሉ። አለበለዚያ አብዛኛዎቹ ተጠቃሚዎች ቅድሚያ የተመረጠውን አካባቢ ነው መጠቀም የሚፈልጉት ተብሎ ይወሰዳል። ይፋዊ ክፍለ-ጊዜ ሲጀመር የአካባቢ እና የቁልፍ ሰሌዳ አቀማመጥ ምርጫ ባነሰ ትኩረት ይቀርባል።
+
+ይህ መመሪያ ሲዋቀርና ራስ-ሰር መግባት ሲነቃ (የ |DeviceLocalAccountAutoLoginId| እና |DeviceLocalAccountAutoLoginDelay| መመሪያዎችን ይመልከቱ) በራስ-ሰር የተጀመረው ይፋዊ ክፍለ-ጊዜ የመጀመሪያውን የሚመከር አካባቢና ከዚህ አካባቢ ጋር የሚዛመደውን በጣም ታዋቂ የቁልፍ ሰሌዳ አቀማመጡን ይጠቀማል።
+
+ቅድሚያ የተመረጠው የቁልፍ ሰሌዳ አቀማመጥ ሁልጊዜ ቅድሚያ ከተመረጠው አካባቢ ጋር የሚዛመደው በጣም ታዋቂው የቁልፍ ሰሌዳ አቀማመጥ ነው የሚሆነው።
+
+ይህ መመሪያ እንደ የሚመከር ብቻ ነው ሊዋቀር የሚችለው። የሚመከሩ አካባቢዎች ስብስብ ወደ ላይ ለመውሰድ ይህን መመሪያ መጠቀም ይችላሉ፣ ነገር ግን ተጠቃሚዎች ለክፍለ-ጊዜያቸው ሁልጊዜ በGoogle Chrome OS የሚደገፍ አካባቢ እንዲመርጡ ይፈቀድላቸዋል።
+</string><string id="SessionLocalesDesc">የአንድ ይፋዊ ክፍለ-ጊዜ የሚመከሩ አካባቢዎችን ያዋቅሩ</string><string id="ShelfAutoHideBehavior">የመደርደሪያ ራስ-መደበቅ ተቆጣጠር</string><string id="ShelfAutoHideBehavior_Explain">የGoogle Chrome OS መደርደሪያው ራስ-መደበቅ ይቆጣጠሩ።
+
+ይህ መመሪያ ወደ «AlwaysAutoHideShelf» ከተዋቀረ መደርደሪያው ሁልጊዜ በራስ-ይደበቃል።
+
+ይህ መመሪያ ወደ «NeverAutoHideShelf» ከተዋቀረ መደርደሪያው በጭራሽ በራስ-አይደበቅም።
+
+ይህንን መመሪያ ካዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+መመሪያው እንዳልተዋቀረ ከተተወ ተጠቃሚዎች መደርደሪያው በራስ-ይደበቅ እንደሆነ ሊመርጡ ይችላሉ።</string><string id="ShelfAutoHideBehavior_AlwaysAutoHideShelf">መደርደሪያውን ሁልጊዜ በራስ-ደብቅ</string><string id="ShelfAutoHideBehavior_NeverAutoHideShelf">መደርደሪያውን በጭራሽ በራስ-አትደብቅ</string><string id="ShowHomeButton">መነሻ አዝራር በመሳሪያ አሞሌው ላይ አሳይ</string><string id="ShowHomeButton_Explain">በGoogle Chrome መሣሪያ አሞሌ ላይ ያለውን የመነሻ አዝራር ያሳያል።
+
+ይህን ቅንብር ካነቁ የመነሻ አዝራር ሁልጊዜ ይታያል።
+
+ይህን ቅንብር ካሰናከሉ የመነሻ አዝራሩ በጭራሽ አይታይም።
+
+ይህን ቅንብር ካነቁ ወይም ካሰናከሉ ተጠቃሚዎች Google Chrome ውስጥ ይህን ቅንብር ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህን መመሪያ እንዳልተዋቀረ መተው ተጠቃሚው የመነሻ አዝራሩ ይታይ ወይም አይታይ እንደሆነ እንዲመርጥ ያስችለዋል።</string><string id="ShowLogoutButtonInTray">የመውጫ አዝራር በስርዓቱ መሣቢያ ላይ ያሳያል</string><string id="ShowLogoutButtonInTray_Explain">If enabled, a big, red logout button is shown in the system tray while a session is active and the screen is not locked.
+
+If disabled or not specified, no big, red logout button is shown in the system tray.</string><string id="SitePerProcess">የጣቢያ ማግለያን ለእያንዳንዱ ጣቢያ ያንቁ</string><string id="SitePerProcess_Explain">
+ማስታወሻ፦ ይህ መመሪያ የሙከራ ነው እና ተግባራዊነትን ሊሰብር ይችል ይሆናል!
+የሁለትን ዓለማት፣ ማግለያ እና የተወሰነ ተጽዕኖ ለተጠቃሚዎች፣ IsolateOriginsን ማግለል
+ከሚፈልጓቸው ጣቢያዎች ዝርዝር ጋር በመጠቀም IsolateOrigins መመሪያ ቅንብርን
+መመልከት ይፈልጉ ይሆናል። ይህ ቅንብር፣
+SitePerProcess፣ ሁሉንም ጣቢያዎች ያገላል።
+ይህ መመሪያ ካነቃ፣ እያንዳንዱ ጣቢያ በራሱ የሥራ ሂደት ይሄዳል።
+ይህ መመሪያ ከተሰናከለ፣ የቅድመ ጣቢያ ማግለያ ሥራ ሂደት ሥነ አመክንዮ ተፈጻሚ ይሆናል።
+መመሪያው ካልተዋቀረ፣ ተጠቃሚው ይህን ቅንብር መለወጥ ይችላሉ።
+</string><string id="SpellCheckServiceEnabled">የፊደል ማረም ድር አገልግሎት ያንቁ ወይም ያሰናክሉ</string><string id="SpellCheckServiceEnabled_Explain">Google Chrome የፊደል ስህተቶችን እንዲያርም ለማገዝ የGoogle ድር አገልግሎትን መጠቀም ይችላል። ይህ ቅንብር ከነቃ ይህ አገልግሎት ሁልጊዜ ስራ ላይ ይውላል። ይህ ቅንብር ከተሰናከለ ይህ አገልግሎት በጭራሽ ስራ ላይ አይውልም።
+
+ፊደል ማረም አሁንም የወረደ መዝገበ ቃላትን በመጠቀም ሊከናወን ይችላል፤ ይህ መመሪያ የመስመር ላይ አገልግሎቱ አጠቃቀም ብቻ ነው የሚቆጣጠረው።
+
+ይህ ቅንብር ካልተዋቀረ ተጠቃሚዎች የፊደል ማረም አገልግሎቱ ጥቅም ላይ ይውል እንደሆነ መምረጥ ይችላሉ።</string><string id="SuppressUnsupportedOSWarning">የማይደገፍ ሥርዓተ ክወና ማስጠንቀቂያን ያፍኑት</string><string id="SuppressUnsupportedOSWarning_Explain">Google Chrome በኮምፒውተር ላይ ወይም ከእንግዲህ በማይደገፍ የሥርዓተ ክወና ላይ በሚሄድበት ጊዜ ብቅ የሚለውን ማስጠንቀቂያ ያፍናል።</string><string id="SyncDisabled">የውሂብ ከGoogle ጋር መመሳሰል ያሰናክሉ</string><string id="SyncDisabled_Explain">በGoogle የተስተናገዱ የስምረት አገልግልቶችን በመጠቀም Google Chrome ውስጥ የውሂብ ስምረትን ያሰናክልና ተጠቃሚዎች ይህን ቅንብር እንዳይቀይሩት ያግዳል።
+
+ይህን ቅንብር ካነቁት ተጠቃሚዎች Google Chrome ውስጥ ይህን ቅንብር ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ ተጠቃሚው Google ስምረትን ይጠቀም ወይም አይጠቀም እንዲመርጥ ይገኝለታል።
+
+Google ስምረትን ሙሉ በሙሉ ለማሰናከል የGoogle ስምረትን አገልግሎትን በGoogle አስተዳዳሪ መሥሪያው ውስጥ እንዲያሰናክሉት ይመከራል።
+
+ባህሪው ተመሳሳዩን የደንበኛው ወገን ተግባር ስለሚጋራ የRoamingProfileSupportEnabled መመሪያ ወደ የነቃ የተዋቀረ እንደሆነ ይህ መመሪያ መንቃት የለበትም። በዚህ ሁኔታ ላይ በGoogle የሚስተናገድ ስምረት ሙሉ በሙሉ ይሰናከላል።</string><string id="SystemTimezone">የሰዓት ሰቅ</string><string id="SystemTimezone_Explain">ለመሣሪያው ሥራ ላይ የሚውለው የሰዓት ሰቅ ይገልጻል። ተጠቃሚዎች ለአሁኑ ክፍለ-ጊዜ የተገለጸውን ሰዓት ሰቅ መሻር ይችላሉ። ይሁንና፣ ተዘግቶ ሲወጣ ወደተገለጸው የሰዓት ሰቅ ይቀለበሳል። ልክ ያልሆነ እሴት ከተሰጠ መመሪያው አሁንም በምትኩ «ጂኤምቲ» በመጠቀም ገቢር ይሆናል። ባዶ ሕብረቁምፊ ከተሰጠ መመሪያው ችላ ይባላል።
+
+ይህ መመሪያ ሥራ ላይ ካልዋለ የአሁኑ ገቢር የሰዓት ሰቅ በሥራ ላይ እንዳለ ይቆያል፣ ይሁንና ተጠቃሚዎች የሰዓት ሰቁን ቀይረው ለውጡንም ቋሚ ማድረግ ይችላሉ። ስለዚህ፣ በአንድ ተጠቃሚ የተደረገ ለውጥ በመግቢያ ገጹ እና በሌሎች ተጠቃሚዎች ሁሉ ላይ ተጽዕኖ አለው።
+
+አዲስ መሣሪያዎች የሰዓት ሰቃቸው ወደ «አሜሪካ/ፓሲፊክ» ተዋቅሮ ይጀምራሉ።
+
+የእሴቱ ቅርጸት በ«IANA Time Zone Database» («https://en.wikipedia.org/wiki/Tz_database» ይመልከቱ) ውስጥ ያሉ የሰዓት ሰቆች ስሞችን ነው የሚከተለው። በተለይ ደግሞ አብዛኛዎቹ የሰዓት ሰቆች በ«አህጉር/ትልቅ_ከተማ» ወይም «ውቅያኖስ/ትልቅ_ከተማ» ሊጠቀሱ ይችላሉ።
+
+ይህን መመሪያ ማዋቀር የሰዓት ሰቅን በራስ-ሰር በመሣሪያ አካባቢ ማግኘትን ያሰናክላል። እንዲሁም የSystemTimezoneAutomaticDetection መመሪያውንም ይሽረዋል።</string><string id="SystemTimezoneAutomaticDetection">የራስ-ሰር ሰዓት ሰቅ ማወቂያ ስልቱን ያዋቅሩ</string><string id="SystemTimezoneAutomaticDetection_Explain">ይህ መመሪያ ሲዋቀር ራስ-ሰር የሰዓት ሰቅ ማወቅ ፍሰት በቅንብሩ እሴት ላይ የሚወሰን ሆኖ ከሚከተሉት መንገዶች ውስጥ አንዱ ይሆናል፦
+
+ወደ TimezoneAutomaticDetectionUsersDecide ከተዋቀረ ተጠቃሚዎች በchrome://settings ውስጥ ያሉ መደበኛ መቆጣጠሪያዎችን በመጠቀም ራስ-ሰር የሰዓት ሰቅ ማውቂያን መቆጣጠር ይችላሉ።
+
+ወደ TimezoneAutomaticDetectionDisabled ከተዋቀረ በchrome://settings ውስጥ ያሉ ራስ-ሰር የሰዓት ሰቅ ማወቂያ መቆጣጠሪያዎች ይሰናከላሉ። ራስ-ሰር የሰዓት ሰቅ ማወቂያ ሁልጊዜ ይጠፋል።
+
+ወደ TimezoneAutomaticDetectionIPOnly ከተዋቀረ በchrome://settings ውስጥ ያሉ የሰዓት ሰቅ መቆጣጠሪያዎች ይሰናከላሉ። ራስ-ሰር የሰዓት ሰቅ ማወቂያ ሁልጊዜ ይበራል። የሰዓት ሰቅ ማወቂያ አካባቢን ለማወቅ የአይፒ ብቻ ስልት ነው የሚጠቀመው።
+
+ወደ TimezoneAutomaticDetectionSendWiFiAccessPoints ከተዋቀረ በchrome://settings ውስጥ ያሉ የሰዓት ሰቅ መቆጣጠሪያዎች ይሰናከላሉ። ራስ-ሰር የሰዓት ሰቅ ማወቂያ ሁልጊዜ ይበራል። የሚታዩ የWiFi መዳረሻ ነጥቦች ዝርዝር ለተጣራ ትክክለኛ ሰዓት ሰቅ ማወቂያ ሁልጊዜ ለGeolocation ኤፒአይ አገልጋዩ ይላካል።
+
+ወደ TimezoneAutomaticDetectionSendAllLocationInfo ከተዋቀረ በchrome://settings ውስጥ ያሉ የጊዜ ሰቅ መቆጣጠሪያዎች ይሰናከላሉ። ራስ-ሰር የሰዓት ማወቂያ ሁልጊዜ ይበራል። የመገኛ አካባቢ መረጃ (እንደ  WiFi የመዳረሻ-ነጥቦች፣ ሊደረስባቸው የሚችሉ የሕዋስ ማማዎች፣ ጂፒኤስ) ለተጣራ የጊዜ ሰቅ ለይቶ ማወቅ ወደ አገልጋይ ይላካሉ።
+
+ይህ መመሪያ ካልተዋቀረ TimezoneAutomaticDetectionUsersDecide እንደተዋቀረ ሆኖ ይሠራል።
+
+የSystemTimezone መመሪያ ከተዋቀረ ይህን መመሪያ ይሽረዋል። በዚህ አጋጣሚ ራስ-ሰር የሰዓት ሰቅ ማወቂያው ሙሉ ለሙሉ ይሰናከላል።</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionUsersDecide">Let users decide</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionDisabled">Never auto-detect timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionIPOnly">Always use coarse timezone detection</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendWiFiAccessPoints">Always send WiFi access-points to server while resolving timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendAllLocationInfo">የጊዜ ሰቅ እየተፈታ ሳለ ሁልጊዜ ማንኛውም የሚገኝ የአካባቢ ሲግናሎችን ወደ አገልጋዩ ላክ</string><string id="SystemUse24HourClock">በነባሪነት ባለ 24 ሰዓት ሰዓት ይጠቀሙ</string><string id="SystemUse24HourClock_Explain">ለመሣሪያው ስራ ላይ የሚውለውን የሰዓት ቅርጸት ይገልጻል።
+
+ይህ መመሪያ በመግቢያ ገጹ ላይ እና በተጠቃሚ ክፍለ-ጊዜዎች ስራ ላይ የሚውለውን የሰዓት ቅርጸት ያዋቅራል። ተጠቃሚዎች ለመለያቸው የሰዓት ቅርጸቱን ሊሽሩት ይችላሉ።
+
+መመሪያው ወደ እውነት ከተዋቀረ መሣሪያው የ24 ሰዓት ቅርጸት ይጠቀማል። ወደ ሐሰት ከተዋቀረ የ12 ሰዓት ቅርጸት ይጠቀማል።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ መሣሪያው ወደ ነባሪው የ24 ሰዓት ቅርጸት ይሄዳል።</string><string id="TPMFirmwareUpdateSettings">የTPM ጽኑ ትዕዛዝ ዝማኔ ባህሪን ያዋቅሩ</string><string id="TPMFirmwareUpdateSettings_Explain">የTPM ጽኑ ትዕዛዝ ዝማኔ ተግባር ተገኝነትን እና ባህሪን ያዋቅራል።
+
+ተናጠል ቅንብሮች በJSON ልኬቶች ውስጥ ሊገለጹ ይችላሉ፦
+
+allow-user-initiated-powerwash፦ ወደ true ከተዋቀረ ተጠቃሚዎች የTPM ጽኑ ትዕዛዝ ዝማኔን ለመጫን የpowerwash ፍሰቱን መቀስቀስ ይችላሉ።
+
+መመሪያው ካልተዋቀረ የTPM ጽኑ ትዕዛዝ ዝማኔ ተግባሩ የሚገኝ አይሆንም።</string><string id="TaskManagerEndProcessEnabled">በተግባር አስተዳዳሪ ውስጥ ሂደቶችን ማጠናቀቅን ያነቃል</string><string id="TaskManagerEndProcessEnabled_Explain">If set to false, the 'End process' button is disabled in the Task Manager.
+
+If set to true or not configured, the user can end processes in the Task Manager.</string><string id="TermsOfServiceURL">የመሣሪያ-አካባቢያዊ መለያ አገልግሎት ውል ያዋቅሩ</string><string id="TermsOfServiceURL_Explain">ተጠቃሚው የመሣሪያ-አካባቢያዊ መለያ ክፍለ-ጊዜ ከመጀመሩ በፊት መቀበል ያለበት የአገልግሎት ውል ያዘጋጃል።
+
+ይህ መመሪያ ከተዋቀረ Google Chrome OS የአገልግሎት ውሉን ያወርድና የመሣሪያ-አካባቢያዊ መለያ ክፍለ ጊዜ በተጀመረ ቁጥር ለተጠቃሚው ያሳያል። ተጠቃሚው የአገልግሎት ውሉን ከተቀበለ ብቻ ነው ወደ ክፍለ ጊዜ እንዲገባ የሚፈቀደው።
+
+ይህ መመሪያ ካልተዋቀረ ምንም የአገልግሎት ውሎች አይታዩም።
+
+መመሪያው Google Chrome OS የአገልግሎት ውሉን ሊያወርድበት ወደሚችል ዩአርኤል ነው መዋቀር ያለበት። የአገልግሎት ውሉ እንደ MIME አይነት ጽሑፍ/ግልጽ በቀረበ ስነጣ አልባ ጽሑፍ ነው መሆን ያለበት። ምንም ለውጥ ያዢ አይፈቀድም።</string><string id="TouchVirtualKeyboardEnabled">ምናባዊ የቁልፍ ሰሌዳን ያንቁ</string><string id="TouchVirtualKeyboardEnabled_Explain">ይህ መመሪያ በChromeOS ላይ ምናባዊ ቁልፍ ሰሌዳን እንደ የግቤት መሣሪያ አድርጎ ማንቃትን ያዋቅራል። ተጠቃሚዎች ይህን መመሪያ ሊሽሩት አይችሉም።
+
+መመሪያው ወደ እውነት ከተዋቀረ የማያ ገጽ ላይ ምናባዊ ቁልፍ ሰሌዳው ሁልጊዜ ይነቃል።
+
+ወደ ሐሰት ከተዋቀረ የማያ ገጽ ላይ ምናባዊ ቁልፍ ሰሌዳ ሁልጊዜ ይሰናከላል።
+
+ይህን መመሪያ ካዋቀሩት ተጠቃሚዎች ሊቀይሩት ወይም ሊሽሩት አይችሉም። ይሁንና ተጠቃሚዎች አሁንም ይህ መመሪያ ከሚቆጣጠረው ምናባዊ ቁልፍ ሰሌዳ ቅድሚያ የሚሰጠውን የተደራሽነት ማያ ገጽ ላይ ቁልፍ ሰሌዳ ማንቃት/ማሰናከል ይችላሉ። የተደራሽነት ማያ ገጽ ላይ ቁልፍ ሰሌዳውን ለመቆጣጠር የ|VirtualKeyboardEnabled| መመሪያውን ይመልከቱ።
+
+ይህ መመሪያ እንዳልተዋቀረ ከተተወ የማያ ገጽ ላይ ቁልፍ ሰሌዳ መጀመሪያ ላይ ይሰናከላል፣ ነገር ግን ተጠቃሚው በማንኛውም ጊዜ ሊያነቃው ይችላል። የራስ-መማሪያ ደንቦችም መቼ የቁልፍ ሰሌዳ መታየት እንዳለበት ስራ ላይ ሊውሉ ይችላሉ።</string><string id="TranslateEnabled">ተርጉምን ያንቁ</string><string id="TranslateEnabled_Explain">Google Chrome ላይ የተዋሃደውን የGoogle ትርጉም ያነቃል።
+
+ይህን ቅንብር ካነቁት Google Chrome አግባብ ሲሆን ገጹን ለመተርጎም የሚያዘጋጅ የተዋሃደ የመሣሪያ አሞሌ ያሳያል።
+
+ይህን ቅንብር ካሰናከሉ ተጠቃሚዎች በጭራሽ የትርጉም አሞሌውን አያዩትም።
+
+ይህን ቅንብር ካነቁት ወይም ካሰናከሉት ተጠቃሚዎች ይህን ቅንብር በGoogle Chrome ውስጥ ሊቀይሩት ወይም ሊሽሩት አይችሉም።
+
+ይህ ቅንብር እንዳልተዋቀረ ከተተወ ተጠቃሚው ይህን ተግባር ለመጠቀም ወይም ላለመጠቀ ሊወስን ይችላል።</string><string id="URLBlacklist">አንድ የዩ አር ኤልዎች ዝርዝር መዳረሻን ያግዱ</string><string id="URLBlacklist_Explain">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
+
+A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+
+Exceptions can be defined in the URL whitelist policy. These policies are limited to 1000 entries; subsequent entries will be ignored.
+
+Note that it is not recommended to block internal 'chrome://*' URLs since this may lead to unexpected errors.
+
+If this policy is not set no URL will be blacklisted in the browser.</string><string id="URLBlacklistDesc">አንድ የዩ አር ኤልዎች ዝርዝር መዳረሻን ያግዱ</string><string id="URLWhitelist">የዩ አር ኤልዎች ዝርዝር መዳረሻን ይፈቅዳል</string><string id="URLWhitelist_Explain">በተከለከሉት የዩአርኤል ዝርዝር ውስጥ የማይካተቱት የዩ አር ኤሎች ዝርዝር መዳረሻ እንዲኖር ያሽችላል።
+
+የዚህ ዝርዝር ግቤቶች ቅርጸቱን ለማግኘት የተከለከሉት ዩአርኤል መመሪያ ማብራሪያውን ይመልከቱ።
+
+ይህ መመሪያ ገዳቢ በሆኑ የተከለከሉ ዝርዝሮች ውስጥ የማይካተቱትን ለመክፈት ሊያገለግል ይችላል። ለምሳሌ፣«*» ሁሉንም ጥያቄዎችን ለማገድ በተከለከሉት ዝርዝር ውስጥ ሊካተት ይችላል፣ እና ይህ መመሪያ የውሱን ዩ አር ኤሎች ዝርዝር መዳረሻን ለመፍቃድ ስራ ላይ ሊውል ይችላል። በተወሰኑ መርሐግብሮች፣ የሌሎች ጎራዎች ንዑስ ጎራዎች፣ ወደቦች ወይም የተወሰኑ ዱካዎች ውስጥ የማይካተቱን ለመክፈት ሊያገለግል ይችላል።
+
+በጣም ግልጹ ማጣሪያ አንድ ዩአርኤል የታገደ ወይም የተፈቀደ መሆኑን ይወስናል። የተፈቀዱት ዝርዝር ከተከለከሉት ዝርዝር ቅድሚያ ይሰጠዋል።
+
+ይህ መመሪያ በ1000 ግቤቶች የተወሰነ ነው፤ ተከትሎ የሚገቡ ግቤቶች ይተዋሉ።
+
+ይህ መመሪያ ካልተዋቀረ በ«URLBlacklist» የተከለከሉ ዝርዝር ውስጥ ምንም የማይካተቱ አይኖሩም።</string><string id="URLWhitelistDesc">የዩ አር ኤልዎች ዝርዝር መዳረሻን ይፈቅዳል</string><string id="UnifiedDesktopEnabledByDefault">Make Unified Desktop available and turn on by default</string><string id="UnifiedDesktopEnabledByDefault_Explain">ይህ መመሪያ ወደ እውነት ከተዋቀረ የተዋሃደ ዴስክቶፕ ይፈቀዳል
+እና በነባሪ ይነቃል፣ ይህም መተግበሪያዎች ከአንድ በላይ በሆኑ ማሳያዎችን
+ላይ እንዲታዩ ያስችላቸዋል። በማሳያ ቅንብር ውስጥ ተጠቃሚው ለተናጠል ማሳያዎች
+ምልክቶችን በማጥፋት የተዋሃደ ዴስክቶፕን ሊያሰናክል ይችላል።
+
+ይህ መመሪያ ወደ ሐሰት ወይም ያልተዋቀረ ከሆነ የተዋሃደ ዴስክቶፕ ይሰናከላል።
+በዚህ ሁኔታ ተጠቃሚው ባህሪውን ማንቃት አይችልም።</string><string id="UsbDetachableWhitelist">የተፈቀደላቸው ሊላቀቁ የሚችሉ የዩኤስቢ መሣሪያዎች ዝርዝር</string><string id="UsbDetachableWhitelist_Explain">በቀጥታ በድር መተግበሪያ ውስጥ በchrome.usb ኤፒአዩ ውስጥ መጠቀም እንዲቻሉ ከአውራ ከዋኝ ነጂያቸው እንዲላቀቁ የሚፈቀድላቸው የዩኤስቢ መሣሪያዎች ዝርዝር ይገልጻል። ግቤቶች የተወሰነ ሃርድዌር የሚለዩ የዩኤስቢ አቅራቢ ለዪ እና የምርት ለዪ ጥምሮች ናቸው።
+
+ይህ መመሪያ ካልተዋቀረ መላቀቅ የሚችሉ የዩኤስቢ መሣሪያዎች ዝርዝር ባዶ ነው።</string><string id="UsbDetachableWhitelistDesc">የተፈቀደላቸው ሊላቀቁ የሚችሉ የዩኤስቢ መሣሪያዎች ዝርዝር</string><string id="UserAvatarImage">የተጠቃሚ አምሳያ ምስል</string><string id="UserAvatarImage_Explain">This policy allows you to configure the avatar image representing the user on the login screen. The policy is set by specifying the URL from which Google Chrome OS can download the avatar image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its size must not exceed 512kB. The URL must be accessible without any authentication.
+
+The avatar image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the avatar image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the avatar image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the avatar image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose the avatar image representing them on the login screen.</string><string id="UserDisplayName">የማሳያ ስሙን ለመሣሪያ-አካባቢያዊ መለያዎች ያዋቅሩ</string><string id="UserDisplayName_Explain">Google Chrome OS ለሚመለከተው የመሣሪያ-አካባቢያዊ መለያ በመግቢያ ገጹ ላይ የሚያሳየው የመለያ ስም ይቆጣጠራል።
+
+ይህ መመሪያ ከተዋቀረ የመግቢያ ገጹ የተገለጸው ሕብረቁምፊ በስዕል ላይ የተመሠረተውን የመግቢያ መራጭ ለሚመለከተው የመሣሪያ-አካባቢያዊ መለያ ይጠቀማል።
+
+መመሪያው እንዳልተዋቀረ ከተተወ Google Chrome OS የመሣሪያ-አካባቢያዊ መለያው ኢሜይል መለያ መታወቂያውን በመግቢያው ላይ እንደ የማሳያ ስም አድርጎ ያሳየዋል።
+
+ይህ መመሪያ ለመደበኛ የተጠቃሚ መለያዎች ይተዋል።</string><string id="VideoCaptureAllowed">የቪዲዮ መቅረጽ ይፍቀዱ ወይም ይከልክሉ</string><string id="VideoCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+video capture access except for URLs configured in the
+VideoCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and video
+capture only be available to URLs configured in VideoCaptureAllowedUrls.
+
+This policy affects all types of video inputs and not only the built-in camera.</string><string id="VideoCaptureAllowedUrls">የቪዲዮ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</string><string id="VideoCaptureAllowedUrls_Explain">በዚህ ዝርዝር ውስጥ ያሉ ስርዓተ ጥለቶች ከሚጠይቀው ዩአርኤል የደህንነት መነሻ
+ጋር እንዲዛመዱ ይደረጋሉ። የሚዛመድ ከተገኘ የድምፅ መቅረጫ
+መሣሪያዎች መድረሻ ሳይጠየቅ ይሰጣል።
+
+ማስታወሻ፦ እስከ ስሪት 45 ድረስ ይህ መመሪያ በኪዮስክ ሁነታ ላይ ብቻ ነበር የሚደገፈው።</string><string id="VideoCaptureAllowedUrlsDesc">የቪዲዮ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</string><string id="WPADQuickCheckEnabled">የWPAD ማመቻቸትን ያንቁ</string><string id="WPADQuickCheckEnabled_Explain">WPAD (Web Proxy Auto-Discovery) ማትቢያን በGoogle Chrome ውስጥ ማጥፋትን ይፈቅዳል።
+
+ይህ መመሪያ ወደ ሐሰት ከተዋቀረ WPAD ማትቢያ በመሰናከል Google Chrome በDNS ላይ ለተመሠረቱ የWPAD አገልጋዮች ለረዥም ጊዜ እንዲጠብቁ ያደርጋል። መመሪያው ካልዋቀረ ወይም ከነቃ WPAD ማትቢያ ይነቃል።
+
+ይህ መመሪያ ተዋቀረ አልተዋቀረ ወይም ይህ እንዴትም ይዋቀር የWPAD ማትቢያ ውቅረቱ በተጠቃሚዎች ሊለወጥ አይችልም።</string><string id="WallpaperImage">ልጣፍ  ምስል</string><string id="WallpaperImage_Explain">This policy allows you to configure the wallpaper image that is shown on the desktop and on the login screen background for the user. The policy is set by specifying the URL from which Google Chrome OS can download the wallpaper image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its file size must not exceed 16MB. The URL must be accessible without any authentication.
+
+The wallpaper image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the wallpaper image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the wallpaper image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the wallpaper image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose an image to be shown on the desktop and on the login screen background.</string><string id="WebRtcUdpPortRange">WebRTC የሚጠቀማቸው የአካባቢያዊ ዩዲፒ ወደቦች ክልልን ገድብ</string><string id="WebRtcUdpPortRange_Explain">መመሪያው ከተዋቀረ WebRTC የሚጠቀምበት የዩዲፒ ወደብ ለተገለጸው የወደብ ክፍተት (ዋና ነጥቦች ጨምረው) ይገደባል።
+
+መመሪያው ካልተዋቀረ ወይም ወደ ባዶ ሕብረቁምፊ ወይም ልክ ያልሆነ የወደብ ክልል ከተዋቀረ WebRTC ማንኛውም የሚገኝ የዩዲፒ ወደብ እንዲጠቀም ይፈቀድለታል።</string></stringTable><presentationTable><presentation id="EnableMediaRouter"/><presentation id="ShowCastIconInToolbar"/><presentation id="HomepageLocation"><textBox refId="HomepageLocation"><label>የመነሻ ገጽ ዩአርኤል</label></textBox></presentation><presentation id="HomepageIsNewTabPage"/><presentation id="ExtensionInstallBlacklist"><listBox refId="ExtensionInstallBlacklistDesc">ተጠቃሚው እንዳይጭናቸው መታገድ ያለባቸው የቅጥያ መታወቂያዎች (ወይም ደግሞ ለሁሉም *)</listBox></presentation><presentation id="ExtensionInstallWhitelist"><listBox refId="ExtensionInstallWhitelistDesc">ከተከለከሉት ዝርዝር ነፃ የሚደረጉ የቅጥያ መታወቂያዎች</listBox></presentation><presentation id="ExtensionInstallForcelist"><listBox refId="ExtensionInstallForcelistDesc">በፀጥታ የሚጫኑ የቅጥያ/መተግበሪያ መታወቂያዎች እና የዝማኔ ዩአርኤሎች</listBox></presentation><presentation id="ExtensionInstallSources"><listBox refId="ExtensionInstallSourcesDesc">የቅጥያ፣ መተግበሪያ እና የተጠቃሚ ስክሪፕት እንዲጭኑ የሚፈቀድላቸው የዩ አር ኤል ስርዓተ ጥለቶች</listBox></presentation><presentation id="ExtensionAllowedTypes"><listBox refId="ExtensionAllowedTypesDesc">እንዲጫኑ የሚፈቀደላቸው የቅጥያዎች/መተግበሪያዎች አይነቶች</listBox></presentation><presentation id="ExtensionSettings"><textBox refId="ExtensionSettings"><label>የቅጥያ አስተዳደር ቅንብሮች</label></textBox></presentation><presentation id="AttestationEnabledForUser"/><presentation id="AttestationExtensionWhitelist"><listBox refId="AttestationExtensionWhitelistDesc">የርቀት ማስረገጥ ኤ ፒ አዩን እንዲጠቀሙ የተፈቀደላቸው ቅጥያዎች</listBox></presentation><presentation id="ProxyMode"><dropdownList refId="ProxyMode">የተኪ አገልጋይ ቅንብሮች እንዴት እንደሚገለጹ ይምረጡ</dropdownList></presentation><presentation id="ProxyServer"><textBox refId="ProxyServer"><label>የተኪ አገልጋይ አድራሻ ወይም ዩአርኤል</label></textBox></presentation><presentation id="ProxyPacUrl"><textBox refId="ProxyPacUrl"><label>ወደ ተኪ .pac ፋይል የሚወስድ ዩአርኤል</label></textBox></presentation><presentation id="ProxyBypassList"><textBox refId="ProxyBypassList"><label>በኮማ የተለዩ የተኪ ማለፊያ ደንቦች ዝርዝር</label></textBox></presentation><presentation id="DefaultSearchProviderEnabled"/><presentation id="DefaultSearchProviderName"><textBox refId="DefaultSearchProviderName"><label>የነባሪ ፍለጋ አቅራቢ ስም</label></textBox></presentation><presentation id="DefaultSearchProviderKeyword"><textBox refId="DefaultSearchProviderKeyword"><label>ነባሪ የፍለጋ አቅራቢ ቁልፍ ቃል</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURL"><textBox refId="DefaultSearchProviderSearchURL"><label>የነባሪ የፍለጋ አቅራቢ ፈላጊ ዩአርኤል</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURL"><textBox refId="DefaultSearchProviderSuggestURL"><label>ነባሪ ፍለጋ አቅራቢ የሚጠቁመው ዩአርኤል</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURL"><textBox refId="DefaultSearchProviderInstantURL"><label>ነባሪ የፍለጋ አቅራቢ ቅጽበታዊ ዩአርኤል</label></textBox></presentation><presentation id="DefaultSearchProviderIconURL"><textBox refId="DefaultSearchProviderIconURL"><label>ነባሪ የፍለጋ አቅራቢ አዶ</label></textBox></presentation><presentation id="DefaultSearchProviderEncodings"><listBox refId="DefaultSearchProviderEncodingsDesc">የነባሪ ፍለጋ አቅራቢ የኮድ ግቤቶች</listBox></presentation><presentation id="DefaultSearchProviderAlternateURLs"><listBox refId="DefaultSearchProviderAlternateURLsDesc">የነባሪ ፍለጋ አቅራቢው ተለዋጭ ዩ አር ኤሎች ዝርዝር</listBox></presentation><presentation id="DefaultSearchProviderSearchTermsReplacementKey"><textBox refId="DefaultSearchProviderSearchTermsReplacementKey"><label>የነባሪው ፍለጋ አቅራቢ የፍለጋ ቃል ምደባውን የሚቆጣጠር ልኬት</label></textBox></presentation><presentation id="DefaultSearchProviderImageURL"><textBox refId="DefaultSearchProviderImageURL"><label>ለነባሪው የፍለጋ አቅራቢ በምስል የመፈለግ ባህሪይን የሚያቀርብ መለኪያ።</label></textBox></presentation><presentation id="DefaultSearchProviderNewTabURL"><textBox refId="DefaultSearchProviderNewTabURL"><label>የነባሪ የፍለጋ አቅራቢ አዲስ ትር ገጽ ዩአርኤል</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURLPostParams"><textBox refId="DefaultSearchProviderSearchURLPostParams"><label>POST የሚጠቀም የፍለጋ ዩአርኤል ግቤቶች</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURLPostParams"><textBox refId="DefaultSearchProviderSuggestURLPostParams"><label>POST የሚጠቀም የሚጠቆም ዩአርኤል ግቤቶች</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURLPostParams"><textBox refId="DefaultSearchProviderInstantURLPostParams"><label>POST የሚጠቀም የፈጣን ዩአርኤል ግቤቶች</label></textBox></presentation><presentation id="DefaultSearchProviderImageURLPostParams"><textBox refId="DefaultSearchProviderImageURLPostParams"><label>POSTን ለሚጠቀም የምስል ዩአርኤል ግቤቶች</label></textBox></presentation><presentation id="DriveDisabled"/><presentation id="DriveDisabledOverCellular"/><presentation id="RestoreOnStartup"><dropdownList refId="RestoreOnStartup">በሚነሳበት ጊዜ የሚወሰደው እርምጃ</dropdownList></presentation><presentation id="RestoreOnStartupURLs"><listBox refId="RestoreOnStartupURLsDesc">በሚነሳበት ጊዜ የሚከፈቱ ዩአርኤልዎች</listBox></presentation><presentation id="RemoteAccessHostClientDomainList"><listBox refId="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</listBox></presentation><presentation id="RemoteAccessHostFirewallTraversal"/><presentation id="RemoteAccessHostDomainList"><listBox refId="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</listBox></presentation><presentation id="RemoteAccessHostTalkGadgetPrefix"><textBox refId="RemoteAccessHostTalkGadgetPrefix"><label>ለርቀት መዳረሻ አስተናጋጆች የTalkGadget ቅድመ ቅጥያውን ያዋቅሩ</label></textBox></presentation><presentation id="RemoteAccessHostRequireCurtain"/><presentation id="RemoteAccessHostAllowClientPairing"/><presentation id="RemoteAccessHostAllowGnubbyAuth"/><presentation id="RemoteAccessHostAllowRelayedConnection"/><presentation id="RemoteAccessHostUdpPortRange"><textBox refId="RemoteAccessHostUdpPortRange"><label>በርቀት የመዳረሻ አስተናጋጁ ጥቅም ላይ የዋለውን የUDP ወደብ ምጥጥነ ገጽታ ይገድቡ</label></textBox></presentation><presentation id="RemoteAccessHostMatchUsername"/><presentation id="RemoteAccessHostTokenUrl"><textBox refId="RemoteAccessHostTokenUrl"><label>የርቀት መዳረሻ ደንበኞች የማረጋገጫ ማስመሰያቸውን ማግኘት ያለባቸው ዩአርኤል</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationUrl"><textBox refId="RemoteAccessHostTokenValidationUrl"><label>የርቀት መዳረሻ ደንበኛ ማስመሰያን የማረጋገጫ ዩአርኤል</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationCertificateIssuer"><textBox refId="RemoteAccessHostTokenValidationCertificateIssuer"><label>ከRemoteAccessHostTokenValidationUrl ጋር የሚገናኙበት የደንበኛ እውቅና ማረጋገጫ</label></textBox></presentation><presentation id="ShowAccessibilityOptionsInSystemTrayMenu"/><presentation id="LargeCursorEnabled"/><presentation id="SpokenFeedbackEnabled"/><presentation id="HighContrastEnabled"/><presentation id="VirtualKeyboardEnabled"/><presentation id="KeyboardDefaultToFunctionKeys"/><presentation id="ScreenMagnifierType"><dropdownList refId="ScreenMagnifierType">የማጉሊያ አይነት ያዋቅሩ</dropdownList></presentation><presentation id="DeviceLoginScreenDefaultLargeCursorEnabled"/><presentation id="DeviceLoginScreenDefaultSpokenFeedbackEnabled"/><presentation id="DeviceLoginScreenDefaultHighContrastEnabled"/><presentation id="DeviceLoginScreenDefaultVirtualKeyboardEnabled"/><presentation id="DeviceLoginScreenDefaultScreenMagnifierType"><dropdownList refId="DeviceLoginScreenDefaultScreenMagnifierType">ነባሪውን የማጉሊያ አይነት በመግቢያ ገጹ ላይ ያንቁት</dropdownList></presentation><presentation id="LidCloseAction"><dropdownList refId="LidCloseAction">ተጠቃሚው ክዳኑን ሲዘጋ የሚወሰደው እርምጃ</dropdownList></presentation><presentation id="PowerManagementUsesAudioActivity"/><presentation id="PowerManagementUsesVideoActivity"/><presentation id="PresentationScreenDimDelayScale"><decimalTextBox refId="PresentationScreenDimDelayScale">በማቅረቢያ ሁነታ ላይ ያለውን የማያ ገጽ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ:</decimalTextBox></presentation><presentation id="AllowScreenWakeLocks"/><presentation id="UserActivityScreenDimDelayScale"><decimalTextBox refId="UserActivityScreenDimDelayScale">ከመደብዘዝ በኋላ ተጠቃሚው ንቁ ቢሆን የማያ ገጹ መደብዘዝ መዘግየት የሚመጠንበት መቶኛ:</decimalTextBox></presentation><presentation id="WaitForInitialUserActivity"/><presentation id="PowerManagementIdleSettings"><textBox refId="PowerManagementIdleSettings"><label>ተጠቃሚው ስራ ሲፈታ የሚኖረው የኃይል አስተዳደር ቅንብሮች</label></textBox></presentation><presentation id="ScreenLockDelays"><textBox refId="ScreenLockDelays"><label>የማያ ገጽ መቆለፍ መዘግየቶች</label></textBox></presentation><presentation id="NewTabPageLocation"><textBox refId="NewTabPageLocation"><label>የአዲስ ትር ገጽ ዩአርኤል</label></textBox></presentation><presentation id="AuthSchemes"><textBox refId="AuthSchemes"><label>የተደገፉ የማረጋገጫ መርሐግብሮች</label></textBox></presentation><presentation id="DisableAuthNegotiateCnameLookup"/><presentation id="EnableAuthNegotiatePort"/><presentation id="AuthServerWhitelist"><textBox refId="AuthServerWhitelist"><label>የተፈቀደላቸው የማረጋገጫ አገልጋይ ዝርዝር</label></textBox></presentation><presentation id="AuthNegotiateDelegateWhitelist"><textBox refId="AuthNegotiateDelegateWhitelist"><label>የተፈቀዱ የKerberos ውክልና አገልጋይ ዝርዝር</label></textBox></presentation><presentation id="AllowCrossOriginAuthPrompt"/><presentation id="PasswordManagerEnabled"/><presentation id="DefaultCookiesSetting"><dropdownList refId="DefaultCookiesSetting">ነባሪ የኩኪዎች ቅንብር</dropdownList></presentation><presentation id="DefaultImagesSetting"><dropdownList refId="DefaultImagesSetting">ነባሪ የምስሎች ቅንብር</dropdownList></presentation><presentation id="DefaultJavaScriptSetting"><dropdownList refId="DefaultJavaScriptSetting">ነባሪው የJavaScript ቅንብር</dropdownList></presentation><presentation id="DefaultPluginsSetting"><dropdownList refId="DefaultPluginsSetting">ነባሪ የFlash ቅንብር</dropdownList></presentation><presentation id="DefaultPopupsSetting"><dropdownList refId="DefaultPopupsSetting">ነባሪው የብቅ-ባዮች ቅንብር</dropdownList></presentation><presentation id="DefaultNotificationsSetting"><dropdownList refId="DefaultNotificationsSetting">ነባሪ የማሳወቂያ ቅንብር</dropdownList></presentation><presentation id="DefaultGeolocationSetting"><dropdownList refId="DefaultGeolocationSetting">ነባሪ የምድራዊ አካባቢ ቅንብር</dropdownList></presentation><presentation id="DefaultWebBluetoothGuardSetting"><dropdownList refId="DefaultWebBluetoothGuardSetting">የድር ብሉቱዝ ኤፒአይን አጠቃቀም ይቆጣጠሩ</dropdownList></presentation><presentation id="AutoSelectCertificateForUrls"><listBox refId="AutoSelectCertificateForUrlsDesc">የእውቅና ማረጋገጫዎች ለእነዚህ ጣቢያዎች በራስ-ሰር ይምረጡ</listBox></presentation><presentation id="CookiesAllowedForUrls"><listBox refId="CookiesAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን ይፍቀዱ</listBox></presentation><presentation id="CookiesBlockedForUrls"><listBox refId="CookiesBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ኩኪዎችን አግድ</listBox></presentation><presentation id="CookiesSessionOnlyForUrls"><listBox refId="CookiesSessionOnlyForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የክፍለ-ጊዜ ብቻ ኩኪዎችን ፍቀድ</listBox></presentation><presentation id="ImagesAllowedForUrls"><listBox refId="ImagesAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ምስሎችን ፍቀድ</listBox></presentation><presentation id="ImagesBlockedForUrls"><listBox refId="ImagesBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ምስሎችን አግድ</listBox></presentation><presentation id="JavaScriptAllowedForUrls"><listBox refId="JavaScriptAllowedForUrlsDesc">JavaScript በእነዚህ ጣቢያዎች ላይ ይፍቀዱ</listBox></presentation><presentation id="JavaScriptBlockedForUrls"><listBox refId="JavaScriptBlockedForUrlsDesc">JavaScript በእነዚህ ጣቢያዎች ላይ ያግዱ</listBox></presentation><presentation id="PluginsAllowedForUrls"><listBox refId="PluginsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪን ይፍቀዱ</listBox></presentation><presentation id="PluginsBlockedForUrls"><listBox refId="PluginsBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ የFlash ተሰኪውን ያግዱ</listBox></presentation><presentation id="PopupsAllowedForUrls"><listBox refId="PopupsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ብቅ-ባዮችን ፍቀድ</listBox></presentation><presentation id="RegisteredProtocolHandlers"><textBox refId="RegisteredProtocolHandlers"><label>የፕሮቶኮል አስከዋኞችን ያስመዝግቡ</label></textBox></presentation><presentation id="PopupsBlockedForUrls"><listBox refId="PopupsBlockedForUrlsDesc">ብቅ-ባዮች በእነዚህ ጣቢያዎች ላይ ያግዱ</listBox></presentation><presentation id="NotificationsAllowedForUrls"><listBox refId="NotificationsAllowedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ፍቀድ</listBox></presentation><presentation id="NotificationsBlockedForUrls"><listBox refId="NotificationsBlockedForUrlsDesc">በእነዚህ ጣቢያዎች ላይ ማሳወቂያዎችን ያግዱ</listBox></presentation><presentation id="QuickUnlockModeWhitelist"><listBox refId="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</listBox></presentation><presentation id="QuickUnlockTimeout"><dropdownList refId="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</dropdownList></presentation><presentation id="PinUnlockMinimumLength"><decimalTextBox refId="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockMaximumLength"><decimalTextBox refId="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockWeakPinsAllowed"/><presentation id="AllowDeletingBrowserHistory"/><presentation id="AllowDinosaurEasterEgg"/><presentation id="AllowOutdatedPlugins"/><presentation id="AllowScreenLock"/><presentation id="AllowedDomainsForApps"><textBox refId="AllowedDomainsForApps"><label>Google Appsn እንዲደርሱ የሚፈቀድላቸውን ጎራዎች ይግለጹ</label></textBox></presentation><presentation id="AlternateErrorPagesEnabled"/><presentation id="AlwaysAuthorizePlugins"/><presentation id="ArcBackupRestoreEnabled"/><presentation id="ArcCertificatesSyncMode"><dropdownList refId="ArcCertificatesSyncMode">የእውቅና ማረጋገጫ ተገኝነትን ለኤአርሲ-መተግበሪያዎች ያዋቅሩ</dropdownList></presentation><presentation id="ArcEnabled"/><presentation id="ArcLocationServiceEnabled"/><presentation id="ArcPolicy"><textBox refId="ArcPolicy"><label>ኤአርሲን አዋቅር</label></textBox></presentation><presentation id="AudioCaptureAllowed"/><presentation id="AudioCaptureAllowedUrls"><listBox refId="AudioCaptureAllowedUrlsDesc">የድምጽ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</listBox></presentation><presentation id="AudioOutputAllowed"/><presentation id="AutoFillEnabled"/><presentation id="AutofillCreditCardEnabled"/><presentation id="BlockThirdPartyCookies"/><presentation id="BookmarkBarEnabled"/><presentation id="CaptivePortalAuthenticationIgnoresProxy"/><presentation id="CertificateTransparencyEnforcementDisabledForUrls"><listBox refId="CertificateTransparencyEnforcementDisabledForUrlsDesc">ለአንድ የዩአርኤሎች ዝርዝር የእውቅና ማረጋገጫ ግልጽነት ማስፈጸምን አሰናክል</listBox></presentation><presentation id="ChromeOsLockOnIdleSuspend"/><presentation id="ChromeOsMultiProfileUserBehavior"><dropdownList refId="ChromeOsMultiProfileUserBehavior">አንድ ተጠቃሚ በአንድ የብዝሃ-መገለጫ ክፍለ-ጊዜ ያለውን ባህሪ ይቆጣጠሩ</dropdownList></presentation><presentation id="ChromeOsReleaseChannel"><dropdownList refId="ChromeOsReleaseChannel">የሚለቀቅ ሰርጥ</dropdownList></presentation><presentation id="ChromeOsReleaseChannelDelegated"/><presentation id="ComponentUpdatesEnabled"/><presentation id="DefaultPrinterSelection"><textBox refId="DefaultPrinterSelection"><label>ነባሪ የማተሚያ ምርጫ ደንቦች</label></textBox></presentation><presentation id="DeveloperToolsDisabled"/><presentation id="DeviceAllowBluetooth"/><presentation id="DeviceAllowNewUsers"/><presentation id="DeviceAllowRedeemChromeOsRegistrationOffers"/><presentation id="DeviceAutoUpdateDisabled"/><presentation id="DeviceAutoUpdateP2PEnabled"/><presentation id="DeviceBlockDevmode"/><presentation id="DeviceDataRoamingEnabled"/><presentation id="DeviceEphemeralUsersEnabled"/><presentation id="DeviceGuestModeEnabled"/><presentation id="DeviceLoginScreenAppInstallList"><listBox refId="DeviceLoginScreenAppInstallListDesc">በመግቢያ ገጹ ላይ ያለውን የተጫኑ መተግበሪያዎች ዝርዝር ያዋቅሩ</listBox></presentation><presentation id="DeviceLoginScreenInputMethods"><listBox refId="DeviceLoginScreenInputMethodsDesc">የመሣሪያ መግቢያ ገጽ የቁልፍ ሰሌዳ አቀማመጦች</listBox></presentation><presentation id="DeviceLoginScreenLocales"><listBox refId="DeviceLoginScreenLocalesDesc">የመሣሪያ መግቢያ ገጽ ቋንቋ</listBox></presentation><presentation id="DeviceLoginScreenPowerManagement"><textBox refId="DeviceLoginScreenPowerManagement"><label>የኃይል አስተዳደር በመለያ መግቢያ ገጹ ላይ</label></textBox></presentation><presentation id="DeviceMetricsReportingEnabled"/><presentation id="DeviceNativePrinters"><textBox refId="DeviceNativePrinters"><label>የድርጅት አታሚ ውቅረት ፋይል ለመሣሪያዎች</label></textBox></presentation><presentation id="DeviceNativePrintersAccessMode"><dropdownList refId="DeviceNativePrintersAccessMode">የመሣሪያ አታሚዎች ውቅረት መዳረሻ መመሪያ።</dropdownList></presentation><presentation id="DeviceNativePrintersBlacklist"><listBox refId="DeviceNativePrintersBlacklistDesc">የድርጅት መሣሪያ አታሚዎች አሰናክሏል</listBox></presentation><presentation id="DeviceNativePrintersWhitelist"><listBox refId="DeviceNativePrintersWhitelistDesc">የድርጅት መሣሪያ አታሚዎች አንቅቷል</listBox></presentation><presentation id="DeviceOffHours"><textBox refId="DeviceOffHours"><label>የመሣሪያ Off Hours |ignored_policy_proto_tags| ሲለቀቁ የመጥፊያ ሰዓት ክፍተቶች</label></textBox></presentation><presentation id="DeviceOpenNetworkConfiguration"><textBox refId="DeviceOpenNetworkConfiguration"><label>የመሣሪያ ደረጃ አውታረ መረብ ውቅር</label></textBox></presentation><presentation id="DevicePolicyRefreshRate"><decimalTextBox refId="DevicePolicyRefreshRate">የመሣሪያ መመሪያ እድሳት ፍጥነት:</decimalTextBox></presentation><presentation id="DeviceQuirksDownloadEnabled"/><presentation id="DeviceRebootOnShutdown"/><presentation id="DeviceShowUserNamesOnSignin"/><presentation id="DeviceStartUpFlags"><listBox refId="DeviceStartUpFlagsDesc">በGoogle Chrome ጅምር ላይ የሚተገበሩ ስርዓት-ተኮር ዕልባቶች</listBox></presentation><presentation id="DeviceTargetVersionPrefix"><textBox refId="DeviceTargetVersionPrefix"><label>ራስ-አዘምን ስሪቱን አነጣጥር</label></textBox></presentation><presentation id="DeviceUpdateAllowedConnectionTypes"><listBox refId="DeviceUpdateAllowedConnectionTypesDesc">ለዝማኔዎች የሚፈቀዱ የግንኙነት አይነቶች</listBox></presentation><presentation id="DeviceUpdateHttpDownloadsEnabled"/><presentation id="DeviceUpdateScatterFactor"><decimalTextBox refId="DeviceUpdateScatterFactor">ራስ-አዘምን ብተና አካል:</decimalTextBox></presentation><presentation id="DeviceUserWhitelist"><listBox refId="DeviceUserWhitelistDesc">የተፈቀደላቸው የተጠቃሚዎች ዝርዝር ያስገቡ</listBox></presentation><presentation id="DeviceWallpaperImage"><textBox refId="DeviceWallpaperImage"><label>የመሣሪያ ልጣፍ ምስል</label></textBox></presentation><presentation id="Disable3DAPIs"/><presentation id="DisablePluginFinder"/><presentation id="DisableSafeBrowsingProceedAnyway"/><presentation id="DisableScreenshots"/><presentation id="DisplayRotationDefault"><dropdownList refId="DisplayRotationDefault">ነባሪው የማሳያ እሽክርክሪት አዘጋጅ፣ በእያንዳንዱ ዳግም ማስነሳት ላይ ዳግም የሚተገበር</dropdownList></presentation><presentation id="DownloadDirectory"><textBox refId="DownloadDirectory"><label>የውርድ አቃፊ ያስቀምጡ</label></textBox></presentation><presentation id="DownloadRestrictions"><dropdownList refId="DownloadRestrictions">የውርድ ገደቦች</dropdownList></presentation><presentation id="EasyUnlockAllowed"/><presentation id="EcryptfsMigrationStrategy"><dropdownList refId="EcryptfsMigrationStrategy">የዝውውር ስትራቴጂ ለ ecryptfs</dropdownList></presentation><presentation id="EditBookmarksEnabled"/><presentation id="EnableCommonNameFallbackForLocalAnchors"/><presentation id="EnableDeprecatedWebPlatformFeatures"><listBox refId="EnableDeprecatedWebPlatformFeaturesDesc">የተቋረጡ የድር መሣሪያ ስርዓት ባህሪያት ለተወሰነ ጊዜ ያንቁ</listBox></presentation><presentation id="EnableOnlineRevocationChecks"/><presentation id="EnableSha1ForLocalAnchors"/><presentation id="ExternalStorageDisabled"/><presentation id="ExternalStorageReadOnly"/><presentation id="ForceGoogleSafeSearch"/><presentation id="ForceMaximizeOnFirstRun"/><presentation id="ForceYouTubeRestrict"><dropdownList refId="ForceYouTubeRestrict">ዝቅተኛ የYouTube የተገደበ ሁኔታን ተፈጻሚ አድርግ</dropdownList></presentation><presentation id="FullscreenAllowed"/><presentation id="Http09OnNonDefaultPortsEnabled"/><presentation id="IncognitoModeAvailability"><dropdownList refId="IncognitoModeAvailability">የማንነትን የማያሳውቅ ሁነታ ተገኝነት</dropdownList></presentation><presentation id="InstantTetheringAllowed"/><presentation id="IsolateOrigins"><textBox refId="IsolateOrigins"><label>ለተጠቀሱ ምንጮ የጣቢያ ማግለያን አንቃ</label></textBox></presentation><presentation id="KeyPermissions"><textBox refId="KeyPermissions"><label>የቁልፍ ፍቃዶች</label></textBox></presentation><presentation id="ManagedBookmarks"><textBox refId="ManagedBookmarks"><label>የተዳደሩ እልባቶች</label></textBox></presentation><presentation id="MaxInvalidationFetchDelay"><decimalTextBox refId="MaxInvalidationFetchDelay">ከመመሪያ ዋጋ ማሳጣት በኋላ ከፍተኛ የማግኛ መዘግየት:</decimalTextBox></presentation><presentation id="NativePrinters"><listBox refId="NativePrintersDesc">ቤተኛ ህትመት</listBox></presentation><presentation id="NativePrintersBulkAccessMode"><dropdownList refId="NativePrintersBulkAccessMode">የአታሚ ውቅረት መዳረሻ መመሪያ።</dropdownList></presentation><presentation id="NativePrintersBulkBlacklist"><listBox refId="NativePrintersBulkBlacklistDesc">የድርጅት አታሚዎች ተሰናክለዋል</listBox></presentation><presentation id="NativePrintersBulkConfiguration"><textBox refId="NativePrintersBulkConfiguration"><label>የድርጅት አታሚ ውቅረት ፋይል</label></textBox></presentation><presentation id="NativePrintersBulkWhitelist"><listBox refId="NativePrintersBulkWhitelistDesc">የድርጅት አታሚዎች ነቅተዋል</listBox></presentation><presentation id="NetworkPredictionOptions"><dropdownList refId="NetworkPredictionOptions">የአውታረ መረብ ግምትን ያንቁ</dropdownList></presentation><presentation id="NoteTakingAppsLockScreenWhitelist"><listBox refId="NoteTakingAppsLockScreenWhitelistDesc">በGoogle Chrome OS ማያ ገጽ ቁልፍ ላይ የተፈቀዱ ማስታወሻ የሚወስዱ መተግበሪያዎች በተፈቀደላቸው ዝርዝር ውስጥ ያስገቡ</listBox></presentation><presentation id="OpenNetworkConfiguration"><textBox refId="OpenNetworkConfiguration"><label>የተጠቃሚ-ደረጃ የአውታረ መረብ ውቅር</label></textBox></presentation><presentation id="PacHttpsUrlStrippingEnabled"/><presentation id="PinnedLauncherApps"><listBox refId="PinnedLauncherAppsDesc">በአስጀማሪው ላይ የሚያዩ የተሰኩ መተግበሪያዎች ዝርዝር</listBox></presentation><presentation id="PolicyRefreshRate"><decimalTextBox refId="PolicyRefreshRate">የተጠቃሚ መመሪያ እድሳት ፍጥነት:</decimalTextBox></presentation><presentation id="PrintingEnabled"/><presentation id="QuicAllowed"/><presentation id="RebootAfterUpdate"/><presentation id="RequireOnlineRevocationChecksForLocalAnchors"/><presentation id="RunAllFlashInAllowMode"/><presentation id="SAMLOfflineSigninTimeLimit"><decimalTextBox refId="SAMLOfflineSigninTimeLimit">በኤስኤኤምኤል በኩል ማረጋገጫ የተሰጠው ተጠቃሚ ከመስመር ውጭ በመለያ መግባት የሚችልበት ጊዜ ይገድቡ:</decimalTextBox></presentation><presentation id="SSLErrorOverrideAllowed"/><presentation id="SSLVersionMax"><dropdownList refId="SSLVersionMax">የከፍተኛ ኤስኤስኤል ስሪት ነቅቷል</dropdownList></presentation><presentation id="SafeBrowsingEnabled"/><presentation id="SafeBrowsingExtendedReportingOptInAllowed"/><presentation id="SavingBrowserHistoryDisabled"/><presentation id="SearchSuggestEnabled"/><presentation id="SessionLengthLimit"><decimalTextBox refId="SessionLengthLimit">Limit the length of a user session:</decimalTextBox></presentation><presentation id="SessionLocales"><listBox refId="SessionLocalesDesc">የአንድ ይፋዊ ክፍለ-ጊዜ የሚመከሩ አካባቢዎችን ያዋቅሩ</listBox></presentation><presentation id="ShelfAutoHideBehavior"><dropdownList refId="ShelfAutoHideBehavior">የመደርደሪያ ራስ-መደበቅ ተቆጣጠር</dropdownList></presentation><presentation id="ShowHomeButton"/><presentation id="ShowLogoutButtonInTray"/><presentation id="SitePerProcess"/><presentation id="SpellCheckServiceEnabled"/><presentation id="SuppressUnsupportedOSWarning"/><presentation id="SyncDisabled"/><presentation id="SystemTimezone"><textBox refId="SystemTimezone"><label>የሰዓት ሰቅ</label></textBox></presentation><presentation id="SystemTimezoneAutomaticDetection"><dropdownList refId="SystemTimezoneAutomaticDetection">የራስ-ሰር ሰዓት ሰቅ ማወቂያ ስልቱን ያዋቅሩ</dropdownList></presentation><presentation id="SystemUse24HourClock"/><presentation id="TPMFirmwareUpdateSettings"><textBox refId="TPMFirmwareUpdateSettings"><label>የTPM ጽኑ ትዕዛዝ ዝማኔ ባህሪን ያዋቅሩ</label></textBox></presentation><presentation id="TaskManagerEndProcessEnabled"/><presentation id="TermsOfServiceURL"><textBox refId="TermsOfServiceURL"><label>የመሣሪያ-አካባቢያዊ መለያ አገልግሎት ውል ያዋቅሩ</label></textBox></presentation><presentation id="TouchVirtualKeyboardEnabled"/><presentation id="TranslateEnabled"/><presentation id="URLBlacklist"><listBox refId="URLBlacklistDesc">አንድ የዩ አር ኤልዎች ዝርዝር መዳረሻን ያግዱ</listBox></presentation><presentation id="URLWhitelist"><listBox refId="URLWhitelistDesc">የዩ አር ኤልዎች ዝርዝር መዳረሻን ይፈቅዳል</listBox></presentation><presentation id="UnifiedDesktopEnabledByDefault"/><presentation id="UsbDetachableWhitelist"><listBox refId="UsbDetachableWhitelistDesc">የተፈቀደላቸው ሊላቀቁ የሚችሉ የዩኤስቢ መሣሪያዎች ዝርዝር</listBox></presentation><presentation id="UserAvatarImage"><textBox refId="UserAvatarImage"><label>የተጠቃሚ አምሳያ ምስል</label></textBox></presentation><presentation id="UserDisplayName"><textBox refId="UserDisplayName"><label>የማሳያ ስሙን ለመሣሪያ-አካባቢያዊ መለያዎች ያዋቅሩ</label></textBox></presentation><presentation id="VideoCaptureAllowed"/><presentation id="VideoCaptureAllowedUrls"><listBox refId="VideoCaptureAllowedUrlsDesc">የቪዲዮ ቀረጻ መሣሪያዎች መዳረሻ ያለጥያቄ የሚሰጣቸው ዩ አር ኤሎች</listBox></presentation><presentation id="WPADQuickCheckEnabled"/><presentation id="WallpaperImage"><textBox refId="WallpaperImage"><label>ልጣፍ  ምስል</label></textBox></presentation><presentation id="WebRtcUdpPortRange"><textBox refId="WebRtcUdpPortRange"><label>WebRTC የሚጠቀማቸው የአካባቢያዊ ዩዲፒ ወደቦች ክልልን ገድብ</label></textBox></presentation></presentationTable></resources></policyDefinitionResources>

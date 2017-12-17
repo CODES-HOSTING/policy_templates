@@ -1,0 +1,1288 @@
+<?xml version="1.0" ?><policyDefinitionResources revision="1.0" schemaVersion="1.0"><displayName/><description/><resources><stringTable><string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 或更新版本</string><string id="googlechromeos">Google Chrome OS</string><string id="googlechromeos_recommended">Google Chrome OS - 預設設定 (使用者可覆寫)</string><string id="GoogleCast_group">Google Cast</string><string id="EnableMediaRouter">啟用「Google Cast」</string><string id="EnableMediaRouter_Explain">如果這項政策設為 True 或未設定，系統將啟用「Google Cast」，使用者則可從應用程式選單、頁面內容選單以及 Cast 工具列圖示 (假設不是隱藏狀態) 啟動這項功能，或是在支援投放功能的網站上使用媒體控制項啟動這項功能。
+
+如果這項政策設為 False，「Google Cast」會遭到停用。</string><string id="ShowCastIconInToolbar">顯示「Google Cast」工具列圖示</string><string id="ShowCastIconInToolbar_Explain">如果這項政策設為 True，工具列或溢位選單就一定會顯示 Cast 工具列圖示，而且使用者無法移除這個圖示。
+
+如果這項政策設為 False 或未設定，使用者就可以在內容相關選單中固定或移除 Cast 工具列圖示。
+
+如果「EnableMediaRouter」政策設為 False，這項政策的值則沒有效用，系統不會顯示工具列圖示。</string><string id="HTTPAuthentication_group">HTTP 驗證政策</string><string id="AuthSchemes">支援的驗證機制</string><string id="AuthSchemes_Explain">指定 Google Chrome 支援的 HTTP 驗證機制。
+
+可用的值為「basic」、「digest」、「ntlm」和「negotiate」。如果指定多個值，請以半形逗號分隔。
+
+如果未設定這項政策，系統將全部採用以上 4 種機制。</string><string id="DisableAuthNegotiateCnameLookup">在交涉 Kerberos 驗證時，停用 CNAME 查詢</string><string id="DisableAuthNegotiateCnameLookup_Explain">指定是否要根據標準 DNS 名稱或輸入的原始名稱來產生 Kerberos SPN。如果啟用這項設定，系統會略過 CNAME 查詢，並且使用先前輸入的伺服器名稱。如果你停用或未調整這項設定，伺服器的標準名稱會透過 CNAME 查詢決定。</string><string id="EnableAuthNegotiatePort">Kerberos SPN 包含非標準通訊埠</string><string id="EnableAuthNegotiatePort_Explain">指定產生的 Kerberos SPN 是否應該包含非標準的通訊埠。如果你啟用這項設定並輸入非標準通訊埠 (例如 80 或 443 之外的通訊埠)，那麼產生的 Kerberos SPN 就會包含該通訊埠。如果你停用或未調整這項設定，那麼不論在任何情況下，產生的 Kerberos SPN 都不會包含通訊埠。</string><string id="AuthServerWhitelist">驗證伺服器許可清單</string><string id="AuthServerWhitelist_Explain">指定要將哪些伺服器加入整合驗證許可清單。只有在 Google Chrome 收到允許清單中的 Proxy 或伺服器傳來的驗證要求時，系統才會啟用整合驗證。
+
+請以逗號分隔多個伺服器名稱。可允許萬用字元 (*)。
+
+如果未設定這項政策，Google Chrome 會嘗試偵測伺服器是否位於內部網路，然後回應伺服器傳來的 IWA 要求。如果伺服器位於網際網路，Google Chrome 就會忽略伺服器傳來的 IWA 要求。</string><string id="AuthNegotiateDelegateWhitelist">Kerberos 委派伺服器許可清單</string><string id="AuthNegotiateDelegateWhitelist_Explain">Google Chrome 要委派的目標伺服器。
+
+請以逗號分隔多個伺服器名稱。可使用萬用字元 (*)。
+
+如果你未設定這項政策，則即使 Google Chrome 已偵測到位於內部網路的伺服器，也不會委派使用者憑證。</string><string id="AllowCrossOriginAuthPrompt">跨原始來源的 HTTP 基本驗證提示</string><string id="AllowCrossOriginAuthPrompt_Explain">控制是否允許網頁上的第三方附屬內容彈出「HTTP 基本驗證」對話方塊。為了防止網路釣魚，這項功能通常會停用。如果未設定這項政策，系統會停用這項功能，並且不允許第三方附屬內容彈出「HTTP 基本驗證」對話方塊。</string><string id="Proxy_group">Proxy 伺服器：</string><string id="ProxyMode">選擇如何指定 Proxy 伺服器設定</string><string id="ProxyMode_Explain">允許你指定 Google Chrome 使用的 Proxy 伺服器，並禁止使用者變更 Proxy 設定。
+
+如果你決定完全不使用 Proxy 伺服器，一律採用直接連線，系統會忽略其他所有選項。
+
+如果你選擇使用系統 Proxy 設定，系統會忽略其他所有選項。
+
+如果你選擇自動偵測 Proxy 伺服器，系統也會忽略其他所有選項。
+
+如果你選擇固定的伺服器 Proxy 模式，則可進一步指定「Proxy 伺服器的位址或網址」和「以逗號分隔的 Proxy 略過規則清單」中的選項。ARC 應用程式只能使用優先程度最高的 HTTP Proxy 伺服器。
+
+如果你選擇使用 .pac Proxy 指令碼，則必須在「Proxy .pac 檔案網址」中指定指令碼網址。
+
+如需參考具體的設定範例，請造訪以下網址：
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett
+
+如果你啟用這項設定，Google Chrome 和 ARC 應用程式會忽略所有從命令列指定的 Proxy 相關選項。
+
+如未設定這項政策，則使用者可自行選擇 Proxy 設定。</string><string id="ProxyMode_ProxyDisabled">永不使用 Proxy</string><string id="ProxyMode_ProxyAutoDetect">自動偵測 Proxy 設定</string><string id="ProxyMode_ProxyPacScript">使用 .pac Proxy 指令碼</string><string id="ProxyMode_ProxyFixedServers">使用固定的 Proxy 伺服器</string><string id="ProxyMode_ProxyUseSystem">使用系統 Proxy 設定</string><string id="ProxyServer">Proxy 伺服器的地址或網址</string><string id="ProxyServer_Explain">您可以在這裡指定 Proxy 伺服器的網址。
+
+只有當您在「選擇如何指定 Proxy 伺服器設定」中選取手動 Proxy 設定時，這項政策才會生效。
+
+如果您已選取任何其他模式來設定 Proxy 政策，則不需設定這項政策。
+
+如需更多選項或詳細範例，請造訪：
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett。</string><string id="ProxyPacUrl">Proxy .pac 檔案的網址</string><string id="ProxyPacUrl_Explain">您可以在這裡為 Proxy .pac 檔案指定網址。
+
+只有當您在「選擇如何指定 Proxy 伺服器設定」中選取手動 Proxy 設定，這項政策才會生效。
+
+如果您已選取任何其他模式來設定 Proxy 政策，則不需設定這項政策。
+
+如需詳細範例，請造訪：
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett。</string><string id="ProxyBypassList">Proxy 略過規則</string><string id="ProxyBypassList_Explain">Google Chrome 會略過這裡提供的主機清單中的任何 Proxy。
+
+如果你在「選擇如何指定 Proxy 伺服器設定」選取了手動 Proxy 設定，這項政策才會生效。
+
+如果選取了任何其他 Proxy 政策設定模式，則不需設定這項政策。
+
+如需參考更具體的設定範例，請造訪以下網址：
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ContentSettings_group">內容設定</string><string id="DefaultCookiesSetting">預設 Cookie 設定</string><string id="DefaultCookiesSetting_Explain">可讓您設定是否允許網站設定本機資料。您可以允許所有網站都能設定本機資料，也可以禁止所有網站設定本機資料。
+
+如果將這項政策設為 [在工作階段期間保留 Cookie]，系統會在工作階段結束時清除 Cookie。請注意，如果 Google Chrome 是在「背景模式」中執行，工作階段可能不會在最後一個視窗關閉時結束。如需深入瞭解如何設定這項行為，請參閱「BackgroundModeEnabled」政策。
+
+如未設定這項政策，系統會使用「AllowCookies」，使用者之後可以自行變更這項設定。</string><string id="DefaultCookiesSetting_AllowCookies">允許所有網站設定本機資料</string><string id="DefaultCookiesSetting_BlockCookies">不允許任何網站設定本機資料</string><string id="DefaultCookiesSetting_SessionOnly">在工作階段期間保留 Cookie</string><string id="DefaultImagesSetting">預設圖片設定</string><string id="DefaultImagesSetting_Explain">允許你設定是否要讓網站顯示圖片。你可以允許或禁止所有網站顯示圖片。如果未設定這項政策，系統會使用「AllowImages」，不過使用者可以變更設定。</string><string id="DefaultImagesSetting_AllowImages">允許所有網站顯示所有圖片</string><string id="DefaultImagesSetting_BlockImages">不允許任何網站顯示圖片</string><string id="DefaultJavaScriptSetting">預設 JavaScript 設定</string><string id="DefaultJavaScriptSetting_Explain">允許你設定是否要讓網站執行 JavaScript。你可以允許或禁止所有網站執行 JavaScript。如果未設定這項政策，系統會使用「AllowJavaScript」，不過使用者可以變更設定。</string><string id="DefaultJavaScriptSetting_AllowJavaScript">允許所有網站執行 JavaScript</string><string id="DefaultJavaScriptSetting_BlockJavaScript">不允許任何網站執行 JavaScript</string><string id="DefaultPluginsSetting">Flash 預設設定</string><string id="DefaultPluginsSetting_Explain">允許你設定是否要讓網站自動執行 Flash 外掛程式。你可以選擇允許或拒絕所有網站執行 Flash 外掛程式。
+
+啟用 [點擊執行] 選項時，使用者必須手動點選預留位置，Flash 外掛程式才會開始執行。
+
+如未設定這項政策，使用者可以手動調整這項設定。</string><string id="DefaultPluginsSetting_AllowPlugins">允許所有網站自動執行 Flash 外掛程式</string><string id="DefaultPluginsSetting_BlockPlugins">封鎖 Flash 外掛程式</string><string id="DefaultPluginsSetting_ClickToPlay">點擊執行</string><string id="DefaultPopupsSetting">預設彈出視視窗設定</string><string id="DefaultPopupsSetting_Explain">允許你設定是否要讓網站顯示彈出式視窗。你可以允許或禁止所有網站顯示彈出式視窗。如果未設定這項政策，系統會使用「BlockPopups」，不過使用者可以變更設定。</string><string id="DefaultPopupsSetting_AllowPopups">允許所有網站顯示彈出式視窗</string><string id="DefaultPopupsSetting_BlockPopups">不允許任何網站顯示彈出式視窗</string><string id="DefaultNotificationsSetting">預設通知設定</string><string id="DefaultNotificationsSetting_Explain">允許你設定是否要讓網站顯示桌面通知。你可以將網站預設為允許或禁止顯示桌面通知，也可以設為每次網站要顯示桌面通知時再詢問使用者。如果未設定這項政策，系統會使用「AskNotifications」，但使用者可以變更這項設定。</string><string id="DefaultNotificationsSetting_AllowNotifications">允許網站顯示桌面通知</string><string id="DefaultNotificationsSetting_BlockNotifications">不允許任何網站顯示桌面通知</string><string id="DefaultNotificationsSetting_AskNotifications">每當網站要顯示桌面通知時詢問我</string><string id="DefaultGeolocationSetting">預設地理位置設定</string><string id="DefaultGeolocationSetting_Explain">允許你設定是否要讓網站追蹤使用者的實際位置。你可以直接預設為允許或不允許追蹤使用者的實際位置，或讓網站每次要求實際位置時都詢問使用者一次。如果未設定這項政策，系統會使用「AskGeolocation」，不過使用者可以變更設定。</string><string id="DefaultGeolocationSetting_AllowGeolocation">允許網站追蹤使用者的實際位置</string><string id="DefaultGeolocationSetting_BlockGeolocation">不允許任何網站追蹤使用者的實際位置</string><string id="DefaultGeolocationSetting_AskGeolocation">詢問網站何時要追蹤使用者的實際位置</string><string id="DefaultWebBluetoothGuardSetting">控制 Web Bluetooth API 使用權限</string><string id="DefaultWebBluetoothGuardSetting_Explain">讓您設定是否允許網站存取附近的藍牙裝置。您可以完全禁止網站存取附近的藍牙裝置，也可以要求網站一律需要經過使用者同意才能存取附近的藍牙裝置。
+
+如果未設定這項政策，系統會使用「3」，而使用者可以自行變更設定。</string><string id="DefaultWebBluetoothGuardSetting_BlockWebBluetooth">不允許任何網站透過 Web Bluetooth API 要求存取藍牙裝置</string><string id="DefaultWebBluetoothGuardSetting_AskWebBluetooth">允許網站要求使用者授權存取附近的藍牙裝置</string><string id="AutoSelectCertificateForUrls">自動為這些網站選取用戶端憑證</string><string id="AutoSelectCertificateForUrls_Explain">允許您以清單列出網址模式，指定 Google Chrome 應自動選取用戶端憑證的網站 (如果網站要求憑證的話)。
+
+這個值必須是字串化的 JSON 字典陣列。每個字典的格式都必須是 { &quot;pattern&quot;: &quot;$URL_PATTERN&quot;, &quot;filter&quot; : $FILTER } (其中的 $URL_PATTERN 是內容設定模式，$FILTER 則限定瀏覽器自動選取的用戶端憑證)。無論是否設定篩選條件，瀏覽器只會選取符合伺服器憑證要求的憑證。如果 $FILTER 的格式為 { &quot;ISSUER&quot;: { &quot;CN&quot;: &quot;$ISSUER_CN&quot; } }，則瀏覽器只會選取 CommonName 為 $ISSUER_CN 的憑證所核發的用戶端憑證。如果 $FILTER 是空白的字典 {}，那麼瀏覽器在選擇客戶端憑證時就不會受到額外限制。
+
+如果未設定這項政策，系統將不會為任何網站自動選取憑證。</string><string id="AutoSelectCertificateForUrlsDesc">自動為這些網站選取用戶端憑證</string><string id="CookiesAllowedForUrls">允許這些網站的 Cookie</string><string id="CookiesAllowedForUrls_Explain">允許你設定網址模式清單，指定可以設定 Cookie 的網站。如果未設定這項政策，系統會從「DefaultCookiesSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="CookiesAllowedForUrlsDesc">允許這些網站的 Cookie</string><string id="CookiesBlockedForUrls">封鎖這些網站的 Cookie</string><string id="CookiesBlockedForUrls_Explain">允許你設定網址模式清單，指定不可以設定 Cookie 的網站。如果未設定這項政策，系統會從「DefaultCookiesSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="CookiesBlockedForUrlsDesc">封鎖這些網站的 Cookie</string><string id="CookiesSessionOnlyForUrls">只有本次工作階段允許這些網站的 Cookie</string><string id="CookiesSessionOnlyForUrls_Explain">允許您設定網址模式清單，用於指定哪些網站可以設定僅適用於工作階段的 Cookie。
+
+如果未設定這項政策，系統會根據「DefaultCookiesSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用到所有網站。
+
+請注意，如果 Google Chrome 在「背景模式」中執行，關閉最後一個瀏覽器視窗時，工作階段可能不會關閉 (在離開瀏覽器之前會保持運作狀態)。如要進一步瞭解如何設定這項行為，請參閱「BackgroundModeEnabled」政策。
+
+如果將「RestoreOnStartup」政策設為還原先前工作階段的網址，系統就不會遵循這項政策，並且會為這些網站永久儲存 Cookie。</string><string id="CookiesSessionOnlyForUrlsDesc">只有本次工作階段允許這些網站的 Cookie</string><string id="ImagesAllowedForUrls">允許這些網站的圖片</string><string id="ImagesAllowedForUrls_Explain">允許你設定網址模式清單，指定可以顯示圖片的網站。如果未設定這項政策，系統會從「DefaultImagesSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="ImagesAllowedForUrlsDesc">允許這些網站的圖片</string><string id="ImagesBlockedForUrls">封鎖這些網站的圖片</string><string id="ImagesBlockedForUrls_Explain">允許你設定網址模式清單，指定不可以展示圖片的網站。如果未設定這項政策，系統會從「DefaultImagesSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="ImagesBlockedForUrlsDesc">封鎖這些網站的圖片</string><string id="JavaScriptAllowedForUrls">允許這些網站的 JavaScript</string><string id="JavaScriptAllowedForUrls_Explain">允許你設定網址模式清單，指定可以執行 JavaScript 的網站。如果未設定這項政策，系統會從「DefaultJavaScriptSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="JavaScriptAllowedForUrlsDesc">允許這些網站的 JavaScript</string><string id="JavaScriptBlockedForUrls">封鎖這些網站的 JavaScript</string><string id="JavaScriptBlockedForUrls_Explain">允許你設定網址模式清單，指定不可以執行 JavaScript 的網站。如果未設定這項政策，系統會從「DefaultJavaScriptSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="JavaScriptBlockedForUrlsDesc">封鎖這些網站的 JavaScript</string><string id="PluginsAllowedForUrls">允許在這些網站上執行 Flash 外掛程式</string><string id="PluginsAllowedForUrls_Explain">允許你設定網址模式清單，指定允許執行 Flash 外掛程式的網站。
+
+如未設定這項政策，系統會從「DefaultPluginsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="PluginsAllowedForUrlsDesc">允許在這些網站上執行 Flash 外掛程式</string><string id="PluginsBlockedForUrls">禁止在這些網站上執行 Flash 外掛程式</string><string id="PluginsBlockedForUrls_Explain">允許你設定網址模式清單，指定不允許執行 Flash 外掛程式的網站。
+
+如未設定這項政策，系統會從「DefaultPluginsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="PluginsBlockedForUrlsDesc">禁止在這些網站上執行 Flash 外掛程式</string><string id="PopupsAllowedForUrls">允許這些網站的彈出式視窗</string><string id="PopupsAllowedForUrls_Explain">允許你設定網址模式清單，指定可以開啟彈出式視窗的網站。如果未設定這項政策，系統會從「DefaultPopupsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="PopupsAllowedForUrlsDesc">允許這些網站的彈出式視窗</string><string id="RegisteredProtocolHandlers">註冊通訊協定處理常式</string><string id="RegisteredProtocolHandlers_Explain">允許你註冊通訊協定處理常式清單 (這是一律建議使用的政策)。屬性 |protocol| 應設定為配置 (例如「mailto」)，而屬性 |url| 則應設定為處理該配置的應用程式的網址模式。模式可包含「%s」(如果有的話，會由受處理的網址取代)。
+
+由政策註冊的通訊協定處理常式會與由使用者註冊的通訊協定處理常式合併，兩者皆可供使用。使用者可以安裝新的預設處理常式來覆寫由政策安裝的通訊協定處理常式，但無法移除由政策註冊的通訊協定處理常式。</string><string id="PopupsBlockedForUrls">封鎖這些網站的彈出式視窗</string><string id="PopupsBlockedForUrls_Explain">允許你設定網址模式清單，指定不可以開啟彈出式視窗的網站。如果未設定這項政策，系統會從「DefaultPopupsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="PopupsBlockedForUrlsDesc">封鎖這些網站的彈出式視窗</string><string id="NotificationsAllowedForUrls">允許這些網站的通知</string><string id="NotificationsAllowedForUrls_Explain">允許你設定網址模式清單，指定可以展示通知的網站。如果未設定這項政策，系統會從「DefaultNotificationsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="NotificationsAllowedForUrlsDesc">允許這些網站的通知</string><string id="NotificationsBlockedForUrls">封鎖這些網站的通知</string><string id="NotificationsBlockedForUrls_Explain">允許你設定網址模式清單，指定不可以展示通知的網站。如果未設定這項政策，系統會從「DefaultNotificationsSetting」政策 (如果有設定的話) 或使用者的個人設定，將通用預設值套用至所有網站。</string><string id="NotificationsBlockedForUrlsDesc">封鎖這些網站的通知</string><string id="Accessibility_group">協助工具設定</string><string id="ShowAccessibilityOptionsInSystemTrayMenu">在系統匣選單中顯示協助工具選項</string><string id="ShowAccessibilityOptionsInSystemTrayMenu_Explain">If this policy is set to true, Accessibility options always appear in system tray menu.
+
+If this policy is set to false, Accessibility options never appear in system tray menu.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, Accessibility options will not appear in the system tray menu, but the user can cause the Accessibility options to appear via the Settings page.</string><string id="LargeCursorEnabled">啟用大型游標</string><string id="LargeCursorEnabled_Explain">啟用大型游標協助功能。
+
+如果你將這項政策設為 True，系統將一律啟用大型游標。
+
+如果你將這項政策設為 False，系統將一律停用大型游標。
+
+只要你設定這項政策，使用者即無法予以變更或覆寫。
+
+如果你未設定這項政策，系統預設會停用大型游標，但使用者隨時均可予以啟用。</string><string id="SpokenFeedbackEnabled">啟用互動朗讀</string><string id="SpokenFeedbackEnabled_Explain">啟用互動朗讀協助功能。
+
+如果你將這項政策設為 True，系統將一律啟用互動朗讀。
+
+如果你將這項政策設為 False，系統將一律停用互動朗讀。
+
+只要你設定這項政策，使用者即無法予以變更或覆寫。
+
+如果你未設定這項政策，系統預設會停用互動朗讀，但使用者隨時均可予以啟用。</string><string id="HighContrastEnabled">啟用高反差模式</string><string id="HighContrastEnabled_Explain">啟用高反差模式協助功能。
+
+如果你將這項政策設為 True，系統將一律啟用高反差模式。
+
+如果你將這項政策設為 False，系統將一律停用高反差模式。
+
+只要你設定這項政策，使用者即無法予以變更或覆寫。
+
+如果你未設定這項政策，系統預設會停用高反差模式，但使用者隨時均可予以啟用。</string><string id="VirtualKeyboardEnabled">啟用螢幕小鍵盤</string><string id="VirtualKeyboardEnabled_Explain">啟用螢幕小鍵盤這項協助工具功能。
+
+如果將這項政策設為 True，螢幕小鍵盤將一律為啟用狀態。
+
+如果將這項政策設為 False，螢幕小鍵盤將一律為停用狀態。
+
+如果設定了這項政策，使用者將無法予以變更或覆寫。
+
+如未設定這項政策，螢幕小鍵盤將預設為停用，但使用者可以隨時啟用這項功能。</string><string id="KeyboardDefaultToFunctionKeys">媒體鍵預設為功能鍵</string><string id="KeyboardDefaultToFunctionKeys_Explain">變更以鍵盤最上方一排按鍵做為功能鍵的預設行為。
+
+如果將這項政策設為 True，鍵盤最上方一排按鍵預設會產生功能鍵指令。如要恢復使用媒體鍵指令，請按下搜尋鍵。
+
+如果將這項政策設為 False 或未設定，鍵盤預設會產生媒體鍵指令，必須按住搜尋鍵才能使用功能鍵指令。</string><string id="ScreenMagnifierType">設定螢幕放大鏡類型</string><string id="ScreenMagnifierType_Explain">If this policy is set, it controls the type of screen magnifier that is enabled. Setting the policy to &quot;None&quot; disables the screen magnifier.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, the screen magnifier is disabled initially but can be enabled by the user anytime.</string><string id="ScreenMagnifierType_None">已停用螢幕放大鏡</string><string id="ScreenMagnifierType_Full-screen">已啟用全螢幕放大鏡</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled">設定大型游標在登入畫面的預設狀態</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled_Explain">設定大型游標協助功能在登入畫面的預設狀態。
+
+如果你將這項政策設為 True，系統將在顯示登入畫面時啟用大型游標。
+
+如果你將這項政策設為 False，系統將在顯示登入畫面時停用大型游標。
+
+如果你設定了這項政策，使用者可以暫時覆寫這項政策，只要啟用或停用大型游標即可。但使用者的選擇並非永久性，只要系統再次顯示登入畫面或使用者在登入畫面閒置了一段時間，系統就會還原預設值。
+
+如果你未設定這項政策，則系統會在初次顯示登入畫面時停用大型游標。使用者隨時都可以啟用或停用大型游標，而大型游標在登入畫面的狀態則視使用者的選擇而定 (均為永久性)。</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled">設定互動朗讀在登入畫面的預設狀態</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled_Explain">設定互動朗讀協助功能在登入畫面的預設狀態。
+
+如果你將這項政策設為 True，系統將在顯示登入畫面時啟用互動朗讀。
+
+如果你將這項政策設為 False，系統將在顯示登入畫面時停用互動朗讀。
+
+如果你設定了這項政策，使用者可以暫時覆寫這項政策，只要啟用或停用互動朗讀即可。但使用者的選擇並非永久性，只要系統再次顯示登入畫面或使用者在登入畫面閒置了一段時間，系統就會還原預設值。
+
+如果你未設定這項政策，則系統會在初次顯示登入畫面時停用互動朗讀。使用者隨時都可以啟用或停用互動朗讀，而互動朗讀在登入畫面的狀態則視使用者的選擇而定 (均為永久性)。</string><string id="DeviceLoginScreenDefaultHighContrastEnabled">設定高反差模式在登入畫面的預設狀態</string><string id="DeviceLoginScreenDefaultHighContrastEnabled_Explain">設定高反差模式協助功能在登入畫面的預設狀態。
+
+如果你將這項政策設為 True，系統將在顯示登入畫面時啟用高反差模式。
+
+如果你將這項政策設為 False，系統將在顯示登入畫面時停用高反差模式。
+
+如果你設定了這項政策，使用者可以暫時覆寫這項政策，只要啟用或停用高反差模式即可。但使用者的選擇並非永久性，只要系統再次顯示登入畫面或使用者在登入畫面閒置了一段時間，系統就會還原預設值。
+
+如果你未設定這項政策，則系統會在初次顯示登入畫面時停用高反差模式。使用者隨時都可以啟用或停用高反差模式，而高反差模式在登入畫面的狀態則視使用者的選擇而定 (均為永久性)。</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled">設定螢幕小鍵盤在登入畫面中的預設狀態</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled_Explain">設定螢幕小鍵盤這項協助工具功能在登入畫面中的預設狀態。
+
+如果將這項政策設為 True，登入畫面顯示時將會啟用螢幕小鍵盤。
+
+如果將這項政策設為 False，登入畫面顯示時將會停用螢幕小鍵盤。
+
+如果設定了這項政策，使用者可以啟用或停用螢幕小鍵盤以暫時覆寫政策。不過，使用者的選擇並非持續有效；每當顯示新的登入畫面，或使用者在登入畫面上閒置一分鐘後，系統便會還原預設設定。
+
+如未設定這項政策，那麼登入畫面最初顯示時就會停用螢幕小鍵盤。使用者隨時可以啟用或停用螢幕小鍵盤，這項功能在登入畫面中的狀態，會在不同使用者之間持續下去。</string><string id="DeviceLoginScreenDefaultScreenMagnifierType">設定啟用的螢幕放大鏡在登入畫面的預設類型</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Explain">設定啟用的螢幕放大鏡在登入畫面的預設類型。
+
+如果你設定這項政策，該政策即會指定顯示登入畫面時啟用的螢幕放大鏡類型。將政策設為「None」則會停用螢幕放大鏡。
+
+如果你設定了這項政策，使用者可以暫時覆寫這項政策，只要啟用或停用螢幕放大鏡即可。但使用者的選擇並非永久性，只要系統再次顯示登入畫面或使用者在登入畫面閒置了一段時間，系統就會還原預設值。
+
+如果你未設定這項政策，則系統會在初次顯示登入畫面時停用螢幕放大鏡。使用者隨時都可以啟用或停用螢幕放大鏡，而螢幕放大鏡在登入畫面的狀態則視使用者的選擇而定 (均為永久性)。</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_None">已停用螢幕放大鏡</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Full-screen">已啟用全螢幕放大鏡</string><string id="PasswordManager_group">密碼管理員</string><string id="PasswordManagerEnabled">允許將密碼儲存到密碼管理員</string><string id="PasswordManagerEnabled_Explain">If this setting is enabled, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site.
+
+If this settings is disabled, users cannot save new passwords but they
+may still use passwords that have been saved previously.
+
+If this policy is enabled or disabled, users cannot change or override it in Google Chrome. If this policy is unset, password saving is allowed (but can be turned off by the user).</string><string id="QuickUnlock_group">快速解鎖政策</string><string id="QuickUnlockModeWhitelist">Configure allowed quick unlock modes</string><string id="QuickUnlockModeWhitelist_Explain">控制使用者可以設定及使用哪些快速解鎖模式來解除螢幕鎖定的許可清單。
+
+值為字串清單；有效的清單項目包括「all」和「PIN」。如果在清單中新增「all」，使用者就能使用所有快速解鎖模式 (包括日後實作的模式)；反之，使用者將只能使用清單中列出的快速解鎖模式。
+
+也就是說，如要允許所有快速解鎖模式，請使用 [all]；如果只想允許 PIN 解鎖，請使用 [PIN]；如要停用所有快速解鎖模式，請將清單保留空白。
+
+在預設情況下，使用者無法在受管理的裝置上使用任何快速解鎖模式。</string><string id="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</string><string id="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</string><string id="QuickUnlockTimeout_Explain">這項設定可控管必須輸入密碼才能繼續使用快速解鎖功能解除螢幕鎖定的頻率。每次進入螢幕鎖定狀態後，如果上次輸入密碼時間超過這項設定的值，即無法在鎖定畫面中使用快速解鎖功能。如果使用者在鎖定畫面停留的時間超過這段時間，則系統會在使用者下次輸入錯誤的密碼時或再次進入螢幕鎖定狀態時 (兩者取其先) 要求輸入密碼。
+
+如果指定這項設定，系統會根據這項設定的值要求快速解鎖功能使用者在鎖定畫面中輸入密碼。
+
+如果未指定這項設定，系統則會每天要求快速解鎖功能使用者在鎖定畫面中輸入密碼。</string><string id="QuickUnlockTimeout_SixHours">Password entry is required every six hours</string><string id="QuickUnlockTimeout_TweleveHours">Password entry is required every twelve hours</string><string id="QuickUnlockTimeout_Day">Password entry is required every day (24 hours)</string><string id="QuickUnlockTimeout_Week">Password entry is required every week (168 hours)</string><string id="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN</string><string id="PinUnlockMinimumLength_Explain">If the policy is set, the configured minimal PIN length is
+enforced. (The absolute minimum PIN length is 1; values less than 1
+are treated as 1.)
+
+If the policy is not set, a minimal PIN length of 6 digits is
+enforced. This is the recommended minimum.</string><string id="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN</string><string id="PinUnlockMaximumLength_Explain">If the policy is set, the configured maximal PIN length is enforced. A value of 0 or less means no maximum length; in that case the user may set a PIN as long as they want. If this setting is less than PinUnlockMinimumLength but greater than 0, the maximum length is the same as the minimum length.
+
+If the policy is not set, no maximum length is enforced.</string><string id="PinUnlockWeakPinsAllowed">Enables users to set weak PINs for the lock screen PIN</string><string id="PinUnlockWeakPinsAllowed_Explain">如果設為 False，使用者將無法設定系統判定強度不足而容易被破解的 PIN。
+
+以下列舉強度不足的 PIN：完全由相同數字組成的 PIN (例如 1111)，由公差為正負 1 的等差數列組成的 PIN (例如 1234 和 4321)，以及屬於常見字元組合的 PIN。
+
+在預設情況下，當使用者輸入的 PIN 強度不足時，系統會顯示警告訊息 (而非錯誤訊息)。</string><string id="Extensions_group">擴充功能</string><string id="ExtensionInstallBlacklist">設定擴充功能安裝黑名單</string><string id="ExtensionInstallBlacklist_Explain">讓你指定使用者不得安裝的擴充功能。如果已安裝的擴充功能在黑名單中，就會遭到停用 (使用者無法啟用)。因列入黑名單而遭到停用的擴充功能一旦從黑名單中移除，就會自動重新啟用。
+
+星號「*」代表一律不允許使用者安裝擴充功能 (特別加入許可清單者除外)。
+
+如果未設定這項政策，使用者即可在 Google Chrome 中安裝任何擴充功能。</string><string id="ExtensionInstallBlacklistDesc">設定擴充功能安裝黑名單</string><string id="ExtensionInstallWhitelist">設定擴充功能安裝許可清單</string><string id="ExtensionInstallWhitelist_Explain">允許你指定不應列入黑名單的擴充功能。星號 (*) 代表排除所有的擴充功能，而使用者只能安裝許可清單所列的擴充功能。根據預設，所有擴充功能都會列入許可清單，但如果因為政策而導致所有擴充功能都進入黑名單，則你可以使用許可清單覆寫該政策。</string><string id="ExtensionInstallWhitelistDesc">設定擴充功能安裝許可清單</string><string id="ExtensionInstallForcelist">設定強制安裝的應用程式和擴充功能清單</string><string id="ExtensionInstallForcelist_Explain">Specifies a list of apps and extensions that are installed silently,
+without user interaction, and which cannot be uninstalled nor
+disabled by the user. All permissions requested by the
+apps/extensions are granted implicitly, without user interaction,
+including any additional permissions requested by future versions of
+the app/extension. Furthermore, permissions are granted for the
+enterprise.deviceAttributes and enterprise.platformKeys extension
+APIs. (These two APIs are not available to apps/extensions that are
+not force-installed.)
+
+This policy takes precedence over a potentially conflicting ExtensionInstallBlacklist policy. If an app or extension that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+For Windows instances that are not joined to a MicrosoftÂ® Active
+DirectoryÂ® domain, forced installation is limited to apps and
+extensions listed in the Chrome Web Store.
+
+Note that the source code of any extension may be altered by users via Developer Tools (potentially rendering the extension dysfunctional). If this is a concern, the DeveloperToolsDisabled policy should be set.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.
+
+If this policy is left not set, no apps or extensions are installed automatically and the user can uninstall any app or extension in Google Chrome.</string><string id="ExtensionInstallForcelistDesc">設定強制安裝的應用程式和擴充功能清單</string><string id="ExtensionInstallSources">設定擴充功能、應用程式和使用者指令碼安裝來源</string><string id="ExtensionInstallSources_Explain">Allows you to specify which URLs are allowed to install extensions, apps, and themes.
+
+Starting in Google Chrome 21, it is more difficult to install extensions, apps, and user scripts from outside the Chrome Web Store. Previously, users could click on a link to a *.crx file, and Google Chrome would offer to install the file after a few warnings. After Google Chrome 21, such files must be downloaded and dragged onto the Google Chrome settings page. This setting allows specific URLs to have the old, easier installation flow.
+
+Each item in this list is an extension-style match pattern (see https://developer.chrome.com/extensions/match_patterns). Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (i.e. the referrer) must be allowed by these patterns.
+
+ExtensionInstallBlacklist takes precedence over this policy. That is, an extension on the blacklist won't be installed, even if it happens from a site on this list.</string><string id="ExtensionInstallSourcesDesc">設定擴充功能、應用程式和使用者指令碼安裝來源</string><string id="ExtensionAllowedTypes">設定允許的應用程式/擴充功能類型</string><string id="ExtensionAllowedTypes_Explain">控制要允許安裝的應用程式/擴充功能類型並限制執行階段存取權。
+
+這項許可清單設定會列出允許安裝在 Google Chrome 的擴充功能/應用程式類型，以及能進行互動的主機。該值為字串清單，可用字串如下：「extension」、「theme」、「user_script」、「hosted_app」、「legacy_packaged_app」、「platform_app」。如要進一步瞭解這些類型，請參閱 Google Chrome 擴充功能說明文件。
+
+請注意，這項政策也會影響透過 ExtensionInstallForcelist 強制安裝的擴充功能和應用程式。
+
+如果設定了這項政策，系統就不會安裝未列於清單中的其他類型擴充功能/應用程式。
+
+如未設定這項政策，系統便不會針對可接受的擴充功能/應用程式類型套用任何限制。</string><string id="ExtensionAllowedTypesDesc">設定允許的應用程式/擴充功能類型</string><string id="ExtensionSettings">擴充功能管理設定</string><string id="ExtensionSettings_Explain">配置 Google Chrome 的擴充功能管理設定。
+
+這項政策可控制多項設定 (包括由任何現有的擴充功能相關政策控制的設定)，效力優先於任何先前設定的既有政策。
+
+這項政策可為擴充功能 ID 或更新網址與其設定建立對應關係。有了擴充功能 ID，系統就只會將設定套用到指定的擴充功能。你可以針對特殊的 ID &quot;*&quot; 指定預設設定，讓沒有透過這項政策指定自訂設定的擴充功能全部套用預設設定。此外，系統會比對這個擴充功能的資訊清單提供的更新網址，將設定套用到所有更新網址相符的擴充功能 (如 https://developer.chrome.com/extensions/autoupdate 所述)。
+
+每個擴充功能 (或更新網址相同的擴充功能) 的設定也會記錄以下列載的這些欄位。
+
+&quot;installation_mode&quot;：對應到指示擴充功能安裝模式的字串。有效的字串如下：
+* &quot;allowed&quot;：允許使用者安裝這個擴充功能 (這是預設的行為)。
+* &quot;blocked&quot;：禁止安裝這個擴充功能。
+* &quot;force_installed&quot;：自動安裝這個擴充功能，且使用者無法移除。
+* &quot;normal_installed&quot;：自動安裝這個擴充功能，但使用者可以停用。
+
+你也可以為多個擴充功能設定 &quot;installation_mode&quot;，包括 &quot;*&quot; 擴充功能 (做為預設設定) 和更新網址相同的擴充功能。在這種情況下，只能使用 &quot;allowed&quot; 和 &quot;blocked&quot; 這兩個值。
+
+如果將模式設為 &quot;force_installed&quot; 或 &quot;normal_installed&quot;，則必須一併設定 &quot;update_url&quot;。請注意，系統只會在初次安裝擴充功能時使用你在這項政策中設定的更新網址，後續更新擴充功能時則會使用擴充功能的資訊清單指示的更新網址。更新網址應指向前述更新資訊清單 XML 檔案。
+
+&quot;blocked_permissions&quot;：對應到字串清單，指示擴充功能的封鎖 API 權限。權限名稱與擴充功能資訊清單宣告的權限字串相同 (如 https://developer.chrome.com/extensions/declare_permissions 所述)。你也可以針對 &quot;*&quot; 擴充功能配置這項設定。如果擴充功能要求封鎖清單中的權限，則無法載入。如果擴充功能含有封鎖的權限，但屬於選擇性要求，系統會以一般方式進行處理。不過，一旦要求的權限發生衝突，系統會自動在執行階段拒絕要求。
+
+&quot;allowed_permissions&quot;：與 &quot;blocked_permissions&quot; 相似，但明確允許部分可能遭到全域封鎖權限清單封鎖的權限，因此無法針對 &quot;*&quot; 擴充功能進行設定。請注意，這項設定不會自動將權限授予擴充功能。
+
+&quot;minimum_version_required&quot;：對應到版本字串。版本字串的格式與擴充功能資訊清單中使用的格式相同 (如 https://developer.chrome.com/apps/manifest/version 所述)。如果擴充功能的版本比指定的最低版本更舊，便會遭到停用。這項設定也適用於強制安裝的擴充功能。
+
+下列設定僅適用於預設的 &quot;*&quot; 設定：
+
+&quot;install_sources&quot;：這份清單中的每個項目都是擴充功能樣式比對模式 (https://developer.chrome.com/extensions/match_patterns)。使用者可以透過任何與這份清單中的項目相符的網址輕鬆安裝各種項目。*.crx 檔案的位置和下載來源網頁 (亦即參照網址) 都必須與這些模式相符。
+
+&quot;allowed_types&quot;：這項設定會將可以在 Google Chrome 中安裝的擴充功能/應用程式類型加入許可清單。設定值為字串清單，系統接受的字串如下：&quot;extension&quot;, &quot;theme&quot;, &quot;user_script&quot;, &quot;hosted_app&quot;, &quot;legacy_packaged_app&quot;, &quot;platform_app&quot;。如要進一步瞭解這些類型，請參閱 Google Chrome 擴充功能說明文件。
+&quot;blocked_install_message&quot;：如果使用者要安裝的擴充功能遭到政策封鎖，Chrome 線上應用程式商店會顯示一般錯誤訊息。這項設定可讓你在錯誤訊息中附加文字，藉此將使用者導向服務中心，說明特定擴充功能遭到封鎖的原因，或提供其他資訊。錯誤訊息的長度上限為 1000 個字元，多餘的字元會遭到截斷。
+&quot;runtime_blocked_hosts&quot;：接受擴充功能禁止進行互動的主機清單。互動行為包括植入 JavaScript、修改及查看 webRequests/webNavigation、查看及修改 Cookie。格式與比對模式 https://developer.chrome.com/extensions/match_patterns 類似，但不可定義路徑，例如「*://*.example.com」。這項設定也支援有效的 TLD 萬用字元，例如「*://example.*」。
+&quot;runtime_allowed_hosts&quot;：接受擴充功能可進行互動的主機清單 (無論是否為 &quot;runtime_blocked_hosts&quot; 列出的主機)。格式與 &quot;runtime_blocked_hosts&quot; 相同。
+</string><string id="NewTabPage_group">新分頁</string><string id="NewTabPageLocation">設定新分頁網址</string><string id="NewTabPageLocation_Explain">Configures the default New Tab page URL and prevents users from changing it.
+
+The New Tab page is the page opened when new tabs are created (including the one opened in new windows).
+
+This policy does not decide which pages are to be opened on start up. Those are controlled by the RestoreOnStartup policies. Yet this policy does affect the Home Page if that is set to open the New Tab page, as well as the startup page if that is set to open the New Tab page.
+
+If the policy is not set or left empty the default new tab page is used.
+
+This policy is not available on Windows instances that are not joined to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="Drive_group">設定 Google 雲端硬碟選項</string><string id="DriveDisabled">停用 Google Chrome OS「檔案」應用程式中的雲端硬碟</string><string id="DriveDisabled_Explain">如果你設為 Ture，Google Chrome OS的「檔案」應用程式就會停用 Google 雲端硬碟同步功能。這種情形下，系統無法將資料上傳至 Google 雲端硬碟。
+
+如果你設為 False 或未設定，使用者即可將檔案傳輸至 Google 雲端硬碟。</string><string id="DriveDisabledOverCellular">透過行動網路連線時，停用 Google Chrome OS中「檔案」應用程式的 Google 雲端硬碟功能</string><string id="DriveDisabledOverCellular_Explain">如果你設為 Ture，Google Chrome OS的「檔案」應用程式就會在使用行動網路連線時停用 Google 雲端硬碟同步功能。這種情形下，系統只有在連上 WiFi 或乙太網路連線時才會將資料同步處理至 Google 雲端硬碟。
+
+如果你設為 False 或未設定，使用者即可透過行動網路連線將檔案傳輸至 Google 雲端硬碟。</string><string id="RemoteAccess_group">設定遠端存取選項</string><string id="RemoteAccessHostClientDomainList">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostClientDomainList_Explain">Configures the required client domain names that will be imposed on remote access clients and prevents users from changing it.
+
+If this setting is enabled, then only clients from one of the specified domains can connect to the host.
+
+If this setting is disabled or not set, then the default policy for the connection type is applied. For remote assistance, this allows clients from any domain to connect to the host; for anytime remote access, only the host owner can connect.
+
+This setting will override RemoteAccessHostClientDomain, if present.
+
+See also RemoteAccessHostDomainList.</string><string id="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostFirewallTraversal">允許遠端存取主機穿越防火牆</string><string id="RemoteAccessHostFirewallTraversal_Explain">在遠端用戶端嘗試與這台電腦建立連線時，啟用 STUN 伺服器。
+
+如果啟用這項設定，那麼即使遠端用戶端被防火牆隔開，也能偵測到這台電腦並建立連線。
+
+如果停用這項設定，且防火牆會篩出外傳 UDP 連線，則這台電腦只會自動允許來自區域網路用戶端電腦的連線。
+
+如果未設定這項政策，系統會啟用這項設定。</string><string id="RemoteAccessHostDomainList">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostDomainList_Explain">Configures the required host domain names that will be imposed on remote access hosts and prevents users from changing it.
+
+If this setting is enabled, then hosts can be shared only using accounts registered on one of the specified domain names.
+
+If this setting is disabled or not set, then hosts can be shared using any account.
+
+This setting will override RemoteAccessHostDomain, if present.
+
+See also RemoteAccessHostClientDomainList.</string><string id="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostTalkGadgetPrefix">為遠端存取主機設定 TalkGadget 前置詞</string><string id="RemoteAccessHostTalkGadgetPrefix_Explain">設定遠端存取主機所要使用的 TalkGadget 前置詞，並且防止使用者變更這項設定。
+
+如果你已指定前置詞，則該前置詞將加在 TalkGadget 基礎名稱前方，以建立 TalkGadget 的完整網域名稱。TalkGadget 的基礎網域名稱為「.talkgadget.google.com」。
+
+如果你啟用這項設定，主機就會在存取 TalkGadget 時使用自訂網域名稱，而不使用預設網域名稱。
+
+如果你停用這項設定或並未進行設置，則所有主機都會使用 TalkGadget 預設網域名稱 (「chromoting-host.talkgadget.google.com」)。
+
+遠端存取用戶端不受這項政策設定所影響，而會一律採用「chromoting-client.talkgadget.google.com」來存取 TalkGadget。</string><string id="RemoteAccessHostRequireCurtain">啟用遠端存取主機遮幕</string><string id="RemoteAccessHostRequireCurtain_Explain">連線狀態下啟用遠端存取主機遮幕。
+
+如果你啟用這項設定，在遠端連線進行時，兩台主機的實體輸入與輸出裝置均會停用。
+
+如果這個選項設定為停用或並未做任何設定，則在共用主機時，本機與遠端使用者皆可操作主機。</string><string id="RemoteAccessHostAllowClientPairing">針對遠端存取主機啟用或停用無 PIN 碼驗證機制</string><string id="RemoteAccessHostAllowClientPairing_Explain">不論這項政策處於啟用或未設定的狀態，使用者都可以選擇讓用戶端與主機在連線時自動配對，不需要每次都輸入 PIN。
+
+如果你停用這項設定，使用者就無法使用這項功能。</string><string id="RemoteAccessHostAllowGnubbyAuth">允許針對遠端存取主機進行 gnubby 驗證機制</string><string id="RemoteAccessHostAllowGnubbyAuth_Explain">啟用這項設定時，系統將透過遠端主機連線以 Proxy 處理 gnubby 驗證要求。
+
+如果停用或不設定這項設定，系統將不會以 Proxy 處理 gnubby 驗證要求。</string><string id="RemoteAccessHostAllowRelayedConnection">啟用遠端存取主機所使用的轉送伺服器</string><string id="RemoteAccessHostAllowRelayedConnection_Explain">Enables usage of relay servers when remote clients are trying to establish a connection to this machine.
+
+If this setting is enabled, then remote clients can use relay servers to connect to this machine when a direct connection is not available (e.g. due to firewall restrictions).
+
+Note that if the policy RemoteAccessHostFirewallTraversal is disabled, this policy will be ignored.
+
+If this policy is left not set the setting will be enabled.</string><string id="RemoteAccessHostUdpPortRange">限制遠端存取主機所使用的 UDP 通訊埠範圍</string><string id="RemoteAccessHostUdpPortRange_Explain">Restricts the UDP port range used by the remote access host in this machine.
+
+If this policy is left not set, or if it is set to an empty string, the remote access host will be allowed to use any available port, unless the policy RemoteAccessHostFirewallTraversal is disabled, in which case the remote access host will use UDP ports in the 12400-12409 range.</string><string id="RemoteAccessHostMatchUsername">要求比對本機使用者和遠端存取主機擁有者的名稱</string><string id="RemoteAccessHostMatchUsername_Explain">If this setting is enabled, then the remote access host compares the name of the local user (that the host is associated with) and the name of the Google account registered as the host owner (i.e. &quot;johndoe&quot; if the host is owned by &quot;johndoe@example.com&quot; Google account).  The remote access host will not start if the name of the host owner is different from the name of the local user that the host is associated with.  RemoteAccessHostMatchUsername policy should be used together with RemoteAccessHostDomain to also enforce that the Google account of the host owner is associated with a specific domain (i.e. &quot;example.com&quot;).
+
+If this setting is disabled or not set, then the remote access host can be associated with any local user.</string><string id="RemoteAccessHostTokenUrl">遠端存取用戶端取得驗證憑證的來源網址</string><string id="RemoteAccessHostTokenUrl_Explain">If this policy is set, the remote access host will require authenticating clients to obtain an authentication token from this URL in order to connect. Must be used in conjunction with RemoteAccessHostTokenValidationUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationUrl">用於驗證遠端存取用戶端驗證憑證的網址</string><string id="RemoteAccessHostTokenValidationUrl_Explain">If this policy is set, the remote access host will use this URL to validate authentication tokens from remote access clients, in order to accept connections. Must be used in conjunction with RemoteAccessHostTokenUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationCertificateIssuer">用於連線至 RemoteAccessHostTokenValidationUrl 的用戶端憑證</string><string id="RemoteAccessHostTokenValidationCertificateIssuer_Explain">If this policy is set, the host will use a client certificate with the given issuer CN to authenticate to RemoteAccessHostTokenValidationUrl. Set it to &quot;*&quot; to use any available client certificate.
+
+This feature is currently disabled server-side.</string><string id="RestoreOnStartupGroup_group">起始網頁</string><string id="RestoreOnStartup">起始動作</string><string id="RestoreOnStartup_Explain">Allows you to specify the behavior on startup.
+
+If you choose 'Open New Tab Page' the New Tab Page will always be opened when you start Google Chrome.
+
+If you choose 'Restore the last session', the URLs that were open last time Google Chrome was closed will be reopened and the browsing session will be restored as it was left.
+Choosing this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).
+
+If you choose 'Open a list of URLs', the list of 'URLs to open on startup' will be opened when a user starts Google Chrome.
+
+If you enable this setting, users cannot change or override it in Google Chrome.
+
+Disabling this setting is equivalent to leaving it not configured. The user will still be able to change it in Google Chrome.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartup_RestoreOnStartupIsNewTabPage">開啟新分頁</string><string id="RestoreOnStartup_RestoreOnStartupIsLastSession">還原上次工作階段</string><string id="RestoreOnStartup_RestoreOnStartupIsURLs">開啟網址清單</string><string id="RestoreOnStartupURLs">起始時開啟的網址</string><string id="RestoreOnStartupURLs_Explain">If 'Open a list of URLs' is selected as the startup action, this allows you to specify the list of URLs that are opened. If left not set no URL will be opened on start up.
+
+This policy only works if the 'RestoreOnStartup' policy is set to 'RestoreOnStartupIsURLs'.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupURLsDesc">起始時開啟的網址</string><string id="Attestation_group">遠端證明</string><string id="AttestationEnabledForUser">為使用者啟用遠端認證機制</string><string id="AttestationEnabledForUser_Explain">如果設為 true，使用者就可以使用 Chrome 裝置上的硬體，從遠端透過 Enterprise Platform Keys API (使用 chrome.enterprise.platformKeys.challengeUserKey()) 向隱私權 CA 證明身分。
+
+如果設為 false 或未設定，API 呼叫作業將會失敗，並傳回錯誤代碼。</string><string id="AttestationExtensionWhitelist">允許擴充功能使用 Remote Attestation API</string><string id="AttestationExtensionWhitelist_Explain">這項政策可讓你指定允許從遠端使用 Enterprise Platform Keys API 函式「chrome.enterprise.platformKeys.challengeUserKey()」證明身分的擴充功能。只有加入這份清單的擴充功能可以使用該 API。
+
+如果不是清單中的擴充功能，或是未設定清單，API 呼叫作業將會失敗，並傳回錯誤代碼。</string><string id="AttestationExtensionWhitelistDesc">允許擴充功能使用 Remote Attestation API</string><string id="PowerManagement_group">電源管理</string><string id="LidCloseAction">使用者蓋上螢幕時所採取的動作</string><string id="LidCloseAction_Explain">When this policy is set, it specifies the action that Google Chrome OS takes when the user closes the device's lid.
+
+When this policy is unset, the default action is taken, which is suspend.
+
+If the action is suspend, Google Chrome OS can separately be configured to either lock or not lock the screen before suspending.</string><string id="LidCloseAction_LidCloseActionSuspend">暫停</string><string id="LidCloseAction_LidCloseActionLogout">登出使用者</string><string id="LidCloseAction_LidCloseActionShutdown">關閉</string><string id="LidCloseAction_LidCloseActionDoNothing">不要處理</string><string id="PowerManagementUsesAudioActivity">指定會影響電源管理的音訊活動</string><string id="PowerManagementUsesAudioActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while audio is playing. This prevents the idle timeout from being reached and the idle action from being taken. However, screen dimming, screen off and screen lock will be performed after the configured timeouts, irrespective of audio activity.
+
+If this policy is set to False, audio activity does not prevent the user from being considered idle.</string><string id="PowerManagementUsesVideoActivity">指定會影響電源管理的視訊活動</string><string id="PowerManagementUsesVideoActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while video is playing. This prevents the idle delay, screen dim delay, screen off delay and screen lock delay from being reached and the corresponding actions from being taken.
+
+If this policy is set to False, video activity does not prevent the user from being considered idle.</string><string id="PresentationScreenDimDelayScale">簡報模式中的螢幕調暗延遲時間延長百分比</string><string id="PresentationScreenDimDelayScale_Explain">指定裝置處於簡報模式時的調暗延遲時間延長百分比。
+
+如果你設定這項政策，表示裝置會在簡報模式中根據指定的百分比延長調暗延遲時間。如果延遲時間延長，關閉螢幕、鎖定螢幕和閒置狀態的延遲時間也會隨之調整，以維持原本所設定的相同時間比例。
+
+如果你未設定這項政策，系統會使用預設的比例因數。
+
+比例因數必須為 100% 以上的值。如果該值會使簡報模式中的調暗延遲時間比一般調暗延遲時間更短，就無法予以採用。</string><string id="AllowScreenWakeLocks">允許使用螢幕喚醒鎖</string><string id="AllowScreenWakeLocks_Explain">指定是否允許螢幕喚醒鎖定。擴充功能可透過 Power Management Extension API 要求螢幕喚醒鎖。
+
+如果這項政策設為「True」或未設定，系統將啟用螢幕喚醒鎖，以強化電源管理效能。
+
+如果這項政策設為「False」，則螢幕喚醒鎖要求會受到忽略。</string><string id="UserActivityScreenDimDelayScale">使用者在螢幕調暗後繼續使用裝置時的螢幕調暗時間延長百分比</string><string id="UserActivityScreenDimDelayScale_Explain">指定裝置在螢幕變暗時或螢幕關閉後不久偵測到使用者活動時的調暗延遲時間延長百分比。
+
+如果你設定這項政策，表示裝置會在螢幕變暗時或螢幕關閉後不久偵測到使用者活動時，根據指定的百分比延長調暗延遲時間。如果延遲時間延長，關閉螢幕、鎖定螢幕和閒置狀態的延遲時間也會隨之調整，以維持原本所設定的相同時間比例。
+
+如果你未設定這項政策，系統會使用預設的比例因數。
+
+比例因數必須為 100% 以上的值。</string><string id="WaitForInitialUserActivity">等待初始使用者活動</string><string id="WaitForInitialUserActivity_Explain">指定是否延遲管理電源，以及是否在發現工作階段中產生第一個使用者活動後，才開始執行工作階段長度限制。
+
+如果這項政策設為 True，系統會延遲管理電源，並且在發現工作階段中產生第一個使用者活動後，才會開始執行工作階段長度限制。
+
+如果這項政策設為 False 或未設定，系統會延遲管理電源，並且在工作階段開始後立即執行工作階段長度限制。</string><string id="PowerManagementIdleSettings">使用者進入閒置狀態時的電源管理設定</string><string id="PowerManagementIdleSettings_Explain">This policy controls multiple settings for the power management strategy when the user becomes idle.
+
+There are four types of action:
+* The screen will be dimmed if the user remains idle for the time specified by |ScreenDim|.
+* The screen will be turned off if the user remains idle for the time specified by |ScreenOff|.
+* A warning dialog will be shown if the user remains idle for the time specified by |IdleWarning|, telling the user that the idle action is about to be taken.
+* The action specified by |IdleAction| will be taken if the user remains idle for the time specified by |Idle|.
+
+For each of above actions, the delay should be specified in milliseconds, and needs to be set to a value greater than zero to trigger the corresponding action. In case the delay is set to zero, Google Chrome OS will not take the corresponding action.
+
+For each of the above delays, when the length of time is unset, a default value will be used.
+
+Note that |ScreenDim| values will be clamped to be less than or equal to |ScreenOff|, |ScreenOff| and |IdleWarning| will be clamped to be less than or equal to |Idle|.
+
+|IdleAction| can be one of four possible actions:
+* |Suspend|
+* |Logout|
+* |Shutdown|
+* |DoNothing|
+
+When the |IdleAction| is unset, the default action is taken, which is suspend.
+
+There are also separate settings for AC power and battery.
+</string><string id="ScreenLockDelays">螢幕鎖定延遲</string><string id="ScreenLockDelays_Explain">指定時間長度，如果系統在 AC 電源或電池供電環境下執行，且未偵測到使用者輸入行為，就會在這段時間過後鎖定螢幕。
+
+如果你將時間長度設為大於 0 的值，表示使用者處於閒置狀態達到該時間長度後，Google Chrome OS 才會鎖定螢幕。
+
+如果你將時間長度設為 0，則 Google Chrome OS 不會在使用者處於閒置狀態時鎖定螢幕。
+
+如果你未設定時間長度，系統會使用預設時間長度。
+
+如要在閒置狀態下鎖定螢幕，建議你啟用暫停時的螢幕鎖定功能，並且將 Google Chrome OS 設為在閒置延遲時間過後暫停。只有在螢幕鎖定發生的時間比進入暫停狀態的時間提早許多時，或是完全不需閒置暫停功能時，才需要使用這項政策。
+
+指定政策值時需以毫秒為單位。該值必須小於閒置延遲時間值。</string><string id="DefaultSearchProvider_group">預設搜尋引擎</string><string id="DefaultSearchProviderEnabled">啟用預設搜尋引擎</string><string id="DefaultSearchProviderEnabled_Explain">Enables the use of a default search provider.
+
+If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL.
+
+You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider.
+
+If you disable this setting, no search is performed when the user enters non-URL text in the omnibox.
+
+If you enable or disable this setting, users cannot change or override this setting in Google Chrome.
+
+If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="DefaultSearchProviderName">預設搜尋引擎名稱</string><string id="DefaultSearchProviderName_Explain">指定預設搜尋引擎名稱。如果名稱欄位留空或未設定，系統會使用搜尋網址指定的主機名稱。只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderKeyword">預設搜尋引擎關鍵字</string><string id="DefaultSearchProviderKeyword_Explain">指定關鍵字，這是網址列用來為這個引擎觸發搜尋的捷徑。這項政策是選擇性的，如果未設定，就沒有關鍵字會啟動搜尋引擎。只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderSearchURL">預設搜尋引擎搜尋網址</string><string id="DefaultSearchProviderSearchURL_Explain">指定執行預設搜尋時使用的搜尋引擎網址。網址應包含 {searchTerms} 字串，使用者搜尋時輸入的文字會取代這條字串。
+
+您可以使用以下格式指定 Google 的搜尋網址：'{google:baseURL}search?q={searchTerms}&amp;{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}'。
+
+啟用「DefaultSearchProviderEnabled」政策時必須設定這個選項，系統也只會在這種情況下遵循這項政策。</string><string id="DefaultSearchProviderSuggestURL">預設搜尋引擎建議網址</string><string id="DefaultSearchProviderSuggestURL_Explain">指定用於提供搜尋建議的搜尋引擎網址。網址應包含 {searchTerms} 字串，使用者輸入的查詢文字會取代這個字串。
+
+這是選用政策，如果未設定，系統就不會使用建議網址。
+
+您可以使用以下形式指定 Google 的建議網址：'{google:baseURL}complete/search?output=chrome&amp;q={searchTerms}'。
+
+只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderInstantURL">預設搜尋引擎互動智慧搜尋網址</string><string id="DefaultSearchProviderInstantURL_Explain">指定用於提供互動智慧搜尋結果的搜尋引擎網址。網址應包含 '{searchTerms}' 字串，使用者輸入的查詢文字會取代這個字串。
+
+這是選用政策，如果未設定，系統就不會提供互動智慧搜尋結果。
+
+您可以使用以下形式指定 Google 的互動智慧搜尋結果網址：'{google:baseURL}suggest?q={searchTerms}'。
+
+只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderIconURL">預設搜尋引擎圖示</string><string id="DefaultSearchProviderIconURL_Explain">指定預設搜尋引擎的最愛圖示網址。這項政策是選擇性的，如果未設定，系統就不會顯示搜尋引擎的圖示。只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderEncodings">預設搜尋引擎編碼</string><string id="DefaultSearchProviderEncodings_Explain">指定搜尋引擎支援的字元編碼。編碼就是 UTF-8、GB2312 和 ISO-8859-1 等字碼頁名稱。系統會以提供的順序來測試。這項政策是選擇性的，如果未設定，預設會使用的是 UTF-8。只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderEncodingsDesc">預設搜尋引擎編碼</string><string id="DefaultSearchProviderAlternateURLs">預設搜尋的替代網址清單</string><string id="DefaultSearchProviderAlternateURLs_Explain">指定替代網址清單，以供系統從搜尋引擎擷取搜尋字詞。網址中必須包含「'{searchTerms}'」字串，才能擷取搜尋字詞。
+
+你不一定要設定這項政策。在未設定的情況下，系統不會使用任何替代網址擷取搜尋字詞。
+
+只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderAlternateURLsDesc">預設搜尋的替代網址清單</string><string id="DefaultSearchProviderSearchTermsReplacementKey">可使用這個參數來決定是否要為預設搜尋服務商提供替代搜尋字詞。</string><string id="DefaultSearchProviderSearchTermsReplacementKey_Explain">如果你設定這項政策，且網址列所建議的搜尋網址在查詢字串或片段識別碼中含有這項 參數，則搜尋建議會顯示搜尋字詞和搜尋引擎供應商，而不是顯示原始的搜尋網址。
+
+這個政策為選擇性，如果你並未設定這項政策，系統就不會取代任何搜尋字詞。
+
+只有當你啟用「DefaultSearchProviderEnabled」政策時，這項政策才會生效。</string><string id="DefaultSearchProviderImageURL">為預設搜尋引擎提供圖片搜尋功能的參數</string><string id="DefaultSearchProviderImageURL_Explain">指定用來提供圖片搜尋的搜尋引擎網址。系統將使用 GET 方法傳送搜尋要求。如果設定 DefaultSearchProviderImageURLPostParams 政策，系統就會使用 POST 方法傳送圖片搜尋要求。
+
+這項政策是選擇性的，如果未設定，就不能使用圖片搜尋。
+
+只有在啟用「DefaultSearchProviderEnabled」政策時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderNewTabURL">預設搜尋引擎新分頁網址</string><string id="DefaultSearchProviderNewTabURL_Explain">指定搜尋引擎用於提供新分頁的網址。
+
+這項政策是選擇性的，如果未設定，系統將不會提供新分頁。
+
+只有在啟用「DefaultSearchProviderEnabled」時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderSearchURLPostParams">使用 POST 的搜尋網址參數</string><string id="DefaultSearchProviderSearchURLPostParams_Explain">指定使用 POST 搜尋網址時所用的參數，包含以逗號分隔的名稱/數值配對。如果數值為範本參數 (例如上例中的 {searchTerms})，系統將會以實際的搜尋字詞資料替代這個數值。
+
+這項政策是選擇性的，如果未設定，系統將使用 GET 方法傳送搜尋要求。
+
+只有在啟用「DefaultSearchProviderEnabled」時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderSuggestURLPostParams">使用 POST 的建議網址參數</string><string id="DefaultSearchProviderSuggestURLPostParams_Explain">指定使用 POST 提供搜尋建議時所用的參數，其包含以逗號分隔的名稱/數值配對。如果數值為範本參數 (例如上例中的 {searchTerms})，系統將會以實際的搜尋字詞資料替代這個數值。
+
+這項政策是選擇性的，如果未設定，系統將使用 GET 方法傳送搜尋建議要求。
+
+只有在啟用「DefaultSearchProviderEnabled」時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderInstantURLPostParams">使用 POST 的互動智慧搜尋網址參數</string><string id="DefaultSearchProviderInstantURLPostParams_Explain">指定使用 POST 執行互動智慧搜尋時所用的參數，其包含以逗號分隔的名稱/數值配對。如果數值為範本參數 (例如上例中的 {searchTerms})，系統將會以實際的搜尋字詞資料替代這個數值。
+
+這項政策是選擇性的，如果未設定，系統將使用 GET 方法傳送互動智慧搜尋要求。
+
+只有在啟用「DefaultSearchProviderEnabled」時，系統才會遵循這項政策。</string><string id="DefaultSearchProviderImageURLPostParams">使用 POST 的圖片網址參數</string><string id="DefaultSearchProviderImageURLPostParams_Explain">指定使用 POST 執行圖片搜尋時所用的參數，其包含以逗號分隔的名稱/數值配對。如果數值為範本參數 (例如上例中的 {imageThumbnail})，系統將會以實際圖片的縮圖資料替代這個數值。
+
+這項政策是選擇性的，如果未設定，系統將使用 GET 方法圖片搜尋要求。
+
+只有在啟用「DefaultSearchProviderEnabled」時，系統才會遵循這項政策。</string><string id="Homepage_group">首頁</string><string id="HomepageLocation">設定首頁網址</string><string id="HomepageLocation_Explain">Configures the default home page URL in Google Chrome and prevents users from changing it.
+
+The home page is the page opened by the Home button. The pages that open on startup are controlled by the RestoreOnStartup policies.
+
+The home page type can either be set to a URL you specify here or set to the New Tab Page. If you select the New Tab Page, then this policy does not take effect.
+
+If you enable this setting, users cannot change their home page URL in Google Chrome, but they can still choose the New Tab Page as their home page.
+
+Leaving this policy not set will allow the user to choose their home page on their own if HomepageIsNewTabPage is not set too.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HomepageIsNewTabPage">將新分頁設為首頁</string><string id="HomepageIsNewTabPage_Explain">Configures the type of the default home page in Google Chrome and prevents users from changing home page preferences. The home page can either be set to a URL you specify or set to the New Tab Page.
+
+If you enable this setting, the New Tab Page is always used for the home page, and the home page URL location is ignored.
+
+If you disable this setting, the user's homepage will never be the New Tab Page, unless its URL is set to 'chrome://newtab'.
+
+If you enable or disable this setting, users cannot change their homepage type in Google Chrome.
+
+Leaving this policy not set will allow the user to choose whether the new tab page is their home page on their own.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="AllowDeletingBrowserHistory">啟用刪除瀏覽器和下載紀錄</string><string id="AllowDeletingBrowserHistory_Explain">在 Google Chrome 中啟用刪除瀏覽器紀錄和下載紀錄，並防止使用者變更這項設定。
+
+請注意，即使你停用這項政策，仍無法確保可保留瀏覽和下載紀錄。使用者可能可以直接編輯或刪除紀錄資料庫，且瀏覽器本身也隨時可能過期或封存任何或所有紀錄項目。
+
+如果啟用或未設定這項政策，使用者可刪除瀏覽和下載紀錄項目。
+
+如果停用這項政策，則使用者無法刪除瀏覽和下載紀錄項目。</string><string id="AllowDinosaurEasterEgg">允許 Dinosaur Easter Egg Game (恐龍復活節彩蛋遊戲)</string><string id="AllowDinosaurEasterEgg_Explain">允許使用者在裝置處於離線狀態時玩恐龍復活節彩蛋遊戲。
+
+如果將這項政策設為 False，使用者將無法在裝置處於離線狀態時玩恐龍復活節彩蛋遊戲。如果將這項政策設為 True，使用者就可以玩這個遊戲。如果未設定這項政策，使用者將無法在已註冊的 Chrome 作業系統中玩恐龍復活節彩蛋遊戲，但可以在其他環境下玩這個遊戲。</string><string id="AllowOutdatedPlugins">允許執行過舊的外掛程式</string><string id="AllowOutdatedPlugins_Explain">If you enable this setting, outdated plugins are used as normal plugins.
+
+If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them.
+
+If this setting is not set, users will be asked for permission to run outdated plugins.</string><string id="AllowScreenLock">允許鎖定畫面</string><string id="AllowScreenLock_Explain">If this policy is set to false, users will not be able to lock the screen (only signing out from the user session will be possible). If this setting is set to true or not set, users who authenticated with a password can lock the screen.</string><string id="AllowedDomainsForApps">定義允許存取 Google Apps 的網域</string><string id="AllowedDomainsForApps_Explain">Enables Google Chrome's restricted log in feature in Google Apps and prevents users from changing this setting.
+
+If you define this setting, the user will only be able to access
+Google Apps (such as Gmail) using accounts from the specified domains.
+
+This setting will NOT prevent the user from loging in on a managed device
+that requires Google authentication. The user will still be allowed to
+sign in to accounts from other domains, but they will receive an error
+when trying to use Google Apps with those accounts.
+
+If you leave this setting empty/not-configured, the user will be able to
+access Google Apps with any account.
+
+This policy causes the X-GoogApps-Allowed-Domains header to be appended to
+all HTTP and HTTPS requests to all google.com domains, as described in
+https://support.google.com/a/answer/1668854.
+
+Users cannot change or override this setting.</string><string id="AlternateErrorPagesEnabled">啟用替代的錯誤網頁</string><string id="AlternateErrorPagesEnabled_Explain">啟用「 Google Chrome」內建的替代錯誤網頁 (例如「找不到網頁」)，並且禁止使用者變更設定。如果啟用這項設定，系統會使用替代錯誤網頁。如果停用這項設定，系統就不會使用替代錯誤網頁。不論你啟用或停用這項設定，使用者都無法變更或覆寫「Google Chrome」中的這項設定。如果未設定這項政策，系統就會啟用這項設定，不過使用者可以變更設定。</string><string id="AlwaysAuthorizePlugins">一律執行需要驗證的外掛程式</string><string id="AlwaysAuthorizePlugins_Explain">If you enable this setting, plugins that are not outdated always run.
+
+If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</string><string id="ArcBackupRestoreEnabled">啟用 Android 備份服務</string><string id="ArcBackupRestoreEnabled_Explain">將這項政策設為 true 時，系統會將 Android 應用程式資料上傳到 Android 備份伺服器。一旦重新安裝相容的應用程式，系統就會從 Android 備份伺服器還原 Android 應用程式資料。
+
+將這項政策設為 false 時，Android 備份服務會遭到停用。
+
+如果設定這項政策，使用者將無法自行變更。
+
+如果未設定這項政策，使用者則可在 Android 設定應用程式中開啟/關閉 Android 備份服務。</string><string id="ArcCertificatesSyncMode">設定 ARC 應用程式的憑證可用性</string><string id="ArcCertificatesSyncMode_Explain">如果設為 SyncDisabled 或未設定，ARC 應用程式將無法使用「Google Chrome OS」憑證。
+
+如果設為 CopyCaCerts，ARC 應用程式將可使用所有 ONC 安裝的 CA 憑證 (需有「Web TrustBit」)。</string><string id="ArcCertificatesSyncMode_SyncDisabled">禁止 ARC 應用程式使用「Google Chrome OS」憑證</string><string id="ArcCertificatesSyncMode_CopyCaCerts">允許 ARC 應用程式使用「Google Chrome OS」CA 憑證</string><string id="ArcEnabled">啟用 ARC</string><string id="ArcEnabled_Explain">如果將這項政策設為 true，系統會為使用者啟用 ARC
+(需經過額外政策設定檢查 - 如果目前的
+使用者工作階段已啟用暫時模式或多帳戶登入功能，
+仍然無法使用 ARC)。
+
+如果停用或未設定這項政策，企業使用者將
+無法使用 ARC。</string><string id="ArcLocationServiceEnabled">啟用 Android Google 定位服務</string><string id="ArcLocationServiceEnabled_Explain">When this policy is set to true, the Android Google Location Service is enabled. This will allow Android apps to use its data to find the device location, and also will enable submitting of anonymous location data to Google.
+
+When this policy is set to false, Android Google Location Service will be switched off.
+
+If this setting is configured then users are not able change it themselves.
+
+If this setting is not configured then users are able to turn Google Location Service on and off in the Android Settings app.
+
+Note that this policy value may be overridden by the DefaultGeolocationSetting policy, when the latter is set to BlockGeolocation.
+
+This policy is applicable only to the users that are able to run Android apps.</string><string id="ArcPolicy">設定 ARC</string><string id="ArcPolicy_Explain">指定要遞交至 ARC 執行階段的一系列政策。政策值必須是有效的 JSON。
+
+這項政策可用於指定要自動在裝置上安裝哪些 Android 應用程式：
+
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;applications&quot;: {
+&quot;type&quot;: &quot;array&quot;,
+&quot;items&quot;: {
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;packageName&quot;: {
+&quot;description&quot;: &quot;Android 應用程式 ID，例如：Gmail 的應用程式 ID 為「com.google.android.gm」&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;installType&quot;: {
+&quot;description&quot;: &quot;指定應用程式的安裝方式。OPTIONAL：系統不會自動安裝應用程式，但使用者可以自行安裝。如果未指定這項政策，則此為預設安裝方式。PRELOAD：系統會自動安裝應用程式，但使用者可以解除安裝。FORCE_INSTALLED：系統會自動安裝應用程式，且使用者無法解除安裝。BLOCKED：應用程式遭到封鎖且無法安裝。如果應用程式是依據先前政策所安裝，系統將解除安裝該應用程式。&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;OPTIONAL&quot;,
+&quot;PRELOAD&quot;,
+&quot;FORCE_INSTALLED&quot;,
+&quot;BLOCKED&quot;
+]
+},
+&quot;defaultPermissionPolicy&quot;: {
+&quot;description&quot;: &quot;設定政策來授予應用程式所要求的權限。PERMISSION_POLICY_UNSPECIFIED：未指定政策。如果未針對任何層級的權限指定政策，則將使用「PROMPT」做為預設行為。PROMPT：提示使用者授予權限。GRANT：自動授予權限。DENY：自動拒絕授予權限。&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;PERMISSION_POLICY_UNSPECIFIED&quot;,
+&quot;PROMPT&quot;,
+&quot;GRANT&quot;,
+&quot;DENY&quot;
+]
+},
+&quot;managedConfiguration&quot;: {
+&quot;description&quot;: &quot;應用程式專屬的 JSON 設定物件及一個鍵/值組合，例如「&quot;managedConfiguration&quot;: { &quot;key1&quot;: value1, &quot;key2&quot;: value2 }」。應用程式的資訊清單中會定義這些鍵。&quot;,
+&quot;type&quot;: &quot;object&quot;
+}
+}
+}
+}
+}
+}
+
+如要將應用程式固定在啟動器中，請參閱 PinnedLauncherApps。</string><string id="AudioCaptureAllowed">允許或拒絕擷取音訊</string><string id="AudioCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+audio capture access except for URLs configured in the
+AudioCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and audio
+capture only be available to URLs configured in AudioCaptureAllowedUrls.
+
+This policy affects all types of audio inputs and not only the built-in microphone.</string><string id="AudioCaptureAllowedUrls">系統會直接授權存取音訊擷取裝置而不需提示的網址</string><string id="AudioCaptureAllowedUrls_Explain">系統會將這份清單中的模式與要求網址的安全性
+來源進行比對。如果找到相符的結果，系統就會授權存取
+音訊擷取裝置，並且不會提示使用者。
+
+注意：對於 45 版本以下的版本，僅有在執行 Kiosk 模式時才支援這項政策。</string><string id="AudioCaptureAllowedUrlsDesc">系統會直接授權存取音訊擷取裝置而不需提示的網址</string><string id="AudioOutputAllowed">允許播放音訊</string><string id="AudioOutputAllowed_Explain">When this policy is set to false, audio output will not be available on the device while the user is logged in.
+
+This policy affects all types of audio output and not only the built-in speakers. Audio accessibility features are also inhibited by this policy. Do not enable this policy if a screen reader is required for the user.
+
+If this setting is set to true or not configured then users can use all supported audio outputs on their device.</string><string id="AutoFillEnabled">啟用自動填入</string><string id="AutoFillEnabled_Explain">啟用「Google Chrome」的「自動填入」功能，並允許使用者使用先前儲存的地址或信用卡資料等資訊自動填寫網路表單。如果你停用這項設定，使用者就無法使用「自動填入」功能。如果你啟用這項設定或未設定任何值，使用者就能掌控「自動填入」功能。這允許使用者設定「自動填入」設定檔，並可自行決定是否要開啟「自動填入」功能。</string><string id="AutofillCreditCardEnabled">啟用信用卡的自動填入功能</string><string id="AutofillCreditCardEnabled_Explain">啟用「Google Chrome」的自動填入功能，並允許使用者使用先前儲存的信用卡和地址資訊自動填寫網路表單。
+
+如果你停用這項設定，自動填入功能就無法提出填寫建議或填入信用卡資訊，也無法儲存使用者在瀏覽網路時提交的其他信用卡資訊。
+
+如果你啟用這項設定或未設定任何值，使用者就能透過 UI 完全掌控自動填入功能 (包含信用卡)。</string><string id="BlockThirdPartyCookies">封鎖第三方 Cookie</string><string id="BlockThirdPartyCookies_Explain">Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar.
+
+Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting.
+
+If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</string><string id="BookmarkBarEnabled">啟用書籤列</string><string id="BookmarkBarEnabled_Explain">If you enable this setting, Google Chrome will show a bookmark bar.
+
+If you disable this setting, users will never see the bookmark bar.
+
+If you enable or disable this setting, users cannot change or override it in Google Chrome.
+
+If this setting is left not set the user can decide to use this function or not.</string><string id="CaptivePortalAuthenticationIgnoresProxy">要求網頁認證入口的驗證機制忽略 Proxy 設定</string><string id="CaptivePortalAuthenticationIgnoresProxy_Explain">This policy allows Google Chrome OS to bypass any proxy for captive portal authentication.
+
+This policy only takes effect if a proxy is configured (for example through policy, by the user in chrome://settings, or by extensions).
+
+If you enable this setting, any captive portal authentication pages (i.e. all web pages starting from captive portal signin page until Google Chrome detects successful internet connection) will be displayed in a separate window ignoring all policy settings and restrictions for the current user.
+
+If you disable this setting or leave it unset, any captive portal authentication pages will be shown in a (regular) new browser tab, using the current user's proxy settings.</string><string id="CertificateTransparencyEnforcementDisabledForUrls">不針對列出的網址強制執行憑證透明化政策</string><string id="CertificateTransparencyEnforcementDisabledForUrls_Explain">不強制要求列出的網址符合憑證透明化規定。
+
+這項政策可讓指定的網址中的主機名稱不依憑證透明化規定公開憑證。原本不受信任的憑證 (因未依規定對外公開) 將因此可繼續使用，但系統會因此而不容易偵測到這些主機誤用憑證的情形。
+
+網址格式必須符合 https://www.chromium.org/administrators/url-blacklist-filter-format 的規定。不過，由於單憑指定的主機名稱即可判定憑證有效 (忽略網址配置、通訊埠或路徑)，因此系統只會檢視網址的主機名稱部分 (不支援含萬用字元的主機名稱)。
+
+如果未設定這項政策，凡是應依憑證透明化政策公開而未公開的憑證皆視同不信任的憑證。</string><string id="CertificateTransparencyEnforcementDisabledForUrlsDesc">不針對列出的網址強制執行憑證透明化政策</string><string id="ChromeOsLockOnIdleSuspend">裝置閒置或暫停時啟用鎖定</string><string id="ChromeOsLockOnIdleSuspend_Explain">在 Google Chrome OS 裝置進入閒置或暫停狀態時啟用鎖定功能。
+
+如果啟用這項設定，使用者必須輸入密碼，才能將裝置從休眠狀態解除鎖定。
+
+如果停用這項設定，使用者不需輸入密碼，即可將裝置從休眠狀態解除鎖定。
+
+無論停用或啟用這項設定，使用者都無法變更或覆寫這項設定。
+
+如果未設定這項政策，則使用者可選擇是否要輸入密碼才能將裝置解除鎖定。</string><string id="ChromeOsMultiProfileUserBehavior">控制使用者在多重設定檔工作階段中的行為</string><string id="ChromeOsMultiProfileUserBehavior_Explain">針對使用者在 Google Chrome OS 裝置多重設定檔工作階段中的行為進行控制。
+
+如果將這項政策設為「MultiProfileUserBehaviorUnrestricted」，使用者就能成為多重設定檔工作階段的主要或次要使用者。
+
+如果將這項政策設為「MultiProfileUserBehaviorMustBePrimary」，使用者就只能是多重設定檔工作階段的主要使用者。
+
+如果將這項政策設為「MultiProfileUserBehaviorNotAllowed」，使用者就無法登入多重設定檔工作階段。
+
+如果設定了這項政策，使用者將無法進行變更或覆寫。
+
+如果在你變更設定的同時，使用者已經登入多重設定檔工作階段，系統將檢查工作階段中所有使用者的相應設定；要是有任何使用者未得到進入工作階段的許可，工作階段將會關閉。
+
+如未設定這項政策，系統將會對受企業管理的使用者套用預設值「MultiProfileUserBehaviorMustBePrimary」，並對不屬於管理化環境的使用者使用「MultiProfileUserBehaviorUnrestricted」。</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorUnrestricted">允許企業使用者成為主要或次要使用者 (非管理化環境中使用者的預設行為)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorMustBePrimary">僅允許企業使用者成為多重設定檔的主要使用者 (受企業管理的使用者的預設行為)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorNotAllowed">不允許企業使用者使用多重設定檔 (主要或次要)</string><string id="ChromeOsReleaseChannel">發佈頻道</string><string id="ChromeOsReleaseChannel_Explain">指定裝置的固定發佈頻道。</string><string id="ChromeOsReleaseChannel_StableChannel">穩定頻道</string><string id="ChromeOsReleaseChannel_BetaChannel">測試頻道</string><string id="ChromeOsReleaseChannel_DevChannel">開發頻道 (可能不穩定)</string><string id="ChromeOsReleaseChannelDelegated">是否允許使用者設定發佈頻道</string><string id="ChromeOsReleaseChannelDelegated_Explain">如果你將這項政策設為「True」，且並未指定 ChromeOsReleaseChannel 政策，則註冊網域的使用者將可變更裝置的發佈頻道。如果你將這項政策設為「False」，則系統會將裝置鎖定為先前設定的任何頻道。
+
+ChromeOsReleaseChannel 政策會覆寫使用者選取的頻道，但如果政策設定的頻道比裝置原本安裝的頻道更穩定，則系統只會在更穩定的頻道發佈比裝置上安裝的頻道更高的版本時，才會切換至該版本。</string><string id="ComponentUpdatesEnabled">允許更新 Google Chrome 的元件</string><string id="ComponentUpdatesEnabled_Explain">如果這項政策未設定或設為 True 時，允許更新 Google Chrome 的所有元件。
+
+如果設為 False，則禁止更新元件。不過，部分元件不受這項政策規範：只要元件更新不含可執行的程式碼、不大幅變更瀏覽器的行為，或是對元件安全性至關重要，就不會遭到禁止。
+這類元件的範例包括憑證撤銷清單和安全瀏覽資料。
+如需進一步瞭解「安全瀏覽」功能，請參閱 https://developers.google.com/safe-browsing。</string><string id="DefaultPrinterSelection">預設印表機選取規則</string><string id="DefaultPrinterSelection_Explain">覆寫 Google Chrome 預設印表機選取規則。
+
+這項政策可讓您決定在 Google Chrome 中首次透過設定檔使用列印功能時選取預設印表機的規則。
+
+如果設定這項政策，Google Chrome 會嘗試尋找符合所有指定屬性的印表機，並選取該印表機做為預設印表機。採用非唯一比對機制時，凡是相符的印表機皆可供選取 (取決於找到的順序)，因此一旦找到符合政策的印表機，系統就會直接選取。
+
+如果未設定這項政策，或是在逾時期間找不到相符的印表機，系統會以內建的 PDF 印表機做為預設印表機，或者不選取任何印表機 (如果沒有 PDF 印表機的話)。
+
+系統會以 JSON 物件形式剖析政策值，架構如下：
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;kind&quot;: {
+&quot;description&quot;: &quot;是否僅限在特定的印表機範圍內搜尋相符的印表機。&quot;,
+&quot;type&quot;: {
+&quot;enum&quot;: [ &quot;local&quot;, &quot;cloud&quot; ]
+}
+},
+&quot;idPattern&quot;: {
+&quot;description&quot;: &quot;用於比對印表機 ID 的規則運算式。&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;namePattern&quot;: {
+&quot;description&quot;: &quot;用於比對印表機顯示名稱的規則運算式。&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+已連上 Google Cloud Print 的印表機屬於「&quot;cloud&quot;」類型，其他印表機則是「&quot;local&quot;」類型。
+省略欄位表示不對值設限。舉例來說，如果未指定連線，系統會在執行列印預覽作業時尋找所有類型的印表機 (包括 local 和 cloud)。
+規則運算式模式必須符合 JavaScript RegExp 語法，且比對機制需區分大小寫。</string><string id="DeveloperToolsDisabled">停用開發人員工具</string><string id="DeveloperToolsDisabled_Explain">停用開發人員工具和 JavaScript 控制台。
+
+如果啟用這項設定，使用者就無法再存取開發人員工具，也無法再檢查網站元素。此外，所有可開啟開發人員工具或 JavaScript 控制台的鍵盤快速鍵、選單項目或內容選單項目都會遭到停用。
+
+如果將這個選項設為停用或不設定這個選項，使用者即可使用開發人員工具和 JavaScript 控制台。</string><string id="DeviceAllowBluetooth">允許在裝置上使用藍牙功能</string><string id="DeviceAllowBluetooth_Explain">如果將這項政策設為 false，Google Chrome OS會停用藍牙功能，且使用者無法重新啟用。
+
+如果將這項政策設為 true 或不予設定，使用者可以視需要啟用或停用藍牙功能。
+
+設定這項政策後，使用者無法變更或覆寫政策。
+
+啟用藍牙功能後，使用者必須登出後再重新登入，變更才會生效 (停用藍牙功能時不需如此)。</string><string id="DeviceAllowNewUsers">允許建立新的使用者帳戶</string><string id="DeviceAllowNewUsers_Explain">Controls whether Google Chrome OS allows new user accounts to be created. If this policy is set to false, users that do not have an account already will not be able to login.
+
+If this policy is set to true or not configured, new user accounts will be allowed to be created provided that DeviceUserWhitelist does not prevent the user from logging in.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers">允許使用者透過 Chrome OS Registration 兌換優惠</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers_Explain">企業裝置的 IT 管理員可使用這個標記來控制是否允許使用者透過註冊 Chrome 作業系統來兌換優惠。
+
+如果將這項政策設為 True 或未設定這項政策，使用者將可透過註冊 Chrome 作業系統來兌換優惠。
+
+如果將這項政策設為 False，使用者將無法兌換優惠。</string><string id="DeviceAutoUpdateDisabled">停用自動更新</string><string id="DeviceAutoUpdateDisabled_Explain">在設為 True 時，停用自動更新。
+
+在這項設定未調整或設為 False 時，Google Chrome OS 裝置會自動檢查更新。
+
+警告：建議保持啟用自動更新功能，這樣一來使用者才能接收軟體更新，修正重大的安全性問題。停用自動更新功能可能讓使用者面臨風險。</string><string id="DeviceAutoUpdateP2PEnabled">已啟用自動更新 P2P</string><string id="DeviceAutoUpdateP2PEnabled_Explain">指定是否使用 P2P 更新裝載作業系統。如果設為 True，裝置將會在 LAN 上共用並嘗試使用更新裝載，藉此降低網際網路頻寬用量及減輕壅塞。如果 LAN 上未提供更新裝載，裝置將回歸至更新伺服器進行下載。如果設為 False 或未設定，則不會使用 P2P。</string><string id="DeviceBlockDevmode">封鎖開發人員模式</string><string id="DeviceBlockDevmode_Explain">封鎖開發人員模式：
+
+如果將這項政策設為 True，Google Chrome OS 會防止裝置在開發人員模式下啟動。嘗試切換至開發人員模式時，系統會拒絕啟動指令並顯示錯誤畫面。
+
+如未設定這項政策，或將政策設定為 False，則裝置仍可使用開發人員模式。</string><string id="DeviceDataRoamingEnabled">啟用數據漫遊</string><string id="DeviceDataRoamingEnabled_Explain">決定是否要為裝置啟用數據漫遊。如果設為 True，就會允許數據漫遊。如未設定或設為 False，就不支援數據漫遊。</string><string id="DeviceEphemeralUsersEnabled">登出後清除使用者資料</string><string id="DeviceEphemeralUsersEnabled_Explain">決定登出後 Google Chrome OS 是否要保留本機帳戶資料。如果設為 True，Google Chrome OS 不會保留任何永久帳戶，並且在登出後會刪除使用者工作階段的所有資料。如果這項政策設為 False 或未設定，裝置會保留 (加密) 本機使用者資料。</string><string id="DeviceGuestModeEnabled">啟用訪客模式</string><string id="DeviceGuestModeEnabled_Explain">如果這項政策設為 True 或未設定，Google Chrome OS 會啟用訪客登入。訪客登入是匿名的使用者工作階段，並且不需要密碼。
+
+如果這項政策設為 False，Google Chrome OS 不會允許開啟訪客工作階段。</string><string id="DeviceLoginScreenAppInstallList">設定登入畫面中的已安裝應用程式清單</string><string id="DeviceLoginScreenAppInstallList_Explain">
+Specifies a list of apps that are installed silently on the login screen,
+without user interaction, and which cannot be uninstalled.
+All permissions requested by the apps are granted
+implicitly, without user interaction, including any additional
+permissions requested by future versions of the app.
+
+Note that, for security and privacy reasons, extensions are not allowed to be installed using this policy. Moreover, the devices on the Stable channel will only install the apps that belong to the whitelist bundled into Google Chrome. Any items that don't conform to these conditions will be ignored.
+
+If an app that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.</string><string id="DeviceLoginScreenAppInstallListDesc">設定登入畫面中的已安裝應用程式清單</string><string id="DeviceLoginScreenInputMethods">裝置登入畫面鍵盤配置</string><string id="DeviceLoginScreenInputMethods_Explain">設定 Google Chrome OS 登入畫面可使用的鍵盤配置。
+
+如果將這項政策設為輸入法識別碼清單，登入畫面即可顯示指定的輸入法。系統會預先選取第一個指定的輸入法。在特定使用者視窗的登入畫面中，除了這項政策指定的輸入法之外，還會提供使用者最後一次使用的輸入法。如果未設定這項政策，系統會根據登入畫面顯示的語言代碼提供登入畫面的輸入法。如果值不是有效的輸入法識別碼，則會遭到忽略。</string><string id="DeviceLoginScreenInputMethodsDesc">裝置登入畫面鍵盤配置</string><string id="DeviceLoginScreenLocales">裝置登入畫面語言代碼</string><string id="DeviceLoginScreenLocales_Explain">設定 Google Chrome OS 登入畫面上執行的語言代碼。
+
+如果設定這項政策，系統將一律以這項政策第一個值指定的語言代碼顯示登入畫面 (為了日後的相容性，系統會將政策定義為清單)。  如果未設定這項政策，或將政策設定為空白清單，系統將以上一個使用者工作階段的語言代碼顯示登入畫面。  如果這項政策設定的值不是有效的語言代碼，系統則將以備用語言代碼 (目前為 en-US) 顯示登入畫面。</string><string id="DeviceLoginScreenLocalesDesc">裝置登入畫面語言代碼</string><string id="DeviceLoginScreenPowerManagement">位於登入畫面中的電源管理設定</string><string id="DeviceLoginScreenPowerManagement_Explain">設置 Google Chrome OS 登入畫面的電源管理設定。
+
+這項政策可讓你設定當 Google Chrome OS 停留在登入畫面，並且一段時間沒有使用者活動時，系統應該採取哪些動作。這項政策可控管多項設定，如要瞭解個別設定的語義和數值範圍，請參閱控管工作階段電源管理的相應政策。這些政策不能指定的只有以下兩點：
+* 不得指定以結束工作階段的方式因應閒置或闔上螢幕上蓋的情形。
+* 使用 AC 電源時，系統在閒置狀態的預設動作為關機。
+
+如果沒有任何設定值，將會自動採用預設值。
+
+如未設定這項政策，所有設定將自動套用預設值。</string><string id="DeviceMetricsReportingEnabled">啟用計量報告</string><string id="DeviceMetricsReportingEnabled_Explain">控制是否要將使用指標、診斷資料 (含當機報告) 回報給 Google。如果設為 True，Google Chrome OS 會回報使用指標和診斷資料。如未設定或設為 False，指標和診斷資料回報功能就會停用。</string><string id="DeviceNativePrinters">裝置專用企業印表機設定檔</string><string id="DeviceNativePrinters_Explain">為繫結至裝置的企業印表機進行設定。
+
+你可以透過這項政策為 Google Chrome OS 裝置進行印表機設定。這個檔案的大小不得超過 5MB，且必須使用 JSON 編碼，格式則須和 NativePrinters 字典相同。根據估計，一份 5MB 的編碼檔案中可包含約 21,000 部印表機。系統會使用加密編譯雜湊驗證下載完整性。
+
+系統會為這份檔案執行下載和快取作業。如果網址或雜湊有所變更，系統就會重新下載檔案。
+
+設定這項政策後，Google Chrome OS 會下載這份檔案以進行印表機設定，並根據 DeviceNativePrintersAccessMode、DeviceNativePrintersWhitelist 和 DeviceNativePrintersBlacklist 開放使用印表機。
+
+這項政策不會影響到使用者在個別裝置上設定印表機的權限，其目的是為了使個別使用者指定的印表機設定更為完善。
+
+這項政策是 NativePrintersBulkConfiguration 的額外政策。
+
+如果沒有設定這項政策，就沒有裝置印表機可供使用，且系統會忽略其他 DeviceNativePrinter* 政策。</string><string id="DeviceNativePrintersAccessMode">裝置印表機設定存取權政策。</string><string id="DeviceNativePrintersAccessMode_Explain">根據 DeviceNativePrinters 設定哪些印表機是可供使用的。
+
+指派用於大量印表機設定的存取權政策。如果選取 AllowAll，系統會顯示所有印表機。如果選取 BlacklistRestriction，系統會使用 DeviceNativePrintersBlacklist 限制對特定印表機的存取權。如果選取 WhitelistPrintersOnly，DeviceNativePrintersWhitelist 只會指派可選取的印表機。
+
+如果沒有設定這項政策，系統會自動採用 BlacklistRestriction。
+</string><string id="DeviceNativePrintersAccessMode_BlacklistRestriction">顯示所有印表機 (黑名單中的印表機除外)。</string><string id="DeviceNativePrintersAccessMode_WhitelistPrintersOnly">僅對使用者顯示許可清單中的印表機</string><string id="DeviceNativePrintersAccessMode_AllowAll">允許設定檔中的所有印表機。</string><string id="DeviceNativePrintersBlacklist">已停用企業裝置印表機</string><string id="DeviceNativePrintersBlacklist_Explain">指定哪些印表機是禁止使用的。
+
+只有在為 DeviceNativePrintersAccessMode 選擇 BlacklistRestriction 的情況下，這項政策才有作用。
+
+一旦設定了這項政策，除了本政策中列出的 ID 外，其他所有印表機皆可供使用者使用。
+</string><string id="DeviceNativePrintersBlacklistDesc">已停用企業裝置印表機</string><string id="DeviceNativePrintersWhitelist">已啟用企業裝置印表機</string><string id="DeviceNativePrintersWhitelist_Explain">指定哪些印表機是可以使用的。
+
+只有在為 DeviceNativePrintersAccessMode 選擇 WhitelistPrintersOnly 的情況下，這項政策才有作用
+
+一旦設定了這項政策，使用者就只能使用 ID 符合本政策值的印表機，且 ID 必須和 DeviceNativePrinters 中指定的檔案項目相符。
+</string><string id="DeviceNativePrintersWhitelistDesc">已啟用企業裝置印表機</string><string id="DeviceOffHours">裝置 OffHours |ignored_policy_proto_tags| 解除時的停機時間間隔</string><string id="DeviceOffHours_Explain">如果設定了「OffHours」政策，系統會在指定的時間間隔忽略特定裝置政策 (採用這些政策的預設設定)。Chrome 會在「OffHours」期間開始或結束時，為所有事件重新套用裝置政策。系統會通知使用者，並強制使用者在「OffHours」時間結束以及裝置政策設定變更時 (也就是使用者登入未受到允許的帳戶時) 登出。</string><string id="DeviceOpenNetworkConfiguration">裝置層級網路設定</string><string id="DeviceOpenNetworkConfiguration_Explain">允許將網路設定按照使用者套用至已安裝 Google Chrome OS 的裝置。該網路設定是由「開放網路設定」格式 (請參閱：https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration) 所定義的 JSON 格式字串。</string><string id="DevicePolicyRefreshRate">裝置政策的重新整理頻率</string><string id="DevicePolicyRefreshRate_Explain">指定向裝置管理服務查詢使用者政策資訊的時間 (以毫秒為單位)。
+
+設定這項政策會覆寫預設值 (3 小時)。這項政策的有效值範圍是 1800000 (30 分鐘) 到 86400000 (1 天)。超出範圍的值一律會自動調整為上限值或下限值。
+
+如未設定這項政策，Google Chrome OS 會使用預設值 (3 小時)。
+
+請注意，如果平台支援政策通知，由於政策通知通常會在政策變更時自動強制更新 (不需更高的更新頻率)，所以更新延遲時間會設為 24 小時 (忽略所有預設值和這項政策的值)。</string><string id="DeviceQuirksDownloadEnabled">允許在 Quirks Server 中查詢硬體設定檔</string><string id="DeviceQuirksDownloadEnabled_Explain">The Quirks Server provides hardware-specific configuration files, like
+ICC display profiles to adjust monitor calibration.
+
+When this policy is set to false, the device will not attempt to
+contact the Quirks Server to download configuration files.
+
+If this policy is true or not configured then Google Chrome OS will automatically contact the Quirks Server and download configuration files, if available, and store them on the device.  Such files might, for example, be used to improve display quality of attached monitors.</string><string id="DeviceRebootOnShutdown">裝置關機時自動重新啟動</string><string id="DeviceRebootOnShutdown_Explain">如果將這項政策設為 False 或不予設定，Google Chrome OS 會允許使用者關閉裝置。
+如果將這項政策設為 True，Google Chrome OS 會在使用者關閉裝置時觸發重新啟動程序。此外，Google Chrome OS 會將使用者介面中的所有關機按鈕改成重新啟動按鈕。如果使用者使用電源按鈕關閉裝置，即使您已啟用這項政策，裝置仍然不會自動重新啟動。</string><string id="DeviceShowUserNamesOnSignin">在登入畫面中顯示使用者名稱</string><string id="DeviceShowUserNamesOnSignin_Explain">If this policy is set to true or not configured, Google Chrome OS will show existing users on the login screen and allow to pick one.
+
+If this policy is set to false, Google Chrome OS will not show existing users on the login screen. The normal sign-in screen (prompting for the user email and password or phone) or the SAML interstital screen (if enabled via the LoginAuthenticationBehavior policy) will be shown, unless a Public Session is configured. When a Public Session is configured, only the Public Session accounts will be shown, allowing to pick one of them.
+
+Note that this policy does not affect whether the device keeps or discards the local user data.</string><string id="DeviceStartUpFlags">要在 Google Chrome 啟動時套用的全系統設定</string><string id="DeviceStartUpFlags_Explain">指定要在 Google Chrome 啟動時套用的設定。系統僅會在進入登入畫面時套用指定的設定。透過這個政策所指定的設定不會反映在使用者工作階段中。</string><string id="DeviceStartUpFlagsDesc">要在 Google Chrome 啟動時套用的全系統設定</string><string id="DeviceTargetVersionPrefix">指定目標的自動更新版本</string><string id="DeviceTargetVersionPrefix_Explain">設定自動更新的目標版本。
+
+指定要更新的 Google Chrome OS 目標版本前置碼。如果裝置執行的版本比指定的前置碼版本更舊，系統會自動更新至指定前置碼的最新版本。如果裝置使用的是最新版本則無影響 (不會執行降級)，裝置將保留目前版本。前置碼格式需按部分逐一指定，如下列範例所示：
+
+&quot;&quot; (或不設定)：更新至可用的最新版本。
+&quot;1412.&quot;：更新至任何 1412 的子版本 (例如 1412.24.34 或 1412.60.2)
+&quot;1412.2.&quot;：更新至任何 1412.2 的子版本 (例如 1412.2.34 或 1412.2.2)
+&quot;1412.24.34&quot;：僅更新至這個指定版本
+
+警告：我們不建議設定版本限制，因為這可能導致使用者無法接收軟體更新，且無法修正重大的安全性問題。限制僅能更新至指定前置碼版本，可能讓使用者面臨風險。</string><string id="DeviceUpdateAllowedConnectionTypes">允許進行更新的連線類型</string><string id="DeviceUpdateAllowedConnectionTypes_Explain">允許用來進行作業系統更新的連線類型。由於作業系統更新檔案較大，可能會對連線流量造成沉重負荷，同時也可能讓使用者必須支付額外費用，因此當使用者使用較昂貴的連線類型 (目前包括 WiMax、藍牙和行動網路) 時，預設情況並不允許進行作業系統更新。
+
+系統可識別的連線類型識別碼包括「ethernet」、「wifi」、「wimax」、「bluetooth」和「cellular」。</string><string id="DeviceUpdateAllowedConnectionTypesDesc">允許進行更新的連線類型</string><string id="DeviceUpdateHttpDownloadsEnabled">允許透過 HTTP 自動更新下載</string><string id="DeviceUpdateHttpDownloadsEnabled_Explain">系統可透過 HTTP (而非 HTTPS) 下載 Google Chrome OS 的自動更新裝載。這可讓 HTTP 廣域快取 HTTP 下載內容。
+
+如果將這項政策設為 True，Google Chrome OS 將嘗試透過 HTTP 下載自動更新裝載。如果設為 False 或未設定，系統則會透過 HTTPS 下載自動更新裝載。</string><string id="DeviceUpdateScatterFactor">自動更新分散係數</string><string id="DeviceUpdateScatterFactor_Explain">指定裝置可以任意延遲下載某項更新的秒數上限 (以該項更新初次被推送到伺服器的時間為準)。你可以將這項裝置等待時間的其中一部分設定為等待的時間長度，剩下的部分則設定為檢查更新的次數。不論採取哪種方式，分散時間皆不得超過固定時間長度，這樣就可以避免裝置由於持續等待下載某項更新而停止回應。</string><string id="DeviceUserWhitelist">登入使用者許可清單</string><string id="DeviceUserWhitelist_Explain">Defines the list of users that are allowed to login to the device. Entries are of the form user@domain, such as madmax@managedchrome.com. To allow arbitrary users on a domain, use entries of the form *@domain.
+
+If this policy is not configured, there are no restrictions on which users are allowed to sign in. Note that creating new users still requires the DeviceAllowNewUsers policy to be configured appropriately.</string><string id="DeviceUserWhitelistDesc">登入使用者許可清單</string><string id="DeviceWallpaperImage">裝置桌布圖片</string><string id="DeviceWallpaperImage_Explain">設定還沒有任何使用者登入裝置時，登入畫面顯示的裝置層級桌布圖片。如要設定這項政策，請指定 Chrome 作業系統裝置可下載桌布圖片的網址，以及用於驗證下載完整性的加密編譯雜湊值。圖片必須為 JPEG 格式，且大小不得超過 16MB。網址則必須可供直接存取，不必經過任何驗證。系統會下載並快取桌布圖片，每當網址或雜湊值有所變更即重新下載。
+
+指定政策時，請使用 JSON 格式的字串來表示網址和雜湊值。範例如下：
+{
+&quot;url&quot;: &quot;https://example.com/device_wallpaper.jpg&quot;,
+&quot;hash&quot;: &quot;examplewallpaperhash&quot;
+}
+
+設定這項裝置桌布政策後，如果還沒有任何使用者登入裝置，Chrome 作業系統裝置將下載並使用桌布圖片 (顯示在登入畫面)。一旦使用者登入裝置，使用者的桌布政策就會生效。
+
+如果未設定這項裝置桌布政策，則會由使用者的桌布政策 (如有設定) 決定要顯示的圖片。</string><string id="Disable3DAPIs">停止支援 3D 圖形 API</string><string id="Disable3DAPIs_Explain">Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API.
+
+Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.
+
+If HardwareAccelerationModeEnabled is set to false, Disable3DAPIs is ignored and it is equivalent to Disable3DAPIs being set to true.</string><string id="DisablePluginFinder">指定是否該停用外掛程式尋找工具</string><string id="DisablePluginFinder_Explain">如果你將這項設定調整為啟用，則系統會停用「Google Chrome」中的自動搜尋功能，且缺漏的外掛程式也不會自動安裝。如果將這個選項設為停用，或未調整這項設定，即可啟動外掛程式尋找工具。</string><string id="DisableSafeBrowsingProceedAnyway">停用略過安全瀏覽警告網頁繼續進行</string><string id="DisableSafeBrowsingProceedAnyway_Explain">當使用者瀏覽遭檢舉為有惡意風險的網站時，「安全瀏覽」服務會顯示警告網頁。如果你啟用這項設定，就能防止使用者略過警告網頁，繼續前往惡意網站。
+
+如果你停用這項設定或未進行設定，則使用者可以選擇在系統顯示警告之後，繼續前往遭檢舉的網站。
+
+如需進一步瞭解「安全瀏覽」功能，請參閱 https://developers.google.com/safe-browsing。</string><string id="DisableScreenshots">停用螢幕畫面擷取功能</string><string id="DisableScreenshots_Explain">If enabled, screenshots cannot be taken using keyboard shortcuts or extension APIs.
+
+If disabled or not specified, taking screenshots is allowed.</string><string id="DisplayRotationDefault">設定畫面旋轉預設值 (每次重新啟動皆重新套用)</string><string id="DisplayRotationDefault_Explain">如果設定這項政策，每次重新啟動時，
+以及在這個政策值發生變更後首次連線時，
+每個畫面都會依指定的角度旋轉。
+使用者可以在登入後透過設定頁面變更畫面旋轉設定，
+但下次重新啟動時，使用者的設定仍會由這個政策值覆寫。
+
+主要畫面和所有次要畫面都適用這項政策。
+
+如果未設定這項政策，則預設值為 0 度 (使用者可予以變更)。
+在這種情況下，重新啟動時就不會重新套用
+預設值。</string><string id="DisplayRotationDefault_ROTATE_0">將畫面旋轉 0 度</string><string id="DisplayRotationDefault_ROTATE_90">將畫面以順時針方向旋轉 90 度</string><string id="DisplayRotationDefault_ROTATE_180">將畫面旋轉 180 度</string><string id="DisplayRotationDefault_ROTATE_270">將畫面以順時針方向旋轉 270 度</string><string id="DownloadDirectory">設定下載目錄</string><string id="DownloadDirectory_Explain">設定 Google Chrome 下載檔案時所使用的目錄。
+
+如果設定這項政策，無論使用者是否指定政策或啟用每次均提示下載位置的標記，Google Chrome 都會使用您所提供的目錄。
+
+如需可使用的變數清單，請參閱 https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables。
+
+如未設定這項政策，系統會使用預設的下載目錄，日後使用者可以自行變更這個目錄。</string><string id="DownloadRestrictions">允許下載限制</string><string id="DownloadRestrictions_Explain">Configures the type of downloads that Google Chrome will completely block, without letting users override the security decision.
+
+If you set this policy, Google Chrome will prevent certain types of downloads, and won't let user bypass the security warnings.
+
+When the 'Block dangerous downloads' option is chosen, all downloads are allowed, except for those that carry SafeBrowsing warnings.
+
+When the 'Block potentially dangerous downloads' option is chosen, all downloads allowed, except for those that carry SafeBrowsing warnings of potentially dangerous downloads.
+
+When the 'Block all downloads' option is chosen, all downloads are blocked.
+
+When this policy is not set, (or the 'No special restrictions' option is chosen), the downloads will go through the usual security restrictions based on SafeBrowsing analysis results.
+
+Note that these restrictions apply to downloads triggered from web page content, as well as the 'download link...' context menu option. These restrictions do not apply to the save / download of the currently displayed page, nor does it apply to saving as PDF from the printing options.
+
+See https://developers.google.com/safe-browsing for more info on SafeBrowsing.</string><string id="DownloadRestrictions_DefaultDownloadSecurity">無特殊限制</string><string id="DownloadRestrictions_BlockDangerousDownloads">封鎖危險下載作業</string><string id="DownloadRestrictions_BlockPotentiallyDangerousDownloads">封鎖有安全疑慮的下載作業</string><string id="DownloadRestrictions_BlockAllDownloads">封鎖所有下載作業</string><string id="EasyUnlockAllowed">允許使用 Smart Lock</string><string id="EasyUnlockAllowed_Explain">If you enable this setting, users will be allowed to use Smart Lock if the requirements for the feature are satisfied.
+
+If you disable this setting, users will not be allowed to use Smart Lock.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="EcryptfsMigrationStrategy">eCryptfs 遷移策略</string><string id="EcryptfsMigrationStrategy_Explain">Specifies the action that should be taken when the user's home directory was created with ecryptfs encryption and needs to transition to ext4 encryption.
+
+If you set this policy to 'DisallowArc', Android apps will be disabled for the user and no migration from ecryptfs to ext4 encryption will be performed. Android apps will not be prevented from running when the home directory is already ext4-encrypted.
+
+If you set this policy to 'Migrate', ecryptfs-encrypted home directories will be automatically migrated to ext4 encryption on sign-in without asking for user consent.
+
+If you set this policy to 'Wipe', ecryptfs-encrypted home directories will be deleted on sign-in and new ext4-encrypted home directories will be created instead. Warning: This removes the user's local data.
+
+If you set this policy to 'AskUser', users with ecryptfs-encrypted home directories will be offered to migrate.
+
+This policy does not apply to kiosk users. If this policy is left not set, the device will behave as if 'DisallowArc' was chosen.</string><string id="EcryptfsMigrationStrategy_DisallowArc">Disallow data migration and ARC.</string><string id="EcryptfsMigrationStrategy_Migrate">Migrate automatically, donâ€™t ask for user consent.</string><string id="EcryptfsMigrationStrategy_Wipe">Wipe the userâ€™s ecryptfs home directory and start with a fresh ext4-encrypted home directory.</string><string id="EcryptfsMigrationStrategy_AskUser">Ask the user if they would like to migrate or skip migration and disallow ARC.</string><string id="EcryptfsMigrationStrategy_MinimalMigrate">與 Wipe (值 2) 類似，但會嘗試保留登入憑證，因此使用者不必重新登入。</string><string id="EcryptfsMigrationStrategy_AskForEcryptfsArcUsers">如果用戶端裝置型號在必須遷移至 Ext4 才能執行 ARC 之前已支援 ARC，且 ArcEnabled 政策設為 True，這個選項的行為會與 AskUser 相同 (值 3)。在所有其他情況下 (如果用戶端裝置型號之前不支援 ARC，或 ArcEnabled 政策設為 False)，這個值會等同於 DisallowArc (值 0)。</string><string id="EditBookmarksEnabled">啟用或停用書籤編輯功能</string><string id="EditBookmarksEnabled_Explain">If you enable this setting, bookmarks can be added, removed or modified. This is the default also when this policy is not set.
+
+If you disable this setting, bookmarks can not be added, removed or modified. Existing bookmarks are still available.</string><string id="EnableCommonNameFallbackForLocalAnchors">是否允許由本機信任錨點核發但缺少 subjectAlternativeName 延伸的憑證</string><string id="EnableCommonNameFallbackForLocalAnchors_Explain">啟用這項設定後，即使憑證缺少 subjectAlternativeName 延伸，只要能順利驗證並鏈結至本機上安裝的 CA 憑證，Google Chrome 仍會使用伺服器憑證的 commonName 比對主機名稱。
+
+請注意，這項設定可能會允許略過 nameConstraints 延伸 (用於限制指定的憑證可授權的主機名稱)，因此不建議啟用。
+
+如果未設定這項政策，或是將這項政策設為 false，含有 DNS 名稱或 IP 位址但缺少 subjectAlternativeName 延伸的伺服器憑證將不會受到信任。</string><string id="EnableDeprecatedWebPlatformFeatures">暫時啟用已淘汰網路平台功能</string><string id="EnableDeprecatedWebPlatformFeatures_Explain">指定要暫時重新啟用的已淘汰網路平台功能清單。
+
+這項政策可讓管理員在限定時間內重新啟用已淘汰的網路平台功能。系統會使用字串標記辨識功能，並根據這項政策在清單中指定的標記重新啟用對應的功能。
+
+如未設定這項政策、清單沒有任何內容，或是不符合支援的字串標記，已淘汰的網路平台功能將全部維持停用狀態。
+
+雖然以上平台支援政策本身，但這些平台不一定全部支援透過政策啟用的功能。部分已淘汰的網路平台功能無法重新啟用，只有下方明確列出者可在限定時間內啟用，啟用時限則視功能而異。字串標記的通用格式是 &lt;已淘汰的功能名稱&gt;_EffectiveUntil&lt;yyyymmdd&gt;。如需參考資訊，請前往 https://bit.ly/blinkintents 查看網路平台功能變更的意義。
+</string><string id="EnableDeprecatedWebPlatformFeaturesDesc">暫時啟用已淘汰網路平台功能</string><string id="EnableOnlineRevocationChecks">不論線上 OCSP/CRL 檢查是否執行</string><string id="EnableOnlineRevocationChecks_Explain">由於線上撤銷檢查 (監測隨機性軟體錯誤) 無法提供實際的安全性效益，因此在 Google Chrome 版本 19 和更新的版本中，系統已預設停用這些檢查。將這項政策設定為 True，系統會還原先前行為，並且會執行線上 OCSP/CRL 檢查。
+
+如未設定這項政策，或將政策設定為 False，則 Google Chrome 不會在 Google Chrome 19 和更新版本中執行線上撤銷檢查。</string><string id="EnableSha1ForLocalAnchors">是否允許本機信任錨點核發的 SHA-1 簽署憑證</string><string id="EnableSha1ForLocalAnchors_Explain">啟用這項設定時，只要 SHA-1 簽署憑證成功通過驗證並鏈結至本機安裝的 CA 憑證，即可在 Google Chrome 中使用。
+
+請注意，這項政策取決於允許 SHA-1 簽名的作業系統憑證驗證堆疊。如果作業系統更新變更了作業系統的 SHA-1 憑證處理方式，這項政策可能就會失效。此外，這項政策是暫時性的解決方案，目的是讓使用 SHA-1 憑證的企業有更多時間尋找其他解決方案。我們將於 2019 年 1 月 1 日左右移除這項政策。
+
+如果未設定這項政策，或是將這項政策設為 false，Google Chrome 將會遵循公開宣佈的 SHA-1 淘汰時間表。</string><string id="ExternalStorageDisabled">停用外部儲存裝置掛載功能</string><string id="ExternalStorageDisabled_Explain">將這項政策設為 true 時，無法在檔案瀏覽器中存取外部儲存裝置。
+
+這項政策會影響所有類型的儲存媒體 (例如 USB 隨身碟、外接硬碟、SD 卡和其他記憶卡、光學儲存裝置等等)，內部儲存空間則不受影響，因此儲存在「下載」資料夾中的檔案仍可供存取。此外，Google 雲端硬碟不受這項政策影響。
+
+如果停用或未指定這項設定，使用者即可在裝置上使用各種支援的外部儲存裝置。</string><string id="ExternalStorageReadOnly">Treat external storage devices as read-only</string><string id="ExternalStorageReadOnly_Explain">將這項政策設為 True 時，使用者無法對外部儲存裝置寫入任何內容。
+
+如果將這項設定設為 False 或不予設定，只要外部儲存裝置可供寫入內容，使用者即可在其中建立及修改檔案。
+
+ExternalStorageDisabled 政策優先於本政策。如果將 ExternalStorageDisabled 設為 True，便會完全停用對外部儲存裝置的存取權，並且略過本政策。
+
+M56 以上版本支援這項政策的動態更新功能。</string><string id="ForceGoogleSafeSearch">強制啟用 Google 安全搜尋模式</string><string id="ForceGoogleSafeSearch_Explain">強制啟用安全搜尋服務，處理 Google 網頁搜尋中的查詢，並且防止使用者變更這項設定。
+
+如果你啟用這項設定，就會一律啟用 Google 搜尋中的安全搜尋服務。
+
+如果你停用這項設定或尚未設定值，就不會在 Google 搜尋中強制執行安全搜尋服務。</string><string id="ForceMaximizeOnFirstRun">首次執行時將第一個瀏覽器視窗最大化</string><string id="ForceMaximizeOnFirstRun_Explain">If this policy is set to true, Google Chrome will unconditionally maximize the first window shown on first run.
+If this policy is set to false or not configured, the decision whether to maximize the first window shown will be based on the screen size.</string><string id="ForceYouTubeRestrict">強制執行低度的 YouTube 嚴格篩選模式</string><string id="ForceYouTubeRestrict_Explain">強制執行低度的 YouTube 嚴格篩選模式，並禁止使用者
+選擇更寬鬆的模式。
+
+如果將設定等級設為高度，將一律使用高度的 YouTube 嚴格篩選模式。
+
+如果將設定等級設為中度，使用者只能從中度的 YouTube 嚴格篩選模式
+和高度的 YouTube 嚴格篩選模式中擇一使用，但無法停用嚴格篩選模式。
+
+如果關閉這項設定或未指定設定值，Google Chrome 就不會強制執行 YouTube 嚴格篩選模式。不過，外部政策 (例如 YouTube 政策) 可能仍會強制執行嚴格篩選模式。</string><string id="ForceYouTubeRestrict_Off">不強制執行 YouTube 嚴格篩選模式</string><string id="ForceYouTubeRestrict_Moderate">強制執行中度以上的 YouTube 嚴格篩選模式</string><string id="ForceYouTubeRestrict_Strict">強制執行高度的 YouTube 嚴格篩選模式</string><string id="FullscreenAllowed">允許全螢幕模式</string><string id="FullscreenAllowed_Explain">This policy controls the availability of fullscreen mode in which all Google Chrome UI is hidden and only web content is visible.
+
+If this policy is set to true or not not configured, the user, apps and extensions with appropriate permissions can enter fullscreen mode.
+
+If this policy is set to false, neither the user nor any apps or extensions can enter fullscreen mode.
+
+On all platforms except Google Chrome OS, kiosk mode is unavailable when fullscreen mode is disabled.</string><string id="Http09OnNonDefaultPortsEnabled">在非預設通訊埠啟用 HTTP/0.9 支援功能</string><string id="Http09OnNonDefaultPortsEnabled_Explain">這項政策可讓你在 80 (HTTP) 和 443 (HTTPS) 以外的通訊埠啟用 HTTP/0.9。
+
+這項政策預設為停用，啟用後使用者可能會遇到安全性問題 https://crbug.com/600352。
+
+這項政策的用意是讓企業自行遷移目前使用 HTTP/0.9 的伺服器，日後我們會移除這項政策。
+
+如果未設定這項政策，則會在非預設通訊埠停用 HTTP/0.9。</string><string id="IncognitoModeAvailability">無痕模式適用性</string><string id="IncognitoModeAvailability_Explain">指定使用者是否可以在「Google Chrome」中以無痕模式開啟網頁。如果選取的是 [啟用] 或未設定政策，網頁能以無痕模式開啟。如果選取的是 [停用]，則網頁可能無法以無痕模式開啟。如果選取的是 [強制]，系統只會以無痕模式開啟網頁。</string><string id="IncognitoModeAvailability_Enabled">可使用無痕模式</string><string id="IncognitoModeAvailability_Disabled">無痕模式已停用</string><string id="IncognitoModeAvailability_Forced">強制使用無痕模式</string><string id="InstantTetheringAllowed">Allows Instant Tethering to be used.</string><string id="InstantTetheringAllowed_Explain">If this setting is enabled, users will be allowed to use Instant Tethering, which allows their Google phone to share its mobile data with their device.
+
+If this setting is disabled, users will not be allowed to use Instant Tethering.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="IsolateOrigins">為指定來源啟用網站隔離</string><string id="IsolateOrigins_Explain">
+注意：這項政策仍在實驗階段，可能導致服務中斷！
+如果啟用這項政策，逗號分隔清單中指出的來源
+就會以獨立程序執行。這也會隔離使用子網域名稱的來源；
+例如，指定 https://example.com/ 也會造成
+https://foo.example.com/ 受到隔離，
+因為後者同樣屬於 https://example.com/ 網站。
+如果停用這項政策，原先的網站隔離程序管理邏輯就會生效。
+如果未設定這項政策，使用者將可以變更這項設定。
+</string><string id="KeyPermissions">金鑰權限</string><string id="KeyPermissions_Explain">將企業用金鑰的存取權授予給擴充功能。
+
+在受管理的帳戶中使用 chrome.platformKeys API 產生的金鑰僅供企業使用，透過其他方法匯入或產生的金鑰則不限企業使用。
+
+您只能透過這項政策控制僅供企業使用的金鑰的存取權。使用者無法將企業金鑰的存取權授予擴充功能，也無法撤銷擴充功能對企業金鑰的存取權。
+
+在預設狀態下，擴充功能無法使用企業專用的金鑰 (相當於對該擴充功能將 allowCorporateKeyUsage 設為 False)。
+
+只有在將擴充功能的 allowCorporateKeyUsage 設為 True 的情況下，擴充功能才能使用企業專用的平台金鑰簽署任意資料。這項權限只應授予信任的擴充功能，才能確保金鑰存取權安全無虞，不受駭客攻擊。</string><string id="ManagedBookmarks">受管理書籤</string><string id="ManagedBookmarks_Explain">Configures a list of managed bookmarks.
+
+The policy consists of a list of bookmarks whereas each bookmark is a dictionary containing the keys &quot;name&quot; and &quot;url&quot; which hold the bookmark's name and its target. A subfolder may be configured by defining a bookmark without an &quot;url&quot; key but with an additional &quot;children&quot; key which itself contains a list of bookmarks as defined above (some of which may be folders again). Google Chrome amends incomplete URLs as if they were submitted via the Omnibox, for example &quot;google.com&quot; becomes &quot;https://google.com/&quot;.
+
+These bookmarks are placed in a folder that can't be modified by the user (but the user can choose to hide it from the bookmark bar). By default the folder name is &quot;Managed bookmarks&quot; but it can be customized by adding to the list of bookmarks a dictionary containing the key &quot;toplevel_name&quot; with the desired folder name as the value.
+
+Managed bookmarks are not synced to the user account and can't be modified by extensions.</string><string id="MaxInvalidationFetchDelay">政策失效後的最大擷取延遲</string><string id="MaxInvalidationFetchDelay_Explain">指定從接收無效政策到向裝置管理服務擷取新政策的最長延遲時間 (以毫秒數為單位)。
+
+設定這項政策會覆寫 5000 毫秒的預設值。這項政策的有效值範圍由 1000 毫秒 (1 秒) 到 300000 毫秒 (5 分鐘)。超出範圍的值會自動套用上限值或下限值。
+
+如未設定這項政策，Google Chrome 將會套用 5000 毫秒的預設值。</string><string id="NativePrinters">原生列印</string><string id="NativePrinters_Explain">Configures a list of printers.
+
+This policy allows administrators to provide printer configurations for
+their users.
+
+display_name and description are free form strings that can be customized for ease of printer selection. manufacturer and model serve to ease printer identification by end users. They represent the manufacturer and model of the printer. uri should be an address reachable from a client computer including the scheme, port, and queue. uuid is optional.  If provided, it is used to help deduplicate zeroconf printers.
+
+effective_model must match one of the strings which represent a Google Chrome OS supported printer. The string will be used to identify and install the appropriate PPD for the printer. More information can be found at https://support.google.com/chrome?p=noncloudprint.
+
+Printer setup is completed upon the first use of a printer.  PPDs are not
+downloaded until the printer is used.  After that time, frequently used
+PPDs are cached.
+
+This policy has no effect on whether users can configure printers on
+individual devices.  It is intended to be supplementary to the
+configuration of printers by individual users.</string><string id="NativePrintersDesc">原生列印</string><string id="NativePrintersBulkAccessMode">印表機設定存取權政策。</string><string id="NativePrintersBulkAccessMode_Explain">根據 NativePrintersBulkConfiguration 設定哪些印表機是可供使用的。
+
+指派用於大量印表機設定的存取權政策。如果選取 AllowAll，系統會顯示所有印表機。如果選取 BlacklistRestriction，系統會使用 NativePrintersBulkBlacklist 限制對特定印表機的存取權。如果選取 WhitelistPrintersOnly，NativePrintersBulkWhitelist 只會指派可選取的印表機。
+
+如果沒有設定這項政策，系統會自動採用 BlacklistRestriction。
+</string><string id="NativePrintersBulkAccessMode_BlacklistRestriction">顯示所有印表機 (黑名單中的印表機除外)。</string><string id="NativePrintersBulkAccessMode_WhitelistPrintersOnly">僅對使用者顯示許可清單中的印表機</string><string id="NativePrintersBulkAccessMode_AllowAll">允許設定檔中的所有印表機。</string><string id="NativePrintersBulkBlacklist">停用的企業印表機</string><string id="NativePrintersBulkBlacklist_Explain">指定哪些印表機是禁止使用的。
+
+只有在為 NativePrintersBulkAccessMode 選擇 BlacklistRestriction 的情況下，這項政策才有作用。
+
+一旦設定了這項政策，除了本政策中列出的 ID 外，其他所有印表機皆可供使用者使用。
+</string><string id="NativePrintersBulkBlacklistDesc">停用的企業印表機</string><string id="NativePrintersBulkConfiguration">企業印表機設定檔</string><string id="NativePrintersBulkConfiguration_Explain">為企業印表機進行設定。
+
+你可以透過這項政策為 Google Chrome OS 裝置進行印表機設定。這個檔案的大小不得超過 5MB，且必須使用 JSON 編碼，格式則須和 NativePrinters 字典相同。根據估計，一個 5MB 的編碼檔案中可包含約 21,000 部印表機。系統會使用加密編譯雜湊驗證下載完整性。
+
+系統會為這個檔案執行下載和快取作業。如果網址或雜湊有所變更，系統就會重新下載檔案。
+
+設定這項政策後，Google Chrome OS 會下載這個檔案以進行印表機設定，並根據 NativePrintersBulkAccessMode、NativePrintersBulkWhitelist 和 NativePrintersBulkBlacklist 開放使用印表機。
+
+設定這項政策後，使用者無法予以變更或覆寫。
+
+這項政策不會影響到使用者在個別裝置上設定印表機的權限，其目的是為了讓個別使用者指定的印表機設定更為完善。
+</string><string id="NativePrintersBulkWhitelist">啟用的企業印表機</string><string id="NativePrintersBulkWhitelist_Explain">指定哪些印表機是可以使用的。
+
+只有在為 NativePrintersBulkAccessMode 選擇 WhitelistPrintersOnly 的情況下，這項政策才有作用。
+
+一旦設定了這項政策，使用者就只能使用 ID 符合本政策值的印表機，且 ID 必須和 NativePrintersBulkConfiguration 中指定的檔案項目相符。
+</string><string id="NativePrintersBulkWhitelistDesc">啟用的企業印表機</string><string id="NetworkPredictionOptions">啟用網路預測功能</string><string id="NetworkPredictionOptions_Explain">啟用 Google Chrome 的網路預測功能，並且禁止使用者變更這項設定。
+
+這項設定是用於控制 DNS 預先擷取、TCP 和 SSL 預先連線及網頁預先轉譯機制。
+
+如果您將這項偏好設定設為「一律」、「永遠不要」或「僅限 WiFi」，使用者將無法在 Google Chrome 中變更或覆寫這項設定。
+
+如未設定這項政策，系統會啟用網路預測功能，但使用者可以自行變更。</string><string id="NetworkPredictionOptions_NetworkPredictionAlways">無論使用任何網路連線，皆預測網路動作</string><string id="NetworkPredictionOptions_NetworkPredictionWifiOnly">連上網路時一律預測網路動作 (行動網路除外)。
+(在版本 50 中已不適用，在版本 52 中已遭移除。在 52 以上版本中，如果設定值為 1，系統會視為 0 - 連上網路時一律預測網路動作。)</string><string id="NetworkPredictionOptions_NetworkPredictionNever">無論使用任何網路連線，皆不預測網路動作</string><string id="NoteTakingAppsLockScreenWhitelist">將「Google Chrome OS」螢幕鎖定畫面允許的筆記應用程式加入許可清單</string><string id="NoteTakingAppsLockScreenWhitelist_Explain">指定可在「Google Chrome OS」螢幕鎖定畫面中做為筆記應用程式使用的應用程式清單。
+
+如果你偏好的筆記應用程式可在螢幕鎖定畫面中啟用，螢幕鎖定畫面就會顯示使用者介面元素，供你啟動該應用程式。
+啟動後，應用程式將可在螢幕鎖定畫面上方建立應用程式視窗，並在螢幕鎖定的狀態下建立資料項目 (記事)。主要使用者工作階段解鎖後，應用程式可以將建立的記事匯入主要使用者工作階段。目前只有 Chrome 筆記應用程式可在螢幕鎖定畫面中使用。
+
+設定政策後，使用者如要在螢幕鎖定畫面中啟用某個應用程式，該應用程式的擴充功能 ID 必須包含在政策清單值內才能啟用。
+因此，將這項政策設定為空白清單時，系統會完全停用螢幕鎖定畫面的筆記功能。
+請注意，即使政策中包含某個應用程式 ID，也不一定代表使用者可以在螢幕鎖定畫面中將該應用程式做為筆記應用程式使用。舉例來說，Chrome 61 版本的可用應用程式集會額外受到平台限制。
+
+如未設定政策，使用者可在螢幕鎖定畫面中啟用的應用程式集就不會受到任何政策限制。</string><string id="NoteTakingAppsLockScreenWhitelistDesc">將「Google Chrome OS」螢幕鎖定畫面允許的筆記應用程式加入許可清單</string><string id="OpenNetworkConfiguration">使用者層級網路設定</string><string id="OpenNetworkConfiguration_Explain">允許將網路設定按照使用者套用至安裝了 Google Chrome OS 的裝置。本網路設定是由開放網路設定格式 (網址為：https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration) 所定義的 JSON 格式字串。</string><string id="PacHttpsUrlStrippingEnabled">啟用 PAC 網址分解功能 (適用於 https://)</string><string id="PacHttpsUrlStrippingEnabled_Explain">先將 https:// 網址中攸關隱私和安全性的敏感部分去除，再轉送給 PAC (Proxy Auto Config) 指令碼，供 Google Chrome 在 Proxy 解析期間使用。
+
+設為 True 時會啟用安全性功能，先將 https:// 網址分解再提交給 PAC 指令碼。如此一來，PAC 指令碼便無法檢視原本受加密通道保護的資料 (例如網址的路徑和查詢)。
+
+設為 False 時會停用安全性功能，PAC 指令碼將因此獲得檢視所有 https:// 網址元素的權限。所有 PAC 指令碼都會套用這項設定，無論來源為何 (包括從不安全的傳輸過程中擷取而來的 PAC 指令碼，或是以不安全的方式透過 WPAD 找到的 PAC 指令碼)。
+
+這項政策預設為 True (啟用安全性功能)，但 Chrome 作業系統企業使用者除外 (目前預設為 False)。
+
+建議您將這項政策設為 True。如果設為 True 會與現有的 PAC 指令碼衝突，造成相容性問題，才需要將這項政策設為 False。
+
+按照我們的期望，日後將移除這項覆寫機制。</string><string id="PinnedLauncherApps">要顯示在啟動器中的固定應用程式清單</string><string id="PinnedLauncherApps_Explain">列出 Google Chrome OS 在啟動器列中顯示為固定應用程式的應用程式識別碼。
+
+如果設定這項政策，應用程式集將會固定，無法讓使用者變更。
+
+如果未設定這項政策，使用者就可以變更啟動器中的固定應用程式清單。</string><string id="PinnedLauncherAppsDesc">要顯示在啟動器中的固定應用程式清單</string><string id="PolicyRefreshRate">使用者政策的重新整理頻率</string><string id="PolicyRefreshRate_Explain">指定向裝置管理服務查詢使用者政策資訊的時間 (以毫秒為單位)。
+
+設定這項政策會覆寫預設值 (3 小時)。這項政策的有效值範圍是 1800000 (30 分鐘) 到 86400000 (1 天)。超出範圍的值一律會自動調整為上限值或下限值。如果平台支援政策通知，由於政策通知通常會在政策變更時自動強制更新，所以更新延遲時間會設為 24 小時。
+
+如未設定這項政策，Google Chrome 會使用預設值 (3 小時)。
+
+請注意，如果平台支援政策通知，由於政策通知通常會在政策變更時自動強制更新 (不需更高的更新頻率)，所以更新延遲時間會設為 24 小時 (忽略所有預設值和這項政策的值)。</string><string id="PrintingEnabled">啟用列印功能</string><string id="PrintingEnabled_Explain">啟用 Google Chrome 的列印功能，並且禁止使用者變更這項設定。
+
+不論這項政策處於啟用或未設定的狀態，使用者都可以進行列印。
+
+如果你停用這項設定，使用者就無法透過 Google Chrome 進行列印。扳手功能表、擴充功能、JavaScript 應用程式等都無法提供列印功能。不過你還是可以在列印時透過略過 Google Chrome 的外掛程式以進行列印。舉例來說，部分 Flash 應用程式的相關內容選單中會有列印選項，而這個選項不受政策影響。</string><string id="QuicAllowed">允許 QUIC 通訊協定</string><string id="QuicAllowed_Explain">如果這項政策設為 True 或未設定，可在 Google Chrome 中使用 QUIC 通訊協定。
+如果這項政策設為 False，則不可使用 QUIC 通訊協定。</string><string id="RebootAfterUpdate">更新完成後自動重新啟動</string><string id="RebootAfterUpdate_Explain">在系統已套用 Google Chrome OS更新之後安排自動重新啟動。
+
+如果你將這項政策設為 True，當系統已套用 Google Chrome OS更新且必須重新啟動以完成更新程序時，即會安排自動重新啟動。系統會立即排定重新啟動，但如果使用者正在使用裝置，最多可能會延遲 24 小時才會重新啟動。
+
+如果你將這項政策設為 False，系統將不會在套用 Google Chrome OS更新之後安排自動重新啟動時間。更新程序會在使用者下次重新啟動裝置時完成。
+
+只要你設定這項政策，使用者即無法予以變更或覆寫。
+
+注意：目前只有在顯示登入畫面或 Kiosk 應用程式工作階段運作時，才能啟用自動重新啟動。這種情況會在日後變更，而且無論任何特定類型的工作階段是否正在運作，政策都會一律適用。</string><string id="RequireOnlineRevocationChecksForLocalAnchors">是否需要為本機信任錨點執行線上 OCSP/CRL 檢查。</string><string id="RequireOnlineRevocationChecksForLocalAnchors_Explain">啟用這項設定時，Google Chrome 一律會針對通過驗證、並且由本機安裝 CA 憑證所簽署的伺服器憑證執行撤銷檢查。
+
+如果 Google Chrome 無法取得撤銷狀態資訊，這類憑證將被視為已撤銷 (也就是「作業失敗」) 來處理。
+
+如未設定這項政策，或是設定為 False，Google Chrome 將會套用目前的線上撤銷檢查設定。</string><string id="RunAllFlashInAllowMode">將 Flash 內容設定套用至所有內容</string><string id="RunAllFlashInAllowMode_Explain">如果啟用這項設定，在已設為允許 Flash 內容 (無論是由使用者或根據公司政策所設定) 的網站上，系統會執行所有內嵌的 Flash 內容，包括來自其他來源的內容或檔案較小的內容。
+
+如要控制哪些網站可執行 Flash，請查看「DefaultPluginsSetting」、「PluginsAllowedForUrls」和「PluginsBlockedForUrls」政策。
+
+如果這項設定已停用或尚未設定，系統可能會封鎖來自其他來源的 Flash 內容或檔案較小的內容。</string><string id="SAMLOfflineSigninTimeLimit">限制透過 SAML 驗證的使用者可離線登入的時間</string><string id="SAMLOfflineSigninTimeLimit_Explain">During login, Google Chrome OS can authenticate against a server (online) or using a cached password (offline).
+
+When this policy is set to a value of -1, the user can authenticate offline indefinitely. When this policy is set to any other value, it specifies the length of time since the last online authentication after which the user must use online authentication again.
+
+Leaving this policy not set will make Google Chrome OS use a default time limit of 14 days after which the user must use online authentication again.
+
+This policy affects only users who authenticated using SAML.
+
+The policy value should be specified in seconds.</string><string id="SSLErrorOverrideAllowed">允許忽略 SSL 警告網頁，繼續前往原本指定的頁面</string><string id="SSLErrorOverrideAllowed_Explain">當使用者瀏覽出現 SSL 錯誤的網站，Chrome 會顯示警告網頁。在預設或政策設為 True 的情況下，使用者可以忽略這類警告網頁，繼續前往原先指定的頁面。
+這項政策設為 False 時，系統會禁止使用者忽略任何警告網頁。</string><string id="SSLVersionMax">已啟用 SSL 最高版本</string><string id="SSLVersionMax_Explain">警告：自 Google Chrome 66 版 (2018 年 2 月左右推出) 起，我們將完全停止支援 TLS 最高版本政策。
+
+如果未設定這項政策，Google Chrome 會使用預設最高版本。
+
+這項政策可使用的設定值包括：「tls1.2」或「tls1.3」。設定時，Google Chrome 不會使用高於指定版本的 SSL/TLS 版本。系統會忽略無法辨識的值。</string><string id="SSLVersionMax_TLSv1_2">TLS 1.2</string><string id="SSLVersionMax_TLSv1_3">TLS 1.3</string><string id="SafeBrowsingEnabled">啟用安全瀏覽</string><string id="SafeBrowsingEnabled_Explain">啟用 Google Chrome 的「安全瀏覽」功能並禁止使用者變更這項設定。
+
+如果啟用這項設定，系統會一律啟動「安全瀏覽」功能。
+
+如果停用這項設定，系統就不會啟用「安全瀏覽」功能。
+
+不論你啟用或停用這項設定，使用者都無法在 Google Chrome 中變更或覆寫 [阻擋釣魚網站及惡意程式] 設定。
+
+如果未設定這項政策，系統會啟用這項功能，不過使用者可以變更設定。
+
+如需進一步瞭解「安全瀏覽」功能，請參閱 https://developers.google.com/safe-browsing。</string><string id="SafeBrowsingExtendedReportingOptInAllowed">允許使用者採用安全瀏覽模式的進階回報功能</string><string id="SafeBrowsingExtendedReportingOptInAllowed_Explain">如果將此政策設為 False，使用者將無法選擇向 Google 伺服器傳送一些系統資訊和網頁內容；如果設為 True 或未設定，使用者就可以向「安全瀏覽」服務傳送一些系統資訊和網頁內容，協助我們偵測危險的應用程式和網站。
+
+如需進一步瞭解「安全瀏覽」功能，請參閱 https://developers.google.com/safe-browsing。</string><string id="SavingBrowserHistoryDisabled">停用儲存瀏覽紀錄功能</string><string id="SavingBrowserHistoryDisabled_Explain">停用 Google Chrome 的瀏覽紀錄儲存功能，並禁止使用者變更這項設定。
+
+如果啟用這項設定，系統將不會儲存瀏覽紀錄 (分頁同步功能會一並遭到停用)。
+
+如果停用或未指定這項設定，系統就會儲存瀏覽紀錄。</string><string id="SearchSuggestEnabled">啟用搜尋建議</string><string id="SearchSuggestEnabled_Explain">啟用 Google Chrome 網址列的搜尋建議，並且禁止使用者變更這項設定。
+
+如果你啟用這項設定，系統會使用搜尋建議。
+
+如果你停用這項設定，系統就不會使用搜尋建議。
+
+不論你啟用或停用這項設定，使用者都無法變更或覆寫 Google Chrome 中的這項設定。
+
+如果你未設定這項政策，系統會使用這項設定，不過使用者可以加以變更。</string><string id="SessionLengthLimit">Limit the length of a user session</string><string id="SessionLengthLimit_Explain">When this policy is set, it specifies the length of time after which a user is automatically logged out, terminating the session. The user is informed about the remaining time by a countdown timer shown in the system tray.
+
+When this policy is not set, the session length is not limited.
+
+If you set this policy, users cannot change or override it.
+
+The policy value should be specified in milliseconds. Values are clamped to a range of 30 seconds to 24 hours.</string><string id="SessionLocales">為公開工作階段設定建議的語言代碼</string><string id="SessionLocales_Explain">為公開工作階段設定一個或多個建議的語言代碼，方便讓使用者從中選擇自己偏好的設定。
+
+使用者可以在啟動公開工作階段前選擇語言代碼和鍵盤配置。在預設狀態下，系統會依英文字母順序列出 Google Chrome OS 支援的所有語言代碼。這項政策可讓您將一些建議的語言代碼移至清單頂端。
+
+如果未設定這項政策，系統會預先選取目前的使用者介面語言代碼。
+
+如果設定這項政策，建議的語言代碼會顯示在清單頂端，與其他所有語言代碼明顯區隔。系統會根據您在這項政策中指定的順序列出這些建議的語言代碼，並預先選取第一個語言代碼。
+
+如果有多個建議的語言代碼，系統會假設使用者將從中擇一使用。啟動公開工作階段時，系統會以醒目方式顯示選取的語言代碼和鍵盤配置。否則，系統會假設使用者將使用預先選取的語言代碼，並於公開工作階段啟動時以較不醒目的方式顯示選取的語言代碼和鍵盤配置。
+
+如果在自動登入功能已啟用的情況下設定這項政策 (請參閱 |DeviceLocalAccountAutoLoginId| 和 |DeviceLocalAccountAutoLoginDelay| 政策)，自動啟動的公開工作階段會使用第一個建議的語言代碼，以及與該語言代碼相符的最常用鍵盤配置。
+
+預先選取的鍵盤配置一律是與預先選取的語言代碼相符的最常用配置。
+
+這項政策只能設為建議性質。您可以使用這項政策讓一些建議的語言代碼顯示在頂端，但使用者一律可以為工作階段選擇 Google Chrome OS 支援的任何語言代碼。
+</string><string id="SessionLocalesDesc">為公開工作階段設定建議的語言代碼</string><string id="ShelfAutoHideBehavior">控制檔案櫃自動隱藏功能</string><string id="ShelfAutoHideBehavior_Explain">設定 Google Chrome OS 檔案櫃的自動隱藏功能。
+
+如果你將這項政策設為「AlwaysAutoHideShelf」，檔案櫃就會一律自動隱藏。
+
+如果你將這項政策設為「NeverAutoHideShelf」，檔案櫃就永遠不會自動隱藏。
+
+只要你設定了這項政策，使用者就無法予以變更或覆寫。
+
+如未設定這項政策，使用者可以選擇檔案櫃是否要自動隱藏。</string><string id="ShelfAutoHideBehavior_AlwaysAutoHideShelf">一律自動隱藏檔案櫃</string><string id="ShelfAutoHideBehavior_NeverAutoHideShelf">永不自動隱藏檔案櫃</string><string id="ShowHomeButton">在工具列上顯示 [首頁] 按鈕</string><string id="ShowHomeButton_Explain">顯示「Google Chrome」工具列上的 [首頁] 按鈕。如果你啟用這項設定，系統會顯示 [首頁] 按鈕。如果你停用這項設定，系統就不會顯示 [首頁] 按鈕。不論你啟用或停用這項設定，使用者都無法變更或覆寫「Google Chrome」中的這項設定。如果你不設定這項政策，使用者就能選擇是否要顯示 [首頁] 按鈕。</string><string id="ShowLogoutButtonInTray">在系統列顯示登出按鈕</string><string id="ShowLogoutButtonInTray_Explain">If enabled, a big, red logout button is shown in the system tray while a session is active and the screen is not locked.
+
+If disabled or not specified, no big, red logout button is shown in the system tray.</string><string id="SitePerProcess">為所有網站啟用網站隔離</string><string id="SitePerProcess_Explain">
+注意：這項政策仍在實驗階段，可能導致服務中斷！
+為了儘可能減少隔離功能對使用者的影響，
+建議你先查看 IsolateOrigins 政策設定，瞭解如何使用
+IsolateOrigins 設定需要隔離的網站清單。
+SitePerProcess 這項設定會隔離所有網站。
+如果啟用這項政策，每個網站就會以獨立程序執行。
+如果停用這項政策，原先的網站隔離程序管理邏輯就會生效。
+如果未設定這項政策，使用者將可以變更這項設定。
+</string><string id="SpellCheckServiceEnabled">啟用或停用拼字檢查網路服務</string><string id="SpellCheckServiceEnabled_Explain">Google Chrome 可以透過 Google 網路服務來解決拼字錯誤。如果你啟用這項設定，系統就會一律使用這項服務；如果你停用這項設定，則系統將絕不使用這項服務。
+
+你仍可使用下載的字典執行拼字檢查，這項政策僅可控制是否使用線上服務。
+
+如果你並未設置這項設定，則使用者可自行選擇是否要使用拼字檢查服務。</string><string id="SuppressUnsupportedOSWarning">偵測到不支援的作業系統時不顯示警告</string><string id="SuppressUnsupportedOSWarning_Explain">在我們已停止支援的電腦或作業系統執行 Google Chrome 時，不顯示警告訊息。</string><string id="SyncDisabled">停用 Google 資料同步處理功能</string><string id="SyncDisabled_Explain">使用 Google 代管的同步處理服務停用 Google Chrome 的資料同步處理功能，並禁止使用者變更這項設定。
+
+如果啟用這項設定，使用者就無法在 Google Chrome 中變更或覆寫這項設定。
+
+如果未設定這項政策，則使用者可自行決定是否要使用 Google Sync。
+
+如要全面停用 Google Sync，建議在 Google 管理控制台中停用 Google Sync 服務。
+
+啟用 RoamingProfileSupportEnabled 政策時，請勿啟用這項政策。原因是該功能具有同樣的用戶端功能，會導致 Google 代管的同步處理服務完全停用。</string><string id="SystemTimezone">時區</string><string id="SystemTimezone_Explain">指定裝置所使用的時區。使用者可以為目前的工作階段覆寫指定的時區，但登出後便會自動恢復原本指定的時區。如果設定了無效的值，系統仍會啟用這項政策，並自動套用「GMT」時區設定。如果設定了空白的值，系統會忽略這項政策。
+
+如果不使用這項政策，系統仍會套用目前採用的時區，但使用者可以變更時區，且變更將永久有效。因此，某位使用者所做的變更將會影響登入畫面和所有其他使用者。
+
+新裝置的出廠預設時區為「美國/太平洋」時間。
+
+時區值格式是採用「IANA 時區資料庫」中訂定的時區名稱 (請參閱「https://en.wikipedia.org/wiki/Tz_database」)。基本上，大部分時區均依照「&lt;大陸&gt;/&lt;大城市&gt;」或「&lt;大洋&gt;/&lt;大城市&gt;」的格式定名。
+
+設定這項政策後，系統將全面停止依裝置位置資訊自動偵測時區，SystemTimezoneAutomaticDetection 政策也會遭到覆寫。</string><string id="SystemTimezoneAutomaticDetection">設定自動偵測時區方式</string><string id="SystemTimezoneAutomaticDetection_Explain">設定這項政策後，系統會根據設定值採用下列其中一種方式執行自動偵測時區流程：
+
+如果設為 TimezoneAutomaticDetectionUsersDecide，使用者可以使用 chrome://settings 中的標準控制項控管自動偵測時區作業。
+
+如果設為 TimezoneAutomaticDetectionDisabled，系統會停用 chrome://settings 中的自動時區控制項，且一律不自動偵測時區。
+
+如果設為 TimezoneAutomaticDetectionIPOnly，系統會停用 chrome://settings 中的自動時區控制項，且一律自動偵測時區 (使用僅限 IP 方式偵測位置)。
+
+如果設為 TimezoneAutomaticDetectionSendWiFiAccessPoints，系統會停用 chrome://settings 中的自動時區控制項，且一律自動偵測時區 (一律將顯示的 WiFi 存取點清單傳送至 Geolocation API 伺服器，讓時區偵測結果更精確)。
+
+如果設為 TimezoneAutomaticDetectionSendAllLocationInfo，系統會停用 chrome://settings 中的自動時區控制項，且一律自動偵測時區 (一律將位置資訊 (例如 Wi-Fi 存取點、有訊號的基地台和 GPS) 傳送至伺服器，讓時區偵測結果更精確)。
+
+如果未設定這項政策，系統行為與設定 TimezoneAutomaticDetectionUsersDecide 時相同。
+
+如果設定了 SystemTimezone 政策，則會覆寫這項政策。在這種情況下，系統會全面停止自動偵測時區。</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionUsersDecide">Let users decide</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionDisabled">Never auto-detect timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionIPOnly">Always use coarse timezone detection</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendWiFiAccessPoints">Always send WiFi access-points to server while resolving timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendAllLocationInfo">偵測時區時一律將任何可用的位置標記傳送至伺服器</string><string id="SystemUse24HourClock">預設使用 24 小時制時鐘</string><string id="SystemUse24HourClock_Explain">指定裝置使用的時鐘格式。
+
+這項政策可設定登入畫面使用的時鐘格式，以及使用者工作階段的預設時鐘格式。不過使用者仍然可以覆寫個人帳戶使用的時鐘格式。
+
+如果你將這項政策設為 True，裝置將使用 24 小時制時鐘格式；如果設為 False，裝置將使用 12 小時制時鐘格式。
+
+如未設定這項政策，裝置在預設狀態下會使用 24 小時制時鐘格式。</string><string id="TPMFirmwareUpdateSettings">設定 TPM 韌體更新行為</string><string id="TPMFirmwareUpdateSettings_Explain">設定 TPM 韌體更新功能的可用性和行為。
+
+可在 JSON 屬性中指定個別設定：
+
+allow-user-initiated-powerwash：如果設為 true，則使用者可觸發 Powerwash 流程來安裝 TPM 韌體更新。
+
+如果未設定這項政策，則不提供 TPM 韌體更新功能。</string><string id="TaskManagerEndProcessEnabled">允許在工作管理員中結束處理程序</string><string id="TaskManagerEndProcessEnabled_Explain">If set to false, the 'End process' button is disabled in the Task Manager.
+
+If set to true or not configured, the user can end processes in the Task Manager.</string><string id="TermsOfServiceURL">為裝置本機帳戶設定《服務條款》</string><string id="TermsOfServiceURL_Explain">設定使用者在開始裝置本機帳戶工作階段前必須同意的《服務條款》。
+
+如果你設定這項政策，Google Chrome OS 會在使用者開始裝置本機帳戶工作階段時，下載《服務條款》並向使用者顯示。使用者必須同意《服務條款》才能進入工作階段。
+
+如果你未指定這項政策，系統就不會顯示任何《服務條款》。
+
+你需將政策設為可供 Google Chrome OS 下載《服務條款》的網址。《服務條款》需為純文字內容，以 MIME 類型 text/plain 提供。不允許任何標記。</string><string id="TouchVirtualKeyboardEnabled">啟用虛擬鍵盤</string><string id="TouchVirtualKeyboardEnabled_Explain">這項政策可設定在 Chrome 作業系統中啟用虛擬鍵盤做為輸入裝置。使用者無法覆寫這項政策。
+
+如果你將這項政策設為 True，虛擬螢幕小鍵盤會持續啟用。
+
+如果設為 False，虛擬螢幕小鍵盤會持續停用。
+
+如果你設定了這項政策，使用者便無法加以變更或覆寫。不過，使用者仍然可以啟用/停用協助工具的螢幕小鍵盤，且使用者設定的優先順序高於這項政策所控制的虛擬鍵盤。如要控制協助工具的螢幕小鍵盤，請參閱 |VirtualKeyboardEnabled| 政策。
+
+如未設定這項政策，螢幕小鍵盤會先設為停用，但使用者可隨時啟用。系統也會使用啟發式演算法規則判斷螢幕小鍵盤的顯示時機。</string><string id="TranslateEnabled">啟用翻譯</string><string id="TranslateEnabled_Explain">啟用「Google Chrome」中整合的「Google 翻譯」服務。如果你啟用這項設定，「Google Chrome」就會顯示整合的工具列，在適當的時機為使用者翻譯網頁。如果你停用這項設定，翻譯列就不會顯示。不論你啟用或停用這項設定，使用者都無法在「Google Chrome」中變更或覆寫這項設定。如果你未調整這項設定，使用者可決定是否要使用這項功能。</string><string id="URLBlacklist">禁止存取清單中的網址</string><string id="URLBlacklist_Explain">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
+
+A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+
+Exceptions can be defined in the URL whitelist policy. These policies are limited to 1000 entries; subsequent entries will be ignored.
+
+Note that it is not recommended to block internal 'chrome://*' URLs since this may lead to unexpected errors.
+
+If this policy is not set no URL will be blacklisted in the browser.</string><string id="URLBlacklistDesc">禁止存取清單中的網址</string><string id="URLWhitelist">允許存取清單中的網址</string><string id="URLWhitelist_Explain">允許存取所列網址，這些網址是網址黑名單的例外情況。
+
+請參閱網址黑名單政策的說明以瞭解本清單項目的格式。
+
+這項政策可用來對限制性的黑名單開放例外情況。例如，當你在黑名單中使用「*」封鎖所有要求時，仍可使用這項政策開放存取少數的網址。你也可使用這項政策對特定通訊協定、其他網域的子網域、通訊埠或特定路徑開放例外情況。
+
+系統會根據先最明確的篩選政策來判斷某個網址是否受到封鎖或允許，而許可清單的優先順序比黑名單更高。
+
+這項政策最多可以讓你指定 1000 個例外項目，之後加入的項目將遭到略過。
+
+如未設定這項政策，則「URLBlacklist」政策的黑名單不會有例外情況。</string><string id="URLWhitelistDesc">允許存取清單中的網址</string><string id="UnifiedDesktopEnabledByDefault">Make Unified Desktop available and turn on by default</string><string id="UnifiedDesktopEnabledByDefault_Explain">如果將這項政策設為 true，即可允許使用整合桌面，
+並預設啟用整合桌面，讓應用程式擴展到多個畫面。
+使用者如要為個別畫面停用整合桌面，可在顯示設定中
+取消勾選這項設定。
+
+如果將這項政策設為 false，或是未設定這項政策，則會停用整合桌面。
+在這種情況下，使用者將無法啟用這項功能。</string><string id="UsbDetachableWhitelist">卸離式 USB 裝置許可清單</string><string id="UsbDetachableWhitelist_Explain">定義可從核心驅動程式卸離的 USB 裝置 (以便直接在網路應用程式中透過 chrome.usb API 使用) 清單。清單中的項目必須是一組 USB 供應商識別碼和產品識別碼，用於識別特定硬體。
+
+如果未設定這項政策，卸離式 USB 裝置清單就不會顯示任何項目。</string><string id="UsbDetachableWhitelistDesc">卸離式 USB 裝置許可清單</string><string id="UserAvatarImage">使用者顯示圖片</string><string id="UserAvatarImage_Explain">This policy allows you to configure the avatar image representing the user on the login screen. The policy is set by specifying the URL from which Google Chrome OS can download the avatar image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its size must not exceed 512kB. The URL must be accessible without any authentication.
+
+The avatar image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the avatar image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the avatar image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the avatar image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose the avatar image representing them on the login screen.</string><string id="UserDisplayName">設定裝置本機帳戶的顯示名稱</string><string id="UserDisplayName_Explain">控制 Google Chrome OS 在登入畫面上顯示的帳戶名稱，以表示相對應的裝置本機帳戶。
+
+如果你設定這項政策，登入畫面就會使用指定的字串，在圖像化的登入選擇器中表示相對應的裝置本機帳戶。
+
+如未設定這項政策，Google Chrome OS 就會使用裝置本機帳戶的電子郵件帳戶 ID 當做登入畫面的顯示名稱。
+
+這項政策對於一般使用者帳戶無效。</string><string id="VideoCaptureAllowed">允許或拒絕擷取視訊</string><string id="VideoCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+video capture access except for URLs configured in the
+VideoCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and video
+capture only be available to URLs configured in VideoCaptureAllowedUrls.
+
+This policy affects all types of video inputs and not only the built-in camera.</string><string id="VideoCaptureAllowedUrls">系統會直接授權存取視訊擷取裝置而不需提示的網址</string><string id="VideoCaptureAllowedUrls_Explain">系統會將這份清單中的模式與要求網址的安全性
+來源進行比對。如果找到相符的結果，系統就會授權存取
+音訊擷取裝置，並且不會提示使用者。
+
+注意：對於 45 版本以下的版本，僅有在執行 Kiosk 模式時才支援這項政策。</string><string id="VideoCaptureAllowedUrlsDesc">系統會直接授權存取視訊擷取裝置而不需提示的網址</string><string id="WPADQuickCheckEnabled">啟用 WPAD 最佳化功能</string><string id="WPADQuickCheckEnabled_Explain">允許關閉 Google Chrome 的 WPAD (Web Proxy Auto Discovery) 最佳化設定。
+
+如果將這項政策設為 False，系統會停用 WPAD 最佳化設定，因而延長 Google Chrome 等待 DNS 型 WPAD 伺服器回應的時間。如果未設定或已啟用這項政策，系統會啟用 WPAD 最佳化設定。
+
+無論系統是否設定這項政策或這項政策的設定方式為何，使用者一律無法變更 WPAD 最佳化設定。</string><string id="WallpaperImage">桌布圖片</string><string id="WallpaperImage_Explain">This policy allows you to configure the wallpaper image that is shown on the desktop and on the login screen background for the user. The policy is set by specifying the URL from which Google Chrome OS can download the wallpaper image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its file size must not exceed 16MB. The URL must be accessible without any authentication.
+
+The wallpaper image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the wallpaper image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the wallpaper image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the wallpaper image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose an image to be shown on the desktop and on the login screen background.</string><string id="WebRtcUdpPortRange">限制 WebRTC 所使用的本機 UDP 通訊埠範圍</string><string id="WebRtcUdpPortRange_Explain">如果設定這項政策，系統會將 WebRTC 所使用的 UDP 通訊埠範圍限於指定的通訊埠區間 (包括端點)。
+
+如果未設定這項政策，或是將這項政策設為空白字串或無效的通訊埠範圍，WebRTC 即可使用任何可用的本機 UDP 通訊埠。</string></stringTable><presentationTable><presentation id="EnableMediaRouter"/><presentation id="ShowCastIconInToolbar"/><presentation id="AuthSchemes"><textBox refId="AuthSchemes"><label>支援的驗證機制</label></textBox></presentation><presentation id="DisableAuthNegotiateCnameLookup"/><presentation id="EnableAuthNegotiatePort"/><presentation id="AuthServerWhitelist"><textBox refId="AuthServerWhitelist"><label>驗證伺服器許可清單</label></textBox></presentation><presentation id="AuthNegotiateDelegateWhitelist"><textBox refId="AuthNegotiateDelegateWhitelist"><label>Kerberos 委派伺服器許可清單</label></textBox></presentation><presentation id="AllowCrossOriginAuthPrompt"/><presentation id="ProxyMode"><dropdownList refId="ProxyMode">選擇如何指定 Proxy 伺服器設定</dropdownList></presentation><presentation id="ProxyServer"><textBox refId="ProxyServer"><label>Proxy 伺服器的地址或網址</label></textBox></presentation><presentation id="ProxyPacUrl"><textBox refId="ProxyPacUrl"><label>Proxy .pac 檔案的網址</label></textBox></presentation><presentation id="ProxyBypassList"><textBox refId="ProxyBypassList"><label>以逗號間隔的 Proxy 略過規則清單</label></textBox></presentation><presentation id="DefaultCookiesSetting"><dropdownList refId="DefaultCookiesSetting">預設 Cookie 設定</dropdownList></presentation><presentation id="DefaultImagesSetting"><dropdownList refId="DefaultImagesSetting">預設圖片設定</dropdownList></presentation><presentation id="DefaultJavaScriptSetting"><dropdownList refId="DefaultJavaScriptSetting">預設 JavaScript 設定</dropdownList></presentation><presentation id="DefaultPluginsSetting"><dropdownList refId="DefaultPluginsSetting">Flash 預設設定</dropdownList></presentation><presentation id="DefaultPopupsSetting"><dropdownList refId="DefaultPopupsSetting">預設彈出視視窗設定</dropdownList></presentation><presentation id="DefaultNotificationsSetting"><dropdownList refId="DefaultNotificationsSetting">預設通知設定</dropdownList></presentation><presentation id="DefaultGeolocationSetting"><dropdownList refId="DefaultGeolocationSetting">預設地理位置設定</dropdownList></presentation><presentation id="DefaultWebBluetoothGuardSetting"><dropdownList refId="DefaultWebBluetoothGuardSetting">控制 Web Bluetooth API 使用權限</dropdownList></presentation><presentation id="AutoSelectCertificateForUrls"><listBox refId="AutoSelectCertificateForUrlsDesc">自動為這些網站選取用戶端憑證</listBox></presentation><presentation id="CookiesAllowedForUrls"><listBox refId="CookiesAllowedForUrlsDesc">允許這些網站的 Cookie</listBox></presentation><presentation id="CookiesBlockedForUrls"><listBox refId="CookiesBlockedForUrlsDesc">封鎖這些網站的 Cookie</listBox></presentation><presentation id="CookiesSessionOnlyForUrls"><listBox refId="CookiesSessionOnlyForUrlsDesc">只有本次工作階段允許這些網站的 Cookie</listBox></presentation><presentation id="ImagesAllowedForUrls"><listBox refId="ImagesAllowedForUrlsDesc">允許這些網站的圖片</listBox></presentation><presentation id="ImagesBlockedForUrls"><listBox refId="ImagesBlockedForUrlsDesc">封鎖這些網站的圖片</listBox></presentation><presentation id="JavaScriptAllowedForUrls"><listBox refId="JavaScriptAllowedForUrlsDesc">允許這些網站的 JavaScript</listBox></presentation><presentation id="JavaScriptBlockedForUrls"><listBox refId="JavaScriptBlockedForUrlsDesc">封鎖這些網站的 JavaScript</listBox></presentation><presentation id="PluginsAllowedForUrls"><listBox refId="PluginsAllowedForUrlsDesc">允許在這些網站上執行 Flash 外掛程式</listBox></presentation><presentation id="PluginsBlockedForUrls"><listBox refId="PluginsBlockedForUrlsDesc">禁止在這些網站上執行 Flash 外掛程式</listBox></presentation><presentation id="PopupsAllowedForUrls"><listBox refId="PopupsAllowedForUrlsDesc">允許這些網站的彈出式視窗</listBox></presentation><presentation id="RegisteredProtocolHandlers"><textBox refId="RegisteredProtocolHandlers"><label>註冊通訊協定處理常式</label></textBox></presentation><presentation id="PopupsBlockedForUrls"><listBox refId="PopupsBlockedForUrlsDesc">封鎖這些網站的彈出式視窗</listBox></presentation><presentation id="NotificationsAllowedForUrls"><listBox refId="NotificationsAllowedForUrlsDesc">允許這些網站的通知</listBox></presentation><presentation id="NotificationsBlockedForUrls"><listBox refId="NotificationsBlockedForUrlsDesc">封鎖這些網站的通知</listBox></presentation><presentation id="ShowAccessibilityOptionsInSystemTrayMenu"/><presentation id="LargeCursorEnabled"/><presentation id="SpokenFeedbackEnabled"/><presentation id="HighContrastEnabled"/><presentation id="VirtualKeyboardEnabled"/><presentation id="KeyboardDefaultToFunctionKeys"/><presentation id="ScreenMagnifierType"><dropdownList refId="ScreenMagnifierType">設定螢幕放大鏡類型</dropdownList></presentation><presentation id="DeviceLoginScreenDefaultLargeCursorEnabled"/><presentation id="DeviceLoginScreenDefaultSpokenFeedbackEnabled"/><presentation id="DeviceLoginScreenDefaultHighContrastEnabled"/><presentation id="DeviceLoginScreenDefaultVirtualKeyboardEnabled"/><presentation id="DeviceLoginScreenDefaultScreenMagnifierType"><dropdownList refId="DeviceLoginScreenDefaultScreenMagnifierType">設定啟用的螢幕放大鏡在登入畫面的預設類型</dropdownList></presentation><presentation id="PasswordManagerEnabled"/><presentation id="QuickUnlockModeWhitelist"><listBox refId="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</listBox></presentation><presentation id="QuickUnlockTimeout"><dropdownList refId="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</dropdownList></presentation><presentation id="PinUnlockMinimumLength"><decimalTextBox refId="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockMaximumLength"><decimalTextBox refId="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockWeakPinsAllowed"/><presentation id="ExtensionInstallBlacklist"><listBox refId="ExtensionInstallBlacklistDesc">使用者應避免安裝的擴充功能 ID (使用星號 (*) 排除所有擴充功能)</listBox></presentation><presentation id="ExtensionInstallWhitelist"><listBox refId="ExtensionInstallWhitelistDesc">要從黑名單上移除的擴充功能 ID</listBox></presentation><presentation id="ExtensionInstallForcelist"><listBox refId="ExtensionInstallForcelistDesc">自動在背景中安裝的擴充功能/應用程式 ID 和更新網址</listBox></presentation><presentation id="ExtensionInstallSources"><listBox refId="ExtensionInstallSourcesDesc">允許安裝擴充功能、應用程式和使用者指令碼的來源網址模式清單</listBox></presentation><presentation id="ExtensionAllowedTypes"><listBox refId="ExtensionAllowedTypesDesc">允許安裝的擴充功能/應用程式類型</listBox></presentation><presentation id="ExtensionSettings"><textBox refId="ExtensionSettings"><label>擴充功能管理設定</label></textBox></presentation><presentation id="NewTabPageLocation"><textBox refId="NewTabPageLocation"><label>新分頁網址</label></textBox></presentation><presentation id="DriveDisabled"/><presentation id="DriveDisabledOverCellular"/><presentation id="RemoteAccessHostClientDomainList"><listBox refId="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</listBox></presentation><presentation id="RemoteAccessHostFirewallTraversal"/><presentation id="RemoteAccessHostDomainList"><listBox refId="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</listBox></presentation><presentation id="RemoteAccessHostTalkGadgetPrefix"><textBox refId="RemoteAccessHostTalkGadgetPrefix"><label>為遠端存取主機設定 TalkGadget 前置詞</label></textBox></presentation><presentation id="RemoteAccessHostRequireCurtain"/><presentation id="RemoteAccessHostAllowClientPairing"/><presentation id="RemoteAccessHostAllowGnubbyAuth"/><presentation id="RemoteAccessHostAllowRelayedConnection"/><presentation id="RemoteAccessHostUdpPortRange"><textBox refId="RemoteAccessHostUdpPortRange"><label>限制遠端存取主機所使用的 UDP 通訊埠範圍</label></textBox></presentation><presentation id="RemoteAccessHostMatchUsername"/><presentation id="RemoteAccessHostTokenUrl"><textBox refId="RemoteAccessHostTokenUrl"><label>遠端存取用戶端取得驗證憑證的來源網址</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationUrl"><textBox refId="RemoteAccessHostTokenValidationUrl"><label>用於驗證遠端存取用戶端驗證憑證的網址</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationCertificateIssuer"><textBox refId="RemoteAccessHostTokenValidationCertificateIssuer"><label>用於連線至 RemoteAccessHostTokenValidationUrl 的用戶端憑證</label></textBox></presentation><presentation id="RestoreOnStartup"><dropdownList refId="RestoreOnStartup">起始動作</dropdownList></presentation><presentation id="RestoreOnStartupURLs"><listBox refId="RestoreOnStartupURLsDesc">起始時開啟的網址</listBox></presentation><presentation id="AttestationEnabledForUser"/><presentation id="AttestationExtensionWhitelist"><listBox refId="AttestationExtensionWhitelistDesc">允許擴充功能使用 Remote Attestation API</listBox></presentation><presentation id="LidCloseAction"><dropdownList refId="LidCloseAction">使用者蓋上螢幕時所採取的動作</dropdownList></presentation><presentation id="PowerManagementUsesAudioActivity"/><presentation id="PowerManagementUsesVideoActivity"/><presentation id="PresentationScreenDimDelayScale"><decimalTextBox refId="PresentationScreenDimDelayScale">簡報模式中的螢幕調暗延遲時間延長百分比:</decimalTextBox></presentation><presentation id="AllowScreenWakeLocks"/><presentation id="UserActivityScreenDimDelayScale"><decimalTextBox refId="UserActivityScreenDimDelayScale">使用者在螢幕調暗後繼續使用裝置時的螢幕調暗時間延長百分比:</decimalTextBox></presentation><presentation id="WaitForInitialUserActivity"/><presentation id="PowerManagementIdleSettings"><textBox refId="PowerManagementIdleSettings"><label>使用者進入閒置狀態時的電源管理設定</label></textBox></presentation><presentation id="ScreenLockDelays"><textBox refId="ScreenLockDelays"><label>螢幕鎖定延遲</label></textBox></presentation><presentation id="DefaultSearchProviderEnabled"/><presentation id="DefaultSearchProviderName"><textBox refId="DefaultSearchProviderName"><label>預設搜尋引擎名稱</label></textBox></presentation><presentation id="DefaultSearchProviderKeyword"><textBox refId="DefaultSearchProviderKeyword"><label>預設搜尋引擎關鍵字</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURL"><textBox refId="DefaultSearchProviderSearchURL"><label>預設搜尋引擎搜尋網址</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURL"><textBox refId="DefaultSearchProviderSuggestURL"><label>預設搜尋引擎建議網址</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURL"><textBox refId="DefaultSearchProviderInstantURL"><label>預設搜尋引擎互動智慧搜尋網址</label></textBox></presentation><presentation id="DefaultSearchProviderIconURL"><textBox refId="DefaultSearchProviderIconURL"><label>預設搜尋引擎圖示</label></textBox></presentation><presentation id="DefaultSearchProviderEncodings"><listBox refId="DefaultSearchProviderEncodingsDesc">預設搜尋引擎編碼</listBox></presentation><presentation id="DefaultSearchProviderAlternateURLs"><listBox refId="DefaultSearchProviderAlternateURLsDesc">預設搜尋的替代網址清單</listBox></presentation><presentation id="DefaultSearchProviderSearchTermsReplacementKey"><textBox refId="DefaultSearchProviderSearchTermsReplacementKey"><label>可使用這個參數來決定是否要為預設搜尋服務商提供替代搜尋字詞。</label></textBox></presentation><presentation id="DefaultSearchProviderImageURL"><textBox refId="DefaultSearchProviderImageURL"><label>為預設搜尋引擎提供圖片搜尋功能的參數</label></textBox></presentation><presentation id="DefaultSearchProviderNewTabURL"><textBox refId="DefaultSearchProviderNewTabURL"><label>預設搜尋引擎新分頁網址</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURLPostParams"><textBox refId="DefaultSearchProviderSearchURLPostParams"><label>使用 POST 的搜尋網址參數</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURLPostParams"><textBox refId="DefaultSearchProviderSuggestURLPostParams"><label>使用 POST 的建議網址參數</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURLPostParams"><textBox refId="DefaultSearchProviderInstantURLPostParams"><label>使用 POST 的互動智慧搜尋網址參數</label></textBox></presentation><presentation id="DefaultSearchProviderImageURLPostParams"><textBox refId="DefaultSearchProviderImageURLPostParams"><label>使用 POST 的圖片網址參數</label></textBox></presentation><presentation id="HomepageLocation"><textBox refId="HomepageLocation"><label>首頁網址</label></textBox></presentation><presentation id="HomepageIsNewTabPage"/><presentation id="AllowDeletingBrowserHistory"/><presentation id="AllowDinosaurEasterEgg"/><presentation id="AllowOutdatedPlugins"/><presentation id="AllowScreenLock"/><presentation id="AllowedDomainsForApps"><textBox refId="AllowedDomainsForApps"><label>定義允許存取 Google Apps 的網域</label></textBox></presentation><presentation id="AlternateErrorPagesEnabled"/><presentation id="AlwaysAuthorizePlugins"/><presentation id="ArcBackupRestoreEnabled"/><presentation id="ArcCertificatesSyncMode"><dropdownList refId="ArcCertificatesSyncMode">設定 ARC 應用程式的憑證可用性</dropdownList></presentation><presentation id="ArcEnabled"/><presentation id="ArcLocationServiceEnabled"/><presentation id="ArcPolicy"><textBox refId="ArcPolicy"><label>設定 ARC</label></textBox></presentation><presentation id="AudioCaptureAllowed"/><presentation id="AudioCaptureAllowedUrls"><listBox refId="AudioCaptureAllowedUrlsDesc">系統會直接授權存取音訊擷取裝置而不需提示的網址</listBox></presentation><presentation id="AudioOutputAllowed"/><presentation id="AutoFillEnabled"/><presentation id="AutofillCreditCardEnabled"/><presentation id="BlockThirdPartyCookies"/><presentation id="BookmarkBarEnabled"/><presentation id="CaptivePortalAuthenticationIgnoresProxy"/><presentation id="CertificateTransparencyEnforcementDisabledForUrls"><listBox refId="CertificateTransparencyEnforcementDisabledForUrlsDesc">不針對列出的網址強制執行憑證透明化政策</listBox></presentation><presentation id="ChromeOsLockOnIdleSuspend"/><presentation id="ChromeOsMultiProfileUserBehavior"><dropdownList refId="ChromeOsMultiProfileUserBehavior">控制使用者在多重設定檔工作階段中的行為</dropdownList></presentation><presentation id="ChromeOsReleaseChannel"><dropdownList refId="ChromeOsReleaseChannel">發佈頻道</dropdownList></presentation><presentation id="ChromeOsReleaseChannelDelegated"/><presentation id="ComponentUpdatesEnabled"/><presentation id="DefaultPrinterSelection"><textBox refId="DefaultPrinterSelection"><label>預設印表機選取規則</label></textBox></presentation><presentation id="DeveloperToolsDisabled"/><presentation id="DeviceAllowBluetooth"/><presentation id="DeviceAllowNewUsers"/><presentation id="DeviceAllowRedeemChromeOsRegistrationOffers"/><presentation id="DeviceAutoUpdateDisabled"/><presentation id="DeviceAutoUpdateP2PEnabled"/><presentation id="DeviceBlockDevmode"/><presentation id="DeviceDataRoamingEnabled"/><presentation id="DeviceEphemeralUsersEnabled"/><presentation id="DeviceGuestModeEnabled"/><presentation id="DeviceLoginScreenAppInstallList"><listBox refId="DeviceLoginScreenAppInstallListDesc">設定登入畫面中的已安裝應用程式清單</listBox></presentation><presentation id="DeviceLoginScreenInputMethods"><listBox refId="DeviceLoginScreenInputMethodsDesc">裝置登入畫面鍵盤配置</listBox></presentation><presentation id="DeviceLoginScreenLocales"><listBox refId="DeviceLoginScreenLocalesDesc">裝置登入畫面語言代碼</listBox></presentation><presentation id="DeviceLoginScreenPowerManagement"><textBox refId="DeviceLoginScreenPowerManagement"><label>位於登入畫面中的電源管理設定</label></textBox></presentation><presentation id="DeviceMetricsReportingEnabled"/><presentation id="DeviceNativePrinters"><textBox refId="DeviceNativePrinters"><label>裝置專用企業印表機設定檔</label></textBox></presentation><presentation id="DeviceNativePrintersAccessMode"><dropdownList refId="DeviceNativePrintersAccessMode">裝置印表機設定存取權政策。</dropdownList></presentation><presentation id="DeviceNativePrintersBlacklist"><listBox refId="DeviceNativePrintersBlacklistDesc">已停用企業裝置印表機</listBox></presentation><presentation id="DeviceNativePrintersWhitelist"><listBox refId="DeviceNativePrintersWhitelistDesc">已啟用企業裝置印表機</listBox></presentation><presentation id="DeviceOffHours"><textBox refId="DeviceOffHours"><label>裝置 OffHours |ignored_policy_proto_tags| 解除時的停機時間間隔</label></textBox></presentation><presentation id="DeviceOpenNetworkConfiguration"><textBox refId="DeviceOpenNetworkConfiguration"><label>裝置層級網路設定</label></textBox></presentation><presentation id="DevicePolicyRefreshRate"><decimalTextBox refId="DevicePolicyRefreshRate">裝置政策的重新整理頻率:</decimalTextBox></presentation><presentation id="DeviceQuirksDownloadEnabled"/><presentation id="DeviceRebootOnShutdown"/><presentation id="DeviceShowUserNamesOnSignin"/><presentation id="DeviceStartUpFlags"><listBox refId="DeviceStartUpFlagsDesc">要在 Google Chrome 啟動時套用的全系統設定</listBox></presentation><presentation id="DeviceTargetVersionPrefix"><textBox refId="DeviceTargetVersionPrefix"><label>指定目標的自動更新版本</label></textBox></presentation><presentation id="DeviceUpdateAllowedConnectionTypes"><listBox refId="DeviceUpdateAllowedConnectionTypesDesc">允許進行更新的連線類型</listBox></presentation><presentation id="DeviceUpdateHttpDownloadsEnabled"/><presentation id="DeviceUpdateScatterFactor"><decimalTextBox refId="DeviceUpdateScatterFactor">自動更新分散係數:</decimalTextBox></presentation><presentation id="DeviceUserWhitelist"><listBox refId="DeviceUserWhitelistDesc">登入使用者許可清單</listBox></presentation><presentation id="DeviceWallpaperImage"><textBox refId="DeviceWallpaperImage"><label>裝置桌布圖片</label></textBox></presentation><presentation id="Disable3DAPIs"/><presentation id="DisablePluginFinder"/><presentation id="DisableSafeBrowsingProceedAnyway"/><presentation id="DisableScreenshots"/><presentation id="DisplayRotationDefault"><dropdownList refId="DisplayRotationDefault">設定畫面旋轉預設值 (每次重新啟動皆重新套用)</dropdownList></presentation><presentation id="DownloadDirectory"><textBox refId="DownloadDirectory"><label>設定下載目錄</label></textBox></presentation><presentation id="DownloadRestrictions"><dropdownList refId="DownloadRestrictions">下載限制</dropdownList></presentation><presentation id="EasyUnlockAllowed"/><presentation id="EcryptfsMigrationStrategy"><dropdownList refId="EcryptfsMigrationStrategy">eCryptfs 遷移策略</dropdownList></presentation><presentation id="EditBookmarksEnabled"/><presentation id="EnableCommonNameFallbackForLocalAnchors"/><presentation id="EnableDeprecatedWebPlatformFeatures"><listBox refId="EnableDeprecatedWebPlatformFeaturesDesc">暫時啟用已淘汰網路平台功能</listBox></presentation><presentation id="EnableOnlineRevocationChecks"/><presentation id="EnableSha1ForLocalAnchors"/><presentation id="ExternalStorageDisabled"/><presentation id="ExternalStorageReadOnly"/><presentation id="ForceGoogleSafeSearch"/><presentation id="ForceMaximizeOnFirstRun"/><presentation id="ForceYouTubeRestrict"><dropdownList refId="ForceYouTubeRestrict">強制執行低度的 YouTube 嚴格篩選模式</dropdownList></presentation><presentation id="FullscreenAllowed"/><presentation id="Http09OnNonDefaultPortsEnabled"/><presentation id="IncognitoModeAvailability"><dropdownList refId="IncognitoModeAvailability">無痕模式適用性</dropdownList></presentation><presentation id="InstantTetheringAllowed"/><presentation id="IsolateOrigins"><textBox refId="IsolateOrigins"><label>為指定來源啟用網站隔離</label></textBox></presentation><presentation id="KeyPermissions"><textBox refId="KeyPermissions"><label>金鑰權限</label></textBox></presentation><presentation id="ManagedBookmarks"><textBox refId="ManagedBookmarks"><label>受管理書籤</label></textBox></presentation><presentation id="MaxInvalidationFetchDelay"><decimalTextBox refId="MaxInvalidationFetchDelay">政策失效後的最大擷取延遲:</decimalTextBox></presentation><presentation id="NativePrinters"><listBox refId="NativePrintersDesc">原生列印</listBox></presentation><presentation id="NativePrintersBulkAccessMode"><dropdownList refId="NativePrintersBulkAccessMode">印表機設定存取權政策。</dropdownList></presentation><presentation id="NativePrintersBulkBlacklist"><listBox refId="NativePrintersBulkBlacklistDesc">停用的企業印表機</listBox></presentation><presentation id="NativePrintersBulkConfiguration"><textBox refId="NativePrintersBulkConfiguration"><label>企業印表機設定檔</label></textBox></presentation><presentation id="NativePrintersBulkWhitelist"><listBox refId="NativePrintersBulkWhitelistDesc">啟用的企業印表機</listBox></presentation><presentation id="NetworkPredictionOptions"><dropdownList refId="NetworkPredictionOptions">啟用網路預測功能</dropdownList></presentation><presentation id="NoteTakingAppsLockScreenWhitelist"><listBox refId="NoteTakingAppsLockScreenWhitelistDesc">將「Google Chrome OS」螢幕鎖定畫面允許的筆記應用程式加入許可清單</listBox></presentation><presentation id="OpenNetworkConfiguration"><textBox refId="OpenNetworkConfiguration"><label>使用者層級網路設定</label></textBox></presentation><presentation id="PacHttpsUrlStrippingEnabled"/><presentation id="PinnedLauncherApps"><listBox refId="PinnedLauncherAppsDesc">要顯示在啟動器中的固定應用程式清單</listBox></presentation><presentation id="PolicyRefreshRate"><decimalTextBox refId="PolicyRefreshRate">使用者政策的重新整理頻率:</decimalTextBox></presentation><presentation id="PrintingEnabled"/><presentation id="QuicAllowed"/><presentation id="RebootAfterUpdate"/><presentation id="RequireOnlineRevocationChecksForLocalAnchors"/><presentation id="RunAllFlashInAllowMode"/><presentation id="SAMLOfflineSigninTimeLimit"><decimalTextBox refId="SAMLOfflineSigninTimeLimit">限制透過 SAML 驗證的使用者可離線登入的時間:</decimalTextBox></presentation><presentation id="SSLErrorOverrideAllowed"/><presentation id="SSLVersionMax"><dropdownList refId="SSLVersionMax">已啟用 SSL 最高版本</dropdownList></presentation><presentation id="SafeBrowsingEnabled"/><presentation id="SafeBrowsingExtendedReportingOptInAllowed"/><presentation id="SavingBrowserHistoryDisabled"/><presentation id="SearchSuggestEnabled"/><presentation id="SessionLengthLimit"><decimalTextBox refId="SessionLengthLimit">Limit the length of a user session:</decimalTextBox></presentation><presentation id="SessionLocales"><listBox refId="SessionLocalesDesc">為公開工作階段設定建議的語言代碼</listBox></presentation><presentation id="ShelfAutoHideBehavior"><dropdownList refId="ShelfAutoHideBehavior">控制檔案櫃自動隱藏功能</dropdownList></presentation><presentation id="ShowHomeButton"/><presentation id="ShowLogoutButtonInTray"/><presentation id="SitePerProcess"/><presentation id="SpellCheckServiceEnabled"/><presentation id="SuppressUnsupportedOSWarning"/><presentation id="SyncDisabled"/><presentation id="SystemTimezone"><textBox refId="SystemTimezone"><label>時區</label></textBox></presentation><presentation id="SystemTimezoneAutomaticDetection"><dropdownList refId="SystemTimezoneAutomaticDetection">設定自動偵測時區方式</dropdownList></presentation><presentation id="SystemUse24HourClock"/><presentation id="TPMFirmwareUpdateSettings"><textBox refId="TPMFirmwareUpdateSettings"><label>設定 TPM 韌體更新行為</label></textBox></presentation><presentation id="TaskManagerEndProcessEnabled"/><presentation id="TermsOfServiceURL"><textBox refId="TermsOfServiceURL"><label>為裝置本機帳戶設定《服務條款》</label></textBox></presentation><presentation id="TouchVirtualKeyboardEnabled"/><presentation id="TranslateEnabled"/><presentation id="URLBlacklist"><listBox refId="URLBlacklistDesc">禁止存取清單中的網址</listBox></presentation><presentation id="URLWhitelist"><listBox refId="URLWhitelistDesc">允許存取清單中的網址</listBox></presentation><presentation id="UnifiedDesktopEnabledByDefault"/><presentation id="UsbDetachableWhitelist"><listBox refId="UsbDetachableWhitelistDesc">卸離式 USB 裝置許可清單</listBox></presentation><presentation id="UserAvatarImage"><textBox refId="UserAvatarImage"><label>使用者顯示圖片</label></textBox></presentation><presentation id="UserDisplayName"><textBox refId="UserDisplayName"><label>設定裝置本機帳戶的顯示名稱</label></textBox></presentation><presentation id="VideoCaptureAllowed"/><presentation id="VideoCaptureAllowedUrls"><listBox refId="VideoCaptureAllowedUrlsDesc">系統會直接授權存取視訊擷取裝置而不需提示的網址</listBox></presentation><presentation id="WPADQuickCheckEnabled"/><presentation id="WallpaperImage"><textBox refId="WallpaperImage"><label>桌布圖片</label></textBox></presentation><presentation id="WebRtcUdpPortRange"><textBox refId="WebRtcUdpPortRange"><label>限制 WebRTC 所使用的本機 UDP 通訊埠範圍</label></textBox></presentation></presentationTable></resources></policyDefinitionResources>

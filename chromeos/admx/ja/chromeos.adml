@@ -1,0 +1,1290 @@
+<?xml version="1.0" ?><policyDefinitionResources revision="1.0" schemaVersion="1.0"><displayName/><description/><resources><stringTable><string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 以降</string><string id="googlechromeos">Google Chrome OS</string><string id="googlechromeos_recommended">Google Chrome OS - デフォルト設定（ユーザーによるオーバーライド可能）</string><string id="GoogleCast_group">Google Cast</string><string id="EnableMediaRouter">Google Cast を有効にする</string><string id="EnableMediaRouter_Explain">このポリシーが true に設定されているか未設定の場合は、Google Cast が有効になり、ユーザーはアプリメニュー、ページ コンテキスト メニュー、Cast 対応ウェブサイトのメディア コントロール、Cast ツールバー アイコン（表示されている場合）から起動できるようになります。
+
+このポリシーが false に設定されている場合、Google Cast は無効になります。</string><string id="ShowCastIconInToolbar">Google Cast ツールバー アイコンを表示する</string><string id="ShowCastIconInToolbar_Explain">このポリシーが true に設定されている場合は、ツールバーまたはオーバーフロー メニューに Cast ツールバー アイコンが常に表示されます。ユーザーがこのアイコンを削除することはできません。
+
+このポリシーが false に設定されているか未設定の場合、ユーザーはコンテキスト メニューを使ってこのアイコンを固定したり削除したりできます。
+
+「EnableMediaRouter」ポリシーが false に設定されている場合、このポリシーの値は適用されず、ツールバー アイコンは表示されません。</string><string id="Drive_group">Google ドライブのオプションを設定します</string><string id="DriveDisabled">Google Chrome OS ファイル アプリでのドライブの同期を無効にする</string><string id="DriveDisabled_Explain">True に設定されている場合、Google Chrome OS ファイル アプリでの Google ドライブの同期が無効になります。その場合、Google ドライブにデータはアップロードされません。
+
+未設定の場合、または False に設定されている場合、ユーザーは Google ドライブにファイルを転送できます。</string><string id="DriveDisabledOverCellular">携帯回線接続時に Google Chrome OS ファイル アプリでの Google ドライブの同期を無効にする</string><string id="DriveDisabledOverCellular_Explain">True に設定すると、携帯回線接続の使用時に Google Chrome OS ファイル アプリで Google ドライブの同期が無効になります。この場合、データが Google ドライブに同期されるのは、Wi-Fi またはイーサネット接続時のみとなります。
+
+未設定の場合、または False に設定した場合、ユーザーは携帯回線接続を使用して Google ドライブにファイルを転送できるようになります。</string><string id="HTTPAuthentication_group">HTTP 認証のポリシー</string><string id="AuthSchemes">サポートされる認証スキーム</string><string id="AuthSchemes_Explain">Google Chrome でサポートされる HTTP 認証スキームを指定します。
+
+有効な値は「basic」、「digest」、「ntlm」、「negotiate」です。値を複数指定する場合はカンマで区切ります。
+
+このポリシーが未設定の場合、4 つのスキームのすべてが使用されます。</string><string id="DisableAuthNegotiateCnameLookup">Kerberos 認証をネゴシエートするときに CNAME 検索を無効にする</string><string id="DisableAuthNegotiateCnameLookup_Explain">標準の DNS 名と入力された元の名前のうちどちらを基準にして Kerberos SPN を生成するかを指定します。この設定を有効にすると CNAME 検索がスキップされ、入力されたサーバー名が使用されます。この設定を無効にするか未設定の場合、サーバーの標準名は CNAME 検索によって決まります。</string><string id="EnableAuthNegotiatePort">Kerberos SPN に非標準ポートを含める</string><string id="EnableAuthNegotiatePort_Explain">生成した Kerberos SPN に非標準ポートを含めるべきかどうかを指定します。この設定を有効にすると、非標準ポート（80 と 443 以外のポート）が入力され、生成された Kerberos SPN にそのポートが追加されます。この設定を無効にするか未設定の場合、生成された Kerberos SPN にポートが追加されることはありません。</string><string id="AuthServerWhitelist">認証サーバーのホワイトリスト</string><string id="AuthServerWhitelist_Explain">統合認証のホワイトリストに登録するサーバーを指定します。統合認証が有効になるのは、この許可リストに含まれているプロキシやサーバーから Google Chrome が認証チャレンジを受信した場合のみです。
+
+サーバー名を複数指定する場合はカンマで区切ります。ワイルドカード（*）を使用できます。
+
+このポリシーを設定しない場合、Google Chrome はサーバーがイントラネット上にあるかどうか検出を試み、その上で IWA リクエストに応答します。サーバーがインターネット上で検出された場合、そのサーバーからの IWA リクエストは Google Chrome では無視されます。</string><string id="AuthNegotiateDelegateWhitelist">Kerberos 委任サーバーのホワイトリスト</string><string id="AuthNegotiateDelegateWhitelist_Explain">Google Chrome が委任するサーバーです。
+
+複数のサーバー名を入力するときはカンマで区切ります。ワイルドカード（*）を使用できます。
+
+このポリシーが未設定の場合、サーバーがイントラネット上で検出されたとしても、Google Chrome はユーザーの認証情報を委任しません。</string><string id="AllowCrossOriginAuthPrompt">クロスオリジンでの HTTP Basic 認証プロンプト</string><string id="AllowCrossOriginAuthPrompt_Explain">ページ上のサードパーティ製のサブコンテンツで [HTTP 基本認証] ダイアログボックスのポップアップ表示を許可するかどうかを設定します。通常、これはフィッシング詐欺の防衛策として無効になっています。このポリシーが未設定の場合は無効になり、サブコンテンツで [HTTP 基本認証] ダイアログボックスのポップアップ表示は許可されません。</string><string id="ContentSettings_group">コンテンツの設定</string><string id="DefaultCookiesSetting">デフォルトの Cookie 設定</string><string id="DefaultCookiesSetting_Explain">ウェブサイトにローカルデータの設定を許可するかどうかを制御します。ローカルデータの設定をすべてのウェブサイトに対して許可するか、すべてのウェブサイトに対して拒否することができます。
+
+このポリシーが [セッションの継続中は Cookie を保存する] に設定されている場合、Cookie はセッション終了時に消去されます。なお、Google Chrome が「バックグラウンド モード」で実行されている場合は、最後のウィンドウを閉じてもセッションが終了とならないことがあります。この動作の設定について詳しくは、「BackgroundModeEnabled」ポリシーの説明をご覧ください。
+
+このポリシーが未設定の場合は、「AllowCookies」が使用され、ユーザーは設定を変更できます。</string><string id="DefaultCookiesSetting_AllowCookies">ローカル データの設定をすべてのサイトに許可する</string><string id="DefaultCookiesSetting_BlockCookies">すべてのサイトに対してローカル データの設定を許可しない</string><string id="DefaultCookiesSetting_SessionOnly">セッションの継続中は Cookie を保存する</string><string id="DefaultImagesSetting">デフォルト画像設定</string><string id="DefaultImagesSetting_Explain">ウェブサイトで画像の表示を許可するかどうかを設定できます。画像の表示をすべてのウェブサイトで許可するか、すべてのウェブサイトで拒否するかのどちらかを設定できます。このポリシーが未設定の場合、「AllowImages」が使用され、ユーザーはこの設定を変更できます。</string><string id="DefaultImagesSetting_AllowImages">すべてのサイトに対してすべての画像表示を許可する</string><string id="DefaultImagesSetting_BlockImages">すべてのサイトに対して画像表示を許可しない</string><string id="DefaultJavaScriptSetting">デフォルトのJavascript 設定</string><string id="DefaultJavaScriptSetting_Explain">ウェブサイトに対して JavaScript の実行を許可するかどうかを設定できます。JavaScript の実行は、すべてのウェブサイトに対して許可または禁止することができます。このポリシーが未設定の場合、「AllowJavaScript」が使用され、ユーザーはこの設定を変更できます。</string><string id="DefaultJavaScriptSetting_AllowJavaScript">すべてのサイトに対して Javascript の実行を許可する</string><string id="DefaultJavaScriptSetting_BlockJavaScript">すべてのサイトに対して Javascript の実行を許可しない</string><string id="DefaultPluginsSetting">デフォルトの Flash 設定</string><string id="DefaultPluginsSetting_Explain">ウェブサイトで Flash プラグインの自動実行を許可するかどうかを設定します。Flash プラグインの自動実行をすべてのウェブサイトで許可するか、すべてのウェブサイトでブロックするかのいずれかを指定できます。
+
+「クリックして再生」の場合、Flash プラグインの実行は許可されますが、実行されるのはユーザーがプレースホルダをクリックしたときのみとなります。
+
+このポリシーが未設定の場合、ユーザーはこの設定を手動で変更できます。</string><string id="DefaultPluginsSetting_AllowPlugins">すべてのサイトで Flash プラグインの自動実行を許可する</string><string id="DefaultPluginsSetting_BlockPlugins">Flash プラグインをブロックする</string><string id="DefaultPluginsSetting_ClickToPlay">クリックして再生する</string><string id="DefaultPopupsSetting">デフォルトのポップアップ設定</string><string id="DefaultPopupsSetting_Explain">ウェブサイトに対してポップアップ表示を許可するかどうかを設定できます。ポップアップ表示は、すべてのウェブサイトに対して許可または禁止することができます。このポリシーが未設定の場合、「BlockPopups」が使用され、ユーザーはこの設定を変更できます。</string><string id="DefaultPopupsSetting_AllowPopups">すべてのサイトに対してポップアップ表示を許可する</string><string id="DefaultPopupsSetting_BlockPopups">すべてのサイトに対してポップアップ表示を許可しない</string><string id="DefaultNotificationsSetting">デフォルトの通知設定</string><string id="DefaultNotificationsSetting_Explain">ウェブサイトに対してデスクトップ通知の表示を許可するかどうかを設定できます。デスクトップ通知の表示は、デフォルトで許可または禁止することができます。また、ウェブサイトでデスクトップ通知が表示される前にユーザーが毎回確認することもできます。このポリシーが未設定の場合、「AskNotifications」が使用され、ユーザーはこの設定を変更できます。</string><string id="DefaultNotificationsSetting_AllowNotifications">サイトに対してデスクトップ通知の表示を許可する</string><string id="DefaultNotificationsSetting_BlockNotifications">どのサイトにもデスクトップ通知の表示を許可しない</string><string id="DefaultNotificationsSetting_AskNotifications">サイトでデスクトップ通知が表示される前に毎回確認する</string><string id="DefaultGeolocationSetting">デフォルトの位置情報設定</string><string id="DefaultGeolocationSetting_Explain">ウェブサイトに対してユーザーの物理的な現在地の追跡を許可するかどうかを設定できます。ユーザーの物理的な現在地の追跡は、デフォルトで許可または禁止することができます。また、ウェブサイトが物理的な現在地を要求するときに毎回ユーザーに確認することもできます。このポリシーが未設定の場合、「AskGeolocation」が使用され、ユーザーはこの設定を変更できます。</string><string id="DefaultGeolocationSetting_AllowGeolocation">サイトに対してユーザーの物理的な現在地の追跡を許可する</string><string id="DefaultGeolocationSetting_BlockGeolocation">すべてのサイトに対してユーザーの物理的な現在地の追跡を許可しない</string><string id="DefaultGeolocationSetting_AskGeolocation">サイトがユーザーの物理的な現在地を追跡しようとしたときに毎回確認する</string><string id="DefaultWebBluetoothGuardSetting">Web Bluetooth API の使用を管理する</string><string id="DefaultWebBluetoothGuardSetting_Explain">ウェブサイトによる近くの Bluetooth デバイスへのアクセスを許可するかどうかを設定できます。アクセスを完全に禁止することや、ウェブサイトが近くの Bluetooth デバイスにアクセスしてもよいかユーザーにその都度確認することができます。
+
+このポリシーが未設定の場合は「3」に設定されます。ユーザーはこの設定を変更できます。</string><string id="DefaultWebBluetoothGuardSetting_BlockWebBluetooth">すべてのサイトに対して Web Bluetooth API による Bluetooth デバイスへのアクセスを許可しない</string><string id="DefaultWebBluetoothGuardSetting_AskWebBluetooth">サイトによる近くの Bluetooth デバイスへのアクセスをユーザーに確認する</string><string id="AutoSelectCertificateForUrls">これらのサイトのクライアント証明書を自動的に選択する</string><string id="AutoSelectCertificateForUrls_Explain">URL パターンのリストを指定して、サイトから証明書をリクエストされた場合に Google Chrome でクライアント証明書を自動的に選択する必要があるサイトを指定できます。
+
+値は文字列変換した JSON 辞書の配列で指定する必要があります。各辞書は { &quot;pattern&quot;: &quot;$URL_PATTERN&quot;, &quot;filter&quot; : $FILTER } の形式で指定します。$URL_PATTERN でコンテンツ設定パターンを指定し、$FILTER でブラウザが自動的に選択するクライアント証明書の発行元を指定します。なお、フィルタの設定に関わらず、選択される証明書はサーバーの証明書リクエストに一致するもののみとなります。$FILTER を { &quot;ISSUER&quot;: { &quot;CN&quot;: &quot;$ISSUER_CN&quot; } } の形式で指定すると、CommonName $ISSUER_CN が発行したクライアント証明書のみが選択されます。$FILTER が空の辞書 {} の場合は、クライアント証明書の選択にこうした条件は適用されません。
+
+このポリシーを未設定のままにすると、どのサイトについても証明書の自動選択は行われません。</string><string id="AutoSelectCertificateForUrlsDesc">これらのサイトのクライアント証明書を自動的に選択する</string><string id="CookiesAllowedForUrls">これらのサイトの Cookie を許可する</string><string id="CookiesAllowedForUrls_Explain">Cookie の設定を許可するサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultCookiesSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="CookiesAllowedForUrlsDesc">これらのサイトの Cookie を許可する</string><string id="CookiesBlockedForUrls">これらのサイトの Cookie をブロックする</string><string id="CookiesBlockedForUrls_Explain">Cookie の設定を許可しないサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultCookiesSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="CookiesBlockedForUrlsDesc">これらのサイトの Cookie をブロックする</string><string id="CookiesSessionOnlyForUrls">これらのサイトのセッションのみの Cookie を許可する</string><string id="CookiesSessionOnlyForUrls_Explain">セッションのみの Cookie の設定を許可するサイトを指定する URL パターンのリストを設定できます。
+
+このポリシーが未設定の場合、グローバルの既定値がすべてのサイトで使用されます。グローバルの既定値は「DefaultCookiesSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。
+
+Google Chrome が「バックグラウンド モード」で動作している場合、最後のブラウザ ウィンドウを閉じてもセッションが終了せず、ブラウザを終了するまでアクティブなままになることがあります。この動作の設定について詳しくは、「BackgroundModeEnabled」ポリシーをご覧ください。
+
+「RestoreOnStartup」ポリシーが前回のセッションから URL を復元するように設定されている場合、このポリシーは適用されず、該当するサイトの Cookie は永続的に保存されます。</string><string id="CookiesSessionOnlyForUrlsDesc">これらのサイトのセッションのみの Cookie を許可する</string><string id="ImagesAllowedForUrls">これらのサイトの画像を許可する</string><string id="ImagesAllowedForUrls_Explain">画像を表示できるサイトを指定する url パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultImagesSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="ImagesAllowedForUrlsDesc">これらのサイトの画像を許可する</string><string id="ImagesBlockedForUrls">これらのサイトの画像をブロックする</string><string id="ImagesBlockedForUrls_Explain">画像表示を許可しないサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultImagesSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="ImagesBlockedForUrlsDesc">これらのサイトの画像をブロックする</string><string id="JavaScriptAllowedForUrls">これらのサイトの Javascript を許可する</string><string id="JavaScriptAllowedForUrls_Explain">JavaScript の実行を許可するサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultJavaScriptSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="JavaScriptAllowedForUrlsDesc">これらのサイトの Javascript を許可する</string><string id="JavaScriptBlockedForUrls">これらのサイトの Javascript をブロックする</string><string id="JavaScriptBlockedForUrls_Explain">JavaScript の実行を許可しないサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultJavaScriptSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="JavaScriptBlockedForUrlsDesc">これらのサイトの Javascript をブロックする</string><string id="PluginsAllowedForUrls">これらのサイトで Flash プラグインを許可する</string><string id="PluginsAllowedForUrls_Explain">Flash プラグインの実行を許可するサイトを表す URL パターンのリストを設定します。
+
+このポリシーが未設定の場合は、すべてのサイトでグローバルなデフォルト値（「DefaultPluginsSetting」ポリシーで値が設定されている場合はその値、設定されていない場合はユーザーの個人設定の値）が使用されます。</string><string id="PluginsAllowedForUrlsDesc">これらのサイトで Flash プラグインを許可する</string><string id="PluginsBlockedForUrls">これらのサイトで Flash プラグインをブロックする</string><string id="PluginsBlockedForUrls_Explain">Flash プラグインの実行を許可しないサイトを表す URL パターンのリストを設定します。
+
+このポリシーが未設定の場合は、すべてのサイトでグローバルなデフォルト値（「DefaultPluginsSetting」ポリシーで値が設定されている場合はその値、設定されていない場合はユーザーの個人設定の値）が使用されます。</string><string id="PluginsBlockedForUrlsDesc">これらのサイトで Flash プラグインをブロックする</string><string id="PopupsAllowedForUrls">これらのサイトのポップアップを許可する</string><string id="PopupsAllowedForUrls_Explain">ポップアップ表示を許可するサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultPopupsSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="PopupsAllowedForUrlsDesc">これらのサイトのポップアップを許可する</string><string id="RegisteredProtocolHandlers">プロトコル ハンドラを登録する</string><string id="RegisteredProtocolHandlers_Explain">プロトコル ハンドラのリストを登録できます。これはあくまでも推奨のポリシーです。プロパティ |protocol| には「mailto」などのスキームを設定し、プロパティ |url| にはこのスキームを処理するアプリケーションの URL パターンを設定します。このパターンに「%s」を含めて、処理された URL に置き換えることもできます。
+
+ポリシーで登録されたプロトコル ハンドラは、ユーザーが登録したプロトコル ハンドラと統合され、両方とも使用可能になります。ユーザーは、新しいデフォルトのハンドラをインストールすることにより、ポリシーでインストールされたプロトコル ハンドラをオーバーライドできます。ただし、ポリシーで登録されたプロトコル ハンドラを削除することはできません。</string><string id="PopupsBlockedForUrls">これらのサイトのポップアップをブロックする</string><string id="PopupsBlockedForUrls_Explain">ポップアップ表示を許可しないサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultPopupsSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="PopupsBlockedForUrlsDesc">これらのサイトのポップアップをブロックする</string><string id="NotificationsAllowedForUrls">これらのサイトの通知を許可する</string><string id="NotificationsAllowedForUrls_Explain">通知表示を許可するサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultNotificationsSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="NotificationsAllowedForUrlsDesc">これらのサイトの通知を許可する</string><string id="NotificationsBlockedForUrls">これらのサイトの通知をブロックする</string><string id="NotificationsBlockedForUrls_Explain">通知表示を許可しないサイトを指定する URL パターンのリストを設定できます。このポリシーが未設定の場合、グローバルのデフォルト値がすべてのサイトで使用されます。グローバルのデフォルト値は「DefaultNotificationsSetting」ポリシーの値か、この値が未設定の場合はユーザーの個人設定の値です。</string><string id="NotificationsBlockedForUrlsDesc">これらのサイトの通知をブロックする</string><string id="DefaultSearchProvider_group">デフォルトの検索プロバイダ</string><string id="DefaultSearchProviderEnabled">デフォルトの検索プロバイダを有効にする</string><string id="DefaultSearchProviderEnabled_Explain">Enables the use of a default search provider.
+
+If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL.
+
+You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider.
+
+If you disable this setting, no search is performed when the user enters non-URL text in the omnibox.
+
+If you enable or disable this setting, users cannot change or override this setting in Google Chrome.
+
+If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="DefaultSearchProviderName">デフォルトの検索プロバイダ名</string><string id="DefaultSearchProviderName_Explain">デフォルトの検索プロバイダの名前を指定します。空白のままにしたり未設定の場合は、検索 URL で指定されたホスト名が使用されます。このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderKeyword">デフォルトの検索プロバイダのキーワード</string><string id="DefaultSearchProviderKeyword_Explain">アドレスバーで使用するショートカットとして、このプロバイダで検索を実行するためのキーワードを指定します。このポリシーは省略可能です。未設定の場合、検索プロバイダをアクティブにするキーワードは設定されません。このポリシーは、「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderSearchURL">デフォルトの検索プロバイダの検索 URL</string><string id="DefaultSearchProviderSearchURL_Explain">デフォルトの検索を行うときに使用する検索エンジンの URL を指定します。この URL には「{searchTerms}」という文字列を含めます。この文字列は、検索時にユーザーが指定したキーワードに置き換えられます。
+
+Google の検索 URL は、'{google:baseURL}search?q={searchTerms}&amp;{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}' のように指定できます。
+
+このオプションは、「DefaultSearchProviderEnabled」ポリシーが有効な場合に設定が必要で、適用されるのはその場合のみとなります。</string><string id="DefaultSearchProviderSuggestURL">デフォルト検索プロバイダ サジェスト URL</string><string id="DefaultSearchProviderSuggestURL_Explain">検索候補の表示に使用する検索エンジンの URL を指定します。この URL には「{searchTerms}」という文字列を含めます。この文字列は、検索時にユーザーが入力したテキストに置き換えられます。
+
+このポリシーは省略可能です。未設定の場合、URL 候補は使用されません。
+
+Google の URL 候補は、'{google:baseURL}complete/search?output=chrome&amp;q={searchTerms}' のように指定できます。
+
+このポリシーは、「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderInstantURL">デフォルトの検索プロバイダのインスタント検索 URL</string><string id="DefaultSearchProviderInstantURL_Explain">インスタント検索の結果表示に使用する検索エンジンの URL を指定します。この URL には '{searchTerms}' という文字列を含めます。この文字列は、検索時にユーザーが入力したテキストに置き換えられます。
+
+このポリシーは省略可能です。このポリシーが未設定の場合、インスタント検索の結果は表示されません。
+
+Google のインスタント検索結果の URL は、'{google:baseURL}suggest?q={searchTerms}' のように指定できます。
+
+このポリシーは、「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderIconURL">デフォルトの検索プロバイダ アイコン</string><string id="DefaultSearchProviderIconURL_Explain">デフォルトの検索プロバイダのお気に入りアイコンの URL を指定します。このポリシーは省略可能です。未設定の場合、検索プロバイダにアイコンは表示されません。このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderEncodings">デフォルトの検索プロバイダのエンコード</string><string id="DefaultSearchProviderEncodings_Explain">検索プロバイダによってサポートされる文字エンコードを指定します。エンコードは、UTF-8、GB2312、ISO-8859-1 などのコード ページ名であり、指定された順序で適用されます。このポリシーは省略可能です。未設定の場合、デフォルトでは UTF-8 が使用されます。このポリシーは、「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderEncodingsDesc">デフォルトの検索プロバイダのエンコード</string><string id="DefaultSearchProviderAlternateURLs">デフォルトの検索プロバイダが使用する代替 URL のリスト</string><string id="DefaultSearchProviderAlternateURLs_Explain">検索エンジンからの検索キーワードの抽出に使用できる代替 URL のリストを指定します。URL には文字列 '{searchTerms}' が含まれている必要があります。この文字列は検索キーワードの抽出に使用されます。
+
+このポリシーは省略可能です。未設定の場合、検索キーワードの抽出に代替 URL は使用されません。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合のみ適用されます。</string><string id="DefaultSearchProviderAlternateURLsDesc">デフォルトの検索プロバイダが使用する代替 URL のリスト</string><string id="DefaultSearchProviderSearchTermsReplacementKey">デフォルトの検索プロバイダに対する検索キーワードの置き換えを指定するパラメータ</string><string id="DefaultSearchProviderSearchTermsReplacementKey_Explain">このポリシーを設定していて、アドレスバーの検索 URL 候補のクエリ文字列やフラグメント識別子にこのパラメータが含まれる場合、元の検索 URL を検索キーワードや検索プロバイダに置き換えた候補が表示されます。
+
+このポリシーは省略可能です。未設定の場合、検索キーワードに置き換えられることはありません。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderImageURL">既定の検索プロバイダに画像検索機能を提供するパラメータ</string><string id="DefaultSearchProviderImageURL_Explain">画像検索に使用する検索エンジンの URL を指定します。検索リクエストは GET メソッドを使用して送信されます。DefaultSearchProviderImageURLPostParams ポリシーが設定されている場合は、GET メソッドではなく POST メソッドが画像検索リクエストで使用されます。
+
+このポリシーは省略可能です。このポリシーが設定されていない場合、画像検索は使用されません。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderNewTabURL">デフォルトの検索プロバイダの新しいタブ ページ URL</string><string id="DefaultSearchProviderNewTabURL_Explain">検索エンジンが新しいタブ ページを提供するために使用する URL を指定します。
+
+このポリシーは省略できます。設定しないと新しいタブ ページは提供されません。
+
+このポリシーは、DefaultSearchProviderEnabled ポリシーが有効の場合にのみ適用されます。</string><string id="DefaultSearchProviderSearchURLPostParams">POST を使用する検索 URL のパラメータ</string><string id="DefaultSearchProviderSearchURLPostParams_Explain">POST を使って URL の検索を行うときに使用するパラメータを指定します。名前と値のペアをカンマで区切って指定します。値がテンプレート パラメータ（上記の例の {searchTerms} など）の場合は、実際の検索キーワードのデータに置き換えられます。
+
+このポリシーは省略可能です。未設定の場合、検索リクエストは GET メソッドを使用して送信されます。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderSuggestURLPostParams">POST を使用するキーワード候補による検索 URL のパラメータ</string><string id="DefaultSearchProviderSuggestURLPostParams_Explain">POST を使ってキーワードの候補で検索を行うときに使用するパラメータを指定します。名前と値のペアをカンマで区切って指定します。値がテンプレート パラメータ（上記の例の {searchTerms} など）の場合は、実際の検索キーワードのデータに置き換えられます。
+
+このポリシーは省略可能です。未設定の場合、キーワードの候補による検索リクエストは GET メソッドを使用して送信されます。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderInstantURLPostParams">POST を使用するインスタント検索 URL のパラメータ</string><string id="DefaultSearchProviderInstantURLPostParams_Explain">POST を使ってインスタント検索を行うときに使用するパラメータを指定します。名前と値のペアをカンマで区切って指定します。値がテンプレート パラメータ（上記の例の {imageThumbnail} など）の場合は、実際の検索キーワードのデータに置き換えられます。
+
+このポリシーは省略可能です。未設定の場合、インスタント検索リクエストは GET メソッドを使用して送信されます。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="DefaultSearchProviderImageURLPostParams">POST を使用する画像 URL のパラメータ</string><string id="DefaultSearchProviderImageURLPostParams_Explain">POST を使って画像検索を行うときに使用するパラメータを指定します。名前と値のペアをカンマで区切って指定します。値がテンプレート パラメータ（上記の例の {imageThumbnail} など）の場合は、実際の画像サムネイルのデータに置き換えられます。
+
+このポリシーは省略可能です。未設定の場合、画像検索リクエストは GET メソッドを使用して送信されます。
+
+このポリシーは「DefaultSearchProviderEnabled」ポリシーが有効な場合にのみ適用されます。</string><string id="PasswordManager_group">パスワード マネージャ</string><string id="PasswordManagerEnabled">パスワード マネージャへのパスワード保存を有効にする</string><string id="PasswordManagerEnabled_Explain">If this setting is enabled, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site.
+
+If this settings is disabled, users cannot save new passwords but they
+may still use passwords that have been saved previously.
+
+If this policy is enabled or disabled, users cannot change or override it in Google Chrome. If this policy is unset, password saving is allowed (but can be turned off by the user).</string><string id="Proxy_group">プロキシ サーバー</string><string id="ProxyMode">プロキシ サーバー設定の指定方法を選択する</string><string id="ProxyMode_Explain">Google Chrome が使用するプロキシ サーバーを指定できます。この場合、ユーザーがプロキシ設定を変更することはできません。
+
+プロキシ サーバーを使用せず常に直接接続することを選択した場合、他の設定はすべて無視されます。
+
+システムのプロキシ設定を使用することを選択した場合、他の設定はすべて無視されます。
+
+プロキシ サーバーを自動検出することを選択した場合、他の設定はすべて無視されます。
+
+固定サーバー プロキシ モードを選択した場合は、[プロキシ サーバーのアドレスまたは URL] と [プロキシ バイパス ルールのカンマ区切りリスト] で詳細を指定できます。ARC アプリで使用できるのは最も優先度が高い HTTP プロキシ サーバーのみです。
+
+.pac プロキシ スクリプトを使用することを選択した場合は、[プロキシ .pac ファイルへの URL] でスクリプトの URL を指定する必要があります。
+
+詳しい例については、次の URL をご覧ください。
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett
+
+この設定を有効にした場合、Google Chrome と ARC アプリでは、コマンドラインで指定されたプロキシ関連の設定がすべて無視されます。
+
+このポリシーが未設定の場合、ユーザーは自分でプロキシ設定を選択できます。</string><string id="ProxyMode_ProxyDisabled">プロキシを使用しない</string><string id="ProxyMode_ProxyAutoDetect">プロキシ設定を自動検出する</string><string id="ProxyMode_ProxyPacScript">.pac プロキシ スクリプトを使用する</string><string id="ProxyMode_ProxyFixedServers">固定プロキシ サーバーを使用する</string><string id="ProxyMode_ProxyUseSystem">システムのプロキシ設定を使用する</string><string id="ProxyServer">プロキシ サーバーのアドレスまたは URL</string><string id="ProxyServer_Explain">プロキシ サーバーの URL をここで指定できます。
+
+このポリシーが適用されるのは、[プロキシ サーバー設定の指定方法を選択する] で手動によるプロキシ設定を選択した場合のみです。
+
+プロキシ ポリシーの設定で他のモードを選択した場合、このポリシーは設定しないでください。
+
+詳しい例については、次の URL をご覧ください。
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyPacUrl">プロキシ .pac ファイルへの URL</string><string id="ProxyPacUrl_Explain">プロキシ .pac ファイルの URL をここで指定できます。
+
+このポリシーが適用されるのは、[プロキシ サーバー設定の指定方法を選択する] で手動によるプロキシ設定を選択した場合のみです。
+
+プロキシ ポリシーの設定で他のモードを選択した場合、このポリシーは設定しないでください。
+
+詳しい例については、次の URL をご覧ください。
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyBypassList">プロキシ バイパス ルール</string><string id="ProxyBypassList_Explain">Google Chrome は、ここで指定したホストのリストに対し、プロキシをバイパスします。
+
+このポリシーが適用されるのは、[プロキシ サーバー設定の指定方法を選択する] で手動によるプロキシ設定を選択した場合のみです。
+
+プロキシ ポリシーの設定で他のモードを選択した場合、このポリシーは設定しないでください。
+
+詳しい例については、次の URL をご覧ください。
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="Homepage_group">ホームページ</string><string id="HomepageLocation">ホームページの URL を指定する</string><string id="HomepageLocation_Explain">Configures the default home page URL in Google Chrome and prevents users from changing it.
+
+The home page is the page opened by the Home button. The pages that open on startup are controlled by the RestoreOnStartup policies.
+
+The home page type can either be set to a URL you specify here or set to the New Tab Page. If you select the New Tab Page, then this policy does not take effect.
+
+If you enable this setting, users cannot change their home page URL in Google Chrome, but they can still choose the New Tab Page as their home page.
+
+Leaving this policy not set will allow the user to choose their home page on their own if HomepageIsNewTabPage is not set too.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HomepageIsNewTabPage">新しいタブ ページをホームページとして使用する</string><string id="HomepageIsNewTabPage_Explain">Configures the type of the default home page in Google Chrome and prevents users from changing home page preferences. The home page can either be set to a URL you specify or set to the New Tab Page.
+
+If you enable this setting, the New Tab Page is always used for the home page, and the home page URL location is ignored.
+
+If you disable this setting, the user's homepage will never be the New Tab Page, unless its URL is set to 'chrome://newtab'.
+
+If you enable or disable this setting, users cannot change their homepage type in Google Chrome.
+
+Leaving this policy not set will allow the user to choose whether the new tab page is their home page on their own.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="Accessibility_group">ユーザー補助の設定</string><string id="ShowAccessibilityOptionsInSystemTrayMenu">システム トレイ メニューにユーザー補助オプションを表示</string><string id="ShowAccessibilityOptionsInSystemTrayMenu_Explain">If this policy is set to true, Accessibility options always appear in system tray menu.
+
+If this policy is set to false, Accessibility options never appear in system tray menu.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, Accessibility options will not appear in the system tray menu, but the user can cause the Accessibility options to appear via the Settings page.</string><string id="LargeCursorEnabled">大きいカーソルを有効にする</string><string id="LargeCursorEnabled_Explain">ユーザー補助機能の 1 つである「大きいカーソル」を有効にします。
+
+このポリシーが true に設定されている場合は、大きいカーソルが常に有効になります。
+
+このポリシーが false に設定されている場合は、大きいカーソルは常に無効になります。
+
+管理者がこのポリシーを設定した場合は、ユーザーがその設定を変更したり、別の優先する設定を指定したりすることはできません。
+
+このポリシーが未設定の場合は、大きいカーソルは最初は無効になりますが、ユーザーはいつでも有効にすることができます。</string><string id="SpokenFeedbackEnabled">音声フィードバックを有効にする</string><string id="SpokenFeedbackEnabled_Explain">ユーザー補助機能の 1 つである音声フィードバックを有効にします。
+
+このポリシーが true に設定されている場合は、音声フィードバックが常に有効になります。
+
+このポリシーが false に設定されている場合は、音声フィードバックは常に無効になります。
+
+管理者がこのポリシーを設定した場合は、ユーザーがその設定を変更したり、別の優先する設定を指定したりすることはできません。
+
+このポリシーが未設定の場合は、音声フィードバックは最初は無効になりますが、ユーザーはいつでも有効にすることができます。</string><string id="HighContrastEnabled">ハイ コントラスト モードを有効にする</string><string id="HighContrastEnabled_Explain">ユーザー補助機能の 1 つであるハイコントラスト モードを有効にします。
+
+このポリシーが true に設定されている場合は、ハイコントラスト モードが常に有効になります。
+
+このポリシーが false に設定されている場合は、ハイコントラスト モードは常に無効になります。
+
+管理者がこのポリシーを設定した場合は、ユーザーがその設定を変更したり、別の優先する設定を指定したりすることはできません。
+
+このポリシーが未設定の場合は、ハイコントラスト モードは最初は無効になりますが、ユーザーはいつでも有効にすることができます。</string><string id="VirtualKeyboardEnabled">画面キーボードを有効にする</string><string id="VirtualKeyboardEnabled_Explain">画面キーボードのユーザー補助機能を有効にします。
+
+このポリシーを true に設定すると、画面キーボードが常に有効になります。
+
+このポリシーを false に設定すると、画面キーボードが常に無効になります。
+
+このポリシーを設定した場合、ユーザーがそれを変更したりオーバーライドしたりすることはできません。
+
+このポリシーが未設定の場合は、画面キーボードは無効になりますが、ユーザーがいつでも有効にできます。</string><string id="KeyboardDefaultToFunctionKeys">メディア キーのデフォルトをファンクション キーにする</string><string id="KeyboardDefaultToFunctionKeys_Explain">最上段のキーのデフォルトの動作をファンクション キーに変更します。
+
+このポリシーが true に設定されている場合、キーボードの最上段のキーを押すと、デフォルトでファンクション キーのコマンドが実行されます。キーの動作をメディア キーに戻すには、検索キーを押しながら操作する必要があります。
+
+このポリシーが false に設定されているか未設定の場合、最上段のキーを押すとデフォルトでメディア キーのコマンドが実行されます。検索キーを押しながら操作するとファンクション キーのコマンドが実行されます。</string><string id="ScreenMagnifierType">画面拡大鏡のタイプを設定する</string><string id="ScreenMagnifierType_Explain">If this policy is set, it controls the type of screen magnifier that is enabled. Setting the policy to &quot;None&quot; disables the screen magnifier.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, the screen magnifier is disabled initially but can be enabled by the user anytime.</string><string id="ScreenMagnifierType_None">画面拡大鏡を無効にする</string><string id="ScreenMagnifierType_Full-screen">全画面拡大鏡を有効にする</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled">ログイン画面での大きいカーソルのデフォルト状態を設定する</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled_Explain">ログイン画面でのユーザー補助機能「大きいカーソル」のデフォルト状態を設定します。
+
+このポリシーが true に設定されている場合は、ログイン画面が表示されるときに大きいカーソルが有効になります。
+
+このポリシーが false に設定されている場合は、ログイン画面が表示されるときに大きいカーソルは無効になります。
+
+管理者がこのポリシーを設定した場合も、ユーザーは一時的に大きいカーソルを有効または無効にすることができます。ただし、このユーザーの選択は恒久的ではなく、ログイン画面が改めて表示されたときや、ログイン画面でユーザーが何もしない時間が 1 分に達したときにデフォルト値が復元されます。
+
+このポリシーが未設定の場合は、ログイン画面が表示された直後は大きいカーソルが無効になります。ユーザーはいつでも大きいカーソルを有効または無効にすることができ、ログイン画面での大きいカーソルの状態はログアウト後も維持されます。</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled">ログイン画面での音声フィードバックのデフォルト状態を設定する</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled_Explain">ログイン画面でのユーザー補助機能「音声フィードバック」のデフォルト状態を設定します。
+
+このポリシーが true に設定されている場合は、ログイン画面が表示されるときに音声フィードバックが有効になります。
+
+このポリシーが false に設定されている場合は、ログイン画面が表示されるときに音声フィードバックは無効になります。
+
+管理者がこのポリシーを設定した場合も、ユーザーは一時的に音声フィードバックを有効または無効にすることができます。ただし、このユーザーの選択は恒久的ではなく、ログイン画面が改めて表示されたときや、ログイン画面でユーザーが何もしない時間が 1 分に達したときにデフォルト値が復元されます。
+
+このポリシーが未設定の場合は、ログイン画面が表示された直後は音声フィードバックが無効になります。ユーザーはいつでも音声フィードバックを有効または無効にすることができ、ログイン画面での音声フィードバックの状態はログアウト後も維持されます。</string><string id="DeviceLoginScreenDefaultHighContrastEnabled">ログイン画面でのハイコントラスト モードのデフォルト状態を設定する</string><string id="DeviceLoginScreenDefaultHighContrastEnabled_Explain">ログイン画面でのユーザー補助機能「ハイコントラスト モード」のデフォルト状態を設定します。
+
+このポリシーが true に設定されている場合は、ログイン画面が表示されるときにハイコントラスト モードが有効になります。
+
+このポリシーが false に設定されている場合は、ログイン画面が表示されるときにハイコントラスト モードは無効になります。
+
+管理者がこのポリシーを設定した場合も、ユーザーは一時的にハイコントラスト モードを有効または無効にすることができます。ただし、このユーザーの選択は恒久的ではなく、ログイン画面が改めて表示されたときや、ログイン画面でユーザーが何もしない時間が 1 分に達したときにデフォルト値が復元されます。
+
+このポリシーが未設定の場合は、ログイン画面が表示された直後はハイコントラスト モードが無効になります。ユーザーはいつでもハイコントラスト モードを有効または無効にすることができ、ログイン画面でのハイコントラスト モードの状態はログアウト後も維持されます。</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled">ログイン画面での画面キーボードのデフォルト状態を設定する</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled_Explain">ログイン画面での画面キーボードのユーザー補助機能のデフォルト状態を設定します。
+
+このポリシーを true に設定すると、ログイン画面が表示されたときに画面キーボードが有効になります。
+
+このポリシーを false に設定すると、ログイン画面が表示されたときに画面キーボードが無効になります。
+
+このポリシーを設定した場合、ユーザーは画面キーボードを有効または無効にすることでデフォルト設定を一時的にオーバーライドできます。ただし、ユーザーによる設定は維持されません。ログイン画面が新たに表示された場合や、ユーザーがログイン画面を 1 分間操作しなかった場合はデフォルト設定に戻ります。
+
+このポリシーが未設定の場合、ログイン画面が表示された時点では画面キーボードが無効になります。ユーザーはいつでも画面キーボードを有効または無効にでき、ユーザーが変わってもログイン画面はその状態のままとなります。</string><string id="DeviceLoginScreenDefaultScreenMagnifierType">ログイン画面で有効にする画面拡大鏡のデフォルトのタイプを設定する</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Explain">ログイン画面で有効にする画面拡大鏡機能のデフォルトのタイプを設定します。
+
+このポリシーが設定されている場合は、ログイン画面が表示されるときの画面拡大鏡のタイプはこのポリシーで制御されます。ポリシーを「None」に設定すると、拡大鏡は無効になります。
+
+管理者がこのポリシーを設定した場合も、ユーザーは一時的に画面拡大鏡を有効または無効にすることができます。ただし、このユーザーの選択は恒久的ではなく、ログイン画面が改めて表示されたときや、ログイン画面でユーザーが何もしない時間が 1 分に達したときにデフォルト値が復元されます。
+
+このポリシーが未設定の場合は、ログイン画面が表示された直後は画面拡大鏡が無効になります。ユーザーはいつでも画面拡大鏡を有効または無効にすることができ、ログイン画面での画面拡大鏡の状態はログアウト後も維持されます。</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_None">画面拡大鏡を無効にする</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Full-screen">全画面拡大鏡を有効にする</string><string id="RemoteAccess_group">リモート アクセス オプションを設定</string><string id="RemoteAccessHostClientDomainList">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostClientDomainList_Explain">Configures the required client domain names that will be imposed on remote access clients and prevents users from changing it.
+
+If this setting is enabled, then only clients from one of the specified domains can connect to the host.
+
+If this setting is disabled or not set, then the default policy for the connection type is applied. For remote assistance, this allows clients from any domain to connect to the host; for anytime remote access, only the host owner can connect.
+
+This setting will override RemoteAccessHostClientDomain, if present.
+
+See also RemoteAccessHostDomainList.</string><string id="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostFirewallTraversal">リモート アクセス ホストからのファイアウォール トラバーサルを有効にする</string><string id="RemoteAccessHostFirewallTraversal_Explain">リモート クライアントがこのコンピュータへの接続を試行するときに STUN サーバーを使用できるようにします。
+
+この設定が有効な場合、リモート クライアントはファイアウォールの有無にかかわらずこのコンピュータを検出して接続できます。
+
+この設定が無効な場合で発信 UDP 接続がファイアウォールによって除外されている場合は、ローカル ネットワーク内のクライアント コンピュータのみがこのコンピュータに接続できます。
+
+このポリシーが未設定の場合、この設定は有効になります。</string><string id="RemoteAccessHostDomainList">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostDomainList_Explain">Configures the required host domain names that will be imposed on remote access hosts and prevents users from changing it.
+
+If this setting is enabled, then hosts can be shared only using accounts registered on one of the specified domain names.
+
+If this setting is disabled or not set, then hosts can be shared using any account.
+
+This setting will override RemoteAccessHostDomain, if present.
+
+See also RemoteAccessHostClientDomainList.</string><string id="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostTalkGadgetPrefix">リモート アクセス ホストに TalkGadget プレフィックスを設定する</string><string id="RemoteAccessHostTalkGadgetPrefix_Explain">リモート アクセス ホストが使用する TalkGadget プレフィックスを設定し、ユーザーが変更できないようにします。
+
+これを指定すると、ベースとなる TalkGadget 名の前にこのプレフィックスが付いて、TalkGadget のフルドメイン名となります。ベースとなる TalkGadget ドメイン名は「.talkgadget.google.com」です。
+
+この設定を有効にすると、ホストは TalkGadget にアクセスする際に、デフォルトのドメイン名の代わりにそのカスタム ドメイン名を使用します。
+
+この設定を無効にするか、未設定にする場合、デフォルトの TalkGadget ドメイン名（「chromoting-host.talkgadget.google.com」）がすべてのホストで使用されます。
+
+リモート アクセス クライアントが、このポリシーの設定によって影響を受けることはありません。TalkGadget へのアクセスには常に「chromoting-client.talkgadget.google.com」を使用します。</string><string id="RemoteAccessHostRequireCurtain">リモート アクセス ホストのカーテンを有効にする</string><string id="RemoteAccessHostRequireCurtain_Explain">接続中にリモート アクセス ホストのカーテンを有効にします。
+
+この設定を有効にすると、リモート接続の間、ホストの物理的な入出力デバイスが無効になります。
+
+この設定を無効にするか未設定にすると、ローカル ユーザーとリモート ユーザーのどちらも共有状態のホストにアクセスできます。</string><string id="RemoteAccessHostAllowClientPairing">リモート アクセス ホストの PIN 入力なしの認証を有効または無効にする</string><string id="RemoteAccessHostAllowClientPairing_Explain">この設定が有効または設定されていない場合、ユーザーは接続時にクライアントとホストをペア設定するよう選択できます。そうすると、毎回 PIN を入力する手間が省けます。
+
+この設定が無効な場合、この機能は利用できません。</string><string id="RemoteAccessHostAllowGnubbyAuth">リモート アクセス ホストに対して gnubby 認証を許可する</string><string id="RemoteAccessHostAllowGnubbyAuth_Explain">この設定が有効になっている場合、gnubby 認証リクエストはリモート ホスト接続でプロキシ送信されます。
+
+この設定が無効になっているか設定されていない場合、gnubby 認証リクエストはプロキシ送信されません。</string><string id="RemoteAccessHostAllowRelayedConnection">リモート アクセス ホストで中継サーバーを使用できるようにする</string><string id="RemoteAccessHostAllowRelayedConnection_Explain">Enables usage of relay servers when remote clients are trying to establish a connection to this machine.
+
+If this setting is enabled, then remote clients can use relay servers to connect to this machine when a direct connection is not available (e.g. due to firewall restrictions).
+
+Note that if the policy RemoteAccessHostFirewallTraversal is disabled, this policy will be ignored.
+
+If this policy is left not set the setting will be enabled.</string><string id="RemoteAccessHostUdpPortRange">リモート アクセス ホストが使用する UDP ポートの範囲を制限する</string><string id="RemoteAccessHostUdpPortRange_Explain">Restricts the UDP port range used by the remote access host in this machine.
+
+If this policy is left not set, or if it is set to an empty string, the remote access host will be allowed to use any available port, unless the policy RemoteAccessHostFirewallTraversal is disabled, in which case the remote access host will use UDP ports in the 12400-12409 range.</string><string id="RemoteAccessHostMatchUsername">ローカル ユーザーの名前とリモート アクセス ホストの所有者が一致していることを要件とする</string><string id="RemoteAccessHostMatchUsername_Explain">If this setting is enabled, then the remote access host compares the name of the local user (that the host is associated with) and the name of the Google account registered as the host owner (i.e. &quot;johndoe&quot; if the host is owned by &quot;johndoe@example.com&quot; Google account).  The remote access host will not start if the name of the host owner is different from the name of the local user that the host is associated with.  RemoteAccessHostMatchUsername policy should be used together with RemoteAccessHostDomain to also enforce that the Google account of the host owner is associated with a specific domain (i.e. &quot;example.com&quot;).
+
+If this setting is disabled or not set, then the remote access host can be associated with any local user.</string><string id="RemoteAccessHostTokenUrl">リモート アクセス クライアントが認証トークンを取得する URL</string><string id="RemoteAccessHostTokenUrl_Explain">If this policy is set, the remote access host will require authenticating clients to obtain an authentication token from this URL in order to connect. Must be used in conjunction with RemoteAccessHostTokenValidationUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationUrl">リモート アクセス クライアントの認証トークンを検証するための URL</string><string id="RemoteAccessHostTokenValidationUrl_Explain">If this policy is set, the remote access host will use this URL to validate authentication tokens from remote access clients, in order to accept connections. Must be used in conjunction with RemoteAccessHostTokenUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationCertificateIssuer">RemoteAccessHostTokenValidationUrl への接続用のクライアント証明書</string><string id="RemoteAccessHostTokenValidationCertificateIssuer_Explain">If this policy is set, the host will use a client certificate with the given issuer CN to authenticate to RemoteAccessHostTokenValidationUrl. Set it to &quot;*&quot; to use any available client certificate.
+
+This feature is currently disabled server-side.</string><string id="Attestation_group">リモート認証</string><string id="AttestationEnabledForUser">ユーザーのリモート認証を有効にする</string><string id="AttestationEnabledForUser_Explain">このポリシーを true に設定した場合、ユーザーは Chrome デバイスのハードウェアから Enterprise Platform Keys API の chrome.enterprise.platformKeys.challengeUserKey() を使用して、プライバシー CA に自身をリモート認証できます。
+
+このポリシーを false に設定するか未設定のままにした場合、API 呼び出しは失敗し、エラーコードが返されます。</string><string id="AttestationExtensionWhitelist">Remote Attestation API の使用が許可されている拡張機能</string><string id="AttestationExtensionWhitelist_Explain">このポリシーでは、Enterprise Platform Keys API の関数 chrome.enterprise.platformKeys.challengeUserKey() を使用してリモート認証を行うことを許可する拡張機能を指定します。この API を使用するには、このリストに拡張機能を追加する必要があります。
+
+拡張機能がリストに追加されていないか、リストが設定されていない場合、API 呼び出しは失敗し、エラーコードが返されます。</string><string id="AttestationExtensionWhitelistDesc">Remote Attestation API の使用が許可されている拡張機能</string><string id="QuickUnlock_group">ロックのクイック解除ポリシー</string><string id="QuickUnlockModeWhitelist">Configure allowed quick unlock modes</string><string id="QuickUnlockModeWhitelist_Explain">ロックのクイック解除モードを管理するホワイトリストです。ユーザーは、このリストにあるモードをロック画面のロック解除用に設定して使用できます。
+
+この値は文字列のリストで、有効な項目は「all」、「PIN」です。このリストに「all（すべて）」を追加すると、ユーザーはロックのクイック解除モードとして、将来実装されるモードも含めあらゆるモードを使用できます。それ以外の場合は、リストに含まれるロックのクイック解除モードのみを使用できます。
+
+たとえば、あらゆるロックのクイック解除モードを許可する場合は、[&quot;all&quot;] を使用します。PIN によるロック解除のみを許可する場合は、[&quot;PIN&quot;] を使用します。すべてのロックのクイック解除モードを無効にする場合は、[] を使用します。
+
+デフォルトでは、管理対象デバイスに対してロックのクイック解除モードは一切使用できません。</string><string id="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</string><string id="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</string><string id="QuickUnlockTimeout_Explain">この設定では、ロックのクイック解除機能を継続して使用するために、ロック画面でパスワードの入力を求める頻度を管理します。ロック画面が表示されたときに、前回のパスワード入力からの経過時間がこの設定値を超えている場合、ロックのクイック解除機能を使ってロックを解除することはできません。ユーザーがロックを解除しないまま設定した時間が経過した場合は、次回ユーザーが誤ったコードを入力するか、またはロック画面を表示するか、いずれか早い方の時点でパスワードの入力が求められます。
+
+この設定に値を指定した場合、ロックのクイック解除機能を使用しているユーザーには、この設定に基づくタイミングでロック画面でのパスワード入力が求められます。
+
+この設定に値を指定しなかった場合、ロックのクイック解除機能を使用しているユーザーには、1 日に 1 回ロック画面でのパスワード入力が求められます。</string><string id="QuickUnlockTimeout_SixHours">Password entry is required every six hours</string><string id="QuickUnlockTimeout_TweleveHours">Password entry is required every twelve hours</string><string id="QuickUnlockTimeout_Day">Password entry is required every day (24 hours)</string><string id="QuickUnlockTimeout_Week">Password entry is required every week (168 hours)</string><string id="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN</string><string id="PinUnlockMinimumLength_Explain">If the policy is set, the configured minimal PIN length is
+enforced. (The absolute minimum PIN length is 1; values less than 1
+are treated as 1.)
+
+If the policy is not set, a minimal PIN length of 6 digits is
+enforced. This is the recommended minimum.</string><string id="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN</string><string id="PinUnlockMaximumLength_Explain">If the policy is set, the configured maximal PIN length is enforced. A value of 0 or less means no maximum length; in that case the user may set a PIN as long as they want. If this setting is less than PinUnlockMinimumLength but greater than 0, the maximum length is the same as the minimum length.
+
+If the policy is not set, no maximum length is enforced.</string><string id="PinUnlockWeakPinsAllowed">Enables users to set weak PINs for the lock screen PIN</string><string id="PinUnlockWeakPinsAllowed_Explain">false の場合、ユーザーは強度が低く推測されやすい PIN を設定できません。
+
+強度が低い PIN の例としては、数字がすべて同じ PIN（1111 など）、連続した数字の PIN（1234、4321 など）、一般によく使われる並びの PIN が挙げられます。
+
+PIN の強度が低いと見なされた場合、デフォルトでは、エラーではなく警告がユーザーに表示されます。</string><string id="Extensions_group">拡張機能</string><string id="ExtensionInstallBlacklist">拡張機能インストールのブラックリストを設定する</string><string id="ExtensionInstallBlacklist_Explain">ユーザーによるインストールを禁止する拡張機能を指定できます。すでにインストールされている拡張機能をブラックリスト登録した場合、その拡張機能は無効になり、ユーザーが有効にすることはできません。ブラックリスト登録して無効になった拡張機能は、ブラックリストから削除すると自動的に再度有効になります。
+
+値「*」を指定すると、すべての拡張機能をブラックリスト登録することになります（明示的にホワイトリスト登録している拡張機能は除外されます）。
+
+このポリシーが未設定の場合、ユーザーは Google Chrome にあらゆる拡張機能をインストールできます。</string><string id="ExtensionInstallBlacklistDesc">拡張機能インストールのブラックリストを設定する</string><string id="ExtensionInstallWhitelist">拡張機能インストールのホワイトリストを設定する</string><string id="ExtensionInstallWhitelist_Explain">ブラックリストの対象外となる拡張機能を指定できます。ブラックリストの値が「*」の場合、すべての拡張機能がブラックリストに登録されており、ユーザーはホワイトリストにリストされている拡張機能しかインストールできません。デフォルトでは、すべての拡張機能はホワイトリストに登録されていますが、ポリシーによってすべての拡張機能をブラックリストに登録している場合、ホワイトリストを使ってそのポリシーをオーバーライドできます。</string><string id="ExtensionInstallWhitelistDesc">拡張機能インストールのホワイトリストを設定する</string><string id="ExtensionInstallForcelist">強制インストールするアプリと拡張機能のリストを設定します</string><string id="ExtensionInstallForcelist_Explain">Specifies a list of apps and extensions that are installed silently,
+without user interaction, and which cannot be uninstalled nor
+disabled by the user. All permissions requested by the
+apps/extensions are granted implicitly, without user interaction,
+including any additional permissions requested by future versions of
+the app/extension. Furthermore, permissions are granted for the
+enterprise.deviceAttributes and enterprise.platformKeys extension
+APIs. (These two APIs are not available to apps/extensions that are
+not force-installed.)
+
+This policy takes precedence over a potentially conflicting ExtensionInstallBlacklist policy. If an app or extension that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+For Windows instances that are not joined to a MicrosoftÂ® Active
+DirectoryÂ® domain, forced installation is limited to apps and
+extensions listed in the Chrome Web Store.
+
+Note that the source code of any extension may be altered by users via Developer Tools (potentially rendering the extension dysfunctional). If this is a concern, the DeveloperToolsDisabled policy should be set.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.
+
+If this policy is left not set, no apps or extensions are installed automatically and the user can uninstall any app or extension in Google Chrome.</string><string id="ExtensionInstallForcelistDesc">強制インストールするアプリと拡張機能のリストを設定します</string><string id="ExtensionInstallSources">拡張機能、アプリ、ユーザー スクリプトのインストール ソースを設定する</string><string id="ExtensionInstallSources_Explain">Allows you to specify which URLs are allowed to install extensions, apps, and themes.
+
+Starting in Google Chrome 21, it is more difficult to install extensions, apps, and user scripts from outside the Chrome Web Store. Previously, users could click on a link to a *.crx file, and Google Chrome would offer to install the file after a few warnings. After Google Chrome 21, such files must be downloaded and dragged onto the Google Chrome settings page. This setting allows specific URLs to have the old, easier installation flow.
+
+Each item in this list is an extension-style match pattern (see https://developer.chrome.com/extensions/match_patterns). Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (i.e. the referrer) must be allowed by these patterns.
+
+ExtensionInstallBlacklist takes precedence over this policy. That is, an extension on the blacklist won't be installed, even if it happens from a site on this list.</string><string id="ExtensionInstallSourcesDesc">拡張機能、アプリ、ユーザー スクリプトのインストール ソースを設定する</string><string id="ExtensionAllowedTypes">許可されるアプリ/拡張機能のタイプを設定する</string><string id="ExtensionAllowedTypes_Explain">インストールを許可するアプリや拡張機能のタイプを指定し、ランタイム アクセスを制限します。
+
+この設定では、Google Chrome にインストールできる拡張機能やアプリのタイプと、その通信先のホストをホワイトリスト登録します。値は文字列のリストで、各項目は「extension」、「theme」、「user_script」、「hosted_app」、「legacy_packaged_app」、「platform_app」のいずれかとなります。これらのタイプについて詳しくは、Google Chrome 拡張機能のドキュメントをご覧ください。
+
+このポリシーは、ExtensionInstallForcelist で指定された、強制インストールされる拡張機能やアプリにも影響します。
+
+この設定を指定した場合、リストにないタイプの拡張機能やアプリはインストールされません。
+
+この設定が未指定の場合、インストールできる拡張機能やアプリのタイプに関して制限は適用されません。</string><string id="ExtensionAllowedTypesDesc">許可されるアプリ/拡張機能のタイプを設定する</string><string id="ExtensionSettings">拡張機能の管理設定</string><string id="ExtensionSettings_Explain">Google Chrome の拡張機能の管理設定を指定します。
+
+このポリシーでは、拡張機能関連の既存のポリシーで管理されている設定を含めた複数の設定を管理します。このポリシーと以前のポリシーの両方が設定されている場合は、このポリシーが優先されます。
+
+このポリシーでは、拡張機能 ID または更新 URL をそれぞれの設定にマッピングします。拡張機能 ID を使用する場合、設定は該当する拡張機能のみに適用されます。また、&quot;*&quot; という特別な ID に対するデフォルト設定を指定することができます。デフォルト設定は、このポリシーでカスタムの設定が指定されないすべての拡張機能に適用されます。更新 URL を使用する場合、設定は、この拡張機能のマニフェストで指定されている更新 URL を使用するすべての拡張機能に適用されます（https://developer.chrome.com/extensions/autoupdate をご覧ください）。
+
+個々の拡張機能（または更新 URL が同じ複数の拡張機能）に対する設定では、辞書形式で以下のフィールドを指定することができます。
+
+&quot;installation_mode&quot;: 拡張機能のインストール モードを示す文字列にマッピングされます。有効な文字列は次のとおりです。
+* &quot;allowed&quot;: ユーザーによる拡張機能のインストールを許可します。これがデフォルトの動作です。
+* &quot;blocked&quot;: 拡張機能のインストールをブロックします。
+* &quot;force_installed&quot;: 拡張機能は自動的にインストールされ、ユーザーが削除することはできません。
+* &quot;normal_installed&quot;: 拡張機能は自動的にインストールされますが、ユーザーが無効にできます。
+
+&quot;installation_mode&quot; は複数の拡張機能に対しても設定できます。&quot;*&quot; 拡張機能のデフォルト設定として指定したり、更新 URL が同じ複数の拡張機能に指定したりすることが可能です。この場合は、&quot;allowed&quot; と &quot;blocked&quot; の値のみを使用できます。
+
+インストール モードを &quot;force_installed&quot; または &quot;normal_installed&quot; に設定する場合は、&quot;update_url&quot; も設定する必要があります。なお、このポリシーで設定された更新 URL は初回インストールでのみ使用されます。それ以降に拡張機能が更新されるときには、拡張機能のマニフェストで指定されている更新 URL が使用されます。更新 URL は、前述の更新マニフェスト XML 文書を指し示している必要があります。
+
+&quot;blocked_permissions&quot;: この拡張機能に対してブロックされる API の権限を示す文字列のリストにマッピングされます。権限の名前は、拡張機能のマニフェストで指定されている権限文字列と同じです（https://developer.chrome.com/extensions/declare_permissions をご覧ください）。この設定は、&quot;*&quot; 拡張機能に対しても指定できます。拡張機能で必要とされる権限がブロックリストに登録されている場合、その拡張機能を読み込むことはできません。拡張機能の追加動作に必要とされる権限がブロックリストに登録されている場合、その拡張機能は通常の方法で処理されますが、競合する権限に対するリクエストはランタイムにおいて自動的に拒否されます。
+
+&quot;allowed_permissions&quot;: &quot;blocked_permissions&quot; と似ていますが、こちらは、グローバルな権限ブロックリストに登録されている可能性のある一部の権限を明示的に許可するものです。そのため、&quot;*&quot; 拡張機能に対して設定することはできません。なお、この設定により、許可された権限が拡張機能に自動的に付与されるわけではありません。
+
+&quot;minimum_version_required&quot;: バージョン文字列にマッピングされます。バージョン文字列の形式は、拡張機能のマニフェストで使用されているものと同じです（https://developer.chrome.com/apps/manifest/version をご覧ください）。指定された最小バージョンよりも古いバージョンの拡張機能は無効になります。これは強制インストールされる拡張機能にも適用されます。
+
+以下の設定は、デフォルトの &quot;*&quot; の設定に対してのみ使用できます。
+
+&quot;install_sources&quot;: このリストの各項目は、拡張機能スタイルのマッチパターンです（https://developer.chrome.com/extensions/match_patterns）。ユーザーは、このリストの項目に一致する URL からアイテムを簡単にインストールできます。*.crx ファイルの場所と、ダウンロードが開始されるページ（参照 URL）の両方が、このパターンで許可されている必要があります。
+
+&quot;allowed_types&quot;: Google Chrome にインストールできる拡張機能やアプリのタイプをホワイトリスト登録します。値は文字列のリストで、それぞれが次のいずれかに該当する必要があります: &quot;extension&quot;, &quot;theme&quot;, &quot;user_script&quot;, &quot;hosted_app&quot;, &quot;legacy_packaged_app&quot;, &quot;platform_app&quot;。これらのタイプについて詳しくは、Google Chrome 拡張機能のドキュメントをご覧ください。
+&quot;blocked_install_message&quot;: ユーザーがインストールしようとした拡張機能がポリシーでブロックされている場合、Chrome ウェブストアでは一般的なエラー メッセージが表示されます。この設定を使用すると、エラー メッセージにテキストを追加できます。たとえば、ユーザーにサポート窓口を案内したり、特定の拡張機能がブロックされている理由を示したりすることが可能です。エラー メッセージが 1,000 文字を超える場合、超過部分は切り捨てられます。
+&quot;runtime_blocked_hosts&quot;: 拡張機能との通信をブロックするホストのリストを指定します。たとえば、JavaScript の挿入、webRequests や webNavigation の変更と表示、Cookie の変更と表示などをブロックできます。形式はマッチパターン（https://developer.chrome.com/extensions/match_patterns）と似ていますが、定義できるのはパスなしのパターン（例: *://*.example.com）です。有効な形式の TLD ワイルドカード（例: *://example.*）も使用できます。
+&quot;runtime_allowed_hosts&quot;: 拡張機能との通信を許可するホストのリストを指定します。同じホストが &quot;runtime_blocked_hosts&quot; で指定されている場合、こちらの指定が優先されます。形式は &quot;runtime_blocked_hosts&quot; と同じです。
+</string><string id="NewTabPage_group">新しいタブページ</string><string id="NewTabPageLocation">新しいタブページ URL を設定する</string><string id="NewTabPageLocation_Explain">Configures the default New Tab page URL and prevents users from changing it.
+
+The New Tab page is the page opened when new tabs are created (including the one opened in new windows).
+
+This policy does not decide which pages are to be opened on start up. Those are controlled by the RestoreOnStartup policies. Yet this policy does affect the Home Page if that is set to open the New Tab page, as well as the startup page if that is set to open the New Tab page.
+
+If the policy is not set or left empty the default new tab page is used.
+
+This policy is not available on Windows instances that are not joined to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupGroup_group">起動ページ</string><string id="RestoreOnStartup">起動時の操作</string><string id="RestoreOnStartup_Explain">Allows you to specify the behavior on startup.
+
+If you choose 'Open New Tab Page' the New Tab Page will always be opened when you start Google Chrome.
+
+If you choose 'Restore the last session', the URLs that were open last time Google Chrome was closed will be reopened and the browsing session will be restored as it was left.
+Choosing this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).
+
+If you choose 'Open a list of URLs', the list of 'URLs to open on startup' will be opened when a user starts Google Chrome.
+
+If you enable this setting, users cannot change or override it in Google Chrome.
+
+Disabling this setting is equivalent to leaving it not configured. The user will still be able to change it in Google Chrome.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartup_RestoreOnStartupIsNewTabPage">新しいタブ ページを開く</string><string id="RestoreOnStartup_RestoreOnStartupIsLastSession">最後のセッションを復元する</string><string id="RestoreOnStartup_RestoreOnStartupIsURLs">URL のリストを開く</string><string id="RestoreOnStartupURLs">起動時に開く URL</string><string id="RestoreOnStartupURLs_Explain">If 'Open a list of URLs' is selected as the startup action, this allows you to specify the list of URLs that are opened. If left not set no URL will be opened on start up.
+
+This policy only works if the 'RestoreOnStartup' policy is set to 'RestoreOnStartupIsURLs'.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupURLsDesc">起動時に開く URL</string><string id="PowerManagement_group">電源管理</string><string id="LidCloseAction">ユーザーがデバイスの蓋を閉じた際に行われる操作</string><string id="LidCloseAction_Explain">When this policy is set, it specifies the action that Google Chrome OS takes when the user closes the device's lid.
+
+When this policy is unset, the default action is taken, which is suspend.
+
+If the action is suspend, Google Chrome OS can separately be configured to either lock or not lock the screen before suspending.</string><string id="LidCloseAction_LidCloseActionSuspend">停止する</string><string id="LidCloseAction_LidCloseActionLogout">ユーザーをログアウトする</string><string id="LidCloseAction_LidCloseActionShutdown">終了</string><string id="LidCloseAction_LidCloseActionDoNothing">何もしない</string><string id="PowerManagementUsesAudioActivity">音声操作を電源管理に関連付けるかどうかを指定する</string><string id="PowerManagementUsesAudioActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while audio is playing. This prevents the idle timeout from being reached and the idle action from being taken. However, screen dimming, screen off and screen lock will be performed after the configured timeouts, irrespective of audio activity.
+
+If this policy is set to False, audio activity does not prevent the user from being considered idle.</string><string id="PowerManagementUsesVideoActivity">動画操作を電源管理に関連付けるかどうかを指定する</string><string id="PowerManagementUsesVideoActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while video is playing. This prevents the idle delay, screen dim delay, screen off delay and screen lock delay from being reached and the corresponding actions from being taken.
+
+If this policy is set to False, video activity does not prevent the user from being considered idle.</string><string id="PresentationScreenDimDelayScale">プレゼンテーション モードで画面を暗くするまでの時間に掛ける倍率</string><string id="PresentationScreenDimDelayScale_Explain">画面を暗くするまでの時間に掛ける倍率を指定します。これは、デバイスがプレゼンテーション モードのときに使用されます。
+
+このポリシーが設定されている場合は、デバイスがプレゼンテーション モードのときに、ポリシーで指定された倍率が画面を暗くするまでの時間に掛けられます。画面を暗くするまでの時間が変更されるときは、画面の電源オフまでの時間、画面ロックまでの時間、およびアイドル時間も調整されます。これは、画面を暗くするまでの時間との差を当初の設定どおりに維持するためです。
+
+このポリシーが未設定の場合は、デフォルトの倍率が使用されます。
+
+倍率は 100% 以上でなければなりません。プレゼンテーション モードでの画面を暗くするまでの時間を標準値よりも短くするように値を設定することはできません。</string><string id="AllowScreenWakeLocks">ウェイクアップ画面のロックを許可する</string><string id="AllowScreenWakeLocks_Explain">ウェイクアップ画面のロックを許可するかどうかを指定します。ウェイクアップ画面のロックは、拡張機能から Power Management Extension API を使ってリクエストされることがあります。
+
+このポリシーが true に設定されているか、または未設定の場合、電源管理でウェイクアップ画面のロックが有効となります。
+
+このポリシーが false に設定されている場合、ウェイクアップ画面のロック リクエストは無視されます。</string><string id="UserActivityScreenDimDelayScale">画面が暗くなった後でユーザーが操作を行ったときに画面を暗くするまでの時間に掛ける倍率</string><string id="UserActivityScreenDimDelayScale_Explain">画面を暗くするまでの時間に掛ける倍率を指定します。これは、画面が暗くなっているときや画面の電源がオフになった直後にユーザー操作が検出された場合に使用されます。
+
+このポリシーを設定すると、画面が暗くなっているときや画面の電源がオフになった直後にユーザー操作が検出された場合に、このポリシーで指定された倍率が画面を暗くするまでの時間に掛けられます。画面を暗くするまでの時間が変更されるときは、画面の電源オフまでの時間、画面ロックまでの時間、およびアイドル時間も調整されます。これは、画面を暗くするまでの時間との差を当初の設定どおりに維持するためです。
+
+このポリシーが設定されていない場合は、デフォルトの倍率が使用されます。
+
+倍率は 100% 以上に設定する必要があります。</string><string id="WaitForInitialUserActivity">最初のユーザー操作を待機する</string><string id="WaitForInitialUserActivity_Explain">電源管理の遅延とセッションの時間制限の開始は、セッションでユーザーが何らかの操作をしてからにするかどうかを指定します。
+
+このポリシーが true に設定された場合、電源管理の遅延とセッションの時間制限の開始は、セッションでユーザーが何らかの操作をするまで行われません。
+
+このポリシーが false または未設定の場合、電源管理の遅延とセッションの時間制限の開始は、セッション開始直後に行われます。</string><string id="PowerManagementIdleSettings">ユーザーがアイドル状態になったときの電源管理設定</string><string id="PowerManagementIdleSettings_Explain">This policy controls multiple settings for the power management strategy when the user becomes idle.
+
+There are four types of action:
+* The screen will be dimmed if the user remains idle for the time specified by |ScreenDim|.
+* The screen will be turned off if the user remains idle for the time specified by |ScreenOff|.
+* A warning dialog will be shown if the user remains idle for the time specified by |IdleWarning|, telling the user that the idle action is about to be taken.
+* The action specified by |IdleAction| will be taken if the user remains idle for the time specified by |Idle|.
+
+For each of above actions, the delay should be specified in milliseconds, and needs to be set to a value greater than zero to trigger the corresponding action. In case the delay is set to zero, Google Chrome OS will not take the corresponding action.
+
+For each of the above delays, when the length of time is unset, a default value will be used.
+
+Note that |ScreenDim| values will be clamped to be less than or equal to |ScreenOff|, |ScreenOff| and |IdleWarning| will be clamped to be less than or equal to |Idle|.
+
+|IdleAction| can be one of four possible actions:
+* |Suspend|
+* |Logout|
+* |Shutdown|
+* |DoNothing|
+
+When the |IdleAction| is unset, the default action is taken, which is suspend.
+
+There are also separate settings for AC power and battery.
+</string><string id="ScreenLockDelays">画面ロック遅延時間</string><string id="ScreenLockDelays_Explain">AC 電源またはバッテリーでの実行時に、ユーザー入力が行われなくなってから画面がロックされるまでの時間を指定します。
+
+この時間をゼロより大きい値に設定した場合、値は Google Chrome OS の画面がロックされるまでのアイドル時間を表します。
+
+この時間をゼロに設定した場合、アイドル状態になっても Google Chrome OS の画面はロックされません。
+
+この時間を設定しない場合は、デフォルトの時間が使用されます。
+
+アイドル状態になったときに画面をロックする方法としては、停止時の画面ロックを有効にして、アイドル時間経過後に Google Chrome OS が停止状態になるように設定する方法をおすすめします。このポリシーは、停止状態になるのを待たずに画面をロックする場合、またはアイドル時の停止を希望しない場合にのみ使用してください。
+
+ポリシーの値はミリ秒単位で指定してください。アイドル時間より長い値は指定できません。</string><string id="AllowDeletingBrowserHistory">閲覧とダウンロードの履歴を削除可能にする</string><string id="AllowDeletingBrowserHistory_Explain">Google Chrome で閲覧とダウンロードの履歴を削除できるようにするとともに、ユーザーによるこの設定の変更を禁止します。
+
+このポリシーが無効な場合も、閲覧とダウンロードの履歴が保持される保証はありません。ユーザーが履歴データベースのファイルを直接編集または削除できる可能性もあります。また、ブラウザ自体で履歴の有効期限が切れたりすべての履歴アイテムがアーカイブされたりする場合もあります。
+
+このポリシーが有効な場合、または設定されていない場合、閲覧とダウンロードの履歴は削除可能です。
+
+この設定が無効な場合、閲覧とダウンロードの履歴は削除できません。</string><string id="AllowDinosaurEasterEgg">恐竜のイースター エッグゲームを許可する</string><string id="AllowDinosaurEasterEgg_Explain">デバイスがオフラインのときに、ユーザーが恐竜のイースター エッグゲームをプレイすることを許可します。
+
+このポリシーを False に設定すると、ユーザーはデバイスがオフラインのときに恐竜のイースター エッグゲームをプレイできません。True に設定するとプレイできます。ポリシーが未設定の場合、登録されている Chrome OS ではプレイできませんが、他の環境ではプレイできます。</string><string id="AllowOutdatedPlugins">古いプラグインの実行を許可する</string><string id="AllowOutdatedPlugins_Explain">If you enable this setting, outdated plugins are used as normal plugins.
+
+If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them.
+
+If this setting is not set, users will be asked for permission to run outdated plugins.</string><string id="AllowScreenLock">画面のロックを許可</string><string id="AllowScreenLock_Explain">If this policy is set to false, users will not be able to lock the screen (only signing out from the user session will be possible). If this setting is set to true or not set, users who authenticated with a password can lock the screen.</string><string id="AllowedDomainsForApps">Google Apps へのアクセスを許可するドメインを定義する</string><string id="AllowedDomainsForApps_Explain">Enables Google Chrome's restricted log in feature in Google Apps and prevents users from changing this setting.
+
+If you define this setting, the user will only be able to access
+Google Apps (such as Gmail) using accounts from the specified domains.
+
+This setting will NOT prevent the user from loging in on a managed device
+that requires Google authentication. The user will still be allowed to
+sign in to accounts from other domains, but they will receive an error
+when trying to use Google Apps with those accounts.
+
+If you leave this setting empty/not-configured, the user will be able to
+access Google Apps with any account.
+
+This policy causes the X-GoogApps-Allowed-Domains header to be appended to
+all HTTP and HTTPS requests to all google.com domains, as described in
+https://support.google.com/a/answer/1668854.
+
+Users cannot change or override this setting.</string><string id="AlternateErrorPagesEnabled">別のエラー ページを有効にする</string><string id="AlternateErrorPagesEnabled_Explain">Google Chrome に組み込まれている別のエラー ページ（「ページが見つかりません」など）の使用を有効にし、ユーザーがこの設定を変更できないようにします。この設定を有効にすると、別のエラー ページが使用されます。この設定を無効にすると、別のエラー ページは使用されません。この設定を有効または無効にすると、ユーザーは Google Chrome でこの設定の変更やオーバーライドができなくなります。このポリシーが未設定の場合、有効になりますがユーザーはこの設定を変更できます。</string><string id="AlwaysAuthorizePlugins">承認が必要なプラグインを常に実行する</string><string id="AlwaysAuthorizePlugins_Explain">If you enable this setting, plugins that are not outdated always run.
+
+If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</string><string id="ArcBackupRestoreEnabled">Android バックアップ サービスを有効にする</string><string id="ArcBackupRestoreEnabled_Explain">このポリシーを True に設定した場合、Android アプリのデータは Android バックアップ サーバーにアップロードされ、互換性のあるアプリ用にアプリの再インストールが行われたときにサーバーから復元されます。
+
+このポリシーを False に設定した場合、Android バックアップ サービスはオフになります。
+
+この設定に値を指定した場合、ユーザーはその値を変更できません。
+
+この設定に値が指定されていない場合、ユーザーは Android の設定アプリで Android バックアップ サービスのオンとオフを切り替えることができます。</string><string id="ArcCertificatesSyncMode">ARC アプリで証明書を使用できるかどうかを設定します</string><string id="ArcCertificatesSyncMode_Explain">このポリシーを SyncDisabled に設定するか、設定しない場合、ARC アプリで Google Chrome OS の証明書を使用することはできません。
+
+CopyCaCerts に設定すると、ARC アプリでは、ONC によってインストールされ Web TrustBit を使用するすべての CA 証明書を使用できます。</string><string id="ArcCertificatesSyncMode_SyncDisabled">ARC アプリで Google Chrome OS の証明書を使用できないようにする</string><string id="ArcCertificatesSyncMode_CopyCaCerts">ARC アプリで Google Chrome OS の CA 証明書を使用できるようにする</string><string id="ArcEnabled">ARC を有効にする</string><string id="ArcEnabled_Explain">このポリシーを true に設定すると、ユーザーが ARC を使用できるようになります
+（ポリシー設定について追加の確認が行われ、現在のユーザー セッションで
+一時的ログインモードまたはマルチログインが有効になっている場合、ユーザーは
+ARC を使用できません）。
+
+この設定を無効にした場合または設定しない場合、企業ユーザーは ARC を
+使用できません。</string><string id="ArcLocationServiceEnabled">Android Google 位置情報サービスを有効にする</string><string id="ArcLocationServiceEnabled_Explain">When this policy is set to true, the Android Google Location Service is enabled. This will allow Android apps to use its data to find the device location, and also will enable submitting of anonymous location data to Google.
+
+When this policy is set to false, Android Google Location Service will be switched off.
+
+If this setting is configured then users are not able change it themselves.
+
+If this setting is not configured then users are able to turn Google Location Service on and off in the Android Settings app.
+
+Note that this policy value may be overridden by the DefaultGeolocationSetting policy, when the latter is set to BlockGeolocation.
+
+This policy is applicable only to the users that are able to run Android apps.</string><string id="ArcPolicy">ARC を設定する</string><string id="ArcPolicy_Explain">ARC ランタイムに渡される一連のポリシーを指定します。値は有効な JSON である必要があります。
+
+このポリシーを使用して、端末にどの Android アプリを自動的にインストールするかを設定できます。
+
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;applications&quot;: {
+&quot;type&quot;: &quot;array&quot;,
+&quot;items&quot;: {
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;packageName&quot;: {
+&quot;description&quot;: &quot;Android アプリ識別子。たとえば、Gmail は &quot;com.google.android.gm&quot; など&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;installType&quot;: {
+&quot;description&quot;: &quot;アプリのインストール方法を指定します。OPTIONAL: アプリは自動的にはインストールされませんが、ユーザーがインストールすることはできます。このポリシーが指定されていない場合は、デフォルトでこの設定が使用されます。PRELOAD: アプリは自動的にインストールされますが、ユーザーがアンインストールすることもできます。FORCE_INSTALLED: アプリは自動的にインストールされ、ユーザーがアンインストールすることはできません。BLOCKED: アプリはブロックされ、インストールできません。以前のポリシーによってアプリがインストール済みの場合はアンインストールされます。&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;OPTIONAL&quot;,
+&quot;PRELOAD&quot;,
+&quot;FORCE_INSTALLED&quot;,
+&quot;BLOCKED&quot;
+]
+},
+&quot;defaultPermissionPolicy&quot;: {
+&quot;description&quot;: &quot;アプリへの権限付与のリクエストに関するポリシーです。PERMISSION_POLICY_UNSPECIFIED: ポリシーを指定しません。権限に関するポリシーがどのレベルでも指定されていなければ、デフォルトで「PROMPT」の動作が適用されます。PROMPT: 権限を付与するよう促すメッセージをユーザーに表示します。GRANT: 自動的に権限を付与します。DENY: 自動的に権限の付与を拒否します。&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;PERMISSION_POLICY_UNSPECIFIED&quot;,
+&quot;PROMPT&quot;,
+&quot;GRANT&quot;,
+&quot;DENY&quot;
+]
+},
+&quot;managedConfiguration&quot;: {
+&quot;description&quot;: &quot;アプリ固有の JSON 設定文字列です。例: '&quot;managedConfiguration&quot;: { &quot;key1&quot;: value1, &quot;key2&quot;: value2 }'。キーはアプリのマニフェストで定義されます。&quot;,
+&quot;type&quot;: &quot;object&quot;
+}
+}
+}
+}
+}
+}
+
+ランチャーにアプリを固定する場合は、PinnedLauncherApps をご覧ください。</string><string id="AudioCaptureAllowed">音声キャプチャを許可または拒否する</string><string id="AudioCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+audio capture access except for URLs configured in the
+AudioCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and audio
+capture only be available to URLs configured in AudioCaptureAllowedUrls.
+
+This policy affects all types of audio inputs and not only the built-in microphone.</string><string id="AudioCaptureAllowedUrls">ユーザー確認なしで音声キャプチャ デバイスへのアクセスが許可される URL</string><string id="AudioCaptureAllowedUrls_Explain">このリストに指定されているパターンと、リクエスト元 URL のセキュリティ オリジンが照合されます。一致するものが見つかった場合は、音声キャプチャ デバイスへのアクセスが確認なしで許可されます。
+
+注: バージョン 45 以前は、このポリシーはキオスクモードでのみサポートされていました。</string><string id="AudioCaptureAllowedUrlsDesc">ユーザー確認なしで音声キャプチャ デバイスへのアクセスが許可される URL</string><string id="AudioOutputAllowed">音声の再生を許可する</string><string id="AudioOutputAllowed_Explain">When this policy is set to false, audio output will not be available on the device while the user is logged in.
+
+This policy affects all types of audio output and not only the built-in speakers. Audio accessibility features are also inhibited by this policy. Do not enable this policy if a screen reader is required for the user.
+
+If this setting is set to true or not configured then users can use all supported audio outputs on their device.</string><string id="AutoFillEnabled">自動入力を有効にする</string><string id="AutoFillEnabled_Explain">Google Chrome の自動入力機能を有効にし、ユーザーが以前に保存した情報（住所やクレジット カード情報など）を使用してウェブ フォームに自動入力できるようにします。この設定を無効にすると、ユーザーは自動入力を利用できません。この設定を有効にするか未設定の場合、ユーザーが自動入力を制御できます。この場合、ユーザーは自動入力プロフィールを設定して、必要に応じて自動入力のオン/オフを切り替えることができます。</string><string id="AutofillCreditCardEnabled">クレジット カードの自動入力を有効にする</string><string id="AutofillCreditCardEnabled_Explain">Google Chrome の自動入力機能を有効にし、ユーザーが以前に保存した情報を使ってウェブフォームにクレジット カードや住所の情報を自動入力できるようにします。
+
+この設定を無効にした場合は、クレジット カード情報が候補として表示されたり、自動入力されたりすることはありません。また、ユーザーがウェブの利用中に送信したクレジット カード情報が追加で保存されることもありません。
+
+この設定を有効にするか、値を設定しない場合、ユーザーは UI で自動入力の全般的な機能（クレジット カードを含む）を制御できます。</string><string id="BlockThirdPartyCookies">サードパーティの Cookie をブロックする</string><string id="BlockThirdPartyCookies_Explain">Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar.
+
+Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting.
+
+If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</string><string id="BookmarkBarEnabled">ブックマーク バーを有効にする</string><string id="BookmarkBarEnabled_Explain">If you enable this setting, Google Chrome will show a bookmark bar.
+
+If you disable this setting, users will never see the bookmark bar.
+
+If you enable or disable this setting, users cannot change or override it in Google Chrome.
+
+If this setting is left not set the user can decide to use this function or not.</string><string id="CaptivePortalAuthenticationIgnoresProxy">キャプティブ ポータル認証でプロキシを無視する</string><string id="CaptivePortalAuthenticationIgnoresProxy_Explain">This policy allows Google Chrome OS to bypass any proxy for captive portal authentication.
+
+This policy only takes effect if a proxy is configured (for example through policy, by the user in chrome://settings, or by extensions).
+
+If you enable this setting, any captive portal authentication pages (i.e. all web pages starting from captive portal signin page until Google Chrome detects successful internet connection) will be displayed in a separate window ignoring all policy settings and restrictions for the current user.
+
+If you disable this setting or leave it unset, any captive portal authentication pages will be shown in a (regular) new browser tab, using the current user's proxy settings.</string><string id="CertificateTransparencyEnforcementDisabledForUrls">指定した URL に対して証明書の透明性ポリシーの適用を無効にする</string><string id="CertificateTransparencyEnforcementDisabledForUrls_Explain">指定された URL に対し、証明書の透明性の要件を無効にします。
+
+このポリシーを使用すると、指定した URL のホスト名に対し、証明書の透明性ポリシーを介して公開されていない証明書の使用を許可することができます。この場合、適切に公開されていないために信頼できない可能性のある証明書でも、引き続き使用が可能になります。ただし、これらのホストに対して間違って発行された証明書は検出が難しくなります。
+
+URL パターンの形式は、https://www.chromium.org/administrators/url-blacklist-filter-format に記載のとおりです。ただし、スキーム、ポート、パスに関係なく特定のホスト名に対して証明書が有効になるため、考慮されるのは URL のホスト名の部分のみです。ワイルドカードを使ったホストの指定はサポートされていません。
+
+このポリシーが未設定の場合、証明書の透明性ポリシーを介して公開することが要件となっている証明書は、証明書の透明性ポリシーを介して公開されていない場合、信頼できないものとして扱われます。</string><string id="CertificateTransparencyEnforcementDisabledForUrlsDesc">指定した URL に対して証明書の透明性ポリシーの適用を無効にする</string><string id="ChromeOsLockOnIdleSuspend">デバイスがアイドルまたは停止の状態になったときにロックを有効にする</string><string id="ChromeOsLockOnIdleSuspend_Explain">Google Chrome OS 端末がアイドルまたは一時停止の状態になったときにロックを有効にします。
+
+この設定を有効にした場合、ユーザーはスリープ状態から端末のロックを解除する際にパスワードの入力を求められます。
+
+この設定を無効にした場合、ユーザーはスリープ状態から端末のロックを解除する際にパスワードの入力を求められません。
+
+この設定を有効または無効にした場合、ユーザーは設定内容を変更したり他の設定を優先させたりすることはできません。
+
+このポリシーが未設定の場合、ユーザーは端末のロックを解除する際にパスワードを確認するかどうかを選択できます。</string><string id="ChromeOsMultiProfileUserBehavior">マルチプロフィール セッションでのユーザーの動作を制御する</string><string id="ChromeOsMultiProfileUserBehavior_Explain">Google Chrome OS 搭載デバイス上のマルチプロフィール セッションでのユーザーの行動を制御します。
+
+このポリシーが「MultiProfileUserBehaviorUnrestricted」に設定されている場合、ユーザーはメイン ユーザーまたはサブ ユーザーとしてマルチプロフィール セッションに参加できます。
+
+このポリシーが「MultiProfileUserBehaviorMustBePrimary」に設定されている場合、ユーザーはメイン ユーザーとしてのみマルチプロフィール セッションに参加できます。
+
+このポリシーが「MultiProfileUserBehaviorNotAllowed」に設定されている場合、ユーザーはマルチプロフィール セッションに参加できません。
+
+この設定を行った場合、ユーザーが変更やオーバーライドを行うことはできません。
+
+ユーザーがマルチプロフィール セッションにログインしている間に設定が変更された場合、セッションに参加しているすべてのユーザーについて、それぞれの設定が確認されます。セッションへの参加が許可されないユーザーが 1 人でもいた場合、そのセッションは終了します。
+
+このポリシーを設定しないままにした場合、デフォルト値として企業の管理対象ユーザーには「MultiProfileUserBehaviorMustBePrimary」が適用され、管理対象外のユーザーには「MultiProfileUserBehaviorUnrestricted」が適用されます。</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorUnrestricted">企業ユーザーがメイン ユーザーとしてもセカンダリ ユーザーとしても操作できるようにする（管理対象ユーザー以外のユーザーに対するデフォルトの動作）</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorMustBePrimary">企業ユーザーがメインのマルチプロフィール ユーザーとしてのみ操作できるようにする（企業の管理対象ユーザーに対するデフォルトの動作）</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorNotAllowed">マルチプロフィール（プライマリまたはセカンダリ）への参加を企業ユーザーに許可しない</string><string id="ChromeOsReleaseChannel">リリース チャンネル</string><string id="ChromeOsReleaseChannel_Explain">この端末を固定するリリース チャンネルを指定します。</string><string id="ChromeOsReleaseChannel_StableChannel">Stable チャンネル</string><string id="ChromeOsReleaseChannel_BetaChannel">Beta チャンネル</string><string id="ChromeOsReleaseChannel_DevChannel">Dev チャンネル（不安定な場合があります）</string><string id="ChromeOsReleaseChannelDelegated">リリース チャンネルをユーザーが設定できるかどうか</string><string id="ChromeOsReleaseChannelDelegated_Explain">このポリシーを true に設定し、ChromeOsReleaseChannel ポリシーを指定していない場合、登録したドメインのユーザーに、デバイスのリリース チャンネルの変更を許可します。このポリシーを false に設定すると、デバイスは、最後に設定されたチャンネルに固定されます。
+
+ユーザーが選択したチャンネルよりも ChromeOsReleaseChannel ポリシーが優先されます。ただし、ポリシーのチャンネルが、デバイスにインストールされたチャンネルよりも安定している場合、ポリシーのチャンネルのバージョン番号がデバイスにインストールされているチャンネルよりも大きくなったときのみチャンネルが切り替わります。</string><string id="ComponentUpdatesEnabled">Google Chrome でコンポーネントの更新を有効にする</string><string id="ComponentUpdatesEnabled_Explain">このポリシーが未設定のままか True に設定されている場合は、Google Chrome のすべてのコンポーネントでコンポーネントの更新が有効になります。
+
+このポリシーが False に設定されている場合、コンポーネントの更新は無効になります。ただし、一部のコンポーネント（実行可能コードを含まないコンポーネント、ブラウザの動作を著しく変更しないコンポーネント、セキュリティ上重要なコンポーネント）はこのポリシーの適用外で、これらのコンポーネントの更新は無効にはなりません。
+適用外のコンポーネントの例としては、証明書失効リストやセーフ ブラウジング データが挙げられます。
+セーフ ブラウジングの詳細については、https://developers.google.com/safe-browsing をご覧ください。</string><string id="DefaultPrinterSelection">デフォルト プリンタ選択ルール</string><string id="DefaultPrinterSelection_Explain">Google Chrome のデフォルト プリンタ選択ルールをオーバーライドします。
+
+このポリシーは、Google Chrome のデフォルト プリンタを選択するルールを決定します。これは、各プロフィールで印刷プロフィールが初めて使用されるときに行われます。
+
+このポリシーが設定されていると、Google Chrome は、指定されたすべての属性に一致するプリンタを探して選択し、デフォルト プリンタに設定しようと試みます。最初に見つかったポリシーに一致するプリンタが選択されます。適合するプリンタが複数ある場合は、最初に見つかったプリンタが選択されます。
+
+このポリシーが設定されていない場合や、タイムアウトするまでに一致するプリンタが見つからない場合、デフォルト プリンタは組み込みの PDF プリンタに設定されますが、PDF プリンタが利用できない場合は、プリンタは設定されません。
+
+値は JSON オブジェクトとして解析され、次のスキーマに一致するものです。
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;kind&quot;: {
+&quot;description&quot;: &quot;照合するプリンタの検索を特定のプリンタのセットに限定するかどうか&quot;,
+&quot;type&quot;: {
+&quot;enum&quot;: [ &quot;local&quot;, &quot;cloud&quot; ]
+}
+},
+&quot;idPattern&quot;: {
+&quot;description&quot;: &quot;プリンタ ID と照合する正規表現&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;namePattern&quot;: {
+&quot;description&quot;: &quot;プリンタの表示名と照合する正規表現&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+「Google Cloud Print」に接続されるプリンタは「&quot;cloud&quot;」と見なされ、それ以外のプリンタは「&quot;local&quot;」に分類されます。
+項目の値の指定を省略すると、すべての値に一致することになります。たとえば、接続の種類を指定しない場合、印刷プレビューはローカルとクラウドを問わず、あらゆる種類のプリンタの検出を開始することになります。
+正規表現のパターンは JavaScript RegExp 構文に従う必要があり、照合の際に大文字と小文字が区別されます。</string><string id="DeveloperToolsDisabled">デベロッパー ツールを無効にする</string><string id="DeveloperToolsDisabled_Explain">デベロッパー ツールと JavaScript コンソールを無効にします。
+
+この設定を有効にした場合、デベロッパー ツールにはアクセスできず、ウェブサイト要素を検査することもできません。デベロッパー ツールや JavaScript コンソールを開くためのキーボード ショートカット、メニューまたはコンテキスト メニューの項目は無効になります。
+
+このオプションが無効または未設定の場合、ユーザーはデベロッパー ツールと JavaScript コンソールを使用できます。</string><string id="DeviceAllowBluetooth">端末で Bluetooth を許可する</string><string id="DeviceAllowBluetooth_Explain">このポリシーが false に設定されている場合、Google Chrome OS では Bluetooth が無効になります。ユーザーが Bluetooth を再び有効にすることはできません。
+
+このポリシーが true に設定されているか未設定の場合、ユーザーは必要に応じて Bluetooth を有効または無効にできます。
+
+このポリシーが設定されている場合、ユーザーは設定内容を変更したり他の設定を優先させたりすることはできません。
+
+Bluetooth を有効にした後、変更を適用するには、各ユーザー側でログアウトして再度ログインする必要があります（Bluetooth を無効にした場合、この手順は不要です）。</string><string id="DeviceAllowNewUsers">新しいユーザー アカウントの作成を許可する</string><string id="DeviceAllowNewUsers_Explain">Controls whether Google Chrome OS allows new user accounts to be created. If this policy is set to false, users that do not have an account already will not be able to login.
+
+If this policy is set to true or not configured, new user accounts will be allowed to be created provided that DeviceUserWhitelist does not prevent the user from logging in.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers">Chrome OS の登録特典の利用をユーザーに許可する</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers_Explain">企業向けデバイスの IT 管理者はこのフラグを使用して、Chrome OS の登録特典の利用をユーザーに許可するかどうかを指定できます。
+
+このポリシーを true に設定した場合または未設定の場合、ユーザーは Chrome OS の登録特典を利用できます。
+
+このポリシーを false に設定した場合、ユーザーは特典を利用できません。</string><string id="DeviceAutoUpdateDisabled">自動更新を無効にする</string><string id="DeviceAutoUpdateDisabled_Explain">自動更新を無効にします（true に設定した場合）。
+
+この設定を未設定のままにするか false に設定した場合、Google Chrome OS デバイスでは更新が自動的にチェックされます。
+
+警告: ユーザーが各自のデバイスでソフトウェアのアップデートや重要なセキュリティ修正を取得できるように、自動更新は有効のままにしておくことをおすすめします。自動更新を無効にすると、ユーザーが危険にさらされる恐れがあります。</string><string id="DeviceAutoUpdateP2PEnabled">自動更新での p2p の有効化</string><string id="DeviceAutoUpdateP2PEnabled_Explain">p2p を OS 更新ペイロードに使用するかどうかを指定します。True に設定すると、デバイスは LAN 上で更新ペイロードを共有し、使用しようとするため、インターネット帯域幅の使用と混雑が削減される可能性があります。更新ペイロードが LAN 上で使用できない場合、デバイスは更新サーバーからのダウンロードにフォールバックします。False に設定するか、何も設定しない場合、p2p は使用されません。</string><string id="DeviceBlockDevmode">デベロッパー モードをブロックする</string><string id="DeviceBlockDevmode_Explain">デベロッパー モードをブロックします。
+
+このポリシーが True に設定されている場合は、Google Chrome OS によってデベロッパー モードでのデバイスの起動が阻止されます。デベロッパー スイッチがオンになっている場合、システムは起動せず、エラー画面が表示されます。
+
+このポリシーが未設定か、False に設定されている場合、デバイスではデベロッパー モードを使用できます。</string><string id="DeviceDataRoamingEnabled">データ ローミングを有効にする</string><string id="DeviceDataRoamingEnabled_Explain">データ ローミングを端末に対して有効にするかどうかを指定します。true に設定した場合、データ ローミングが許可されます。未設定または false に設定した場合、データ ローミングは利用できません。</string><string id="DeviceEphemeralUsersEnabled">ログアウト時にユーザー データを消去するかを指定する</string><string id="DeviceEphemeralUsersEnabled_Explain">ログアウト後に Google Chrome OS がローカル アカウントのデータを保持するかどうかを指定します。true に設定した場合、Google Chrome OS は永続的アカウントを保持していないため、ユーザー セッションのすべてのデータがログアウト後に破棄されます。このポリシーを false に設定した場合または未設定の場合、端末は（暗号化された）ローカル ユーザー データを保持できます。</string><string id="DeviceGuestModeEnabled">ゲスト モードを有効にする</string><string id="DeviceGuestModeEnabled_Explain">このポリシーを true に設定した場合または未設定の場合、Google Chrome OS ではゲスト ログインが有効になります。ゲスト ログインは匿名ユーザーのセッションで、パスワードが不要です。
+
+このポリシーを false に設定した場合、Google Chrome OS ではゲスト セッションを開始できません。</string><string id="DeviceLoginScreenAppInstallList">ログイン画面でインストールするアプリのリストを設定する</string><string id="DeviceLoginScreenAppInstallList_Explain">
+Specifies a list of apps that are installed silently on the login screen,
+without user interaction, and which cannot be uninstalled.
+All permissions requested by the apps are granted
+implicitly, without user interaction, including any additional
+permissions requested by future versions of the app.
+
+Note that, for security and privacy reasons, extensions are not allowed to be installed using this policy. Moreover, the devices on the Stable channel will only install the apps that belong to the whitelist bundled into Google Chrome. Any items that don't conform to these conditions will be ignored.
+
+If an app that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.</string><string id="DeviceLoginScreenAppInstallListDesc">ログイン画面でインストールするアプリのリストを設定する</string><string id="DeviceLoginScreenInputMethods">端末のログイン画面のキーボード配列</string><string id="DeviceLoginScreenInputMethods_Explain">Google Chrome OS のログイン画面で選択可能にするキーボード配列を設定します。
+
+このポリシーが入力方法 ID のリストに設定されている場合は、指定されている入力方法がログイン画面で選択可能になり、最初に指定されている入力方法があらかじめ選択された状態になります。ログイン画面でユーザーのアイコンにフォーカスがあるときは、このポリシーで指定されている入力方法に加えて、ユーザーが最後に使った入力方法が選択可能になります。このポリシーが設定されていない場合は、ログイン画面の表示に使用されている言語 / 地域に応じた入力方法が適用されます。入力方法 ID として無効な値は無視されます。</string><string id="DeviceLoginScreenInputMethodsDesc">端末のログイン画面のキーボード配列</string><string id="DeviceLoginScreenLocales">端末のログイン画面の言語 / 地域</string><string id="DeviceLoginScreenLocales_Explain">Google Chrome OS のログイン画面に適用する言語 / 地域を設定します。
+
+このポリシーが設定されている場合、ログイン画面は常にこのポリシーの最初の値で指定されている言語 / 地域で表示されます（このポリシーは今後の互換性を確保するためにリスト形式で定義します）。このポリシーが未設定か空のリストに設定されている場合、ログイン画面は前回のユーザー セッションで使用された言語 / 地域で表示されます。このポリシーが無効な言語 / 地域の値に設定されている場合、ログイン画面は代替の言語 / 地域（現在は「en-US」）で表示されます。</string><string id="DeviceLoginScreenLocalesDesc">端末のログイン画面の言語 / 地域</string><string id="DeviceLoginScreenPowerManagement">ログイン画面の電源管理</string><string id="DeviceLoginScreenPowerManagement_Explain">Google Chrome OS のログイン画面での電源管理方法を設定します。
+
+このポリシーでは、ログイン画面が表示されている状態で一定時間ユーザー操作がなかったときの Google Chrome OS の動作方法を設定できます。このポリシーでは複数の設定を管理します。各設定の説明と値の範囲については、セッションの電源管理に関する該当のポリシーをご覧ください。このポリシーがセッションのポリシーと異なるのは次の 2 点です:
+* アイドル時またはディスプレイを閉じたときの操作で、「セッションの終了」は指定できません。
+* AC 電源での実行時、アイドル時間に到達したときに行われるデフォルトの操作は、「システム終了」です。
+
+設定を指定しない場合は、デフォルト値が使用されます。
+
+このポリシーを設定しない場合は、すべての設定でデフォルトが使用されます。</string><string id="DeviceMetricsReportingEnabled">統計情報のレポート送信を有効にする</string><string id="DeviceMetricsReportingEnabled_Explain">使用状況に関する統計情報と診断データ（障害レポートなど）を Google に送信するかどうかを指定します。このポリシーを true に設定した場合は、Google Chrome OS から Google に、使用状況に関する統計情報と診断データが送信されます。このポリシーを未設定のままにするか false に設定した場合、統計情報と診断データは送信されません。</string><string id="DeviceNativePrinters">デバイスの企業プリンタ設定ファイル</string><string id="DeviceNativePrinters_Explain">デバイスに関連付けられる企業プリンタの設定を指定します。
+
+このポリシーにより、Google Chrome OS デバイスのプリンタ設定を指定できます。このファイルは、5 MB 以下のサイズで、JSON エンコードで作成されている必要があります。フォーマットは NativePrinters 辞書と同じです。5 MB は 約 2,1000 台のプリンタを指定してエンコードしたファイルに相当します。ダウンロードの整合性の確認には暗号化ハッシュが使用されます。
+
+このファイルはダウンロードされてキャッシュされ、URL またはハッシュが変わったときには再度ダウンロードされます。
+
+このポリシーが設定されている場合は、Google Chrome OS によってプリンタ設定ファイルがダウンロードされ、DeviceNativePrintersAccessMode、DeviceNativePrintersWhitelist、DeviceNativePrintersBlacklist に沿ってプリンタが利用可能になります。
+
+このポリシーは、ユーザーが個々のデバイスでプリンタを設定できるかどうかに影響するものではなく、個々のユーザーがプリンタを設定するときの補助として使用されることを想定したものです。
+
+これは NativePrintersBulkConfiguration の追加ポリシーとして使用されます。
+
+このポリシーが未設定の場合、デバイス プリンタは存在しないことになり、DeviceNativePrinter* ポリシーは無視されます。</string><string id="DeviceNativePrintersAccessMode">デバイス プリンタの設定へのアクセス ポリシー</string><string id="DeviceNativePrintersAccessMode_Explain">ユーザーが DeviceNativePrinters のどのプリンタを使用できるかを制御します。
+
+このポリシーは、プリンタの一括設定で使用するアクセス ポリシーを指定するものです。AllowAll が選択されている場合は、すべてのプリンタが表示されます。BlacklistRestriction が選択されている場合は、DeviceNativePrintersBlacklist に基づき、指定されたプリンタへのアクセスが制限されます。WhitelistPrintersOnly が選択されている場合は、DeviceNativePrintersWhitelist で指定されたプリンタのみが選択可能になります。
+
+このポリシーが未設定の場合は、BlacklistRestriction が選択された場合と同じ動作になります。
+</string><string id="DeviceNativePrintersAccessMode_BlacklistRestriction">ブラックリスト登録されている以外のすべてのプリンタを表示する。</string><string id="DeviceNativePrintersAccessMode_WhitelistPrintersOnly">ホワイトリスト登録されているプリンタのみをユーザーに表示する</string><string id="DeviceNativePrintersAccessMode_AllowAll">設定ファイルのすべてのプリンタを許可する。</string><string id="DeviceNativePrintersBlacklist">無効な企業デバイス プリンタ</string><string id="DeviceNativePrintersBlacklist_Explain">ユーザーに使用を許可しないプリンタを指定します。
+
+このポリシーは、DeviceNativePrintersAccessMode の値に BlacklistRestriction が選択されている場合にのみ使用されます。
+
+このポリシーが使用される場合、ユーザーはこのポリシーに指定されている ID 以外のすべてのプリンタを使用できます。
+</string><string id="DeviceNativePrintersBlacklistDesc">無効な企業デバイス プリンタ</string><string id="DeviceNativePrintersWhitelist">有効な企業デバイス プリンタ</string><string id="DeviceNativePrintersWhitelist_Explain">ユーザーに使用を許可するプリンタを指定します。
+
+このポリシーは、DeviceNativePrintersAccessMode の値に WhitelistPrintersOnly が選択されている場合にのみ使用されます。
+
+このポリシーが使用される場合、ユーザーはこのポリシーに指定されている値に一致する ID のプリンタのみを使用できます。この ID は、DeviceNativePrinters で指定されたファイル内のエントリに対応している必要があります。
+</string><string id="DeviceNativePrintersWhitelistDesc">有効な企業デバイス プリンタ</string><string id="DeviceOffHours">デバイスの OffHours |ignored_policy_proto_tags| が解除されたときの管理外時間の間隔</string><string id="DeviceOffHours_Explain">「OffHours」ポリシーが設定されている場合、指定されたデバイス ポリシーは、定義された時間間隔の間は無視されます（ポリシーのデフォルト設定が使用されます）。「OffHours」の開始または終了のイベントが発生するたびに、Chrome によってデバイス ポリシーが再適用されます。「OffHours」の時間が終了し、デバイス ポリシーの設定が変更されたとき（許可されたアカウント以外でユーザーがログインしたときなど）には、ユーザーは通知を受けたうえで強制的にログアウトされます。</string><string id="DeviceOpenNetworkConfiguration">デバイス レベルのネットワーク設定</string><string id="DeviceOpenNetworkConfiguration_Explain">Google Chrome OS デバイスのすべてのユーザーにプッシュ型ネットワーク設定を適用できます。ネットワーク設定は、Open Network Configuration 形式（https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration をご覧ください）で定義された JSON 形式の文字列です。</string><string id="DevicePolicyRefreshRate">端末ポリシーの更新間隔</string><string id="DevicePolicyRefreshRate_Explain">デバイス管理サービスにデバイス ポリシー情報を照会する間隔をミリ秒単位で指定します。
+
+このポリシーを設定すると、デフォルト値の 3 時間よりも優先されます。このポリシーの有効な値は 1,800,000（30 分）から 86,400,000（1 日）の範囲の値です。この範囲に収まらない値は上限値と下限値のどちらか近い方に設定されます。
+
+このポリシーを設定しない場合、Google Chrome OS はデフォルト値の 3 時間を使用します。
+
+プラットフォームがポリシーの通知に対応している場合は、ポリシーが変更されるたびにポリシー通知により更新は自動的に適用されることになるため、更新の遅延は 24 時間に設定され、頻繁な更新は不要になります（すべてのデフォルト値とこのポリシーの値は無視されます）。</string><string id="DeviceQuirksDownloadEnabled">ハードウェア プロファイルを Quirks サーバーに問い合わせられるようにする</string><string id="DeviceQuirksDownloadEnabled_Explain">The Quirks Server provides hardware-specific configuration files, like
+ICC display profiles to adjust monitor calibration.
+
+When this policy is set to false, the device will not attempt to
+contact the Quirks Server to download configuration files.
+
+If this policy is true or not configured then Google Chrome OS will automatically contact the Quirks Server and download configuration files, if available, and store them on the device.  Such files might, for example, be used to improve display quality of attached monitors.</string><string id="DeviceRebootOnShutdown">デバイスのシャットダウン時に自動的に再起動する</string><string id="DeviceRebootOnShutdown_Explain">このポリシーを false に設定した場合、または未設定の場合、Google Chrome OS はユーザーによるデバイスの終了を許可します。
+このポリシーを true に設定すると、ユーザーがデバイスを終了したときに Google Chrome OS は再起動を実行します。Google Chrome OS は、UI 内でクリックされる終了ボタンをすべて再起動ボタンに置き換えます。ユーザーが電源ボタンを使ってデバイスを終了した場合は、このポリシーが有効なときでも自動的に再起動されることはありません。</string><string id="DeviceShowUserNamesOnSignin">ログイン画面でユーザー名を表示する</string><string id="DeviceShowUserNamesOnSignin_Explain">If this policy is set to true or not configured, Google Chrome OS will show existing users on the login screen and allow to pick one.
+
+If this policy is set to false, Google Chrome OS will not show existing users on the login screen. The normal sign-in screen (prompting for the user email and password or phone) or the SAML interstital screen (if enabled via the LoginAuthenticationBehavior policy) will be shown, unless a Public Session is configured. When a Public Session is configured, only the Public Session accounts will be shown, allowing to pick one of them.
+
+Note that this policy does not affect whether the device keeps or discards the local user data.</string><string id="DeviceStartUpFlags">Google Chrome 起動時にシステム全体のフラグを適用</string><string id="DeviceStartUpFlags_Explain">Google Chrome の起動時に適用するフラグを指定します。指定したフラグはログイン画面にのみ適用されます。このポリシーで設定したフラグはユーザーのセッションには影響しません。</string><string id="DeviceStartUpFlagsDesc">Google Chrome 起動時にシステム全体のフラグを適用</string><string id="DeviceTargetVersionPrefix">自動更新の対象バージョンを指定</string><string id="DeviceTargetVersionPrefix_Explain">自動更新の対象バージョンを設定します。
+
+Google Chrome OS による自動更新の対象となるバージョンのプレフィックスを指定します。指定したプレフィックスより前のバージョンを実行しているデバイスは、指定したプレフィックスの最新バージョンに更新されます。より新しいバージョンをすでに実行しているデバイスの場合、ダウングレードは行われず、そのまま現行バージョンが使用されます。プレフィックスの形式は次のように、バージョンの階層で認識されます。
+
+&quot;&quot;（または未設定）: 利用可能な最新バージョンに更新
+&quot;1412.&quot;: 「1412」の新しいマイナー バージョンがあれば、そのバージョンに更新（「1412.24.34」、「1412.60.2」など）
+&quot;1412.2.&quot;: 「1412.2」の新しいマイナー バージョンがあれば、そのバージョンに更新（「1412.2.34」、「1412.2.2」など）
+&quot;1412.24.34&quot;: この指定バージョンにのみ更新
+
+警告: バージョンの制限を設定することはおすすめしません。設定した場合、ユーザーが各自のデバイスでソフトウェアのアップデートや重要なセキュリティ修正を取得できなくなる可能性があります。つまり、更新対象を特定のバージョンのプレフィックスに制限すると、ユーザーが危険にさらされる恐れがあります。</string><string id="DeviceUpdateAllowedConnectionTypes">更新で許可される接続タイプ</string><string id="DeviceUpdateAllowedConnectionTypes_Explain">OS アップデートに使用できる接続のタイプです。OS アップデートは、サイズが大きいために接続に大きな負担がかかり、余分な費用が発生する可能性があります。そのため、デフォルトでは現在、WiMax、Bluetooth、携帯通信など費用が高くなる接続タイプは利用できません。
+
+認識される接続タイプ ID は「ethernet」、「wifi」、「wimax」、「bluetooth」、「cellular」です。</string><string id="DeviceUpdateAllowedConnectionTypesDesc">更新で許可される接続タイプ</string><string id="DeviceUpdateHttpDownloadsEnabled">HTTP 経由での自動更新ダウンロードを許可する</string><string id="DeviceUpdateHttpDownloadsEnabled_Explain">Google Chrome OS での自動更新ペイロードは HTTPS ではなく HTTP でダウンロードされます。これにより、HTTP ダウンロードの透過 HTTP キャッシングが可能になります。
+
+このポリシーを true に設定すると、Google Chrome OS は HTTP 経由で自動更新ペイロードをダウンロードしようとします。このポリシーを false に設定するか、設定しない場合は、自動更新ペイロードのダウンロードに HTTPS が使用されます。</string><string id="DeviceUpdateScatterFactor">自動更新の散乱係数</string><string id="DeviceUpdateScatterFactor_Explain">最初にアップデートがサーバーにプッシュされた時刻から、デバイスによるアップデートのダウンロードをランダムに遅延できる最大時間を秒数で指定します。デバイスは、この時間の一部を実際の経過時間として、残りの時間をアップデート チェックとして待機できます。どのような場合でも、係数にはある一定の時間の上限があるため、アップデートのダウンロードを永遠に待機してデバイスが停止し続けることはありません。</string><string id="DeviceUserWhitelist">ログイン ユーザーのホワイト リスト</string><string id="DeviceUserWhitelist_Explain">Defines the list of users that are allowed to login to the device. Entries are of the form user@domain, such as madmax@managedchrome.com. To allow arbitrary users on a domain, use entries of the form *@domain.
+
+If this policy is not configured, there are no restrictions on which users are allowed to sign in. Note that creating new users still requires the DeviceAllowNewUsers policy to be configured appropriately.</string><string id="DeviceUserWhitelistDesc">ログイン ユーザーのホワイト リスト</string><string id="DeviceWallpaperImage">デバイスの壁紙画像</string><string id="DeviceWallpaperImage_Explain">どのユーザーもログインしていない場合にログイン画面に表示する、デバイスの壁紙画像を設定します。このポリシーを設定するには、Chrome OS デバイスが壁紙の画像と暗号化ハッシュをダウンロードすることのできる URL を指定します（暗号化ハッシュはファイルが完全にダウンロードされたかどうかの確認に使用されます）。画像の形式は JPEG、サイズは 16 MB 以下とし、URL には認証なしでアクセスできる必要があります。壁紙画像はダウンロードされた後、キャッシュされます。URL またはハッシュに変更があった場合は再度ダウンロードされます。
+
+このポリシーには、URL とハッシュを表す JSON 形式の文字列を次のように指定します。
+{
+&quot;url&quot;: &quot;https://example.com/device_wallpaper.jpg&quot;,
+&quot;hash&quot;: &quot;examplewallpaperhash&quot;
+}
+
+デバイスの壁紙ポリシーが設定されていて、どのユーザーもデバイスにログインしていない場合、Chrome OS デバイスは壁紙をダウンロードしてログイン画面に表示します。ユーザーがログインすると、そのユーザーの壁紙ポリシーが適用されます。
+
+デバイスの壁紙ポリシーが設定されておらず、ユーザーの壁紙ポリシーが設定されている場合は、ユーザーの壁紙ポリシーによって表示される壁紙が決まります。</string><string id="Disable3DAPIs">3D グラフィックス API のサポートを無効にする</string><string id="Disable3DAPIs_Explain">Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API.
+
+Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.
+
+If HardwareAccelerationModeEnabled is set to false, Disable3DAPIs is ignored and it is equivalent to Disable3DAPIs being set to true.</string><string id="DisablePluginFinder">プラグイン ファインダーを無効にすべきかどうかを指定する</string><string id="DisablePluginFinder_Explain">この設定を有効にすると、Google Chrome で追加が必要なプラグインの自動検索およびインストールが無効になります。このオプションが無効または未設定の場合、プラグイン ファインダーがアクティブになります。</string><string id="DisableSafeBrowsingProceedAnyway">セーフ ブラウジングの警告ページからの続行を無効にする</string><string id="DisableSafeBrowsingProceedAnyway_Explain">不正なサイトの可能性があると報告されているサイトにユーザーが移動しようとすると、セーフ ブラウジング サービスにより警告ページが表示されます。この設定を有効にした場合、ユーザーはその警告ページから不正なサイトに進むことができなくなります。
+
+この設定を無効にするか未設定のままにした場合、ユーザーは警告が表示された後にそのサイトに進むかどうかを選択できます。
+
+セーフ ブラウジングの詳細については、https://developers.google.com/safe-browsing をご覧ください。</string><string id="DisableScreenshots">スクリーンショットの使用を無効にする</string><string id="DisableScreenshots_Explain">If enabled, screenshots cannot be taken using keyboard shortcuts or extension APIs.
+
+If disabled or not specified, taking screenshots is allowed.</string><string id="DisplayRotationDefault">再起動のたびにデフォルトのディスプレイ回転方法を再適用する</string><string id="DisplayRotationDefault_Explain">このポリシーが設定されている場合、個々のディスプレイは再起動のときに毎回と、ポリシーの値が変更されてから最初に接続が行われるときに、指定方向に回転します。ユーザーはログイン後に設定ページからディスプレイの回転方法を変更することができますが、次に再起動したときにはポリシーの値が再適用されます。
+
+このポリシーは、メインのディスプレイと予備のディスプレイすべてに適用されます。
+
+このポリシーが未設定の場合、既定値として 0 度が使用されます。ユーザーはこの値を自由に変更できます。この場合、再起動時に既定値が再適用されることはありません。</string><string id="DisplayRotationDefault_ROTATE_0">画面を 0 度回転（回転なし）</string><string id="DisplayRotationDefault_ROTATE_90">画面を時計回りに 90 度回転</string><string id="DisplayRotationDefault_ROTATE_180">画面を 180 度回転</string><string id="DisplayRotationDefault_ROTATE_270">画面を時計回りに 270 度回転</string><string id="DownloadDirectory">ダウンロード ディレクトリを設定する</string><string id="DownloadDirectory_Explain">ファイルをダウンロードするときに Google Chrome が使用するディレクトリを設定します。
+
+このポリシーを設定した場合は、ユーザーがディレクトリを指定していたり毎回ダウンロード先の場所を確認するよう指定していたりしても、ここで指定したディレクトリが Google Chrome で使用されます。
+
+使用できる変数のリストについては、https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables をご覧ください。
+
+このポリシーが未設定の場合は、デフォルトのダウンロード ディレクトリが使用されます。ユーザーはこのディレクトリを変更することもできます。</string><string id="DownloadRestrictions">ダウンロードの制限を許可する</string><string id="DownloadRestrictions_Explain">Configures the type of downloads that Google Chrome will completely block, without letting users override the security decision.
+
+If you set this policy, Google Chrome will prevent certain types of downloads, and won't let user bypass the security warnings.
+
+When the 'Block dangerous downloads' option is chosen, all downloads are allowed, except for those that carry SafeBrowsing warnings.
+
+When the 'Block potentially dangerous downloads' option is chosen, all downloads allowed, except for those that carry SafeBrowsing warnings of potentially dangerous downloads.
+
+When the 'Block all downloads' option is chosen, all downloads are blocked.
+
+When this policy is not set, (or the 'No special restrictions' option is chosen), the downloads will go through the usual security restrictions based on SafeBrowsing analysis results.
+
+Note that these restrictions apply to downloads triggered from web page content, as well as the 'download link...' context menu option. These restrictions do not apply to the save / download of the currently displayed page, nor does it apply to saving as PDF from the printing options.
+
+See https://developers.google.com/safe-browsing for more info on SafeBrowsing.</string><string id="DownloadRestrictions_DefaultDownloadSecurity">特別な制限なし</string><string id="DownloadRestrictions_BlockDangerousDownloads">危険なダウンロードをブロックする</string><string id="DownloadRestrictions_BlockPotentiallyDangerousDownloads">危険性のあるダウンロードをブロックする</string><string id="DownloadRestrictions_BlockAllDownloads">すべてのダウンロードをブロックする</string><string id="EasyUnlockAllowed">Smart Lock の使用を許可する</string><string id="EasyUnlockAllowed_Explain">If you enable this setting, users will be allowed to use Smart Lock if the requirements for the feature are satisfied.
+
+If you disable this setting, users will not be allowed to use Smart Lock.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="EcryptfsMigrationStrategy">ecryptfs の移行方法</string><string id="EcryptfsMigrationStrategy_Explain">Specifies the action that should be taken when the user's home directory was created with ecryptfs encryption and needs to transition to ext4 encryption.
+
+If you set this policy to 'DisallowArc', Android apps will be disabled for the user and no migration from ecryptfs to ext4 encryption will be performed. Android apps will not be prevented from running when the home directory is already ext4-encrypted.
+
+If you set this policy to 'Migrate', ecryptfs-encrypted home directories will be automatically migrated to ext4 encryption on sign-in without asking for user consent.
+
+If you set this policy to 'Wipe', ecryptfs-encrypted home directories will be deleted on sign-in and new ext4-encrypted home directories will be created instead. Warning: This removes the user's local data.
+
+If you set this policy to 'AskUser', users with ecryptfs-encrypted home directories will be offered to migrate.
+
+This policy does not apply to kiosk users. If this policy is left not set, the device will behave as if 'DisallowArc' was chosen.</string><string id="EcryptfsMigrationStrategy_DisallowArc">Disallow data migration and ARC.</string><string id="EcryptfsMigrationStrategy_Migrate">Migrate automatically, donâ€™t ask for user consent.</string><string id="EcryptfsMigrationStrategy_Wipe">Wipe the userâ€™s ecryptfs home directory and start with a fresh ext4-encrypted home directory.</string><string id="EcryptfsMigrationStrategy_AskUser">Ask the user if they would like to migrate or skip migration and disallow ARC.</string><string id="EcryptfsMigrationStrategy_MinimalMigrate">このオプションは Wipe（値 2）と似ていますが、ログイン トークンを保持するように動作します（この場合、ユーザーの再ログインが不要になります）。</string><string id="EcryptfsMigrationStrategy_AskForEcryptfsArcUsers">ARC の実行に ext4 への移行が必要となる前からすでにクライアント端末機種で ARC がサポートされていて、かつ ArcEnabled ポリシーが true に設定されている場合、このオプションの動作は AskUser（値 3）と同じになります。その他すべての場合（端末機種で以前より ARC がサポートされていなかった場合、または ArcEnabled ポリシーが false に設定されている場合）、この値は DisallowArc（値 0）と同じになります。</string><string id="EditBookmarksEnabled">ブックマークの編集を有効または無効にする</string><string id="EditBookmarksEnabled_Explain">If you enable this setting, bookmarks can be added, removed or modified. This is the default also when this policy is not set.
+
+If you disable this setting, bookmarks can not be added, removed or modified. Existing bookmarks are still available.</string><string id="EnableCommonNameFallbackForLocalAnchors">ローカルの信頼済みアンカーが発行した、subjectAlternativeName 拡張がない証明書の許可</string><string id="EnableCommonNameFallbackForLocalAnchors_Explain">この設定が有効な場合は、サーバー証明書に subjectAlternativeName 拡張が指定されていなくても、検証とローカルにインストールされている CA 証明書への関連付けに問題がない限り、Google Chrome では証明書の commonName を使用してホスト名が照合されます。
+
+この場合、nameConstraints 拡張による制限（証明書を受け入れるホスト名の制限）が適用されなくなる可能性があるため、有効化はおすすめしません。
+
+このポリシーが未設定のままか false に設定されている場合、subjectAlternativeName 拡張がなく DNS 名または IP アドレスのいずれかを含むサーバー証明書は信頼されません。</string><string id="EnableDeprecatedWebPlatformFeatures">サポートが終了しているウェブ プラットフォームの機能を一定の期間有効にする</string><string id="EnableDeprecatedWebPlatformFeatures_Explain">サポートが終了したウェブ プラットフォーム機能を一時的に再度有効にすることができ、該当する機能のリストを指定します。
+
+このポリシーを利用して、管理者はサポートが終了したウェブ プラットフォーム機能を一時的に再び有効にできます。機能は文字列タグで指定します。このポリシーで指定したリスト内のタグに対応する機能が再び有効になります。
+
+このポリシーを未設定にするか、リストが空またはサポートされる文字列タグのいずれにも一致しない場合、サポートが終了したウェブ プラットフォーム機能はすべて無効のままとなります。
+
+ポリシー自体は上記のプラットフォームでサポートされますが、このポリシーの対象となる機能を利用できるプラットフォームはそれより少ないことがあります。サポートが終了したすべてのウェブ プラットフォーム機能を再び有効にできるとは限りません。一時的に有効になるのは、下記のリストに指定されている機能のみで、有効になる期間は機能によって異なります。文字列タグの一般的な形式は [DeprecatedFeatureName]_EffectiveUntil[yyyymmdd] です。詳しくは、https://bit.ly/blinkintents でウェブ プラットフォーム機能を変更する意図をご確認ください。
+</string><string id="EnableDeprecatedWebPlatformFeaturesDesc">サポートが終了しているウェブ プラットフォームの機能を一定の期間有効にする</string><string id="EnableOnlineRevocationChecks">オンライン OCSP/CRL チェックを実行するかどうかを指定する</string><string id="EnableOnlineRevocationChecks_Explain">オンラインによる証明書取り消しの確認が Soft Fail の場合、セキュリティ上特段の効果がないという点を考慮し、Google Chrome バージョン 19 以降ではデフォルトで無効になっています。このポリシーを true に設定すると、前回の動作を復元し、オンライン OCSP / CRL チェックを実行します。
+
+このポリシーが未設定または false に設定された場合、Google Chrome はオンラインによる証明書取り消しの確認を行いません（Google Chrome 19 以降）。</string><string id="EnableSha1ForLocalAnchors">ローカルの信頼済みアンカーが発行した SHA-1 署名証明書が許可されるかどうかを指定する</string><string id="EnableSha1ForLocalAnchors_Explain">この設定が有効になっていると、SHA-1 署名証明書が検証され、ローカルにインストールされた CA 証明書に関連付けされている限り、Google Chrome は SHA-1 署名証明書を許可します。
+
+ただし、このポリシーは SHA-1 署名を許可するオペレーティング システムの証明書検証スタックにより異なります。OS のアップデートにより SHA-1 署名証明書を処理する OS が変更になると、このポリシーは効力を失います。さらに、このポリシーは一時的な措置として企業に SHA-1 から移行するための猶予期間を与えることを目的としています。このポリシーは 2019 年 1 月 1 日をめどに削除される予定です。
+
+このポリシーが未設定の場合、または false に設定されている場合、Google Chrome は発表された SHA-1 のサポート終了のスケジュールに従います。</string><string id="ExternalStorageDisabled">外部ストレージのマウントを無効にする</string><string id="ExternalStorageDisabled_Explain">このポリシーを true に設定すると、ファイル ブラウザでは外部ストレージを利用できなくなります。
+
+このポリシーはあらゆるタイプのストレージ メディアに適用されます。たとえば、USB メモリ、外部ハードドライブ、SD などのメモリカード、光学ストレージが対象となります。内部ストレージはこのポリシーの影響を受けないため、ダウンロード フォルダに保存されたファイルには引き続きアクセスできます。Google ドライブもこのポリシーの影響を受けません。
+
+この設定を無効にするか未設定のままにした場合、ユーザーは端末でサポートされているあらゆるタイプの外部ストレージを使用できます。</string><string id="ExternalStorageReadOnly">Treat external storage devices as read-only</string><string id="ExternalStorageReadOnly_Explain">このポリシーを true に設定した場合、ユーザーは外部ストレージ デバイスに一切書き込みできなくなります。
+
+この設定を false に設定するか未設定のままにした場合、ユーザーは物理的に書き込みが可能な外部ストレージ デバイスに対してファイルの作成や変更ができます。
+
+ExternalStorageDisabled ポリシーは、このポリシーよりも優先されます。つまり、ExternalStorageDisabled が true に設定されている場合は、外部ストレージへのすべてのアクセスが無効となり、このポリシーは無視されます。
+
+このポリシーの動的更新は M56 以降でサポートされています。</string><string id="ForceGoogleSafeSearch">Google セーフサーチを強制する</string><string id="ForceGoogleSafeSearch_Explain">セーフサーチをアクティブに設定して Google ウェブ検索のクエリを強制するとともに、ユーザーがこの設定を変更できないようにします。
+
+この設定を有効にすると、Google 検索のセーフサーチは常にアクティブになります。
+
+この設定を無効にする場合や値を設定しない場合、Google 検索のセーフサーチは強制されません。</string><string id="ForceMaximizeOnFirstRun">初回実行時に最初に表示されるブラウザ ウィンドウを最大化する</string><string id="ForceMaximizeOnFirstRun_Explain">If this policy is set to true, Google Chrome will unconditionally maximize the first window shown on first run.
+If this policy is set to false or not configured, the decision whether to maximize the first window shown will be based on the screen size.</string><string id="ForceYouTubeRestrict">YouTube で一定レベル以上の制限付きモードを強制する</string><string id="ForceYouTubeRestrict_Explain">YouTube で一定レベル以上の制限付きモードを強制的に適用し、それより制限の
+緩いモードをユーザーが選択できないようにします。
+
+この設定を「強」にした場合、YouTube では制限付きモード「強」が常に有効になります。
+
+この設定を「中」にした場合、ユーザーは YouTube で制限付きモード「中」
+または「強」のみを選択でき、制限付きモードを無効にすることはできません。
+
+この設定が「オフ」または未設定の場合、Google Chrome によって YouTube の制限付きモードが強制されることはありませんが、YouTube ポリシーなどの外部のポリシーによって強制的に適用される可能性はあります。</string><string id="ForceYouTubeRestrict_Off">YouTube で制限付きモードを強制しない</string><string id="ForceYouTubeRestrict_Moderate">YouTube で制限付きモード「中」以上を強制的に適用する</string><string id="ForceYouTubeRestrict_Strict">YouTube で制限付きモード「強」を強制する</string><string id="FullscreenAllowed">全画面モードを許可する</string><string id="FullscreenAllowed_Explain">This policy controls the availability of fullscreen mode in which all Google Chrome UI is hidden and only web content is visible.
+
+If this policy is set to true or not not configured, the user, apps and extensions with appropriate permissions can enter fullscreen mode.
+
+If this policy is set to false, neither the user nor any apps or extensions can enter fullscreen mode.
+
+On all platforms except Google Chrome OS, kiosk mode is unavailable when fullscreen mode is disabled.</string><string id="Http09OnNonDefaultPortsEnabled">デフォルト以外のポートで HTTP/0.9 サポートを有効にする</string><string id="Http09OnNonDefaultPortsEnabled_Explain">このポリシーは、80（HTTP）と 443（HTTPS）以外のポートで HTTP/0.9 を有効にするかどうかを指定するものです。
+
+このポリシーはデフォルトでは無効です。有効にした場合、ユーザーは https://crbug.com/600352 に記載されているセキュリティの問題に晒されることになります。
+
+このポリシーは、企業が既存のサーバーを HTTP/0.9 から移行するときに使用するためのものです。将来的には削除されます。
+
+このポリシーが未設定の場合、HTTP/0.9 はデフォルト以外のポートでは無効になります。</string><string id="IncognitoModeAvailability">シークレット モードが利用可能かどうかを設定する</string><string id="IncognitoModeAvailability_Explain">ユーザーが Google Chrome でシークレット モードを使用してページを開くことができるかどうかを指定します。[有効] が選択されている、またはポリシーが未設定の場合、シークレット モードでページを開くことができます。[無効] が選択されている場合、シークレット モードでページを開くことはできません。[強制] が選択されている場合、シークレット モードでのみページを開くことができます。</string><string id="IncognitoModeAvailability_Enabled">シークレット モードを利用可能にする</string><string id="IncognitoModeAvailability_Disabled">シークレット モードを無効にする</string><string id="IncognitoModeAvailability_Forced">シークレット モードを適用する</string><string id="InstantTetheringAllowed">Allows Instant Tethering to be used.</string><string id="InstantTetheringAllowed_Explain">If this setting is enabled, users will be allowed to use Instant Tethering, which allows their Google phone to share its mobile data with their device.
+
+If this setting is disabled, users will not be allowed to use Instant Tethering.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="IsolateOrigins">指定した発行元に対してサイト分離を有効にする</string><string id="IsolateOrigins_Explain">
+注: このポリシーは試験運用版であり、動作に影響を及ぼす可能性があります。
+このポリシーが有効に設定されている場合、カンマ区切りのリストで
+指定された発行元がそれぞれ独自のプロセスで実行されます。また、
+サブドメインによって指定された発行元も分離されます。たとえば、
+https://example.com/ と指定すると、https://foo.example.com/ も
+https://example.com/ サイトの一部として分離されます。
+このポリシーが無効に設定されている場合は、サイト分離前のプロセス管理ロジックが適用されます。
+このポリシーが未設定の場合、ユーザーはこの設定を変更できます。
+</string><string id="KeyPermissions">キーの権限</string><string id="KeyPermissions_Explain">拡張機能に対し、企業キーへのアクセスを許可します。
+
+キーが企業用のキーと指定されるのは、管理対象アカウントに対し chrome.enterprise.platformKeys API を使用してキーを生成した場合のみです。別の方法でインポートまたは生成されたキーは、企業用のキーとなりません。
+
+企業用のキーへのアクセスはこのポリシーによってのみ制御されます。ユーザーは、拡張機能にキーへのアクセス権を付与することはできず、拡張機能に付与されたキーへのアクセス権を取り消すこともできません。
+
+デフォルトでは、拡張機能で企業用のキーを使用することはできません。この動作は、拡張機能に対して allowCorporateKeyUsage を false に設定した場合の結果と同じです。
+
+拡張機能に対して allowCorporateKeyUsage が true に設定されている場合のみ、その拡張機能では企業用のプラットフォーム キーを任意のデータの署名に使用できます。このような許可を与えるのは、拡張機能からキーへのアクセスが攻撃から守られると信頼できる場合のみとしてください。</string><string id="ManagedBookmarks">管理対象のブックマーク</string><string id="ManagedBookmarks_Explain">Configures a list of managed bookmarks.
+
+The policy consists of a list of bookmarks whereas each bookmark is a dictionary containing the keys &quot;name&quot; and &quot;url&quot; which hold the bookmark's name and its target. A subfolder may be configured by defining a bookmark without an &quot;url&quot; key but with an additional &quot;children&quot; key which itself contains a list of bookmarks as defined above (some of which may be folders again). Google Chrome amends incomplete URLs as if they were submitted via the Omnibox, for example &quot;google.com&quot; becomes &quot;https://google.com/&quot;.
+
+These bookmarks are placed in a folder that can't be modified by the user (but the user can choose to hide it from the bookmark bar). By default the folder name is &quot;Managed bookmarks&quot; but it can be customized by adding to the list of bookmarks a dictionary containing the key &quot;toplevel_name&quot; with the desired folder name as the value.
+
+Managed bookmarks are not synced to the user account and can't be modified by extensions.</string><string id="MaxInvalidationFetchDelay">ポリシーの失効から取得までの最大時間</string><string id="MaxInvalidationFetchDelay_Explain">デバイス管理サービスからポリシーの無効化を受け取ってから新しいポシリーを取得するまでの最大時間（ミリ秒単位）を指定します。
+
+このポリシーを設定すると、デフォルト値の 5,000 ミリ秒は上書きされます。このポリシーの有効な値の範囲は 1,000（1 秒）～300,000（5 分）ミリ秒です。この範囲に収まらない値は上限値と下限値のどちらか近い方に設定されます。
+
+このポリシーが設定されていない場合、Google Chrome はデフォルト値の 5,000 ミリ秒を使用します。</string><string id="NativePrinters">ネイティブ印刷</string><string id="NativePrinters_Explain">Configures a list of printers.
+
+This policy allows administrators to provide printer configurations for
+their users.
+
+display_name and description are free form strings that can be customized for ease of printer selection. manufacturer and model serve to ease printer identification by end users. They represent the manufacturer and model of the printer. uri should be an address reachable from a client computer including the scheme, port, and queue. uuid is optional.  If provided, it is used to help deduplicate zeroconf printers.
+
+effective_model must match one of the strings which represent a Google Chrome OS supported printer. The string will be used to identify and install the appropriate PPD for the printer. More information can be found at https://support.google.com/chrome?p=noncloudprint.
+
+Printer setup is completed upon the first use of a printer.  PPDs are not
+downloaded until the printer is used.  After that time, frequently used
+PPDs are cached.
+
+This policy has no effect on whether users can configure printers on
+individual devices.  It is intended to be supplementary to the
+configuration of printers by individual users.</string><string id="NativePrintersDesc">ネイティブ印刷</string><string id="NativePrintersBulkAccessMode">プリンタの設定へのアクセス ポリシー</string><string id="NativePrintersBulkAccessMode_Explain">ユーザーが NativePrintersBulkConfiguration のどのプリンタを使用できるかを制御します。
+
+このポリシーは、プリンタの一括設定で使用するアクセス ポリシーを指定するものです。AllowAll が選択されている場合は、すべてのプリンタが表示されます。BlacklistRestriction が選択されている場合は、NativePrintersBulkBlacklist に基づき、指定されたプリンタへのアクセスが制限されます。WhitelistPrintersOnly が選択されている場合は、NativePrintersBulkWhitelist で指定されたプリンタのみが選択可能になります。
+
+このポリシーが未設定の場合は、BlacklistRestriction が選択された場合と同じ動作になります。
+</string><string id="NativePrintersBulkAccessMode_BlacklistRestriction">ブラックリスト登録されている以外のすべてのプリンタを表示する。</string><string id="NativePrintersBulkAccessMode_WhitelistPrintersOnly">ホワイトリスト登録されているプリンタのみをユーザーに表示する</string><string id="NativePrintersBulkAccessMode_AllowAll">設定ファイルのすべてのプリンタを許可する。</string><string id="NativePrintersBulkBlacklist">無効な企業プリンタ</string><string id="NativePrintersBulkBlacklist_Explain">ユーザーに使用を許可しないプリンタを指定します。
+
+このポリシーは、NativePrintersBulkAccessMode の値に BlacklistRestriction が選択されている場合にのみ使用されます。
+
+このポリシーが使用される場合、ユーザーはこのポリシーに指定されている ID 以外のすべてのプリンタを使用できます。
+</string><string id="NativePrintersBulkBlacklistDesc">無効な企業プリンタ</string><string id="NativePrintersBulkConfiguration">企業プリンタの設定ファイル</string><string id="NativePrintersBulkConfiguration_Explain">デバイスに関連付けられる企業プリンタの設定を指定します。
+
+このポリシーにより、Google Chrome OS デバイスのプリンタ設定を指定できます。このファイルは、5 MB 以下のサイズで、JSON エンコードで作成されている必要があります。フォーマットは NativePrinters 辞書と同じです。5 MB は 約 2,1000 台のプリンタを指定してエンコードしたファイルに相当します。ダウンロードの整合性の確認には暗号化ハッシュが使用されます。
+
+このファイルはダウンロードされてキャッシュされ、URL またはハッシュが変わったときには再度ダウンロードされます。
+
+このポリシーが設定されている場合は、Google Chrome OS によってプリンタ設定ファイルがダウンロードされ、NativePrintersBulkAccessMode、NativePrintersBulkWhitelist、NativePrintersBulkBlacklist に沿ってプリンタが利用可能になります。
+
+このポリシーを設定した場合、ユーザーがこのポリシーを変更したりオーバーライドしたりすることはできません。
+
+このポリシーは、ユーザーが個々のデバイスでプリンタを設定できるかどうかに影響するものではなく、個々のユーザーがプリンタを設定するときの補助として使用されることを想定したものです。
+</string><string id="NativePrintersBulkWhitelist">有効な企業プリンタ</string><string id="NativePrintersBulkWhitelist_Explain">ユーザーに使用を許可するプリンタを指定します。
+
+このポリシーは、NativePrintersBulkAccessMode の値に WhitelistPrintersOnly が選択されている場合にのみ使用されます。
+
+このポリシーが使用される場合、ユーザーはこのポリシーに指定されている値に一致する ID のプリンタのみを使用できます。この ID は、NativePrintersBulkConfiguration で指定されたファイル内のエントリに対応している必要があります。
+</string><string id="NativePrintersBulkWhitelistDesc">有効な企業プリンタ</string><string id="NetworkPredictionOptions">ネットワーク予測を有効にする</string><string id="NetworkPredictionOptions_Explain">Google Chrome でネットワーク予測を有効にして、ユーザーがこの設定を変更できないようにします。
+
+これにより、DNS のプリフェッチ、TCP と SSL の事前接続、ウェブページの事前レンダリングが制御されます。
+
+この設定を [常に使用]、[使用しない]、[Wi-Fi のみ] にすると、ユーザーは Google Chrome でこの設定の変更や上書きができなくなります。
+
+このポリシーが未設定の場合、ネットワーク予測は有効になりますが、ユーザーはこの設定を変更できます。</string><string id="NetworkPredictionOptions_NetworkPredictionAlways">ネットワーク接続でネットワーク動作を予測する</string><string id="NetworkPredictionOptions_NetworkPredictionWifiOnly">モバイル以外のネットワークでのネットワーク動作を予測します。
+（バージョン 50 でサポート終了、バージョン 52 で削除。バージョン 52 以降は、値 1 が設定されている場合は 0 として扱われ、あらゆるネットワーク接続でネットワーク動作を予測します。）</string><string id="NetworkPredictionOptions_NetworkPredictionNever">ネットワーク接続でネットワーク動作を予測しない</string><string id="NoteTakingAppsLockScreenWhitelist">Google Chrome OS のロック画面で使用できるメモ作成アプリをホワイトリスト登録する</string><string id="NoteTakingAppsLockScreenWhitelist_Explain">Google Chrome OS のロック画面でメモ作成アプリとして有効にできるアプリのリストを指定します。
+
+メモ作成アプリがロック画面で有効になっている場合、ロック画面にはそのメモ作成アプリを起動する UI 要素が表示されます。
+ユーザーがアプリを起動すると、ロック画面にアプリ ウィンドウが表示され、ロック画面の中でデータ項目（メモ）を作成できるようになります。ロックが解除されたとき、アプリで作成されたメモはメインのユーザー セッションに取り込まれます。現在、ロック画面で使用できるのは Chrome のメモ作成アプリのみです。
+
+このポリシーが設定されている場合、ユーザーはポリシーのリストの値として拡張機能 ID が指定されているアプリであれば、ロック画面で有効にすることができます。
+このポリシーで空のリストを設定すると、ロック画面ではメモ作成アプリを一切使用できないことになります。
+ポリシーでアプリ ID が指定されているからといって、必ずしもユーザーがそのアプリをロック画面でメモ作成アプリとして有効にできるとは限りません。たとえば Chrome 61 では、プラットフォームによって、利用可能なアプリに関する追加の制限が課されます。
+
+このポリシーが未設定のままの場合は、ユーザーがロック画面で有効にできるアプリに関して、ポリシーによる制限は課されません。</string><string id="NoteTakingAppsLockScreenWhitelistDesc">Google Chrome OS のロック画面で使用できるメモ作成アプリをホワイトリスト登録する</string><string id="OpenNetworkConfiguration">ユーザー レベルのネットワーク設定</string><string id="OpenNetworkConfiguration_Explain">Google Chrome OS 端末のユーザーごとにプッシュ型ネットワーク設定を適用できます。ネットワーク設定は、Open Network Configuration 形式（https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration を参照）で定義された JSON 形式の文字列です。</string><string id="PacHttpsUrlStrippingEnabled">PAC URL データ除去を有効にする（https:// の場合）</string><string id="PacHttpsUrlStrippingEnabled_Explain">プロキシ解決の際、Google Chrome で使用する PAC（プロキシ自動設定）スクリプトに https:// URL を渡す前に、URL からプライバシーやセキュリティに関連する機密情報を削除します。
+
+True に設定した場合、このセキュリティ機能が有効になり、
+PAC スクリプトに送信する前に https:// URL を削除します。
+これにより、PAC スクリプトは暗号化されたチャネルで通常保護されるデータ
+（URL のパスとクエリなど）を表示できなくなります。
+
+False に設定した場合、このセキュリティ機能は無効になり、PAC スクリプトに
+https:// URL の全要素を表示する権限が非明示的に付与されます。
+この設定は、送信元に関わらずすべての PAC スクリプト（保護されていない
+通信経路で取得されたスクリプトや WPAD により安全でない方法で検出された
+スクリプトなど）に適用されます。
+
+デフォルトでは True に設定されています（セキュリティ機能は有効です）。ただし、
+Chrome OS の企業ユーザーの場合は、現在のところデフォルトで False に
+設定されています。
+
+このポリシーは True に設定することをおすすめします。既存の PAC スクリプトと
+互換性の問題が生じる場合に限り、False に設定します。
+
+将来的にこのオーバーライドは削除される予定です。</string><string id="PinnedLauncherApps">ランチャーに表示する固定アプリのリスト</string><string id="PinnedLauncherApps_Explain">Google Chrome OS によりランチャー バーに固定アプリとして表示されるアプリケーション ID のリストを設定します。
+
+このポリシーを設定していると、アプリケーション セットが固定され、ユーザーは変更することができなくなります。
+
+このポリシーを設定していないと、ランチャーの固定アプリのリストをユーザーが変更できます。</string><string id="PinnedLauncherAppsDesc">ランチャーに表示する固定アプリのリスト</string><string id="PolicyRefreshRate">ユーザー ポリシーの更新間隔</string><string id="PolicyRefreshRate_Explain">デバイス管理サービスにユーザー ポリシー情報を照会する間隔をミリ秒単位で指定します。
+
+このポリシーを設定すると、デフォルト値の 3 時間よりも優先されます。このポリシーの有効な値は 1,800,000（30 分）から 86,400,000（1 日）の範囲の値です。この範囲に収まらない値は上限値と下限値のどちらか近い方に設定されます。プラットフォームがポリシーの通知に対応している場合は、ポリシーが変更されるたびにポリシーの通知により更新は自動的に適用されることになるため、更新の遅延は 24 時間に設定されます。
+
+このポリシーを設定しない場合、Google Chrome はデフォルト値の 3 時間を使用します。
+
+プラットフォームがポリシーの通知に対応している場合は、ポリシーが変更されるたびにポリシーの通知により更新は自動的に適用されることになるため、更新の遅延は 24 時間に設定され、頻繁な更新は不要になります（すべてのデフォルト値とこのポリシーの値は無視されます）。</string><string id="PrintingEnabled">印刷を有効にする</string><string id="PrintingEnabled_Explain">Google Chrome での印刷を可能にするとともに、ユーザーがこの設定を変更できないようにします。
+
+この設定が有効な場合または未設定の場合、ユーザーは印刷できます。
+
+この設定が無効な場合、ユーザーは Google Chrome から印刷できません。印刷はツール メニュー、拡張機能、JavaScript アプリケーションなどから無効にできます。無効にしても、印刷時に Google Chrome をバイパスするプラグインからは印刷できます。たとえば、特定の Flash アプリケーションではコンテキスト メニューに印刷オプションが用意されており、それに対してこのポリシーは適用されません。</string><string id="QuicAllowed">QUIC プロトコルを許可する</string><string id="QuicAllowed_Explain">このポリシーを true に設定した場合や未設定の場合、Google Chrome での QUIC プロトコルの使用が許可されます。
+このポリシーを false に設定した場合、QUIC プロトコルの使用は許可されません。</string><string id="RebootAfterUpdate">更新後に自動再起動</string><string id="RebootAfterUpdate_Explain">Google Chrome OS のアップデート適用後に自動的に再起動するように設定します。
+
+このポリシーを true に設定すると、Google Chrome OS のアップデートが適用されてアップデート プロセスを完了するために再起動が必要な場合に、自動再起動が行われます。再起動はすぐに行うようにスケジュール設定されますが、その時間にユーザーがデバイスを使用していた場合、自動再起動の実行は最大 24 時間延期されます。
+
+このポリシーを false に設定すると、Google Chrome OS のアップデート適用後に自動再起動は行われません。ユーザーが次回デバイスを再起動したときにアップデート プロセスが完了します。
+
+管理者がこのポリシーを設定した場合は、ユーザーがその設定を変更したり、別の優先する設定を指定したりすることはできません。
+
+注: 現時点では、自動再起動が有効化されるのはログイン画面が表示されている間、またはキオスク アプリ セッションが進行中であるときに限られます。これは将来変更される予定であり、進行中のセッションの種類にかかわらず、ポリシーは常に適用されるようになります。</string><string id="RequireOnlineRevocationChecksForLocalAnchors">ローカルの信頼済みアンカーにオンラインの OCSP/CRL チェックが必要かどうかを示します</string><string id="RequireOnlineRevocationChecksForLocalAnchors_Explain">この設定が有効な場合、確認に成功しローカルのインストール済み CA 証明書で署名されたサーバー証明書に対し、Google Chrome は常に失効確認を行います。
+
+Google Chrome が失効のステータス情報を取得できない場合、該当の証明書は失効したものとして扱われます（強制エラー）。
+
+このポリシーが設定されていないか false に設定されている場合、Google Chrome は既存のオンライン失効確認設定を使用します。</string><string id="RunAllFlashInAllowMode">Flash コンテンツ設定をすべてのコンテンツに拡張する</string><string id="RunAllFlashInAllowMode_Explain">この設定を有効にした場合、ユーザーまたは会社ポリシーの指定によりコンテンツ設定で Flash が許可されているウェブサイトでは、埋め込まれているすべての Flash コンテンツ（他のソースからのコンテンツ、小さなコンテンツを含む）が実行されます。
+
+Flash の実行を許可するウェブサイトを指定する方法については、「DefaultPluginsSetting」、「PluginsAllowedForUrls」、「PluginsBlockedForUrls」の各ポリシーをご覧ください。
+
+この設定が無効に設定されているか未設定の場合、他のソースからの Flash コンテンツや小さなコンテンツはブロックされる可能性があります。</string><string id="SAMLOfflineSigninTimeLimit">SAML 経由で認証されたユーザーがオフラインでログインできる時間を制限する</string><string id="SAMLOfflineSigninTimeLimit_Explain">During login, Google Chrome OS can authenticate against a server (online) or using a cached password (offline).
+
+When this policy is set to a value of -1, the user can authenticate offline indefinitely. When this policy is set to any other value, it specifies the length of time since the last online authentication after which the user must use online authentication again.
+
+Leaving this policy not set will make Google Chrome OS use a default time limit of 14 days after which the user must use online authentication again.
+
+This policy affects only users who authenticated using SAML.
+
+The policy value should be specified in seconds.</string><string id="SSLErrorOverrideAllowed">SSL 警告ページから移動することを許可する</string><string id="SSLErrorOverrideAllowed_Explain">ユーザーが SSL エラーのあるサイトに移動しようとしたときに、Chrome では警告ページが表示されます。このポリシーを true に設定するか未設定のままにした場合、ユーザーは警告ページをクリックして次に進むことができます。
+このポリシーを false に設定した場合、ユーザーは警告ページから先に進むことはできません。</string><string id="SSLVersionMax">有効な SSL の最大バージョン</string><string id="SSLVersionMax_Explain">警告: TLS の最大バージョン ポリシーは、Google Chrome のバージョン 66 前後で完全に削除されます（2018 年 2 月頃）。
+
+このポリシーが未設定の場合、Google Chrome ではデフォルトの最大バージョンが使用されます。
+
+このポリシーを設定する場合は、「tls1.2」または「tls1.3」の値を指定できます。その場合、Google Chrome では、指定されたバージョンより大きい SSL / TLS バージョンは使用されません。また、認識されない値は無視されます。</string><string id="SSLVersionMax_TLSv1_2">TLS 1.2</string><string id="SSLVersionMax_TLSv1_3">TLS 1.3</string><string id="SafeBrowsingEnabled">セーフ ブラウジングを有効にする</string><string id="SafeBrowsingEnabled_Explain">Google Chrome のセーフ ブラウジング機能を有効にするとともに、ユーザーによる設定変更を禁止します。
+
+この設定を有効にした場合は、セーフ ブラウジングが常にアクティブになります。
+
+この設定を無効にした場合は、セーフ ブラウジングがアクティブになることはありません。
+
+この設定を有効または無効にした場合、ユーザーは、Google Chrome で [フィッシングや不正なソフトウェアからの保護を有効にする] 設定を変更またはオーバーライドできなくなります。
+
+このポリシーが未設定の場合、セーフ ブラウジングは有効になりますが、ユーザーはこの設定を変更できます。
+
+セーフ ブラウジングの詳細については、https://developers.google.com/safe-browsing をご覧ください。</string><string id="SafeBrowsingExtendedReportingOptInAllowed">セーフ ブラウジングの詳細レポートを有効にすることをユーザーに許可する</string><string id="SafeBrowsingExtendedReportingOptInAllowed_Explain">このポリシーを false に設定した場合、ユーザーは Google サーバーに一部のシステム情報やページのコンテンツを送信するよう指定できなくなります。このポリシーを true に設定するか未設定のままにした場合、ユーザーは危険なアプリやサイトの検出に役立てるために一部のシステム情報やページのコンテンツをセーフ ブラウジングに送信できます。
+
+セーフ ブラウジングの詳細については、https://developers.google.com/safe-browsing をご覧ください。</string><string id="SavingBrowserHistoryDisabled">ブラウザの履歴の保存を無効にする</string><string id="SavingBrowserHistoryDisabled_Explain">Google Chrome のブラウザ履歴の保存を無効にし、ユーザーがこの設定を変更できないようにします。
+
+この設定を有効にすると、閲覧履歴は保存されません。また、タブの同期も無効になります。
+
+この設定を無効にした場合、または未設定の場合は、閲覧履歴が保存されます。</string><string id="SearchSuggestEnabled">検索キーワード候補を有効にする</string><string id="SearchSuggestEnabled_Explain">Google Chrome のアドレスバーで検索キーワード候補の表示を有効にし、ユーザーがこの設定を変更できないようにします。
+
+この設定を有効にすると、検索キーワード候補が表示されるようになります。
+
+この設定を無効にすると、検索キーワード候補は表示されません。
+
+この設定を有効または無効にすると、ユーザーは Google Chrome でこの設定の変更やオーバーライドができなくなります。
+
+このポリシーが未設定の場合は有効になりますが、ユーザーはこの設定を変更できます。</string><string id="SessionLengthLimit">Limit the length of a user session</string><string id="SessionLengthLimit_Explain">When this policy is set, it specifies the length of time after which a user is automatically logged out, terminating the session. The user is informed about the remaining time by a countdown timer shown in the system tray.
+
+When this policy is not set, the session length is not limited.
+
+If you set this policy, users cannot change or override it.
+
+The policy value should be specified in milliseconds. Values are clamped to a range of 30 seconds to 24 hours.</string><string id="SessionLocales">公開セッション向けの推奨ロケールを設定する</string><string id="SessionLocales_Explain">公開セッションでの推奨する言語 / 地域を設定して、ユーザーがその中のいずれかを簡単に選択できるようにします。
+
+ユーザーは公開セッションを開始する前に言語 / 地域とキーボード レイアウトを選択できます。デフォルトでは、Google Chrome OS でサポートされる言語 / 地域はすべてアルファベット順にリストに表示されます。このポリシーを設定すると、推奨言語 / 地域をリストの最上位に移動することができます。
+
+このポリシーが未設定の場合、事前に選択された地域 / 言語が現在のユーザー インターフェースで使用されます。
+
+このポリシーを設定する場合、推奨言語 / 地域はリストの最上位に移動し、他の言語 / 地域とは区別されて表示されます。推奨言語 / 地域はポリシーで設定された順序でリストに表示されます。最上位の推奨される言語 / 地域が選択されています。
+
+推奨言語 / 地域が複数ある場合は、ユーザーがこれらの推奨言語 / 地域から選択することを前提としています。推奨言語 / 地域とキーボード レイアウトの選択方法は、公開セッションの開始時に目立つように表示されます。それ以外の場合は、ほとんどのユーザーが事前に選択された言語 / 地域を選択することを前提としています。この場合は、推奨言語 / 地域とキーボード レイアウトの選択方法は、公開セッションの開始時にあまり目立たないように表示されます。
+
+このポリシーを設定し、自動ログインが有効な場合（|DeviceLocalAccountAutoLoginId| ポリシーと |DeviceLocalAccountAutoLoginDelay| ポリシーを参照）、自動的に開始される公開セッションでは、先頭の推奨言語 / 地域と、その言語 / 地域での最も一般的なキーボード レイアウトが使用されます。
+
+事前に選択されるキーボード レイアウトは常に、事前に選択される言語 / 地域での最も一般的なレイアウトです。
+
+このポリシーについては推奨設定しかできません。このポリシーを使って、推奨言語 / 地域を最上位に移動することはできますが、ユーザーはセッションで Google Chrome OS でサポートされた言語 / 地域しか使用することはできません。
+</string><string id="SessionLocalesDesc">公開セッション向けの推奨ロケールを設定する</string><string id="ShelfAutoHideBehavior">シェルフの自動非表示を指定する</string><string id="ShelfAutoHideBehavior_Explain">Google Chrome OS のシェルフの自動非表示を指定します。
+
+このポリシーが「AlwaysAutoHideShelf」に設定されている場合、シェルフは常に自動的に非表示になります。
+
+このポリシーが「NeverAutoHideShelf」に設定されている場合、シェルフは自動的に非表示になりません。
+
+このポリシーを設定すると、ユーザーはこのポリシーを変更することもオーバーライドすることもできません。
+
+このポリシーが設定されていない場合、ユーザーはシェルフを自動的に非表示にするかどうかを選択できます。</string><string id="ShelfAutoHideBehavior_AlwaysAutoHideShelf">常にシェルフを自動的に非表示にする</string><string id="ShelfAutoHideBehavior_NeverAutoHideShelf">シェルフを自動的に非表示にしない</string><string id="ShowHomeButton">ツールバーにホーム ボタンを表示する</string><string id="ShowHomeButton_Explain">Google Chrome のツールバーにホーム ボタンを表示します。この設定を有効にすると、ホーム ボタンが常に表示されます。この設定を無効にすると、ホーム ボタンは表示されません。この設定を有効または無効にすると、ユーザーは Google Chrome でこの設定の変更やオーバーライドができなくなります。このポリシーが未設定の場合、ホーム ボタンを表示するかどうかをユーザーが選択できます。</string><string id="ShowLogoutButtonInTray">システム トレイにログアウト ボタンを追加する</string><string id="ShowLogoutButtonInTray_Explain">If enabled, a big, red logout button is shown in the system tray while a session is active and the screen is not locked.
+
+If disabled or not specified, no big, red logout button is shown in the system tray.</string><string id="SitePerProcess">すべてのサイトに対してサイト分離を有効にする</string><string id="SitePerProcess_Explain">
+注: このポリシーは試験運用版であり、動作に影響を及ぼす可能性があります。
+IsolateOrigins ポリシーの設定も参照し、状況に応じて使い分けてください。
+IsolateOrigins ポリシーでは、分離するサイトを指定し、
+ユーザーへの影響を限定します。
+この SitePerProcess の設定ではすべてのサイトを分離します。
+このポリシーが有効に設定されている場合、サイトはそれぞれ独自のプロセスで実行されます。
+このポリシーが無効に設定されている場合は、サイト分離前のプロセス管理ロジックが適用されます。
+このポリシーが未設定の場合、ユーザーはこの設定を変更できます。
+</string><string id="SpellCheckServiceEnabled">スペルチェック ウェブ サービスを有効または無効にする</string><string id="SpellCheckServiceEnabled_Explain">Google Chrome では、スペル ミスの解決に役立つ Google ウェブ サービスを使用できます。この設定を有効にすると、このサービスが常に使用されます。この設定を無効にすると、このサービスは使用できません。
+
+スペルチェックはダウンロードされた辞書を使って行うこともできます。このポリシーでは、オンライン サービスの利用のみをコントロールします。
+
+これが未設定の場合、スペルチェック サービスを使用するかどうかをユーザーが選択できます。</string><string id="SuppressUnsupportedOSWarning">サポート外の OS の警告を表示しない</string><string id="SuppressUnsupportedOSWarning_Explain">サポートされなくなったパソコンまたはオペレーティング システムで Google Chrome を実行する際、警告が表示されないようにします。</string><string id="SyncDisabled">Google とのデータの同期を無効にする</string><string id="SyncDisabled_Explain">Google でホストされる同期サービスを使用した Google Chrome でのデータ同期を無効にするとともに、ユーザーがこの設定を変更できないようにします。
+
+この設定を有効にした場合、ユーザーは Google Chrome でこの設定を変更したりオーバーライドしたりすることができなくなります。
+
+このポリシーを未設定のままにした場合、ユーザーは Google Sync を使用するかどうかを選択できます。
+
+Google Sync を完全に無効にするには、Google 管理コンソールで Google Sync サービスを無効にすることをおすすめします。
+
+RoamingProfileSupportEnabled ポリシーが有効に設定されている場合は、同じクライアントサイドの機能が共有されるため、このポリシーは有効にしないでください。この場合、Google でホストされる同期は完全に無効になります。</string><string id="SystemTimezone">タイムゾーン</string><string id="SystemTimezone_Explain">端末で使用するタイムゾーンを指定します。ユーザーは現在のセッションで別のタイムゾーンを使用できますが、ログアウトした時点で指定のタイムゾーンに戻ります。無効な値を指定した場合、このポリシーは有効になるものの、代わりに「GMT」が使用されます。空の文字列を指定した場合、このポリシーは無視されます。
+
+このポリシーが使用されない場合は、現在有効になっているタイムゾーンが引き続き使用されます。ただしユーザーはこのタイムゾーンを永続的に変更することができます。つまり、1 人のユーザーがタイムゾーンを変更すると、新しいタイムゾーンがログイン画面と他のすべてのユーザーにも適用されます。
+
+新しい端末の起動時のタイムゾーンは、「アメリカ太平洋標準時」に設定されます。
+
+値の形式は、「IANA Time Zone Database」（「https://ja.wikipedia.org/wiki/Tz_database」をご覧ください）のタイムゾーン名に沿ったものとなります。大半のタイムゾーンは、「大陸名/都市名」または「海洋名/都市名」で表すことができます。
+
+このポリシーを設定した場合、端末の所在地に基づくタイムゾーンの自動解決は完全に無効になります。また、このポリシーは SystemTimezoneAutomaticDetection ポリシーよりも優先されます。</string><string id="SystemTimezoneAutomaticDetection">タイムゾーン自動検出の方法を設定する</string><string id="SystemTimezoneAutomaticDetection_Explain">このポリシーが設定されている場合は、設定値に応じて次のいずれかの方法でタイムゾーンの自動検出が行われます。
+
+設定値が TimezoneAutomaticDetectionUsersDecide の場合は、ユーザーが chrome://settings にある通常の設定項目を使ってタイムゾーンの自動検出を設定できます。
+
+設定値が TimezoneAutomaticDetectionDisabled の場合、chrome://settings のタイムゾーンの自動検出に関する項目は無効になり、タイムゾーンの自動検出は常にオフになります。
+
+設定値が TimezoneAutomaticDetectionIPOnly の場合、chrome://settings のタイムゾーンの設定項目は無効になり、タイムゾーンの自動検出は常にオンになります。タイムゾーンの検出では、IP のみに基づく方法で地域が解決されます。
+
+設定値が TimezoneAutomaticDetectionSendWiFiAccessPoints の場合、chrome://settings のタイムゾーンの設定項目は無効になり、タイムゾーンの自動検出は常にオンになります。また、精度の高いタイムゾーン検出を行うために、検出された Wi-Fi アクセス ポイントのリストが常に Geolocation API サーバーに送信されます。
+
+設定値が TimezoneAutomaticDetectionSendAllLocationInfo の場合、chrome://settings のタイムゾーンの設定項目は無効になり、タイムゾーンの自動検出は常にオンになります。また、精度の高いタイムゾーン検出を行うために、Wi-Fi アクセス ポイント、近くの携帯電話基地局、GPS といった位置情報がサーバーに送信されます。
+
+このポリシーが設定されていない場合は、設定値が TimezoneAutomaticDetectionUsersDecide のときと同じ動作になります。
+
+SystemTimezone ポリシーが設定されている場合、このポリシーは無視され、タイムゾーンの自動検出は完全に無効になります。</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionUsersDecide">Let users decide</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionDisabled">Never auto-detect timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionIPOnly">Always use coarse timezone detection</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendWiFiAccessPoints">Always send WiFi access-points to server while resolving timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendAllLocationInfo">タイムゾーンを解決する際、常に利用可能な位置情報の信号をサーバーに送信する</string><string id="SystemUse24HourClock">デフォルトで 24 時間表示を使用</string><string id="SystemUse24HourClock_Explain">デバイスで使用する時刻表示形式を指定します。
+
+このポリシーでは、ログイン画面で使用する時刻表示形式を設定します。ここで設定した時刻表示形式は、ユーザー セッションのデフォルトとしても使用されます。このポリシーの設定にかかわらず、ユーザーは自分のアカウントの時刻表示形式をオーバーライドできます。
+
+このポリシーが true に設定されている場合、デバイスでは時刻が 24 時間形式で表示されます。false に設定されている場合、デバイスでは時刻が 12 時間形式で表示されます。
+
+このポリシーが設定されていない場合、デバイスではデフォルトとして時刻が 24 時間形式で表示されます。</string><string id="TPMFirmwareUpdateSettings">TPM ファームウェア アップデートの動作を設定する</string><string id="TPMFirmwareUpdateSettings_Explain">TPM ファームウェア アップデート機能が利用可能かどうか、利用可能な場合はその動作を設定します。
+
+個々の設定は JSON プロパティで指定できます。
+
+allow-user-initiated-powerwash: true に設定されている場合、ユーザーは TPM ファームウェア アップデートをインストールするために Powerwash のフローを開始できます。
+
+このポリシーが未設定の場合、TPM ファームウェア アップデート機能は利用できません。</string><string id="TaskManagerEndProcessEnabled">タスク マネージャでプロセスを終了できるようにする</string><string id="TaskManagerEndProcessEnabled_Explain">If set to false, the 'End process' button is disabled in the Task Manager.
+
+If set to true or not configured, the user can end processes in the Task Manager.</string><string id="TermsOfServiceURL">デバイスのローカル アカウントの利用規約を設定する</string><string id="TermsOfServiceURL_Explain">デバイスのローカル アカウントのセッションを開始する前にユーザーの同意が必要な利用規約を設定します。
+
+このポリシーを設定した場合、デバイスのローカル アカウントのセッションが開始されると、Google Chrome OS は利用規約をダウンロードしてユーザーに表示します。ユーザーが利用規約に同意した場合のみ、セッションの開始が許可されます。
+
+このポリシーを設定しないと、利用規約は表示されません。
+
+ポリシーは、Google Chrome OS による利用規約のダウンロードが可能な URL に設定する必要があります。利用規約はテキスト形式で、MIME タイプのプレーン テキストとして配信してください。マークアップ形式は使用できません。</string><string id="TouchVirtualKeyboardEnabled">仮想キーボードを有効にする</string><string id="TouchVirtualKeyboardEnabled_Explain">このポリシーでは、仮想キーボードを Chrome OS の入力デバイスとして有効にするよう設定します。ユーザーはこのポリシーをオーバーライドできません。
+
+このポリシーが true に設定されている場合、画面上の仮想キーボードが常に有効になります。
+
+false に設定されている場合、画面上の仮想キーボードは常に無効になります。
+
+このポリシーを設定した場合、ユーザーはこのポリシーを変更したりオーバーライドしたりすることはできません。ただし、ユーザーは画面キーボードのユーザー補助機能を有効または無効にすることができ、その設定内容は、このポリシーで制御される仮想キーボードよりも優先されます。画面キーボードのユーザー補助機能の制御については、|VirtualKeyboardEnabled| ポリシーをご覧ください。
+
+このポリシーが未設定の場合、初期状態では画面キーボードは無効ですが、ユーザーはいつでも画面キーボードを有効にできます。キーボードをいつ表示するかは、ヒューリスティックを使用して決定することもできます。</string><string id="TranslateEnabled">翻訳を有効にする</string><string id="TranslateEnabled_Explain">Google Chrome に統合された Google 翻訳サービスを有効にします。この設定を有効にすると、必要に応じてユーザーがページを翻訳できる統合ツールバー サービスが Google Chrome に表示されます。この設定を無効にすると、翻訳バーは表示されません。この設定を有効または無効にすると、ユーザーは Google Chrome でこの設定の変更やオーバーライドができなくなります。未設定の場合は、この機能を使用するかどうかをユーザーが指定できます。</string><string id="URLBlacklist">URL のリストへのアクセスをブロックする</string><string id="URLBlacklist_Explain">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
+
+A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+
+Exceptions can be defined in the URL whitelist policy. These policies are limited to 1000 entries; subsequent entries will be ignored.
+
+Note that it is not recommended to block internal 'chrome://*' URLs since this may lead to unexpected errors.
+
+If this policy is not set no URL will be blacklisted in the browser.</string><string id="URLBlacklistDesc">URL のリストへのアクセスをブロックする</string><string id="URLWhitelist">URL のリストへのアクセスを許可する</string><string id="URLWhitelist_Explain">URL ブラックリストの例外として、リストに登録された URL へのアクセスを許可します。
+
+このリストのエントリ形式については、URL ブラックリスト ポリシーの説明をご覧ください。
+
+このポリシーを使用すると、アクセスを制限するブラックリストに対して例外を設定できます。たとえば、ブラックリストに「*」を指定するとすべてのリクエストがブロックされますが、このポリシーを使用すると、一部の URL に対してアクセスを許可できます。特定のスキーム、他のドメインのサブドメイン、ポート、任意のパスについて例外を設定できます。
+
+URL がブロックされるか許可されるかは、最も詳細なフィルタによって決定されます。ホワイトリストはブラックリストよりも優先されます。
+
+このポリシーに登録できるエントリは 1000 件までです。それ以降のエントリは無視されます。
+
+このポリシーが未設定の場合、「URLBlacklist」ポリシーのブラックリストに対して例外は適用されません。</string><string id="URLWhitelistDesc">URL のリストへのアクセスを許可する</string><string id="UnifiedDesktopEnabledByDefault">Make Unified Desktop available and turn on by default</string><string id="UnifiedDesktopEnabledByDefault_Explain">このポリシーが true に設定されている場合、統合デスクトップは使用可能となり、
+既定で有効になります。この場合、複数のディスプレイをまたいで
+アプリケーションを表示することができます。ユーザーは個々のディスプレイで
+統合デスクトップを無効にすることができます。それには、ディスプレイの設定で
+該当のチェックボックスをオフにします。
+
+このポリシーが false に設定されているか未設定の場合、統合デスクトップは
+無効になります。この場合、ユーザーがこの機能を有効にすることは
+できません。</string><string id="UsbDetachableWhitelist">USB 分離可能デバイスのホワイトリスト</string><string id="UsbDetachableWhitelist_Explain">ウェブ アプリケーション内で直接 chrome.usb API を通じて USB デバイスを使用できるように、カーネル ドライバからの分離が可能な USB デバイスの一覧を定義します。USB ベンダー ID と商品 ID をペアで入力し、個々のハードウェアを特定できるようにします。
+
+このポリシーが設定されていない場合、分離可能な USB デバイスのリストは空になります。</string><string id="UsbDetachableWhitelistDesc">USB 分離可能デバイスのホワイトリスト</string><string id="UserAvatarImage">ユーザーのアバター画像</string><string id="UserAvatarImage_Explain">This policy allows you to configure the avatar image representing the user on the login screen. The policy is set by specifying the URL from which Google Chrome OS can download the avatar image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its size must not exceed 512kB. The URL must be accessible without any authentication.
+
+The avatar image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the avatar image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the avatar image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the avatar image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose the avatar image representing them on the login screen.</string><string id="UserDisplayName">デバイスのローカル アカウントの表示名を設定する</string><string id="UserDisplayName_Explain">対応するデバイスのローカル アカウントに対し、ログイン画面でアカウント名 Google Chrome OS を表示するかどうかを指定します。
+
+このポリシーが設定されている場合、対応するデバイスのローカル アカウントに対し、ログイン画面では画像ベースのログイン選択ツール内で指定の文字列が使用されます。
+
+このポリシーが設定されていない場合、Google Chrome OS はログイン画面での表示名としてデバイスのローカル アカウントのメール アカウント ID を使用します。
+
+このポリシーは、通常のユーザー アカウントでは無視されます。</string><string id="VideoCaptureAllowed">動画キャプチャを許可または拒否する</string><string id="VideoCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+video capture access except for URLs configured in the
+VideoCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and video
+capture only be available to URLs configured in VideoCaptureAllowedUrls.
+
+This policy affects all types of video inputs and not only the built-in camera.</string><string id="VideoCaptureAllowedUrls">ユーザー確認なしで動画キャプチャ デバイスへのアクセスが許可される URL</string><string id="VideoCaptureAllowedUrls_Explain">このリストに指定されているパターンと、リクエスト元 URL のセキュリティ オリジンが照合されます。一致するものが見つかった場合は、音声キャプチャ デバイスへのアクセスが確認なしで許可されます。
+
+注: バージョン 45 以前は、このポリシーはキオスクモードでのみサポートされていました。</string><string id="VideoCaptureAllowedUrlsDesc">ユーザー確認なしで動画キャプチャ デバイスへのアクセスが許可される URL</string><string id="WPADQuickCheckEnabled">WPAD 最適化を有効にする</string><string id="WPADQuickCheckEnabled_Explain">Google Chrome で WPAD（ウェブプロキシ自動検出）の最適化を無効にできます。
+
+このポリシーを false に設定すると、WPAD の最適化は無効になり、DNS ベースの WPAD サーバーに対する Google Chrome の待機間隔が長くなります。このポリシーを未設定または有効にすると、WPAD の最適化は有効になります。
+
+このポリシーの設定に関係なく、ユーザーは WPAD の最適化設定を変更できません。</string><string id="WallpaperImage">壁紙の画像</string><string id="WallpaperImage_Explain">This policy allows you to configure the wallpaper image that is shown on the desktop and on the login screen background for the user. The policy is set by specifying the URL from which Google Chrome OS can download the wallpaper image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its file size must not exceed 16MB. The URL must be accessible without any authentication.
+
+The wallpaper image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the wallpaper image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the wallpaper image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the wallpaper image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose an image to be shown on the desktop and on the login screen background.</string><string id="WebRtcUdpPortRange">WebRTC が使用するローカル UDP ポートの範囲を制限する</string><string id="WebRtcUdpPortRange_Explain">ポリシーが設定されている場合、WebRTC が使用する UDP ポートの範囲は指定されたポートの間隔（エンドポイントも含む）に制限されます。
+
+ポリシーが未設定の場合、または空の文字列や無効なポートの範囲が設定されている場合は、WebRTC は使用可能なローカルの UDP ポートを使用することができます。</string></stringTable><presentationTable><presentation id="EnableMediaRouter"/><presentation id="ShowCastIconInToolbar"/><presentation id="DriveDisabled"/><presentation id="DriveDisabledOverCellular"/><presentation id="AuthSchemes"><textBox refId="AuthSchemes"><label>サポートされる認証スキーム</label></textBox></presentation><presentation id="DisableAuthNegotiateCnameLookup"/><presentation id="EnableAuthNegotiatePort"/><presentation id="AuthServerWhitelist"><textBox refId="AuthServerWhitelist"><label>認証サーバーのホワイトリスト</label></textBox></presentation><presentation id="AuthNegotiateDelegateWhitelist"><textBox refId="AuthNegotiateDelegateWhitelist"><label>Kerberos 委任サーバーのホワイトリスト</label></textBox></presentation><presentation id="AllowCrossOriginAuthPrompt"/><presentation id="DefaultCookiesSetting"><dropdownList refId="DefaultCookiesSetting">デフォルトの Cookie 設定</dropdownList></presentation><presentation id="DefaultImagesSetting"><dropdownList refId="DefaultImagesSetting">デフォルト画像設定</dropdownList></presentation><presentation id="DefaultJavaScriptSetting"><dropdownList refId="DefaultJavaScriptSetting">デフォルトのJavascript 設定</dropdownList></presentation><presentation id="DefaultPluginsSetting"><dropdownList refId="DefaultPluginsSetting">デフォルトの Flash 設定</dropdownList></presentation><presentation id="DefaultPopupsSetting"><dropdownList refId="DefaultPopupsSetting">デフォルトのポップアップ設定</dropdownList></presentation><presentation id="DefaultNotificationsSetting"><dropdownList refId="DefaultNotificationsSetting">デフォルトの通知設定</dropdownList></presentation><presentation id="DefaultGeolocationSetting"><dropdownList refId="DefaultGeolocationSetting">デフォルトの位置情報設定</dropdownList></presentation><presentation id="DefaultWebBluetoothGuardSetting"><dropdownList refId="DefaultWebBluetoothGuardSetting">Web Bluetooth API の使用を管理する</dropdownList></presentation><presentation id="AutoSelectCertificateForUrls"><listBox refId="AutoSelectCertificateForUrlsDesc">これらのサイトのクライアント証明書を自動的に選択する</listBox></presentation><presentation id="CookiesAllowedForUrls"><listBox refId="CookiesAllowedForUrlsDesc">これらのサイトの Cookie を許可する</listBox></presentation><presentation id="CookiesBlockedForUrls"><listBox refId="CookiesBlockedForUrlsDesc">これらのサイトの Cookie をブロックする</listBox></presentation><presentation id="CookiesSessionOnlyForUrls"><listBox refId="CookiesSessionOnlyForUrlsDesc">これらのサイトのセッションのみの Cookie を許可する</listBox></presentation><presentation id="ImagesAllowedForUrls"><listBox refId="ImagesAllowedForUrlsDesc">これらのサイトの画像を許可する</listBox></presentation><presentation id="ImagesBlockedForUrls"><listBox refId="ImagesBlockedForUrlsDesc">これらのサイトの画像をブロックする</listBox></presentation><presentation id="JavaScriptAllowedForUrls"><listBox refId="JavaScriptAllowedForUrlsDesc">これらのサイトの Javascript を許可する</listBox></presentation><presentation id="JavaScriptBlockedForUrls"><listBox refId="JavaScriptBlockedForUrlsDesc">これらのサイトの Javascript をブロックする</listBox></presentation><presentation id="PluginsAllowedForUrls"><listBox refId="PluginsAllowedForUrlsDesc">これらのサイトで Flash プラグインを許可する</listBox></presentation><presentation id="PluginsBlockedForUrls"><listBox refId="PluginsBlockedForUrlsDesc">これらのサイトで Flash プラグインをブロックする</listBox></presentation><presentation id="PopupsAllowedForUrls"><listBox refId="PopupsAllowedForUrlsDesc">これらのサイトのポップアップを許可する</listBox></presentation><presentation id="RegisteredProtocolHandlers"><textBox refId="RegisteredProtocolHandlers"><label>プロトコル ハンドラを登録する</label></textBox></presentation><presentation id="PopupsBlockedForUrls"><listBox refId="PopupsBlockedForUrlsDesc">これらのサイトのポップアップをブロックする</listBox></presentation><presentation id="NotificationsAllowedForUrls"><listBox refId="NotificationsAllowedForUrlsDesc">これらのサイトの通知を許可する</listBox></presentation><presentation id="NotificationsBlockedForUrls"><listBox refId="NotificationsBlockedForUrlsDesc">これらのサイトの通知をブロックする</listBox></presentation><presentation id="DefaultSearchProviderEnabled"/><presentation id="DefaultSearchProviderName"><textBox refId="DefaultSearchProviderName"><label>デフォルトの検索プロバイダ名</label></textBox></presentation><presentation id="DefaultSearchProviderKeyword"><textBox refId="DefaultSearchProviderKeyword"><label>デフォルトの検索プロバイダのキーワード</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURL"><textBox refId="DefaultSearchProviderSearchURL"><label>デフォルトの検索プロバイダの検索 URL</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURL"><textBox refId="DefaultSearchProviderSuggestURL"><label>デフォルト検索プロバイダ サジェスト URL</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURL"><textBox refId="DefaultSearchProviderInstantURL"><label>デフォルトの検索プロバイダのインスタント検索 URL</label></textBox></presentation><presentation id="DefaultSearchProviderIconURL"><textBox refId="DefaultSearchProviderIconURL"><label>デフォルトの検索プロバイダ アイコン</label></textBox></presentation><presentation id="DefaultSearchProviderEncodings"><listBox refId="DefaultSearchProviderEncodingsDesc">デフォルトの検索プロバイダのエンコード</listBox></presentation><presentation id="DefaultSearchProviderAlternateURLs"><listBox refId="DefaultSearchProviderAlternateURLsDesc">デフォルトの検索プロバイダが使用する代替 URL のリスト</listBox></presentation><presentation id="DefaultSearchProviderSearchTermsReplacementKey"><textBox refId="DefaultSearchProviderSearchTermsReplacementKey"><label>デフォルトの検索プロバイダに対する検索キーワードの置き換えを指定するパラメータ</label></textBox></presentation><presentation id="DefaultSearchProviderImageURL"><textBox refId="DefaultSearchProviderImageURL"><label>既定の検索プロバイダに画像検索機能を提供するパラメータ</label></textBox></presentation><presentation id="DefaultSearchProviderNewTabURL"><textBox refId="DefaultSearchProviderNewTabURL"><label>デフォルトの検索プロバイダの新しいタブ ページ URL</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURLPostParams"><textBox refId="DefaultSearchProviderSearchURLPostParams"><label>POST を使用する検索 URL のパラメータ</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURLPostParams"><textBox refId="DefaultSearchProviderSuggestURLPostParams"><label>POST を使用するキーワード候補による検索 URL のパラメータ</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURLPostParams"><textBox refId="DefaultSearchProviderInstantURLPostParams"><label>POST を使用するインスタント検索 URL のパラメータ</label></textBox></presentation><presentation id="DefaultSearchProviderImageURLPostParams"><textBox refId="DefaultSearchProviderImageURLPostParams"><label>POST を使用する画像 URL のパラメータ</label></textBox></presentation><presentation id="PasswordManagerEnabled"/><presentation id="ProxyMode"><dropdownList refId="ProxyMode">プロキシ サーバー設定の指定方法を選択する</dropdownList></presentation><presentation id="ProxyServer"><textBox refId="ProxyServer"><label>プロキシ サーバーのアドレスまたは URL</label></textBox></presentation><presentation id="ProxyPacUrl"><textBox refId="ProxyPacUrl"><label>プロキシ .pac ファイルへの URL</label></textBox></presentation><presentation id="ProxyBypassList"><textBox refId="ProxyBypassList"><label>プロキシ バイパス ルールのカンマ区切りリスト</label></textBox></presentation><presentation id="HomepageLocation"><textBox refId="HomepageLocation"><label>ホームページの URL</label></textBox></presentation><presentation id="HomepageIsNewTabPage"/><presentation id="ShowAccessibilityOptionsInSystemTrayMenu"/><presentation id="LargeCursorEnabled"/><presentation id="SpokenFeedbackEnabled"/><presentation id="HighContrastEnabled"/><presentation id="VirtualKeyboardEnabled"/><presentation id="KeyboardDefaultToFunctionKeys"/><presentation id="ScreenMagnifierType"><dropdownList refId="ScreenMagnifierType">画面拡大鏡のタイプを設定する</dropdownList></presentation><presentation id="DeviceLoginScreenDefaultLargeCursorEnabled"/><presentation id="DeviceLoginScreenDefaultSpokenFeedbackEnabled"/><presentation id="DeviceLoginScreenDefaultHighContrastEnabled"/><presentation id="DeviceLoginScreenDefaultVirtualKeyboardEnabled"/><presentation id="DeviceLoginScreenDefaultScreenMagnifierType"><dropdownList refId="DeviceLoginScreenDefaultScreenMagnifierType">ログイン画面で有効にする画面拡大鏡のデフォルトのタイプを設定する</dropdownList></presentation><presentation id="RemoteAccessHostClientDomainList"><listBox refId="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</listBox></presentation><presentation id="RemoteAccessHostFirewallTraversal"/><presentation id="RemoteAccessHostDomainList"><listBox refId="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</listBox></presentation><presentation id="RemoteAccessHostTalkGadgetPrefix"><textBox refId="RemoteAccessHostTalkGadgetPrefix"><label>リモート アクセス ホストに TalkGadget プレフィックスを設定する</label></textBox></presentation><presentation id="RemoteAccessHostRequireCurtain"/><presentation id="RemoteAccessHostAllowClientPairing"/><presentation id="RemoteAccessHostAllowGnubbyAuth"/><presentation id="RemoteAccessHostAllowRelayedConnection"/><presentation id="RemoteAccessHostUdpPortRange"><textBox refId="RemoteAccessHostUdpPortRange"><label>リモート アクセス ホストが使用する UDP ポートの範囲を制限する</label></textBox></presentation><presentation id="RemoteAccessHostMatchUsername"/><presentation id="RemoteAccessHostTokenUrl"><textBox refId="RemoteAccessHostTokenUrl"><label>リモート アクセス クライアントが認証トークンを取得する URL</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationUrl"><textBox refId="RemoteAccessHostTokenValidationUrl"><label>リモート アクセス クライアントの認証トークンを検証するための URL</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationCertificateIssuer"><textBox refId="RemoteAccessHostTokenValidationCertificateIssuer"><label>RemoteAccessHostTokenValidationUrl への接続用のクライアント証明書</label></textBox></presentation><presentation id="AttestationEnabledForUser"/><presentation id="AttestationExtensionWhitelist"><listBox refId="AttestationExtensionWhitelistDesc">Remote Attestation API の使用が許可されている拡張機能</listBox></presentation><presentation id="QuickUnlockModeWhitelist"><listBox refId="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</listBox></presentation><presentation id="QuickUnlockTimeout"><dropdownList refId="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</dropdownList></presentation><presentation id="PinUnlockMinimumLength"><decimalTextBox refId="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockMaximumLength"><decimalTextBox refId="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockWeakPinsAllowed"/><presentation id="ExtensionInstallBlacklist"><listBox refId="ExtensionInstallBlacklistDesc">ユーザーに対してインストールを禁止する拡張機能 ID (すべて指定する場合は *)</listBox></presentation><presentation id="ExtensionInstallWhitelist"><listBox refId="ExtensionInstallWhitelistDesc">ブラックリストから除外する拡張機能 ID</listBox></presentation><presentation id="ExtensionInstallForcelist"><listBox refId="ExtensionInstallForcelistDesc">サイレント インストールされる拡張機能 / アプリの ID と更新 URL</listBox></presentation><presentation id="ExtensionInstallSources"><listBox refId="ExtensionInstallSourcesDesc">拡張機能、アプリ、ユーザー スクリプトのインストールを許可する URL パターン</listBox></presentation><presentation id="ExtensionAllowedTypes"><listBox refId="ExtensionAllowedTypesDesc">インストールが許可されている拡張機能/アプリのタイプ</listBox></presentation><presentation id="ExtensionSettings"><textBox refId="ExtensionSettings"><label>拡張機能の管理設定</label></textBox></presentation><presentation id="NewTabPageLocation"><textBox refId="NewTabPageLocation"><label>新しいタブページ URL</label></textBox></presentation><presentation id="RestoreOnStartup"><dropdownList refId="RestoreOnStartup">起動時の操作</dropdownList></presentation><presentation id="RestoreOnStartupURLs"><listBox refId="RestoreOnStartupURLsDesc">起動時に開く URL</listBox></presentation><presentation id="LidCloseAction"><dropdownList refId="LidCloseAction">ユーザーがデバイスの蓋を閉じた際に行われる操作</dropdownList></presentation><presentation id="PowerManagementUsesAudioActivity"/><presentation id="PowerManagementUsesVideoActivity"/><presentation id="PresentationScreenDimDelayScale"><decimalTextBox refId="PresentationScreenDimDelayScale">プレゼンテーション モードで画面を暗くするまでの時間に掛ける倍率:</decimalTextBox></presentation><presentation id="AllowScreenWakeLocks"/><presentation id="UserActivityScreenDimDelayScale"><decimalTextBox refId="UserActivityScreenDimDelayScale">画面が暗くなった後でユーザーが操作を行ったときに画面を暗くするまでの時間に掛ける倍率:</decimalTextBox></presentation><presentation id="WaitForInitialUserActivity"/><presentation id="PowerManagementIdleSettings"><textBox refId="PowerManagementIdleSettings"><label>ユーザーがアイドル状態になったときの電源管理設定</label></textBox></presentation><presentation id="ScreenLockDelays"><textBox refId="ScreenLockDelays"><label>画面ロック遅延時間</label></textBox></presentation><presentation id="AllowDeletingBrowserHistory"/><presentation id="AllowDinosaurEasterEgg"/><presentation id="AllowOutdatedPlugins"/><presentation id="AllowScreenLock"/><presentation id="AllowedDomainsForApps"><textBox refId="AllowedDomainsForApps"><label>Google Apps へのアクセスを許可するドメインを定義する</label></textBox></presentation><presentation id="AlternateErrorPagesEnabled"/><presentation id="AlwaysAuthorizePlugins"/><presentation id="ArcBackupRestoreEnabled"/><presentation id="ArcCertificatesSyncMode"><dropdownList refId="ArcCertificatesSyncMode">ARC アプリで証明書を使用できるかどうかを設定します</dropdownList></presentation><presentation id="ArcEnabled"/><presentation id="ArcLocationServiceEnabled"/><presentation id="ArcPolicy"><textBox refId="ArcPolicy"><label>ARC を設定する</label></textBox></presentation><presentation id="AudioCaptureAllowed"/><presentation id="AudioCaptureAllowedUrls"><listBox refId="AudioCaptureAllowedUrlsDesc">ユーザー確認なしで音声キャプチャ デバイスへのアクセスが許可される URL</listBox></presentation><presentation id="AudioOutputAllowed"/><presentation id="AutoFillEnabled"/><presentation id="AutofillCreditCardEnabled"/><presentation id="BlockThirdPartyCookies"/><presentation id="BookmarkBarEnabled"/><presentation id="CaptivePortalAuthenticationIgnoresProxy"/><presentation id="CertificateTransparencyEnforcementDisabledForUrls"><listBox refId="CertificateTransparencyEnforcementDisabledForUrlsDesc">指定した URL に対して証明書の透明性ポリシーの適用を無効にする</listBox></presentation><presentation id="ChromeOsLockOnIdleSuspend"/><presentation id="ChromeOsMultiProfileUserBehavior"><dropdownList refId="ChromeOsMultiProfileUserBehavior">マルチプロフィール セッションでのユーザーの動作を制御する</dropdownList></presentation><presentation id="ChromeOsReleaseChannel"><dropdownList refId="ChromeOsReleaseChannel">リリース チャンネル</dropdownList></presentation><presentation id="ChromeOsReleaseChannelDelegated"/><presentation id="ComponentUpdatesEnabled"/><presentation id="DefaultPrinterSelection"><textBox refId="DefaultPrinterSelection"><label>デフォルト プリンタ選択ルール</label></textBox></presentation><presentation id="DeveloperToolsDisabled"/><presentation id="DeviceAllowBluetooth"/><presentation id="DeviceAllowNewUsers"/><presentation id="DeviceAllowRedeemChromeOsRegistrationOffers"/><presentation id="DeviceAutoUpdateDisabled"/><presentation id="DeviceAutoUpdateP2PEnabled"/><presentation id="DeviceBlockDevmode"/><presentation id="DeviceDataRoamingEnabled"/><presentation id="DeviceEphemeralUsersEnabled"/><presentation id="DeviceGuestModeEnabled"/><presentation id="DeviceLoginScreenAppInstallList"><listBox refId="DeviceLoginScreenAppInstallListDesc">ログイン画面でインストールするアプリのリストを設定する</listBox></presentation><presentation id="DeviceLoginScreenInputMethods"><listBox refId="DeviceLoginScreenInputMethodsDesc">端末のログイン画面のキーボード配列</listBox></presentation><presentation id="DeviceLoginScreenLocales"><listBox refId="DeviceLoginScreenLocalesDesc">端末のログイン画面の言語 / 地域</listBox></presentation><presentation id="DeviceLoginScreenPowerManagement"><textBox refId="DeviceLoginScreenPowerManagement"><label>ログイン画面の電源管理</label></textBox></presentation><presentation id="DeviceMetricsReportingEnabled"/><presentation id="DeviceNativePrinters"><textBox refId="DeviceNativePrinters"><label>デバイスの企業プリンタ設定ファイル</label></textBox></presentation><presentation id="DeviceNativePrintersAccessMode"><dropdownList refId="DeviceNativePrintersAccessMode">デバイス プリンタの設定へのアクセス ポリシー</dropdownList></presentation><presentation id="DeviceNativePrintersBlacklist"><listBox refId="DeviceNativePrintersBlacklistDesc">無効な企業デバイス プリンタ</listBox></presentation><presentation id="DeviceNativePrintersWhitelist"><listBox refId="DeviceNativePrintersWhitelistDesc">有効な企業デバイス プリンタ</listBox></presentation><presentation id="DeviceOffHours"><textBox refId="DeviceOffHours"><label>デバイスの OffHours |ignored_policy_proto_tags| が解除されたときの管理外時間の間隔</label></textBox></presentation><presentation id="DeviceOpenNetworkConfiguration"><textBox refId="DeviceOpenNetworkConfiguration"><label>デバイス レベルのネットワーク設定</label></textBox></presentation><presentation id="DevicePolicyRefreshRate"><decimalTextBox refId="DevicePolicyRefreshRate">端末ポリシーの更新間隔:</decimalTextBox></presentation><presentation id="DeviceQuirksDownloadEnabled"/><presentation id="DeviceRebootOnShutdown"/><presentation id="DeviceShowUserNamesOnSignin"/><presentation id="DeviceStartUpFlags"><listBox refId="DeviceStartUpFlagsDesc">Google Chrome 起動時にシステム全体のフラグを適用</listBox></presentation><presentation id="DeviceTargetVersionPrefix"><textBox refId="DeviceTargetVersionPrefix"><label>自動更新の対象バージョンを指定</label></textBox></presentation><presentation id="DeviceUpdateAllowedConnectionTypes"><listBox refId="DeviceUpdateAllowedConnectionTypesDesc">更新で許可される接続タイプ</listBox></presentation><presentation id="DeviceUpdateHttpDownloadsEnabled"/><presentation id="DeviceUpdateScatterFactor"><decimalTextBox refId="DeviceUpdateScatterFactor">自動更新の散乱係数:</decimalTextBox></presentation><presentation id="DeviceUserWhitelist"><listBox refId="DeviceUserWhitelistDesc">ログイン ユーザーのホワイト リスト</listBox></presentation><presentation id="DeviceWallpaperImage"><textBox refId="DeviceWallpaperImage"><label>デバイスの壁紙画像</label></textBox></presentation><presentation id="Disable3DAPIs"/><presentation id="DisablePluginFinder"/><presentation id="DisableSafeBrowsingProceedAnyway"/><presentation id="DisableScreenshots"/><presentation id="DisplayRotationDefault"><dropdownList refId="DisplayRotationDefault">再起動のたびにデフォルトのディスプレイ回転方法を再適用する</dropdownList></presentation><presentation id="DownloadDirectory"><textBox refId="DownloadDirectory"><label>ダウンロード ディレクトリを設定する</label></textBox></presentation><presentation id="DownloadRestrictions"><dropdownList refId="DownloadRestrictions">ダウンロードの制限</dropdownList></presentation><presentation id="EasyUnlockAllowed"/><presentation id="EcryptfsMigrationStrategy"><dropdownList refId="EcryptfsMigrationStrategy">ecryptfs の移行方法</dropdownList></presentation><presentation id="EditBookmarksEnabled"/><presentation id="EnableCommonNameFallbackForLocalAnchors"/><presentation id="EnableDeprecatedWebPlatformFeatures"><listBox refId="EnableDeprecatedWebPlatformFeaturesDesc">サポートが終了しているウェブ プラットフォームの機能を一定の期間有効にする</listBox></presentation><presentation id="EnableOnlineRevocationChecks"/><presentation id="EnableSha1ForLocalAnchors"/><presentation id="ExternalStorageDisabled"/><presentation id="ExternalStorageReadOnly"/><presentation id="ForceGoogleSafeSearch"/><presentation id="ForceMaximizeOnFirstRun"/><presentation id="ForceYouTubeRestrict"><dropdownList refId="ForceYouTubeRestrict">YouTube で一定レベル以上の制限付きモードを強制する</dropdownList></presentation><presentation id="FullscreenAllowed"/><presentation id="Http09OnNonDefaultPortsEnabled"/><presentation id="IncognitoModeAvailability"><dropdownList refId="IncognitoModeAvailability">シークレット モードが利用可能かどうかを設定する</dropdownList></presentation><presentation id="InstantTetheringAllowed"/><presentation id="IsolateOrigins"><textBox refId="IsolateOrigins"><label>指定した発行元に対してサイト分離を有効にする</label></textBox></presentation><presentation id="KeyPermissions"><textBox refId="KeyPermissions"><label>キーの権限</label></textBox></presentation><presentation id="ManagedBookmarks"><textBox refId="ManagedBookmarks"><label>管理対象のブックマーク</label></textBox></presentation><presentation id="MaxInvalidationFetchDelay"><decimalTextBox refId="MaxInvalidationFetchDelay">ポリシーの失効から取得までの最大時間:</decimalTextBox></presentation><presentation id="NativePrinters"><listBox refId="NativePrintersDesc">ネイティブ印刷</listBox></presentation><presentation id="NativePrintersBulkAccessMode"><dropdownList refId="NativePrintersBulkAccessMode">プリンタの設定へのアクセス ポリシー</dropdownList></presentation><presentation id="NativePrintersBulkBlacklist"><listBox refId="NativePrintersBulkBlacklistDesc">無効な企業プリンタ</listBox></presentation><presentation id="NativePrintersBulkConfiguration"><textBox refId="NativePrintersBulkConfiguration"><label>企業プリンタの設定ファイル</label></textBox></presentation><presentation id="NativePrintersBulkWhitelist"><listBox refId="NativePrintersBulkWhitelistDesc">有効な企業プリンタ</listBox></presentation><presentation id="NetworkPredictionOptions"><dropdownList refId="NetworkPredictionOptions">ネットワーク予測を有効にする</dropdownList></presentation><presentation id="NoteTakingAppsLockScreenWhitelist"><listBox refId="NoteTakingAppsLockScreenWhitelistDesc">Google Chrome OS のロック画面で使用できるメモ作成アプリをホワイトリスト登録する</listBox></presentation><presentation id="OpenNetworkConfiguration"><textBox refId="OpenNetworkConfiguration"><label>ユーザー レベルのネットワーク設定</label></textBox></presentation><presentation id="PacHttpsUrlStrippingEnabled"/><presentation id="PinnedLauncherApps"><listBox refId="PinnedLauncherAppsDesc">ランチャーに表示する固定アプリのリスト</listBox></presentation><presentation id="PolicyRefreshRate"><decimalTextBox refId="PolicyRefreshRate">ユーザー ポリシーの更新間隔:</decimalTextBox></presentation><presentation id="PrintingEnabled"/><presentation id="QuicAllowed"/><presentation id="RebootAfterUpdate"/><presentation id="RequireOnlineRevocationChecksForLocalAnchors"/><presentation id="RunAllFlashInAllowMode"/><presentation id="SAMLOfflineSigninTimeLimit"><decimalTextBox refId="SAMLOfflineSigninTimeLimit">SAML 経由で認証されたユーザーがオフラインでログインできる時間を制限する:</decimalTextBox></presentation><presentation id="SSLErrorOverrideAllowed"/><presentation id="SSLVersionMax"><dropdownList refId="SSLVersionMax">有効な SSL の最大バージョン</dropdownList></presentation><presentation id="SafeBrowsingEnabled"/><presentation id="SafeBrowsingExtendedReportingOptInAllowed"/><presentation id="SavingBrowserHistoryDisabled"/><presentation id="SearchSuggestEnabled"/><presentation id="SessionLengthLimit"><decimalTextBox refId="SessionLengthLimit">Limit the length of a user session:</decimalTextBox></presentation><presentation id="SessionLocales"><listBox refId="SessionLocalesDesc">公開セッション向けの推奨ロケールを設定する</listBox></presentation><presentation id="ShelfAutoHideBehavior"><dropdownList refId="ShelfAutoHideBehavior">シェルフの自動非表示を指定する</dropdownList></presentation><presentation id="ShowHomeButton"/><presentation id="ShowLogoutButtonInTray"/><presentation id="SitePerProcess"/><presentation id="SpellCheckServiceEnabled"/><presentation id="SuppressUnsupportedOSWarning"/><presentation id="SyncDisabled"/><presentation id="SystemTimezone"><textBox refId="SystemTimezone"><label>タイムゾーン</label></textBox></presentation><presentation id="SystemTimezoneAutomaticDetection"><dropdownList refId="SystemTimezoneAutomaticDetection">タイムゾーン自動検出の方法を設定する</dropdownList></presentation><presentation id="SystemUse24HourClock"/><presentation id="TPMFirmwareUpdateSettings"><textBox refId="TPMFirmwareUpdateSettings"><label>TPM ファームウェア アップデートの動作を設定する</label></textBox></presentation><presentation id="TaskManagerEndProcessEnabled"/><presentation id="TermsOfServiceURL"><textBox refId="TermsOfServiceURL"><label>デバイスのローカル アカウントの利用規約を設定する</label></textBox></presentation><presentation id="TouchVirtualKeyboardEnabled"/><presentation id="TranslateEnabled"/><presentation id="URLBlacklist"><listBox refId="URLBlacklistDesc">URL のリストへのアクセスをブロックする</listBox></presentation><presentation id="URLWhitelist"><listBox refId="URLWhitelistDesc">URL のリストへのアクセスを許可する</listBox></presentation><presentation id="UnifiedDesktopEnabledByDefault"/><presentation id="UsbDetachableWhitelist"><listBox refId="UsbDetachableWhitelistDesc">USB 分離可能デバイスのホワイトリスト</listBox></presentation><presentation id="UserAvatarImage"><textBox refId="UserAvatarImage"><label>ユーザーのアバター画像</label></textBox></presentation><presentation id="UserDisplayName"><textBox refId="UserDisplayName"><label>デバイスのローカル アカウントの表示名を設定する</label></textBox></presentation><presentation id="VideoCaptureAllowed"/><presentation id="VideoCaptureAllowedUrls"><listBox refId="VideoCaptureAllowedUrlsDesc">ユーザー確認なしで動画キャプチャ デバイスへのアクセスが許可される URL</listBox></presentation><presentation id="WPADQuickCheckEnabled"/><presentation id="WallpaperImage"><textBox refId="WallpaperImage"><label>壁紙の画像</label></textBox></presentation><presentation id="WebRtcUdpPortRange"><textBox refId="WebRtcUdpPortRange"><label>WebRTC が使用するローカル UDP ポートの範囲を制限する</label></textBox></presentation></presentationTable></resources></policyDefinitionResources>

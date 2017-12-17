@@ -1,0 +1,1388 @@
+<?xml version="1.0" ?><policyDefinitionResources revision="1.0" schemaVersion="1.0"><displayName/><description/><resources><stringTable><string id="SUPPORTED_WINXPSP2">Microsoft Windows XP SP2 이상</string><string id="googlechromeos">Google Chrome OS</string><string id="googlechromeos_recommended">Google Chrome OS - 기본 설정(사용자가 변경할 수 있음)</string><string id="GoogleCast_group">Google Cast</string><string id="EnableMediaRouter">Google Cast 사용 설정</string><string id="EnableMediaRouter_Explain">이 정책을 'true'로 설정하거나 설정하지 않으면 Google Cast이(가) 사용 설정되어 사용자가 앱 메뉴, 페이지 컨텍스트 메뉴, Cast 지원 웹사이트의 미디어 컨트롤, Cast 툴바 아이콘(표시된 경우)을 통해 실행할 수 있습니다.
+
+이 정책을 'false'로 설정하면 Google Cast이(가) 사용 중지됩니다.</string><string id="ShowCastIconInToolbar">Google Cast 툴바 아이콘 표시</string><string id="ShowCastIconInToolbar_Explain">이 정책을 'true'로 설정하면 Cast 툴바 아이콘이 툴바 또는 더보기 메뉴에 항상 표시되며 사용자는 이 아이콘을 삭제할 수 없습니다.
+
+이 정책을 'false'로 설정하거나 설정하지 않으면 사용자는 컨텍스트 메뉴를 통해 아이콘을 고정하거나 삭제할 수 있습니다.
+
+정책 'EnableMediaRouter'를 'false'로 설정하면 이 정책의 값은 아무런 영향을 미치지 않으며, 툴바 아이콘이 표시되지 않습니다.</string><string id="Drive_group">Google 드라이브 옵션 구성</string><string id="DriveDisabled">Google Chrome OS 파일 앱에서 Google 드라이브 사용 중지</string><string id="DriveDisabled_Explain">True로 설정하면 Google Chrome OS 파일 앱에서 Google 드라이브 동기화를 사용 중지합니다. 이런 경우 Google 드라이브에 데이터가 업로드되지 않습니다.
+
+설정하지 않거나 False로 설정하면 파일을 Google 드라이브에 전송할 수 있습니다.</string><string id="DriveDisabledOverCellular">Google Chrome OS 파일 앱에서 셀룰러 데이터로 연결 시 Google 드라이브 사용 중지</string><string id="DriveDisabledOverCellular_Explain">True로 설정하면 셀룰러 연결을 사용할 때 Google Chrome OS 파일 앱에서 Google 드라이브 동기화를 사용 중지합니다. 이런 경우 Wi-Fi나 이더넷을 통해 연결되었을 때에만 데이터가 Google 드라이브에 동기화됩니다.
+
+설정하지 않거나 False로 설정한 사용자는 셀룰러 연결을 통해 Google 드라이브에 파일을 전송할 수 있습니다.</string><string id="HTTPAuthentication_group">HTTP 인증 정책</string><string id="AuthSchemes">지원되는 인증 스키마</string><string id="AuthSchemes_Explain">Google Chrome에서 지원하는 HTTP 인증 스키마를 지정합니다.
+
+사용할 수 있는 값은 'basic', 'digest', 'ntlm', 'negotiate'이며, 두 개 이상의 값은 쉼표로 분리하세요.
+
+이 정책을 설정하지 않은 경우 4개의 스키마를 모두 사용합니다.</string><string id="DisableAuthNegotiateCnameLookup">Kerberos 인증을 협상할 때 CNAME 조회 사용 중지</string><string id="DisableAuthNegotiateCnameLookup_Explain">생성된 Kerberos SPN이 표준 DNS 이름을 기반으로 하는지 또는 원래 입력된 이름을 기반으로 하는지 여부를 지정합니다.
+
+이 설정을 사용하면 CNAME 조회를 건너뛰고 입력된 서버 이름을 사용합니다.
+
+이 설정을 사용 중지하거나 설정하지 않으면 CNAME 조회를 통해 서버의 표준 이름을 확인합니다.</string><string id="EnableAuthNegotiatePort">Kerberos SPN에 비표준 포트 포함</string><string id="EnableAuthNegotiatePort_Explain">생성된 Kerberos SPN에 비표준 포트를 포함해야 하는지 여부를 지정합니다.
+
+이 설정을 사용하고 비표준 포트(예: 80 또는 443 이외의 포트)를 입력하면 생성된 Kerberos SPN에 포트가 포함됩니다.
+
+이 설정을 사용 중지하거나 설정하지 않으면 생성된 Kerberos SPN이 어떤 경우에도 포트를 포함하지 않습니다.</string><string id="AuthServerWhitelist">인증 서버 허용목록</string><string id="AuthServerWhitelist_Explain">통합 인증을 허용할 서버를 지정합니다. 통합 인증은 Google Chrome이(가) 허용 목록에 있는 서버 또는 프록시에서 인증 요청을 받은 경우에만 사용하도록 설정됩니다.
+
+여러 개의 서버 이름은 콤마(,)로 구분되며 와일드카드(*)를 사용할 수 있습니다.
+
+이 정책을 설정하지 않으면 서버가 인트라넷에 있는 경우 Google Chrome이(가) 감지하여 IWA 요청에만 응답합니다. 서버가 인트라넷으로 감지된 경우 Google Chrome이(가) IWA 요청을 무시합니다.</string><string id="AuthNegotiateDelegateWhitelist">Kerberos 위임 서버 허용목록</string><string id="AuthNegotiateDelegateWhitelist_Explain">Google Chrome이(가) 위임할 수 있는 서버입니다.
+
+여러 개의 서버 이름은 콤마(,)로 구분되며 와일드카드(*)를 사용할 수 있습니다.
+
+이 정책이 설정되어 있지 않으면 서버가 인트라넷으로 감지된 경우에도 Google Chrome이(가) 사용자 자격증명을 위임하지 않습니다.</string><string id="AllowCrossOriginAuthPrompt">교차 도메인 HTTP 기본 인증 프롬프트</string><string id="AllowCrossOriginAuthPrompt_Explain">페이지의 제3자 하위 콘텐츠가 HTTP 기본 인증 대화 상자를 팝업할 수 있는지 여부를 관리합니다.
+
+일반적으로 이 설정은 피싱 차단을 위해 사용 중지되어 있습니다. 이 정책을 설정하지 않은 경우 사용 중지되며 제3자 하위 콘텐츠가 HTTP 기본 인증 대화 상자를 팝업할 수 없습니다.</string><string id="DefaultSearchProvider_group">기본 검색 공급자</string><string id="DefaultSearchProviderEnabled">기본 검색 공급자 사용</string><string id="DefaultSearchProviderEnabled_Explain">Enables the use of a default search provider.
+
+If you enable this setting, a default search is performed when the user types text in the omnibox that is not a URL.
+
+You can specify the default search provider to be used by setting the rest of the default search policies. If these are left empty, the user can choose the default provider.
+
+If you disable this setting, no search is performed when the user enters non-URL text in the omnibox.
+
+If you enable or disable this setting, users cannot change or override this setting in Google Chrome.
+
+If this policy is left not set, the default search provider is enabled, and the user will be able to set the search provider list.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="DefaultSearchProviderName">기본 검색 공급자 이름</string><string id="DefaultSearchProviderName_Explain">기본 검색 공급자 이름을 지정합니다. 비워 두었거나 설정하지 않은 경우 검색 URL에서 지정한 호스트 이름이 사용됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderKeyword">기본 검색 공급자 키워드</string><string id="DefaultSearchProviderKeyword_Explain">해당 검색 공급자로 검색할 때 검색주소창에서 사용되는 단축키 키워드를 지정합니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 검색 공급자를 활성화하는  키워드가 없습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderSearchURL">기본 검색 공급자 검색 URL</string><string id="DefaultSearchProviderSearchURL_Explain">기본 검색을 수행할 때 사용되는 검색 엔진의 URL을 지정합니다. URL은 '{searchTerms}' 문자열을 포함해야 하며 이 문자열은 검색 시 사용자의 검색어로 대체됩니다.
+
+Google의 검색 URL은 '{google:baseURL}search?q={searchTerms}&amp;{google:RLZ}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}{google:searchClient}{google:sourceId}{google:instantExtendedEnabledParameter}ie={inputEncoding}'(으)로 지정될 수 있습니다.
+
+'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우 이 옵션을 설정해야 하며 이 경우에만 적용됩니다.</string><string id="DefaultSearchProviderSuggestURL">기본 검색 공급자 추천 URL</string><string id="DefaultSearchProviderSuggestURL_Explain">추천 검색어를 제공하는 데 사용되는 검색 엔진의 URL을 지정합니다. URL에 '{searchTerms}' 문자열이 포함되어야 하며 이 문자열은 검색 시 사용자가 지금까지 입력한 텍스트로 교체됩니다.
+
+이 정책은 선택사항입니다. 설정하지 않은 경우 추천 URL이 사용되지 않습니다.
+
+Google의 추천 URL은 '{google:baseURL}complete/search?output=chrome&amp;q={searchTerms}'(으)로 지정될 수 있습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderInstantURL">기본 검색 공급자 순간 검색 URL</string><string id="DefaultSearchProviderInstantURL_Explain">순간 검색결과를 제공하는 데 사용되는 검색 엔진의 URL을 지정합니다. URL에는 '{searchTerms}' 문자열이 포함되어야 하며 이 문자열은 검색 시 사용자가 지금까지 입력한 내용으로 대체됩니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 순간 검색결과가 제공되지 않습니다.
+
+Google의 순간 검색결과 URL은 '{google:baseURL}suggest?q={searchTerms}'(으)로 지정될 수 있습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderIconURL">기본 검색 공급자 아이콘</string><string id="DefaultSearchProviderIconURL_Explain">기본 검색 공급자의 즐겨찾기 아이콘 URL을 지정합니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 검색 공급자에 대한 아이콘이 표시되지 않습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderEncodings">기본 검색 공급자 인코딩</string><string id="DefaultSearchProviderEncodings_Explain">검색 공급자가 지원하는 문자 인코딩을 지정합니다. 인코딩은 UTF-8, GB2312 및 ISO-8859-1과 같은 코드 페이지 이름입니다. 인코딩은 제공된 순서대로 시도됩니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 기본값인 UTF-8이 사용됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderEncodingsDesc">기본 검색 공급자 인코딩</string><string id="DefaultSearchProviderAlternateURLs">기본 검색 공급자의 대체 URL 목록</string><string id="DefaultSearchProviderAlternateURLs_Explain">검색 엔진에서 검색어를 추출하는 데 사용할 수 있는 대체 URL 목록을 지정합니다. URL은 검색어 추출에 사용되는 '{searchTerms}' 문자열을 포함해야 합니다.
+
+이 정책은 선택 사항입니다. 설정하지 않는 경우 검색어 추출에 대체 URL이 사용되지 않습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderAlternateURLsDesc">기본 검색 공급자의 대체 URL 목록</string><string id="DefaultSearchProviderSearchTermsReplacementKey">기본 검색 공급자의 검색어 위치를 조정하는 매개변수</string><string id="DefaultSearchProviderSearchTermsReplacementKey_Explain">이 정책이 설정되어 있고 검색주소창에서 제안된 검색 URL의 검색 문자열 또는 일부 식별자에 이 매개변수가 포함되어 있으면 추천 검색어가 원시 검색 URL 대신 검색어 및 검색 공급자를 표시합니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 검색어가 대체됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderImageURL">기본 검색엔진에 이미지로 검색 기능을 제공하는 매개변수</string><string id="DefaultSearchProviderImageURL_Explain">이미지 검색을 제공하는 데 사용되는 검색 엔진의 URL을 지정합니다. 검색 요청은 GET 메소드를 사용하여 전송됩니다. DefaultSearchProviderImageURLPostParams 정책이 설정되어 있으면 이미지 검색 요청에서 대신 POST 메소드를 사용합니다.
+
+이 정책은 선택사항입니다. 설정되어 있지 않으면 이미지 검색이 사용되지 않습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정된 경우에만 적용됩니다.</string><string id="DefaultSearchProviderNewTabURL">기본 검색 공급자 새 탭 페이지 URL</string><string id="DefaultSearchProviderNewTabURL_Explain">검색엔진에서 새 탭 페이지를 제공하기 위해 사용하는 URL을 지정합니다.
+
+이 정책은 선택사항입니다. 설정하지 않으면 새 탭 페이지가 제공되지 않습니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderSearchURLPostParams">POST를 사용하는 검색 URL용 매개변수</string><string id="DefaultSearchProviderSearchURLPostParams_Explain">POST로 URL을 검색할 때 사용할 매개변수를 지정합니다. 쉼표로 구분된 이름/값 쌍으로 구성되어 있습니다. 값이 위의 예에 있는 {searchTerms}와 같은 템플릿 매개변수인 경우 실제 검색어 데이터로 대체됩니다.
+
+설정되지 않으면 검색 요청은 GET 메소드를 사용하여 전송됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderSuggestURLPostParams">POST를 사용하는 추천 URL용 매개변수</string><string id="DefaultSearchProviderSuggestURLPostParams_Explain">POST로 추천 검색을 할 때 사용할 매개변수를 지정합니다. 매개변수는 쉼표로 구분된 이름/값 쌍으로 구성되어 있습니다. 값이 위의 예에 있는 {searchTerms}와 같은 템플릿 매개변수인 경우 실제 검색어 데이터로 대체됩니다.
+
+이 정책은 선택사항입니다. 설정되지 않으면 추천 검색 요청은 GET 메소드를 사용하여 전송됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderInstantURLPostParams">POST를 사용하는 인스턴트 URL용 매개변수</string><string id="DefaultSearchProviderInstantURLPostParams_Explain">POST로 순간 검색을 할 때 사용할 매개변수를 지정합니다. 쉼표로 구분된 이름/값 쌍으로 구성되어 있습니다. 값이 위의 예에 있는 {searchTerms}와 같은 템플릿 매개변수인 경우 실제 검색어 데이터로 대체됩니다.
+
+이 정책은 선택사항입니다. 설정되지 않으면 순간 검색 요청은 GET 메소드를 사용하여 전송됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정한 경우에만 적용됩니다.</string><string id="DefaultSearchProviderImageURLPostParams">POST를 사용하는 이미지 URL용 매개변수</string><string id="DefaultSearchProviderImageURLPostParams_Explain">POST로 이미지 검색을 할 때 사용될 매개변수를 지정합니다. 쉼표로 구분된 이름/값 쌍으로 구성됩니다. 값이 위의 예에 있는 {imageThumbnail}과 같은 템플릿 매개변수인 경우 실제 이미지 미리보기 데이터로 대체됩니다.
+
+이 정책은 선택사항입니다. 설정되어 있지 않으면 이미지 검색 요청이 GET 메소드를 사용해 전송됩니다.
+
+이 정책은 'DefaultSearchProviderEnabled' 정책을 사용하도록 설정된 경우에만 적용됩니다.</string><string id="PasswordManager_group">비밀번호 관리자</string><string id="PasswordManagerEnabled">비밀번호 관리자에 비밀번호 저장 기능 사용</string><string id="PasswordManagerEnabled_Explain">If this setting is enabled, users can have Google Chrome memorize passwords and provide them automatically the next time they log in to a site.
+
+If this settings is disabled, users cannot save new passwords but they
+may still use passwords that have been saved previously.
+
+If this policy is enabled or disabled, users cannot change or override it in Google Chrome. If this policy is unset, password saving is allowed (but can be turned off by the user).</string><string id="QuickUnlock_group">빠른 잠금 해제 정책</string><string id="QuickUnlockModeWhitelist">Configure allowed quick unlock modes</string><string id="QuickUnlockModeWhitelist_Explain">사용자가 잠금 화면을 해제하는 데 구성 및 사용할 수 있는 빠른 잠금 해제 모드를 제어하는 허용 목록입니다.
+
+이 값은 문자열의 목록이며 유효한 목록 항목은 'all' 및 'PIN'입니다. 목록에 'all'을 추가하면 앞으로 구현될 빠른 잠금 해제 모드를 포함한 모든 빠른 잠금 해제 모드를 사용자가 이용할 수 있습니다. 그렇지 않으면 목록에 표시된 빠른 잠금 해제 모드만 이용할 수 있습니다.
+
+예를 들어 모든 빠른 잠금 해제 모드를 허용하려면 ['all']을 사용합니다. PIN 잠금 해제만 허용하려면 ['PIN']을 사용합니다. 모든 빠른 잠금 해제 모드를 사용 중지하려면 []를 사용합니다.
+
+기본적으로 관리 기기는 빠른 잠금 해제 모드를 사용할 수 없습니다.</string><string id="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</string><string id="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</string><string id="QuickUnlockTimeout_Explain">이 설정은 계속 빠른 잠금 해제 모드를 사용하기 위해 잠금 화면에서 얼마나 자주 비밀번호를 요청할 것인지 제어합니다. 잠금 화면으로 전환될 때마다 마지막으로 비밀번호를 입력한 이후 이 설정보다 오랜 시간이 지나면 잠금 화면에서 빠른 잠금 해제를 사용할 수 없게 됩니다. 이 기간이 지난 후 사용자에게 잠금 화면이 표시된 상황에서 다음에 사용자가 잘못된 코드를 입력하거나 잠금 화면으로 다시 전환되는 경우 중 먼저 해당하는 경우 비밀번호를 요청하게 됩니다.
+
+이 설정을 구성하면 빠른 잠금 해제를 사용하는 사용자에게 이 설정에 따라 잠금 화면에 비밀번호를 입력하라는 메시지가 표시됩니다.
+
+이 설정을 구성하지 않으면 빠른 잠금 해제를 사용하는 사용자는 매일 잠금 화면에 비밀번호를 입력해야 합니다</string><string id="QuickUnlockTimeout_SixHours">Password entry is required every six hours</string><string id="QuickUnlockTimeout_TweleveHours">Password entry is required every twelve hours</string><string id="QuickUnlockTimeout_Day">Password entry is required every day (24 hours)</string><string id="QuickUnlockTimeout_Week">Password entry is required every week (168 hours)</string><string id="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN</string><string id="PinUnlockMinimumLength_Explain">If the policy is set, the configured minimal PIN length is
+enforced. (The absolute minimum PIN length is 1; values less than 1
+are treated as 1.)
+
+If the policy is not set, a minimal PIN length of 6 digits is
+enforced. This is the recommended minimum.</string><string id="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN</string><string id="PinUnlockMaximumLength_Explain">If the policy is set, the configured maximal PIN length is enforced. A value of 0 or less means no maximum length; in that case the user may set a PIN as long as they want. If this setting is less than PinUnlockMinimumLength but greater than 0, the maximum length is the same as the minimum length.
+
+If the policy is not set, no maximum length is enforced.</string><string id="PinUnlockWeakPinsAllowed">Enables users to set weak PINs for the lock screen PIN</string><string id="PinUnlockWeakPinsAllowed_Explain">false인 경우 사용자는 보안 강도가 약하고 추측하기 쉬운 PIN을 설정할 수 없습니다.
+
+보안 강도가 약한 PIN의 예: 한 가지 숫자만 포함(1111), 숫자가 1씩 증가(1234), 숫자가 1씩 감소(4321), 흔히 사용되는 PIN.
+
+PIN의 보안 강도가 약하다고 간주되는 경우 기본적으로 사용자에게 오류가 아닌 경고가 표시됩니다.</string><string id="NewTabPage_group">새 탭 페이지</string><string id="NewTabPageLocation">새 탭 페이지 URL 설정</string><string id="NewTabPageLocation_Explain">Configures the default New Tab page URL and prevents users from changing it.
+
+The New Tab page is the page opened when new tabs are created (including the one opened in new windows).
+
+This policy does not decide which pages are to be opened on start up. Those are controlled by the RestoreOnStartup policies. Yet this policy does affect the Home Page if that is set to open the New Tab page, as well as the startup page if that is set to open the New Tab page.
+
+If the policy is not set or left empty the default new tab page is used.
+
+This policy is not available on Windows instances that are not joined to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupGroup_group">시작 페이지</string><string id="RestoreOnStartup">시작 시 동작</string><string id="RestoreOnStartup_Explain">Allows you to specify the behavior on startup.
+
+If you choose 'Open New Tab Page' the New Tab Page will always be opened when you start Google Chrome.
+
+If you choose 'Restore the last session', the URLs that were open last time Google Chrome was closed will be reopened and the browsing session will be restored as it was left.
+Choosing this option disables some settings that rely on sessions or that perform actions on exit (such as Clear browsing data on exit or session-only cookies).
+
+If you choose 'Open a list of URLs', the list of 'URLs to open on startup' will be opened when a user starts Google Chrome.
+
+If you enable this setting, users cannot change or override it in Google Chrome.
+
+Disabling this setting is equivalent to leaving it not configured. The user will still be able to change it in Google Chrome.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartup_RestoreOnStartupIsNewTabPage">새 탭 페이지 열기</string><string id="RestoreOnStartup_RestoreOnStartupIsLastSession">마지막 세션 복원</string><string id="RestoreOnStartup_RestoreOnStartupIsURLs">URL 목록 열기</string><string id="RestoreOnStartupURLs">시작 시 열리는 URL</string><string id="RestoreOnStartupURLs_Explain">If 'Open a list of URLs' is selected as the startup action, this allows you to specify the list of URLs that are opened. If left not set no URL will be opened on start up.
+
+This policy only works if the 'RestoreOnStartup' policy is set to 'RestoreOnStartupIsURLs'.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="RestoreOnStartupURLsDesc">시작 시 열리는 URL</string><string id="RemoteAccess_group">원격 액세스 옵션 설정</string><string id="RemoteAccessHostClientDomainList">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostClientDomainList_Explain">Configures the required client domain names that will be imposed on remote access clients and prevents users from changing it.
+
+If this setting is enabled, then only clients from one of the specified domains can connect to the host.
+
+If this setting is disabled or not set, then the default policy for the connection type is applied. For remote assistance, this allows clients from any domain to connect to the host; for anytime remote access, only the host owner can connect.
+
+This setting will override RemoteAccessHostClientDomain, if present.
+
+See also RemoteAccessHostDomainList.</string><string id="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</string><string id="RemoteAccessHostFirewallTraversal">원격 액세스 호스트의 방화벽 통과 허용</string><string id="RemoteAccessHostFirewallTraversal_Explain">원격 클라이언트가 이 컴퓨터에 연결하려고 할 때 STUN 서버를 사용 설정합니다.
+
+이 설정을 사용하면 방화벽에 의해 차단된 경우에도 원격 클라이언트가 컴퓨터를 검색하여 연결할 수 있습니다.
+
+이 설정을 사용 중지하고 발신 UDP 연결이 방화벽에 의해 필터링되면 컴퓨터는 로컬 네트워크 내에 있는 클라이언트 컴퓨터의 연결만 허용합니다.
+
+이 정책을 설정하지 않은 상태로 두면 설정이 사용됩니다.</string><string id="RemoteAccessHostDomainList">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostDomainList_Explain">Configures the required host domain names that will be imposed on remote access hosts and prevents users from changing it.
+
+If this setting is enabled, then hosts can be shared only using accounts registered on one of the specified domain names.
+
+If this setting is disabled or not set, then hosts can be shared using any account.
+
+This setting will override RemoteAccessHostDomain, if present.
+
+See also RemoteAccessHostClientDomainList.</string><string id="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</string><string id="RemoteAccessHostTalkGadgetPrefix">원격 액세스 호스트에 대한 TalkGadget 프리픽스 구성</string><string id="RemoteAccessHostTalkGadgetPrefix_Explain">원격 액세스 호스트가 사용할 TalkGadget 프리픽스를 구성하여 사용자가 변경하지 못하게 합니다.
+
+이 설정을 지정하면 TalkGadget에 대한 전체 도메인 이름을 만들 수 있는 기본 TalkGadget 이름에 이 프리픽스가 추가됩니다. 기본 TalkGadget 이름은 '.talkgadget.google.com'입니다.
+
+이 설정을 사용하면 호스트가 기본 도메인 이름 대신 TalkGadget에 액세스할 때 맞춤 도메인 이름을 사용합니다.
+
+이 설정을 사용 중지하거나 설정하지 않으면 모든 호스트에 대해 기본  TalkGadget 도메인 이름('chromoting-host.talkgadget.google.com')이 사용됩니다.
+
+원격 액세스 클라이언트는 이 정책 설정의 영향을 받지 않으며 TalkGadget에 액세스할 때 항상 'chromoting-client.talkgadget.google.com'을 사용합니다.</string><string id="RemoteAccessHostRequireCurtain">원격 액세스 호스트 차단을 사용하도록 설정합니다.</string><string id="RemoteAccessHostRequireCurtain_Explain">연결이 진행 중일 때 원격 액세스 호스트 차단을 사용합니다.
+
+이 설정을 사용하도록 설정하면 원격 연결이 진행 중일 때 호스트의 물리적인 입력/출력 기기가 사용 중지됩니다.
+
+이 설정이 사용 중지되거나 설정되지 않으면 공유 중일 때 로컬 및 원격 사용자가 모두 호스트와 상호작용할 수 있습니다.</string><string id="RemoteAccessHostAllowClientPairing">원격 액세스 호스트에서 PIN을 사용하지 않는 인증을 사용 또는 사용 중지합니다.</string><string id="RemoteAccessHostAllowClientPairing_Explain">이 설정을 사용하도록 설정했거나 설정하지 않은 경우 사용자는 매번 PIN을 입력하지 않아도 되도록 연결 시간에 클라이언트와 호스트를 페어링하도록 선택할 수 있습니다.
+
+이 설정이 사용 중지되면 이 기능을 사용할 수 없습니다.</string><string id="RemoteAccessHostAllowGnubbyAuth">원격 액세스 호스트에 대한 gnubby 인증 허용</string><string id="RemoteAccessHostAllowGnubbyAuth_Explain">이 설정을 사용하도록 설정하면 gnubby 인증 요청이 원격 호스트 연결을 통해 프록시됩니다.
+
+이 설정을 사용 중지하거나 구성하지 않으면 gnubby 인증 요청이 프록시되지 않습니다.</string><string id="RemoteAccessHostAllowRelayedConnection">원격 액세스 호스트에 의한 릴레이 서버 사용 설정</string><string id="RemoteAccessHostAllowRelayedConnection_Explain">Enables usage of relay servers when remote clients are trying to establish a connection to this machine.
+
+If this setting is enabled, then remote clients can use relay servers to connect to this machine when a direct connection is not available (e.g. due to firewall restrictions).
+
+Note that if the policy RemoteAccessHostFirewallTraversal is disabled, this policy will be ignored.
+
+If this policy is left not set the setting will be enabled.</string><string id="RemoteAccessHostUdpPortRange">원격 액세스 호스트에서 사용되는 UDP 포트 범위 제한</string><string id="RemoteAccessHostUdpPortRange_Explain">Restricts the UDP port range used by the remote access host in this machine.
+
+If this policy is left not set, or if it is set to an empty string, the remote access host will be allowed to use any available port, unless the policy RemoteAccessHostFirewallTraversal is disabled, in which case the remote access host will use UDP ports in the 12400-12409 range.</string><string id="RemoteAccessHostMatchUsername">로컬 사용자의 이름과 원격 액세스 호스트 소유자가 일치해야 함</string><string id="RemoteAccessHostMatchUsername_Explain">If this setting is enabled, then the remote access host compares the name of the local user (that the host is associated with) and the name of the Google account registered as the host owner (i.e. &quot;johndoe&quot; if the host is owned by &quot;johndoe@example.com&quot; Google account).  The remote access host will not start if the name of the host owner is different from the name of the local user that the host is associated with.  RemoteAccessHostMatchUsername policy should be used together with RemoteAccessHostDomain to also enforce that the Google account of the host owner is associated with a specific domain (i.e. &quot;example.com&quot;).
+
+If this setting is disabled or not set, then the remote access host can be associated with any local user.</string><string id="RemoteAccessHostTokenUrl">원격 액세스 클라이언트가 인증 토큰을 확보해야 하는 URL</string><string id="RemoteAccessHostTokenUrl_Explain">If this policy is set, the remote access host will require authenticating clients to obtain an authentication token from this URL in order to connect. Must be used in conjunction with RemoteAccessHostTokenValidationUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationUrl">원격 액세스 클라이언트 인증 토큰을 확인하기 위한 URL</string><string id="RemoteAccessHostTokenValidationUrl_Explain">If this policy is set, the remote access host will use this URL to validate authentication tokens from remote access clients, in order to accept connections. Must be used in conjunction with RemoteAccessHostTokenUrl.
+
+This feature is currently disabled server-side.</string><string id="RemoteAccessHostTokenValidationCertificateIssuer">RemoteAccessHostTokenValidationUrl에 연결하기 위한 클라이언트 인증서</string><string id="RemoteAccessHostTokenValidationCertificateIssuer_Explain">If this policy is set, the host will use a client certificate with the given issuer CN to authenticate to RemoteAccessHostTokenValidationUrl. Set it to &quot;*&quot; to use any available client certificate.
+
+This feature is currently disabled server-side.</string><string id="Attestation_group">원격 인증</string><string id="AttestationEnabledForUser">사용자에 대한 원격 인증을 사용합니다.</string><string id="AttestationEnabledForUser_Explain">True일 경우, 사용자는 Chrome 기기의 하드웨어를 사용하여 Enterprise Platform Keys API chrome.enterprise.platformKeys.challengeUserKey()을(를) 통해 개인정보 보호 설정 CA에 대한 인증서를 원격으로 증명할 수 있습니다.
+
+False로 설정되어 있거나 설정되지 않은 경우, API 호출 시 오류 메시지가 표시되며 호출에 실패합니다.</string><string id="AttestationExtensionWhitelist">원격 인증 API를 사용하도록 허용된 확장 프로그램입니다.</string><string id="AttestationExtensionWhitelist_Explain">이 정책은 원격 인증에 Enterprise Platform Keys API 기능 chrome.enterprise.platformKeys.challengeUserKey()을(를) 사용하도록 허용된 확장 프로그램을 지정합니다. API를 사용하려면 확장 프로그램을 이 목록에 추가해야 합니다.
+
+확장 프로그램이 목록에 없거나 목록이 설정되지 않은 경우, API에 호출 시 오류 코드가 표시되며 호출에 실패합니다.</string><string id="AttestationExtensionWhitelistDesc">원격 인증 API를 사용하도록 허용된 확장 프로그램입니다.</string><string id="PowerManagement_group">전력 관리</string><string id="LidCloseAction">사용자가 덮개를 덮으면 수행할 작업</string><string id="LidCloseAction_Explain">When this policy is set, it specifies the action that Google Chrome OS takes when the user closes the device's lid.
+
+When this policy is unset, the default action is taken, which is suspend.
+
+If the action is suspend, Google Chrome OS can separately be configured to either lock or not lock the screen before suspending.</string><string id="LidCloseAction_LidCloseActionSuspend">일시중지</string><string id="LidCloseAction_LidCloseActionLogout">사용자 로그아웃</string><string id="LidCloseAction_LidCloseActionShutdown">종료</string><string id="LidCloseAction_LidCloseActionDoNothing">취소</string><string id="PowerManagementUsesAudioActivity">오디오 활동이 전원 관리에 영향을 미치는지 여부 지정</string><string id="PowerManagementUsesAudioActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while audio is playing. This prevents the idle timeout from being reached and the idle action from being taken. However, screen dimming, screen off and screen lock will be performed after the configured timeouts, irrespective of audio activity.
+
+If this policy is set to False, audio activity does not prevent the user from being considered idle.</string><string id="PowerManagementUsesVideoActivity">동영상 활동이 전원 관리에 영향을 미치는지 여부 지정</string><string id="PowerManagementUsesVideoActivity_Explain">If this policy is set to True or is unset, the user is not considered to be idle while video is playing. This prevents the idle delay, screen dim delay, screen off delay and screen lock delay from being reached and the corresponding actions from being taken.
+
+If this policy is set to False, video activity does not prevent the user from being considered idle.</string><string id="PresentationScreenDimDelayScale">프레젠테이션 모드에서 화면 어둡게 하기 지연 시간이 조정되는 비율</string><string id="PresentationScreenDimDelayScale_Explain">기기가 프레젠테이션 모드일 때 화면 어둡게 하기 지연 시간이 조정되는 비율을 지정합니다.
+
+이 정책이 설정되어 있으면 기기가 프레젠테이션 모드일 때 화면 어둡게 하기 지연 시간이 조정되는 비율을 지정합니다. 화면 어둡게 하기 지연 시간이 조정되면 화면 꺼짐, 화면 잠금 및 유휴 지연 시간이 원래 설정된 화면 어둡게 하기 지연 시간과 같은 간격을 유지하도록 조정됩니다.
+
+이 정책이 설정되어 있지 않으면 기본 배율이 사용됩니다.
+
+배율은 100% 이상이어야 합니다. 프레젠테이션 모드의 화면 어둡게 하기 지연 시간 값을 일반 화면 어둡게 하기 지연 시간보다 짧게 설정할 수 없습니다.</string><string id="AllowScreenWakeLocks">화면 잠금 허용</string><string id="AllowScreenWakeLocks_Explain">화면 잠금의 허용 여부를 지정합니다. 화면 잠금은 전원 관리 확장 API를 통한 확장 프로그램에서 요청할 수 있습니다.
+
+정책이 True로 설정되거나 설정되지 않은 경우, 화면 잠금이 전원 관리에 적용됩니다.
+
+정책이 False로 설정된 경우, 잠금 요청이 무시됩니다.</string><string id="UserActivityScreenDimDelayScale">화면이 어두워진 후 사용자의 활동이 감지될 때 화면 어둡게 하기 지연 시간이 조정되는 비율</string><string id="UserActivityScreenDimDelayScale_Explain">화면을 어둡게 하거나 화면을 끈 직후 사용자의 활동이 감지될 때 화면 어둡게 하기 지연 시간이 조정되는 비율을 지정합니다.
+
+이 정책이 설정된 경우 화면을 어둡게 하거나 화면을 끈 직후 사용자의 활동이 감지될 때 화면 어둡게 하기 지연 시간이 조정되는 비율을 지정합니다. 화면 어둡게 하기 지연 시간이 조정되면, 화면 꺼짐 지연 시간, 화면 잠금 지연 시간 및 유휴 지연 시간이 조정되어 원래 설정된 화면 어둡게 하기 지연 시간과 같은 간격을 유지하도록 조정됩니다.
+
+이 정책이 설정되지 않은 경우 기본 배율이 사용됩니다.
+
+배율은 100% 이상이어야 합니다.</string><string id="WaitForInitialUserActivity">첫 번째 사용자 활동 기다리기</string><string id="WaitForInitialUserActivity_Explain">세션에서 첫 번째 사용자 활동이 감지된 후에만 전원 관리 지연 및 세션 길이 제한을 실행할지 여부를 지정합니다.
+
+이 정책이 true로 설정되면 세션 내에서 첫 번째 사용자 활동이 감지되기 전까지 전원 관리 지연 및 세션 길이 제한이 실행되지 않습니다.
+
+이 정책이 false로 설정되거나 설정되지 않으면 세션이 시작되자마자 즉시 전원 관리 지연 및 세션 길이 제한이 실행됩니다.</string><string id="PowerManagementIdleSettings">사용자가 유휴 상태가 될 때 전원 관리 설정</string><string id="PowerManagementIdleSettings_Explain">This policy controls multiple settings for the power management strategy when the user becomes idle.
+
+There are four types of action:
+* The screen will be dimmed if the user remains idle for the time specified by |ScreenDim|.
+* The screen will be turned off if the user remains idle for the time specified by |ScreenOff|.
+* A warning dialog will be shown if the user remains idle for the time specified by |IdleWarning|, telling the user that the idle action is about to be taken.
+* The action specified by |IdleAction| will be taken if the user remains idle for the time specified by |Idle|.
+
+For each of above actions, the delay should be specified in milliseconds, and needs to be set to a value greater than zero to trigger the corresponding action. In case the delay is set to zero, Google Chrome OS will not take the corresponding action.
+
+For each of the above delays, when the length of time is unset, a default value will be used.
+
+Note that |ScreenDim| values will be clamped to be less than or equal to |ScreenOff|, |ScreenOff| and |IdleWarning| will be clamped to be less than or equal to |Idle|.
+
+|IdleAction| can be one of four possible actions:
+* |Suspend|
+* |Logout|
+* |Shutdown|
+* |DoNothing|
+
+When the |IdleAction| is unset, the default action is taken, which is suspend.
+
+There are also separate settings for AC power and battery.
+</string><string id="ScreenLockDelays">화면 잠금 지연</string><string id="ScreenLockDelays_Explain">AC 전원 또는 배터리로 실행할 때 사용자 입력이 없어서 화면이 잠길 때까지 걸리는 시간을 지정합니다.
+
+시간이 0보다 큰 값으로 설정되어 있으면 이는 Google Chrome OS에서 화면을 잠글 때까지 사용자가 유휴 상태여야 하는 시간을 의미합니다.
+
+시간이 0으로 설정되어 있으면 사용자가 유휴 상태가 되어도 Google Chrome OS에서 화면을 잠그지 않습니다.
+
+시간이 설정되어 있지 않으면 기본 설정된 시간이 적용됩니다.
+
+유휴 시 화면을 잠글 때는 일시중지 시 화면 잠금을 사용하도록 설정하고 유휴 지연 시간 이후 Google Chrome OS을(를) 일시중지시키는 것이 좋습니다. 이 정책은 일시중지보다 훨씬 일찍 화면을 잠가야 할 때 또는 유휴 시 일시중지가 적합하지 않을 때에만 사용해야 합니다.
+
+정책 값은 밀리초 단위로 지정해야 하며, 유휴 지연 시간보다 적도록 값이 잘립니다.</string><string id="Accessibility_group">접근성 설정</string><string id="ShowAccessibilityOptionsInSystemTrayMenu">작업 표시줄 메뉴에 접근성 옵션 표시</string><string id="ShowAccessibilityOptionsInSystemTrayMenu_Explain">If this policy is set to true, Accessibility options always appear in system tray menu.
+
+If this policy is set to false, Accessibility options never appear in system tray menu.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, Accessibility options will not appear in the system tray menu, but the user can cause the Accessibility options to appear via the Settings page.</string><string id="LargeCursorEnabled">큰 커서 사용</string><string id="LargeCursorEnabled_Explain">큰 커서 접근성 기능을 사용하도록 설정합니다.
+
+이 정책을 true로 설정하면 큰 커서를 항상 사용하도록 설정합니다.
+
+이 정책을 false로 설정하면 큰 커서가 항상 사용 중지 상태가 됩니다.
+
+이 정책을 설정하는 경우 사용자가 정책을 변경하거나 무시할 수 없습니다.
+
+이 정책이 설정되지 않은 경우 처음에는 큰 커서가 사용 중지되어 있으나 사용자가 언제든지 사용하도록 설정할 수 있습니다.</string><string id="SpokenFeedbackEnabled">음성 피드백 사용</string><string id="SpokenFeedbackEnabled_Explain">음성 피드백 접근성 기능을 사용하도록 설정합니다.
+
+이 정책을 true로 설정하면 음성 피드백을 항상 사용하도록 설정합니다.
+
+이 정책을 false로 설정하면 음성 피드백이 항상 사용 중지 상태가 됩니다.
+
+이 정책을 설정하는 경우 사용자가 정책을 변경하거나 무시할 수 없습니다.
+
+이 정책이 설정되지 않은 경우 처음에 음성 피드백이 사용 중지되어 있으나 사용자가 언제든지 사용하도록 설정할 수 있습니다.</string><string id="HighContrastEnabled">고대비 모드 사용</string><string id="HighContrastEnabled_Explain">고대비 모드 접근성 기능을 사용하도록 설정합니다.
+
+이 정책을 true로 설정하면 고대비 모드를 항상 사용하도록 설정됩니다.
+
+이 정책을 false로 설정하면 고대비 모드가 항상 사용 중지 상태가 됩니다.
+
+이 정책을 설정하는 경우 사용자가 정책을 변경하거나 무시할 수 없습니다.
+
+이 정책이 설정되지 않으면 처음에는 고대비 모드가 사용 중지되어 있으나 사용자가 언제든지 사용하도록 설정할 수 있습니다.</string><string id="VirtualKeyboardEnabled">터치 키보드 사용</string><string id="VirtualKeyboardEnabled_Explain">터치 키보드 접근성 기능을 사용하도록 설정합니다.
+
+이 정책을 true로 설정하면 터치 키보드를 항상 사용하도록 설정됩니다.
+
+이 정책을 false로 설정하면 터치 키보드를 항상 사용하지 않도록 설정됩니다.
+
+이 정책을 설정하면 사용자가 변경하거나 재정의할 수 없습니다.
+
+이 정책을 설정하지 않으면 처음에는 터치 키보드를 사용하지 않도록 설정되지만 사용자가 언제든지 사용하도록 설정할 수 있습니다.</string><string id="KeyboardDefaultToFunctionKeys">미디어 키는 기본적으로 기능 키로 설정됩니다.</string><string id="KeyboardDefaultToFunctionKeys_Explain">맨 윗줄에 있는 키의 기본 동작을 기능 키로 변경합니다.
+
+이 정책을 true로 설정하면 키보드의 맨 윗줄에 있는 키가 기본적으로 기본 키 명령어를 생성합니다. 다시 미디어 키 명령어를 생성하도록 되돌리려면 검색 키를 눌러야 합니다.
+
+이 정책을 false로 설정하거나 설정하지 않으면 키보드가 기본적으로 미디어 키 명령어를 생성하며 검색 키를 누르면 기능 키 명령어를 생성합니다.</string><string id="ScreenMagnifierType">화면 돋보기 유형 설정</string><string id="ScreenMagnifierType_Explain">If this policy is set, it controls the type of screen magnifier that is enabled. Setting the policy to &quot;None&quot; disables the screen magnifier.
+
+If you set this policy, users cannot change or override it.
+
+If this policy is left unset, the screen magnifier is disabled initially but can be enabled by the user anytime.</string><string id="ScreenMagnifierType_None">화면 돋보기 사용 중지됨</string><string id="ScreenMagnifierType_Full-screen">전체화면 돋보기 사용</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled">로그인 화면에서 큰 커서의 기본 상태를 설정</string><string id="DeviceLoginScreenDefaultLargeCursorEnabled_Explain">로그인 화면에서 큰 커서 접근성 기능의 기본 상태를 설정합니다.
+
+이 정책을 true로 설정하면 로그인 화면이 표시될 때 큰 커서를 사용하도록 설정합니다.
+
+이 정책을 false로 설정하면 로그인 화면이 표시될 때 큰 커서가 사용 중지됩니다.
+
+이 정책이 설정된 경우 사용자는 큰 커서를 사용 설정하거나 사용 중지함으로써 정책을 일시적으로 무시할 수 있습니다. 하지만 사용자의 선택은 계속 유지되지 않으며 로그인 화면이 새로 표시되거나 사용자가 로그인 화면에서 몇 분간 유휴 상태를 유지할 때마다 기본값이 복원됩니다.
+
+이 정책이 설정되지 않은 경우 로그인 화면이 처음 나타날 때 큰 커서가 사용 중지되어 있습니다. 사용자는 언제든지 큰 커서를 사용 설정 또는 사용 중지할 수 있으며 로그인 화면에서의 상태가 사용자별로 유지됩니다.</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled">로그인 화면에서 음성 피드백의 기본 상태를 설정</string><string id="DeviceLoginScreenDefaultSpokenFeedbackEnabled_Explain">로그인 화면에서 음성 피드백 접근성 기능의 기본 상태를 설정합니다.
+
+이 정책을 true로 설정하면 로그인 화면이 표시될 때 음성 피드백을 사용하도록 설정합니다.
+
+이 정책을 false로 설정하면 로그인 화면이 표시될 때 음성 피드백이 사용 중지됩니다.
+
+이 정책이 설정된 경우 사용자는 음성 피드백을 사용 설정하거나 사용 중지함으로써 정책을 일시적으로 무시할 수 있습니다. 하지만 사용자의 선택은 계속 유지되지 않으며, 로그인 화면이 새로 표시되거나 사용자가 로그인 화면에서 몇 분간 유휴 상태를 유지할 때마다 기본값이 복원됩니다.
+
+이 정책이 설정되지 않은 경우 로그인 화면이 처음 나타날 때 음성 피드백이 사용 중지되어 있습니다. 사용자는 언제든지 음성 피드백을 사용 설정 또는 사용 중지할 수 있으며 로그인 화면에서의 상태가 사용자별로 유지됩니다.</string><string id="DeviceLoginScreenDefaultHighContrastEnabled">로그인 화면에서 고대비 모드의 기본 상태를 설정</string><string id="DeviceLoginScreenDefaultHighContrastEnabled_Explain">로그인 화면에서 고대비 모드 접근성 기능의 기본 상태를 설정합니다.
+
+이 정책을 true로 설정하면 로그인 화면이 표시될 때 고대비 모드를 사용하도록 설정합니다.
+
+이 정책을 false로 설정하면 로그인 화면이 표시될 때 고대비 모드가 사용 중지됩니다.
+
+이 정책이 설정된 경우 사용자는 큰 커서를 사용 설정하거나 사용 중지함으로써 일시적으로 정책을 무시할 수 있습니다. 하지만 사용자의 선택은 계속 유지되지 않으며, 로그인 화면이 새로 표시되거나 사용자가 로그인 화면에서 몇 분간 유휴 상태를 유지할 때마다 기본값이 복원됩니다.
+
+이 정책이 설정되지 않은 경우 로그인 화면이 처음 나타날 때 고대비 모드가 사용 중지되어 있습니다. 사용자는 언제든지 고대비 모드를 사용 설정 또는 사용 중지할 수 있으며 로그인 화면에서의 상태가 사용자별로 유지됩니다.</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled">로그인 화면에서 터치 키보드의 기본 상태를 설정</string><string id="DeviceLoginScreenDefaultVirtualKeyboardEnabled_Explain">로그인 화면에서 터치 키보드 접근성 기능의 기본 상태를 설정합니다.
+
+이 정책을 true로 설정하면 로그인 화면이 표시될 때 터치 키보드를 사용하도록 설정됩니다.
+
+이 정책을 false로 설정하면 로그인 화면이 표시될 때 터치 키보드를 사용하지 않도록 설정됩니다.
+
+이 정책을 설정하면 사용자는 터치 키보드를 사용 또는 사용 중지함으로써 일시적으로 이 정책을 재정의할 수 있습니다. 하지만 사용자의 선택은 계속 유지되지 않으며, 로그인 화면이 새로 표시되거나 사용자가 로그인 화면에서 몇 분간 유휴 상태를 유지할 때마다 기본값이 복원됩니다.
+
+이 정책을 설정하지 않으면 로그인 화면이 처음 표시될 때 터치 키보드가 사용 중지됩니다. 사용자는 언제든지 터치 키보드를 사용 설정 또는 사용 중지할 수 있으며 로그인 화면에서의 상태가 사용자별로 유지됩니다.</string><string id="DeviceLoginScreenDefaultScreenMagnifierType">로그인 화면에서 기본 화면 돋보기 유형을 사용하도록 설정</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Explain">로그인 화면에서 사용하는 화면 돋보기의 기본 유형을 설정합니다.
+
+이 정책이 설정된 경우 로그인 화면에서 사용하는 화면 돋보기의 유형을 제어합니다. 정책을 '없음'으로 설정하면 화면 돋보기가 사용 중지됩니다.
+
+이 정책을 설정하면 사용자는 화면 돋보기를 사용 설정하거나 사용 중지함으로써 정책을 일시적으로 무시할 수 있습니다. 하지만 사용자의 선택은 계속 유지되지 않으며, 로그인 화면이 새로 표시되거나 사용자가 로그인 화면에서 몇 분간 유휴 상태를 유지할 때마다 기본값이 복원됩니다.
+
+이 정책이 설정되지 않은 경우 로그인 화면이 처음 나타날 때 화면 돋보기가 사용 중지되어 있습니다. 사용자는 언제든지 화면 돋보기를 사용 설정 또는 사용 중지할 수 있으며 로그인 화면에서의 상태가 사용자별로 유지됩니다.</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_None">화면 돋보기 사용 중지됨</string><string id="DeviceLoginScreenDefaultScreenMagnifierType_Full-screen">전체화면 돋보기 사용</string><string id="ContentSettings_group">콘텐츠 설정</string><string id="DefaultCookiesSetting">기본 쿠키 설정</string><string id="DefaultCookiesSetting_Explain">웹사이트에서 로컬 데이터를 설정하도록 허용할지 선택할 수 있습니다. 로컬 데이터 설정은 모든 웹사이트를 대상으로 허용하거나 거부할 수 있습니다.
+
+정책이 '세션이 지속되는 동안 쿠키를 유지합니다'로 설정된 경우에는 세션이 종료되면 쿠키가 삭제됩니다. Google Chrome이(가) '백그라운드 모드'로 실행 중인 경우 마지막 창이 닫혀도 세션이 종료되지 않을 수 있습니다. 이 동작 설정에 관한 자세한 내용은 'BackgroundModeEnabled' 정책을 참조하세요.
+
+이 정책이 설정되어 있지 않은 경우에는 'AllowCookies'가 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultCookiesSetting_AllowCookies">모든 사이트에서 로컬 데이터 설정 허용</string><string id="DefaultCookiesSetting_BlockCookies">모든 사이트에서 로컬 데이터 설정 허용 안함</string><string id="DefaultCookiesSetting_SessionOnly">세션이 지속되는 동안 쿠키를 유지합니다.</string><string id="DefaultImagesSetting">기본 이미지 설정</string><string id="DefaultImagesSetting_Explain">웹사이트에서 이미지를 표시하도록 허용할지 여부를 설정할 수 있습니다. 이미지 표시는 모든 웹사이트에서 허용 또는 거부하도록 할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'AllowImages'가 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultImagesSetting_AllowImages">모든 사이트에서 모든 이미지를 표시하도록 허용</string><string id="DefaultImagesSetting_BlockImages">모든 사이트에서 이미지 표시 허용 안함</string><string id="DefaultJavaScriptSetting">기본 자바 스크립트 설정</string><string id="DefaultJavaScriptSetting_Explain">웹사이트에서 자바스크립트를 실행하도록 허용할지 여부를 설정할 수 있습니다. 자바스크립트 실행은 모든 웹사이트에서 허용 또는 거부하도록 할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'AllowJavaScript' 정책이 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultJavaScriptSetting_AllowJavaScript">모든 사이트에서 자바스크립트 실행 허용</string><string id="DefaultJavaScriptSetting_BlockJavaScript">모든 사이트에서 자바스크립트 실행 허용 안함</string><string id="DefaultPluginsSetting">기본 Flash 설정</string><string id="DefaultPluginsSetting_Explain">웹사이트에서 Flash 플러그인을 자동으로 실행하도록 허용할지 설정할 수 있습니다. Flash 플러그인 자동 실행은 모든 웹사이트에서 허용하거나 모든 웹사이트에서 거부할 수 있습니다.
+
+클릭하여 재생을 사용하면 Flash 플러그인을 실행할 수 있지만, 사용자가 자리표시자를 클릭해야 실행됩니다.
+
+이 정책을 설정하지 않으면 사용자가 이 설정을 수동으로 변경할 수 있습니다.</string><string id="DefaultPluginsSetting_AllowPlugins">모든 사이트에서 Flash 플러그인을 자동으로 실행하도록 허용</string><string id="DefaultPluginsSetting_BlockPlugins">Flash 플러그인 차단</string><string id="DefaultPluginsSetting_ClickToPlay">클릭하여 재생</string><string id="DefaultPopupsSetting">기본 팝업 설정</string><string id="DefaultPopupsSetting_Explain">웹사이트에서 팝업을 표시하도록 허용할지 여부를 설정할 수 있습니다. 팝업 표시는 모든 사이트에서 허용 또는 거부하도록 할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'BlockPopups'가 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultPopupsSetting_AllowPopups">모든 사이트에서 팝업 표시 허용</string><string id="DefaultPopupsSetting_BlockPopups">모든 사이트에서 팝업 표시 허용 안함</string><string id="DefaultNotificationsSetting">기본 알림 설정</string><string id="DefaultNotificationsSetting_Explain">웹사이트에서 데스크톱 알림을 표시하도록 허용할지 여부를 설정할 수 있습니다. 데스크톱 알림 표시는 기본적으로 허용 또는 거부하거나 웹사이트에서 데스크톱 알림을 표시할 때마다 사용자에게 확인하도록 할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'AskNotifications' 정책이 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultNotificationsSetting_AllowNotifications">사이트에서 데스크톱 알림을 표시하도록 허용</string><string id="DefaultNotificationsSetting_BlockNotifications">모든 사이트에서 데스크톱 알림 표시 허용 안함</string><string id="DefaultNotificationsSetting_AskNotifications">사이트에서 데스크톱 알림을 표시할 때마다 확인</string><string id="DefaultGeolocationSetting">기본 위치정보 설정</string><string id="DefaultGeolocationSetting_Explain">웹사이트에서 사용자의 실제 위치를 추적하도록 허용할지 여부를 설정할 수 있습니다. 사용자의 실제 위치 추적은 기본적으로 허용 또는 거부하거나 웹사이트에서 실제 위치를 요청할 때마다 사용자에게 확인하도록 할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'AskGeolocation'이 사용되며 사용자가 설정을 변경할 수 있습니다.</string><string id="DefaultGeolocationSetting_AllowGeolocation">사이트에서 사용자 실제 위치를 추적하도록 허용</string><string id="DefaultGeolocationSetting_BlockGeolocation">모든 사이트에서 사용자 실제 위치를 추적하도록 허용 안함</string><string id="DefaultGeolocationSetting_AskGeolocation">사이트에서 사용자의 실제 위치를 추적할 때마다 확인</string><string id="DefaultWebBluetoothGuardSetting">Web Bluetooth API 사용 조정</string><string id="DefaultWebBluetoothGuardSetting_Explain">근처 블루투스 기기에 대한 웹사이트의 액세스 허용 여부를 설정할 수 있습니다. 액세스를 완전히 차단하거나 웹사이트에서 근처 블루투스 기기에 액세스하려고 할 때마다 사용자에게 확인을 요청할 수 있습니다.
+
+이 정책을 설정하지 않으면 '3'으로 설정되며 사용자가 변경할 수 있습니다.</string><string id="DefaultWebBluetoothGuardSetting_BlockWebBluetooth">어떤 사이트든지 Web Bluetooth API를 통해 블루투스 기기에 대한 액세스를 요청하도록 허용하지 않습니다.</string><string id="DefaultWebBluetoothGuardSetting_AskWebBluetooth">사이트에서 사용자에게 근처 블루투스 기기에 대한 액세스 권한을 부여할 것인지 묻도록 허용합니다.</string><string id="AutoSelectCertificateForUrls">이 사이트에 대해 클라이언트 인증서를 자동으로 선택합니다.</string><string id="AutoSelectCertificateForUrls_Explain">사이트에서 인증서를 요청하는 경우 Google Chrome에서 클라이언트 인증서를 자동으로 선택할 사이트를 지정하는 URL 패턴 목록을 지정하도록 허용합니다.
+
+이 값은 문자열화된 JSON 사전의 배열이어야 합니다. 각 사전은 { &quot;pattern&quot;: &quot;$URL_PATTERN&quot;, &quot;filter&quot; : $FILTER } 형태여야 하며, 여기에서 $URL_PATTERN은 콘텐츠 설정 패턴입니다. $FILTER는 브라우저에서 선택할 수 있는 클라이언트 인증서를 제한합니다. 필터와 관계없이 서버의 인증서 요청과 일치하는 인증서만이 선택됩니다. 또한 $FILTER가 { &quot;ISSUER&quot;: { &quot;CN&quot;: &quot;$ISSUER_CN&quot; } } 형태인 경우 CommonName $ISSUER_CN으로 된 인증서에 의해 발급된 클라이언트 인증서만이 선택됩니다. $FILTER가 빈 사전 {}인 경우 클라이언트 인증서 선택에 추가 제한은 없습니다.
+
+이 정책이 설정되지 않으면 모든 사이트에서 자동으로 선택되지 않습니다.</string><string id="AutoSelectCertificateForUrlsDesc">이 사이트에 대해 클라이언트 인증서를 자동으로 선택합니다.</string><string id="CookiesAllowedForUrls">이 사이트에서 쿠키 허용</string><string id="CookiesAllowedForUrls_Explain">쿠키 설정이 허용되는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultCookiesSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="CookiesAllowedForUrlsDesc">이 사이트에서 쿠키 허용</string><string id="CookiesBlockedForUrls">이 사이트에서 쿠키 차단</string><string id="CookiesBlockedForUrls_Explain">쿠키 설정이 허용되지 않는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultImagesSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="CookiesBlockedForUrlsDesc">이 사이트에서 쿠키 차단</string><string id="CookiesSessionOnlyForUrls">이 사이트에서 세션 전용 쿠키 허용</string><string id="CookiesSessionOnlyForUrls_Explain">세션 전용 쿠키 설정이 허용되는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책이 설정되지 않으면 'DefaultCookiesSetting' 정책 또는 사용자의 개인 설정이 전체 기본값으로 모든 사이트에 사용됩니다.
+
+Google Chrome이(가) '백그라운드 모드'로 실행 중인 경우 마지막 브라우저 창이 닫혀도 세션이 종료되지 않으며 브라우저가 열려 있는 동안에는 활성화되어 있습니다. 이 작업 설정에 대해 자세히 알아보려면 'BackgroundModeEnabled' 정책을 참조하세요.
+
+이전 세션에서 URL을 복원하도록 'RestoreOnStartup' 정책이 설정된 경우 이 정책이 지켜지지 않으며 해당 사이트의 쿠키는 영구적으로 저장됩니다.</string><string id="CookiesSessionOnlyForUrlsDesc">이 사이트에서 세션 전용 쿠키 허용</string><string id="ImagesAllowedForUrls">이 사이트에서 이미지 허용</string><string id="ImagesAllowedForUrls_Explain">이미지 표시가 허용되는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultImagesSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="ImagesAllowedForUrlsDesc">이 사이트에서 이미지 허용</string><string id="ImagesBlockedForUrls">이 사이트의 이미지 차단</string><string id="ImagesBlockedForUrls_Explain">이미지 표시가 허용되지 않는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultImagesSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="ImagesBlockedForUrlsDesc">이 사이트의 이미지 차단</string><string id="JavaScriptAllowedForUrls">이 사이트에서 자바스크립트 허용</string><string id="JavaScriptAllowedForUrls_Explain">자바스크립트 실행이 허용되는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultJavaScriptSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="JavaScriptAllowedForUrlsDesc">이 사이트에서 자바스크립트 허용</string><string id="JavaScriptBlockedForUrls">이 사이트에서 자바스크립트 차단</string><string id="JavaScriptBlockedForUrls_Explain">자바스크립트 실행이 허용되지 않는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultJavaScriptSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="JavaScriptBlockedForUrlsDesc">이 사이트에서 자바스크립트 차단</string><string id="PluginsAllowedForUrls">이 사이트에서 Flash 플러그인 허용</string><string id="PluginsAllowedForUrls_Explain">Flash 플러그인 실행을 허용할 사이트를 지정하는 URL 패턴 목록을 설정하도록 허용합니다.
+
+이 정책을 설정하지 않으면 'DefaultPluginsSetting' 정책(설정된 경우) 또는 사용자 개인 설정의 전체 기본값이 모든 사이트에 사용됩니다.</string><string id="PluginsAllowedForUrlsDesc">이 사이트에서 Flash 플러그인 허용</string><string id="PluginsBlockedForUrls">이 사이트에서 Flash 플러그인 차단</string><string id="PluginsBlockedForUrls_Explain">Flash 플러그인 실행을 허용하지 않을 사이트를 지정하는 URL 패턴 목록을 설정하도록 허용합니다.
+
+이 정책을 설정하지 않으면 'DefaultPluginsSetting' 정책(설정된 경우) 또는 사용자 개인 설정의 전체 기본값이 모든 사이트에 사용됩니다.</string><string id="PluginsBlockedForUrlsDesc">이 사이트에서 Flash 플러그인 차단</string><string id="PopupsAllowedForUrls">이러한 사이트에서 팝업 허용</string><string id="PopupsAllowedForUrls_Explain">팝업을 열도록 허용된 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우, 'DefaultPopupsSetting' 정책이 설정된 경우엔 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="PopupsAllowedForUrlsDesc">이러한 사이트에서 팝업 허용</string><string id="RegisteredProtocolHandlers">프로토콜 핸들러 등록</string><string id="RegisteredProtocolHandlers_Explain">프로토콜 핸들러 목록을 등록할 수 있도록 허용합니다. 추천 정책만 될 수 있습니다. |protocol| 속성은 'mailto'와 같은 스키마로 설정해야 하며 |url| 속성은 스키마를 처리하는 애플리케이션의 URL 패턴으로 설정해야 합니다. 패턴에 '%s'를 포함할 수 있으며, 포함할 경우 이 기호는 처리된 URL로 교체됩니다.
+
+정책에 의해 등록된 프로토콜 핸들러는 사용자가 등록한 핸들러와 통합되며 두 가지 모두 사용 가능합니다. 사용자는 새로운 기본 핸들러를 설치함으로써 정책에 의해 설치된 프로토콜 핸들러를 덮어쓸 수 있지만 정책에 의해 등록된 프로토콜 핸들러를 삭제할 수는 없습니다.</string><string id="PopupsBlockedForUrls">이 사이트에서 팝업 차단</string><string id="PopupsBlockedForUrls_Explain">팝업을 열 수 없는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultPopupsSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="PopupsBlockedForUrlsDesc">이 사이트에서 팝업 차단</string><string id="NotificationsAllowedForUrls">이 사이트에서 알림 허용</string><string id="NotificationsAllowedForUrls_Explain">알림 표시가 허용되는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultNotificationsSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="NotificationsAllowedForUrlsDesc">이 사이트에서 알림 허용</string><string id="NotificationsBlockedForUrls">이 사이트에서 알림 차단</string><string id="NotificationsBlockedForUrls_Explain">알림 표시가 허용되지 않는 사이트를 지정하는 URL 패턴 목록을 설정할 수 있습니다.
+
+이 정책을 설정하지 않은 경우 'DefaultNotificationsSetting' 정책이 설정되면 해당 정책의, 그렇지 않으면 사용자 개인 설정의 전체 기본값이 모든 사이트에서 사용됩니다.</string><string id="NotificationsBlockedForUrlsDesc">이 사이트에서 알림 차단</string><string id="Proxy_group">프록시 서버</string><string id="ProxyMode">프록시 서버 설정을 지정하는 방법 선택</string><string id="ProxyMode_Explain">Google Chrome이(가) 사용하는 프록시 서버를 지정하도록 하며 사용자가 프록시 설정을 변경하지 못하게 합니다.
+
+프록시 서버를 사용하지 않고 항상 직접 연결하도록 선택하면 다른 옵션은 모두 무시됩니다.
+
+시스템 프록시 설정을 사용하도록 선택하면 다른 옵션은 모두 무시됩니다.
+
+프록시 서버를 자동으로 감지하도록 선택하면 다른 옵션은 모두 무시됩니다.
+
+고정 서버 프록시 모드를 선택하면 '프록시 서버의 주소 또는 URL' 및 '쉼표로 분리된 프록시 우회 규칙 목록'에 추가 옵션을 지정할 수 있습니다. ARC 앱은 우선순위가 가장 높은 HTTP 프록시 서버만 사용합니다.
+
+.pac 프록시 스크립트를 사용하도록 선택하면 '프록시 .pac 파일로 연결된 URL'의 스크립트에 URL을 지정해야 합니다.
+
+자세한 예를 보려면 다음 페이지에 방문하세요.
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett.
+
+이 설정을 사용하면 Google Chrome와(과) ARC 앱은 명령줄에서 지정한 모든 프록시 관련 옵션을 무시합니다.
+
+이 정책을 설정하지 않으면 사용자가 원하는 프록시 설정을 선택할 수 있습니다.</string><string id="ProxyMode_ProxyDisabled">프록시 사용하지 않음</string><string id="ProxyMode_ProxyAutoDetect">프록시 설정 자동 감지</string><string id="ProxyMode_ProxyPacScript">.pac 프록시 스크립트 사용</string><string id="ProxyMode_ProxyFixedServers">고정 프록시 서버 사용</string><string id="ProxyMode_ProxyUseSystem">시스템 프록시 설정 사용</string><string id="ProxyServer">프록시 서버의 주소 또는 URL</string><string id="ProxyServer_Explain">여기에서 프록시 서버의 URL을 지정할 수 있습니다.
+
+이 정책은 '프록시 서버 설정을 지정하는 방법 선택'에서 수동 프록시 설정을 선택한 경우에만 적용됩니다.
+
+프록시 정책 설정에서 다른 모드를 선택한 경우 이 정책을 설정하면 안 됩니다.
+
+더 많은 옵션 및 예제를 보려면 다음 페이지를 참조하세요.
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyPacUrl">proxy .pac 파일에 대한 URL</string><string id="ProxyPacUrl_Explain">여기에서 프록시.pac 파일의 URL을 지정할 수 있습니다.
+
+이 정책은 '프록시 서버 설정을 지정하는 방법 선택'에서 수동 프록시 설정을 선택한 경우에만 적용됩니다.
+
+프록시 정책을 설정하며 다른 모드를 선택한 경우 이 정책을 설정하면 안 됩니다.
+
+자세한 예를 보려면 다음 페이지를 참조하세요.
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett</string><string id="ProxyBypassList">프록시 우회 규칙</string><string id="ProxyBypassList_Explain">Google Chrome은(는) 여기에 지정된 호스트 목록에 대한 프록시를 우회합니다.
+
+이 정책은 '프록시 서버 설정을 지정하는 방법 선택'에서 수동 프록시 설정을 선택한 경우에만 적용됩니다.
+
+프록시 정책을 설정하기 위해 다른 모드를 선택한 경우 이 정책을 설정하지 않아야 합니다.
+
+자세한 예를 보려면 다음 페이지를 참조하세요.
+https://www.chromium.org/developers/design-documents/network-settings#TOC-Command-line-options-for-proxy-sett.</string><string id="Homepage_group">홈페이지</string><string id="HomepageLocation">홈페이지 URL 설정</string><string id="HomepageLocation_Explain">Configures the default home page URL in Google Chrome and prevents users from changing it.
+
+The home page is the page opened by the Home button. The pages that open on startup are controlled by the RestoreOnStartup policies.
+
+The home page type can either be set to a URL you specify here or set to the New Tab Page. If you select the New Tab Page, then this policy does not take effect.
+
+If you enable this setting, users cannot change their home page URL in Google Chrome, but they can still choose the New Tab Page as their home page.
+
+Leaving this policy not set will allow the user to choose their home page on their own if HomepageIsNewTabPage is not set too.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="HomepageIsNewTabPage">새 탭 페이지를 홈페이지로 사용</string><string id="HomepageIsNewTabPage_Explain">Configures the type of the default home page in Google Chrome and prevents users from changing home page preferences. The home page can either be set to a URL you specify or set to the New Tab Page.
+
+If you enable this setting, the New Tab Page is always used for the home page, and the home page URL location is ignored.
+
+If you disable this setting, the user's homepage will never be the New Tab Page, unless its URL is set to 'chrome://newtab'.
+
+If you enable or disable this setting, users cannot change their homepage type in Google Chrome.
+
+Leaving this policy not set will allow the user to choose whether the new tab page is their home page on their own.
+
+This policy is not available on Windows instances that are not joined
+to a MicrosoftÂ® Active DirectoryÂ® domain.</string><string id="Extensions_group">확장 프로그램</string><string id="ExtensionInstallBlacklist">확장 프로그램 설치 차단목록 설정</string><string id="ExtensionInstallBlacklist_Explain">사용자가 설치할 수 없는 확장 프로그램을 지정하도록 허용합니다. 이미 설치된 확장 프로그램이 블랙리스트에 오를 경우에는 사용이 중지되며, 사용자가 사용 설정할 수 없습니다. 블랙리스트로 인해 중지된 확장 프로그램이 블랙리스트에서 제거되면 자동으로 다시 사용 설정됩니다.
+
+블랙리스트 값 '*'은 허용 목록에 명시적으로 등록되지 않은 경우 확장 프로그램이 모두 블랙리스트에 올라감을 의미합니다.
+
+이 정책이 설정되지 않은 경우 사용자는 Google Chrome에서 모든 확장 프로그램을 설치할 수 있습니다.</string><string id="ExtensionInstallBlacklistDesc">확장 프로그램 설치 차단목록 설정</string><string id="ExtensionInstallWhitelist">확장 프로그램 설치 허용목록 설정</string><string id="ExtensionInstallWhitelist_Explain">차단목록에 적용되지 않는 확장 프로그램을 지정할 수 있습니다. 차단목록 값 *은 모든 확장 프로그램이 차단되며 사용자가 허용목록에 나열된 확장 프로그램만 설치할 수 있음을 의미합니다. 기본적으로 모든 확장 프로그램은 허용목록에 포함되지만, 모든 확장 프로그램이 정책에 의해 차단목록에 포함된 경우 허용목록을 사용하여 해당 정책을 무시할 수 있습니다.</string><string id="ExtensionInstallWhitelistDesc">확장 프로그램 설치 허용목록 설정</string><string id="ExtensionInstallForcelist">강제로 설치된 앱과 확장 프로그램 목록 구성</string><string id="ExtensionInstallForcelist_Explain">Specifies a list of apps and extensions that are installed silently,
+without user interaction, and which cannot be uninstalled nor
+disabled by the user. All permissions requested by the
+apps/extensions are granted implicitly, without user interaction,
+including any additional permissions requested by future versions of
+the app/extension. Furthermore, permissions are granted for the
+enterprise.deviceAttributes and enterprise.platformKeys extension
+APIs. (These two APIs are not available to apps/extensions that are
+not force-installed.)
+
+This policy takes precedence over a potentially conflicting ExtensionInstallBlacklist policy. If an app or extension that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+For Windows instances that are not joined to a MicrosoftÂ® Active
+DirectoryÂ® domain, forced installation is limited to apps and
+extensions listed in the Chrome Web Store.
+
+Note that the source code of any extension may be altered by users via Developer Tools (potentially rendering the extension dysfunctional). If this is a concern, the DeveloperToolsDisabled policy should be set.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.
+
+If this policy is left not set, no apps or extensions are installed automatically and the user can uninstall any app or extension in Google Chrome.</string><string id="ExtensionInstallForcelistDesc">강제로 설치된 앱과 확장 프로그램 목록 구성</string><string id="ExtensionInstallSources">확장 프로그램, 앱, 사용자 스크립트 설치 소스 등 설정</string><string id="ExtensionInstallSources_Explain">Allows you to specify which URLs are allowed to install extensions, apps, and themes.
+
+Starting in Google Chrome 21, it is more difficult to install extensions, apps, and user scripts from outside the Chrome Web Store. Previously, users could click on a link to a *.crx file, and Google Chrome would offer to install the file after a few warnings. After Google Chrome 21, such files must be downloaded and dragged onto the Google Chrome settings page. This setting allows specific URLs to have the old, easier installation flow.
+
+Each item in this list is an extension-style match pattern (see https://developer.chrome.com/extensions/match_patterns). Users will be able to easily install items from any URL that matches an item in this list. Both the location of the *.crx file and the page where the download is started from (i.e. the referrer) must be allowed by these patterns.
+
+ExtensionInstallBlacklist takes precedence over this policy. That is, an extension on the blacklist won't be installed, even if it happens from a site on this list.</string><string id="ExtensionInstallSourcesDesc">확장 프로그램, 앱, 사용자 스크립트 설치 소스 등 설정</string><string id="ExtensionAllowedTypes">허용된 앱/확장 프로그램 설정</string><string id="ExtensionAllowedTypes_Explain">설치할 수 있는 앱/확장 프로그램의 유형을 제어하고 런타임 액세스를 제한합니다.
+
+이 설정을 사용하면 Google Chrome에 설치할 수 있는 확장 프로그램/앱의 유형과 이러한 유형이 상호작용할 수 있는 호스트의 허용 목록을 만듭니다. 값은 문자열 목록으로 구성되며 각 문자열은 'extension', 'theme', 'user_script', 'hosted_app', 'legacy_packaged_app', 'platform_app' 중 한 가지여야 합니다. 이러한 유형에 관해 자세히 알아보려면 Google Chrome 확장 프로그램 설명서를 참조하세요.
+
+이 정책은 ExtensionInstallForcelist에 의해 강제 설치되는 확장 프로그램 및 앱에도 적용됩니다.
+
+이 설정을 구성하면 목록에 없는 유형의 확장 프로그램/앱은 설치되지 않습니다.
+
+이 설정을 구성하지 않으면 허용되는 확장 프로그램/앱 유형에 제한이 적용되지 않습니다.</string><string id="ExtensionAllowedTypesDesc">허용된 앱/확장 프로그램 설정</string><string id="ExtensionSettings">확장 프로그램 관리 설정</string><string id="ExtensionSettings_Explain">Google Chrome의 확장 프로그램 관리 설정을 컨트롤합니다.
+
+이 정책은 기존의 모든 확장 프로그램과 관련된 정책에 따라 컨트롤되는 설정을 비롯한 여러가지 설정을 컨트롤하며, 기존 정책도 설정된 경우 모든 기존 정책을 무시합니다.
+
+이 정책은 확장 프로그램 ID나 업데이트 URL을 설정에 매핑합니다. 확장 프로그램 ID를 사용하며, 지정된 확장 프로그램에만 설정이 적용됩니다. 특수 ID &quot;*&quot;에 기본 설정이 적용될 수 있으며, 이 기본 설정은 본 정책에서 맞춤 설정을 지정하지 않은 모든 확장 프로그램에 적용됩니다. https://developer.chrome.com/extensions/autoupdate에 설명된 것과 같이, 설정은 업데이트 URL을 사용하여 이 확장 프로그램의 매니페스트에 명시된 정확한 업데이트 URL로 모든 확장 프로그램에 적용됩니다.
+
+각 확장 프로그램(또는 동일한 업데이트 URL을 가지는 확장 프로그램)의 설정은 아래에서 설명하는 입력란을 포함할 수 있는 또 다른 사전입니다.
+
+&quot;installation_mode&quot;: 확장 프로그램의 설치 모드를 표시하는 문자열에 매핑됩니다. 유효한 문자열은 다음과 같습니다.
+* &quot;allowed&quot;: 사용자가 확장 프로그램을 설치할 수 있도록 허용합니다. 기본 동작입니다.
+* &quot;blocked&quot;: 확장 프로그램 설치를 차단합니다.
+* &quot;force_installed&quot;: 확장 프로그램이 자동으로 설치되며 사용자가 삭제할 수 없습니다.
+* &quot;normal_installed&quot;: 확장 프로그램이 자동으로 설치되며 사용자가 사용 중지할 수 있습니다.
+
+&quot;installation_mode&quot;는 &quot;*&quot; 확장 프로그램(기본 설정) 및 동일한 업데이트 URL이 포함된 확장 프로그램 등 여러 확장 프로그램에 설정할 수도 있습니다. 이 경우 &quot;allowed&quot; 및 &quot;blocked&quot; 값만 사용할 수 있습니다.
+
+모드가 &quot;force_installed&quot; 또는 &quot;normal_installed&quot;로 설정된 경우 &quot;update_url&quot;도 설정해야 합니다. 이 정책에 설정된 업데이트 URL은 최초 설치 시에만 사용되며 이후 확장 프로그램 업데이트는 확장 프로그램의 매니페스트에 표시된 업데이트 URL을 사용하게 됩니다. 업데이트 URL은 위에서 설명한 대로 메니페스트 XML 업데이트 문서로 연결되어야 합니다.
+
+&quot;blocked_permissions&quot;: 확장 프로그램에서 차단된 API 권한을 나타내는 문자열 목록으로 매핑됩니다. 권한 이름은 https://developer.chrome.com/extensions/declare_permissions에서 설명한 대로 확장 프로그램의 매니페스트에서 정의된 권한 문자열과 동일합니다. 이 설정 또한 &quot;*&quot; 확장 프로그램에 설정할 수 있습니다. 확장 프로그램에서 차단 목록에 있는 권한을 요구하는 경우 로드가 허용되지 않습니다. 선택 요구사항에 차단된 권한이 포함된 경우 정상적인 방식으로 처리되지만 상충되는 권한을 요청하는 경우 런타임 시 자동으로 거부됩니다.
+
+&quot;allowed_permissions&quot;: &quot;blocked_permissions&quot;와 비슷하지만 전역 차단된 권한 목록에서 차단되었을 수 있는 일부 권한을 명시적으로 허용하므로, &quot;*&quot; 확장 프로그램에 설정할 수 없습니다. 이 설정은 자동으로 확장 프로그램에 권한을 부여하지 않습니다.
+
+&quot;minimum_version_required&quot;: 버전 문자열에 매핑됩니다. 버전 문자열의 형식은 https://developer.chrome.com/apps/manifest/version에 설명된 것처럼 확장 프로그램 매니페스트에 사용된 문자열과 동일합니다. 지정된 최소 버전보다 이전 버전의 확장 프로그램은 사용 중지되며 이는 강제로 설치된 확장 프로그램에도 적용됩니다.
+
+다음 설정은 기본 &quot;*&quot; 설정에만 사용됩니다.
+
+&quot;install_sources&quot;: 이 목록에 포함된 각 항목은 확장 프로그램 스타일의 일치 패턴입니다(https://developer.chrome.com/extensions/match_patterns 참조). 사용자는 이 목록에 포함된 항목과 일치하는 모든 URL의 항목을 간편하게 설치할 수 있습니다. *.crx 파일과 다운로드 시작 페이지(예: 리퍼러) 위치는 이 패턴에 따라 허용되어야 합니다.
+
+&quot;allowed_types&quot;: 이 설정은 Google Chrome에 설치할 수 있는 확장 프로그램/앱의 허용된 유형을 허용 목록에 추가합니다. 이 값은 문자열의 목록으로 각각은 &quot;extension&quot;, &quot;theme&quot;, &quot;user_script&quot;, &quot;hosted_app&quot;, &quot;legacy_packaged_app&quot;, &quot;platform_app&quot; 중 한 가지로 표시됩니다. 이러한 유형에 관해 자세히 알아보려면 Google Chrome 확장 프로그램 관련 문서를 참조하세요.
+&quot;blocked_install_message&quot;: 사용자가 확장 프로그램을 설치하려고 하지만 정책에 의해 차단된 경우 Chrome 웹 스토어에서 일반 오류 메시지를 표시합니다. 이 설정을 이용해 오류 메시지에 텍스트를 추가할 수 있습니다. 이는 고객센터로 사용자를 안내하거나, 이 확장 프로그램이 차단된 이유를 설명하는 등의 경우에 사용됩니다. 오류 메시지는 한글 500자(영문 1,000자)보다 긴 경우 잘립니다.
+&quot;runtime_blocked_hosts&quot;: 확장 프로그램이 상호작용하지 못하도록 차단하는 호스트의 목록을 허용합니다. 여기에는 자바스크립트를 삽입하고, webRequests/webNavigation을 변경 및 확인하고, 쿠키를 확인하고 변경하는 등의 작업이 포함됩니다. 형식은 어떠한 경로도 정의할 수 없다는 점을 제외하면 일치 패턴(https://developer.chrome.com/extensions/match_patterns)과 유사합니다(예: ‘*://*.example.com’). 이는 효과적인 TLD 와일드 카드도 지원합니다(예:’ *://example.*’.)
+&quot;runtime_allowed_hosts&quot;: &quot;runtime_blocked_hosts&quot;에 포함되어 있는지와 관계없이 확장 프로그램이 상호작용할 수 있는 호스트의 목록을 허용합니다. &quot;runtime_blocked_hosts&quot;와 형식이 같습니다.
+</string><string id="AllowDeletingBrowserHistory">브라우저 및 다운로드 기록을 삭제하도록 설정합니다.</string><string id="AllowDeletingBrowserHistory_Explain">Google Chrome에서 브라우저 기록과 다운로드 기록을 삭제하도록 설정하고 사용자가 이 설정을 변경할 수 없도록 합니다.
+
+이 정책을 사용중지해도 인터넷 사용기록 및 다운로드 기록이 보관되지 않을 수 있습니다. 사용자는 기록 데이터베이스 파일을 직접 수정하거나 삭제할 수 있습니다. 또한 브라우저는 언제든지 기록 항목을 만료하거나 보관할 수 있습니다.
+
+이 설정을 사용하거나 설정을 지정하지 않는 경우 인터넷 사용기록 및 다운로드 기록을 삭제할 수 있습니다.
+
+이 설정을 사용중지하는 경우 인터넷 사용기록 및 다운로드 기록을 삭제할 수 없습니다..</string><string id="AllowDinosaurEasterEgg">공룡 부활절 달걀 게임 허용</string><string id="AllowDinosaurEasterEgg_Explain">기기가 오프라인일 때 사용자가 공룡 부활절 달걀 게임을 플레이할 수 있도록 허용합니다.
+
+이 정책이 'false'로 설정되면 사용자는 기기가 오프라인일 때 공룡 부활절 달걀 게임을 플레이할 수 없습니다. 이 설정이 'true'로 설정되면 사용자는 공룡 게임을 플레이할 수 있습니다. 이 정책이 설정되지 않은 경우 사용자는 등록된 Chrome OS에서 공룡 부활절 달걀 게임을 플레이할 수 없지만, 다른 상황에서는 플레이할 수 있습니다.</string><string id="AllowOutdatedPlugins">오래된 플러그인 실행 허용</string><string id="AllowOutdatedPlugins_Explain">If you enable this setting, outdated plugins are used as normal plugins.
+
+If you disable this setting, outdated plugins will not be used and users will not be asked for permission to run them.
+
+If this setting is not set, users will be asked for permission to run outdated plugins.</string><string id="AllowScreenLock">화면 잠금 허용</string><string id="AllowScreenLock_Explain">If this policy is set to false, users will not be able to lock the screen (only signing out from the user session will be possible). If this setting is set to true or not set, users who authenticated with a password can lock the screen.</string><string id="AllowedDomainsForApps">Google Apps에 액세스할 수 있도록 허용된 도메인 정의</string><string id="AllowedDomainsForApps_Explain">Enables Google Chrome's restricted log in feature in Google Apps and prevents users from changing this setting.
+
+If you define this setting, the user will only be able to access
+Google Apps (such as Gmail) using accounts from the specified domains.
+
+This setting will NOT prevent the user from loging in on a managed device
+that requires Google authentication. The user will still be allowed to
+sign in to accounts from other domains, but they will receive an error
+when trying to use Google Apps with those accounts.
+
+If you leave this setting empty/not-configured, the user will be able to
+access Google Apps with any account.
+
+This policy causes the X-GoogApps-Allowed-Domains header to be appended to
+all HTTP and HTTPS requests to all google.com domains, as described in
+https://support.google.com/a/answer/1668854.
+
+Users cannot change or override this setting.</string><string id="AlternateErrorPagesEnabled">대체 오류 페이지 사용</string><string id="AlternateErrorPagesEnabled_Explain">Google Chrome에 내장된 대체 오류 페이지(예: '페이지를 찾을 수 없습니다')를 사용하도록 설정하며 사용자가 이 설정을 변경하지 못하게 합니다.
+
+이 설정을 사용하면 대체 오류 페이지가 사용됩니다.
+
+이 설정을 사용 중지하면 대체 오류 페이지가 사용되지 않습니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 Google Chrome에서 이 설정을 변경하거나 무시할 수 없습니다.
+
+이 정책을 설정하지 않은 경우 사용하도록 설정되지만 사용자가 설정을 변경할 수 있습니다.</string><string id="AlwaysAuthorizePlugins">승인이 필요한 플러그인 항상 실행</string><string id="AlwaysAuthorizePlugins_Explain">If you enable this setting, plugins that are not outdated always run.
+
+If this setting is disabled or not set, users will be asked for permission to run plugins that require authorization. These are plugins that can compromise security.</string><string id="ArcBackupRestoreEnabled">Android Backup Service 사용</string><string id="ArcBackupRestoreEnabled_Explain">이 정책이 true로 설정된 경우 Android 앱 데이터가 Android Backup 서버에 업로드되고 호환 앱에 맞도록 앱을 재설치하여 이 서버에서 복원됩니다.
+
+이 정책이 false로 설정된 경우 Android Backup Service가 사용 중지됩니다.
+
+이 설정이 적용되면 사용자는 변경할 수 없습니다.
+
+이 설정이 적용되지 않으면 사용자는 Android 설정 앱에서 Android Backup Service를 사용 설정/사용 중지할 수 있습니다.</string><string id="ArcCertificatesSyncMode">ARC 앱에 인증서 사용 가능 여부 설정</string><string id="ArcCertificatesSyncMode_Explain">SyncDisabled로 설정하거나 설정하지 않으면 Google Chrome OS 인증서를 ARC 앱에 사용할 수 없습니다.
+
+CopyCaCerts로 설정하면 Web TrustBit을(를) 포함하며 ONC가 설치된 모든 CA 인증서를 ARC 앱에 사용할 수 있습니다.</string><string id="ArcCertificatesSyncMode_SyncDisabled">ARC 앱에서 Google Chrome OS 인증서를 사용하지 않도록 설정</string><string id="ArcCertificatesSyncMode_CopyCaCerts">ARC 앱에서 Google Chrome OS CA 인증서를 사용하도록 설정</string><string id="ArcEnabled">ARC 사용</string><string id="ArcEnabled_Explain">이 정책이 true로 설정된 경우 사용자에게 ARC가 사용 설정됩니다
+(추가 정책 설정 선택에 따라 다름 - 현재 사용자 세션에 임시 모드나
+멀티 로그인을 사용하도록 설정한 경우에는 여전히 ARC를
+사용할 수 없습니다).
+
+이 설정을 사용 중지하거나 설정하지 않으면 기업 사용자는
+ARC를 사용할 수 없습니다.</string><string id="ArcLocationServiceEnabled">Android Google 위치 서비스 사용</string><string id="ArcLocationServiceEnabled_Explain">When this policy is set to true, the Android Google Location Service is enabled. This will allow Android apps to use its data to find the device location, and also will enable submitting of anonymous location data to Google.
+
+When this policy is set to false, Android Google Location Service will be switched off.
+
+If this setting is configured then users are not able change it themselves.
+
+If this setting is not configured then users are able to turn Google Location Service on and off in the Android Settings app.
+
+Note that this policy value may be overridden by the DefaultGeolocationSetting policy, when the latter is set to BlockGeolocation.
+
+This policy is applicable only to the users that are able to run Android apps.</string><string id="ArcPolicy">ARC 설정</string><string id="ArcPolicy_Explain">ARC 런타임에 전달될 정책 모음을 지정합니다. 유효한 JSON 값이어야 합니다..
+
+이 정책을 사용하여 기기에 자동 설치될 Android 앱을 설정할 수 있습니다.
+
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;applications&quot;: {
+&quot;type&quot;: &quot;array&quot;,
+&quot;items&quot;: {
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;packageName&quot;: {
+&quot;description&quot;: &quot;Android app identifier, e.g. &quot;com.google.android.gm&quot; for Gmail&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;installType&quot;: {
+&quot;description&quot;: &quot;앱의 설치 방법을 지정합니다. OPTIONAL: 앱이 자동으로 설치되지 않으며 사용자가 앱을 설치할 수 있습니다. 이 값은 이 정책이 지정되지 않은 경우의 기본값입니다. PRELOAD: 앱이 자동으로 설치되지만 사용자가 앱을 제거할 수 있습니다. FORCE_INSTALLED: 앱이 자동으로 설치되며 사용자가 제거할 수 없습니다. BLOCKED: 앱이 차단되며 설치할 수 없습니다. 이전 정책하에서 설치된 앱은 제거됩니다.&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;OPTIONAL&quot;,
+&quot;PRELOAD&quot;,
+&quot;FORCE_INSTALLED&quot;,
+&quot;BLOCKED&quot;
+]
+},
+&quot;defaultPermissionPolicy&quot;: {
+&quot;description&quot;: &quot;앱에 대한 권한 요청을 허가하는 정책입니다. PERMISSION_POLICY_UNSPECIFIED: 정책이 지정되지 않았습니다. 어떤 수준에서도 권한과 관련된 정책이 지정되지 않은 경우, 'PROMPT' 동작이 기본값으로 사용됩니다. PROMPT: 사용자에게 권한을 허가하라는 메시지를 표시합니다. GRANT: 자동으로 권한을 허가합니다. DENY: 자동으로 권한을 거부합니다.&quot;,
+&quot;type&quot;: &quot;string&quot;,
+&quot;enum&quot;: [
+&quot;PERMISSION_POLICY_UNSPECIFIED&quot;,
+&quot;PROMPT&quot;,
+&quot;GRANT&quot;,
+&quot;DENY&quot;
+]
+},
+&quot;managedConfiguration&quot;: {
+&quot;description&quot;: &quot;키-값 쌍이 있는 앱별 JSON 설정 객체입니다. 예: '&quot;managedConfiguration&quot;: { &quot;key1&quot;: value1, &quot;key2&quot;: value2 }'. 키는 앱 매니페스트에 정의되어 있습니다.&quot;,
+&quot;type&quot;: &quot;object&quot;
+}
+}
+}
+}
+}
+}
+
+런처에 앱을 고정하려면 PinnedLauncherApps를 참조하세요.</string><string id="AudioCaptureAllowed">오디오 캡처 허용 또는 거부</string><string id="AudioCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+audio capture access except for URLs configured in the
+AudioCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and audio
+capture only be available to URLs configured in AudioCaptureAllowedUrls.
+
+This policy affects all types of audio inputs and not only the built-in microphone.</string><string id="AudioCaptureAllowedUrls">별도 메시지를 표시하지 않고 오디오 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</string><string id="AudioCaptureAllowedUrls_Explain">이 목록의 패턴을 요청 URL의 보안 출처와 비교합니다.
+일치하는 항목이 확인되는 경우 메시지를 표시하지 않고 오디오 캡처
+기기에 대한 액세스 권한을 부여합니다.
+
+참고: 버전 45 이하에서는 키오스크 모드에서만 이 정책이 지원됩니다.</string><string id="AudioCaptureAllowedUrlsDesc">별도 메시지를 표시하지 않고 오디오 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</string><string id="AudioOutputAllowed">오디오 재생 허용</string><string id="AudioOutputAllowed_Explain">When this policy is set to false, audio output will not be available on the device while the user is logged in.
+
+This policy affects all types of audio output and not only the built-in speakers. Audio accessibility features are also inhibited by this policy. Do not enable this policy if a screen reader is required for the user.
+
+If this setting is set to true or not configured then users can use all supported audio outputs on their device.</string><string id="AutoFillEnabled">자동완성 사용</string><string id="AutoFillEnabled_Explain">Google Chrome의 자동완성 기능을 사용하도록 설정하면 사용자가 주소나 신용카드 정보와 같이 이전에 저장한 정보를 사용하여 웹 양식을 자동으로 완성할 수 있습니다.
+
+이 설정을 사용 중지하면 사용자가 자동완성을 사용할 수 없습니다.
+
+이 설정을 사용하거나 값을 설정하지 않으면 자동완성을 사용자가 관리할 수 있게 됩니다. 사용자가 자동완성 프로필을 설정하고 원하는 대로 자동완성을 설정하거나 해제할 수 있습니다.</string><string id="AutofillCreditCardEnabled">신용카드 정보 자동 완성 사용</string><string id="AutofillCreditCardEnabled_Explain">Google Chrome의 자동 완성 기능을 사용 설정하면 사용자가 이전에 저장된 정보를 사용하여 웹 양식에서 신용카드 정보와 주소를 자동으로 완성할 수 있습니다.
+
+이 설정을 사용 중지하면 입력할 신용카드 정보가 자동 완성 기능을 통해 제안되거나 자동으로 채워지지 않으며, 사용자가 웹 탐색 중에 제출하는 신용카드 정보가 새로 저장되지도 않습니다.
+
+이 설정을 사용하거나 값을 지정하지 않으면 사용자가 UI에서 신용카드를 포함한 전반적인 자동 완성 기능을 관리할 수 있게 됩니다.</string><string id="BlockThirdPartyCookies">제3자 쿠키 차단</string><string id="BlockThirdPartyCookies_Explain">Enabling this setting prevents cookies from being set by web page elements that are not from the domain that is in the browser's address bar.
+
+Disabling this setting allows cookies to be set by web page elements that are not from the domain that is in the browser's address bar and prevents users from changing this setting.
+
+If this policy is left not set, third party cookies will be enabled but the user will be able to change that.</string><string id="BookmarkBarEnabled">북마크바 사용</string><string id="BookmarkBarEnabled_Explain">If you enable this setting, Google Chrome will show a bookmark bar.
+
+If you disable this setting, users will never see the bookmark bar.
+
+If you enable or disable this setting, users cannot change or override it in Google Chrome.
+
+If this setting is left not set the user can decide to use this function or not.</string><string id="CaptivePortalAuthenticationIgnoresProxy">캡티브 포털 승인에서 프록시를 무시함</string><string id="CaptivePortalAuthenticationIgnoresProxy_Explain">This policy allows Google Chrome OS to bypass any proxy for captive portal authentication.
+
+This policy only takes effect if a proxy is configured (for example through policy, by the user in chrome://settings, or by extensions).
+
+If you enable this setting, any captive portal authentication pages (i.e. all web pages starting from captive portal signin page until Google Chrome detects successful internet connection) will be displayed in a separate window ignoring all policy settings and restrictions for the current user.
+
+If you disable this setting or leave it unset, any captive portal authentication pages will be shown in a (regular) new browser tab, using the current user's proxy settings.</string><string id="CertificateTransparencyEnforcementDisabledForUrls">일부 URL 목록에는 인증서 투명성 시행 사용 중지</string><string id="CertificateTransparencyEnforcementDisabledForUrls_Explain">등록된 URL 목록의 경우 인증서 투명성 요구사항을 시행하지 않도록 사용 중지합니다.
+
+이 정책은 지정된 URL의 경우 호스트 이름의 인증서가 인증서 투명성을 통해 공개되지 않아도 되도록 허용합니다. 이 정책은 올바르게 공개되지 않아 신뢰받지 못했을 인증서도 계속 사용될 수 있도록 허용하지만, 해당 호스트 이름으로 잘못 발급된 인증서가 있을 경우 이를 감지하기 어렵습니다.
+
+URL 패턴은 https://www.chromium.org/administrators/url-blacklist-filter-format에 따라 형식이 지정됩니다. 하지만 스키마, 포트 또는 경로와 관계없이 특정 호스트 이름에 대한 인증서가 유효하므로 URL의 호스트 이름 부분만 고려됩니다. 와일드카드 호스트는 지원되지 않습니다.
+
+이 정책이 설정되지 않은 경우 인증서 투명성을 통해 공개되어야 하는 모든 인증서는 인증서 투명성 정책에 따라 공개되지 않으면 신뢰할 수 없는 것으로 간주됩니다.</string><string id="CertificateTransparencyEnforcementDisabledForUrlsDesc">일부 URL 목록에는 인증서 투명성 시행 사용 중지</string><string id="ChromeOsLockOnIdleSuspend">기기가 유휴 상태이거나 일시 중지되었을 때 잠금 기능을 사용</string><string id="ChromeOsLockOnIdleSuspend_Explain">Google Chrome OS 기기가 유휴 상태이거나 일시 중지되었을 때 잠금을 사용하도록 설정합니다.
+
+이 설정을 사용하면 절전 모드인 기기를 잠금 해제할 때 사용자에게 비밀번호를 묻습니다.
+
+이 설정을 사용 중지하면 절전 모드인 기기를 잠금 해제할 때 사용자에게 비밀번호를 묻지 않습니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 이 설정을 변경하거나 재정의할 수 없습니다.
+
+이 정책을 설정하지 않은 경우 사용자가 기기 잠금을 해제할 때 비밀번호를 확인할지 여부를 선택할 수 있습니다.</string><string id="ChromeOsMultiProfileUserBehavior">멀티 프로필 세션에서 사용자 활동 제어</string><string id="ChromeOsMultiProfileUserBehavior_Explain">Google Chrome OS 기기에서 멀티프로필 세션의 사용자 동작을 제어합니다.
+
+이 정책을 'MultiProfileUserBehaviorUnrestricted'로 설정한 경우 사용자는 멀티프로필 세션에서 기본 또는 보조 사용자가 될 수 있습니다.
+
+이 정책을 'MultiProfileUserBehaviorMustBePrimary'로 설정한 경우 사용자는 멀티프로필 세션에서 기본 사용자만 될 수 있습니다.
+
+이 정책을 'MultiProfileUserBehaviorNotAllowed'로 설정한 경우 사용자는 멀티프로필 세션에 참여할 수 없습니다.
+
+이 설정을 사용하면 변경하거나 무시할 수 없습니다.
+
+사용자가 멀티프로필 세션에 로그인한 상태에서 설정이 변경되면 관련 설정과 대조하여 세션의 모든 사용자가 검사를 거칩니다. 사용자 중 한 명이 더 이상 세션에 허용되지 않으면 세션이 닫힙니다.
+
+정책을 설정하지 않은 상태로 두면 엔터프라이즈 관리 사용자의 경우 'MultiProfileUserBehaviorMustBePrimary' 기본값이 적용되며 비관리 사용자에게는 'MultiProfileUserBehaviorUnrestricted'가 사용됩니다.</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorUnrestricted">기업 사용자에게 기본 사용자 및 보조 사용자 모두 허용(관리 대상 사용자가 아닌 경우 기본 동작임)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorMustBePrimary">기업 사용자에게 기본 멀티 프로필 사용자만 허용(기업에서 관리하는 사용자에 대한 기본 동작임)</string><string id="ChromeOsMultiProfileUserBehavior_MultiProfileUserBehaviorNotAllowed">기업 사용자가 멀티 프로필에 포함되도록 허용하지 않음(기본 또는 보조)</string><string id="ChromeOsReleaseChannel">배포 채널</string><string id="ChromeOsReleaseChannel_Explain">기기에서 사용해야 할 특정 배포 채널을 지정합니다.</string><string id="ChromeOsReleaseChannel_StableChannel">정식 채널</string><string id="ChromeOsReleaseChannel_BetaChannel">베타 채널</string><string id="ChromeOsReleaseChannel_DevChannel">개발자 채널(불안정할 수 있음)</string><string id="ChromeOsReleaseChannelDelegated">배포 채널을 사용자가 구성할 수 있는지를 결정합니다.</string><string id="ChromeOsReleaseChannelDelegated_Explain">정책이 True로 설정되어 있고 ChromeOsReleaseChannel 정책이 지정되지 않은 경우 등록된 도메인의 사용자가 기기의 배포 채널을 변경할 수 있도록 허용됩니다. 정책이 false로 설정되어 있으면 마지막에 설정한 채널을 기기가 사용합니다.
+
+사용자가 선택한 채널은 ChromeOsReleaseChannel 정책이 무시할 수 있지만 정책 채널이 기기에 설치된 채널보다 더 안정적인 경우 더 안정적인 채널이 기기에 설치된 채널보다 더 많아질 때 채널이 전환됩니다.</string><string id="ComponentUpdatesEnabled">Google Chrome에서 구성요소 업데이트를 사용 설정합니다.</string><string id="ComponentUpdatesEnabled_Explain">설정하지 않거나 True로 설정한 경우, Google Chrome의 모든 구성요소에 구성요소 업데이트를 사용합니다.
+
+False로 설정하면 구성요소 업데이트가 사용 중지됩니다. 하지만 일부 구성요소는 이 정책에서 제외됩니다. 예를 들어 실행 코드가 포함되지 않거나, 브라우저 작동 방식을 심각하게 변경하지 않거나, 보안에 중요한 구성요소 업데이트는 사용 중지되지 않습니다.
+이와 같은 구성요소의 예로는 인증서 해지 목록 및 세이프 브라우징 데이터가 있습니다.
+세이프 브라우징에 관해 자세히 알아보려면 https://developers.google.com/safe-browsing을 참조하세요.</string><string id="DefaultPrinterSelection">기본 프린터 선택 규칙</string><string id="DefaultPrinterSelection_Explain">Google Chrome 기본 프린터 선택 규칙을 무시합니다.
+
+이 정책은 Google Chrome의 기본 프린터 선택 규칙을 결정하며, 프로필로 인쇄 기능을 처음 사용할 때 적용됩니다.
+
+이 정책을 설정하면 Google Chrome에서 지정한 속성과 모두 일치하는 프린터를 찾으려고 시도하며, 찾은 프린터를 기본 프린터로 선택합니다. 정책과 일치하는 첫 번째 프린터가 선택되며, 일치하는 프린터가 여러 개인 경우 프린터가 발견되는 순서에 따라 일치하는 프린터라면 어떤 것이든 선택될 수 있습니다.
+
+이 정책이 설정되어 있지 않거나 시간 내에 일치하는 프린터를 찾지 못한 경우 내장 PDF 프린터가 기본으로 설정되며, PDF 프린터를 사용할 수 없는 경우 프린터가 선택되지 않습니다.
+
+값은 다음 스키마에 따라 JSON 객체로 파싱됩니다.
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;kind&quot;: {
+&quot;description&quot;: &quot;Whether to limit the search of the matching printer to a specific set of printers.&quot;,
+&quot;type&quot;: {
+&quot;enum&quot;: [ &quot;local&quot;, &quot;cloud&quot; ]
+}
+},
+&quot;idPattern&quot;: {
+&quot;description&quot;: &quot;Regular expression to match printer id.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;namePattern&quot;: {
+&quot;description&quot;: &quot;Regular expression to match printer display name.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+Google Cloud Print에 연결된 프린터는 &quot;cloud&quot;로 간주되며, 나머지 프린터는 &quot;local&quot;로 분류됩니다.
+필드가 생략된 경우 모든 값이 가능하다는 의미입니다. 예를 들어 연결을 지정하지 않으면 인쇄 미리보기에서 로컬과 클라우드 프린터를 모두 검색합니다.
+정규식 패턴은 자바스크립트 RegExp 구문을 따라야 하며, 검색결과는 대소문자를 구분합니다.</string><string id="DeveloperToolsDisabled">개발자 도구 사용 중지</string><string id="DeveloperToolsDisabled_Explain">개발자 도구 및 자바스크립트 콘솔의 사용을 중지합니다.
+
+이 설정을 사용하면 개발자 도구에 액세스할 수 없으며 더 이상 웹사이트 요소를 검사할 수 없습니다. 개발자 도구나 자바스크립트 콘솔을 열기 위한 모든 단축키와 메뉴, 컨텍스트 메뉴 항목이 사용 중지됩니다.
+
+이 옵션을 사용하지 않도록 설정하거나 설정하지 않은 채로 두면 사용자가 개발자 도구와 자바스크립트 콘솔을 사용할 수 있습니다.</string><string id="DeviceAllowBluetooth">기기에서 블루투스 허용</string><string id="DeviceAllowBluetooth_Explain">이 정책이 false로 설정되면 Google Chrome OS에서 블루투스를 사용 중지하며 사용자가 블루투스를 다시 사용 설정할 수 없습니다.
+
+이 정책을 true로 설정하거나 설정하지 않고 남겨두면 사용자가 블루투스를 원하는 대로 사용 또는 사용 중지할 수 있습니다.
+
+이 정책이 설정되면 사용자가 변경하거나 재정의할 수 없습니다.
+
+블루투스를 사용 설정한 후에 사용자가 로그아웃하고 다시 로그인해야 변경사항이 적용됩니다(블루투스를 사용 중지하는 경우에는 다시 로그인하지 않아도 됨).</string><string id="DeviceAllowNewUsers">새로운 사용자 계정 생성 허용</string><string id="DeviceAllowNewUsers_Explain">Controls whether Google Chrome OS allows new user accounts to be created. If this policy is set to false, users that do not have an account already will not be able to login.
+
+If this policy is set to true or not configured, new user accounts will be allowed to be created provided that DeviceUserWhitelist does not prevent the user from logging in.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers">사용자가 Chrome OS 등록을 통해 쿠폰을 사용할 수 있게 합니다.</string><string id="DeviceAllowRedeemChromeOsRegistrationOffers_Explain">기업 기기를 담당하는 IT 관리자는 이 플래그를 사용하여 사용자가 Chrome OS 등록을 통해 쿠폰을 사용하도록 할지 여부를 제어할 수 있습니다.
+
+이 정책이 true로 설정되어 있거나 설정되어 있지 않으면 사용자는 Chrome OS 등록을 통해 쿠폰을 사용할 수 있습니다.
+
+이 정책이 false로 설정되어 있으면 사용자는 쿠폰을 사용할 수 없습니다.</string><string id="DeviceAutoUpdateDisabled">자동 업데이트 사용 안 함</string><string id="DeviceAutoUpdateDisabled_Explain">True로 설정하면 자동 업데이트가 사용 중지됩니다.
+
+Google Chrome OS 기기는 설정이 구성되지 않거나 False로 설정된 경우 자동으로 업데이트를 확인합니다.
+
+경고: 자동 업데이트를 사용 설정해야 사용자가 소프트웨어 업데이트나 주요 보안 수정사항을 받을 수 있으므로 사용하도록 설정하는 것이 좋습니다. 자동 업데이트를 사용 중지하면 사용자가 위험에 처할 수 있습니다.</string><string id="DeviceAutoUpdateP2PEnabled">p2p 자동 업데이트 사용</string><string id="DeviceAutoUpdateP2PEnabled_Explain">OS 업데이트 페이로드에 p2p를 사용할지 여부를 지정합니다. True로 설정되면 기기는 LAN에서 업데이트 페이로드를 공유하고 소비하려고 시도하여 인터넷 대역폭 사용량 및 혼잡을 줄일 수 있습니다. LAN에서 업데이트 페이로드를 사용할 수 없는 경우 기기는 다시 업데이트 서버로부터 다운로드합니다. False로 설정되었거나 아무런 설정이 없는 경우 p2p가 사용되지 않습니다.</string><string id="DeviceBlockDevmode">개발자 모드 차단</string><string id="DeviceBlockDevmode_Explain">개발자 모드 차단
+
+이 정책이 True로 설정된 경우 Google Chrome OS에서 기기가 개발자 모드로 부팅하지 못하도록 합니다. 개발자 스위치가 사용 설정된 경우 시스템이 부팅되지 않으며 오류 화면이 표시됩니다.
+
+이 정책이 설정되지 않았거나 False로 설정된 경우 기기에서 개발자 모드를 계속 사용할 수 있습니다.</string><string id="DeviceDataRoamingEnabled">데이터 로밍 사용</string><string id="DeviceDataRoamingEnabled_Explain">데이터 로밍을 기기에 사용할 지 여부를 결정합니다. true로 설정하면 데이터 로밍이 허용됩니다. 구성하지 않거나 false로 설정하면 데이터 로밍은 사용할 수 없습니다.</string><string id="DeviceEphemeralUsersEnabled">로그아웃 시 사용자 데이터 삭제</string><string id="DeviceEphemeralUsersEnabled_Explain">Google Chrome OS이(가) 로그아웃 뒤에 로컬 계정 데이터를 유지할 지를 결정합니다. true로 설정하면, Google Chrome OS이(가) 유지하는 영구 계정이 없으며 사용자 세션의 모든 데이터가 로그아웃 뒤에 삭제됩니다. 이 정책이 false로 설정되거나 구성되지 않으면 기기는 암호화된 로컬 사용자 데이터를 유지합니다.</string><string id="DeviceGuestModeEnabled">손님 모드 사용</string><string id="DeviceGuestModeEnabled_Explain">이 정책을 true로 설정하거나 구성하지 않으면 Google Chrome OS은(는) 손님 로그인을 사용합니다. 손님 로그인은 익명 사용자 세션이며 비밀번호가 필요없습니다.
+
+이 정책을 false로 설정하면, Google Chrome OS은(는) 손님 세션을 시작하지 않습니다.</string><string id="DeviceLoginScreenAppInstallList">로그인 화면에서 설치된 앱 목록 구성</string><string id="DeviceLoginScreenAppInstallList_Explain">
+Specifies a list of apps that are installed silently on the login screen,
+without user interaction, and which cannot be uninstalled.
+All permissions requested by the apps are granted
+implicitly, without user interaction, including any additional
+permissions requested by future versions of the app.
+
+Note that, for security and privacy reasons, extensions are not allowed to be installed using this policy. Moreover, the devices on the Stable channel will only install the apps that belong to the whitelist bundled into Google Chrome. Any items that don't conform to these conditions will be ignored.
+
+If an app that previously had been force-installed is removed from this list, it is automatically uninstalled by Google Chrome.
+
+Each list item of the policy is a string that contains an extension ID and an &quot;update&quot; URL separated by a semicolon (;). The extension ID is the 32-letter string found e.g. on chrome://extensions when in developer mode. The &quot;update&quot; URL should point to an Update Manifest XML document as described at https://developer.chrome.com/extensions/autoupdate. Note that the &quot;update&quot; URL set in this policy is only used for the initial installation; subsequent updates of the extension employ the update URL indicated in the extension's manifest.
+
+For example, gbchcmhmhahfdphkhkmpfmihenigjmpp;https://clients2.google.com/service/update2/crx installs the Chrome Remote Desktop app from the standard Chrome Web Store &quot;update&quot; URL. For more information about hosting extensions, see: https://developer.chrome.com/extensions/hosting.</string><string id="DeviceLoginScreenAppInstallListDesc">로그인 화면에서 설치된 앱 목록 구성</string><string id="DeviceLoginScreenInputMethods">기기 로그인 화면 키보드 레이아웃</string><string id="DeviceLoginScreenInputMethods_Explain">Google Chrome OS 로그인 화면에서 허용되는 키보드 레이아웃을 구성합니다.
+
+이 정책이 입력 방법 식별자 목록으로 설정되는 경우 주어진 입력 방법을 로그인 화면에서 사용할 수 있습니다. 첫 번째로 주어진 입력 수단이 사전 선택됩니다. 로그인 화면에서는 사용자 포드가 활성화되는데 이때 이 정책에서 주어진 입력 수단과 더불어 사용자가 마지막으로 사용한 입력 수단을 사용할 수 있습니다. 이 정책이 설정되지 않은 경우 로그인 화면의 입력 수단은 로그인 화면이 표시되는 언어에서 가져옵니다. 유효한 입력 수단 식별자가 아닌 값은 무시됩니다.</string><string id="DeviceLoginScreenInputMethodsDesc">기기 로그인 화면 키보드 레이아웃</string><string id="DeviceLoginScreenLocales">기기 로그인 화면 언어</string><string id="DeviceLoginScreenLocales_Explain">Google Chrome OS 로그인 화면에서 사용되는 언어를 구성합니다.
+
+이 정책이 설정되면 로그인 화면이 항상 이 정책의 첫 번째 값에 의해 주어지는 언어로 표시됩니다(이 정책은 향후 호환성을 위해 목록으로 정의됨). 이 정책이 설정되지 않거나 빈 목록으로 설정되는 경우 로그인 화면이 최종 사용자 세션의 언어로 표시됩니다. 이 정책이 유효한 언어가 아닌 값으로 설정되는 경우 로그인 화면이 대체 언어(현재 en-US)로 표시됩니다.</string><string id="DeviceLoginScreenLocalesDesc">기기 로그인 화면 언어</string><string id="DeviceLoginScreenPowerManagement">로그인 화면의 전원 관리</string><string id="DeviceLoginScreenPowerManagement_Explain">Google Chrome OS 로그인 화면의 전원 관리를 설정합니다.
+
+이 정책을 사용하면 로그인 화면이 표시된 채 일정 시간 동안 사용자 활동이 없는 경우 Google Chrome OS에서 수행할 작업을 설정할 수 있습니다. 이 정책은 여러 설정을 관리합니다. 개별적인 의미와 값 범위는 세션 내에서 전원 관리를 제어하는 해당 정책을 참조하시기 바랍니다. 이러한 정책의 유일한 예외는 다음과 같습니다.
+* 유휴 상태일 때나 덮개를 덮었을 때 수행할 작업은 세션 종료일 수 없습니다.
+* AC 전원에서 실행 중일 때 유휴 상태에서 수행되는 기본 작업은 종료입니다.
+
+설정이 지정되지 않은 경우 기본값이 사용됩니다.
+
+이 정책이 설정되지 않은 경우 모든 설정에 기본값이 사용됩니다.</string><string id="DeviceMetricsReportingEnabled">통계 보고 사용</string><string id="DeviceMetricsReportingEnabled_Explain">비정상 종료 보고서를 비롯한 사용 통계 및 진단 데이터를 Google에 보고할지 여부를 지정합니다. true로 설정하면 Google Chrome OS에서 사용 통계 및 진단 데이터를 보고합니다. 설정하지 않거나 false로 설정하면 통계 및 진단 데이터 보고가 사용 중지됩니다.</string><string id="DeviceNativePrinters">기기에 적용되는 엔터프라이즈 프린터 설정 파일</string><string id="DeviceNativePrinters_Explain">기기에 적용되는 엔터프라이즈 프린터 설정을 제공합니다.
+
+이 정책을 통해 Google Chrome OS 기기에 프린터 설정을 제공할 수 있습니다. 파일 크기는 5MB를 초과할 수 없으며, JSON으로 인코딩되어야 합니다. 정책 형식은 NativePrinters 사전과 같습니다. 약 21,000대의 프린터가 포함된 파일을 인코딩하면 파일 용량이 5MB 정도 될 것으로 예상됩니다. 암호화 해시는 다운로드 파일의 무결성을 확인하는 데 사용됩니다.
+
+이 파일은 다운로드되고 캐시됩니다. URL 또는 해시가 변경될 때마다 파일이 다시 다운로드됩니다.
+
+이 정책이 설정되면 Google Chrome OS에서 프린터 설정 파일을 다운로드한 다음 DeviceNativePrintersAccessMode, DeviceNativePrintersWhitelist, DeviceNativePrintersBlacklist에 따라 프린터를 제공합니다.
+
+이 정책은 사용자가 개별 기기에서 프린터를 설정할 수 있는지에 영향을 미치지 않습니다. 이 정책은 개별 사용자의 프린터 설정을 보완하기 위한 것입니다.
+
+이 정책은 NativePrintersBulkConfiguration에 더해 부가적인 기능을 합니다.
+
+이 정책이 설정되지 않으면 기기 프린터가 사용되지 않으며 다른 DeviceNativePrinter* 정책은 무시됩니다.</string><string id="DeviceNativePrintersAccessMode">기기 프린터 설정 액세스 정책</string><string id="DeviceNativePrintersAccessMode_Explain">DeviceNativePrinters에 명시된 프린터 중 어떤 프린터가 사용자에게 제공될지 관리합니다.
+
+일괄 프린터 설정에 사용할 액세스 정책을 지정합니다. AllowAll을(를) 선택하면 모든 프린터가 표시됩니다. BlacklistRestriction을(를) 선택하면 DeviceNativePrintersBlacklist이(가) 사용되어 특정 프린터에 대한 액세스 권한이 제한됩니다. WhitelistPrintersOnly을(를) 선택하면 DeviceNativePrintersWhitelist이(가) 사용되어 선택 가능한 프린터만 지정됩니다.
+
+이 정책이 설정되지 않으면 BlacklistRestriction이(가) 기본적으로 사용됩니다.
+</string><string id="DeviceNativePrintersAccessMode_BlacklistRestriction">차단 목록에 있는 프린터를 제외한 모든 프린터가 표시됨</string><string id="DeviceNativePrintersAccessMode_WhitelistPrintersOnly">허용 목록에 있는 프린터만 사용자에게 표시됨</string><string id="DeviceNativePrintersAccessMode_AllowAll">설정 파일의 모든 프린터 허용</string><string id="DeviceNativePrintersBlacklist">사용 중지된 엔터프라이즈 기기 프린터</string><string id="DeviceNativePrintersBlacklist_Explain">사용자가 사용할 수 없는 프린터를 지정합니다.
+
+이 정책은 DeviceNativePrintersAccessMode(으)로 BlacklistRestriction이(가) 선택된 경우에만 사용됩니다.
+
+이 정책을 사용하면 ID가 이 정책에 명시된 프린터를 제외한 모든 프린터가 사용자에게 제공됩니다.
+</string><string id="DeviceNativePrintersBlacklistDesc">사용 중지된 엔터프라이즈 기기 프린터</string><string id="DeviceNativePrintersWhitelist">사용 설정된 엔터프라이즈 기기 프린터</string><string id="DeviceNativePrintersWhitelist_Explain">사용자가 사용할 수 있는 프린터를 지정합니다.
+
+이 정책은 DeviceNativePrintersAccessMode으(로) WhitelistPrintersOnly이(가) 선택된 경우에만 사용됩니다.
+
+이 정책을 사용하면 이 정책에 있는 값과 ID가 일치하는 프린터만 사용자에게 제공됩니다. 이 ID는 DeviceNativePrinters에 명시된 파일 내 항목과 일치해야 합니다.
+</string><string id="DeviceNativePrintersWhitelistDesc">사용 설정된 엔터프라이즈 기기 프린터</string><string id="DeviceOffHours">기기 OffHours |ignored_policy_proto_tags|가 공개되었을 때 Off hours 간격</string><string id="DeviceOffHours_Explain">‘OffHours’ 정책이 설정된 경우, 정의된 기간 동안 지정된 기기 정책이 무시됩니다(이러한 정책의 기본 설정이 사용됨). 기기 정책은 Chrome에 의해 ‘OffHours’ 기간이 시작 또는 종료되는 모든 이벤트가 발생할 때마다 다시 적용됩니다. ‘OffHours’ 시간이 종료되고 기기 정책 설정이 변경되면(예: 사용자가 허용되지 않는 계정으로 로그인한 경우) 사용자는 알림을 수신하고 강제로 로그아웃됩니다.</string><string id="DeviceOpenNetworkConfiguration">기기 수준 네트워크 설정</string><string id="DeviceOpenNetworkConfiguration_Explain">Google Chrome OS 기기에 모든 사용자에게 적용되는 네트워크 구성을 사용하도록 허용합니다. 네트워크 구성은 https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration에서 설명한 개방형 네트워크 구성에서 정의한 대로 JSON 형식의 문자열입니다.</string><string id="DevicePolicyRefreshRate">기기 정책 새로고침 빈도</string><string id="DevicePolicyRefreshRate_Explain">사용자 정책 정보에 대해 기기 관리 서비스를 검색하는 시간(밀리초)을 지정합니다.
+
+이 정책을 설정하면 기본값인 3시간이 무시됩니다. 이 정책에 대해 유효한 값은 1800000(30분)에서 86400000(1일) 사이입니다. 이 범위에 포함되지 않는 모든 값은 각 경계값으로 고정됩니다.
+
+이 정책을 설정하지 않으면 Google Chrome OS에서 기본값 3시간을 사용합니다.
+
+플랫폼에서 정책 알림을 지원하면 정책이 변경될 때마다 정책 알림이 자동으로 강제 새로고침되어 잦은 새로고침이 불필요하므로 새로고침 지연이 24시간으로 설정됩니다(모든 기본값 및 이 정책의 값 무시).</string><string id="DeviceQuirksDownloadEnabled">하드웨어 프로필 Quirks 서버에 검색어를 사용합니다.</string><string id="DeviceQuirksDownloadEnabled_Explain">The Quirks Server provides hardware-specific configuration files, like
+ICC display profiles to adjust monitor calibration.
+
+When this policy is set to false, the device will not attempt to
+contact the Quirks Server to download configuration files.
+
+If this policy is true or not configured then Google Chrome OS will automatically contact the Quirks Server and download configuration files, if available, and store them on the device.  Such files might, for example, be used to improve display quality of attached monitors.</string><string id="DeviceRebootOnShutdown">기기 종료 시 자동 재부팅</string><string id="DeviceRebootOnShutdown_Explain">이 정책을 false로 설정하거나 설정하지 않으면 Google Chrome OS에서 사용자가 기기를 종료할 수 있도록 허용합니다.
+이 정책을 true로 설정하면 사용자가 기기를 종료할 때 Google Chrome OS에서 재부팅을 시작하며 Google Chrome OS에서 UI의 종료 버튼을 모두 재부팅 버튼으로 바꿉니다. 정책을 사용하도록 설정해도 사용자가 전원 버튼을 사용하여 기기를 종료하면 자동으로 재부팅하지 않습니다.</string><string id="DeviceShowUserNamesOnSignin">로그인 화면에 사용자 이름 표시</string><string id="DeviceShowUserNamesOnSignin_Explain">If this policy is set to true or not configured, Google Chrome OS will show existing users on the login screen and allow to pick one.
+
+If this policy is set to false, Google Chrome OS will not show existing users on the login screen. The normal sign-in screen (prompting for the user email and password or phone) or the SAML interstital screen (if enabled via the LoginAuthenticationBehavior policy) will be shown, unless a Public Session is configured. When a Public Session is configured, only the Public Session accounts will be shown, allowing to pick one of them.
+
+Note that this policy does not affect whether the device keeps or discards the local user data.</string><string id="DeviceStartUpFlags">Google Chrome 시작 시 시스템 전체 플래그 적용</string><string id="DeviceStartUpFlags_Explain">Google Chrome을(를) 시작할 때 적용할 플래그를 지정합니다. 지정된 플래그는 로그인 화면에만 적용됩니다. 이 정책에서 설정된 플래그는 사용자 세션에 반영되지 않습니다.</string><string id="DeviceStartUpFlagsDesc">Google Chrome 시작 시 시스템 전체 플래그 적용</string><string id="DeviceTargetVersionPrefix">자동 업데이트 버전 타겟팅</string><string id="DeviceTargetVersionPrefix_Explain">자동 업데이트 대상 버전을 설정합니다.
+
+Google Chrome OS이(가) 업데이트되어야 하는 대상 버전의 프리픽스를 지정합니다. 기기가 지정된 프리픽스의 이전 버전을 실행하는 경우 해당 프리픽스를 최신 버전으로 업데이트합니다. 기기가 지정된 프리픽스의 이후 버전을 실행하는 경우 아무런 영향도 받지 않으며(즉, 다운그레이드되지 않음) 기기가 현재 버전으로 유지됩니다. 프리픽스 형식은 다음 예시와 같이 구성 측면에서 작동합니다.
+
+&quot;&quot; (또는 구성되지 않음): 최신 버전으로 업데이트 가능.
+&quot;1412.&quot;: 1412(예: 1412.24.34 or 1412.60.2) 이하 버전 업데이트
+&quot;1412.2.&quot;: 1412.2(예: 1412.2.34 or 1412.2.2) 이하 버전 업데이트
+&quot;1412.24.34&quot;: 이 버전만 업데이트
+
+
+경고: 버전 제한을 설정하면 사용자가 소프트웨어 업데이트 및 주요 보안 수정사항을 받지 못하게 될 수 있으므로 권장하지 않습니다. 특정 버전 프리픽스로 업데이트를 제한하면 사용자가 위험에 처할 수 있습니다.</string><string id="DeviceUpdateAllowedConnectionTypes">업데이트에 허용되어 있는 연결 유형</string><string id="DeviceUpdateAllowedConnectionTypes_Explain">OS 업데이트에 사용할 수 있는 연결 유형입니다. OS 업데이트는 용량이 크고 부가 비용이 발생할 수 있기 때문에 잠재적으로 연결 네트워크에 부담이 됩니다. 따라서 비용이 부담스러운 연결 유형(예: WiMax, Bluetooth 및 Cellular)은 현재 기본적으로 사용하지 않도록 설정합니다.
+
+인식할 수 있는 연결 유형 식별자는 'ethernet', 'wifi', 'wimax', 'bluetooth' 및 'cellular'입니다.</string><string id="DeviceUpdateAllowedConnectionTypesDesc">업데이트에 허용되어 있는 연결 유형</string><string id="DeviceUpdateHttpDownloadsEnabled">HTTP를 통한 자동 업데이트 다운로드 허용</string><string id="DeviceUpdateHttpDownloadsEnabled_Explain">Google Chrome OS의 페이로드 자동 업데이트는 HTTPS 대신 HTTP에서 다운로드할 수 있습니다. 이렇게 하면 HTTP 다운로드의 HTTP 캐싱을 명확하게 해줍니다.
+
+이 정책을 true로 설정하면 Google Chrome OS에서 HTTP를 통해 자동 업데이트 페이로드를 다운로드하기 위해 시도합니다. 이 정책이 false로 설정되어 있거나 아무런 설정이 되지 않은 경우 자동 업데이트 페이로드 다운로드 시 HTTPS를 사용합니다.</string><string id="DeviceUpdateScatterFactor">분산 요소 자동 업데이트</string><string id="DeviceUpdateScatterFactor_Explain">업데이트를 처음 서버로 푸시한 시점부터 기기가 몇 초까지 임의로 업데이트의 다운로드를 지연시킬 수 있는지 지정합니다. 기기가 이 시간의 일부를 일반 시계 시간 기준으로, 그리고 나머지 시간을 업데이트 확인 횟수 기준으로 지연시킵니다. 모든 경우, 기기가 고착되어 업데이트 다운로드를 계속 기다리지 않도록 분산의 상한이 일정 시간으로 제한되어 있습니다.</string><string id="DeviceUserWhitelist">로그인 사용자 허용 목록</string><string id="DeviceUserWhitelist_Explain">Defines the list of users that are allowed to login to the device. Entries are of the form user@domain, such as madmax@managedchrome.com. To allow arbitrary users on a domain, use entries of the form *@domain.
+
+If this policy is not configured, there are no restrictions on which users are allowed to sign in. Note that creating new users still requires the DeviceAllowNewUsers policy to be configured appropriately.</string><string id="DeviceUserWhitelistDesc">로그인 사용자 허용 목록</string><string id="DeviceWallpaperImage">기기 배경화면 이미지</string><string id="DeviceWallpaperImage_Explain">기기에 로그인한 사용자가 없을 때 로그인 화면에 표시되는 기기 수준의 배경화면 이미지를 설정합니다. 이 정책은 Chrome OS 기기에서 배경화면 이미지를 다운로드할 URL과 다운로드의 무결성을 확인하는 데 사용되는 암호화 해시를 지정하여 설정할 수 있습니다. 이미지는 JPEG 형식이어야 하며 파일 크기는 16MB를 넘지 않아야 합니다. URL은 어떠한 인증도 없이 액세스할 수 있어야 합니다. 배경화면 이미지는 다운로드 및 캐시됩니다. URL이나 해시가 변경될 때마다 배경화면 이미지도 다시 다운로드됩니다.
+
+이 정책은 JSON 형식으로 URL과 해시를 표현하는 문자열로 지정되어야 합니다. 예:
+{
+&quot;url&quot;: &quot;https://example.com/device_wallpaper.jpg&quot;,
+&quot;hash&quot;: &quot;examplewallpaperhash&quot;
+}
+
+기기 배경화면 정책이 설정되면 Chrome OS 기기는 기기에 로그인한 사용자가 없을 때 배경화면 이미지를 다운로드하여 로그인 화면에 사용합니다. 사용자가 로그인하면 사용자의 배경화면 정책이 사용됩니다.
+
+기기 배경화면 정책이 설정되지 않았으며 사용자의 배경화면 정책이 설정된 경우, 사용자의 배경화면 정책에 따라 표시되는 배경화면이 결정됩니다.</string><string id="Disable3DAPIs">3D 그래픽 API 지원 사용 중지</string><string id="Disable3DAPIs_Explain">Enabling this setting prevents web pages from accessing the graphics processing unit (GPU). Specifically, web pages can not access the WebGL API and plugins can not use the Pepper 3D API.
+
+Disabling this setting or leaving it not set potentially allows web pages to use the WebGL API and plugins to use the Pepper 3D API. The default settings of the browser may still require command line arguments to be passed in order to use these APIs.
+
+If HardwareAccelerationModeEnabled is set to false, Disable3DAPIs is ignored and it is equivalent to Disable3DAPIs being set to true.</string><string id="DisablePluginFinder">플러그인 Finder를 사용 중지해야 하는지 여부 지정</string><string id="DisablePluginFinder_Explain">이 설정을 사용하도록 설정하면 Google Chrome에서 누락된 플러그인을 자동 검색하고 설치하는 기능을 사용할 수 없습니다.
+
+이 옵션을 사용하지 않도록 설정하거나 설정하지 않으면 플러그인 Finder가 실행됩니다.</string><string id="DisableSafeBrowsingProceedAnyway">세이프 브라우징 경고 페이지 사용 중지</string><string id="DisableSafeBrowsingProceedAnyway_Explain">세이프 브라우징 서비스에서는 사용자가 악성 사이트로 신고된 사이트로 이동할 때 경고 페이지를 표시합니다. 이 설정을 사용하면 사용자가 경고 페이지를 무시하고 악성 사이트로 이동할 수 없게 됩니다.
+
+이 설정을 사용 중지하거나 구성하지 않으면 사용자가 경고 페이지를 무시하고 신고된 사이트로 이동할 수 있습니다.
+
+세이프 브라우징에 관해 자세히 알아보려면 https://developers.google.com/safe-browsing을 참조하세요.</string><string id="DisableScreenshots">화면 캡쳐 사용 중지</string><string id="DisableScreenshots_Explain">If enabled, screenshots cannot be taken using keyboard shortcuts or extension APIs.
+
+If disabled or not specified, taking screenshots is allowed.</string><string id="DisplayRotationDefault">기본 디스플레이 회전 설정, 재부팅할 때마다 다시 적용됨</string><string id="DisplayRotationDefault_Explain">이 정책이 설정되면 각 디스플레이는
+재부팅될 때마다, 그리고 정책 값이 변경된 후
+처음으로 연결될 때 지정된 방향으로 회전됩니다. 사용자는 로그인한 뒤
+설정 페이지를 통해 디스플레이 회전을 변경할 수 있지만
+다음 번에 재부팅할 때 정책 값이 설정보다 우선합니다.
+
+이 정책은 기본 및 모든 보조 디스플레이에 적용됩니다.
+
+이 정책이 설정되지 않은 경우, 기본값은 0도이며 사용자는
+이를 자유롭게 변경할 수 있습니다. 이 경우 재시작 시 기본값이
+다시 적용되지 않습니다.</string><string id="DisplayRotationDefault_ROTATE_0">화면을 0도 회전</string><string id="DisplayRotationDefault_ROTATE_90">화면을 시계 방향으로 90도 회전</string><string id="DisplayRotationDefault_ROTATE_180">180도 화면 회전</string><string id="DisplayRotationDefault_ROTATE_270">화면을 시계 방향으로 270도 회전</string><string id="DownloadDirectory">다운로드 디렉토리 설정</string><string id="DownloadDirectory_Explain">Google Chrome이(가) 파일 다운로드에 사용할 디렉토리를 설정합니다.
+
+이 정책을 설정하면 Google Chrome은(는) 사용자가 디렉토리를 지정했는지 아니면 매번 다운로드 위치를 물어보도록 플래그를 설정했는지와 관계없이 제공된 디렉토리를 사용합니다.
+
+사용할 수 있는 변수 목록은 https://www.chromium.org/administrators/policy-list-3/user-data-directory-variables 페이지를 참조하세요.
+
+이 정책을 설정하지 않는 경우 기본 다운로드 디렉토리가 사용되며 사용자는 해당 디렉토리를 변경할 수 있습니다.</string><string id="DownloadRestrictions">다운로드 제한 허용</string><string id="DownloadRestrictions_Explain">Configures the type of downloads that Google Chrome will completely block, without letting users override the security decision.
+
+If you set this policy, Google Chrome will prevent certain types of downloads, and won't let user bypass the security warnings.
+
+When the 'Block dangerous downloads' option is chosen, all downloads are allowed, except for those that carry SafeBrowsing warnings.
+
+When the 'Block potentially dangerous downloads' option is chosen, all downloads allowed, except for those that carry SafeBrowsing warnings of potentially dangerous downloads.
+
+When the 'Block all downloads' option is chosen, all downloads are blocked.
+
+When this policy is not set, (or the 'No special restrictions' option is chosen), the downloads will go through the usual security restrictions based on SafeBrowsing analysis results.
+
+Note that these restrictions apply to downloads triggered from web page content, as well as the 'download link...' context menu option. These restrictions do not apply to the save / download of the currently displayed page, nor does it apply to saving as PDF from the printing options.
+
+See https://developers.google.com/safe-browsing for more info on SafeBrowsing.</string><string id="DownloadRestrictions_DefaultDownloadSecurity">특별한 제한 없음</string><string id="DownloadRestrictions_BlockDangerousDownloads">위험한 다운로드 차단</string><string id="DownloadRestrictions_BlockPotentiallyDangerousDownloads">위험할 가능성이 있는 다운로드 차단</string><string id="DownloadRestrictions_BlockAllDownloads">모든 다운로드 차단</string><string id="EasyUnlockAllowed">Smart Lock을 사용하도록 허용</string><string id="EasyUnlockAllowed_Explain">If you enable this setting, users will be allowed to use Smart Lock if the requirements for the feature are satisfied.
+
+If you disable this setting, users will not be allowed to use Smart Lock.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="EcryptfsMigrationStrategy">ecryptfs 관련 이전 전략</string><string id="EcryptfsMigrationStrategy_Explain">Specifies the action that should be taken when the user's home directory was created with ecryptfs encryption and needs to transition to ext4 encryption.
+
+If you set this policy to 'DisallowArc', Android apps will be disabled for the user and no migration from ecryptfs to ext4 encryption will be performed. Android apps will not be prevented from running when the home directory is already ext4-encrypted.
+
+If you set this policy to 'Migrate', ecryptfs-encrypted home directories will be automatically migrated to ext4 encryption on sign-in without asking for user consent.
+
+If you set this policy to 'Wipe', ecryptfs-encrypted home directories will be deleted on sign-in and new ext4-encrypted home directories will be created instead. Warning: This removes the user's local data.
+
+If you set this policy to 'AskUser', users with ecryptfs-encrypted home directories will be offered to migrate.
+
+This policy does not apply to kiosk users. If this policy is left not set, the device will behave as if 'DisallowArc' was chosen.</string><string id="EcryptfsMigrationStrategy_DisallowArc">Disallow data migration and ARC.</string><string id="EcryptfsMigrationStrategy_Migrate">Migrate automatically, donâ€™t ask for user consent.</string><string id="EcryptfsMigrationStrategy_Wipe">Wipe the userâ€™s ecryptfs home directory and start with a fresh ext4-encrypted home directory.</string><string id="EcryptfsMigrationStrategy_AskUser">Ask the user if they would like to migrate or skip migration and disallow ARC.</string><string id="EcryptfsMigrationStrategy_MinimalMigrate">완전 삭제(값 2)와 유사하지만, 사용자가 다시 로그인할 필요가 없도록 로그인 토큰을 저장합니다.</string><string id="EcryptfsMigrationStrategy_AskForEcryptfsArcUsers">클라이언트 기기 모델에서 ARC를 실행하기 위해 ext4로 이전해야 했던 시점 전에 ARC를 이미 지원했으며 ArcEnabled 정책이 true로 설정된 경우, 이 옵션은 AskUser(값 3)로 작동합니다. 다른 모든 경우(기기 모델이 이전에 ARC를 지원하지 않았거나 ArcEnabled 정책이 false로 설정된 경우), 이 값은 DisallowArc(값 0)와 동일합니다.</string><string id="EditBookmarksEnabled">북마크 수정 사용 또는 사용 중지</string><string id="EditBookmarksEnabled_Explain">If you enable this setting, bookmarks can be added, removed or modified. This is the default also when this policy is not set.
+
+If you disable this setting, bookmarks can not be added, removed or modified. Existing bookmarks are still available.</string><string id="EnableCommonNameFallbackForLocalAnchors">subjectAlternativeName 확장 필드가 누락되었으나 로컬 트러스트 앵커에서 발급된 인증서 허용 여부</string><string id="EnableCommonNameFallbackForLocalAnchors_Explain">이 설정을 사용하면 인증서에 subjectAlternativeName 확장 필드가 누락되어 있으나 인증서가 검증되었으며 로컬에 설치된 CA 인증서와 연결되어 있는 경우 Google Chrome에서 서버 인증서의 commonName을 사용하여 호스트 이름이 일치하는지 확인합니다.
+
+이는 권장되지 않습니다. 이를 통해 특정 인증서만 승인되며 호스트 이름을 제한하는 nameConstraints 확장 필드를 우회할 수 있기 때문입니다.
+
+이 정책을 설정하지 않거나 false로 설정되면 subjectAlternativeName 확장 필드가 누락되어 있으며 DNS 이름이나 IP 주소가 포함된 서버 인증서를 신뢰하지 않습니다.</string><string id="EnableDeprecatedWebPlatformFeatures">사용 중지된 웹 플랫폼 기능을 제한된 기간 동안 사용 설정</string><string id="EnableDeprecatedWebPlatformFeatures_Explain">지원 중단된 웹 플랫폼 기능 중 일시적으로 다시 사용 설정할 기능을 지정합니다.
+
+이 정책을 사용하면 관리자는 지원 중단된 웹 플랫폼 기능을 일시적으로 다시 사용 설정할 수 있습니다. 기능은 문자열 태그에 의해 식별되며 이 정책에 의해 지정된 목록에 있는 태그와 일치하는 기능은 다시 사용 설정됩니다.
+
+이 정책이 설정되지 않았거나 목록이 비어 있거나 지원되는 문자열 태그와 일치하지 않으면 지원 중단된 모든 웹 플랫폼 기능이 사용 중지 상태로 유지됩니다.
+
+정책 자체는 위의 플랫폼에서 지원되지만 정책을 통해 사용 설정되는 기능은 일부 플랫폼에서만 사용할 수 있습니다. 지원 중단된 웹 플랫폼 기능 중 일부는 다시 사용 설정할 수 없습니다. 아래 명시적으로 표시된 기능만 한시적으로 다시 사용 설정될 수 있으며, 기능에 따라 기간이 다릅니다. 문자열 태그의 일반 형식은 [DeprecatedFeatureName]_EffectiveUntil[yyyymmdd]입니다. 참고로 https://bit.ly/blinkintents 페이지에서 웹 플랫폼 기능 변경사항의 인텐트를 확인할 수 있습니다.
+</string><string id="EnableDeprecatedWebPlatformFeaturesDesc">사용 중지된 웹 플랫폼 기능을 제한된 기간 동안 사용 설정</string><string id="EnableOnlineRevocationChecks">온라인 OCSP/CRL 확인 수행 여부</string><string id="EnableOnlineRevocationChecks_Explain">소프트 페일(soft-fail), 온라인 인증서 해지 검사가 보안 혜택을 제공하지 않는다는 점을 고려하여 기본적으로 Google Chrome 버전 19 이상에서는 사용 중지됩니다. 이 정책을 true로 설정하면 이전 작업이 복원되며 온라인 OCSP/CRL 검사가 수행됩니다.
+
+이 정책을 설정하지 않거나 false로 설정하면 Google Chrome은(는) Google Chrome 19 이상에서 온라인 폐기 검사를 수행하지 않습니다.</string><string id="EnableSha1ForLocalAnchors">신뢰할 수 있는 로컬 앵커에서 발급한 SHA-1 서명 인증서의 허용 여부</string><string id="EnableSha1ForLocalAnchors_Explain">이 설정이 사용 설정되었다면 Google Chrome은(는) 로컬에 설치된 CA 인증서를 성공적으로 확인하고 체인을 구축하는 한 SHA-1 서명 인증서를 허용합니다.
+
+이 정책은 SHA-1 서명을 허용하는 운영체제 인증서 확인 스택에 따라 다릅니다. OS 업데이트가 SHA-1 인증서의 OS 처리를 변경하는 경우 이 정책은 더 이상 유효하지 않을 수 있습니다. 또한 이 정책은 기업에게 SHA-1에서 전환할 시간을 부여하는 임시 해결 방법으로 활용됩니다. 이 정책은 2019년 1월 1일쯤 삭제될 예정입니다.
+
+이 정책이 설정되지 않았거나 false로 설정된 경우 Google Chrome은(는) 공개적으로 발표한 SHA-1 사용 중단 일정을 따릅니다.</string><string id="ExternalStorageDisabled">외부 저장소 마운트 사용 중지</string><string id="ExternalStorageDisabled_Explain">이 정책을 true로 설정하면 파일 브라우저에서 외부 저장소를 사용할 수 없습니다.
+
+이 정책은 모든 종류의 저장 매체(예: USB 플래시 드라이브, 외장 하드 드라이브, SD 및 기타 메모리 카드, 광학 저장장치 등)에 영향을 미칩니다. 내부 저장소는 영향을 받지 않기 때문에 다운로드 폴더에 저장된 파일에 계속 액세스할 수 있습니다. Google 드라이브도 이 정책의 영향을 받지 않습니다.
+
+이 설정을 사용 중지하거나 구성하지 않으면 사용자는 기기에서 지원되는 모든 종류의 외부 저장소를 사용할 수 있습니다.</string><string id="ExternalStorageReadOnly">Treat external storage devices as read-only</string><string id="ExternalStorageReadOnly_Explain">이 정책이 true로 설정된 경우 사용자는 외부 저장장치에 아무것도 작성할 수 없습니다.
+
+이 설정이 사용 중지되거나 구성되지 않은 경우 사용자는 실제로 작성 가능한 외부 저장장치의 파일을 생성하고 수정할 수 있습니다.
+
+ExternalStorageDisabled 정책은 이 정책보다 우선적으로 적용됩니다. ExternalStorageDisabled가 true로 설정된 경우 외부 저장장치에 대한 모든 액세스 권한은 사용 중지되며 이에 따라 이 정책도 무시됩니다.
+
+이 정책의 동적 새로고침은 M56 이상에서 지원됩니다.</string><string id="ForceGoogleSafeSearch">Google 세이프서치 강제 실행</string><string id="ForceGoogleSafeSearch_Explain">Google 웹 검색의 검색어를 세이프서치가 활성화되도록 설정된 상태에서 입력하도록 하며 사용자가 이 설정을 바꾸지 못하도록 합니다.
+
+이 설정을 사용하면 Google 검색에서 세이프서치가 항상 활성화됩니다.
+
+이 설정을 사용중지하거나 값을 설정하지 않으면 Google 검색에 세이프서치가 적용되지 않습니다.</string><string id="ForceMaximizeOnFirstRun">처음 실행 시 첫 번째 브라우저 창 최대화</string><string id="ForceMaximizeOnFirstRun_Explain">If this policy is set to true, Google Chrome will unconditionally maximize the first window shown on first run.
+If this policy is set to false or not configured, the decision whether to maximize the first window shown will be based on the screen size.</string><string id="ForceYouTubeRestrict">최소 YouTube 제한 모드 강제 사용</string><string id="ForceYouTubeRestrict_Explain">YouTube에서 최소 제한 모드를 사용하여 사용자가 이보다 낮은 수준의 제한 모드를
+선택하지 못하게 합니다.
+
+이 설정이 강력으로 설정되어 있는 경우 YouTube에서 항상 강력 제한 모드가 활성화됩니다.
+
+이 설정이 보통으로 설정되어 있는 경우 사용자는 YouTube에서 보통 제한 모드와
+강력 제한 모드만 선택할 수 있으며 제한 모드를 사용 중지할 수는 없습니다.
+
+이 설정이 사용 안함으로 설정되어 있거나 아무런 값도 설정되지 않은 경우 Google Chrome에서 YouTube의 제한 모드가 실행되지 않습니다. 하지만 YouTube 정책과 같은 외부 정책에서 계속하여 제한 모드를 실행할 수 있습니다.</string><string id="ForceYouTubeRestrict_Off">YouTube에 제한 모드 사용 안함</string><string id="ForceYouTubeRestrict_Moderate">YouTube에서 최소한 보통 제한 모드 사용</string><string id="ForceYouTubeRestrict_Strict">YouTube에 강력 제한 모드 사용</string><string id="FullscreenAllowed">전체 화면 모드 허용</string><string id="FullscreenAllowed_Explain">This policy controls the availability of fullscreen mode in which all Google Chrome UI is hidden and only web content is visible.
+
+If this policy is set to true or not not configured, the user, apps and extensions with appropriate permissions can enter fullscreen mode.
+
+If this policy is set to false, neither the user nor any apps or extensions can enter fullscreen mode.
+
+On all platforms except Google Chrome OS, kiosk mode is unavailable when fullscreen mode is disabled.</string><string id="Http09OnNonDefaultPortsEnabled">기본 포트가 아닌 포트에서 HTTP/0.9 지원 사용</string><string id="Http09OnNonDefaultPortsEnabled_Explain">이 정책은 HTTP:80 및 HTTPS:443이 아닌 포트에서 HTTP/0.9를 사용합니다.
+
+이 정책은 기본적으로 중지되어 있으며 사용 설정할 경우 사용자가 보안 문제(https://crbug.com/600352)에 노출됩니다.
+
+이 정책은 기업이 HTTP/0.9에서 기존 서버를 이전하도록 돕는 데 목적이 있으며 이후에 삭제됩니다.
+
+이 정책이 설정되지 않으면 기본 포트가 아닌 포트에서 HTTP/0.9가 중지됩니다.</string><string id="IncognitoModeAvailability">시크릿 모드 사용 가능 여부</string><string id="IncognitoModeAvailability_Explain">사용자가 Google Chrome에서 시크릿 모드로 페이지를 열 수 있는지 여부를 지정합니다.
+
+'사용'을 선택하거나 정책이 설정되지 않은 경우 시크릿 모드로 페이지를 열 수 있습니다.
+
+'사용 안함'을 선택하면 시크릿 모드로 페이지를 열 수 없습니다.
+
+'강제'를 선택하면 시크릿 모드로만 페이지를 열 수 있습니다.</string><string id="IncognitoModeAvailability_Enabled">시크릿 모드 사용 가능</string><string id="IncognitoModeAvailability_Disabled">시크릿 모드 사용이 중지됨</string><string id="IncognitoModeAvailability_Forced">시크릿 모드를 강제로 사용함</string><string id="InstantTetheringAllowed">Allows Instant Tethering to be used.</string><string id="InstantTetheringAllowed_Explain">If this setting is enabled, users will be allowed to use Instant Tethering, which allows their Google phone to share its mobile data with their device.
+
+If this setting is disabled, users will not be allowed to use Instant Tethering.
+
+If this policy is left not set, the default is not allowed for enterprise-managed users and allowed for non-managed users.</string><string id="IsolateOrigins">지정된 출처의 사이트 격리 사용 설정</string><string id="IsolateOrigins_Explain">
+참고: 아직 실험 단계에 있는 정책이므로 기능을 손상시킬 수도 있습니다.
+정책을 사용 설정하면 쉼표로 구분된 목록에 이름이 지정된 각 출처는
+개별 프로세스로 실행됩니다. 이 정책은 하위 도메인으로 이름이 지정된
+출처도 격리합니다. 예를 들어, https://example.com/을 지정하면
+https://foo.example.com/ 또한 https://example.com 사이트의 일부로 여겨져
+격리됩니다.
+정책을 사용 중지하면 사이트 격리 프로세스 실행 이전의 관리 로직이 적용됩니다.
+정책을 설정하지 않으면 사용자가 이 설정을 변경할 수 있습니다.
+</string><string id="KeyPermissions">주요 권한</string><string id="KeyPermissions_Explain">회사 키에 대한 액세스 권한을 확장 프로그램에 부여합니다.
+
+키가 관리 계정에서 chrome.enterprise.platformKeys API를 사용하여 생성된 경우 회사용으로 지정됩니다. 가져오거나 다른 방식으로 생성된 키는 회사용으로 지정되지 않습니다.
+
+회사용으로 지정된 키에 대한 액세스는 이 정책에 의해서만 컨트롤됩니다. 사용자는 회사 키에 대한 액세스 권한을 확장 프로그램에 부여 또는 철회할 수 없습니다.
+
+기본적으로 확장 프로그램은 회사용으로 지정된 키를 사용할 수 없으며, 이는 확장 프로그램에 대해 allowCorporateKeyUsage를 false로 설정하는 것과 동일합니다.
+
+확장 프로그램에 대해 allowCorporateKeyUsage를 true로 설정하는 경우에만 해당 확장 프로그램에서 회사용으로 표시된 플랫폼 키를 사용하여 임의의 데이터에 서명할 수 있습니다. 이 권한은 외부 해커가 침입하지 못하도록 확장 프로그램이 키에 대한 액세스를 안전하게 보호하는 것으로 신뢰되는 경우에만 부여되어야 합니다.</string><string id="ManagedBookmarks">관리 북마크</string><string id="ManagedBookmarks_Explain">Configures a list of managed bookmarks.
+
+The policy consists of a list of bookmarks whereas each bookmark is a dictionary containing the keys &quot;name&quot; and &quot;url&quot; which hold the bookmark's name and its target. A subfolder may be configured by defining a bookmark without an &quot;url&quot; key but with an additional &quot;children&quot; key which itself contains a list of bookmarks as defined above (some of which may be folders again). Google Chrome amends incomplete URLs as if they were submitted via the Omnibox, for example &quot;google.com&quot; becomes &quot;https://google.com/&quot;.
+
+These bookmarks are placed in a folder that can't be modified by the user (but the user can choose to hide it from the bookmark bar). By default the folder name is &quot;Managed bookmarks&quot; but it can be customized by adding to the list of bookmarks a dictionary containing the key &quot;toplevel_name&quot; with the desired folder name as the value.
+
+Managed bookmarks are not synced to the user account and can't be modified by extensions.</string><string id="MaxInvalidationFetchDelay">정책 무효화 후 최대 가져오기 지연</string><string id="MaxInvalidationFetchDelay_Explain">정책 무효화를 받은 뒤 기기 관리 서비스로부터 새 정책을 가져오는 시간 사이의 최대 지연 시간을 밀리초로 지정합니다.
+
+이 정책을 설정하면 기본 값인 5000밀리초를 덮어씁니다. 이 정책에 유효한 값의 범위는 1000(1초)에서 300000(5분)입니다. 이 범위 이외의 값은 해당 범위 내로 값이 잘립니다.
+
+이 정책을 설정하지 않으면 Google Chrome에서 기본값인 5000밀리초를 사용합니다.</string><string id="NativePrinters">기본 인쇄</string><string id="NativePrinters_Explain">Configures a list of printers.
+
+This policy allows administrators to provide printer configurations for
+their users.
+
+display_name and description are free form strings that can be customized for ease of printer selection. manufacturer and model serve to ease printer identification by end users. They represent the manufacturer and model of the printer. uri should be an address reachable from a client computer including the scheme, port, and queue. uuid is optional.  If provided, it is used to help deduplicate zeroconf printers.
+
+effective_model must match one of the strings which represent a Google Chrome OS supported printer. The string will be used to identify and install the appropriate PPD for the printer. More information can be found at https://support.google.com/chrome?p=noncloudprint.
+
+Printer setup is completed upon the first use of a printer.  PPDs are not
+downloaded until the printer is used.  After that time, frequently used
+PPDs are cached.
+
+This policy has no effect on whether users can configure printers on
+individual devices.  It is intended to be supplementary to the
+configuration of printers by individual users.</string><string id="NativePrintersDesc">기본 인쇄</string><string id="NativePrintersBulkAccessMode">프린터 설정 액세스 정책</string><string id="NativePrintersBulkAccessMode_Explain">NativePrintersBulkConfiguration에 명시된 프린터 중 어떤 프린터가 사용자에게 제공될지 관리합니다.
+
+일괄 프린터 설정에 사용할 액세스 정책을 지정합니다. AllowAll을(를) 선택하면 모든 프린터가 표시됩니다. BlacklistRestriction을(를) 선택하면 NativePrintersBulkBlacklist이(가) 사용되어 특정 프린터에 대한 액세스 권한이 제한됩니다. WhitelistPrintersOnly을(를) 선택하면 NativePrintersBulkWhitelist이(가) 사용되어 선택 가능한 프린터만 지정됩니다.
+
+이 정책이 설정되지 않으면 BlacklistRestriction이(가) 기본적으로 사용됩니다.
+</string><string id="NativePrintersBulkAccessMode_BlacklistRestriction">차단 목록에 있는 프린터를 제외한 모든 프린터가 표시됨</string><string id="NativePrintersBulkAccessMode_WhitelistPrintersOnly">허용 목록에 있는 프린터만 사용자에게 표시됨</string><string id="NativePrintersBulkAccessMode_AllowAll">설정 파일의 모든 프린터 허용</string><string id="NativePrintersBulkBlacklist">사용 중지된 엔터프라이즈 프린터</string><string id="NativePrintersBulkBlacklist_Explain">사용자가 사용할 수 없는 프린터를 지정합니다.
+
+이 정책은 NativePrintersBulkAccessMode(으)로 BlacklistRestriction이(가) 선택된 경우에만 사용됩니다.
+
+이 정책을 사용하면 ID가 이 정책에 명시된 프린터를 제외한 모든 프린터가 사용자에게 제공됩니다.
+</string><string id="NativePrintersBulkBlacklistDesc">사용 중지된 엔터프라이즈 프린터</string><string id="NativePrintersBulkConfiguration">엔터프라이즈 프린터 설정 파일</string><string id="NativePrintersBulkConfiguration_Explain">엔터프라이즈 프린터의 설정을 제공합니다.
+
+이 정책을 통해 Google Chrome OS 기기에 프린터 설정을 제공할 수 있습니다. 파일 크기는 5MB를 초과할 수 없으며, JSON으로 인코딩되어야 합니다. 정책 형식은 NativePrinters 사전과 같습니다. 약 21,000대의 프린터가 포함된 파일을 인코딩하면 파일 용량이 5MB 정도 될 것으로 예상됩니다. 암호화 해시는 다운로드 파일의 무결성을 확인하는 데 사용됩니다.
+
+이 파일은 다운로드되고 캐시됩니다. URL 또는 해시가 변경될 때마다 파일이 다시 다운로드됩니다.
+
+이 정책이 설정되면 Google Chrome OS에서 프린터 설정 파일을 다운로드한 다음  NativePrintersBulkAccessMode, NativePrintersBulkWhitelist, NativePrintersBulkBlacklist에 따라 프린터를 제공합니다.
+
+이 정책을 설정하면 사용자가 정책을 변경하거나 재정의할 수 없습니다.
+
+이 정책은 사용자가 개별 기기에서 프린터를 설정할 수 있는지에 영향을 미치지 않습니다. 이 정책은 개별 사용자의 프린터 설정을 보완하기 위한 것입니다.
+</string><string id="NativePrintersBulkWhitelist">사용 설정된 엔터프라이즈 프린터</string><string id="NativePrintersBulkWhitelist_Explain">사용자가 사용할 수 있는 프린터를 지정합니다.
+
+이 정책은 NativePrintersBulkAccessMode으(로) WhitelistPrintersOnly이(가) 선택된 경우에만 사용됩니다.
+
+이 정책을 사용하면 이 정책에 있는 값과 ID가 일치하는 프린터만 사용자에게 제공됩니다. 이 ID는 NativePrintersBulkConfiguration에 명시된 파일 내 항목과 일치해야 합니다.
+</string><string id="NativePrintersBulkWhitelistDesc">사용 설정된 엔터프라이즈 프린터</string><string id="NetworkPredictionOptions">네트워크 예측 사용</string><string id="NetworkPredictionOptions_Explain">Google Chrome에서 네트워크 예측을 사용하도록 설정하고 사용자가 이 설정을 변경하지 못하게 합니다.
+
+이는 DNS 프리패치, TCP와 SSL 사전 연결, 웹페이지 사전 렌더링을 컨트롤합니다.
+
+이 환경설정을 '항상 사용', '사용 안함' 또는 'Wi-Fi에서만 사용'으로 설정하면 사용자는 Google Chrome에서 이 설정을 변경하거나 무시할 수 없습니다.
+
+이 정책이 설정되지 않으면 네트워크 예측이 사용 설정되지만, 사용자가 변경할 수 있습니다.</string><string id="NetworkPredictionOptions_NetworkPredictionAlways">모든 네트워크 연결의 네트워크 활동 예측</string><string id="NetworkPredictionOptions_NetworkPredictionWifiOnly">이동통신망을 사용하지 않는 모든 네트워크의 네트워크 활동을 예측합니다.
+(50에서 중지되고 52에서 삭제됩니다. 52가 넘은 경우 값을 1로 설정해도 0으로 처리됩니다. 모든 네트워크 연결 시 네트워크 활동을 예측합니다.)</string><string id="NetworkPredictionOptions_NetworkPredictionNever">모든 네트워크 연결의 네트워크 활동 예측 안함</string><string id="NoteTakingAppsLockScreenWhitelist">Google Chrome OS 잠금 화면에서 사용 설정된 메모 앱을 허용 목록에 추가</string><string id="NoteTakingAppsLockScreenWhitelist_Explain">Google Chrome OS 잠금 화면에서 사용할 수 있는 메모 앱의 목록을 지정합니다.
+
+선호하는 메모 앱을 잠금 화면에서 사용 설정하면 잠금 화면에 해당 메모 앱을 실행하기 위한 UI 요소가 표시됩니다.
+앱을 실행하면 잠금 화면 상단에 앱 창이 표시되고 잠금 화면 컨텍스트에서 데이터 항목(메모)이 생성됩니다. 세션이 잠금 해제되면 앱에서는 생성된 메모를 기본 사용자 세션으로 가져올 수 있습니다. 현재 잠금 화면에서는 Chrome 메모 앱만 지원됩니다.
+
+정책이 설정되면 사용자는 앱의 확장 프로그램 ID가 정책 목록 값에 포함되어 있는 경우에만 앱을 잠금 화면에서 사용 설정할 수 있습니다.
+따라서 이 정책을 빈 목록으로 설정하면 잠금 화면에서 메모 기능이 완전히 사용 중지됩니다.
+정책에 앱 ID가 포함되어 있다고 해서 반드시 사용자가 잠금 화면에서 메모 앱을 사용 설정할 수 있는 것은 아닙니다. 예를 들어, Chrome 61에서는 사용 가능한 앱 집합이 플랫폼에서 추가로 제한됩니다.
+
+정책을 설정하지 않은 상태로 두면 사용자가 잠금 화면에서 사용 설정할 수 있는 앱 집합에 이 정책에 따른 제한이 적용되지 않습니다.</string><string id="NoteTakingAppsLockScreenWhitelistDesc">Google Chrome OS 잠금 화면에서 사용 설정된 메모 앱을 허용 목록에 추가</string><string id="OpenNetworkConfiguration">사용자 수준 네트워크 설정</string><string id="OpenNetworkConfiguration_Explain">Google Chrome OS 기기에 사용자별로 적용되는 네트워크 구성을 사용하도록 허용합니다. 네트워크 구성은 https://sites.google.com/a/chromium.org/dev/chromium-os/chromiumos-design-docs/open-network-configuration에서 설명한 개방형 네트워크 구성에서 정의한 대로 JSON 형식의 문자열입니다.</string><string id="PacHttpsUrlStrippingEnabled">PAC URL 제거 사용(https://용)</string><string id="PacHttpsUrlStrippingEnabled_Explain">프록시 해상도 과정에서 Google Chrome에 사용되는 PAC 스크립트(프록시 자동 설정)로 https:// URL을 보내기 전에 개인정보 보호 및 보안에 민감한 부분을 삭제합니다.
+
+True일 경우 보안 기능이 사용되며 https:// URL이
+PAC 스크립트에 제출되기 전에 삭제됩니다.이러한 방식을 통해 PAC
+스크립트가 일반적으로 암호화된 채널(URL 경로 및 검색)을 통해
+보호되는 데이터를 볼 수 없게 됩니다.
+
+False일 경우 보안 기능이 사용되지 않으며 PAC 스크립트에
+https://URL의 모든 구성요소를 볼 수 있는 능력이 간접적으로 부여됩니다.
+이는 출처(보안이 유지되지 않은 전송이나 WPAD를 통해
+보안이 유지되지 않은 채 발견된 PAC 스크립트 포함)와 상관없이
+모든 PAC 스크립트에 적용됩니다.
+
+이 정책은 기본적으로 True(보안 기능 사용)로 설정되지만 현재 이 정책이
+기본적으로 False로 설정되어 있는 Chrome OS 기업 사용자는 제외됩니다.
+
+이 정책은 True로 설정되어 있는 것이 좋습니다. 이 정책이 기존 PAC 스크립트와
+호환성 문제를 일으키는 경우에만 False로 설정하시기 바랍니다.
+
+향후 이 중복 문제를 제거하는 것이 바람직합니다.</string><string id="PinnedLauncherApps">런처에 표시되는 고정된 앱 목록</string><string id="PinnedLauncherApps_Explain">Google Chrome OS이(가) 런처 바에 고정된 앱으로 표시하는 애플리케이션 식별자를 열거합니다.
+
+해당 정책이 설정된 경우 애플리케이션이 고정되어 사용자가 변경할 수 없습니다.
+
+해당 정책이 설정되지 않은 경우 사용자는 런처에서 고정된 앱의 목록을 변경할 수 있습니다.</string><string id="PinnedLauncherAppsDesc">런처에 표시되는 고정된 앱 목록</string><string id="PolicyRefreshRate">사용자 정책에 대한 새로고침 빈도</string><string id="PolicyRefreshRate_Explain">사용자 정책 정보에 대해 기기 관리 서비스를 검색하는 시간(밀리초)을 지정합니다.
+
+이 정책을 설정하면 기본값인 3시간이 무시됩니다. 이 정책에 대해 유효한 값은 1800000(30분)에서 86400000(1일) 사이입니다. 이 범위에 포함되지 않는 모든 값은 각 경계값으로 고정됩니다. 플랫폼에서 정책 알림을 지원하면 정책이 변경될 때마다 정책 알림이 자동으로 강제 새로고침되므로 새로고침 지연이 24시간으로 설정됩니다.
+
+이 정책을 설정하지 않으면 Google Chrome에서 기본값 3시간을 사용합니다.
+
+플랫폼에서 정책 알림을 지원하면 정책이 변경될 때마다 정책 알림이 자동으로 강제 새로고침되어 잦은 새로고침이 불필요하므로 새로고침 지연이 24시간으로 설정됩니다(모든 기본값 및 이 정책의 값 무시).</string><string id="PrintingEnabled">인쇄 사용</string><string id="PrintingEnabled_Explain">Google Chrome에서 인쇄를 사용하고 사용자가 이 설정을 바꾸지 못하도록 합니다.
+
+이 설정을 구성하지 않거나 사용하도록 설정하면 사용자가 인쇄할 수 있습니다.
+
+이 설정을 사용중지하면 사용자가 Google Chrome에서 인쇄할 수 없습니다. 인쇄가 도구 메뉴, 확장 프로그램, 자바스크립트 애플리케이션 등에서 사용중지됩니다. 인쇄하는 동안 Google Chrome을(를) 우회하는 플로그인에서 계속 인쇄할 수 있습니다. 예를 들어 일부 Flash 애플리케이션의 컨텍스트 메뉴에 있는 인쇄 옵션은 이 정책의 적용을 받지 않습니다.</string><string id="QuicAllowed">QUIC 프로토콜 허용</string><string id="QuicAllowed_Explain">이 정책이 true로 설정되거나 설정되지 않으면 Google Chrome에서 QUIC 프로토콜 사용이 허용됩니다.
+이 정책이 false로 설정되면 QUIC 프로토콜 사용이 차단됩니다.</string><string id="RebootAfterUpdate">업데이트 후 자동 재부팅</string><string id="RebootAfterUpdate_Explain">Google Chrome OS 업데이트가 적용된 후 자동 재부팅을 예약합니다.
+
+이 정책이 true로 설정된 경우 Google Chrome OS 업데이트가 적용된 상태일 때 자동 재부팅이 예약되며, 업데이트 프로세스를 완료하기 위한 재부팅이 필요합니다. 재부팅은 즉시 예약되지만 현재 사용자가 기기를 사용 중인 경우 기기에서 최대 24시간까지 지연될 수 있습니다.
+
+이 정책이 false로 설정된 경우 Google Chrome OS 업데이트가 적용된 상태이더라도 자동 재부팅이 예약되지 않습니다. 사용자가 다음번에 기기를 재부팅할 때 업데이트 프로세스가 완료됩니다.
+
+이 정책을 설정하는 경우 사용자가 정책을 변경하거나 무시할 수 없습니다.
+
+참고: 현재 로그인 화면이 표시되고 있거나 키오스크 앱 세션이 진행 중인 경우에 한해 자동 재부팅을 사용하도록 설정됩니다. 이후에는 이 내용이 변경되어 특정 유형의 세션이 진행 중인지 여부와 관계 없이 정책이 항상 적용됩니다.</string><string id="RequireOnlineRevocationChecksForLocalAnchors">신뢰할 수 있는 로컬 앵커에 온라인 OCSP/CRL 확인이 필요한지 여부입니다.</string><string id="RequireOnlineRevocationChecksForLocalAnchors_Explain">이 설정을 사용하도록 설정하면 Google Chrome은(는) 로컬에 저장된 CA 인증서에 의해 서명되고 성공적으로 확인된 서버 인증서가 폐기되었는지 항상 검사합니다.
+
+Google Chrome에서 폐기 상태 정보를 가져올 수 없는 경우 해당 인증서는 폐기된 것으로 간주됩니다('hard-fail').
+
+이 정책이 설정되지 않았거나 false로 설정된 경우 Google Chrome은(는) 기존 온라인 폐기 검사 설정을 적용합니다.</string><string id="RunAllFlashInAllowMode">플래시 콘텐츠 설정을 모든 콘텐츠로 확장</string><string id="RunAllFlashInAllowMode_Explain">이 설정을 사용하면 사용자 또는 엔터프라이즈 정책에 의해 콘텐츠 설정에서 플래시를 허용하도록 설정된 웹사이트에 삽입된 모든 플래시 콘텐츠가 실행됩니다. 여기에는 다른 출처의 콘텐츠나 용량이 작은 콘텐츠도 포함됩니다.
+
+플래시를 실행하도록 허용된 웹사이트를 관리하려면 'DefaultPluginsSetting', 'PluginsAllowedForUrls', 'PluginsBlockedForUrls' 정책을 확인하세요.
+
+이 설정을 사용 중지하거나 설정하지 않으면 다른 출처의 플래시 콘텐츠나 용량이 작은 플래시 콘텐츠가 차단될 수 있습니다.</string><string id="SAMLOfflineSigninTimeLimit">SAML을 통해 인증한 사용자가 오프라인에서 로그인할 수 있는 기간을 제한</string><string id="SAMLOfflineSigninTimeLimit_Explain">During login, Google Chrome OS can authenticate against a server (online) or using a cached password (offline).
+
+When this policy is set to a value of -1, the user can authenticate offline indefinitely. When this policy is set to any other value, it specifies the length of time since the last online authentication after which the user must use online authentication again.
+
+Leaving this policy not set will make Google Chrome OS use a default time limit of 14 days after which the user must use online authentication again.
+
+This policy affects only users who authenticated using SAML.
+
+The policy value should be specified in seconds.</string><string id="SSLErrorOverrideAllowed">SSL 경고 페이지에서 계속 진행하도록 허용</string><string id="SSLErrorOverrideAllowed_Explain">사용자가 SSL 오류가 있는 사이트를 탐색하면 Chrome에서 경고 페이지를 표시합니다. 기본적으로 또는 이 정책이 'true'로 설정된 경우 사용자는 이 경고 페이지를 클릭하여 탐색할 수 있습니다.
+이 정책을 'false'로 설정하면 사용자가 경고 페이지를 클릭하여 탐색할 수 없습니다.</string><string id="SSLVersionMax">최대 SSL 버전 사용 설정됨</string><string id="SSLVersionMax_Explain">경고: 최대 TLS 버전 정책이 Google Chrome 버전 66쯤에서 완전히 삭제됩니다(2018년 2월경).
+
+이 정책을 구성하지 않으면 Google Chrome에서 기본 최대 버전이 사용됩니다.
+
+정책을 구성하는 경우 'tls1.2'나 'tls1.3' 중 하나로 설정될 수 있습니다. 설정되면 Google Chrome에서 지정된 버전보다 높은 SSL/TLS 버전이 사용되지 않습니다. 인식할 수 없는 값은 무시됩니다.</string><string id="SSLVersionMax_TLSv1_2">TLS 1.2</string><string id="SSLVersionMax_TLSv1_3">TLS 1.3</string><string id="SafeBrowsingEnabled">세이프 브라우징 사용</string><string id="SafeBrowsingEnabled_Explain">Google Chrome의 세이프 브라우징 기능을 사용 설정하고, 사용자가 이 설정을 변경하지 못하도록 합니다.
+
+이 설정을 사용하면 세이프 브라우징이 항상 활성화됩니다.
+
+이 설정을 사용 중지하면 세이프 브라우징이 항상 비활성화됩니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 Google Chrome의 '피싱 및 멀웨어 차단 사용' 설정을 변경하거나 재정의할 수 없게 됩니다.
+
+이 정책을 설정하지 않으면 정책이 사용 설정되지만 사용자가 설정을 변경할 수 있습니다.
+
+세이프 브라우징에 관해 자세히 알아보려면 https://developers.google.com/safe-browsing을 참조하세요.</string><string id="SafeBrowsingExtendedReportingOptInAllowed">사용자가 세이프 브라우징 확장 보고를 선택하도록 허용</string><string id="SafeBrowsingExtendedReportingOptInAllowed_Explain">이 정책을 false로 설정하면 사용자가 일부 시스템 정보 및 페이지 콘텐츠를 Google 서버로 전송하지 못하지 못하게 됩니다. 이 설정이 true로 설정되거나 설정되지 않으면 사용자는 위험한 앱 및 사이트를 감지하기 위해 일부 시스템 정보와 페이지 콘텐츠를 세이프 브라우징으로 전송할 수 있습니다.
+
+세이프 브라우징에 관해 자세히 알아보려면 https://developers.google.com/safe-browsing을 참조하세요.</string><string id="SavingBrowserHistoryDisabled">브라우저 기록 저장 사용 중지</string><string id="SavingBrowserHistoryDisabled_Explain">Google Chrome에서 인터넷 사용 기록 저장을 사용 중지하고 사용자가 이 설정을 변경하지 못하게 합니다.
+
+이 설정을 사용하면 인터넷 사용 기록이 저장되지 않으며 탭 동기화도 사용 중지됩니다.
+
+이 설정을 사용 중지하거나 설정하지 않으면 인터넷 사용 기록이 저장됩니다.</string><string id="SearchSuggestEnabled">추천 검색어 사용</string><string id="SearchSuggestEnabled_Explain">Google Chrome의 검색주소창에서 추천 검색어를 사용하도록 설정하고 사용자가 이 설정을 변경하지 못하게 합니다.
+
+이 설정을 사용하면 추천 검색어가 사용됩니다.
+
+이 설정을 사용 중지하면 추천 검색어가 사용되지 않습니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 Google Chrome에서 이 설정을 변경하거나 무시할 수 없습니다.
+
+이 정책이 설정되어 있지 않으면 사용하도록 설정되며 사용자가 설정을 변경할 수 있습니다.</string><string id="SessionLengthLimit">Limit the length of a user session</string><string id="SessionLengthLimit_Explain">When this policy is set, it specifies the length of time after which a user is automatically logged out, terminating the session. The user is informed about the remaining time by a countdown timer shown in the system tray.
+
+When this policy is not set, the session length is not limited.
+
+If you set this policy, users cannot change or override it.
+
+The policy value should be specified in milliseconds. Values are clamped to a range of 30 seconds to 24 hours.</string><string id="SessionLocales">공개 세션에서 사용할 추천 언어를 설정합니다.</string><string id="SessionLocales_Explain">공개 세션에 한 개 이상의 추천 언어를 설정하여 사용자가 이 중 하나를 편리하게 선택할 수 있도록 합니다.
+
+사용자는 공개 세션을 시작하기 전에 언어 및 키보드 레이아웃을 선택할 수 있습니다. 기본적으로 Google Chrome OS에서 지원하는 모든 언어가 알파벳 순서로 표시됩니다. 이 정책을 사용하여 추천 언어 모음을 목록 상단으로 이동할 수 있습니다.
+
+이 정책을 설정하지 않으면 현재 UI 언어가 사전 선택됩니다.
+
+이 정책을 설정하면 추천 언어가 목록 상단으로 이동하며 다른 언어와 시각적으로 구분되어 표시됩니다. 추천 언어는 정책에 표시된 순서대로 표시되며 첫 번째 추천 언어가 사전 선택됩니다.
+
+추천 언어가 둘 이상인 경우 사용자가 추천 언어 중에 선택할 것이라고 가정, 공개 세션 시작 시 언어 및 키보드 레이아웃 선택 항목이 눈에 띄게 표시됩니다. 그 외의 경우 대부분의 사용자가 사전 선택된 언어를 사용할 것이라고 가정, 공개 세션 시작 시 언어 및 키보드 레이아웃 선택 항목이 눈에 덜 띄게 표시됩니다.
+
+이 정책이 설정되어 있고 자동 로그인을 사용 설정한 경우(|DeviceLocalAccountAutoLoginId| 및 |DeviceLocalAccountAutoLoginDelay| 정책 참조) 자동으로 시작된 공개 세션에서는 첫 번째 추천 언어 및 이 언어와 일치하며 가장 널리 사용되는 키보드 레이아웃을 사용합니다.
+
+사전 선택된 키보드 레이아웃은 사전 선택된 언어에 해당하는 가장 널리 사용되는 레이아웃으로 설정됩니다.
+
+이 정책은 추천으로만 설정할 수 있습니다. 이 정책을 사용하여 추천 언어 모음을 상단으로 이동할 수 있지만, 사용자는 언제든지 자신의 세션에서 Google Chrome OS이(가) 지원하는 언어 중에 선택할 수 있습니다.
+</string><string id="SessionLocalesDesc">공개 세션에서 사용할 추천 언어를 설정합니다.</string><string id="ShelfAutoHideBehavior">임시보관함 자동 숨김 제어</string><string id="ShelfAutoHideBehavior_Explain">Google Chrome OS 실행기의 자동 숨김을 제어합니다.
+
+이 정책이 'AlwaysAutoHideShelf'로 설정되면 실행기를 항상 자동으로 숨깁니다.
+
+이 정책이 'NeverAutoHideShelf'로 설정되면 실행기를 자동으로 숨기지 않습니다.
+
+이 정책을 설정하면 사용자는 변경하거나 무시할 수 없습니다.
+
+이 정책을 설정하지 않으면 사용자가 실행기를 자동 숨김할지 여부를 선택할 수 있습니다.</string><string id="ShelfAutoHideBehavior_AlwaysAutoHideShelf">항상 실행기 자동 숨김</string><string id="ShelfAutoHideBehavior_NeverAutoHideShelf">실행기를 자동으로 숨기지 않음</string><string id="ShowHomeButton">툴바에 홈 버튼 표시</string><string id="ShowHomeButton_Explain">Google Chrome의 툴바에 홈 버튼을 표시합니다.
+
+이 설정을 사용하면 홈 버튼이 항상 표시됩니다.
+
+이 설정을 사용 중지하면 홈 버튼이 표시되지 않습니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 Google Chrome에서 이 설정을 변경하거나 무시할 수 없습니다.
+
+이 정책을 설정하지 않으면 사용자가 홈 버튼을 표시할지 여부를 선택할 수 있습니다.</string><string id="ShowLogoutButtonInTray">작업 표시줄에 로그아웃 버튼 추가</string><string id="ShowLogoutButtonInTray_Explain">If enabled, a big, red logout button is shown in the system tray while a session is active and the screen is not locked.
+
+If disabled or not specified, no big, red logout button is shown in the system tray.</string><string id="SitePerProcess">모든 사이트에 사이트 격리 사용 설정</string><string id="SitePerProcess_Explain">
+참고: 아직 실험 단계에 있는 정책이므로 기능을 손상시킬 수도 있습니다.
+IsolateOrigins 정책 설정을 확인하고, 격리하려는 사이트 목록이 포함된
+IsolateOrigins를 사용하여 사이트를 격리하는 동시에
+사용자에게 미치는 영향을 제한하는 것이 좋습니다.
+SitePerProcess 설정은 모든 사이트를 격리합니다.
+정책을 사용 설정하면 각 사이트는 개별 프로세스로 실행됩니다.
+정책을 사용 중지하면 사이트 격리 프로세스 실행 이전의 관리 로직이 적용됩니다.
+정책을 설정하지 않으면 사용자가 이 설정을 변경할 수 있게 됩니다.
+</string><string id="SpellCheckServiceEnabled">맞춤법 검사 웹 서비스 사용 또는 사용 중지</string><string id="SpellCheckServiceEnabled_Explain">Google Chrome은(는) Google 웹 서비스를 사용하여 맞춤법 오류를 해결할 수 있습니다. 이 설정을 사용하면 해당 서비스를 항상 사용할 수 있습니다. 이 설정을 사용 중지하면 해당 서비스는 사용되지 않습니다.
+
+맞춤법 검사는 다운로드한 사전을 사용하여 계속 시행할 수 있으며, 이 정책은 온라인 서비스의 사용 여부만 제어합니다.
+
+이 설정을 구성하지 않으면 사용자는 맞춤법 검사 사용 여부를 선택할 수 있습니다.</string><string id="SuppressUnsupportedOSWarning">지원되지 않는 OS 경고 무시</string><string id="SuppressUnsupportedOSWarning_Explain">더 이상 지원되지 않는 컴퓨터 또는 운영체제에서 Google Chrome이(가) 실행 중일 때 표시되는 경고를 무시합니다.</string><string id="SyncDisabled">Google과 데이터 동기화 사용 중지</string><string id="SyncDisabled_Explain">Google에서 호스팅하는 동기화 서비스를 사용하는 Google Chrome의 데이터 동기화를 사용 중지하고 사용자가 이 설정을 변경하지 못하게 합니다.
+
+이 설정을 사용하면 사용자가 Google Chrome에서 이 설정을 변경하거나 무시할 수 없습니다.
+
+이 정책을 설정하지 않은 경우 사용자가 Google 동기화를 사용할지 선택할 수 있습니다.
+
+Google 동기화를 완전히 중지하려면 Google 관리 콘솔에서 Google 동기화 서비스를 사용 중지하는 것이 좋습니다.
+
+이 정책은 RoamingProfileSupportEnabled 정책을 사용하도록 설정한 경우 해당 기능에서 동일한 클라이언트측 기능을 공유하기 때문에 사용 설정하면 안 됩니다. 이 경우 Google에서 호스팅하는 동기화 서비스는 완전히 사용 중지됩니다.</string><string id="SystemTimezone">시간대</string><string id="SystemTimezone_Explain">기기에서 사용되는 시간대를 지정합니다. 사용자는 현재 세션에 지정된 시간대를 재정의할 수 있지만 로그아웃하면 지정된 시간대로 재설정됩니다. 유효하지 않은 값을 입력하더라도 정책은 대신 'GMT'를 사용하여 활성 상태를 유지합니다. 빈 문자열을 입력하는 경우 정책은 무시됩니다.
+
+이 정책이 사용되지 않으면 현재 활성화된 시간대가 계속 사용되지만, 사용자가 시간대를 변경할 수 있으며 변경사항이 계속 적용됩니다. 따라서 한 사용자가 변경하면 로그인 화면과 다른 모든 사용자에게 영향을 미칩니다.
+
+새 기기는 시간대가 '미국/태평양'으로 설정됩니다.
+
+값의 형식은 'IANA 시간대 데이터베이스'의 시간대 이름을 따릅니다('https://en.wikipedia.org/wiki/Tz_database' 참조). 특히 대부분의 시간대는 'continent/large_city' 또는 'ocean/large_city'로 언급될 수 있습니다.
+
+이 정책을 설정하면 기기 위치에 따른 자동 시간대가 완전히 사용 중지됩니다. 또한 SystemTimezoneAutomaticDetection 정책을 재정의합니다.</string><string id="SystemTimezoneAutomaticDetection">자동 시간대 감지 방법 설정</string><string id="SystemTimezoneAutomaticDetection_Explain">이 정책을 설정하면 설정 값에 따라 자동 시간대 감지 절차가 다음 방법 중 한 가지로 진행됩니다.
+
+TimezoneAutomaticDetectionUsersDecide로 설정하면 사용자는 chrome://settings의 일반 컨트롤을 사용하여 자동 시간대 감지를 조정할 수 있습니다.
+
+TimezoneAutomaticDetectionDisabled로 설정하면 chrome://settings의 자동 시간대 조정 기능이 사용 중지되며 자동 시간대 감지는 항상 사용 중지됩니다.
+
+TimezoneAutomaticDetectionIPOnly로 설정하면 chrome://settings의 시간대 조정이 사용 중지되며 자동 시간대 감지는 항상 사용 설정됩니다. 시간대 감지에서 IP 전용 방식을 사용하여 위치를 파악합니다.
+
+TimezoneAutomaticDetectionSendWiFiAccessPoints로 설정하면 chrome://settings의 시간대 조정 기능이 사용 중지되며 자동 시간대 감지는 항상 사용 설정됩니다. 정밀한 시간대 감지를 위해 가용 Wi-Fi 액세스 포인트 목록이 항상 Geolocation API 서버로 전송됩니다.
+
+TimezoneAutomaticDetectionSendAllLocationInfo로 설정하면 chrome://settings의 시간대 조정이 사용 중지되며 자동 시간대 감지는 항상 사용 설정됩니다. 정밀한 시간대 감지를 위해 위치 정보(예: Wi-Fi 액세스 포인트, 연결 가능한 기지국, GPS)가 서버로 전송됩니다.
+
+이 정책을 설정하지 않으면 TimezoneAutomaticDetectionUsersDecide가 설정된 것처럼 작동합니다.
+
+SystemTimezone 정책이 설정된 경우 이 정책이 재정의됩니다. 이 경우 자동 시간대 감지 기능이 완전히 사용 중지됩니다.</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionUsersDecide">Let users decide</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionDisabled">Never auto-detect timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionIPOnly">Always use coarse timezone detection</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendWiFiAccessPoints">Always send WiFi access-points to server while resolving timezone</string><string id="SystemTimezoneAutomaticDetection_TimezoneAutomaticDetectionSendAllLocationInfo">시간대를 파악하는 동안 항상 사용 가능한 위치 신호를 모두 서버로 전송합니다.</string><string id="SystemUse24HourClock">기본적으로 24시간 표기법 사용</string><string id="SystemUse24HourClock_Explain">기기에 사용할 시계 형식을 지정합니다.
+
+이 정책은 로그인 화면 및 사용자 세션에 기본적으로 사용될 시계 형식을 지정합니다. 사용자는 본인 계정의 시계 형식을 덮어쓸 수 있습니다.
+
+이 정책을 true로 설정하면 기기는 24시간 시계 형식을 사용하고 이 정책을 false로 설정하면 기기는 12시간 시계 형식을 사용합니다.
+
+이 정책을 설정하지 않으면 기기는 기본값으로 24시간 시계 형식을 사용합니다.</string><string id="TPMFirmwareUpdateSettings">TPM 펌웨어 업데이트 동작 설정</string><string id="TPMFirmwareUpdateSettings_Explain">TPM 펌웨어 업데이트 기능의 사용 가능 여부 및 동작을 설정합니다.
+
+개별 설정을 JSON 속성으로 지정할 수 있습니다.
+
+allow-user-initiated-powerwash: true(으)로 설정되어 있는 경우, 사용자가 파워워시 절차를 실행하여 TPM 펌웨어 업데이트를 설치할 수 있습니다.
+
+정책이 설정되지 않은 경우, TPM 펌웨어 업데이트 기능을 사용할 수 없습니다.</string><string id="TaskManagerEndProcessEnabled">작업 관리자의 종료 프로세스 사용 설정</string><string id="TaskManagerEndProcessEnabled_Explain">If set to false, the 'End process' button is disabled in the Task Manager.
+
+If set to true or not configured, the user can end processes in the Task Manager.</string><string id="TermsOfServiceURL">기기 로컬 계정에 대한 서비스 약관 설정</string><string id="TermsOfServiceURL_Explain">사용자가 기기 로컬 계정 세션을 시작하기 전에 동의해야 하는 서비스 약관을 설정합니다.
+
+이 정책이 설정되어 있으면 Google Chrome OS에서 서비스 약관을 다운로드하고 기기 로컬 계정 세션이 시작될 때마다 사용자에게 이를 표시합니다. 사용자는 서비스 약관에 동의한 후에만 세션을 시작할 수 있습니다.
+
+이 정책이 설정되어 있지 않으면 서비스 약관이 표시되지 않습니다.
+
+정책은 Google Chrome OS에서 서비스 약관을 다운로드할 수 있는 URL로 설정되어야 합니다. 서비스 약관은 일반 텍스트여야 하며 MIME 유형 text/plain으로 제공됩니다. 마크업은 허용되지 않습니다.</string><string id="TouchVirtualKeyboardEnabled">가상 키보드 사용</string><string id="TouchVirtualKeyboardEnabled_Explain">이 정책은 ChromeOS에서 가상 키보드를 입력 기기로 사용하도록 설정합니다. 사용자는 이 정책을 덮어쓸 수 없습니다.
+
+이 정책을 true로 설정하면 가상 터치 키보드를 항상 사용 설정됩니다.
+
+이 정책을 false로 설정하면 가상 터치 키보드는 항상 사용 중지됩니다.
+
+이 정책을 설정하면 사용자는 변경하거나 덮어쓸 수 없습니다. 하지만 사용자는 터치 키보드 접근성을 사용/사용 중지할 수 있으며 이는 이 정책에 의한 가상 키보드 설정보다 우선합니다. 터치 키보드의 접근성 조정에 대해서는 |VirtualKeyboardEnabled| 정책을 참조하세요.
+
+이 정책을 설정하지 않으면 처음에 터치 키보드가 사용 중지되지만 사용자가 언제든지 사용하도록 설정할 수 있습니다. 키보드 표시 시기를 결정할 때 휴리스틱스 규칙을 사용할 수도 있습니다.</string><string id="TranslateEnabled">Google 번역 사용</string><string id="TranslateEnabled_Explain">Google Chrome에서 통합 Google 번역 서비스를 사용하도록 설정합니다.
+
+이 설정을 사용하면 Google Chrome에서 통합 툴바를 표시하여 해당하는 경우 사용자에게 페이지 번역을 제공합니다.
+
+이 설정을 사용 중지하면 번역 바가 사용자에게 표시되지 않습니다.
+
+이 설정을 사용하거나 사용 중지하면 사용자가 Google Chrome에서 설정을 변경하거나 무시할 수 없습니다.
+
+설정하지 않은 경우 사용자가 이 기능의 사용 여부를 결정할 수 있습니다.</string><string id="URLBlacklist">URL 목록에 대한 액세스 차단</string><string id="URLBlacklist_Explain">This policy prevents the user from loading web pages from blacklisted URLs. The blacklist provides a list of URL patterns that specify which URLs will be blacklisted.
+
+A URL pattern has to be formatted according to https://www.chromium.org/administrators/url-blacklist-filter-format.
+
+Exceptions can be defined in the URL whitelist policy. These policies are limited to 1000 entries; subsequent entries will be ignored.
+
+Note that it is not recommended to block internal 'chrome://*' URLs since this may lead to unexpected errors.
+
+If this policy is not set no URL will be blacklisted in the browser.</string><string id="URLBlacklistDesc">URL 목록에 대한 액세스 차단</string><string id="URLWhitelist">URL 목록에 대한 액세스 허용</string><string id="URLWhitelist_Explain">목록에 있는 URL을 URL 차단 목록에 대한 예외로 취급해 액세스를 허용합니다.
+
+이 목록 항목의 형식에 대해서는 URL 차단 목록 정책의 설명을 확인하세요.
+
+이 정책은 제한적인 차단 목록에 대한 예외 목록을 여는 데 사용할 수 있습니다. 예를 들어 '*'를 차단 목록에 등록하여 모든 요청을 차단하고, 이 정책을 사용하여 제한된 URL 목록에 대한 액세스를 허용할 수 있습니다. 또한 특정 스키마, 다른 도메인의 하위 도메인, 포트 또는 특정 경로에 대한 예외 목록을 여는 데 사용할 수 있습니다.
+
+가장 구체적인 필터에 따라 URL 차단 또는 허용 여부가 결정됩니다. 허용 목록은 차단 목록보다 우선합니다.
+
+이 정책의 항목 수는 1000개로 제한되며 이후 항목은 무시됩니다.
+
+이 정책을 설정하지 않는 경우 'URLBlacklist' 정책의 차단 목록에 예외가 적용되지 않습니다.</string><string id="URLWhitelistDesc">URL 목록에 대한 액세스 허용</string><string id="UnifiedDesktopEnabledByDefault">Make Unified Desktop available and turn on by default</string><string id="UnifiedDesktopEnabledByDefault_Explain">이 정책을 true로 설정하면 통합 바탕화면이 기본적으로 허용되고
+사용 설정되어 애플리케이션이 여러 디스플레이로 확장될 수 있습니다.
+사용자는 디스플레이 설정에서 개별 디스플레이에 대한 통합 바탕화면을 선택 해제하여
+사용 중지할 수 있습니다.
+
+이 정책을 false로 설정하거나 설정하지 않으면 통합 바탕화면이
+사용 중지됩니다. 이 경우 사용자가 기능을 사용 설정할 수 없습니다.</string><string id="UsbDetachableWhitelist">USB 분리 가능 기기 허용 목록</string><string id="UsbDetachableWhitelist_Explain">웹 애플리케이션 내에서 chrome.usb API를 통해 사용하기 위해 커널 드라이버에서 분리될 수 있는 USB 기기 목록을 정의합니다. 항목은 특정 하드웨어를 판별하기 위한 USB 공급업체 식별자 및 제품 식별자 쌍입니다.
+
+이 정책이 구성되지 않은 경우 분리 가능한 USB 기기 목록은 비어 있습니다.</string><string id="UsbDetachableWhitelistDesc">USB 분리 가능 기기 허용 목록</string><string id="UserAvatarImage">사용자 아바타 이미지</string><string id="UserAvatarImage_Explain">This policy allows you to configure the avatar image representing the user on the login screen. The policy is set by specifying the URL from which Google Chrome OS can download the avatar image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its size must not exceed 512kB. The URL must be accessible without any authentication.
+
+The avatar image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the avatar image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the avatar image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the avatar image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose the avatar image representing them on the login screen.</string><string id="UserDisplayName">기기 로컬 계정용 표시 이름 설정</string><string id="UserDisplayName_Explain">계정 이름 Google Chrome OS을(를) 해당 기기 로컬 계정의 로그인 화면에 표시할 것인지 제어합니다.
+
+이 정책을 설정하면 로그인 화면은 해당 기기 로컬 계정에 사진 기반 로그인 선택기의 특정 문자열을 사용합니다.
+
+이 정책을 설정하지 않으면 Google Chrome OS은 기기 로컬 계정의 이메일 계정 ID를 로그인 화면의 표시 이름으로 사용합니다.
+
+이 정책은 일반 사용자 계정에서는 무시됩니다.</string><string id="VideoCaptureAllowed">동영상 캡처 허용 또는 거부</string><string id="VideoCaptureAllowed_Explain">If enabled or not configured (default), the user will be prompted for
+video capture access except for URLs configured in the
+VideoCaptureAllowedUrls list which will be granted access without prompting.
+
+When this policy is disabled, the user will never be prompted and video
+capture only be available to URLs configured in VideoCaptureAllowedUrls.
+
+This policy affects all types of video inputs and not only the built-in camera.</string><string id="VideoCaptureAllowedUrls">별도 메시지를 표시하지 않고 동영상 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</string><string id="VideoCaptureAllowedUrls_Explain">이 목록의 패턴을 요청 URL의 보안 출처와 비교합니다.
+일치하는 항목이 확인되는 경우 메시지를 표시하지 않고 오디오 캡처
+기기에 대한 액세스 권한을 부여합니다.
+
+참고: 버전 45 이하에서는 키오스크 모드에서만 이 정책이 지원됩니다.</string><string id="VideoCaptureAllowedUrlsDesc">별도 메시지를 표시하지 않고 동영상 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</string><string id="WPADQuickCheckEnabled">WPAD 최적화 사용</string><string id="WPADQuickCheckEnabled_Explain">Google Chrome에서 WPAD(Web Proxy Auto-Discovery) 최적화를 사용 중지하도록 허용합니다.
+
+이 정책이 false로 설정된 경우 WPAD 최적화가 사용 중지되어 Google Chrome이(가) DNS 기반 WPAD 서버를 더 오래 기다리게 됩니다. 이 정책이 설정되지 않았거나 사용 설정된 경우 WPAD 최적화가 사용 설정됩니다.
+
+이 정책 설정 여부 및 방법과 관계없이 WPAD 최적화 설정은 사용자에 의해 변경될 수 없습니다.</string><string id="WallpaperImage">배경화면 이미지</string><string id="WallpaperImage_Explain">This policy allows you to configure the wallpaper image that is shown on the desktop and on the login screen background for the user. The policy is set by specifying the URL from which Google Chrome OS can download the wallpaper image and a cryptographic hash used to verify the integrity of the download. The image must be in JPEG format, its file size must not exceed 16MB. The URL must be accessible without any authentication.
+
+The wallpaper image is downloaded and cached. It will be re-downloaded whenever the URL or the hash changes.
+
+The policy should be specified as a string that expresses the URL and hash in JSON format, conforming to the following schema:
+{
+&quot;type&quot;: &quot;object&quot;,
+&quot;properties&quot;: {
+&quot;url&quot;: {
+&quot;description&quot;: &quot;The URL from which the wallpaper image can be downloaded.&quot;,
+&quot;type&quot;: &quot;string&quot;
+},
+&quot;hash&quot;: {
+&quot;description&quot;: &quot;The SHA-256 hash of the wallpaper image.&quot;,
+&quot;type&quot;: &quot;string&quot;
+}
+}
+}
+
+If this policy is set, Google Chrome OS will download and use the wallpaper image.
+
+If you set this policy, users cannot change or override it.
+
+If the policy is left not set, the user can choose an image to be shown on the desktop and on the login screen background.</string><string id="WebRtcUdpPortRange">WebRTC가 사용하는 로컬 UDP 포트 범위 제한</string><string id="WebRtcUdpPortRange_Explain">정책이 설정된 경우 WebRTC가 사용하는 UDP 포트 범위는 지정한 포트 간격(엔드포인트 포함)으로 제한됩니다.
+
+정책이 설정되지 않았거나 빈 문자열 또는 유효하지 않은 포트 범위로 설정된 경우 WebRTC는 사용 가능한 로컬 UDP 포트를 사용하도록 허용됩니다.</string></stringTable><presentationTable><presentation id="EnableMediaRouter"/><presentation id="ShowCastIconInToolbar"/><presentation id="DriveDisabled"/><presentation id="DriveDisabledOverCellular"/><presentation id="AuthSchemes"><textBox refId="AuthSchemes"><label>지원되는 인증 스키마</label></textBox></presentation><presentation id="DisableAuthNegotiateCnameLookup"/><presentation id="EnableAuthNegotiatePort"/><presentation id="AuthServerWhitelist"><textBox refId="AuthServerWhitelist"><label>인증 서버 허용목록</label></textBox></presentation><presentation id="AuthNegotiateDelegateWhitelist"><textBox refId="AuthNegotiateDelegateWhitelist"><label>Kerberos 위임 서버 허용목록</label></textBox></presentation><presentation id="AllowCrossOriginAuthPrompt"/><presentation id="DefaultSearchProviderEnabled"/><presentation id="DefaultSearchProviderName"><textBox refId="DefaultSearchProviderName"><label>기본 검색 공급자 이름</label></textBox></presentation><presentation id="DefaultSearchProviderKeyword"><textBox refId="DefaultSearchProviderKeyword"><label>기본 검색 공급자 키워드</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURL"><textBox refId="DefaultSearchProviderSearchURL"><label>기본 검색 공급자 검색 URL</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURL"><textBox refId="DefaultSearchProviderSuggestURL"><label>기본 검색 공급자 추천 URL</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURL"><textBox refId="DefaultSearchProviderInstantURL"><label>기본 검색 공급자 순간 검색 URL</label></textBox></presentation><presentation id="DefaultSearchProviderIconURL"><textBox refId="DefaultSearchProviderIconURL"><label>기본 검색 공급자 아이콘</label></textBox></presentation><presentation id="DefaultSearchProviderEncodings"><listBox refId="DefaultSearchProviderEncodingsDesc">기본 검색 공급자 인코딩</listBox></presentation><presentation id="DefaultSearchProviderAlternateURLs"><listBox refId="DefaultSearchProviderAlternateURLsDesc">기본 검색 공급자의 대체 URL 목록</listBox></presentation><presentation id="DefaultSearchProviderSearchTermsReplacementKey"><textBox refId="DefaultSearchProviderSearchTermsReplacementKey"><label>기본 검색 공급자의 검색어 위치를 조정하는 매개변수</label></textBox></presentation><presentation id="DefaultSearchProviderImageURL"><textBox refId="DefaultSearchProviderImageURL"><label>기본 검색엔진에 이미지로 검색 기능을 제공하는 매개변수</label></textBox></presentation><presentation id="DefaultSearchProviderNewTabURL"><textBox refId="DefaultSearchProviderNewTabURL"><label>기본 검색 공급자 새 탭 페이지 URL</label></textBox></presentation><presentation id="DefaultSearchProviderSearchURLPostParams"><textBox refId="DefaultSearchProviderSearchURLPostParams"><label>POST를 사용하는 검색 URL용 매개변수</label></textBox></presentation><presentation id="DefaultSearchProviderSuggestURLPostParams"><textBox refId="DefaultSearchProviderSuggestURLPostParams"><label>POST를 사용하는 추천 URL용 매개변수</label></textBox></presentation><presentation id="DefaultSearchProviderInstantURLPostParams"><textBox refId="DefaultSearchProviderInstantURLPostParams"><label>POST를 사용하는 인스턴트 URL용 매개변수</label></textBox></presentation><presentation id="DefaultSearchProviderImageURLPostParams"><textBox refId="DefaultSearchProviderImageURLPostParams"><label>POST를 사용하는 이미지 URL용 매개변수</label></textBox></presentation><presentation id="PasswordManagerEnabled"/><presentation id="QuickUnlockModeWhitelist"><listBox refId="QuickUnlockModeWhitelistDesc">Configure allowed quick unlock modes</listBox></presentation><presentation id="QuickUnlockTimeout"><dropdownList refId="QuickUnlockTimeout">Sets how often user has to enter password to use quick unlock</dropdownList></presentation><presentation id="PinUnlockMinimumLength"><decimalTextBox refId="PinUnlockMinimumLength">Sets the minimum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockMaximumLength"><decimalTextBox refId="PinUnlockMaximumLength">Sets the maximum length of the lock screen PIN:</decimalTextBox></presentation><presentation id="PinUnlockWeakPinsAllowed"/><presentation id="NewTabPageLocation"><textBox refId="NewTabPageLocation"><label>새 탭 페이지 URL</label></textBox></presentation><presentation id="RestoreOnStartup"><dropdownList refId="RestoreOnStartup">시작 시 동작</dropdownList></presentation><presentation id="RestoreOnStartupURLs"><listBox refId="RestoreOnStartupURLsDesc">시작 시 열리는 URL</listBox></presentation><presentation id="RemoteAccessHostClientDomainList"><listBox refId="RemoteAccessHostClientDomainListDesc">Configure the required domain names for remote access clients</listBox></presentation><presentation id="RemoteAccessHostFirewallTraversal"/><presentation id="RemoteAccessHostDomainList"><listBox refId="RemoteAccessHostDomainListDesc">Configure the required domain names for remote access hosts</listBox></presentation><presentation id="RemoteAccessHostTalkGadgetPrefix"><textBox refId="RemoteAccessHostTalkGadgetPrefix"><label>원격 액세스 호스트에 대한 TalkGadget 프리픽스 구성</label></textBox></presentation><presentation id="RemoteAccessHostRequireCurtain"/><presentation id="RemoteAccessHostAllowClientPairing"/><presentation id="RemoteAccessHostAllowGnubbyAuth"/><presentation id="RemoteAccessHostAllowRelayedConnection"/><presentation id="RemoteAccessHostUdpPortRange"><textBox refId="RemoteAccessHostUdpPortRange"><label>원격 액세스 호스트에서 사용되는 UDP 포트 범위 제한</label></textBox></presentation><presentation id="RemoteAccessHostMatchUsername"/><presentation id="RemoteAccessHostTokenUrl"><textBox refId="RemoteAccessHostTokenUrl"><label>원격 액세스 클라이언트가 인증 토큰을 확보해야 하는 URL</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationUrl"><textBox refId="RemoteAccessHostTokenValidationUrl"><label>원격 액세스 클라이언트 인증 토큰을 확인하기 위한 URL</label></textBox></presentation><presentation id="RemoteAccessHostTokenValidationCertificateIssuer"><textBox refId="RemoteAccessHostTokenValidationCertificateIssuer"><label>RemoteAccessHostTokenValidationUrl에 연결하기 위한 클라이언트 인증서</label></textBox></presentation><presentation id="AttestationEnabledForUser"/><presentation id="AttestationExtensionWhitelist"><listBox refId="AttestationExtensionWhitelistDesc">원격 인증 API를 사용하도록 허용된 확장 프로그램입니다.</listBox></presentation><presentation id="LidCloseAction"><dropdownList refId="LidCloseAction">사용자가 덮개를 덮으면 수행할 작업</dropdownList></presentation><presentation id="PowerManagementUsesAudioActivity"/><presentation id="PowerManagementUsesVideoActivity"/><presentation id="PresentationScreenDimDelayScale"><decimalTextBox refId="PresentationScreenDimDelayScale">프레젠테이션 모드에서 화면 어둡게 하기 지연 시간이 조정되는 비율:</decimalTextBox></presentation><presentation id="AllowScreenWakeLocks"/><presentation id="UserActivityScreenDimDelayScale"><decimalTextBox refId="UserActivityScreenDimDelayScale">화면이 어두워진 후 사용자의 활동이 감지될 때 화면 어둡게 하기 지연 시간이 조정되는 비율:</decimalTextBox></presentation><presentation id="WaitForInitialUserActivity"/><presentation id="PowerManagementIdleSettings"><textBox refId="PowerManagementIdleSettings"><label>사용자가 유휴 상태가 될 때 전원 관리 설정</label></textBox></presentation><presentation id="ScreenLockDelays"><textBox refId="ScreenLockDelays"><label>화면 잠금 지연</label></textBox></presentation><presentation id="ShowAccessibilityOptionsInSystemTrayMenu"/><presentation id="LargeCursorEnabled"/><presentation id="SpokenFeedbackEnabled"/><presentation id="HighContrastEnabled"/><presentation id="VirtualKeyboardEnabled"/><presentation id="KeyboardDefaultToFunctionKeys"/><presentation id="ScreenMagnifierType"><dropdownList refId="ScreenMagnifierType">화면 돋보기 유형 설정</dropdownList></presentation><presentation id="DeviceLoginScreenDefaultLargeCursorEnabled"/><presentation id="DeviceLoginScreenDefaultSpokenFeedbackEnabled"/><presentation id="DeviceLoginScreenDefaultHighContrastEnabled"/><presentation id="DeviceLoginScreenDefaultVirtualKeyboardEnabled"/><presentation id="DeviceLoginScreenDefaultScreenMagnifierType"><dropdownList refId="DeviceLoginScreenDefaultScreenMagnifierType">로그인 화면에서 기본 화면 돋보기 유형을 사용하도록 설정</dropdownList></presentation><presentation id="DefaultCookiesSetting"><dropdownList refId="DefaultCookiesSetting">기본 쿠키 설정</dropdownList></presentation><presentation id="DefaultImagesSetting"><dropdownList refId="DefaultImagesSetting">기본 이미지 설정</dropdownList></presentation><presentation id="DefaultJavaScriptSetting"><dropdownList refId="DefaultJavaScriptSetting">기본 자바 스크립트 설정</dropdownList></presentation><presentation id="DefaultPluginsSetting"><dropdownList refId="DefaultPluginsSetting">기본 Flash 설정</dropdownList></presentation><presentation id="DefaultPopupsSetting"><dropdownList refId="DefaultPopupsSetting">기본 팝업 설정</dropdownList></presentation><presentation id="DefaultNotificationsSetting"><dropdownList refId="DefaultNotificationsSetting">기본 알림 설정</dropdownList></presentation><presentation id="DefaultGeolocationSetting"><dropdownList refId="DefaultGeolocationSetting">기본 위치정보 설정</dropdownList></presentation><presentation id="DefaultWebBluetoothGuardSetting"><dropdownList refId="DefaultWebBluetoothGuardSetting">Web Bluetooth API 사용 조정</dropdownList></presentation><presentation id="AutoSelectCertificateForUrls"><listBox refId="AutoSelectCertificateForUrlsDesc">이 사이트에 대해 클라이언트 인증서를 자동으로 선택합니다.</listBox></presentation><presentation id="CookiesAllowedForUrls"><listBox refId="CookiesAllowedForUrlsDesc">이 사이트에서 쿠키 허용</listBox></presentation><presentation id="CookiesBlockedForUrls"><listBox refId="CookiesBlockedForUrlsDesc">이 사이트에서 쿠키 차단</listBox></presentation><presentation id="CookiesSessionOnlyForUrls"><listBox refId="CookiesSessionOnlyForUrlsDesc">이 사이트에서 세션 전용 쿠키 허용</listBox></presentation><presentation id="ImagesAllowedForUrls"><listBox refId="ImagesAllowedForUrlsDesc">이 사이트에서 이미지 허용</listBox></presentation><presentation id="ImagesBlockedForUrls"><listBox refId="ImagesBlockedForUrlsDesc">이 사이트의 이미지 차단</listBox></presentation><presentation id="JavaScriptAllowedForUrls"><listBox refId="JavaScriptAllowedForUrlsDesc">이 사이트에서 자바스크립트 허용</listBox></presentation><presentation id="JavaScriptBlockedForUrls"><listBox refId="JavaScriptBlockedForUrlsDesc">이 사이트에서 자바스크립트 차단</listBox></presentation><presentation id="PluginsAllowedForUrls"><listBox refId="PluginsAllowedForUrlsDesc">이 사이트에서 Flash 플러그인 허용</listBox></presentation><presentation id="PluginsBlockedForUrls"><listBox refId="PluginsBlockedForUrlsDesc">이 사이트에서 Flash 플러그인 차단</listBox></presentation><presentation id="PopupsAllowedForUrls"><listBox refId="PopupsAllowedForUrlsDesc">이러한 사이트에서 팝업 허용</listBox></presentation><presentation id="RegisteredProtocolHandlers"><textBox refId="RegisteredProtocolHandlers"><label>프로토콜 핸들러 등록</label></textBox></presentation><presentation id="PopupsBlockedForUrls"><listBox refId="PopupsBlockedForUrlsDesc">이 사이트에서 팝업 차단</listBox></presentation><presentation id="NotificationsAllowedForUrls"><listBox refId="NotificationsAllowedForUrlsDesc">이 사이트에서 알림 허용</listBox></presentation><presentation id="NotificationsBlockedForUrls"><listBox refId="NotificationsBlockedForUrlsDesc">이 사이트에서 알림 차단</listBox></presentation><presentation id="ProxyMode"><dropdownList refId="ProxyMode">프록시 서버 설정을 지정하는 방법 선택</dropdownList></presentation><presentation id="ProxyServer"><textBox refId="ProxyServer"><label>프록시 서버의 주소 또는 URL</label></textBox></presentation><presentation id="ProxyPacUrl"><textBox refId="ProxyPacUrl"><label>proxy .pac 파일에 대한 URL</label></textBox></presentation><presentation id="ProxyBypassList"><textBox refId="ProxyBypassList"><label>쉼표로 구분된 프록시 우회 규칙 목록</label></textBox></presentation><presentation id="HomepageLocation"><textBox refId="HomepageLocation"><label>홈페이지 URL</label></textBox></presentation><presentation id="HomepageIsNewTabPage"/><presentation id="ExtensionInstallBlacklist"><listBox refId="ExtensionInstallBlacklistDesc">사용자가 설치할 수 없는 확장 프로그램 ID(또는 전체 확장 프로그램의 경우 *)</listBox></presentation><presentation id="ExtensionInstallWhitelist"><listBox refId="ExtensionInstallWhitelistDesc">차단목록에서 제외할 확장 프로그램 ID</listBox></presentation><presentation id="ExtensionInstallForcelist"><listBox refId="ExtensionInstallForcelistDesc">자동으로 설치되는 확장 프로그램/앱 ID와 업데이트 URL</listBox></presentation><presentation id="ExtensionInstallSources"><listBox refId="ExtensionInstallSourcesDesc">확장 프로그램, 앱, 사용자 스크립트 설치 등을 허용하는 URL 패턴</listBox></presentation><presentation id="ExtensionAllowedTypes"><listBox refId="ExtensionAllowedTypesDesc">설치가 허용된 확장 프로그램/앱 유형</listBox></presentation><presentation id="ExtensionSettings"><textBox refId="ExtensionSettings"><label>확장 프로그램 관리 설정</label></textBox></presentation><presentation id="AllowDeletingBrowserHistory"/><presentation id="AllowDinosaurEasterEgg"/><presentation id="AllowOutdatedPlugins"/><presentation id="AllowScreenLock"/><presentation id="AllowedDomainsForApps"><textBox refId="AllowedDomainsForApps"><label>Google Apps에 액세스할 수 있도록 허용된 도메인 정의</label></textBox></presentation><presentation id="AlternateErrorPagesEnabled"/><presentation id="AlwaysAuthorizePlugins"/><presentation id="ArcBackupRestoreEnabled"/><presentation id="ArcCertificatesSyncMode"><dropdownList refId="ArcCertificatesSyncMode">ARC 앱에 인증서 사용 가능 여부 설정</dropdownList></presentation><presentation id="ArcEnabled"/><presentation id="ArcLocationServiceEnabled"/><presentation id="ArcPolicy"><textBox refId="ArcPolicy"><label>ARC 설정</label></textBox></presentation><presentation id="AudioCaptureAllowed"/><presentation id="AudioCaptureAllowedUrls"><listBox refId="AudioCaptureAllowedUrlsDesc">별도 메시지를 표시하지 않고 오디오 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</listBox></presentation><presentation id="AudioOutputAllowed"/><presentation id="AutoFillEnabled"/><presentation id="AutofillCreditCardEnabled"/><presentation id="BlockThirdPartyCookies"/><presentation id="BookmarkBarEnabled"/><presentation id="CaptivePortalAuthenticationIgnoresProxy"/><presentation id="CertificateTransparencyEnforcementDisabledForUrls"><listBox refId="CertificateTransparencyEnforcementDisabledForUrlsDesc">일부 URL 목록에는 인증서 투명성 시행 사용 중지</listBox></presentation><presentation id="ChromeOsLockOnIdleSuspend"/><presentation id="ChromeOsMultiProfileUserBehavior"><dropdownList refId="ChromeOsMultiProfileUserBehavior">멀티 프로필 세션에서 사용자 활동 제어</dropdownList></presentation><presentation id="ChromeOsReleaseChannel"><dropdownList refId="ChromeOsReleaseChannel">배포 채널</dropdownList></presentation><presentation id="ChromeOsReleaseChannelDelegated"/><presentation id="ComponentUpdatesEnabled"/><presentation id="DefaultPrinterSelection"><textBox refId="DefaultPrinterSelection"><label>기본 프린터 선택 규칙</label></textBox></presentation><presentation id="DeveloperToolsDisabled"/><presentation id="DeviceAllowBluetooth"/><presentation id="DeviceAllowNewUsers"/><presentation id="DeviceAllowRedeemChromeOsRegistrationOffers"/><presentation id="DeviceAutoUpdateDisabled"/><presentation id="DeviceAutoUpdateP2PEnabled"/><presentation id="DeviceBlockDevmode"/><presentation id="DeviceDataRoamingEnabled"/><presentation id="DeviceEphemeralUsersEnabled"/><presentation id="DeviceGuestModeEnabled"/><presentation id="DeviceLoginScreenAppInstallList"><listBox refId="DeviceLoginScreenAppInstallListDesc">로그인 화면에서 설치된 앱 목록 구성</listBox></presentation><presentation id="DeviceLoginScreenInputMethods"><listBox refId="DeviceLoginScreenInputMethodsDesc">기기 로그인 화면 키보드 레이아웃</listBox></presentation><presentation id="DeviceLoginScreenLocales"><listBox refId="DeviceLoginScreenLocalesDesc">기기 로그인 화면 언어</listBox></presentation><presentation id="DeviceLoginScreenPowerManagement"><textBox refId="DeviceLoginScreenPowerManagement"><label>로그인 화면의 전원 관리</label></textBox></presentation><presentation id="DeviceMetricsReportingEnabled"/><presentation id="DeviceNativePrinters"><textBox refId="DeviceNativePrinters"><label>기기에 적용되는 엔터프라이즈 프린터 설정 파일</label></textBox></presentation><presentation id="DeviceNativePrintersAccessMode"><dropdownList refId="DeviceNativePrintersAccessMode">기기 프린터 설정 액세스 정책</dropdownList></presentation><presentation id="DeviceNativePrintersBlacklist"><listBox refId="DeviceNativePrintersBlacklistDesc">사용 중지된 엔터프라이즈 기기 프린터</listBox></presentation><presentation id="DeviceNativePrintersWhitelist"><listBox refId="DeviceNativePrintersWhitelistDesc">사용 설정된 엔터프라이즈 기기 프린터</listBox></presentation><presentation id="DeviceOffHours"><textBox refId="DeviceOffHours"><label>기기 OffHours |ignored_policy_proto_tags|가 공개되었을 때 Off hours 간격</label></textBox></presentation><presentation id="DeviceOpenNetworkConfiguration"><textBox refId="DeviceOpenNetworkConfiguration"><label>기기 수준 네트워크 설정</label></textBox></presentation><presentation id="DevicePolicyRefreshRate"><decimalTextBox refId="DevicePolicyRefreshRate">기기 정책 새로고침 빈도:</decimalTextBox></presentation><presentation id="DeviceQuirksDownloadEnabled"/><presentation id="DeviceRebootOnShutdown"/><presentation id="DeviceShowUserNamesOnSignin"/><presentation id="DeviceStartUpFlags"><listBox refId="DeviceStartUpFlagsDesc">Google Chrome 시작 시 시스템 전체 플래그 적용</listBox></presentation><presentation id="DeviceTargetVersionPrefix"><textBox refId="DeviceTargetVersionPrefix"><label>자동 업데이트 버전 타겟팅</label></textBox></presentation><presentation id="DeviceUpdateAllowedConnectionTypes"><listBox refId="DeviceUpdateAllowedConnectionTypesDesc">업데이트에 허용되어 있는 연결 유형</listBox></presentation><presentation id="DeviceUpdateHttpDownloadsEnabled"/><presentation id="DeviceUpdateScatterFactor"><decimalTextBox refId="DeviceUpdateScatterFactor">분산 요소 자동 업데이트:</decimalTextBox></presentation><presentation id="DeviceUserWhitelist"><listBox refId="DeviceUserWhitelistDesc">로그인 사용자 허용 목록</listBox></presentation><presentation id="DeviceWallpaperImage"><textBox refId="DeviceWallpaperImage"><label>기기 배경화면 이미지</label></textBox></presentation><presentation id="Disable3DAPIs"/><presentation id="DisablePluginFinder"/><presentation id="DisableSafeBrowsingProceedAnyway"/><presentation id="DisableScreenshots"/><presentation id="DisplayRotationDefault"><dropdownList refId="DisplayRotationDefault">기본 디스플레이 회전 설정, 재부팅할 때마다 다시 적용됨</dropdownList></presentation><presentation id="DownloadDirectory"><textBox refId="DownloadDirectory"><label>다운로드 디렉토리 설정</label></textBox></presentation><presentation id="DownloadRestrictions"><dropdownList refId="DownloadRestrictions">다운로드 제한</dropdownList></presentation><presentation id="EasyUnlockAllowed"/><presentation id="EcryptfsMigrationStrategy"><dropdownList refId="EcryptfsMigrationStrategy">ecryptfs 관련 이전 전략</dropdownList></presentation><presentation id="EditBookmarksEnabled"/><presentation id="EnableCommonNameFallbackForLocalAnchors"/><presentation id="EnableDeprecatedWebPlatformFeatures"><listBox refId="EnableDeprecatedWebPlatformFeaturesDesc">사용 중지된 웹 플랫폼 기능을 제한된 기간 동안 사용 설정</listBox></presentation><presentation id="EnableOnlineRevocationChecks"/><presentation id="EnableSha1ForLocalAnchors"/><presentation id="ExternalStorageDisabled"/><presentation id="ExternalStorageReadOnly"/><presentation id="ForceGoogleSafeSearch"/><presentation id="ForceMaximizeOnFirstRun"/><presentation id="ForceYouTubeRestrict"><dropdownList refId="ForceYouTubeRestrict">최소 YouTube 제한 모드 강제 사용</dropdownList></presentation><presentation id="FullscreenAllowed"/><presentation id="Http09OnNonDefaultPortsEnabled"/><presentation id="IncognitoModeAvailability"><dropdownList refId="IncognitoModeAvailability">시크릿 모드 사용 가능 여부</dropdownList></presentation><presentation id="InstantTetheringAllowed"/><presentation id="IsolateOrigins"><textBox refId="IsolateOrigins"><label>지정된 출처의 사이트 격리 사용 설정</label></textBox></presentation><presentation id="KeyPermissions"><textBox refId="KeyPermissions"><label>주요 권한</label></textBox></presentation><presentation id="ManagedBookmarks"><textBox refId="ManagedBookmarks"><label>관리 북마크</label></textBox></presentation><presentation id="MaxInvalidationFetchDelay"><decimalTextBox refId="MaxInvalidationFetchDelay">정책 무효화 후 최대 가져오기 지연:</decimalTextBox></presentation><presentation id="NativePrinters"><listBox refId="NativePrintersDesc">기본 인쇄</listBox></presentation><presentation id="NativePrintersBulkAccessMode"><dropdownList refId="NativePrintersBulkAccessMode">프린터 설정 액세스 정책</dropdownList></presentation><presentation id="NativePrintersBulkBlacklist"><listBox refId="NativePrintersBulkBlacklistDesc">사용 중지된 엔터프라이즈 프린터</listBox></presentation><presentation id="NativePrintersBulkConfiguration"><textBox refId="NativePrintersBulkConfiguration"><label>엔터프라이즈 프린터 설정 파일</label></textBox></presentation><presentation id="NativePrintersBulkWhitelist"><listBox refId="NativePrintersBulkWhitelistDesc">사용 설정된 엔터프라이즈 프린터</listBox></presentation><presentation id="NetworkPredictionOptions"><dropdownList refId="NetworkPredictionOptions">네트워크 예측 사용</dropdownList></presentation><presentation id="NoteTakingAppsLockScreenWhitelist"><listBox refId="NoteTakingAppsLockScreenWhitelistDesc">Google Chrome OS 잠금 화면에서 사용 설정된 메모 앱을 허용 목록에 추가</listBox></presentation><presentation id="OpenNetworkConfiguration"><textBox refId="OpenNetworkConfiguration"><label>사용자 수준 네트워크 설정</label></textBox></presentation><presentation id="PacHttpsUrlStrippingEnabled"/><presentation id="PinnedLauncherApps"><listBox refId="PinnedLauncherAppsDesc">런처에 표시되는 고정된 앱 목록</listBox></presentation><presentation id="PolicyRefreshRate"><decimalTextBox refId="PolicyRefreshRate">사용자 정책에 대한 새로고침 빈도:</decimalTextBox></presentation><presentation id="PrintingEnabled"/><presentation id="QuicAllowed"/><presentation id="RebootAfterUpdate"/><presentation id="RequireOnlineRevocationChecksForLocalAnchors"/><presentation id="RunAllFlashInAllowMode"/><presentation id="SAMLOfflineSigninTimeLimit"><decimalTextBox refId="SAMLOfflineSigninTimeLimit">SAML을 통해 인증한 사용자가 오프라인에서 로그인할 수 있는 기간을 제한:</decimalTextBox></presentation><presentation id="SSLErrorOverrideAllowed"/><presentation id="SSLVersionMax"><dropdownList refId="SSLVersionMax">최대 SSL 버전 사용 설정됨</dropdownList></presentation><presentation id="SafeBrowsingEnabled"/><presentation id="SafeBrowsingExtendedReportingOptInAllowed"/><presentation id="SavingBrowserHistoryDisabled"/><presentation id="SearchSuggestEnabled"/><presentation id="SessionLengthLimit"><decimalTextBox refId="SessionLengthLimit">Limit the length of a user session:</decimalTextBox></presentation><presentation id="SessionLocales"><listBox refId="SessionLocalesDesc">공개 세션에서 사용할 추천 언어를 설정합니다.</listBox></presentation><presentation id="ShelfAutoHideBehavior"><dropdownList refId="ShelfAutoHideBehavior">임시보관함 자동 숨김 제어</dropdownList></presentation><presentation id="ShowHomeButton"/><presentation id="ShowLogoutButtonInTray"/><presentation id="SitePerProcess"/><presentation id="SpellCheckServiceEnabled"/><presentation id="SuppressUnsupportedOSWarning"/><presentation id="SyncDisabled"/><presentation id="SystemTimezone"><textBox refId="SystemTimezone"><label>시간대</label></textBox></presentation><presentation id="SystemTimezoneAutomaticDetection"><dropdownList refId="SystemTimezoneAutomaticDetection">자동 시간대 감지 방법 설정</dropdownList></presentation><presentation id="SystemUse24HourClock"/><presentation id="TPMFirmwareUpdateSettings"><textBox refId="TPMFirmwareUpdateSettings"><label>TPM 펌웨어 업데이트 동작 설정</label></textBox></presentation><presentation id="TaskManagerEndProcessEnabled"/><presentation id="TermsOfServiceURL"><textBox refId="TermsOfServiceURL"><label>기기 로컬 계정에 대한 서비스 약관 설정</label></textBox></presentation><presentation id="TouchVirtualKeyboardEnabled"/><presentation id="TranslateEnabled"/><presentation id="URLBlacklist"><listBox refId="URLBlacklistDesc">URL 목록에 대한 액세스 차단</listBox></presentation><presentation id="URLWhitelist"><listBox refId="URLWhitelistDesc">URL 목록에 대한 액세스 허용</listBox></presentation><presentation id="UnifiedDesktopEnabledByDefault"/><presentation id="UsbDetachableWhitelist"><listBox refId="UsbDetachableWhitelistDesc">USB 분리 가능 기기 허용 목록</listBox></presentation><presentation id="UserAvatarImage"><textBox refId="UserAvatarImage"><label>사용자 아바타 이미지</label></textBox></presentation><presentation id="UserDisplayName"><textBox refId="UserDisplayName"><label>기기 로컬 계정용 표시 이름 설정</label></textBox></presentation><presentation id="VideoCaptureAllowed"/><presentation id="VideoCaptureAllowedUrls"><listBox refId="VideoCaptureAllowedUrlsDesc">별도 메시지를 표시하지 않고 동영상 캡처 기기에 대한 액세스 권한이 부여되는 URL입니다.</listBox></presentation><presentation id="WPADQuickCheckEnabled"/><presentation id="WallpaperImage"><textBox refId="WallpaperImage"><label>배경화면 이미지</label></textBox></presentation><presentation id="WebRtcUdpPortRange"><textBox refId="WebRtcUdpPortRange"><label>WebRTC가 사용하는 로컬 UDP 포트 범위 제한</label></textBox></presentation></presentationTable></resources></policyDefinitionResources>
